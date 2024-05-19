@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.395979Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\": \"Xác nhận dữ liệu bằng API\",\"function\": \"ncbs.core.txNcbs.confirm\",\"type\": \"java\",\"para\": [],\"status\": \"A\",\"response\": {\"true\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-confirm\",\"input\": {\"toast_type\": \"success\"}},{\"txcode\": \"#sys:fo-search-API\",\"input\": {\"list_component\": \"*\",\"list_view\": \"*\",\"table_code\": \"@table_code\",\"learn_api\": \"@learn_api\",\"workflow_id\": \"@workflow_id\"}}]},\"false\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-confirm\",\"input\": {\"toast_type\": \"error\"}}]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-confirm-dataAPI",
+        "version": 1,
+        "updateTime": 638042796880638593,
+        "txname": "Confirm data with API",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 48
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-07T08:21:19.6382358Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "fx_system_code_table_add",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fx_system_code_table_add",
+        "learn_api_name": "fx_system_code_table_add",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "system_code",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"FX_INSERT_CODE_LIST\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"code_id\":\"MapS.dataS(system_code.code_id)\",\"code_name\":\"MapS.dataS(system_code.code_name)\",\"caption\":\"MapS.dataS(system_code.caption)\",\"mcaption\":{\"english\":\"MapS.dataS(system_code.mcaption.english)\",\"vietnamese\":\"MapS.dataS(system_code.mcaption.vietnamese)\",\"laothian\":\"MapS.dataS(system_code.mcaption.laothian)\",\"khmer\":\"MapS.dataS(system_code.mcaption.khmer)\",\"myanmar\":\"MapS.dataS(system_code.mcaption.myanmar)\"},\"code_group\":\"MapS.dataS(system_code.code_group)\",\"code_index\":\"MapS.dataN(system_code.code_index)\",\"code_value\":\"MapS.dataS(system_code.code_value)\",\"ftag\":\"MapS.dataS(system_code.ftag)\",\"visible\":\"MapS.dataN(system_code.visible)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1868
+      }
+    ]
+  }
+]

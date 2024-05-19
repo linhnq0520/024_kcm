@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.7151869Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"gửi learn API\",\"function\":\"ncbs.core.txNcbs.createAndSearch\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#ncbs:fo-update-data\",\"input\":{}},{\"txcode\":\"#sys:fo-msg-confirm\",\"input\":{\"toast_type\":\"success\"}}],\"error\":[]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionError\"}},{\"txcode\":\"#sys:fo-set-FormErrorAPI\",\"input\":{}}],\"error\":[]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-callAPI-andSearch",
+        "version": 1,
+        "updateTime": 638042796880639051,
+        "txname": "bo-callAPI-andSearch",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbs",
+        "id": 204
+      }
+    ]
+  }
+]

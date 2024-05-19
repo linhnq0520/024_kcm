@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.7890489Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "crd_blk_crd_blk_btn_accept_post_api_fo_crd_blk",
+        "learn_api_name": "CRD_BLK Accept CRD_BLK",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/crd_blk",
+        "learn_api_data": "CRD_BLK",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.result",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"txrefid\":\"MapS.dataS(CRD_BLK.txrefid)\",\"pcacc\":\"MapS.dataS(CRD_BLK.pcacc)\",\"cacnm\":\"MapS.dataS(CRD_BLK.cacnm)\",\"cctmcd\":\"MapS.dataS(CRD_BLK.cctmcd)\",\"cctma\":\"MapS.dataS(CRD_BLK.cctma)\",\"mdesc\":{\"H\":\"MapS.dataS(CRD_BLK.mdesc.H)\",\"O\":\"MapS.dataS(CRD_BLK.mdesc.O)\"},\"descs\":\"MapS.dataS(CRD_BLK.descs)\",\"cvldt\":\"MapS.dateDDMMYYYY(CRD_BLK.cvldt)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.result",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 157
+      }
+    ]
+  }
+]

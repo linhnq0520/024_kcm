@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:14:22.3437308Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "ParaServer"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "code": "POSTGRESQL_IP",
+        "des": "IP nội bộ",
+        "value": "118.69.172.143",
+        "data_type": "s",
+        "isAdmin": true,
+        "app": "ncbsCbs",
+        "id": 61
+      }
+    ]
+  }
+]

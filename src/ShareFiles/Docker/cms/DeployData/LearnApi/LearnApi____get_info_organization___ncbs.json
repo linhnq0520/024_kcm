@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1571194Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "get_info_organization",
+        "learn_api_name": "get_info_organization get_info_organizationSearch multi",
+        "learn_api_link": "https://192.168.1.170:105/api/organization/advanced-search/1/1",
+        "learn_api_data": "ncbs_organization_search",
+        "learn_api_node_data": "results",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"organization_code\":\"MapS.dataS(muti.organization_code)\",\"organization_name\":\"MapS.dataS(muti.organization_name)\",\"phone\":\"MapS.dataS(muti.phone)\",\"status\":\"MapS.dataS(muti.status)\",\"email\":\"MapS.dataS(muti.email)\",\"website\":\"MapS.dataS(muti.website)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "data",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 280
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.6491431Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Sửa data\",\"function\":\"txdata.update\",\"type\":\"java\",\"para\":[\"@table_code\"],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionUpdateOk\"}},{\"txcode\":\"#sys:fo-form-clear\",\"input\":{}}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-update-data",
+        "version": 1,
+        "updateTime": 638042796880638861,
+        "txname": "Sửa data webui (không xóa)",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 133
+      }
+    ]
+  }
+]

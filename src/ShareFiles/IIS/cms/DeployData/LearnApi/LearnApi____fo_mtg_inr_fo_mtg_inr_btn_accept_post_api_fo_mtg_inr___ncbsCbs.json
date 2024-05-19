@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.4346899Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_mtg_inr_fo_mtg_inr_btn_accept_post_api_fo_mtg_inr",
+        "learn_api_name": "FO_MTG_INR Accept FO_MTG_INR",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_MTG_INR",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"MTG_INR\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"account_number\":\"MapS.dataS(FO_MTG_INR.account_number)\",\"account_holder_name\":\"MapS.dataS(FO_MTG_INR.account_holder_name)\",\"asset_value\":\"MapS.dataN(FO_MTG_INR.asset_value)\",\"increasing_value\":\"MapS.dataN(FO_MTG_INR.increasing_value)\",\"asset_booking_value\":\"MapS.dataN(FO_MTG_INR.asset_booking_value)\",\"increasing_booking_value\":\"MapS.dataN(FO_MTG_INR.increasing_booking_value)\",\"customer_code\":\"MapS.dataS(FO_MTG_INR.customer_code)\",\"customer_name\":\"MapS.dataS(FO_MTG_INR.customer_name)\",\"customer_address\":\"MapS.dataS(FO_MTG_INR.customer_address)\",\"customer_description\":\"MapS.dataS(FO_MTG_INR.customer_description)\",\"description\":\"MapS.dataS(FO_MTG_INR.description)\",\"value_date\":\"MapS.dataS(FO_MTG_INR.value_date)\",\"currency\":\"MapS.dataS(FO_MTG_INR.currency)\",\"check_limit\":\"MapS.dataN(FO_MTG_INR.check_limit)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 879
+      }
+    ]
+  }
+]

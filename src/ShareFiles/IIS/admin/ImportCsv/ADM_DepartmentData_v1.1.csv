@@ -1,0 +1,15 @@
+﻿Database,Admin,Table,Department,,
+DepartmentCode,BranchCode,DepartmentName,UpdatedOnUtc,CreatedOnUtc,Id
+00001,001,Department of branch 001,,,0
+00002,002,Department of branch 002,,,0
+00003,003,Department of branch 003,,,0
+00004,004,Department of branch 004,,,0
+00005,005,Department of branch 005,,,0
+00006,006,Department of branch 006,,,0
+00007,007,Department of branch 007,,,0
+00008,008,Department of branch 008,,,0
+00009,009,Department of branch 009,,,0
+00010,996,Department of branch 996,,,0
+00011,997,Department of branch 997,,,0
+00012,998,Department of branch 998,,,0
+00013,999,Department of branch 999,,,0

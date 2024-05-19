@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-11-29T07:00:25.8993019Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "BO_003001_BO_003001_save_PUT_api_customer_customer_customerid",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_003001_BO_003001_save_PUT_api_customer_customer_customerid",
+        "learn_api_name": "BO_003001 Save BO_003001",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_003001",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"SQL_UPDATE_CTM\",\"lang\":\"en\",\"token\":\"MapS.context(token)\",\"fields\":{\"id\":\"MapS.dataN(BO_003001.id)\",\"hocifcd\":\"MapS.dataS(BO_003001.hocifcd)\",\"title\":\"MapS.dataS(BO_003001.title)\",\"title_of_organization\":\"MapS.dataSNull(BO_003001.title_of_organization)\",\"suffix\":\"MapS.dataSNull(BO_003001.suffix)\",\"firstname\":\"MapS.dataS(BO_003001.firstname)\",\"lastname\":\"MapS.dataS(BO_003001.lastname)\",\"midname\":\"MapS.dataS(BO_003001.midname)\",\"fullname\":\"MapS.dataS(BO_003001.fullname)\",\"firstname_local\":\"MapS.dataS(BO_003001.firstname_local)\",\"lastname_local\":\"MapS.dataS(BO_003001.lastname_local)\",\"midname_local\":\"MapS.dataS(BO_003001.midname_local)\",\"shortname\":\"MapS.dataS(BO_003001.shortname)\",\"gender\":\"MapS.dataS(BO_003001.gender)\",\"date_of_birth\":\"MapS.dataSNull(BO_003001.date_of_birth)\",\"place_of_birth\":\"MapS.dataSNull(BO_003001.place_of_birth)\",\"nation\":\"MapS.dataS(BO_003001.nation)\",\"country\":\"MapS.dataSNull(BO_003001.country)\",\"paper_type\":\"MapS.dataS(BO_003001.paper_type)\",\"paper_number\":\"MapS.dataS(BO_003001.paper_number)\",\"issue_date_of_paper\":\"MapS.dataSNull(BO_003001.issue_date_of_paper)\",\"issue_place_of_paper\":\"MapS.dataS(BO_003001.issue_place_of_paper)\",\"expire_date_of_paper\":\"MapS.dataSNull(BO_003001.expire_date_of_paper)\",\"paper_type_sub\":\"MapS.dataS(BO_003001.paper_type_sub)\",\"paper_number_sub\":\"MapS.dataS(BO_003001.paper_number_sub)\",\"issue_date_of_sub_paper\":\"MapS.dataSNull(BO_003001.issue_date_of_sub_paper)\",\"issue_place_of_sub_paper\":\"MapS.dataS(BO_003001.issue_place_of_sub_paper)\",\"customer_group_type\":\"MapS.dataSNull(BO_003001.customer_group_type)\",\"customer_sub_group_type\":\"MapS.dataSNull(BO_003001.customer_sub_group_type)\",\"sector\":\"MapS.dataSNull(BO_003001.sector)\",\"subsector\":\"MapS.dataSNull(BO_003001.subsector)\",\"resident\":\"MapS.dataS(BO_003001.resident)\",\"legal_local_address\":\"MapS.dataJsonObject(BO_003001.legal_local_address)\",\"contact_local_address\":\"MapS.dataJsonObject(BO_003001.contact_local_address)\",\"normal_local_address\":\"MapS.dataJsonObject(BO_003001.normal_local_address)\",\"introducer_1\":\"MapS.dataJsonObject(BO_003001.introducer_1)\",\"introducer_2\":\"MapS.dataJsonObject(BO_003001.introducer_2)\",\"phone_home\":\"MapS.dataS(BO_003001.phone_home)\",\"phone_mobile\":\"MapS.dataS(BO_003001.phone_mobile)\",\"email\":\"MapS.dataS(BO_003001.email)\",\"education\":\"MapS.dataS(BO_003001.education)\",\"marital_status\":\"MapS.dataS(BO_003001.marital_status)\",\"profession\":\"MapS.dataS(BO_003001.profession)\",\"business_type\":\"MapS.dataS(BO_003001.business_type)\",\"financial\":\"MapS.dataSNull(BO_003001.financial)\",\"isic_code\":\"MapS.dataSNull(BO_003001.isic_code)\",\"managing_branch_code\":\"MapS.dataS(BO_003001.managing_branch_code)\",\"classify\":\"MapS.dataS(BO_003001.classify)\",\"polists\":\"MapS.dataS(BO_003001.polists)\",\"repolists\":\"MapS.dataS(BO_003001.repolists)\",\"country_of_income\":\"MapS.dataS(BO_003001.country_of_income)\",\"fatca_status\":\"MapS.dataS(BO_003001.fatca_status)\",\"government_id\":\"MapS.dataSNull(BO_003001.government_id)\",\"international_id\":\"MapS.dataSNull(BO_003001.international_id)\",\"oversea_juristic_id\":\"MapS.dataSNull(BO_003001.oversea_juristic_id)\",\"gfmis_code\":\"MapS.dataSNull(BO_003001.gfmis_code)\",\"last_update_date\":\"MapS.dataSNull(BO_003001.last_update_date)\",\"customer_size\":\"MapS.dataSNull(BO_003001.customer_size)\",\"group_id\":\"MapS.dataS(BO_003001.group_id)\",\"customer_credit_line\":\"MapS.dataNNull(BO_003001.customer_credit_line)\",\"currency_code\":\"MapS.dataS(BO_003001.currency_code)\",\"customer_type\":\"MapS.dataS(BO_003001.customer_type)\",\"primary_cif\":\"MapS.dataS(BO_003001.primary_cif)\",\"mdm_amount_status\":\"\",\"mdm_request_status\":\"\",\"mdm_list_sub_type_code\":\"\",\"mdm_list_sub_type_desc\":\"\",\"mdm_matching_by\":\"\",\"mdm_final_kyc_status\":\"\",\"mdm_kyc_comment_code\":\"\",\"mdm_kyc_comment_desc\":\"\",\"kyc_level\":\"3\",\"kyc_update_date\":\"2022-02-25T05:51:26.127Z\",\"kyc_override\":\"MapS.dataS(BO_003001.kyc_override)\",\"kyc_override_descr\":\"MapS.dataS(BO_003001.kyc_override_descr)\",\"customer_sub_type\":\"MapS.dataSNull(BO_003001.customer_sub_type)\",\"approve_modify\":\"MapS.DataBoolean(BO_003001.approve_modify)\",\"father_name\":\"MapS.dataSNull(BO_003001.father_name)\",\"remark_field_to_add\":\"MapS.dataSNull(BO_003001.remark_field_to_add)\",\"position\":\"MapS.dataSNull(BO_003001.position)\",\"referral_field\":\"MapS.dataSNull(BO_003001.referral_field)\",\"introducer\":\"MapS.dataSNull(BO_003001.introducer)\",\"customer_code\":\"MapS.dataSNull(BO_003001.customer_code)\",\"reason_for_other_paper_type\":\"MapS.dataSNull(BO_003001.reason_for_other_paper_type)\",\"employer_name\":\"MapS.dataSNull(BO_003001.employer_name)\",\"reason_for_other_occupation\":\"MapS.dataSNull(BO_003001.reason_for_other_occupation)\",\"reason_for_other_business_type\":\"MapS.dataSNull(BO_003001.reason_for_other_business_type)\",\"reason_for_other_economic_sector\":\"MapS.dataSNull(BO_003001.reason_for_other_economic_sector)\",\"reason_for_other_sub_economic_sector\":\"MapS.dataSNull(BO_003001.reason_for_other_sub_economic_sector)\",\"income\":\"MapS.dataSNull(BO_003001.income)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 208
+      }
+    ]
+  }
+]

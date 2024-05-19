@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-11-23T04:38:49.2355981Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": "BO_003005",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"CTM-Customer media files\",\"des\":\"Media File\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"false\",\"url_input\":\"\",\"lang_form\":{\"en\":\"CTM-Customer media files\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"BO_003005\",\"ruleStrong\":[],\"app\":\"ncbsCbs\"}",
+        "list_layout": "[{\"name\":\"Program Layout\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"program_layout\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"Program View\",\"code\":\"code\",\"codeHidden\":\"program_view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"lang\":{},\"default\":{\"name\":\"Search\",\"code\":\"Search\",\"codeHidden\":\"SQL_SEARCH_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Advanced Search\",\"code\":\"advanced_search\",\"codeHidden\":\"SQL_ADSEARCH_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"View\",\"code\":\"View\",\"codeHidden\":\"SQL_VIEW_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Modify\",\"code\":\"Modify\",\"codeHidden\":\"SQL_UPDATE_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Save\",\"code\":\"Save\",\"codeHidden\":\"0030050005\"}},{\"lang\":{},\"default\":{\"name\":\"Import\",\"code\":\"Import\",\"codeHidden\":\"SQL_INSERT_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Approve\",\"code\":\"Approve\",\"codeHidden\":\"SQL_APPROVE_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Delete\",\"code\":\"Delete\",\"codeHidden\":\"SQL_DELETE_MEDIA\"}},{\"lang\":{},\"default\":{\"name\":\"Get Information\",\"code\":\"get_information\",\"codeHidden\":\"SQL_GETINFO2_MEDIA\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "BO_003005",
+        "app": "ncbsCbs",
+        "id": 4328
+      }
+    ]
+  }
+]

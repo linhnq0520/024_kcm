@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3696874Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"data webui\",\n        \"function\": \"system.data\",\n        \"type\": \"java\",\n        \"status\": \"A\"\n    },\n    {\n        \"name\": \"Yêu cầu component của Form cập nhật dữ liệu\",\n        \"function\": \"formAPI.reloadDataParent\",\n        \"type\": \"java\",\n        \"status\": \"A\"\n    },\n    {\n        \"name\": \"Yêu cầu component của Form cập nhật dữ liệu\",\n        \"function\": \"formAPI.dataToFormParent\",\n        \"type\": \"java\",\n        \"status\": \"A\"\n    },\n    {\n        \"name\": \"tắt loading form\",\n        \"function\": \"form.offLoad\",\n        \"type\": \"java\",\n        \"status\": \"A\"\n    }\n]",
+        "request": "{}",
+        "status": "A",
+        "txtype": "fo",
+        "txcode": "fo-update-dataParrent",
+        "version": 1,
+        "updateTime": 638216211621579020,
+        "txname": "fo-update-dataParrent",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 311
+      }
+    ]
+  }
+]

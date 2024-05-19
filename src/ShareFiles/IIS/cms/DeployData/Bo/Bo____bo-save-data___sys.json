@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.3912782Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Lưu data\",\"function\":\"txdata.save\",\"type\":\"java\",\"para\":[\"@table_code\"],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionSaveOk\"}},{\"txcode\":\"#sys:fo-form-clear\",\"input\":{}},{\"txcode\":\"#sys:fo-error-setToFormMain\",\"input\":{}},{\"txcode\":\"#sys:fo-support-callBoLoadData\",\"input\":{\"table_code\":\"@table_code\"}}]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionSaveError\"}},{\"txcode\":\"#sys:fo-error-setToFormMain\",\"input\":{}}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-save-data",
+        "version": 1,
+        "updateTime": 638042796880638563,
+        "txname": "Lưu data webui (không xóa)",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 34
+      }
+    ]
+  }
+]

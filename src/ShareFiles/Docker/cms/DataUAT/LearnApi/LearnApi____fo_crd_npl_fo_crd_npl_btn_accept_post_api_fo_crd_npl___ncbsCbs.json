@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.066609Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_npl_fo_crd_npl_btn_accept_post_api_fo_crd_npl",
+        "learn_api_name": "FO_CRD_NPL Accept FO_CRD_NPL",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_NPL",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"CRD_NPL\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"credit_account\": \"MapS.dataS(FO_CRD_NPL.credit_account)\",\n        \"current_group\": \"MapS.dataS(FO_CRD_NPL.current_group)\",\n        \"new_group\": \"MapS.dataS(FO_CRD_NPL.new_group)\",\n        \"principal_amount\": \"MapS.dataN(FO_CRD_NPL.principal_amount)\",\n        \"payable_interest_amount\": \"MapS.dataN(FO_CRD_NPL.payable_interest_amount)\",\n         \"penalty_principal\": \"MapS.dataN(FO_CRD_NPL.penalty_principal)\",\n          \"penalty_interest\": \"MapS.dataN(FO_CRD_NPL.penalty_interest)\",\n           \"secure_amount\": \"MapS.dataN(FO_CRD_NPL.secure_amount)\",\n            \"shortfall_amount\": \"MapS.dataN(FO_CRD_NPL.shortfall_amount)\",\n        \"current_provision_amount_of_principal\": \"MapS.dataN(FO_CRD_NPL.current_provision_amount_of_principal)\",\n        \"new_provision_amount_of_principal\": \"MapS.dataN(FO_CRD_NPL.new_provision_amount_of_principal)\",\n        \"current_provision_amount_of_interest\": \"MapS.dataN(FO_CRD_NPL.current_provision_amount_of_interest)\",\n        \"new_provision_amount_of_interest\": \"MapS.dataN(FO_CRD_NPL.new_provision_amount_of_interest)\",\n        \"credit_account_currency\": \"MapS.dataS(FO_CRD_NPL.credit_account_currency)\",\n        \"on_balance_sheet_int_amount\": \"MapS.dataN(FO_CRD_NPL.on_balance_sheet_int_amount)\",\n        \"description\": \"MapS.dataS(FO_CRD_NPL.description)\",\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 539
+      }
+    ]
+  }
+]

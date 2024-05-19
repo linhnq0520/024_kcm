@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4972778Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\r\n    {\r\n      \"name\": \"autoFeeCalFee\",\r\n      \"function\": \"own_O9_fee.autoFeeCalFee\",\r\n      \"type\": \"javascript\",\r\n      \"status\": \"A\",\r\n      \"para\": [],\r\n      \"request\": {\r\n        \"true\": { \"bo\": [{ \"txcode\": \"bo-autoFee-CallFee\", \"input\": {} }] }\r\n      }\r\n    }\r\n  ]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-autoFee-CalFee",
+        "version": 1,
+        "updateTime": 638042796881315483,
+        "txname": "fo-autoFee-CalFee",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 303
+      }
+    ]
+  }
+]

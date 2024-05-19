@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.0306494Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_mtg_opn_fo_mtg_opn_btn_accept_post_api_fo_mtg_opn",
+        "learn_api_name": "FO_MTG_OPN Accept FO_MTG_OPN",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_MTG_OPN",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"MTG_OPN\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"account_number\": \"MapS.dataS(FO_MTG_OPN.account_number)\",\n        \"account_name\": \"MapS.dataS(FO_MTG_OPN.account_name)\",\n        \"customer_type\": \"MapS.dataS(FO_MTG_OPN.customer_type)\",\n        \"customer_code\": \"MapS.dataS(FO_MTG_OPN.customer_code)\",\n        \"catalog_name\": \"MapS.dataS(FO_MTG_OPN.catalog_name)\",\n        \"catalog_code\": \"MapS.dataS(FO_MTG_OPN.catalog_code)\",\n        \"collateral_asset_type\": \"MapS.dataS(FO_MTG_OPN.collateral_asset_type)\",\n        \"collateral_asset_class\": \"MapS.dataS(FO_MTG_OPN.collateral_asset_class)\",\n        \"security_paper_type\": \"MapS.dataS(FO_MTG_OPN.security_paper_type)\",\n        \"currency_code\": \"MapS.dataS(FO_MTG_OPN.currency_code)\",\n        \"collateral_rate\": \"MapS.dataN(FO_MTG_OPN.collateral_rate)\",\n        \"risk_allocation_rate\": \"MapS.dataN(FO_MTG_OPN.risk_allocation_rate)\",\n        \"collateral_asset_value\": \"MapS.dataN(FO_MTG_OPN.collateral_asset_value)\",\n        \"market_value\": \"MapS.dataN(FO_MTG_OPN.market_value)\",\n        \"book_value\": \"MapS.dataN(FO_MTG_OPN.book_value)\",\n        \"cc_contract\": \"MapS.dataS(FO_MTG_OPN.cc_contract)\",\n        \"cc_amount\": \"MapS.dataN(FO_MTG_OPN.cc_amount)\",\n        \"seq_number\": \"MapS.dataNNull(FO_MTG_OPN.seq_number)\",\n        \"reference_number\": \"MapS.dataSNull(FO_MTG_OPN.reference_number)\",\n        \"other_address\": \"MapS.dataJsonObject(FO_MTG_OPN.other_address)\",\n        \"location\": \"MapS.dataS(FO_MTG_OPN.location)\",\n        \"legal_address\": \"MapS.dataS(FO_MTG_OPN.legal_address)\",\n        \"legal_local_address\": \"MapS.dataS(FO_MTG_OPN.legal_local_address)\",\n        \"expiry_date\": \"MapS.dataS(FO_MTG_OPN.expiry_date)\",\n        \"policy_amount\": \"MapS.dataN(FO_MTG_OPN.policy_amount)\",\n        \"company_issues_policy\": \"MapS.dataS(FO_MTG_OPN.company_issues_policy)\",\n        \"policy_number\": \"MapS.dataS(FO_MTG_OPN.policy_number)\",\n        \"evaluate_by\": \"MapS.dataSNull(FO_MTG_OPN.evaluate_by)\",\n        \"evaluate_method\": \"MapS.dataS(FO_MTG_OPN.evaluate_method)\",\n        \"evaluate_date\": \"MapS.dataS(FO_MTG_OPN.evaluate_date)\",\n        \"new_evaluate_date\": \"MapS.dataS(FO_MTG_OPN.new_evaluate_date)\",\n        \"insurance\": \"MapS.dataS(FO_MTG_OPN.insurance)\",\n        \"description\": \"MapS.dataS(FO_MTG_OPN.description)\",\n        \"book_currency_code\": \"MapS.dataS(FO_MTG_OPN.book_currency_code)\",\n        \"value_date\": \"MapS.dataS(FO_MTG_OPN.value_date)\",\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 491
+      }
+    ]
+  }
+]

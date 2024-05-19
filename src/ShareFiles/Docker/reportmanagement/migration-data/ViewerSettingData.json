@@ -1,0 +1,234 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-04-24T02:06:54.091134Z",
+    "host": "192.168.1.171:8067",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "report"
+      },
+      {
+        "name": "entity",
+        "value": "ViewerSetting"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code_template": null,
+        "organization_id": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "CodeTemplate": "CTM_LIST",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": true,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 10,
+        "RequestTimeout": 1000,
+        "CacheMode": "None",
+        "OrganizationId": null,
+        "id": 1
+      },
+      {
+        "CodeTemplate": "DPT_LIST",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": true,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 10,
+        "RequestTimeout": 1000,
+        "CacheMode": "None",
+        "OrganizationId": null,
+        "id": 2
+      },
+      {
+        "CodeTemplate": "MTG_LIST",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": true,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 10,
+        "RequestTimeout": 1000,
+        "CacheMode": "None",
+        "OrganizationId": null,
+        "id": 3
+      },
+      {
+        "CodeTemplate": "CRD_LIST",
+        "ShowPrintButton": true,
+        "ShowOpenButton": true,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": true,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 10,
+        "RequestTimeout": 1000,
+        "CacheMode": "None",
+        "OrganizationId": "",
+        "id": 4
+      },
+      {
+        "CodeTemplate": "A11",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "None",
+        "OrganizationId": "",
+        "id": 5
+      },
+      {
+        "CodeTemplate": "A1",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "None",
+        "OrganizationId": "",
+        "id": 6
+      },
+      {
+        "CodeTemplate": "A2",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 7
+      },
+      {
+        "CodeTemplate": "A3",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 8
+      },
+      {
+        "CodeTemplate": "A7",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 9
+      },
+      {
+        "CodeTemplate": "A17",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 10
+      },
+      {
+        "CodeTemplate": "A18",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 11
+      },
+      {
+        "CodeTemplate": "A203",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 12
+      },
+      {
+        "CodeTemplate": "A204",
+        "ShowPrintButton": true,
+        "ShowOpenButton": false,
+        "ShowSaveButton": false,
+        "ShowSendEmailButton": false,
+        "ShowDesignButton": false,
+        "ShowResourcesButton": false,
+        "UseCompression": false,
+        "CacheTimeout": 60,
+        "RequestTimeout": 6000,
+        "CacheMode": "",
+        "OrganizationId": "",
+        "id": 13
+      }
+    ]
+  }
+]

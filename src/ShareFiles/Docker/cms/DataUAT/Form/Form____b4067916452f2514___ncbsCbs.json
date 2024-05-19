@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:44.767008Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"\",\"des\":\"\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"b4067916452f2514\",\"ruleStrong\":[{\"code\":\"setDataGB\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"province\",\"component_result\":\"district\",\"data_type\":\"query\",\"query\":\"CTM;DISTRICT\",\"filter_condition\":\"{\\n    \\\"c_cdlist.cdid\\\": \\\"^@{province}\\\\\\\\w{2,2}$\\\"\\n}\"},\"inUse\":true,\"order\":1,\"isStart\":true},{\"code\":\"setDataGB\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"district\",\"component_result\":\"commune\",\"data_type\":\"query\",\"query\":\"CTM;COMMUNE\",\"filter_condition\":\"{\\n    \\\"c_cdlist.cdid\\\": \\\"^@{district}\\\\\\\\w{2,2}$\\\"\\n}\"},\"inUse\":true,\"order\":2},{\"code\":\"setDataGB\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"commune\",\"component_result\":\"village\",\"data_type\":\"query\",\"query\":\"CTM;VILLAGE\",\"filter_condition\":\"{\\n    \\\"c_cdlist.cdid\\\": \\\"^@{commune}\\\\\\\\w{2,2}$\\\"\\n}\"},\"inUse\":true,\"order\":3}],\"app\":\"\"}",
+        "list_layout": "[]",
+        "react_txt": "",
+        "form_id": "b4067916452f2514",
+        "app": "ncbsCbs",
+        "id": 160
+      }
+    ]
+  }
+]

@@ -1,0 +1,196 @@
+## Pull image
+### Create docker account and login
+`docker login`
+### Create [container-registry](container-registry.oracle.com) account and login
+`docker login container-registry.oracle.com`
+
+`docker pull container-registry.oracle.com/database/enterprise:latest`
+### Docker command
+Access volume:
+
+`docker exec -it neptunedb_oracle bash/sh`
+
+Exec query:
+
+`docker exec -it neptunedb_oracle sqlplus sys/Admin1234@ORCLCDB as sysdba`
+
+## 1. Modify settings.json (src/ShareFiles/{service-name}/settings.json)
+Example:
+```json
+"ConnectionStrings": {
+      "ConnectionString": "user id=o9admin;password=o9admin;data source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=neptunedb_oracle)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCLCDB)))",
+      "DataProvider": "oracle",
+      "SQLCommandTimeout": null
+    }
+```
+## 2. Deploy Portainer, Phpmyadmin, NeptuneServer and Services.
+At Directory `src/ShareFiles` run:
+```
+docker compose -f ./docker-compose.oracle.yml up -d --build portainer
+docker compose -f ./docker-compose.oracle.yml up -d --build neptunedb_sqlserver
+```
+## 3. Create User and DB
+```sql
+-- CREATE TEMPORARY TABLESPACE temp01 TEMPFILE 'ts_temp01.dbf' SIZE 10M AUTOEXTEND ON NEXT 5M MAXSIZE UNLIMITED TABLESPACE GROUP temp_ts_group EXTENT MANAGEMENT LOCAL UNIFORM SIZE 1M;
+
+-- ALTER DATABASE DEFAULT TEMPORARY TABLESPACE TEMP_TS_GROUP;
+
+-- CREATE BIGFILE TABLESPACE NEPTUNE_TS_DATA DATAFILE   '\flm\NEPTUNE_TS_DATA.DBF' SIZE 10M AUTOEXTEND ON NEXT 5M MAXSIZE 100000M  LOGGING ONLINE PERMANENT  EXTENT MANAGEMENT LOCAL AUTOALLOCATE  BLOCKSIZE 8K  SEGMENT SPACE MANAGEMENT AUTO  FLASHBACK ON;
+
+ALTER SESSION SET "_ORACLE_SCRIPT"=true;
+
+CREATE USER neptune IDENTIFIED BY "neptune";
+GRANT connect, create session, dba, sysdba, resource to neptune;
+
+CREATE USER o9accounting IDENTIFIED by "o9accounting";
+GRANT connect, create session, dba, sysdba, resource to o9accounting;
+
+CREATE USER o9admin IDENTIFIED by "o9admin";
+GRANT connect, create session, dba, sysdba, resource to o9admin;
+
+CREATE USER o9batch IDENTIFIED by "o9batch";
+GRANT connect, create session, dba, sysdba, resource to o9batch;
+
+CREATE USER o9cash IDENTIFIED by "o9cash";
+GRANT connect, create session, dba, sysdba, resource to o9cash;
+
+CREATE USER o9credit IDENTIFIED by "o9credit";
+GRANT connect, create session, dba, sysdba, resource to o9credit;
+
+CREATE USER o9customer IDENTIFIED by "o9customer";
+GRANT connect, create session, dba, sysdba, resource to o9customer;
+
+CREATE USER o9deposit IDENTIFIED by "o9deposit";
+GRANT connect, create session, dba, sysdba, resource to o9deposit;
+
+CREATE USER o9fx IDENTIFIED by "o9fx";
+GRANT connect, create session, dba, sysdba, resource to o9fx;
+
+CREATE USER o9fixedasset IDENTIFIED by "o9fixedasset";
+GRANT connect, create session, dba, sysdba, resource to o9fixedasset;
+
+CREATE USER o9ifc IDENTIFIED by "o9ifc";
+GRANT connect, create session, dba, sysdba, resource to o9ifc;
+
+CREATE USER o9mortgage IDENTIFIED by "o9mortgage";
+GRANT connect, create session, dba, sysdba, resource to o9mortgage;
+
+CREATE USER o9payment IDENTIFIED by "o9payment";
+GRANT connect, create session, dba, sysdba, resource to o9payment;
+
+CREATE USER o9voucher IDENTIFIED by "o9voucher";
+GRANT connect, create session, dba, sysdba, resource to o9voucher;
+
+CREATE USER o9report IDENTIFIED by "o9report";
+GRANT connect, create session, dba, sysdba, resource to o9report;
+
+CREATE USER o9cms IDENTIFIED by "o9cms";
+GRANT connect, create session, dba, sysdba, resource to o9cms;
+
+```
+## 4. Create structure database `neptune`
+```sql
+
+
+```
+## 5. Deploy NeptuneServer and Services
+```
+docker compose up -d --build neptuneserver
+docker compose up -d --build admin.api
+...
+```
+## 7. Insert data `neptune`
+```sql
+DELETE FROM  "NEPTUNE"."SERVICE_DEF" WHERE SERVICE_CODE IN ('ADM', 'ACT', 'CSH', 'CRD', 'CTM', 'DPT', 'IFC', 'FX', 'FAC', 'PMT', 'MTG', 'BCH', 'CMS', 'SPL', 'VCH');
+
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('ACT', 'ACT', 'Accounting service', 'Active', 'queue-act', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('ADM', 'ADM', 'Admin service', 'Active', 'queue-adm', '0', '', '0', '60', 'Always', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('CSH', 'CSH', 'Cash service', 'Active', 'queue-csh', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('CRD', 'CRD', 'Credit service', 'Active', 'queue-crd', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('CTM', 'CTM', 'Customer service', 'Active', 'queue-ctm', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('DPT', 'DPT', 'Deposit service', 'Active', 'queue-dpt', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('FAC', 'FAC', 'Fixed Asset service', 'Active', 'queue-fac', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('FX', 'FX', 'Foreign Exchange service', 'Active', 'queue-fx', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('IFC', 'IFC', 'IFC service', 'Active', 'queue-ifc', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('MTG', 'MTG', 'Mortgage service', 'Active', 'queue-mtg', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('PMT', 'PMT', 'Payment service', 'Active', 'queue-pmt', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('BCH', 'BCH', 'Batch service', 'Active', 'queue-bch', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('CMS', 'CMS', 'CMS service', 'Active', 'queue-cms', '0', '', '0', '60', 'Always', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('VCH', 'VCH', 'Voucher service', 'Active', 'queue-vch', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+INSERT INTO  "NEPTUNE"."SERVICE_DEF" ("SERVICE_ID", "SERVICE_CODE", "SERVICE_NAME", "STATUS", "QUEUE_NAME", "ACCEPT_TIME", "GRPC_URL", "GRPC_STATUS", "GRPC_TIMEOUT", "EVENT_REGISTRATION", "IMPORT_EXPORT_STEP_CODE", "CONCURRENT_THREADS", "SERVICE_INSTANCE_TYPE") VALUES ('SPL', 'SPL', 'Sample service', 'Active', 'queue-spl', '0', '', '0', '60', 'Mine', 'Yes', 8, 'Stateless');
+
+TRUNCATE TABLE "NEPTUNE"."CONFIGURATION";
+INSERT ALL
+INTO  "NEPTUNE"."CONFIGURATION" ("PARA_CODE", "PARA_VALUE") VALUES ('JWT_AUDIENCE', 'Neptune')
+INTO  "NEPTUNE"."CONFIGURATION" ("PARA_CODE", "PARA_VALUE") VALUES ('JWT_ISSUER', 'Just-In-Time Solutions JSC')
+INTO  "NEPTUNE"."CONFIGURATION" ("PARA_CODE", "PARA_VALUE") VALUES ('JWT_KEY', '690CDD9D-1429-4191-BF27-4E277A61A765')
+INTO  "NEPTUNE"."CONFIGURATION" ("PARA_CODE", "PARA_VALUE") VALUES ('LICENCE', '9+0qwEgXA7o4rJH/0YHIWD3utpQG+9TeWcfj940Q28Ok+yjXcJCOrsFBQ8a8bLoQFJoZKNXaRCDnuPrnNeGvfAjeWC0vjnoZFzP0iWzlSzYpPiTqf/60PxuHqJ5ISz33AcWtCbnwPwQocQ3rTJmzexiegbRiEVdx5HeTdsrhMFK9EhMtmAgc2fhnZHpq1/ZYGjL8Y6IVTnhgdMXraFLwQBWlIovVobbyfGR3TAMUddc2sLJOWljn4iz6xlN/9bipyR20K2rkJyM6RhHnuROWnG5X5VgJ55DJAXD3SdjPDFNKY/+UPPlRW+ZxrbwJxwsZzxWOqWcZkU4ccuVuSqfbtdKf2lq7aLrjeZac7MJ/FJQ=')
+INTO  "NEPTUNE"."CONFIGURATION" ("PARA_CODE", "PARA_VALUE") VALUES ('WORKING_ENVIRONMENT', 'E1')
+SELECT 1 FROM DUAL;
+TRUNCATE TABLE "NEPTUNE"."ENVIRONMENT_VARIABLE";
+INSERT ALL
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DATA_LIMIT_RECORD_IN_SEARCHING', '100', '2000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_BACKWARDS_IN_SECONDS', '604800', '604800', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_COMMAND_TIMEOUT_SECONDS', '600', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_INTERVAL_IN_SECONDS', '86400', '86400', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_MAX_WORKFLOWS_PER_PROCESSING', '100', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_NAME', '"NEPTUNE"_archive', '"NEPTUNE"_archive', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_PASSWORD', 'bmVwdHVuZV9hcmNoaXZl', 'bmVwdHVuZV9hcmNoaXZl', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_RDBMS_TYPE', 'MySQL', 'MySQL', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_SCHEMA', '"NEPTUNE"_archive', '"NEPTUNE"_archive', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_SERVER_NAME', '"NEPTUNE"db_mysql', '"NEPTUNE"db_mysql', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_SERVER_PORT', '3306', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_START_UTC_TIME_IN_HHMMSS', '010000', '010000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_ARCHIVE_USERNAME', '"NEPTUNE"_archive', '"NEPTUNE"_archive', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_APILOG_BACKWARDS_IN_SECONDS', '3600', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_APILOG_INTERVAL_IN_SECONDS', '60', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_BACKWARDS_IN_SECONDS', '15552000', '15552000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_GRPCLOG_BACKWARDS_IN_SECONDS', '3600', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_GRPCLOG_INTERVAL_IN_SECONDS', '60', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_INSTANCE_INTERVAL_IN_SECONDS', '60', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_INTERVAL_IN_SECONDS', '86400', '86400', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_JWT_INTERVAL_IN_SECONDS', '600', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_MAX_WORKFLOWS_PER_PROCESSING', '1000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('DB_PURGE_START_UTC_TIME_IN_HHMMSS', '020000', '020000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('GRPC_ACTIVE', 'Y', 'Y', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('GRPC_TIMEOUT_IN_SECONDS', '60', '60', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_HOSTNAME', 'rabbitmq', 'rabbitmq', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_PASSWORD', 'guest', 'guest', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_PORT', '5672', '5672', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_SSL_ACTIVE', 'N', 'N', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_SSL_CERT_PASS_PHARSE', '123456', '123456', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_SSL_CERT_PATH', '/etc/rabbitmq/client.pfx', '/etc/rabbitmq/client.pfx', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_SSL_CERT_SERVERNAME', '"NEPTUNE"server', '"NEPTUNE"server', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_SUB_QUEUE_NAME', 'orchestration', 'orchestration', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_TIMETOLIVE_EVENT', '60000', '60000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_TIMETOLIVE_TEXT', '0', '0', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_TIMETOLIVE_WORKFLOW', '0', '0', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_USERNAME', 'guest', 'guest', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('MESSAGE_BROKER_VIRTUALHOST', '/', '/', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('NEPTUNE_CONSOLE_LOGGER_ENABLED', 'Y', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('NEPTUNE_PING_INTERVAL_IN_SECONDS', '86400', '86400', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_ALLOW_USE_HISTORY', 'Y', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_MAXIMUM_AGE_IN_DAY', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_MAXIMUM_LENGTH', '50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_MEET_COMPLEXITY', 'N', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_MINIMUM_AGE_IN_DAY', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_MINIMUM_LENGTH', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('PASSWORD_POLICY_NUMBER_LOGIN_FAILURE_TO_BLOCK', '5', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('SERVICE_EXPIRATION_GRANT_IN_SECONDS', '120', '120', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('SERVICE_PING_INTERVAL_IN_SECONDS', '60', '60', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_APPLY_ROLE_AUTHORIZATION', 'N', 'N', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_CONCURRENT_RECEIVING_THREADS', '32', '32', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_CONCURRENT_RUNNING_THREADS', '32', '32', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_CONCURRENT_SENDING_THREADS', '32', '32', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_DEFAULT_TX_TIMEOUT_IN_MILISECOND', '60000', '60000', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9") VALUES ('WORKFLOW_MAX_NUMBER_MESSAGE_IN_QUEUE', '500', '500', '', '', '', '', '', '', '')
+INTO "NEPTUNE"."ENVIRONMENT_VARIABLE" ("VARIABLE_NAME", "E1", "E2") VALUES ('MESSAGE_BROKER_RECONNECT_INTERVAL_IN_SECONDS', '60', '60'),
+SELECT 1 FROM DUAL;
+TRUNCATE TABLE "NEPTUNE"."INSTANCE";
+INSERT ALL
+INTO "NEPTUNE"."INSTANCE" ("INSTANCE_ID", "GRPC_URL", "UTC_TIME", "UTC_EXP_TIME", "SERVICE_ID", "EVENT_QUEUE_NAME", "COMMAND_QUEUE_NAME") VALUES ('172.21.0.15:a7ef9e42-19ae-4a81-b8b0-d5986334ab81', 'https://cms.api:5000', 1665997243147, 1666085143190, 'CMS', 'stateful-service-event-queue:queue-cms:172.21.0.15:a7ef9e42-19ae-4a81-b8b0-d5986334ab81', 'service-command-queue:queue-cms:*')
+INTO "NEPTUNE"."INSTANCE" ("INSTANCE_ID", "GRPC_URL", "UTC_TIME", "UTC_EXP_TIME", "SERVICE_ID", "EVENT_QUEUE_NAME", "COMMAND_QUEUE_NAME") VALUES ('172.21.0.2:bce005a45aee4289b052fe326fe12c5e', 'https://"NEPTUNE"server:109/', 1665994686746, 1665994859546, NULL, NULL, NULL)
+INTO "NEPTUNE"."INSTANCE" ("INSTANCE_ID", "GRPC_URL", "UTC_TIME", "UTC_EXP_TIME", "SERVICE_ID", "EVENT_QUEUE_NAME", "COMMAND_QUEUE_NAME") VALUES ('172.21.0.7:f3e546ce-f5cc-4df0-baa5-8fd4781df9e9', 'https://cms.api:5000', 1665997242642, 1666085142762, 'CMS', 'stateful-service-event-queue:queue-cms:172.21.0.7:f3e546ce-f5cc-4df0-baa5-8fd4781df9e9', 'service-command-queue:queue-cms:*')
+INTO "NEPTUNE"."INSTANCE" ("INSTANCE_ID", "GRPC_URL", "UTC_TIME", "UTC_EXP_TIME", "SERVICE_ID", "EVENT_QUEUE_NAME", "COMMAND_QUEUE_NAME") VALUES ('172.21.0.8:53a45bc2-3edd-4f2c-8ee2-dd8e46cd0d9c', 'https://cms.api:5000', 1665997243145, 1666085143221, 'CMS', 'stateful-service-event-queue:queue-cms:172.21.0.8:53a45bc2-3edd-4f2c-8ee2-dd8e46cd0d9c', 'service-command-queue:queue-cms:*')
+SELECT 1 FROM DUAL;
+```

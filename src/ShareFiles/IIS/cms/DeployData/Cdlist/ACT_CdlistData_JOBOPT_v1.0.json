@@ -1,0 +1,119 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-25T08:52:37.6764408Z",
+    "host": "192.168.1.230:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.230"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": null,
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "F",
+        "caption": "CONVERSION TO BCY & EQBALANCE CALC",
+        "cdval": "5",
+        "cdidx": 5,
+        "ftag": null,
+        "visible": 0,
+        "mcaption": "{\"English\":\"CONVERSION TO BCY & EQBALANCE CALC\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 3535
+      },
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "E",
+        "caption": "EQBALANCE CALC ",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 0,
+        "mcaption": "{\"English\":\"EQBALANCE CALC\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 3536
+      },
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "N",
+        "caption": "None",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"None\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 3537
+      },
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "C",
+        "caption": "CONVERSION TO BCY",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 0,
+        "mcaption": "{\"English\":\"CONVERSION TO BCY\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 3538
+      },
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "T",
+        "caption": "Transfering - Closing",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 0,
+        "mcaption": "{\"English\":\"Transfering - Closing\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 3539
+      },
+      {
+        "cdgrp": "ACT",
+        "cdname": "JOBOPT",
+        "cdid": "R",
+        "caption": "Unrealize Gain/Loss revaluation",
+        "cdval": "6",
+        "cdidx": 6,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Unrealize Gain/Loss revaluation\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25302
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.0603345Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Ctm_customer_profile_reference_code\",\"des\":\"Ctm_customer_profile_reference_code\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"false\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Ctm_customer_profile_reference_code\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"ctm_customer_profile_reference_code\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"ba9be4a35b134585\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"a43921d629c9aa85\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"structable\":\"muti.B\",\"structable_read\":\"muti.B\",\"data_default\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\"},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCheckbox\",\"default\":{\"name\":\"Bic\",\"code\":\"bic\",\"codeHidden\":\"470847c5cc4a8e36\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"structable\":\"muti.C\",\"structable_read\":\"muti.C\",\"data_default\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\"},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCheckbox\",\"default\":{\"name\":\"Domestic Bank Code\",\"code\":\"domestic_bank_code\",\"codeHidden\":\"ce93c004f9acd8f7\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"structable\":\"muti.I\",\"structable_read\":\"muti.I\",\"data_default\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\"},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCheckbox\",\"default\":{\"name\":\"Internal Code\",\"code\":\"internal_code\",\"codeHidden\":\"f84803a59406bdaf\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "ctm_customer_profile_reference_code",
+        "app": "ncbsCbs",
+        "id": 513
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.2376109Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Form Demo\",\"des\":\"Chỉ DùNg Thử\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Form Demo\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"21e78981019438d6\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Nhập liệu\",\"des\":\"Ghi chú\",\"class\":\"\",\"inputtype\":\"cLayout\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"VN\",\"code\":\"code\",\"codeHidden\":\"9731d423a50f1eef\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"name.vn\",\"structable_read\":\"name.vn\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}],\"codeHidden\":\"22450d0e0253530a\"},{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"codeHidden\":\"66caf6d62ba74782\",\"list_input\":[{\"default\":{\"name\":\"EN\",\"code\":\"code\",\"codeHidden\":\"ea4e5a3cbbbd27c2\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"name.en\",\"structable_read\":\"name.en\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}]}],\"codeHidden\":\"7df3aa16bd4b0901\"}]",
+        "react_txt": "",
+        "form_id": "21e78981019438d6",
+        "app": "ncbsCbs",
+        "id": 612
+      }
+    ]
+  }
+]

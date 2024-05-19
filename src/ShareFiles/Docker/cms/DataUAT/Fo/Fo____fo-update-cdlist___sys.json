@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.0884296Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xóa thông báo lỗi\",\"function\":\"form.clearError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Thu thập và sửa\",\"function\":\"form.update\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@list_component\",\"@list_view\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-update-cdlist\",\"input\":{\"table_code\":\"@table_code\",\"learn_api\":\"@learn_api\"}},{\"txcode\":\"#sys:bo-load-data\",\"input\":{\"table_code\":\"@table_code\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-update-cdlist",
+        "version": 1,
+        "updateTime": 638042796881318684,
+        "txname": "fo-update-cdlist",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 16
+      }
+    ]
+  }
+]

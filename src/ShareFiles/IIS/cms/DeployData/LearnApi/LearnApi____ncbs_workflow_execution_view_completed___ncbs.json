@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.4507371Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_workflow_execution_view_completed",
+        "learn_api_name": "ncbs_workflow_execution_view_completed ncbs_workflow_execution_view_completed-View",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/get-execution-info/@{ncbs_workflow_execution_search_completed.execution_id}",
+        "learn_api_data": "ncbs_workflow_execution",
+        "learn_api_node_data": "execution",
+        "learn_api_app": "BO",
+        "learn_api_method": "GET",
+        "flow_api": "ncbs_monitoring",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 918
+      }
+    ]
+  }
+]

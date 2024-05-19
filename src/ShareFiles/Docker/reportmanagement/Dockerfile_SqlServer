@@ -1,0 +1,33 @@
+FROM aspnet7 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+EXPOSE 5000
+
+FROM base AS final
+
+# add globalization support
+RUN apk add --no-cache icu-libs
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+
+COPY ["reportmanagement/publish", "."]
+COPY neptuneserver/NT.pfx /app/NT.pfx
+#COPY neptuneserver/star_jits_com_vn_cert.pfx /app/star_jits_com_vn_cert.pfx
+
+COPY Jits.Neptune.Web.Framework.xml /app/Jits.Neptune.Web.Framework.xml
+COPY reportmanagement/entrypoint.sh /entrypoint.sh
+COPY reportmanagement/migration-data/ /app/
+COPY reportmanagement/ReportTemplates /app/ReportTemplates/
+
+RUN chmod 755 /entrypoint.sh
+
+WORKDIR /app
+RUN mkdir bin
+WORKDIR /app
+
+#RUN mkdir App_Data
+#COPY reportmanagement/settings_SqlServer.json /app/App_Data/appsettings.json
+
+# COPY reportmanagement/SimpleList.mrt /app/App_Data/SimpleList.mrt
+
+ENTRYPOINT "/entrypoint.sh"

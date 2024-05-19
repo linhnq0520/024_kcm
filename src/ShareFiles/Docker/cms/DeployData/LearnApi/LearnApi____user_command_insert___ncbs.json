@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.6114862Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "user_command_insert",
+        "learn_api_name": "user_command_insert",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "user_command",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"ADM_INSERT_USER_COMMAND\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"application_code\": \"MapS.dataS(user_command.application_code)\",\r\n\t\t\"command_id\": \"MapS.dataS(user_command.command_id)\",\r\n\t\t\"parent_id\": \"MapS.dataS(user_command.parent_id)\",\r\n\t\t\"command_name\": \"MapS.dataS(user_command.command_name)\",\r\n\t\t\"command_name_language\": \"MapS.ToSerialize(user_command.command_name_language)\",\r\n\t\t\"command_type\": \"MapS.dataS(user_command.command_type)\",\r\n\t\t\"enabled\": \"MapS.DataBoolean(user_command.enabled)\",\r\n\t\t\"display_order\": \"MapS.dataI(user_command.display_order)\",\r\n\t\t\"group_menu_icon\": \"MapS.dataS(user_command.group_menu_icon)\",\r\n\t\t\"group_menu_visible\": \"MapS.dataS(user_command.group_menu_visible)\",\r\n\t\t\"group_menu_id\": \"MapS.dataS(user_command.group_menu_id)\",\r\n\t\t\"group_menu_list_authorize_form\": \"MapS.dataS(user_command.group_menu_list_authorize_form)\"\r\n\t}\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 1258
+      }
+    ]
+  }
+]

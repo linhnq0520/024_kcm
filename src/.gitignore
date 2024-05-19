@@ -1,0 +1,95 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.sln
+
+# Build results
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+# Publish results
+**/publish
+!**/neptuneserver/publish
+
+# Build scripts folder
+[Aa]pp[Bb]uild/
+[Oo]ut/
+
+# Visual Studio Code files
+.vscode/
+
+# Visual Studio Studio files
+**/Properties/launchSettings.json
+**/Properties/PublishProfiles/*.pubxml
+
+# Sonarqube
+.sonarqube/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+
+# Others
+*.Cache
+**/Jits.Neptune.Web.*/*.pfx
+
+# python 
+__pycache__/
+build/
+# lib/
+*.egg-info/
+dist/
+reports/
+
+#jwebui neptune settings
+
+**/configuration/standalone_xml_history/*
+**/configuration/logging.properties
+**/configuration/jwebui.json
+**/configuration/standalone.xml
+*.properties
+
+#For local testing purpose
+**/*ForLocalTesting*.cs

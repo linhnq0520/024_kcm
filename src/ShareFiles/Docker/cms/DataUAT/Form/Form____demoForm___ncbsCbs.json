@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.0967037Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Demo Form\",\"des\":\"\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Demo Form\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"demoForm\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Layout mới\",\"des\":\"Ghi chú\",\"class\":\"\",\"inputtype\":\"cLayout\",\"codeHidden\":\"4df5fef5b6d2f8f6\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"codeHidden\":\"a3f6999be884d2b3\",\"list_input\":[{\"default\":{\"name\":\"Mẫu component\",\"code\":\"search_input\",\"codeHidden\":\"c70d200c71b1f795\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"is_upperCase\":\"false\",\"action\":\"\",\"structable\":\"table.col\",\"structable_read\":\"table.col\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"isSearch\":true,\"readOnly\":false,\"autoWrap\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"btnSearch\",\"code\":\"search_btn\",\"codeHidden\":\"3dfcb7a1693c816c\",\"class\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"#sys:fo-demo-formSearch\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"code\\\",\\n            \\\"list_view\\\": \\\"code\\\",\\n            \\\"table_code\\\": \\\"group_menu\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\"}]}]}]",
+        "react_txt": "",
+        "form_id": "demoForm",
+        "app": "ncbsCbs",
+        "id": 471
+      }
+    ]
+  }
+]

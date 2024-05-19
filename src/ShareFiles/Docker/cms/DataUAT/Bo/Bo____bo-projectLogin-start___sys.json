@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.7016355Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Danh s?ch ng?n ng? sys\",\"function\":\"tx.getUserProfileDefaultSys\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-sys-loginUserProfileDefaultSys\"}]}}},{\"name\":\"AllApplication\",\"function\":\"tx.getListAll\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-sys-AllApplication\"}]}}},{\"name\":\"Y?u c?u ng?n ng?\",\"function\":\"tx.lang_data\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"_default_\":{\"fo\":[{\"txcode\":\"#sys:fo-load-language\"}]}}},{\"name\":\"Tham s?\",\"function\":\"tx.loadAllParaServer\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"_default_\":{\"fo\":[{\"txcode\":\"#sys:fo-sys-parameterSystem\"}]}}},{\"name\":\"Tham s?\",\"function\":\"txProtected.getOrganization\",\"type\":\"java\",\"para\":[\"@app_code\"],\"status\":\"A\",\"response\":{\"_default_\":{\"fo\":[{\"txcode\":\"#sys:fo-sys-listOrganization\"}]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"#sys:fo-projectLogin-formLogin\"}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-projectLogin-start",
+        "version": 1,
+        "updateTime": 638042796880638978,
+        "txname": "Ch? t?i cho project login v? c?n ?t d? li?u",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 190
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.7894508Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "sync_codelist",
+        "learn_api_name": "sync_codelist",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "sync_codelist",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"ADM_LOOKUP_CODE_LIST\",\r\n    \"lang\": \"en\",\r\n    \"fields\": {\r\n        \"code_id\": \"MapS.dataS(code_id)\",\r\n        \"code_name\": \"MapS.dataS(code_name)\",\r\n        \"caption\": \"MapS.dataS(caption)\",\r\n        \"code_group\": \"MapS.dataS(code_group)\",\r\n        \"code_index\": \"MapS.dataNNull(code_index)\",\r\n        \"code_index_from\": \"MapS.dataNNull(code_index_from)\",\r\n        \"code_index_to\": \"MapS.dataNNull(code_index_to)\",\r\n        \"ftag\": \"MapS.dataS(ftag)\",\r\n        \"page_index\": \"MapS.dataN(page_index)\",\r\n        \"page_size\": \"MapS.dataN(page_size)\"\r\n    }\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1593
+      }
+    ]
+  }
+]

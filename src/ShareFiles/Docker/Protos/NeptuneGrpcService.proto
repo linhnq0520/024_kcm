@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "Jits.Neptune.Web.Framework.Protos";
+
+service NeptuneGrpcService {
+    rpc Invoke(MethodSpec) returns (MethodResult);
+
+    //Server streaming method
+    rpc CommandServerStreaming(CommandRequest) returns (stream CommandResponse);
+
+    //Client streaming method
+    rpc CommanClientStreaming(stream CommandRequest) returns (CommandResponse);
+
+    //Bi-directional streaming method
+    rpc CommandBiDirectionalStreaming(stream CommandRequest) returns (stream CommandResponse);
+}
+
+message MethodSpec {
+    string FullClassName = 1;
+    string MethodName = 2;
+    repeated string parameters = 3;
+}
+
+message MethodResult {
+    string ReturnValue = 1;
+    int64 ExecutionTimeMillis = 2;
+    bool HasException = 3;
+    string ExceptionMessage = 4;
+}
+
+//The request message containing the command's name
+message CommandRequest {
+    string name = 1;
+}
+
+//The response message containing the message
+message CommandResponse {
+    string message = 2;
+}

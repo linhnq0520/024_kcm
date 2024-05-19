@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.8930503Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"10/01/2023 02:11:42 PM\",\"list_show_error\":\"false\",\"app\":\"ncbsReport\",\"title\":\"List of Collateral on Maturity\",\"bodata\":\"\",\"data\":\"\",\"des\":\"List of Collateral on Maturity\",\"flow_layout\":[],\"form_code\":\"nbcsReport_collateral_0002\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"688973e639978cb4\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"da16e0f1588049e0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"\",\"codeHidden\":\"c8be32b0bc7306d4\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"file_report\":\"RPT_COL_0002\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}]}]}]",
+        "react_txt": "",
+        "form_id": "nbcsReport_collateral_0002",
+        "app": "ncbsReport",
+        "id": 1308
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.7664993Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_opal_fo_dpt_opal_btn_accept_post_api_fo_dpt_opal",
+        "learn_api_name": "fo_dpt_opal_fo_dpt_opal_btn_accept_post_api_fo_dpt_opal",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_OPAL",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"DPT_OPAL\",\r\n\t\"lang\": \"MapS.context(lang)\",\r\n\t\"token\": \"MapS.context(Token)\",\r\n\t\"fields\": {\r\n\t\t\"master_account_number\": \"MapS.dataSNull(FO_DPT_OPAL.master_account_number)\",\r\n\t\t\"master_account_name\": \"MapS.dataSNull(FO_DPT_OPAL.master_account_name)\",\r\n\t\t\"master_module_code\": \"MapS.dataSNull(FO_DPT_OPAL.master_module_code)\",\r\n\t\t\"list_account_linkage\": \"MapS.arrayJson(FO_DPT_OPAL.list_account_linkage|{\\\"linkage_account_number\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_account_number)\\\",\\\"linkage_account_name\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_account_name)\\\",\\\"linkage_module_code\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_module_code)\\\",\\\"linkage_description\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_description)\\\",\\\"linkage_type\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_type)\\\",\\\"linkage_class\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_class)\\\",\\\"linkage_module_name\\\":\\\"MapS.dataSNull(list_account_linkage.linkage_module_name)\\\"})\",\r\n\t\t\"fee_data\": \"MapS.arrayJson(FO_DPT_OPAL.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\r\n\t\t\"account_for_fee\": \"MapS.dataS(FO_DPT_OPAL.account_for_fee)\",\r\n\t\t\"fee_collection_method\": \"MapS.dataS(FO_DPT_OPAL.fee_collection_method)\",\r\n\t\t\"branch_code\": \"MapS.dataS(FO_DPT_OPAL.branch_code)\",\r\n\t\t\"amount_for_fee_calculation\": \"MapS.dataN(FO_DPT_OPAL.amount_for_fee_calculation)\",\r\n\t\t\"currency\": \"MapS.dataS(FO_DPT_OPAL.currency)\",\r\n\t\t\"description\": \"MapS.dataS(FO_DPT_OPAL.description)\",\r\n\t\t\"amount\": 1\r\n\t}\r\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1562
+      }
+    ]
+  }
+]

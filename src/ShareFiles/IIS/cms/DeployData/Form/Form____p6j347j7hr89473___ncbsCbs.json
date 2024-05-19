@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:19.7020086Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"QuảN Lý Table1\",\"des\":\"Data Table1 Sql\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"p6m6e4m5dh9e9\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"QuảN Lý Table1\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"p6j347j7hr89473\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Nhập liệu\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"recname\",\"code\":\"code\",\"codeHidden\":\"sp555774hj9C6970\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"cTextInput\",\"config\":{\"action\":\"\",\"structable\":\"table1.recname\",\"structable_read\":\"table1.recname\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"default\":{\"name\":\"recvalue\",\"code\":\"code\",\"codeHidden\":\"sp55577465798Db33\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"jCurrency\",\"config\":{\"action\":\"\",\"structable\":\"table1.recvalue\",\"structable_read\":\"table1.recvalue\",\"data_default\":\"\",\"format\":\"#\",\"decimal_length\":\"0\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"inputtype\":\"jeLearning\",\"default\":{\"name\":\"Đào tạo\",\"code\":\"ef7b0767a837e84a\",\"codeHidden\":\"6880e9931fa9a424\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"data_elearning\":\"55706683c6c73896\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{}},{\"default\":{\"name\":\"Tạo mới\",\"code\":\"sp5549k67x5m4370\",\"codeHidden\":\"sp5557779958535kr\",\"class\":\"\",\"condition\":\"wf[\\\"table1\\\"]===undefined\",\"role\":\"\"},\"inputtype\":\"cButton\",\"config\":{\"action\":\"default_save\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-post-newDataSql\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"code\\\",\\n            \\\"list_view\\\": \\\"code\\\",\\n            \\\"table_code\\\": \\\"table1\\\",\\n            \\\"learn_sql\\\": \\\"p6j5ct6w854691\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"default\":{\"name\":\"Cập nhập\",\"code\":\"sp5549o495974c851\",\"codeHidden\":\"sp555789666z40b37\",\"class\":\"\",\"condition\":\"wf[\\\"table1\\\"][\\\"recid\\\"]!==undefined\",\"role\":\"\"},\"inputtype\":\"cButton\",\"config\":{\"action\":\"default_edit\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-post-updateDataSql\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"code\\\",\\n            \\\"list_view\\\": \\\"code\\\",\\n            \\\"learn_sql\\\": \\\"p6m666A877tl538\\\",\\n            \\\"table_code\\\": \\\"table1\\\",\\n            \\\"pk_col\\\": \\\"recid\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"default\":{\"name\":\"Xóa trắng\",\"code\":\"sp5549p43544970b\",\"codeHidden\":\"p6e3765c685988833\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"cButton\",\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-form-clear\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"base\",\"onTable\":\"\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}}],\"codeHidden\":\"03c74f1bf93fa3cf\"}],\"codeHidden\":\"07525b84c1f51a14\"},{\"name\":\"Danh sách\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"Danh sách\",\"code\":\"table\",\"codeHidden\":\"sp5557p7Cp4ze\",\"class\":\"col-12\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"cTableDefault\",\"config\":{\"structable\":\"\",\"query_data\":\"select * from table1\",\"paging_record\":\"50\",\"columns\":\"[{\\\"code\\\":\\\"table1.recname\\\",\\\"title\\\":\\\"recname\\\",\\\"inputtype\\\":\\\"ColumnString\\\",\\\"config\\\":{}},{\\\"code\\\":\\\"table1.recvalue\\\",\\\"title\\\":\\\"recvalue\\\",\\\"inputtype\\\":\\\"ColumnString\\\",\\\"config\\\":{}}]\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"default\":{\"name\":\"Xem\",\"code\":\"sp5549k7r365C485\",\"codeHidden\":\"sp5557793r55579392\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"cButton\",\"config\":{\"action\":\"default_view\",\"txFoActions\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-post-viewdata\\\",\\n        \\\"input\\\": {\\n            \\\"table_code\\\": \\\"user\\\",\\n            \\\"table_col_key\\\": \\\"\\\"\\n        }\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-post-viewDataSQL\\\",\\n        \\\"input\\\": {\\n            \\\"learn_sql\\\": \\\"p6m66496l65n9r4\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"table\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}},{\"default\":{\"name\":\"Xóa\",\"code\":\"sp5549k86j7u5575\",\"codeHidden\":\"sp5557797875z63B5\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"},\"inputtype\":\"cButton\",\"config\":{\"action\":\"default_delete\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-post-deleteDataSQL\\\",\\n        \\\"input\\\": {\\n            \\\"table_code\\\": \\\"table1\\\",\\n            \\\"pk_col\\\": \\\"recid\\\",\\n            \\\"learn_sql\\\": \\\"p6m66567m75t9z8\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"danger\",\"onTable\":\"table\"},\"configAVD\":{},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{}}],\"codeHidden\":\"f4331befad2818a6\"}],\"codeHidden\":\"08e09f13877450cc\"}]",
+        "react_txt": "",
+        "form_id": "p6j347j7hr89473",
+        "app": "ncbsCbs",
+        "id": 116
+      }
+    ]
+  }
+]

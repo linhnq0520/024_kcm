@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.9221483Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_ocr_fo_dpt_ocr_btn_accept_post_api_fo_dpt_ocr",
+        "learn_api_name": "FO_DPT_OCR Accept FO_DPT_OCR",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_OCR",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_OCR\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"cheque_no\":\"MapS.dataS(FO_DPT_OCR.cheque_no)\",\"issuing_bank\":\"MapS.dataS(FO_DPT_OCR.issuing_bank)\",\"clearing_bank\":\"MapS.dataS(FO_DPT_OCR.clearing_bank)\",\"cheque_currency\":\"MapS.dataS(FO_DPT_OCR.cheque_currency)\",\"cheque_amount\":\"MapS.dataN(FO_DPT_OCR.cheque_amount)\",\"beneficiary_account\":\"MapS.dataS(FO_DPT_OCR.beneficiary_account)\",\"debit_note_account\":\"MapS.dataS(FO_DPT_OCR.debit_note_account)\",\"beneficiary_currency\":\"MapS.dataS(FO_DPT_OCR.beneficiary_currency)\",\"beneficiary_amount\":\"MapS.dataN(FO_DPT_OCR.beneficiary_amount)\",\"clearing_bank_nostro\":\"MapS.dataS(FO_DPT_OCR.clearing_bank_nostro)\",\"drawer_paper_number\":\"MapS.dataS(FO_DPT_OCR.drawer_paper_number)\",\"drawer_name\":\"MapS.dataS(FO_DPT_OCR.drawer_name)\",\"drawer_address\":\"MapS.dataS(FO_DPT_OCR.drawer_address)\",\"description\":\"MapS.dataS(FO_DPT_OCR.description)\",\"base_amount\":\"MapS.dataN(FO_DPT_OCR.base_amount)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2;3;4;5",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 335
+      }
+    ]
+  }
+]

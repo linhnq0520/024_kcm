@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3202597Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xóa trắng dữ liệu form child\",\"function\":\"formChild.clear\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@node_clear\"],\"request\":{\"true\":{}}},{\"name\":\"Get data from form\",\"function\":\"formAPI.addnew\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"*\",\"code\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-reload-data-API\",\"input\":{\"learn_api\":\"@learn_api\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-get-new-dataAPI",
+        "version": 1,
+        "updateTime": 638042796881319351,
+        "txname": "fo-get-new-dataAPI",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsLicense",
+        "id": 239
+      }
+    ]
+  }
+]

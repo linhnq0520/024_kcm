@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-27T08:28:21.4172916Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "act_transaction_rule_table_update",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "act_transaction_rule_table_update",
+        "learn_api_name": "act_transaction_rule_table_update",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "system_code",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"fields\": {\"caption\": \"MapS.dataS(system_code.caption)\", \"example\": \"MapS.dataS(system_code.example)\", \"id\": \"MapS.dataN(system_code.id)\", \"is_enable\": \"MapS.DataBoolean(system_code.is_enable)\", \"parameter\": \"MapS.dataS(system_code.parameter)\", \"rule_name\": \"MapS.dataS(system_code.rule_name)\", \"rule_order\": \"MapS.dataN(system_code.rule_order)\", \"spec\": \"MapS.dataS(system_code.spec)\", \"workflow_id\": \"MapS.dataS(system_code.workflow_id)\"}, \"lang\": \"MapS.infoRequest(lang)\", \"token\": \"MapS.context(token)\", \"workflowid\": \"ACT_UPDATE_TRANS_RULE\"}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1914
+      }
+    ]
+  }
+]

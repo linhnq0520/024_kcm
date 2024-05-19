@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.1348638Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_blk_fo_dpt_blk_btn_accept_post_api_fo_dpt_blk",
+        "learn_api_name": "FO_DPT_BLK Accept FO_DPT_BLK",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_BLK",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"DPT_BLK\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"account_number\": \"MapS.dataS(FO_DPT_BLK.account_number)\",\r\n\t\t\"branch_name\": \"MapS.dataS(FO_DPT_BLK.branch_name)\",\r\n\t\t\"depositor_name\": \"MapS.dataS(FO_DPT_BLK.depositor_name)\",\r\n\t\t\"depositor_id\": \"MapS.dataS(FO_DPT_BLK.depositor_id)\",\r\n\t\t\"depositor_address\": \"MapS.dataS(FO_DPT_BLK.depositor_address)\",\r\n\t\t\"depositor_description\": {\r\n\t\t\t\"home\": \"MapS.dataS(FO_DPT_BLK.depositor_description.home)\",\r\n\t\t\t\"office\": \"MapS.dataS(FO_DPT_BLK.depositor_description.office)\"\r\n\t\t},\r\n\t\t\"depositor_balance\": \"MapS.dataN(FO_DPT_BLK.depositor_balance)\",\r\n\t\t\"depositor_currency\": \"MapS.dataS(FO_DPT_BLK.depositor_currency)\",\r\n\t\t\"description\": \"MapS.dataS(FO_DPT_BLK.description)\",\r\n\t\t\"block_reason\": \"MapS.dataS(FO_DPT_BLK.block_reason)\",\r\n\t\t\"value_date\": \"MapS.dataSNull(FO_DPT_BLK.value_date)\",\r\n\t\t\"user_approve\": \"MapS.dataSNull(user_approve.username)\"\r\n\t}\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 626
+      }
+    ]
+  }
+]

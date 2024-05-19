@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.3987221Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Hiển thị lỗi\",\"function\":\"system.showError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-sys-showError",
+        "version": 1,
+        "updateTime": 638042796881318757,
+        "txname": "Thông báo lỗi từ server (Không xóa)",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 49
+      }
+    ]
+  }
+]

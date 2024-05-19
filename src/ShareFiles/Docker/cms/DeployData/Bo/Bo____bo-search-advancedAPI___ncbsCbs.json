@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4536243Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"post API\",\n        \"function\": \"ncbsCbs.core.txNcbsCbs.searchAdvanced\",\n        \"type\": \"java\",\n        \"status\": \"A\",\n        \"para\": [],\n        \"response\": {\n            \"true\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#ncbsCbs:fo-update-dataSearchAdvanced\",\n                        \"input\": {}\n                    },\n                    {\n                        \"txcode\": \"#sys:fo-apiO9-Table_showInfoData\",\n                        \"input\": {}\n                    }\n                ],\n                \"error\": []\n            },\n            \"empty\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-msg-toast\",\n                        \"input\": {\n                            \"lang\": \"sysActionSearchEmpty\"\n                        }\n                    },\n                    {\n                        \"txcode\": \"#ncbsCbs:fo-update-dataSearchAdvanced\",\n                        \"input\": {}\n                    },\n                    {\n                        \"txcode\": \"#sys:fo-apiO9-Table_showInfoData\",\n                        \"input\": {}\n                    }\n                ],\n                \"error\": []\n            },\n            \"false\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-msg-toast\",\n                        \"input\": {\n                            \"lang\": \"sysActionError\"\n                        }\n                    },\n                    {\n                        \"txcode\": \"#sys:fo-off-loading\",\n                        \"input\": {}\n                    }\n                ],\n                \"error\": []\n            }\n        }\n    }\n]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-search-advancedAPI",
+        "version": 1,
+        "updateTime": 638072014175057215,
+        "txname": "bo-search-advancedAPI",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 170
+      }
+    ]
+  }
+]

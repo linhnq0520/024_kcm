@@ -1,0 +1,132 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-16T11:14:31.1875596Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "-",
+        "caption": "- Select one -",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": "",
+        "visible": 0,
+        "mcaption": "{\"English\":\"- Select one -\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23029
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "N",
+        "caption": "Non Resident",
+        "cdval": "6",
+        "cdidx": 6,
+        "ftag": null,
+        "visible": 0,
+        "mcaption": "{\"English\":\"Non Resident\",\"Khmer\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23030
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "R",
+        "caption": "Permanent Resident (PR)",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Permanent Resident (PR)\",\"Khmer\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23031
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "D",
+        "caption": "Diplomat",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Diplomat\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25058
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "F",
+        "caption": "Foreigner",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Foreigner\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25059
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "L",
+        "caption": "Local",
+        "cdval": "5",
+        "cdidx": 5,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Local\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25060
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "RESIDENT",
+        "cdid": "O",
+        "caption": "Other",
+        "cdval": "7",
+        "cdidx": 7,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25182
+      }
+    ]
+  }
+]

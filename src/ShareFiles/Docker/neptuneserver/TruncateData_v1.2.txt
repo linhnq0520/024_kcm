@@ -1,0 +1,494 @@
+-------------------o9batch--------------
+
+truncate table [o9batch].[dbo].[BatchInstance]
+truncate table [o9batch].[dbo].[BatchInstanceHistory]
+truncate table [o9batch].[dbo].[Log]
+truncate table [o9batch].[dbo].[Transaction]
+truncate table [o9batch].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9batch].[dbo].[BatchJob]
+truncate table [o9batch].[dbo].[BatchProgram]
+truncate table [o9batch].[dbo].[BatchSchedule]
+truncate table [o9batch].[dbo].[BatchStep]
+
+
+----------------++--------------
+truncate table [o9batch].[dbo].[Language]
+truncate table [o9batch].[dbo].[LocaleStringResource]
+truncate table [o9batch].[dbo].[MasterMapping]
+truncate table [o9batch].[dbo].[MigrationVersionInfo]
+truncate table [o9batch].[dbo].[NeptuneService]
+truncate table [o9batch].[dbo].[ScheduleTask]
+truncate table [o9batch].[dbo].[Setting]
+truncate table [o9batch].[dbo].[TransactionAction]
+
+-------------------o9cash--------------
+
+truncate table [o9cash].[dbo].[CashTransaction]
+truncate table [o9cash].[dbo].[CashStatement]
+truncate table [o9cash].[dbo].[CashList]
+truncate table [o9cash].[dbo].[GLEntries]
+truncate table [o9cash].[dbo].[Transaction]
+truncate table [o9cash].[dbo].[TransactionDetails]
+truncate table [o9cash].[dbo].[DenominationBalance]
+truncate table [o9cash].[dbo].[DenominationStatement]
+truncate table [o9cash].[dbo].[DenominationTransaction]
+truncate table [o9cash].[dbo].[Log]
+
+----------------++--------------
+truncate table [o9cash].[dbo].[Language]
+truncate table [o9cash].[dbo].[LocaleStringResource]
+truncate table [o9cash].[dbo].[MasterMapping]
+truncate table [o9cash].[dbo].[MigrationVersionInfo]
+truncate table [o9cash].[dbo].[NeptuneService]
+truncate table [o9cash].[dbo].[ScheduleTask]
+truncate table [o9cash].[dbo].[Setting]
+truncate table [o9cash].[dbo].[TransactionAction]
+truncate table [o9cash].[dbo].[CashCodeList]
+
+-------------------o9cms--------------
+
+truncate table [o9cms].[dbo].[Log]
+truncate table [o9cms].[dbo].[Transaction]
+truncate table [o9cms].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9cms].[dbo].[App]
+truncate table [o9cms].[dbo].[AppOfRole]
+truncate table [o9cms].[dbo].[Bo]
+truncate table [o9cms].[dbo].[Cdlist]
+truncate table [o9cms].[dbo].[DesignGroup]
+truncate table [o9cms].[dbo].[DesignItem]
+truncate table [o9cms].[dbo].[DesignTemplateForm]
+truncate table [o9cms].[dbo].[Fo]
+truncate table [o9cms].[dbo].[Form]
+truncate table [o9cms].[dbo].[FormShortcut]
+truncate table [o9cms].[dbo].[Lang]
+truncate table [o9cms].[dbo].[Language]
+truncate table [o9cms].[dbo].[LearnApi]
+truncate table [o9cms].[dbo].[LocaleStringResource]
+truncate table [o9cms].[dbo].[MasterMapping]
+truncate table [o9cms].[dbo].[MigrationVersionInfo]
+truncate table [o9cms].[dbo].[NeptuneService]
+truncate table [o9cms].[dbo].[OrganizationParameter]
+truncate table [o9cms].[dbo].[ParaServer]
+truncate table [o9cms].[dbo].[RoleCache]
+truncate table [o9cms].[dbo].[ScheduleJob]
+truncate table [o9cms].[dbo].[ScheduleTask]
+truncate table [o9cms].[dbo].[Setting]
+truncate table [o9cms].[dbo].[ShortcutConfig]
+truncate table [o9cms].[dbo].[TemplateVoucher]
+truncate table [o9cms].[dbo].[TransRuleConfig]
+truncate table [o9cms].[dbo].[TransactionAction]
+truncate table [o9cms].[dbo].[MediaUpload]
+truncate table [o9cms].[dbo].[LogService]
+-------------------o9credit--------------------------
+
+truncate table [o9credit].[dbo].[ApproveCreditAccountIFCGLs]
+truncate table [o9credit].[dbo].[ClassificationTrans]
+truncate table [o9credit].[dbo].[ClassificationTransHis]
+truncate table [o9credit].[dbo].[CreditAccount]
+truncate table [o9credit].[dbo].[CreditAccountGLs]
+truncate table [o9credit].[dbo].[CreditAccountIFCGLs]
+truncate table [o9credit].[dbo].[CreditAccountLimit]
+truncate table [o9credit].[dbo].[CreditAccountLimitDetail]
+truncate table [o9credit].[dbo].[CreditAccountOverDueDaysTable]
+truncate table [o9credit].[dbo].[CreditAccountProductLimitGLs]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditAccountTrans]
+truncate table [o9credit].[dbo].[CreditAccountTransHis]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditApplication]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditApproveAccount]
+truncate table [o9credit].[dbo].[CreditApproveDisburseSchedule]
+truncate table [o9credit].[dbo].[CreditApproveIFCBalance]
+truncate table [o9credit].[dbo].[CreditApprovePaymentSchedule]
+truncate table [o9credit].[dbo].[CreditApproveSchedule]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditClassification]
+truncate table [o9credit].[dbo].[CreditDisburseSchedule]
+truncate table [o9credit].[dbo].[CreditGroupLimit]
+truncate table [o9credit].[dbo].[CreditHistory]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditIFCBalance]
+truncate table [o9credit].[dbo].[CreditIFCBalanceDetail]
+truncate table [o9credit].[dbo].[CreditIFCBalanceTrans]
+truncate table [o9credit].[dbo].[CreditIFCBalanceTransHis]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditPaymentSchedule]
+truncate table [o9credit].[dbo].[CreditPaymentScheduleHistory]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditProductHistory]
+truncate table [o9credit].[dbo].[CreditProductLimit]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditSchedule]
+truncate table [o9credit].[dbo].[CreditScheduleEstimate]
+truncate table [o9credit].[dbo].[CreditScheduleTemporary]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditStatement]
+----------------++--------------
+truncate table [o9credit].[dbo].[CreditSubProductHistory]
+truncate table [o9credit].[dbo].[CreditSubProductLimit]
+----------------++--------------
+truncate table [o9credit].[dbo].[GLEntries]
+truncate table [o9credit].[dbo].[Log]
+truncate table [o9credit].[dbo].[ProvisioningTrans]
+truncate table [o9credit].[dbo].[ProvisioningTransHis]
+truncate table [o9credit].[dbo].[Transaction]
+truncate table [o9credit].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9credit].[dbo].[Language]
+truncate table [o9credit].[dbo].[LocaleStringResource]
+truncate table [o9credit].[dbo].[MasterMapping]
+truncate table [o9credit].[dbo].[MigrationVersionInfo]
+truncate table [o9credit].[dbo].[NeptuneService]
+truncate table [o9credit].[dbo].[ScheduleTask]
+truncate table [o9credit].[dbo].[Setting]
+truncate table [o9credit].[dbo].[TransactionAction]
+truncate table [o9credit].[dbo].[CreditCodeList]
+truncate table [o9credit].[dbo].[RuleDefinition]
+truncate table [o9credit].[dbo].[TransactionRules]
+truncate table [o9credit].[dbo].[CreditIfcEvaluation]
+
+
+-------------------o9customer--------------
+
+truncate table [o9customer].[dbo].[SingleCustomer]
+truncate table [o9customer].[dbo].[CustomerGroup]
+truncate table [o9customer].[dbo].[CustomerLinkage]
+truncate table [o9customer].[dbo].[CustomerAlias]
+truncate table [o9customer].[dbo].[CustomerMediaStorage]
+----------------++--------------
+truncate table [o9customer].[dbo].[CustomerApprove]
+truncate table [o9customer].[dbo].[CustomerGroupApprove]
+truncate table [o9customer].[dbo].[CustomerLinkageApprove]
+truncate table [o9customer].[dbo].[CustomerMergeHistory]
+----------------++--------------
+truncate table [o9customer].[dbo].[CustomerUserAccount]
+truncate table [o9customer].[dbo].[GLEntries]
+----------------++--------------
+truncate table [o9customer].[dbo].[Log]
+truncate table [o9customer].[dbo].[Transaction]
+truncate table [o9customer].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9customer].[dbo].[Language]
+truncate table [o9customer].[dbo].[LocaleStringResource]
+truncate table [o9customer].[dbo].[MasterMapping]
+truncate table [o9customer].[dbo].[MigrationVersionInfo]
+truncate table [o9customer].[dbo].[NeptuneService]
+truncate table [o9customer].[dbo].[ScheduleTask]
+truncate table [o9customer].[dbo].[Setting]
+truncate table [o9customer].[dbo].[TransactionAction]
+truncate table [o9customer].[dbo].[CodeListDistrict]
+truncate table [o9customer].[dbo].[CodeListProvine]
+truncate table [o9customer].[dbo].[CodeListSubDistrict]
+truncate table [o9customer].[dbo].[CodeListVillage]
+truncate table [o9customer].[dbo].[CustomerCodeList]
+truncate table [o9customer].[dbo].[TransactionRules]
+truncate table [o9customer].[dbo].[RuleDefinition]
+
+-------------------o9deposit--------------
+
+truncate table [o9deposit].[dbo].[AccountLinkage]
+truncate table [o9deposit].[dbo].[DepositAccount]
+truncate table [o9deposit].[dbo].[DepositAccountGLs]
+truncate table [o9deposit].[dbo].[DepositAccountIFCGLs]
+truncate table [o9deposit].[dbo].[IFCBalance]
+truncate table [o9deposit].[dbo].[ODSchedule]
+truncate table [o9deposit].[dbo].[OverdraftContract]
+truncate table [o9deposit].[dbo].[OverdraftContractGLs]
+truncate table [o9deposit].[dbo].[OverdraftContractIFCGLs]
+truncate table [o9deposit].[dbo].[ODContractIFCBalance]
+truncate table [o9deposit].[dbo].[StockInventory]
+truncate table [o9deposit].[dbo].[StockTransaction]
+----------------++--------------
+truncate table [o9deposit].[dbo].[ApproveDepositAccount]
+truncate table [o9deposit].[dbo].[ApproveDepositAccountIFCGLs]
+truncate table [o9deposit].[dbo].[ApproveIFCBalance]
+----------------++--------------
+truncate table [o9deposit].[dbo].[ApproveODContractIFCBalance]
+truncate table [o9deposit].[dbo].[ApproveOverdraftContract]
+truncate table [o9deposit].[dbo].[ApproveOverdraftContractIFCGLs]
+truncate table [o9deposit].[dbo].[ClassificationTrans]
+----------------++--------------
+truncate table [o9deposit].[dbo].[DepositAccountMFA]
+truncate table [o9deposit].[dbo].[DepositAccountOverDueDaysTable]
+truncate table [o9deposit].[dbo].[DepositAccountTrans]
+----------------++--------------
+truncate table [o9deposit].[dbo].[DepositBalanceHistory]
+truncate table [o9deposit].[dbo].[DepositEarmark]
+truncate table [o9deposit].[dbo].[DepositHistory]
+truncate table [o9deposit].[dbo].[DepositIFCBalanceTrans]
+truncate table [o9deposit].[dbo].[DepositMortgageAccount]
+truncate table [o9deposit].[dbo].[DepositStatement]
+truncate table [o9deposit].[dbo].[IFCBalanceDetail]
+truncate table [o9deposit].[dbo].[DepositTransaction]
+truncate table [o9deposit].[dbo].[DepositUserAccount]
+truncate table [o9deposit].[dbo].[GLEntries]
+----------------++--------------
+truncate table [o9deposit].[dbo].[ODContractIFCBalanceTrans]
+truncate table [o9deposit].[dbo].[ODContractOverdueDaysTable]
+truncate table [o9deposit].[dbo].[ODContractIFCBalanceDetail]
+truncate table [o9deposit].[dbo].[OverdraftContractTrans]
+truncate table [o9deposit].[dbo].[ProvisioningTrans]
+----------------++--------------
+truncate table [o9deposit].[dbo].[StockStatement]
+----------------++--------------
+truncate table [o9deposit].[dbo].[Log]
+truncate table [o9deposit].[dbo].[Transaction]
+truncate table [o9deposit].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9deposit].[dbo].[Language]
+truncate table [o9deposit].[dbo].[LocaleStringResource]
+truncate table [o9deposit].[dbo].[MasterMapping]
+truncate table [o9deposit].[dbo].[MigrationVersionInfo]
+truncate table [o9deposit].[dbo].[NeptuneService]
+truncate table [o9deposit].[dbo].[ScheduleTask]
+truncate table [o9deposit].[dbo].[Setting]
+truncate table [o9deposit].[dbo].[TransactionAction]
+truncate table [o9deposit].[dbo].[DepositCodeList]
+truncate table [o9deposit].[dbo].[TransactionRules]
+truncate table [o9deposit].[dbo].[RuleDefinition]
+truncate table [o9deposit].[dbo].[DepositIFCEvaluation]
+
+
+-------------------o9accounting----------------------
+
+UPDATE [o9accounting].[dbo].[AccountBalance] Set [Balance]=0, [DailyDebit]=0, [DailyCredit]=0, [WeeklyDebit]=0, [WeeklyCredit]=0, [MonthlyDebit]=0, [MonthlyCredit]=0, [QuarterlyDebit]=0, [QuarterlyCredit]=0, [HalfYearlyDebit]=0, [HalfYearlyCredit]=0, [YearlyDebit]=0, [YearlyCredit]=0, [WeekAverageBalance]=0, [MonthAverageBalance]=0, [QuarterAverageBalance]=0, [HalfYearAverageBalance]=0, [YearAverageBalance]=0, [CreatedOnUtc]=NULL, [UpdatedOnUtc]=NULL;
+
+truncate table [o9accounting].[dbo].[AccountingTransaction]
+truncate table [o9accounting].[dbo].[AccountStatement]
+truncate table [o9accounting].[dbo].[AccountStatementAdminInfor]
+truncate table [o9accounting].[dbo].[GLEntries]
+truncate table [o9accounting].[dbo].[Log]
+truncate table [o9accounting].[dbo].[Transaction]
+truncate table [o9accounting].[dbo].[TransactionDetails]
+
+
+----------------++--------------
+truncate table [o9accounting].[dbo].[Language]
+truncate table [o9accounting].[dbo].[LocaleStringResource]
+truncate table [o9accounting].[dbo].[MasterMapping]
+truncate table [o9accounting].[dbo].[MigrationVersionInfo]
+truncate table [o9accounting].[dbo].[NeptuneService]
+truncate table [o9accounting].[dbo].[ScheduleTask]
+truncate table [o9accounting].[dbo].[Setting]
+truncate table [o9accounting].[dbo].[TransactionAction]
+truncate table [o9accounting].[dbo].[TransactionRules]
+
+-------------------o9fixedasset--------------------------
+
+truncate table [o9fixedasset].[dbo].[FixedAssetAccount]
+truncate table [o9fixedasset].[dbo].[FixedAssetAccountGLs]
+truncate table [o9fixedasset].[dbo].[FixedAssetAccountTrans]
+truncate table [o9fixedasset].[dbo].[GLEntries]
+truncate table [o9fixedasset].[dbo].[Log]
+truncate table [o9fixedasset].[dbo].[Transaction]
+truncate table [o9fixedasset].[dbo].[TransactionDetails]
+
+
+----------------++--------------
+truncate table [o9fixedasset].[dbo].[Language]
+truncate table [o9fixedasset].[dbo].[LocaleStringResource]
+truncate table [o9fixedasset].[dbo].[MasterMapping]
+truncate table [o9fixedasset].[dbo].[MigrationVersionInfo]
+truncate table [o9fixedasset].[dbo].[NeptuneService]
+truncate table [o9fixedasset].[dbo].[ScheduleTask]
+truncate table [o9fixedasset].[dbo].[Setting]
+truncate table [o9fixedasset].[dbo].[TransactionAction]
+truncate table [o9fixedasset].[dbo].[FixedAssetCodeList]
+
+-------------------o9fx--------------------------
+
+truncate table [o9fx].[dbo].[ForeignExchangeRateApprove]
+truncate table [o9fx].[dbo].[ForeignExchangeRateSP]
+truncate table [o9fx].[dbo].[GLEntries]
+truncate table [o9fx].[dbo].[Log]
+truncate table [o9fx].[dbo].[Transaction]
+truncate table [o9fx].[dbo].[TransactionDetails]
+
+
+----------------++--------------
+truncate table [o9fx].[dbo].[Language]
+truncate table [o9fx].[dbo].[LocaleStringResource]
+truncate table [o9fx].[dbo].[MasterMapping]
+truncate table [o9fx].[dbo].[MigrationVersionInfo]
+truncate table [o9fx].[dbo].[NeptuneService]
+truncate table [o9fx].[dbo].[ScheduleTask]
+truncate table [o9fx].[dbo].[Setting]
+truncate table [o9fx].[dbo].[TransactionAction]
+truncate table [o9fx].[dbo].[ForeignExchangeRate]
+truncate table [o9fx].[dbo].[FXCodeList]
+
+
+-------------------o9import--------------------------
+
+truncate table [o9import].[dbo].[GLEntries]
+truncate table [o9import].[dbo].[Log]
+truncate table [o9import].[dbo].[TemplateImport]
+truncate table [o9import].[dbo].[TemplateImportDetail]
+truncate table [o9import].[dbo].[Transaction]
+truncate table [o9import].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9import].[dbo].[Language]
+truncate table [o9import].[dbo].[LocaleStringResource]
+truncate table [o9import].[dbo].[MasterMapping]
+truncate table [o9import].[dbo].[MigrationVersionInfo]
+truncate table [o9import].[dbo].[NeptuneService]
+truncate table [o9import].[dbo].[ScheduleTask]
+truncate table [o9import].[dbo].[Setting]
+truncate table [o9import].[dbo].[TransactionAction]
+
+-------------------o9mortgage--------------------------
+
+truncate table [o9mortgage].[dbo].[MortgageAccount]
+truncate table [o9mortgage].[dbo].[MortgageBalance]
+
+
+----------------++--------------
+truncate table [o9mortgage].[dbo].[Language]
+truncate table [o9mortgage].[dbo].[LocaleStringResource]
+truncate table [o9mortgage].[dbo].[MasterMapping]
+truncate table [o9mortgage].[dbo].[MigrationVersionInfo]
+truncate table [o9mortgage].[dbo].[NeptuneService]
+truncate table [o9mortgage].[dbo].[ScheduleTask]
+truncate table [o9mortgage].[dbo].[Setting]
+truncate table [o9mortgage].[dbo].[TransactionAction]
+truncate table [o9mortgage].[dbo].[MortgageCodeList]
+
+-------------------o9payment--------------------------
+
+truncate table [o9payment].[dbo].[Log]
+truncate table [o9payment].[dbo].[PaymentHistory]
+truncate table [o9payment].[dbo].[PaymentTransaction]
+truncate table [o9payment].[dbo].[Queue]
+truncate table [o9payment].[dbo].[GLEntries]
+truncate table [o9payment].[dbo].[Transaction]
+truncate table [o9payment].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9payment].[dbo].[Language]
+truncate table [o9payment].[dbo].[LocaleStringResource]
+truncate table [o9payment].[dbo].[MasterMapping]
+truncate table [o9payment].[dbo].[MigrationVersionInfo]
+truncate table [o9payment].[dbo].[NeptuneService]
+truncate table [o9payment].[dbo].[ScheduleTask]
+truncate table [o9payment].[dbo].[Setting]
+truncate table [o9payment].[dbo].[TransactionAction]
+
+-------------------o9admin--------------------------
+
+truncate table [o9admin].[dbo].[GLEntries]
+truncate table [o9admin].[dbo].[Log]
+truncate table [o9admin].[dbo].[TransactionJournal]
+truncate table [o9admin].[dbo].[TransactionJournalDone]
+truncate table [o9admin].[dbo].[Transaction]
+truncate table [o9admin].[dbo].[TransactionDetails]
+
+
+----------------++--------------
+truncate table [o9admin].[dbo].[Language]
+truncate table [o9admin].[dbo].[LocaleStringResource]
+truncate table [o9admin].[dbo].[MigrationVersionInfo]
+truncate table [o9admin].[dbo].[NeptuneService]
+truncate table [o9admin].[dbo].[ScheduleTask]
+truncate table [o9admin].[dbo].[AdminForeignExchangeRate]
+truncate table [o9admin].[dbo].[TransactionAction]
+truncate table [o9admin].[dbo].[TransactionDefinition]
+truncate table [o9admin].[dbo].[CodeList]
+
+-------------------o9report--------------------------
+
+truncate table [o9report].[dbo].[Log]
+truncate table [o9report].[dbo].[Transaction]
+truncate table [o9report].[dbo].[TransactionDetails]
+
+
+----------------++--------------
+truncate table [o9report].[dbo].[Language]
+truncate table [o9report].[dbo].[LocaleStringResource]
+truncate table [o9report].[dbo].[MigrationVersionInfo]
+truncate table [o9report].[dbo].[NeptuneService]
+truncate table [o9report].[dbo].[ScheduleTask]
+truncate table [o9report].[dbo].[Setting]
+truncate table [o9report].[dbo].[TransactionAction]
+truncate table [o9report].[dbo].[ReportConfig]
+truncate table [o9report].[dbo].[TemplateReport]
+truncate table [o9report].[dbo].[TransactionDefinition]
+truncate table [o9report].[dbo].[ViewerSetting]
+truncate table [o9report].[dbo].[CodeList]
+
+
+-------------------o9voucher--------------------------
+
+truncate table [o9voucher].[dbo].[GLEntries]
+truncate table [o9voucher].[dbo].[Log]
+truncate table [o9voucher].[dbo].[Transaction]
+truncate table [o9voucher].[dbo].[TransactionDetails]
+
+----------------++--------------
+truncate table [o9voucher].[dbo].[Language]
+truncate table [o9voucher].[dbo].[LocaleStringResource]
+truncate table [o9voucher].[dbo].[MasterMapping]
+truncate table [o9voucher].[dbo].[MigrationVersionInfo]
+truncate table [o9voucher].[dbo].[NeptuneService]
+truncate table [o9voucher].[dbo].[ScheduleTask]
+truncate table [o9voucher].[dbo].[Setting]
+truncate table [o9voucher].[dbo].[TransactionAction]
+truncate table [o9voucher].[dbo].[VoucherCodeList]
+
+-------------------neptune--------------------------
+
+truncate table [neptune].[dbo].[LOG_API]
+truncate table [neptune].[dbo].[LOG_EVENT]
+truncate table [neptune].[dbo].[LOG_GRPC]
+truncate table [neptune].[dbo].[LOG_HTTP_REQUEST]
+truncate table [neptune].[dbo].[LOG_INCOMING_QUEUE_MESSAGE]
+truncate table [neptune].[dbo].[LOG_RECEIVING_HTTP]
+
+truncate table [neptune].[dbo].[WF_EXEC]
+truncate table [neptune].[dbo].[WF_EXEC_DONE]
+truncate table [neptune].[dbo].[WF_GROUP_EXEC]
+truncate table [neptune].[dbo].[WF_GROUP_EXEC_DONE]
+truncate table [neptune].[dbo].[WF_STEP_EXEC]
+truncate table [neptune].[dbo].[WF_STEP_EXEC_DONE]
+
+----------------++--------------
+truncate table [neptune].[dbo].[AUTH_ORGANIZATION]
+truncate table [neptune].[dbo].[AUTH_ROLE]
+truncate table [neptune].[dbo].[AUTH_ROLE_USER]
+truncate table [neptune].[dbo].[AUTH_ROLE_WF]
+truncate table [neptune].[dbo].[AUTH_USER]
+truncate table [neptune].[dbo].[CONFIGURATION]
+truncate table [neptune].[dbo].[ENVIRONMENT_VARIABLE]
+truncate table [neptune].[dbo].[EVENT_DEF]
+truncate table [neptune].[dbo].[LANGUAGE_RESOURCE]
+truncate table [neptune].[dbo].[MAPPING_DICTIONARY]
+truncate table [neptune].[dbo].[SENDING_HTTP]
+truncate table [neptune].[dbo].[SERVICE_DEF]
+truncate table [neptune].[dbo].[WF_DEF]
+truncate table [neptune].[dbo].[WF_FIELD]
+truncate table [neptune].[dbo].[WF_STEP_DEF]
+truncate table [neptune].[dbo].[__EFMigrationsHistory]
+
+-------------------neptune_archive--------------------------
+
+truncate table [neptune_archive].[dbo].[LOG_API]
+truncate table [neptune_archive].[dbo].[LOG_EVENT]
+truncate table [neptune_archive].[dbo].[LOG_GRPC]
+truncate table [neptune_archive].[dbo].[LOG_HTTP_REQUEST]
+truncate table [neptune_archive].[dbo].[LOG_INCOMING_QUEUE_MESSAGE]
+truncate table [neptune_archive].[dbo].[LOG_RECEIVING_HTTP]
+
+truncate table [neptune_archive].[dbo].[WF_EXEC]
+truncate table [neptune_archive].[dbo].[WF_EXEC_DONE]
+truncate table [neptune_archive].[dbo].[WF_GROUP_EXEC]
+truncate table [neptune_archive].[dbo].[WF_GROUP_EXEC_DONE]
+truncate table [neptune_archive].[dbo].[WF_STEP_EXEC]
+truncate table [neptune_archive].[dbo].[WF_STEP_EXEC_DONE]

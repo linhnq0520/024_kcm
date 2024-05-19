@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8260179Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_Customer_profile_add_BO_Customer_profile_add_save_POST_api_customer_customer",
+        "learn_api_name": "BO_Customer_profile_add Save BO_Customer_profile_add",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_Customer_profile_add",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"SQL_INSERT_CTM\",\"lang\":\"en\",\"token\":\"MapS.context(token)\",\"fields\":{\"hocifcd\":\"MapS.dataS(BO_Customer_profile_add.hocifcd)\",\"customer_private\":\"MapS.dataS(BO_Customer_profile_add.customer_private)\",\"title\":\"MapS.dataS(BO_Customer_profile_add.title)\",\"title_of_organization\":\"MapS.dataSNull(BO_Customer_profile_add.title_of_organization)\",\"suffix\":\"MapS.dataSNull(BO_Customer_profile_add.suffix)\",\"firstname\":\"MapS.dataS(BO_Customer_profile_add.firstname)\",\"lastname\":\"MapS.dataS(BO_Customer_profile_add.lastname)\",\"midname\":\"MapS.dataS(BO_Customer_profile_add.midname)\",\"fullname\":\"MapS.dataS(BO_Customer_profile_add.fullname)\",\"firstname_local\":\"MapS.dataS(BO_Customer_profile_add.firstname_local)\",\"lastname_local\":\"MapS.dataS(BO_Customer_profile_add.lastname_local)\",\"midname_local\":\"MapS.dataS(BO_Customer_profile_add.midname_local)\",\"shortname\":\"MapS.dataS(BO_Customer_profile_add.shortname)\",\"gender\":\"MapS.dataS(BO_Customer_profile_add.gender)\",\"date_of_birth\":\"MapS.dataSNull(BO_Customer_profile_add.date_of_birth)\",\"place_of_birth\":\"MapS.dataSNull(BO_Customer_profile_add.place_of_birth)\",\"nation\":\"MapS.dataS(BO_Customer_profile_add.nation)\",\"country\":\"MapS.dataSNull(BO_Customer_profile_add.country)\",\"paper_type\":\"MapS.dataS(BO_Customer_profile_add.paper_type)\",\"paper_number\":\"MapS.dataS(BO_Customer_profile_add.paper_number)\",\"issue_date_of_paper\":\"MapS.dataSNull(BO_Customer_profile_add.issue_date_of_paper)\",\"issue_place_of_paper\":\"MapS.dataS(BO_Customer_profile_add.issue_place_of_paper)\",\"expire_date_of_paper\":\"MapS.dataSNull(BO_Customer_profile_add.expire_date_of_paper)\",\"paper_type_sub\":\"MapS.dataS(BO_Customer_profile_add.paper_type_sub)\",\"paper_number_sub\":\"MapS.dataS(BO_Customer_profile_add.paper_number_sub)\",\"issue_date_of_sub_paper\":\"MapS.dataSNull(BO_Customer_profile_add.issue_date_of_sub_paper)\",\"issue_place_of_sub_paper\":\"MapS.dataS(BO_Customer_profile_add.issue_place_of_sub_paper)\",\"customer_group_type\":\"MapS.dataSNull(BO_Customer_profile_add.customer_group_type)\",\"customer_sub_group_type\":\"MapS.dataSNull(BO_Customer_profile_add.customer_sub_group_type)\",\"categories\":\"MapS.dataS(BO_Customer_profile_add.categories)\",\"sector\":\"MapS.dataSNull(BO_Customer_profile_add.sector)\",\"subsector\":\"MapS.dataSNull(BO_Customer_profile_add.subsector)\",\"resident\":\"MapS.dataS(BO_Customer_profile_add.resident)\",\"legal_local_address\":\"MapS.dataJsonObject(BO_Customer_profile_add.legal_local_address)\",\"contact_local_address\":\"MapS.dataJsonObject(BO_Customer_profile_add.contact_local_address)\",\"normal_local_address\":\"MapS.dataJsonObject(BO_Customer_profile_add.normal_local_address)\",\"introducer_1\":\"MapS.dataJsonObject(BO_Customer_profile_add.introducer_1)\",\"introducer_2\":\"MapS.dataJsonObject(BO_Customer_profile_add.introducer_2)\",\"phone_home\":\"MapS.dataS(BO_Customer_profile_add.phone_home)\",\"phone_mobile\":\"MapS.dataS(BO_Customer_profile_add.phone_mobile)\",\"email\":\"MapS.dataS(BO_Customer_profile_add.email)\",\"education\":\"MapS.dataS(BO_Customer_profile_add.education)\",\"marital_status\":\"MapS.dataS(BO_Customer_profile_add.marital_status)\",\"profession\":\"MapS.dataS(BO_Customer_profile_add.profession)\",\"business_type\":\"MapS.dataS(BO_Customer_profile_add.business_type)\",\"financial\":\"MapS.dataSNull(BO_Customer_profile_add.financial)\",\"isic_code\":\"MapS.dataSNull(BO_Customer_profile_add.isic_code)\",\"managing_branch_code\":\"MapS.dataS(BO_Customer_profile_add.managing_branch_code)\",\"customer_status\":\"MapS.dataS(BO_Customer_profile_add.customer_status)\",\"classify\":\"MapS.dataS(BO_Customer_profile_add.classify)\",\"polists\":\"MapS.dataS(BO_Customer_profile_add.polists)\",\"repolists\":\"MapS.dataS(BO_Customer_profile_add.repolists)\",\"country_of_income\":\"MapS.dataS(BO_Customer_profile_add.country_of_income)\",\"fatca_status\":\"MapS.dataS(BO_Customer_profile_add.fatca_status)\",\"government_id\":\"MapS.dataSNull(BO_Customer_profile_add.government_id)\",\"international_id\":\"MapS.dataSNull(BO_Customer_profile_add.international_id)\",\"oversea_juristic_id\":\"MapS.dataSNull(BO_Customer_profile_add.oversea_juristic_id)\",\"gfmis_code\":\"MapS.dataSNull(BO_Customer_profile_add.gfmis_code)\",\"branch_code\":\"MapS.dataS(BO_Customer_profile_add.branch_code)\",\"group_code\":\"MapS.dataS(BO_Customer_profile_add.group_code)\",\"customer_credit_line\":\"MapS.dataNNull(BO_Customer_profile_add.customer_credit_line)\",\"currency_code\":\"MapS.dataS(BO_Customer_profile_add.currency_code)\",\"customer_type\":\"MapS.dataS(BO_Customer_profile_add.customer_type)\",\"primary_cif\":\"MapS.dataS(BO_Customer_profile_add.primary_cif)\",\"mdm_amount_status\":\"1\",\"mdm_request_status\":\"SUCCESS\",\"mdm_list_sub_type_code\":\"PEPFR\",\"mdm_list_sub_type_desc\":\"\",\"mdm_matching_by\":\"IWLLA\",\"mdm_final_kyc_status\":\"MapS.dataS(BO_Customer_profile_add.mdm_final_kyc_status)\",\"mdm_kyc_comment_code\":\"MapS.dataS(BO_Customer_profile_add.mdm_kyc_comment_code)\",\"mdm_kyc_comment_desc\":\"MapS.dataS(BO_Customer_profile_add.mdm_kyc_comment_desc)\",\"kyc_level\":\"3\",\"kyc_update_date\":\"2022-03-21T03:03:42.518Z\",\"relation_customer_code1\":\"MapS.dataS(BO_Customer_profile_add.relation_customer_code1)\",\"relation_customer_code2\":\"MapS.dataS(BO_Customer_profile_add.relation_customer_code2)\",\"relation_customer_code3\":\"MapS.dataS(BO_Customer_profile_add.relation_customer_code3)\",\"relation_customer_code4\":\"MapS.dataS(BO_Customer_profile_add.relation_customer_code4)\",\"relation_customer_code5\":\"MapS.dataS(BO_Customer_profile_add.relation_customer_code5)\",\"customer_size\":\"MapS.dataS(BO_Customer_profile_add.customer_size)\",\"staff_code\":\"MapS.dataS(BO_Customer_profile_add.staff_code)\",\"customer_sub_type\":\"MapS.dataSNull(BO_Customer_profile_add.customer_sub_type)\",\"father_name\":\"MapS.dataSNull(BO_Customer_profile_add.father_name)\",\"referral_field\":\"MapS.dataSNull(BO_Customer_profile_add.referral_field)\",\"introducer\":\"MapS.dataSNull(BO_Customer_profile_add.introducer)\",\"remark_field_to_add\":\"MapS.dataSNull(BO_Customer_profile_add.remark_field_to_add)\",\"position\":\"MapS.dataSNull(BO_Customer_profile_add.position)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 204
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1767671Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_fac_pbc_fo_fac_pbc_btn_accept_post_api_fo_fac_pbc",
+        "learn_api_name": "FO_FAC_PBC Accept FO_FAC_PBC",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_FAC_PBC",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"FAC_PBC\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"account_number\":\"MapS.dataS(FO_FAC_PBC.account_number)\",\"fixed_asset_name\":\"MapS.dataS(FO_FAC_PBC.fixed_asset_name)\",\"original_currency\":\"MapS.dataS(FO_FAC_PBC.original_currency)\",\"original_amount\":\"MapS.dataN(FO_FAC_PBC.original_amount)\",\"cash_currency\":\"MapS.dataS(FO_FAC_PBC.cash_currency)\",\"cross_rate\":\"MapS.dataN(FO_FAC_PBC.cross_rate)\",\"amount_in_cash\":\"MapS.dataN(FO_FAC_PBC.amount_in_cash)\",\"vendor_id\":\"MapS.dataS(FO_FAC_PBC.vendor_id)\",\"vendor_name\":\"MapS.dataS(FO_FAC_PBC.vendor_name)\",\"vendor_address\":\"MapS.dataS(FO_FAC_PBC.vendor_address)\",\"vendor_description\":\"MapS.dataS(FO_FAC_PBC.vendor_description)\",\"description\":\"MapS.dataS(FO_FAC_PBC.description)\",\"value_date\":\"MapS.dataS(FO_FAC_PBC.value_date)\",\"exchange_rate\":\"MapS.dataN(FO_FAC_PBC.exchange_rate)\",\"cash_amount_bcy\":\"MapS.dataN(FO_FAC_PBC.cash_amount_bcy)\",\"amount_cbkexr\":\"MapS.dataN(FO_FAC_PBC.amount_cbkexr)\",\"amount_ccvt\":\"MapS.dataN(FO_FAC_PBC.amount_ccvt)\",\"original_price\":\"MapS.dataN(FO_FAC_PBC.original_price)\",\"booked_amount\":\"MapS.dataN(FO_FAC_PBC.booked_amount)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 316
+      }
+    ]
+  }
+]

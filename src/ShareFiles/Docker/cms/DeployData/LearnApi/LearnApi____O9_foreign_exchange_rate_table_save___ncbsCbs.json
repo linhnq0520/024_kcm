@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1170756Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "O9_foreign_exchange_rate_table_save",
+        "learn_api_name": "O9_foreign_exchange_rate_table_save",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/exchangerate",
+        "learn_api_data": "O9_foreign_exchange_rate_table_save",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.m",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_role",
+        "save_to": "",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"data_array\":\"MapS.arrayJson(data|{\\\"ccrcd\\\":\\\"MapS.dataS(ccrcd)\\\",\\\"rttype\\\":\\\"MapS.dataS(rttype)\\\",\\\"bcyrate\\\":\\\"MapS.dataN(bcyrate)\\\",\\\"branchid\\\":\\\"MapS.dataS(branchid)\\\"})\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.m",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 186
+      }
+    ]
+  }
+]

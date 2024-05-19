@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.0964565Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "crd_apr_crd_apr_btn_accept_post_api_fo_crd_apr",
+        "learn_api_name": "CRD_APR Accept CRD_APR",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/crd_apr",
+        "learn_api_data": "CRD_APR",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.result",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"txrefid\":\"MapS.dataS(CRD_APR.txrefid)\",\"fee\":\"MapS.dataS(CRD_APR.fee)\",\"pcacc\":\"MapS.dataS(CRD_APR.pcacc)\",\"cctmt\":\"MapS.dataS(CRD_APR.cctmt)\",\"cacnm\":\"MapS.dataS(CRD_APR.cacnm)\",\"cncat\":\"MapS.dataS(CRD_APR.cncat)\",\"ccatnm\":\"MapS.dataS(CRD_APR.ccatnm)\",\"cnseq\":\"MapS.dataN(CRD_APR.cnseq)\",\"cacccr\":\"MapS.dataS(CRD_APR.cacccr)\",\"txamt\":\"MapS.dataN(CRD_APR.txamt)\",\"pdacc\":\"MapS.dataS(CRD_APR.pdacc)\",\"descs\":\"MapS.dataS(CRD_APR.descs)\",\"cccr\":\"MapS.dataS(CRD_APR.cccr)\",\"ccvt\":\"MapS.dataN(CRD_APR.ccvt)\",\"cbkexr\":\"MapS.dataN(CRD_APR.cbkexr)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.result",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 146
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:43:19.4791707Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "ParaServer"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "code": "NEPTUNE_SERVER_URL",
+        "des": "NEPTUNE_SERVER_URL",
+        "value": "https://27.3.1.104:5001",
+        "data_type": "s",
+        "isAdmin": false,
+        "app": "ncbs",
+        "id": 1088
+      }
+    ]
+  }
+]

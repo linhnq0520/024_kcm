@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8250042Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "adm_user_profile_view_save_put_api_user_usrid",
+        "learn_api_name": "adm_user_profile Save View",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "adm_user_profile",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"ADM_UPDATE_USER_ACCOUNT\",\"lang\":\"en\",\"token\":\"MapS.context(token)\",\"fields\":{\"id\":\"MapS.dataN(adm_user_profile.id)\",\"old_user_id\":\"MapS.dataS(adm_user_profile.old_user_id)\",\"urefid\":\"MapS.dataS(adm_user_profile.urefid)\",\"user_name\":\"MapS.dataS(adm_user_profile.user_name)\",\"login_name\":\"MapS.dataS(adm_user_profile.login_name)\",\"branch_code\":\"MapS.dataS(adm_user_profile.branch_code)\",\"department_code\":\"MapS.dataS(adm_user_profile.department_code)\",\"position\":{\"cashier\":\"MapS.dataN(adm_user_profile.position.cashier)\",\"officer\":\"MapS.dataN(adm_user_profile.position.officer)\",\"chief_cashier\":\"MapS.dataN(adm_user_profile.position.chief_cashier)\",\"operation_staff\":\"MapS.dataN(adm_user_profile.position.operation_staff)\",\"dealer\":\"MapS.dataN(adm_user_profile.position.dealer)\",\"inter_branch_user\":\"MapS.dataN(adm_user_profile.position.inter_branch_user)\",\"branch_manager\":\"MapS.dataN(adm_user_profile.position.branch_manager)\"},\"remark\":\"MapS.dataS(adm_user_profile.remark)\",\"user_account_status\":\"MapS.dataS(adm_user_profile.user_account_status)\",\"main_language\":\"MapS.dataS(adm_user_profile.main_language)\",\"user_phone\":\"MapS.dataS(adm_user_profile.user_phone)\",\"phone_number\":{\"home\":\"MapS.dataS(adm_user_profile.phone_number.home)\",\"office\":\"MapS.dataS(adm_user_profile.phone_number.office)\",\"cell\":\"MapS.dataS(adm_user_profile.phone_number.cell)\",\"facsimile\":\"MapS.dataS(adm_user_profile.phone_number.facsimile)\",\"telex\":\"MapS.dataS(adm_user_profile.phone_number.telex)\"},\"time_zone\":\"MapS.dataN(adm_user_profile.time_zone)\",\"thousand_separate_character\":\"MapS.dataS(adm_user_profile.thousand_separate_character)\",\"decimal_separate_character\":\"MapS.dataS(adm_user_profile.decimal_separate_character)\",\"date_format\":\"MapS.dataS(adm_user_profile.date_format)\",\"long_date_format\":\"MapS.dataSNull(adm_user_profile.long_date_format)\",\"time_format\":\"MapS.dataS(adm_user_profile.time_format)\",\"expire_date\":\"MapS.dataSNull(adm_user_profile.expire_date)\",\"policy_id\":\"MapS.dataN(adm_user_profile.policy_id)\",\"email\":\"MapS.dataSNull(adm_user_profile.email)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 202
+      }
+    ]
+  }
+]

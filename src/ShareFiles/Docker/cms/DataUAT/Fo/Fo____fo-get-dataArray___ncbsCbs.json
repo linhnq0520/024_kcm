@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3582158Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xoá thông báo lỗi\",\"function\":\"form.clearError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Thu thập và thêm mới\",\"function\":\"formAPI.addnewNoValidate\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@list_component\",\"@list_view\",\"@check_error\",\"@node_delete\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#ncbsCbs:bo-get-dataArray\",\"input\":{\"learn_api\":\"@learn_api\",\"workflow_id\":\"@workflow_id\",\"table_code\":\"@table_code\",\"component_result\":\"@component_result\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "",
+        "txtype": "fo",
+        "txcode": "fo-get-dataArray",
+        "version": 1,
+        "updateTime": 638078129490056485,
+        "txname": "create data with API",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 292
+      }
+    ]
+  }
+]

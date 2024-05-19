@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8264297Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "mtg_opn_mtg_opn_btn_accept_post_api_fo_mtg_opn",
+        "learn_api_name": "mtg_opn_add Accept MTG_OPN",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/mtg_opn",
+        "learn_api_data": "mtg_opn_add",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.result",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"txrefid\":\"MapS.dataS(mtg_opn_add.txrefid)\",\"pdacc\":\"MapS.dataS(mtg_opn_add.pdacc)\",\"cacnm\":\"MapS.dataS(mtg_opn_add.cacnm)\",\"cctmt\":\"MapS.dataS(mtg_opn_add.cctmt)\",\"cctmcd\":\"MapS.dataS(mtg_opn_add.cctmcd)\",\"cncat\":\"MapS.dataS(mtg_opn_add.cncat)\",\"ccatnm\":\"MapS.dataS(mtg_opn_add.ccatnm)\",\"crtype\":\"MapS.dataS(mtg_opn_add.crtype)\",\"cpur\":\"MapS.dataS(mtg_opn_add.cpur)\",\"cpur2\":\"MapS.dataS(mtg_opn_add.cpur2)\",\"cacccr\":\"MapS.dataS(mtg_opn_add.cacccr)\",\"pcsccr\":\"MapS.dataS(mtg_opn_add.pcsccr)\",\"crate\":\"MapS.dataN(mtg_opn_add.crate)\",\"cbkexr1\":\"MapS.dataN(mtg_opn_add.cbkexr1)\",\"camt\":\"MapS.dataN(mtg_opn_add.camt)\",\"camt3\":\"MapS.dataN(mtg_opn_add.camt3)\",\"camt2\":\"MapS.dataN(mtg_opn_add.camt2)\",\"ccerser\":\"MapS.dataS(mtg_opn_add.ccerser)\",\"pcsamt\":\"MapS.dataN(mtg_opn_add.pcsamt)\",\"cnseq\":\"MapS.dataN(mtg_opn_add.cnseq)\",\"cserno\":\"MapS.dataS(mtg_opn_add.cserno)\",\"craddr\":\"MapS.dataS(mtg_opn_add.craddr)\",\"cvldt\":\"MapS.dateDDMMYYYY(mtg_opn_add.cvldt)\",\"expdt\":\"MapS.dateDDMMYYYY(mtg_opn_add.expdt)\",\"reivdt\":\"MapS.dateDDMMYYYY(mtg_opn_add.reivdt)\",\"plcyamt\":\"MapS.dataN(mtg_opn_add.plcyamt)\",\"ciplcy\":\"MapS.dataS(mtg_opn_add.ciplcy)\",\"reivstt\":\"MapS.dataS(mtg_opn_add.reivstt)\",\"plcyno\":\"MapS.dataS(mtg_opn_add.plcyno)\",\"descs\":\"MapS.dataS(mtg_opn_add.descs)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.result",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 205
+      }
+    ]
+  }
+]

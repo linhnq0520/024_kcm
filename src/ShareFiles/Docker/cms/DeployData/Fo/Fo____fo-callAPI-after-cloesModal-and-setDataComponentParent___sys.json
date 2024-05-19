@@ -1,0 +1,86 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-08T07:49:06.934873Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": "fo-tableItem-callAPI-andSearch",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-search-condition-API",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-open-form-modal-dynamic",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-cloesModal-and-setDataComponentParent",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-saveData-callAPI",
+        "app": "ncbs"
+      },
+      {
+        "txcode": "fo-openModal-byCondition",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-callApi-loginApprove-SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-create-dataAPI-approveOk-SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "app": "sys"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"Thu th?p v? th?m m?i\",\n        \"function\": \"formAPI.addnew\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [\n            \"*\",\n            \"\",\n            \"@check_error\",\n            \"@node_delete\"\n        ],\n        \"request\": {\n            \"true\": {\n                \"bo\": [\n                    {\n                        \"txcode\": \"#sys:bo-callAPI-after-cloesModal-and-setDataComponentParent\",\n                        \"input\": {\n                            \"learn_api\": \"@learn_api\",\n                            \"component_code_parent\": \"@component_code_parent\",\n                            \"node_get\": \"@node_get\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n]",
+        "request": "{}",
+        "status": "A",
+        "txtype": "fo",
+        "txcode": "fo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "version": 1,
+        "updateTime": 638376167041800122,
+        "txname": "fo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 329
+      }
+    ]
+  }
+]

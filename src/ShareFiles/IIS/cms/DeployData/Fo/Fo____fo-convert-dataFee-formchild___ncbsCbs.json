@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4072845Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Thu thập tinh toán Fee\",\"function\":\"own_O9_fee.FeeApply\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-convert-dataFee-formchild\",\"input\":{}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-convert-dataFee-formchild",
+        "version": 1,
+        "updateTime": 638042796881318921,
+        "txname": "View data open form",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 70
+      }
+    ]
+  }
+]

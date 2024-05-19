@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.3516787Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"CTM-Customer media files\",\"des\":\"Media File\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"\",\"url_input\":\"\",\"lang_form\":{\"en\":\"CTM-Customer media files\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"BO_003005\",\"ruleStrong\":[],\"app\":\"ncbsCbs\"}",
+        "list_layout": "[\n\t{\n\t\t\"name\": \"Program Layout\",\n\t\t\"des\": \"\",\n\t\t\"class\": \"\",\n\t\t\"codeHidden\": \"program_layout\",\n\t\t\"inputtype\": \"cLayout\",\n\t\t\"list_view\": [\n\t\t\t{\n\t\t\t\t\"name\": \"Program View\",\n\t\t\t\t\"code\": \"code\",\n\t\t\t\t\"codeHidden\": \"program_view\",\n\t\t\t\t\"inputtype\": \"cView\",\n\t\t\t\t\"isTab\": \"false\",\n\t\t\t\t\"list_input\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Search\",\n\t\t\t\t\t\t\t\"code\": \"Search\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_SEARCH_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"View\",\n\t\t\t\t\t\t\t\"code\": \"View\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_VIEW_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Modify\",\n\t\t\t\t\t\t\t\"code\": \"Modify\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_UPDATE_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Save\",\n\t\t\t\t\t\t\t\"code\": \"Save\",\n\t\t\t\t\t\t\t\"codeHidden\": \"0030050005\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Import\",\n\t\t\t\t\t\t\t\"code\": \"Import\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_INSERT_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Approve\",\n\t\t\t\t\t\t\t\"code\": \"Approve\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_APPROVE_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Delete\",\n\t\t\t\t\t\t\t\"code\": \"Delete\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_DELETE_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"lang\": {},\n\t\t\t\t\t\t\"default\": {\n\t\t\t\t\t\t\t\"name\": \"Get Information\",\n\t\t\t\t\t\t\t\"code\": \"get_information\",\n\t\t\t\t\t\t\t\"codeHidden\": \"SQL_GETINFO2_MEDIA\"\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n]",
+        "react_txt": "",
+        "form_id": "BO_003005",
+        "app": "ncbsCbs",
+        "id": 642
+      }
+    ]
+  }
+]

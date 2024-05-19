@@ -1,0 +1,236 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-31T06:44:55.8922853Z",
+    "host": "192.168.8.104:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "B",
+        "caption": "APARTMENT",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"APARTMENT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21647
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "M",
+        "caption": "CONDOMIDIUM",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"CONDOMIDIUM\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21648
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "A",
+        "caption": "OWNER BOOK",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"OWNER BOOK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21649
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "P",
+        "caption": "CORPORATE_GUARANTEE",
+        "cdval": "5",
+        "cdidx": 5,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"CORPORATE_GUARANTEE\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21650
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "V",
+        "caption": "FIXED_DEPOSIT_ACCOUNT",
+        "cdval": "7",
+        "cdidx": 7,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"FIXED_DEPOSIT_ACCOUNT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21651
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "G",
+        "caption": "ASIGNMENT_OF_DEBT",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"ASIGNMENT_OF_DEBT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 21652
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "S",
+        "caption": "CURRENT_ACCOUNT",
+        "cdval": "6",
+        "cdidx": 6,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"CURRENT_ACCOUNT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25108
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "C",
+        "caption": "GOLD_AND_JEWELLERY",
+        "cdval": "8",
+        "cdidx": 8,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"GOLD_AND_JEWELLERY\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25162
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "D",
+        "caption": "GOODS",
+        "cdval": "9",
+        "cdidx": 9,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"GOODS\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25163
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "E",
+        "caption": "LAND_AND_BUILDING",
+        "cdval": "9",
+        "cdidx": 10,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"LAND_AND_BUILDING\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25164
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "F",
+        "caption": "PERSONAL_GUARANTEE",
+        "cdval": "9",
+        "cdidx": 11,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"PERSONAL_GUARANTEE\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25165
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "H",
+        "caption": "PLEDGE",
+        "cdval": "9",
+        "cdidx": 12,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"PLEDGE\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25166
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "I",
+        "caption": "SAVING_DEPOSIT_ACCOUNT",
+        "cdval": "9",
+        "cdidx": 13,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"SAVING_DEPOSIT_ACCOUNT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25167
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "J",
+        "caption": "SEASONAL_FIXED_DEPOSIT_ACCOUNT",
+        "cdval": "9",
+        "cdidx": 14,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"SEASONAL_FIXED_DEPOSIT_ACCOUNT\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25168
+      },
+      {
+        "cdgrp": "MTG",
+        "cdname": "MATYPE",
+        "cdid": "K",
+        "caption": "STOCKS_SHARES_SECURITIES",
+        "cdval": "9",
+        "cdidx": 15,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"STOCKS_SHARES_SECURITIES\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25169
+      }
+    ]
+  }
+]

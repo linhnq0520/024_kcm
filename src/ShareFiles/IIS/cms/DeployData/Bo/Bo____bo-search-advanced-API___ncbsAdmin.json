@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-29T06:56:15.9089967Z",
+    "host": "192.168.1.220:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.220"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": "bo-search-advanced-API",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"post API\",\"function\":\"ncbsCbs.core.txNcbsCbs.searchAdvanced\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#ncbsCbs:fo-update-data\",\"input\":{}}],\"error\":[]},\"empty\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionSearchEmpty\"}},{\"txcode\":\"#ncbsCbs:fo-update-data\",\"input\":{}}],\"error\":[]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionError\"}},{\"txcode\":\"#sys:fo-off-loading\",\"input\":{}},{\"txcode\":\"#sys:fo-set-FormErrorAPI\",\"input\":{}}],\"error\":[]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-search-advanced-API",
+        "version": 1,
+        "updateTime": 638288064844151163,
+        "txname": "bo-search-advanced-API",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsAdmin",
+        "id": 291
+      }
+    ]
+  }
+]

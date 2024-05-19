@@ -1,0 +1,46 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "",
+    "DataProvider": "",
+    "SQLCommandTimeout": null
+  },
+  "CacheConfig": {
+    "DefaultCacheTime": 60,
+    "ShortTermCacheTime": 3,
+    "BundledFilesCacheTime": 120
+  },
+  "DistributedCacheConfig": {
+    "Enabled": true,
+    "ConnectionString": "redis:6379"
+  },
+  "Kestrel": {
+    "Endpoints": {
+      "Grpc": {
+        "Protocols": "Http2",
+        "Url": "https://*:5000",
+        "Certificate": {
+          "Path": "NT.pfx",
+          "Password": "123456"
+        }
+      },
+      "webApi": {
+        "Url": "https://*:443",
+        "Certificate": {
+          "Path": "NT.pfx",
+          "Password": "123456"
+        }
+      }
+    }
+  },
+  "NeptuneConfiguration": {
+    "NeptuneGrpcToken": "123456",
+    "NeptuneHttpURL": "https://neptuneserver:105/",
+    "NeptuneGrpcURL": "https://neptuneserver:109/",
+    "YourServiceID": "CMS",
+    "YourGrpcURL": "https://cms.api:5000",
+    "RedisEndpoint": "redis:6379",
+    "LogEventMessage": true
+  },
+  "RedisEndpoint": "redis:6379",
+  "AppVersion": "1.0.0"
+}

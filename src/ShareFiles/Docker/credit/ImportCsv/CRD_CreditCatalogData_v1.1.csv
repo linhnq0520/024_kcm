@@ -1,0 +1,21 @@
+Database,Credit,Table,CreditCatalog,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CatalogCode,CatalogName,CurrencyCode,SecureCurrencyCode,CreditType,TenorType,IsSyndicated,InterestComputationMode,SecureType,SecureRate,PrincipalTenor,PrincipalTenorUnit,InterestTenor,InterestTenorUnit,FineTenor,FineTenorUnit,CreditPurpose,CreditClassification,CreditFacility,DiscountRate,ReDiscountRate,DisbursementMode,PrincipalGracePeriod,InterestGracePeriod,FineGracePeriod,IsProvision,ProvisionTenor,ProvisionTenorUnit,RolloverOption,Restruct,HolidayInterestTenor,HolidayPrincipalDueOn,HolidayFineTenor,PrincipalDecimalRounding,InterestDecimalRounding,UserCreated,UserApproved,CatalogStatus,PrincipalProvisionRate0,PrincipalProvisionRate1,PrincipalProvisionRate2,PrincipalProvisionRate3,PrincipalProvisionRate4,InterestProvisionRate0,InterestProvisionRate1,InterestProvisionRate2,InterestProvisionRate3,InterestProvisionRate4,Subproduct,CreatedOnUtc,UpdatedOnUtc,NotificationType,CreditSubType,Id
+NR01MMK001,NR01 - Normal Loan,MMK,MMK,F,S,N,F,F,0,0,B,3,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+NRIMMMK002,NRIM - Normal Loan,MMK,MMK,F,S,N,F,N,0,0,B,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+NR02MMK003,NR02 - Personal Guarantee,MMK,MMK,F,S,N,F,N,0,0,B,3,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+TLY2MMK004,TLY2 - Monthly - TERM LOAN - 2 YEARS (360 EURO),MMK,MMK,F,M,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F2,0
+TLY2MMK005,TLY2 - Quarterly - TERM LOAN - 2 YEARS (360 EURO),MMK,MMK,F,M,N,C,N,0,3,M,3,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F2,0
+TLY3MMK006,TLY3 - Monthly - TERM LOAN - 3 YEARS (360 EURO),MMK,MMK,F,M,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F2,0
+TLY3MMK007,TLY3 - Quarterly - TERM LOAN - 3 YEARS (360 EURO),MMK,MMK,F,M,N,C,N,0,3,M,3,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F2,0
+ST01MMK008,ST01 - EMPLOYEE LOAN,MMK,MMK,F,S,N,F,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+HP05MMK009,HP05 - HIRE PURCHASE - 1 YEAR,MMK,MMK,F,S,N,U,N,0,1,M,0,E,1,M,IN,10,TL,0,0,O,0,0,0,Y,0,,N,N,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+HP02MMK010,HP02 - HIRE PURCHASE - 2 YEARS,MMK,MMK,F,M,N,U,F,100,1,M,1,Y,1,M,IN,10,TL,0,0,O,0,0,0,Y,0,,N,N,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+HP03MMK011,HP03 - HIRE PURCHASE - 3 YEARS,MMK,MMK,F,M,N,U,N,0,1,M,1,Y,1,M,IN,10,TL,0,0,O,0,0,0,Y,0,,N,N,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+HP3YMMK012,HP3Y - HIRE PURCHASE - 3 YEARS,MMK,MMK,F,M,N,O,N,0,6,M,1,Y,1,M,IN,10,TL,0,0,O,0,0,0,Y,0,,N,N,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+NR10MMK013,NR10 - Discount Loan -1 Year,MMK,MMK,F,S,N,U,N,0,0,B,0,E,1,M,IN,10,TL,0,0,O,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+HPA2MMK014,HPA2 - HIRE PURCHASE - 2 YEARS (AMORTIZE),MMK,MMK,F,M,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+HPA5MMK015,HPA5 - HIRE PURCHASE - 5 YEARS (AMORTIZE),MMK,MMK,F,L,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0
+SHLNMMK016,SHLN - STAFF HOUSING LOAN,MMK,MMK,F,L,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+CHL1MMK017,CHL1 - Consumer Home Loan,MMK,MMK,F,L,N,C,F,100,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F3,0
+STPLMMK018,STPL - STAFF PERSONAL LOAN,MMK,MMK,F,S,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F1,0
+HPA3MMK019,HPA3 - HIRE PURCHASE - 3 YEARS (AMORTIZE),MMK,MMK,F,M,N,C,N,0,1,M,1,M,1,M,IN,10,TL,0,0,M,0,0,0,Y,0,,N,A,0,0,0,2,5,00911,0,N,0,5,25,50,100,0,0,0,0,0,N,,,,F4,0

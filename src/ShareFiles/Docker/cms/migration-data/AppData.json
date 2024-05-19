@@ -1,0 +1,150 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-04-11T03:39:54.1659639Z",
+    "host": "192.168.1.170:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "neptunedb_mysql"
+      },
+      {
+        "name": "port",
+        "value": "3306"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "App"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "list_application_id": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "ListApplicationId": "sys",
+        "ListApplicationName": "Systemm",
+        "ListApplicationDes": "App System",
+        "ListApplicationImg": "../rs/global/img/jwebui.png",
+        "ListApplicationBo": "bo-login-sys",
+        "ListApplicationOrder": "2",
+        "ListApplicationBoLogoutAll": "#sys:bo-logout-all-default",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_sys\",\"theme\":\"Green_Pigment\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_sys\",\"theme\":\"Green_Pigment\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_sys\",\"theme\":\"Green_Pigment\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_o9\",\"theme\":\"krungthai\"}}",
+        "status": "I",
+        "id": 1
+      },
+      {
+        "ListApplicationId": "ncbs",
+        "ListApplicationName": "Neptune Portal",
+        "ListApplicationDes": "Neptune Portal",
+        "ListApplicationImg": "../rs/global/img/neptune_portal.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "2",
+        "ListApplicationBoLogoutAll": "#sys:bo-logout-all-default",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"}}",
+        "status": "A",
+        "id": 2
+      },
+      {
+        "ListApplicationId": "designform",
+        "ListApplicationName": "Design Form",
+        "ListApplicationDes": "Design Form",
+        "ListApplicationImg": "../rs/global/img/APP_ICON_DESIGNFORM.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "10",
+        "ListApplicationBoLogoutAll": null,
+        "ListApplicationBoLogout": null,
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"isFwCss\":false,\"template\":\"malibu\",\"screen_working\":\"desktop_designForm\"},\"desktop\":{\"isFwCss\":false,\"template\":\"designForm\",\"screen_working\":\"desktop_designForm\"},\"tablet\":{\"isFwCss\":false,\"template\":\"malibu\",\"screen_working\":\"desktop_designForm\"}}",
+        "status": "A",
+        "id": 3
+      },
+      {
+        "ListApplicationId": "ncbsCbs",
+        "ListApplicationName": "Shwebank",
+        "ListApplicationDes": "Neptune Core CBS",
+        "ListApplicationImg": "../rs/global/img/shwebank.png",
+        "ListApplicationBo": "bo-login-ncbsCbs",
+        "ListApplicationOrder": "1",
+        "ListApplicationBoLogoutAll": "#sys:bo-logout-all-default",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\n\t\"mobile\": {\n\t\t\"template\": \"malibu\",\n\t\t\"screen_working\": \"desktop_ncbsCbs\",\n\t\t\"theme\": \"shwebank\"\n\t},\n\t\"desktop\": {\n\t\t\"template\": \"malibu\",\n\t\t\"screen_working\": \"desktop_ncbsCbs\",\n\t\t\"theme\": \"shwebank\"\n\t},\n\t\"tablet\": {\n\t\t\"template\": \"malibu\",\n\t\t\"screen_working\": \"desktop_ncbsCbs\",\n\t\t\"theme\": \"shwebank\"\n\t},\n\t\"desktop_small\": {\n\t\t\"template\": \"malibu\",\n\t\t\"screen_working\": \"desktop_ncbsCbs\",\n\t\t\"theme\": \"shwebank\"\n\t}\n}",
+        "status": "A",
+        "id": 4
+      },
+      {
+        "ListApplicationId": "ncbsAdmin",
+        "ListApplicationName": "Neptune Admin",
+        "ListApplicationDes": "Neptune Admin",
+        "ListApplicationImg": "../rs/global/img/jwebui.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "2",
+        "ListApplicationBoLogoutAll": "#sys:bo-logout-all-default",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"}}",
+        "status": "A",
+        "id": 5
+      },
+      {
+        "ListApplicationId": "ncbsLicense",
+        "ListApplicationName": "Neptune Licence Issuer",
+        "ListApplicationDes": "Neptune Licence Issuer",
+        "ListApplicationImg": "../rs/global/img/neptune_license.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "3",
+        "ListApplicationBoLogoutAll": "",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"}}",
+        "status": "A",
+        "id": 6
+      },
+      {
+        "ListApplicationId": "ncbsReport",
+        "ListApplicationName": "Neptune Report",
+        "ListApplicationDes": "Neptune Report",
+        "ListApplicationImg": "../rs/global/img/neptune_report.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "7",
+        "ListApplicationBoLogoutAll": "#sys:bo-logout-all-default",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"}}",
+        "status": "A",
+        "id": 7
+      },
+      {
+        "ListApplicationId": "ncbsEvent",
+        "ListApplicationName": "Neptune Event",
+        "ListApplicationDes": "Neptune Event",
+        "ListApplicationImg": "../rs/global/img/neptune_event.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "1",
+        "ListApplicationBoLogoutAll": "",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbs\",\"theme\":\"shwebank\"}}",
+        "status": "A",
+        "id": 8
+      }
+    ]
+  }
+]

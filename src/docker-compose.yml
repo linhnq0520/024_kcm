@@ -1,0 +1,178 @@
+version: "3.4"
+
+services:
+  neptunedb_mysql:
+    image: mysql
+    # platform: linux/x86_64
+
+  neptunedb_mariadb:
+    image: mariadb
+
+  neptunedb_postgresql:
+    image: postgres
+
+  neptunedb_sqlserver:
+    image: mcr.microsoft.com/mssql/server
+
+  neptunedb_oracle:
+    image: container-registry.oracle.com/database/enterprise:latest
+
+  adminer:
+    image: adminer
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+  phpmyadmin:
+    image: phpmyadmin
+
+  portainer:
+    image: portainer/portainer-ce
+
+  redis:
+    image: redis
+
+  neptuneserver:
+    image: ${DOCKER_REGISTRY-}neptuneserver
+    build:
+      context: .
+      dockerfile: ShareFiles/neptuneserver/Dockerfile
+
+  accounting.api:
+    image: ${DOCKER_REGISTRY-}accountingapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Accounting/Dockerfile
+
+  admin.api:
+    image: ${DOCKER_REGISTRY-}adminapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Admin/Dockerfile
+
+  cash.api:
+    image: ${DOCKER_REGISTRY-}cashapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Cash/Dockerfile
+
+  credit.api:
+    image: ${DOCKER_REGISTRY-}creditapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Credit/Dockerfile
+
+  customer.api:
+    image: ${DOCKER_REGISTRY-}customerapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Customer/Dockerfile
+
+  deposit.api:
+    image: ${DOCKER_REGISTRY-}depositgapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Deposit/Dockerfile
+
+  fixedasset.api:
+    image: ${DOCKER_REGISTRY-}fixedassetapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.FixedAsset/Dockerfile
+
+  fx.api:
+    image: ${DOCKER_REGISTRY-}fxapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.FX/Dockerfile
+
+  mortgage.api:
+    image: ${DOCKER_REGISTRY-}mortgageapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Mortgage/Dockerfile
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Payment/Dockerfile
+
+  batch.api:
+    image: ${DOCKER_REGISTRY-}batchapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Batch/Dockerfile
+
+  voucher.api:
+    image: ${DOCKER_REGISTRY-}voucherapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Voucher/Dockerfile
+
+  design.api:
+    image: ${DOCKER_REGISTRY-}designapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Design/Dockerfile
+
+  cms.api:
+    image: ${DOCKER_REGISTRY-}cmsapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.CMS/Dockerfile
+
+  email.api:
+    image: ${DOCKER_REGISTRY-}emailapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Email/Dockerfile
+
+  sample.api:
+    image: ${DOCKER_REGISTRY-}sampleapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Sample/Dockerfile
+
+  report.api:
+    image: ${DOCKER_REGISTRY-}reportapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Report/Dockerfile
+
+  ems.api:
+    image: ${DOCKER_REGISTRY-}emsapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.EMS/Dockerfile
+  acw.api:
+    image: ${DOCKER_REGISTRY-}acwapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Acw/Dockerfile
+
+  wal.api:
+    image: ${DOCKER_REGISTRY-}walapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Wal/Dockerfile
+
+  import.api:
+    image: ${DOCKER_REGISTRY-}importapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Import/Dockerfile
+
+  party.api:
+    image: ${DOCKER_REGISTRY-}partyapi
+    build:
+      context: .
+      dockerfile: Jits.Neptune.Web.Party/Dockerfile
+
+volumes:
+  mysql_data:
+  mariadb_data:
+  postgresql_data:
+  sqlserver_data:
+  oracle_data:
+  portainer_data:

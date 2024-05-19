@@ -1,0 +1,1 @@
+(this.webpackJsonpframeworkcss=this.webpackJsonpframeworkcss||[]).push([[1132],{902:function(s,e,t){s.exports=t.p+"static/media/readme_roleFO.4935db81.txt"}}]);

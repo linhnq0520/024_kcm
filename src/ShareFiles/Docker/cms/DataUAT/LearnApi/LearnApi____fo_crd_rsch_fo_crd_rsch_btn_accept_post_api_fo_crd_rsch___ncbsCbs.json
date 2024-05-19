@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.4573022Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_rsch_fo_crd_rsch_btn_accept_post_api_fo_crd_rsch",
+        "learn_api_name": "FO_CRD_RSCH Accept FO_CRD_RSCH",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_RSCH",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"CRD_RSCH\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"account_number\": \"MapS.dataS(FO_CRD_RSCH.account_number)\",\n        \"customer_type\": \"MapS.dataS(FO_CRD_RSCH.customer_type)\",\n        \"account_holder_name\": \"MapS.dataS(FO_CRD_RSCH.account_holder_name)\",\n        \"catalog_code\": \"MapS.dataS(FO_CRD_RSCH.catalog_code)\",\n        \"catalog_name\": \"MapS.dataS(FO_CRD_RSCH.catalog_name)\",\n        \"credit_limit\": \"MapS.dataN(FO_CRD_RSCH.credit_limit)\",\n        \"description\": \"MapS.dataS(FO_CRD_RSCH.description)\",    \"user_approve\":\"MapS.dataSNull(user_approve.username)\"\n    }\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1074
+      }
+    ]
+  }
+]

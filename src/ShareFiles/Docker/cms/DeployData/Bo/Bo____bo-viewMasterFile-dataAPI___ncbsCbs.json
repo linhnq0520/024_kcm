@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4493418Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "Input": "{}",
+        "Actions": "[{\"name\":\"g?i learn API\",\"function\":\"ncbsCbs.core.txNcbsCbs.viewMasterFile\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysGetInfoOk\"}},{\"txcode\":\"#sys:fo-view-dataAPIOpenForm\",\"input\":{}}]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-confirm\",\"input\":{\"toast_type\":\"error\"}}]},\"_default_\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-confirm\",\"input\":{\"toast_type\":\"error\"}}]}}}]",
+        "Response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "Status": "A",
+        "Txtype": "bo",
+        "Txcode": "bo-viewMasterFile-dataAPI",
+        "Version": 1,
+        "Updatetime": 638215461867881916,
+        "Txname": "bo-viewMasterFile-dataAPI",
+        "Hasrole": "false",
+        "Isold": false,
+        "DisplayOrder": 1,
+        "App": "ncbsCbs",
+        "id": 283
+      }
+    ]
+  }
+]

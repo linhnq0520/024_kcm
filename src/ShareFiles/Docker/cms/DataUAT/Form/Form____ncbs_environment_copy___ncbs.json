@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.4138467Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"24/06/2022 10:40:37 AM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"Blank Form\",\"bodata\":\"\",\"data\":\"\",\"des\":\"\",\"flow_layout\":[],\"form_code\":\"ncbs_environment_copy\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_action\":\"from;to\",\"component_result\":\"copy\",\"view_result\":\"\",\"condition\":\"'@{from}'!=='@{to}'\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"component_event\":\"all\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true,\"isStatus\":-1,\"isDidStart\":false,\"isOpenFromOther\":false},{\"code\":\"visibility\",\"config\":{\"component_action\":\"from;to\",\"component_result\":\"copy\",\"view_result\":\"\",\"condition\":\"'@{from}'==='@{to}'\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"component_event\":\"all\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true,\"isStatus\":-1,\"isDidStart\":false,\"isOpenFromOther\":false}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"18cfe3705fba6e11\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"1cf815dd8630e9df\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"From\",\"code\":\"from\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"eaac614e60aeb513\"},\"config\":{\"structable\":\"ncbs_environment_copy.from\",\"structable_read\":\"ncbs_environment_copy.from\",\"cdlist\":{\"cdgrp\":\"JWEBUI\",\"cdname\":\"1\"},\"data_default\":\"\",\"data_mode\":\"query\",\"query_data\":\"\",\"is_multi_select\":\"false\",\"is_multi_col\":\"false\",\"get_data_format\":\"c_cdlist.cdid\",\"selected_view_format\":\"@c_cdlist.caption\",\"table_format\":\"[\\n        {\\n            \\\"title\\\": \\\"Name\\\",\\n            \\\"code\\\": \\\"col.col_name\\\"\\n        },\\n        {\\n            \\\"title\\\": \\\"ID\\\",\\n            \\\"code\\\": \\\"col.col_id\\\"\\n        }\\n    ]\",\"index_view_value\":\"0\",\"col_format\":\"@c_cdlist.caption\",\"json_data\":\"[\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E1\\\",\\n      \\\"caption\\\": \\\"E1\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E2\\\",\\n      \\\"caption\\\": \\\"E2\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E3\\\",\\n      \\\"caption\\\": \\\"E3\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E4\\\",\\n      \\\"caption\\\": \\\"E4\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E5\\\",\\n      \\\"caption\\\": \\\"E5\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E6\\\",\\n      \\\"caption\\\": \\\"E6\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E7\\\",\\n      \\\"caption\\\": \\\"E7\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E8\\\",\\n      \\\"caption\\\": \\\"E8\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E9\\\",\\n      \\\"caption\\\": \\\"E9\\\"\\n    }\\n  }\\n]\",\"key_selected\":\"c_cdlist.cdid\",\"useAction\":\"false\",\"isAutoDefault\":\"true\",\"isLabel\":\"false\",\"isHasDataNull\":\"false\"},\"role\":{\"disabled\":\"\",\"visible\":\"\",\"other\":\"\",\"other2\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"vi\":\"\",\"en\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"jSelect\"},{\"default\":{\"name\":\"To\",\"code\":\"to\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"1449e79d5a43a06d\"},\"config\":{\"structable\":\"ncbs_environment_copy.to\",\"structable_read\":\"ncbs_environment_copy.to\",\"cdlist\":{\"cdgrp\":\"JWEBUI\",\"cdname\":\"1\"},\"data_default\":\"\",\"data_mode\":\"query\",\"query_data\":\"\",\"is_multi_select\":\"false\",\"is_multi_col\":\"false\",\"get_data_format\":\"c_cdlist.cdid\",\"selected_view_format\":\"@c_cdlist.caption\",\"table_format\":\"[\\n        {\\n            \\\"title\\\": \\\"Name\\\",\\n            \\\"code\\\": \\\"col.col_name\\\"\\n        },\\n        {\\n            \\\"title\\\": \\\"ID\\\",\\n            \\\"code\\\": \\\"col.col_id\\\"\\n        }\\n    ]\",\"index_view_value\":\"0\",\"col_format\":\"@c_cdlist.caption\",\"json_data\":\"[\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E1\\\",\\n      \\\"caption\\\": \\\"E1\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E2\\\",\\n      \\\"caption\\\": \\\"E2\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E3\\\",\\n      \\\"caption\\\": \\\"E3\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E4\\\",\\n      \\\"caption\\\": \\\"E4\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E5\\\",\\n      \\\"caption\\\": \\\"E5\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E6\\\",\\n      \\\"caption\\\": \\\"E6\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E7\\\",\\n      \\\"caption\\\": \\\"E7\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E8\\\",\\n      \\\"caption\\\": \\\"E8\\\"\\n    }\\n  },\\n  {\\n    \\\"c_cdlist\\\": {\\n      \\\"cdid\\\": \\\"E9\\\",\\n      \\\"caption\\\": \\\"E9\\\"\\n    }\\n  }\\n]\",\"key_selected\":\"c_cdlist.cdid\",\"useAction\":\"false\",\"isAutoDefault\":\"true\",\"isLabel\":\"false\",\"isHasDataNull\":\"false\"},\"role\":{\"disabled\":\"\",\"visible\":\"\",\"other\":\"\",\"other2\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"vi\":\"\",\"en\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"jSelect\"},{\"config\":{\"onTable\":\"\",\"icon\":\"copy\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-saveDataChild-andReload\\\",\\n        \\\"input\\\": {\\n         \\\"learn_api\\\":\\\"ncbs_environment_copy;ncbs_environment_variable_search\\\",\\n         \\\"node_clear\\\":\\\"\\\",\\n\\\"table_reload\\\":\\\"ncbs_environment_variable_search\\\"\\n        }\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"learn_sql\",\"privateKeyTableMasterData\":\"learn_sql_id\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Copy\",\"code\":\"copy\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"81f32764db4061a0\"}}]}]}]",
+        "react_txt": null,
+        "form_id": "ncbs_environment_copy",
+        "app": "ncbs",
+        "id": 682
+      }
+    ]
+  }
+]

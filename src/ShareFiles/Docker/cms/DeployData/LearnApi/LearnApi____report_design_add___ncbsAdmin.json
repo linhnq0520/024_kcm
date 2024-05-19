@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.6155115Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "report_design_add",
+        "learn_api_name": "report_design_add",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "report_design_add",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"RPT_INSERT_TEMPLATE_REPORT\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n   \r\n    \"code\": \"MapS.dataS(report_design.code)\",\r\n    \"status\": \"MapS.dataS(report_design.status)\",\r\n    \"file_content\": \"MapS.dataS(report_design.file_content)\",\r\n    \"app\": \"MapS.dataS(report_design.app)\",\r\n    \"description\": \"MapS.dataS(report_design.description)\",\r\n    \"version\": \"MapS.dataS(report_design.version)\"\r\n  }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1269
+      }
+    ]
+  }
+]

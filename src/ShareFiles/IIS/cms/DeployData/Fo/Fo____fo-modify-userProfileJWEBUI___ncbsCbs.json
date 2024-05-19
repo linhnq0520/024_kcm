@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4446988Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xo� th�ng b�o l?i\",\"function\":\"form.clearError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"\",\"function\":\"form.returnTrue\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-modify-userProfileJWEBUI\",\"input\":{\"list_component\":\"*\",\"list_view\":\"code\",\"table_code\":\"user\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-modify-userProfileJWEBUI",
+        "version": 1,
+        "updateTime": 638042796881319157,
+        "txname": "fo-modify-userProfileJWEBUI",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 169
+      }
+    ]
+  }
+]

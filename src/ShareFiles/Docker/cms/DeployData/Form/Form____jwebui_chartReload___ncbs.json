@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.3806495Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"04/04/2022 01:54:58 PM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"Chart Reload\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Chart Reload\",\"flow_layout\":[],\"form_code\":\"jwebui_chartReload\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"Layout m?i\",\"des\":\"Ghi ch?\",\"class\":\"\",\"inputtype\":\"cLayout\",\"codeHidden\":\"f0a6598a4c7c9b99\",\"list_view\":[{\"code\":\"code\",\"name\":\"M?u view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"codeHidden\":\"16e02f14afa5a66b\",\"list_input\":[{\"default\":{\"name\":\"M?u component\",\"code\":\"\",\"class\":\"             col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-xl-2-right offset-lg-2-right offset-md-1-right offset-sm-1-right\",\"condition\":\"\",\"codeHidden\":\"4b3b1aa17f04f5f2\",\"role\":\"\"},\"inputtype\":\"jChart\",\"config\":{\"structable\":\"table.col\"},\"validate\":{},\"lang\":{},\"role\":{},\"property\":{},\"configAVD\":{}},{\"default\":{\"name\":\"Reload button\",\"code\":\"btnReload\",\"codeHidden\":\"65ed2ff8da25dd26\",\"class\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{\"en\":\"Reload\",\"vi\":\"Reload\"},\"configAVD\":{},\"inputtype\":\"cButton\"},{\"default\":{\"name\":\"Chart table\",\"code\":\"tblChart\",\"codeHidden\":\"424f6cd5e3b32d77\",\"class\":\"col-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"table.col\",\"query_data\":\"select * from chartReload\",\"paging_record\":\"5\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"chartReload.id\\\",\\n        \\\"title\\\": \\\"Id\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }\\n]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTableDefault\"}]}]}]",
+        "react_txt": null,
+        "form_id": "jwebui_chartReload",
+        "app": "ncbs",
+        "id": 681
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-27T04:04:54.7615572Z",
+    "host": "27.3.1.108:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.108"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "advance_download_report_archive",
+        "app": null
+      },
+      {
+        "learn_api_id": "archive_report_search_btn_search",
+        "app": null
+      },
+      {
+        "learn_api_id": "archive_report_export",
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "advance_download_report_archive",
+        "learn_api_name": "advance_download_report_archive",
+        "learn_api_link": "$RPM_API_URL$/api/ReportArchive/AdvanceDownload",
+        "learn_api_data": "",
+        "learn_api_node_data": "",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_directly_call_service",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"file_name\":\"MapS.dataS(report_archive_management.file_name)\",\"file_format\":\"MapS.dataS(report_archive_management.file_format)\",\"export_date_from\":\"MapS.dataSNull(report_archive_management.export_date_from)\",\"export_date_to\":\"MapS.dataSNull(report_archive_management.export_date_to)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 2930
+      }
+    ]
+  }
+]

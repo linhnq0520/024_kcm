@@ -1,0 +1,107 @@
+WorkflowId;FullInterfaceName;MethodName;Status;WorkflowFunc;TableName;MappingResponse;MappingRequest;IsCommonProcess;IdFieldName
+MTG_ADVANCED_SEARCH_MORTGAGE_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;MTG_ACCOUNT_INFORMATION;;"{
+	""account_name"": ""MapS.dataS(acname)"",
+	""account_number"": ""MapS.dataS(acno)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""customer_code"": ""MapS.dataS(customercd)"",
+	""collateral_asset_classification"": ""MapS.dataS(maclass)"",
+	""collateral_asset_type"": ""MapS.dataS(matype)"",
+	""collateral_account_status"": ""MapS.dataS(mtgsts)"",
+	""reference_number"": ""MapS.dataS(refid)""
+}
+";"{
+	""acname"": ""MapS.dataSNull(fields.account_name)"",
+	""acno"": ""MapS.dataSNull(fields.account_number)"",
+	""catcd"": ""MapS.dataSNull(fields.catalog_code)"",
+	""ccrcd"": ""MapS.dataSNull(fields.currency_code)"",
+	""customercd"": ""MapS.dataSNull(fields.customer_code)"",
+	""maclass"": ""MapS.dataSNull(fields.collateral_asset_classification)"",
+	""matype"": ""MapS.dataSNull(fields.collateral_asset_type)"",
+	""mtgsts"": ""MapS.dataSNull(fields.collateral_account_status)"",
+	""refid"": ""MapS.dataSNull(fields.reference_number)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)"",
+	""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+MTG_ADVANCED_SEARCH_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;MTG_CATALOGUE_DEFINITION;;"{
+  ""catalog_code"": ""MapS.dataS(catcd)"",
+  ""id"": ""MapS.dataI(catid)"",
+  ""catalog_name"": ""MapS.dataS(catname)"",
+  ""catalog_status"": ""MapS.dataSNull(catsts)"",
+  ""currency_code"": ""MapS.dataS(ccrcd)"",
+  ""classification"": ""MapS.dataS(maclass)"",
+  ""collateral_rate"": ""MapS.dataI(marate)"",
+  ""collateral_asset_type"": ""MapS.dataS(matype)""
+}
+";"{
+	""catcd"": ""MapS.dataSNull(fields.catalog_code)"",
+	""catname"": ""MapS.dataSNull(fields.catalog_name)"",
+	""ccrcd"": ""MapS.dataSNull(fields.currency_code)"",
+	""maclass"": ""MapS.dataSNull(fields.classification)"",
+	""matype"": ""MapS.dataSNull(fields.collateral_asset_type)"",
+	""rkrate"": ""MapS.dataINull(fields.rkrate)"",
+	""marate"": ""MapS.dataINull(fields.collateral_rate_to)"",
+	""catsts"": ""MapS.dataSNull(fields.catalog_status)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)"",
+	""search_text"": ""MapS.dataS(fields.search_text)""
+}
+";1;
+MTG_DELETE_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IMortgageCatalogueDefinitionWorkflowService;Delete;1;10001000005;O9DATA.D_MTGCAT;;"{""id"":""MapS.dataI(fields.catid)""}";1;CATID
+MTG_INSERT_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;10001000002;O9DATA.D_MTGCAT;;"{
+    ""CATID"": ""MapS.dataI(fields.id)"",
+    ""CATCD"": ""MapS.dataS(fields.catalog_code)"",
+    ""CATNAME"": ""MapS.dataS(fields.catalog_name)"",
+    ""CCRCD"": ""MapS.dataS(fields.currency_code)"",
+    ""MACLASS"": ""MapS.dataS(fields.classification)"",
+    ""MATYPE"": ""MapS.dataS(fields.collateral_asset_type)"",
+    ""RKRATE"": ""MapS.dataI(fields.risk_rate)"",
+    ""MARATE"": ""MapS.dataI(fields.collateral_rate)"",
+    ""CATSTS"": ""MapS.dataS(fields.catalog_status)"",
+    ""ISDEP"": ""MapS.dataS(fields.depreciation_option)"",
+    ""USRID"": ""MapS.dataI(fields.created_by)"",
+    ""BKSCOPE"": ""MapS.dataS(fields.book_scope)""
+}";1;
+MTG_UPDATE_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;;O9DATA.D_MTGCAT;;;1;
+MTG_SIMPLE_SEARCH_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;MTG_CATALOGUE_DEFINITION;;"{
+  ""catalog_code"": ""MapS.dataS(catcd)"",
+  ""id"": ""MapS.dataI(catid)"",
+  ""catalog_name"": ""MapS.dataS(catname)"",
+  ""catalog_status"": ""MapS.dataSNull(catsts)"",
+  ""currency_code"": ""MapS.dataS(ccrcd)"",
+  ""classification"": ""MapS.dataS(maclass)"",
+  ""collateral_rate"": ""MapS.dataI(marate)"",
+  ""collateral_asset_type"": ""MapS.dataS(matype)""
+}
+";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}
+";1;
+MTG_VIEW_MORTGAGE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;MTG_GET_MTGCAT;;"{
+	""id"": ""MapS.dataI(catid)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""catalog_name"": ""MapS.dataS(catname)"",
+	""catalog_status"": ""MapS.dataS(catsts)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""classification"": ""MapS.dataS(maclass)"",
+    ""created_name"": ""MapS.dataS(usrname)"",
+	""collateral_rate"": ""MapS.dataI(marate)"", 
+    ""created_by"": ""MapS.dataI(usrid)"",
+	""risk_rate"": ""MapS.dataI(rkrate)"",
+	""collateral_asset_type"": ""MapS.dataS(matype)""
+}
+";"{""I"":""MapS.dataI(fields.id)""}";1;
+MTG_SIMPLE_SEARCH_MORTGAGE_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;MTG_ACCOUNT_INFORMATION;;"{
+	""account_name"": ""MapS.dataS(acname)"",
+	""account_number"": ""MapS.dataS(acno)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""customer_code"": ""MapS.dataS(customercd)"",
+	""collateral_asset_classification"": ""MapS.dataS(maclass)"",
+	""collateral_asset_type"": ""MapS.dataS(matype)"",
+	""collateral_account_status"": ""MapS.dataS(mtgsts)"",
+	""reference_number"": ""MapS.dataS(refid)""
+}
+";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+MTG_VIEW_MORTGAGE_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;;;;;1;
+MTG_UPDATE_MORTGAGE_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;;;;;1;
+MTG_DELETE_MORTGAGE_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;;;;;1;

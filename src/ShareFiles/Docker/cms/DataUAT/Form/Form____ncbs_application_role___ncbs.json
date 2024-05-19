@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.0044597Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"12/09/2022 05:37:11 PM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"Application Role\",\"bodata\":\"\",\"data\":\"app\",\"des\":\"Application Role\",\"flow_layout\":[],\"form_code\":\"ncbs_application_role\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"GET_LIST_ROLES\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"fecccf5607fbfed9\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"96952f7d8d3f4a1a\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Role\",\"code\":\"role \",\"class\":\"col-xl-2 col-lg-2col-md-3 col-sm-3\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"0b1c836729e9a124\"},\"config\":{\"structable\":\"app_role.role\",\"structable_read\":\"app_role.role\",\"cdlist\":{\"cdgrp\":\"JWEBUI\",\"cdname\":\"STS\"},\"data_default\":\"\",\"data_mode\":\"query\",\"query_data\":\"select * from list_roles\",\"is_multi_select\":\"false\",\"is_multi_col\":\"true\",\"get_data_format\":\"list_roles.id\",\"selected_view_format\":\"@list_roles.role_name\",\"table_format\":\"[\\n        {\\n            \\\"title\\\": \\\"Role name\\\",\\n            \\\"code\\\": \\\"list_roles.role_name\\\"\\n        },\\n        {\\n            \\\"title\\\": \\\"ID\\\",\\n            \\\"code\\\": \\\"list_roles.id\\\"\\n        }\\n    ]\",\"index_view_value\":\"0\",\"col_format\":\"@c_cdlist.caption\",\"json_data\":\"[]\",\"key_selected\":\"list_roles.id\",\"useAction\":\"false\",\"isAutoDefault\":\"true\",\"isLabel\":\"false\",\"isHasDataNull\":\"false\"},\"role\":{\"disabled\":\"\",\"visible\":\"\",\"other\":\"\",\"other2\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"jSelect\"},{\"config\":{\"onTable\":\"\",\"icon\":\"fa-eye\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-get-app-role\\\",\\n        \\\"input\\\": {\\n\\\"list_component\\\":\\\"*\\\",\\n\\\"list_view\\\":\\\"*\\\"\\n}\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"View\",\"code\":\"view\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"bce5046a876ec587\"}}]},{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"59ac3924c1348a3e\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Grant Role for Applications\",\"code\":\"list_app\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"5f8a19c8f61be612\"},\"config\":{\"structable\":\"app_role.list_application\",\"structable_read\":\"app_role.list_application\",\"query_data\":\"select * from app\",\"get_data_format\":\"app.list_appliaction_id\",\"selected_view_format\":\"@app.list_appliaction_name\",\"index_view_value\":\"0\",\"col_format\":\"@app.list_appliaction_name\",\"key_selected\":\"app.list_appliaction_id\",\"useAction\":\"false\",\"isLabel\":\"false\"},\"role\":{\"disabled\":\"\",\"visible\":\"\",\"other\":\"\",\"other2\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"jListCheckBox\"},{\"config\":{\"onTable\":\"\",\"icon\":\"save\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"#sys:fo-post-updatedata\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"*\\\",\\n            \\\"list_view\\\": \\\"*\\\",\\n            \\\"table_code\\\": \\\"app_role\\\"\\n        }\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Save\",\"code\":\"save\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"7f04a1e92a1825be\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "ncbs_application_role",
+        "app": "ncbs",
+        "id": 1198
+      }
+    ]
+  }
+]

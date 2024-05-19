@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.386844Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_odo_fo_dpt_odo_btn_accept_post_api_fo_dpt_odo",
+        "learn_api_name": "FO_DPT_ODO Accept FO_DPT_ODO",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_ODO",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"fields\": {\"account_number\": \"MapS.dataS(FO_DPT_ODO.account_number)\", \"branch_code\": \"MapS.dataS(FO_DPT_ODO.branch_code)\", \"branch_name\": \"MapS.dataS(FO_DPT_ODO.branch_name)\", \"credit_classification\": \"MapS.dataS(FO_DPT_ODO.credit_classification)\", \"currency\": \"MapS.dataS(FO_DPT_ODO.currency)\", \"currency_of_product_code\": \"MapS.dataS(FO_DPT_ODO.currency_of_product_code)\", \"customer_code\": \"MapS.dataS(FO_DPT_ODO.customer_code)\", \"customer_type\": \"MapS.dataS(FO_DPT_ODO.customer_type)\", \"deposit_catalog_code\": \"MapS.dataS(FO_DPT_ODO.deposit_catalog_code)\", \"deposit_minimum_balance\": \"MapS.dataN(FO_DPT_ODO.deposit_minimum_balance)\", \"deposit_type\": \"MapS.dataS(FO_DPT_ODO.deposit_type)\", \"from_date\": \"MapS.dataS(FO_DPT_ODO.from_date)\", \"holder_name\": \"MapS.dataS(FO_DPT_ODO.holder_name)\", \"include_minimum_balance\": \"MapS.dataS(FO_DPT_ODO.include_minimum_balance)\", \"interest_due_mode\": \"MapS.dataS(FO_DPT_ODO.interest_due_mode)\", \"interest_rate\": \"MapS.dataN(FO_DPT_ODO.interest_rate)\", \"margin\": \"MapS.dataN(FO_DPT_ODO.margin)\", \"od_catalog_code\": \"MapS.dataS(FO_DPT_ODO.od_catalog_code)\", \"od_contract_number\": \"MapS.dataS(FO_DPT_ODO.od_contract_number)\", \"od_limit\": \"MapS.dataN(FO_DPT_ODO.od_limit)\", \"sub_product_limit_code\": \"MapS.dataS(FO_DPT_ODO.sub_product_limit_code)\", \"to_date\": \"MapS.dataS(FO_DPT_ODO.to_date)\", \"user_approve\": \"MapS.dataSNull(user_approve.username)\"}, \"lang\": \"MapS.infoRequest(lang)\", \"token\": \"MapS.context(token)\", \"workflowid\": \"DPT_ODO\"}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 955
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.0301897Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_fac_opn_fo_fac_opn_btn_accept_post_api_fo_fac_opn",
+        "learn_api_name": "FO_FAC_OPN Accept FO_FAC_OPN",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_FAC_OPN",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"FAC_OPN\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"account_number\":\"MapS.dataS(FO_FAC_OPN.account_number)\",\"owner_of_this_fixed_asset\":\"MapS.dataS(FO_FAC_OPN.owner_of_this_fixed_asset)\",\"catalog_code\":\"MapS.dataS(FO_FAC_OPN.catalog_code)\",\"catalog_name\":\"MapS.dataS(FO_FAC_OPN.catalog_name)\",\"sequence_number\":\"MapS.dataSNull(FO_FAC_OPN.sequence_number)\",\"fixed_asset_name\":\"MapS.dataS(FO_FAC_OPN.fixed_asset_name)\",\"fixed_asset_type\":\"MapS.dataS(FO_FAC_OPN.fixed_asset_type)\",\"fixed_asset_classification\":\"MapS.dataS(FO_FAC_OPN.fixed_asset_classification)\",\"depreciation_method\":\"MapS.dataS(FO_FAC_OPN.depreciation_method)\",\"fixed_asset_group\":\"MapS.dataS(FO_FAC_OPN.fixed_asset_group)\",\"fixed_asset_life_time\":\"MapS.dataNNull(FO_FAC_OPN.fixed_asset_life_time)\",\"life_time_unit\":\"MapS.dataS(FO_FAC_OPN.life_time_unit)\",\"depreciation_rate\":\"MapS.dataN(FO_FAC_OPN.depreciation_rate)\",\"reference_number\":\"MapS.dataS(FO_FAC_OPN.reference_number)\",\"provider_name\":\"MapS.dataS(FO_FAC_OPN.provider_name)\",\"original_currency\":\"MapS.dataS(FO_FAC_OPN.original_currency)\",\"original_price\":\"MapS.dataN(FO_FAC_OPN.original_price)\",\"booking_currency\":\"MapS.dataS(FO_FAC_OPN.booking_currency)\",\"booking_value\":\"MapS.dataN(FO_FAC_OPN.booking_value)\",\"cross_rate\":\"MapS.dataN(FO_FAC_OPN.cross_rate)\",\"salvage_value_of_the_asset\":\"MapS.dataN(FO_FAC_OPN.salvage_value_of_the_asset)\",\"description\":\"MapS.dataS(FO_FAC_OPN.description)\",\"value_date\":\"MapS.dataS(FO_FAC_OPN.value_date)\",\"customer_type\":\"MapS.dataS(FO_FAC_OPN.customer_type)\",\"customer_code\":\"MapS.dataS(FO_FAC_OPN.customer_code)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 490
+      }
+    ]
+  }
+]

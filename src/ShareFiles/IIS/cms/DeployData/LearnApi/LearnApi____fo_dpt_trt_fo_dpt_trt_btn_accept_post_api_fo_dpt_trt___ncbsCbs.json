@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.401265Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_trt_fo_dpt_trt_btn_accept_post_api_fo_dpt_trt",
+        "learn_api_name": "FO_DPT_TRT Accept FO_DPT_TRT",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_TRT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"DPT_TRT\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n    \"master_fd_account\": \"MapS.dataS(FO_DPT_TRT.master_fd_account)\",\r\n    \"link_fd_account\": \"MapS.dataS(FO_DPT_TRT.link_fd_account)\",\r\n    \"link_fd_account_name\": \"MapS.dataS(FO_DPT_TRT.link_fd_account_name)\",\r\n    \"current_balance\": \"MapS.dataN(FO_DPT_TRT.current_balance)\",\r\n    \"amount\": \"MapS.dataN(FO_DPT_TRT.amount)\",\r\n    \"credit_to_account\": \"MapS.dataS(FO_DPT_TRT.credit_to_account)\",\r\n    \"credit_to_account_name\": \"MapS.dataS(FO_DPT_TRT.credit_to_account_name)\",\r\n    \"currency_of_debit_account\": \"MapS.dataS(FO_DPT_TRT.currency_of_debit_account)\",\r\n    \"currency_of_credit_account\": \"MapS.dataS(FO_DPT_TRT.currency_of_credit_account)\",\r\n    \"customer_code\": \"MapS.dataS(FO_DPT_TRT.customer_code)\",\r\n    \"customer_address\": \"MapS.dataS(FO_DPT_TRT.customer_address)\",\r\n    \"customer_description\": {\r\n      \"home\": \"MapS.dataS(FO_DPT_TRT.customer_description.home)\",\r\n      \"office\": \"MapS.dataS(FO_DPT_TRT.customer_description.office)\"\r\n    },\r\n    \"description\": \"MapS.dataS(FO_DPT_TRT.description)\",\r\n    \"total_fee\": \"MapS.dataN(FO_DPT_TRT.total_fee)\",\r\n    \"fee_data\": \"MapS.arrayJson(FO_DPT_TRT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\r\n    \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\r\n  }\r\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 799
+      }
+    ]
+  }
+]

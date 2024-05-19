@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8300364Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "crd_cipm_crd_cipm_btn_accept_post_api_fo_crd_cipm",
+        "learn_api_name": "CRD_CIPM Accept CRD_CIPM",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/crd_cipm",
+        "learn_api_data": "CRD_CIPM",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.result",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"txrefid\":\"MapS.dataS(CRD_CIPM.txrefid)\",\"pcacc\":\"MapS.dataS(CRD_CIPM.pcacc)\",\"intdue\":\"MapS.dataN(CRD_CIPM.intdue)\",\"lintamt\":\"MapS.dataN(CRD_CIPM.lintamt)\",\"cint\":\"MapS.dataN(CRD_CIPM.cint)\",\"intamt\":\"MapS.dataN(CRD_CIPM.intamt)\",\"cipbl\":\"MapS.dataN(CRD_CIPM.cipbl)\",\"ipbl\":\"MapS.dataN(CRD_CIPM.ipbl)\",\"cidue\":\"MapS.dataN(CRD_CIPM.cidue)\",\"ciovd\":\"MapS.dataN(CRD_CIPM.ciovd)\",\"cipre\":\"MapS.dataN(CRD_CIPM.cipre)\",\"tt_i\":\"MapS.dataN(CRD_CIPM.tt_i)\",\"int\":\"MapS.dataN(CRD_CIPM.int)\",\"camt\":\"MapS.dataN(CRD_CIPM.camt)\",\"camt1\":\"MapS.dataN(CRD_CIPM.camt1)\",\"camt2\":\"MapS.dataN(CRD_CIPM.camt2)\",\"camt3\":\"MapS.dataN(CRD_CIPM.camt3)\",\"camt4\":\"MapS.dataN(CRD_CIPM.camt4)\",\"tt_p\":\"MapS.dataN(CRD_CIPM.tt_p)\",\"damt\":\"MapS.dataN(CRD_CIPM.damt)\",\"lamt\":\"MapS.dataN(CRD_CIPM.lamt)\",\"prin\":\"MapS.dataN(CRD_CIPM.prin)\",\"cppre\":\"MapS.dataN(CRD_CIPM.cppre)\",\"clamt\":\"MapS.dataN(CRD_CIPM.clamt)\",\"fnamt\":\"MapS.dataN(CRD_CIPM.fnamt)\",\"fine\":\"MapS.dataN(CRD_CIPM.fine)\",\"pntamt\":\"MapS.dataN(CRD_CIPM.pntamt)\",\"penalty\":\"MapS.dataN(CRD_CIPM.penalty)\",\"minprinpre\":\"MapS.dataS(CRD_CIPM.minprinpre)\",\"ovamt\":\"MapS.dataN(CRD_CIPM.ovamt)\",\"payoption\":\"MapS.dataS(CRD_CIPM.payoption)\",\"cacnm\":\"MapS.dataS(CRD_CIPM.cacnm)\",\"cctmcd\":\"MapS.dataS(CRD_CIPM.cctmcd)\",\"cctma\":\"MapS.dataS(CRD_CIPM.cctma)\",\"mdesc\":{\"H\":\"MapS.dataS(CRD_CIPM.mdesc.H)\",\"O\":\"MapS.dataS(CRD_CIPM.mdesc.O)\"},\"cvldt\":\"MapS.dateDDMMYYYY(CRD_CIPM.cvldt)\",\"crepidtype\":\"MapS.dataS(CRD_CIPM.crepidtype)\",\"amt\":\"MapS.dataN(CRD_CIPM.amt)\",\"cccr\":\"MapS.dataS(CRD_CIPM.cccr)\",\"ppamt\":\"MapS.dataN(CRD_CIPM.ppamt)\",\"isprv\":\"MapS.dataS(CRD_CIPM.isprv)\",\"descs\":\"MapS.dataS(CRD_CIPM.descs)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.result",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 211
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.8678919Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\r\n        \"title\": \"fo_pmt_oit_minfo\",\r\n        \"des\": \"fo_pmt_oit_minfo\",\r\n        \"data\": \"\",\r\n        \"learnapi\": \"\",\r\n        \"learnsql\": \"\",\r\n        \"openOne\": \"false\",\r\n        \"node_position\": [],\r\n        \"flow_layout\": [],\r\n        \"form_code\": \"fo_pmt_oit_minfo\",\r\n        \"ruleStrong\": [],\r\n        \"key_form\": \"fo_pmt_oit_minfo\",\r\n        \"ofModal\": false,\r\n        \"bodata\": \"\"\r\n    }",
+        "list_layout": "[{\r\n            \"name\": \"\",\r\n            \"des\": \"\",\r\n            \"class\": \"\",\r\n            \"codeHidden\": \"07ccf8a8721c5a2a\",\r\n            \"inputtype\": \"cLayout\",\r\n            \"list_view\": [{\r\n                    \"name\": \"\",\r\n                    \"code\": \"code\",\r\n                    \"codeHidden\": \"9b6919ce6efe2321\",\r\n                    \"inputtype\": \"cView\",\r\n                    \"isTab\": \"false\",\r\n                    \"list_input\": [{\r\n                            \"config\": {\r\n                                \"structable\": \"muti.goods_type\",\r\n                                \"structable_read\": \"muti.goods_type\",\r\n                                \"data_default\": \"\",\r\n                                \"data_mode\": \"cdlist\",\r\n                                \"cdlist\": {\r\n                                    \"query\": \"select c_cdlist.cdid,c_cdlist.cdname,c_cdlist.caption,c_cdlist.cdval,c_cdlist.cdidx from c_cdlist where wf.c_cdlist.cdgrp==='PMT'&&wf.c_cdlist.cdname==='GOODTYPE'\",\r\n                                    \"cdgrp\": \"PMT\",\r\n                                    \"cdname\": \"GOODTYPE\"\r\n                                },\r\n                                \"is_multi_select\": \"false\",\r\n                                \"is_multi_col\": \"false\",\r\n                                \"get_data_format\": \"c_cdlist.cdid\",\r\n                                \"selected_view_format\": \"@c_cdlist.caption\",\r\n                                \"col_format\": \"@c_cdlist.caption\",\r\n                                \"table_format\": \"[\\n                {\\n                    \\\"title\\\": \\\"Name\\\",\\n                    \\\"code\\\": \\\"c_cdlist.caption\\\"\\n                },\\n                {\\n                    \\\"title\\\": \\\"ID\\\",\\n                    \\\"code\\\": \\\"c_cdlist.cdid\\\"\\n                }\\n            ]\",\r\n                                \"key_selected\": \"c_cdlist.cdid\",\r\n                                \"json_data\": \"[]\"\r\n                            },\r\n                            \"role\": {\r\n                                \"visible\": \"\",\r\n                                \"disabled\": \"\"\r\n                            },\r\n                            \"property\": {},\r\n                            \"validate\": {\r\n                                \"request\": false,\r\n                                \"min\": \"0\",\r\n                                \"max\": \"\"\r\n                            },\r\n                            \"lang\": {},\r\n                            \"configAVD\": {},\r\n                            \"inputtype\": \"jSelect\",\r\n                            \"default\": {\r\n                                \"name\": \"Goods type\",\r\n                                \"code\": \"goods_type\",\r\n                                \"codeHidden\": \"69fea47f74ccd70e\",\r\n                                \"class\": \"        col-12\",\r\n                                \"condition\": \"\",\r\n                                \"role\": \"\"\r\n                            }\r\n                        }, {\r\n                            \"config\": {\r\n                                \"action\": \"\",\r\n                                \"structable\": \"muti.goods_list\",\r\n                                \"structable_read\": \"muti.goods_list\",\r\n                                \"data_default\": \"\",\r\n                                \"isLookup\": \"false\",\r\n                                \"callform\": \"\",\r\n                                \"callform_detail\": \"\",\r\n                                \"callform_detail_mode\": \"modal\",\r\n                                \"data_view\": \"\",\r\n                                \"data_value\": \"\",\r\n                                \"autoWrap\": true,\r\n                                \"isSearch\": false\r\n                            },\r\n                            \"role\": {\r\n                                \"visible\": \"\",\r\n                                \"disabled\": \"\"\r\n                            },\r\n                            \"property\": {},\r\n                            \"validate\": {\r\n                                \"request\": false,\r\n                                \"min\": 0\r\n                            },\r\n                            \"lang\": \"\",\r\n                            \"configAVD\": {},\r\n                            \"inputtype\": \"cTextInput\",\r\n                            \"default\": {\r\n                                \"name\": \"Goods list\",\r\n                                \"code\": \"goods_list\",\r\n                                \"codeHidden\": \"521fe252588c7170\",\r\n                                \"class\": \"        col-12\",\r\n                                \"condition\": \"\",\r\n                                \"role\": \"\",\r\n                                \"ofgroup\": \"\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ]",
+        "react_txt": null,
+        "form_id": "fo_pmt_oit_minfo",
+        "app": "ncbsCbs",
+        "id": 1273
+      }
+    ]
+  }
+]

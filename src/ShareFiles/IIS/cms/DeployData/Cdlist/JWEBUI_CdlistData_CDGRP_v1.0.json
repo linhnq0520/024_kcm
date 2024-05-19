@@ -1,0 +1,301 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-29T05:13:20.1021576Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.171"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": null,
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "CTM",
+        "caption": "CUSTOMER",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25086
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "IFC",
+        "caption": "IFC",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25087
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "DPT",
+        "caption": "DEPOSIT",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25088
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "CRD",
+        "caption": "CREDIT",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25089
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "PMT",
+        "caption": "PAYMENT",
+        "cdval": "5",
+        "cdidx": 5,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25090
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "TRD",
+        "caption": "TRADE",
+        "cdval": "6",
+        "cdidx": 6,
+        "ftag": "",
+        "visible": 0,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25091
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "TSR",
+        "caption": "TREASURY",
+        "cdval": "7",
+        "cdidx": 7,
+        "ftag": "",
+        "visible": 0,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25092
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "MTG",
+        "caption": "MORTGAGE",
+        "cdval": "8",
+        "cdidx": 8,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25093
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "CSH",
+        "caption": "CASH",
+        "cdval": "9",
+        "cdidx": 9,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25094
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "ACT",
+        "caption": "ACCOUNTING",
+        "cdval": "10",
+        "cdidx": 10,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25095
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "STK",
+        "caption": "STOCK",
+        "cdval": "11",
+        "cdidx": 11,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25096
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "UMG",
+        "caption": "USER MANAGEMENT",
+        "cdval": "12",
+        "cdidx": 12,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25097
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "ADM",
+        "caption": "ADMINISTRATION",
+        "cdval": "13",
+        "cdidx": 13,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25098
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "JOB",
+        "caption": "JOB",
+        "cdval": "14",
+        "cdidx": 14,
+        "ftag": "",
+        "visible": 0,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25099
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "RPP",
+        "caption": "REPORT PORTAL",
+        "cdval": "15",
+        "cdidx": 15,
+        "ftag": "",
+        "visible": 0,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25100
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "FOF",
+        "caption": "FRONT OFFICE",
+        "cdval": "16",
+        "cdidx": 16,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25101
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "FAC",
+        "caption": "FIXED ASSET",
+        "cdval": "17",
+        "cdidx": 17,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25102
+      },
+      {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "SYS",
+        "caption": "SYSTEM",
+        "cdval": "18",
+        "cdidx": 18,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25103
+      },
+	  {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "BCH",
+        "caption": "BATCH",
+        "cdval": "19",
+        "cdidx": 19,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25104
+      },
+	  {
+        "cdgrp": "JWEBUI",
+        "cdname": "CDGRP",
+        "cdid": "CAR",
+        "caption": "CARD",
+        "cdval": "20",
+        "cdidx": 20,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{}",
+        "app": "ncbsAdmin",
+        "id": 25105
+      }
+    ]
+  }
+]

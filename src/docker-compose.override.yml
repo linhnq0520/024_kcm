@@ -1,0 +1,337 @@
+version: "3.4"
+
+services:
+  neptunedb_mysql:
+    container_name: neptunedb_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin1234
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command:
+      - "mysqld"
+      - "--binlog_expire_logs_seconds=259200" #Default: 2592000
+      - "--max_connections=500" #Default: 151
+
+  neptunedb_mariadb:
+    container_name: neptunedb_mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=admin1234
+    restart: always
+    ports:
+      - "3307:3306"
+    volumes:
+      - mariadb_data:/var/lib/mariadb
+    command:
+      - "mysqld"
+      - "--slave_domain_parallel_threads=1000" #Max: 16383
+      - "--slave_parallel_threads=1000" #Max: 16383
+      - "--binlog_expire_logs_seconds=259200" #Default: 864000
+
+  neptunedb_postgresql:
+    container_name: neptunedb_postgresql
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=admin1234
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql_data:/var/lib/postgresql
+    command:
+      - "postgres"
+      - "-c"
+      - "max_prepared_transactions=20000" #max: 262143
+      - "-c"
+      - "max_connections=20000" #max: 262143
+
+  neptunedb_sqlserver:
+    container_name: neptunedb_sqlserver
+    environment:
+      - MSSQL_SA_PASSWORD=admin1234
+      - ACCEPT_EULA=Y
+    restart: always
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/lib/sqlserver
+
+  neptunedb_oracle:
+    container_name: neptunedb_oracle
+    environment:
+      - ORACLE_PWD=Admin1234 #User: SYS
+    restart: always
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_data:/var/lib/oracle
+
+  adminer:
+    container_name: adminer
+    environment:
+      - ADMINER_DEFAULT_SERVER=neptunedb_
+      - ADMINER_DESIGN=lucas-sandery
+      - ADMINER_PLUGINS=tables-filter tinymce
+    restart: always
+    ports:
+      - "8080:8080"
+
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "5673:5672"
+      - "15672:15672"
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    links:
+      - neptunedb_mysql
+    environment:
+      - UPLOAD_LIMIT=1G
+      - PMA_HOST=neptunedb_mysql
+      - PMA_PORT=3306
+    restart: always
+    ports:
+      - "8886:80"
+
+  redis:
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  neptuneserver:
+    container_name: neptuneserver
+    depends_on:
+      - neptunedb_mysql
+      - rabbitmq
+    restart: always
+    environment:
+      - NEPTUNE_DB_ONLINE_SERVER_NAME=neptunedb_mysql
+      - NEPTUNE_DB_ONLINE_NAME=neptune
+      - NEPTUNE_DB_ONLINE_SCHEMA=neptune
+      - NEPTUNE_DB_ONLINE_RDBMS_TYPE=MySQL
+      - NEPTUNE_DB_ONLINE_USERNAME=neptune
+      - NEPTUNE_DB_ONLINE_PASSWORD=bmVwdHVuZQ==
+      - NEPTUNE_DB_ONLINE_PASSWORD_ENCRYPTION_METHOD=BASE64
+    ports:
+      - "100:100"
+      - "105:105"
+      - "109:109"
+
+  accounting.api:
+    container_name: accounting.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8050:80"
+      - "5050:5000"
+
+  admin.api:
+    container_name: admin.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8051:80"
+      - "5051:5000"
+    # environment:
+    #   - ConnectionStrings:ConnectionString=server=192.168.4.52,1433;database=o9admin;user id=o9admin;password=o9admin;TrustServerCertificate=true
+    #   - ConnectionStrings:DataProvider=sqlserver
+
+  cash.api:
+    container_name: cash.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8052:80"
+      - "5052:5000"
+
+  credit.api:
+    container_name: credit.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8053:80"
+      - "5053:5000"
+
+  customer.api:
+    container_name: customer.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8054:80"
+      - "5054:5000"
+
+  deposit.api:
+    container_name: deposit.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8055:80"
+      - "5055:5000"
+
+  fixedasset.api:
+    container_name: fixedasset.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8056:80"
+      - "5056:5000"
+
+  fx.api:
+    container_name: fx.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8057:80"
+      - "5057:5000"
+
+  mortgage.api:
+    container_name: mortgage.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8059:80"
+      - "5059:5000"
+
+  payment.api:
+    container_name: payment.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8060:80"
+      - "5060:5000"
+
+  batch.api:
+    container_name: batch.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8061:80"
+      - "5061:5000"
+
+  voucher.api:
+    container_name: voucher.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8063:80"
+      - "5063:5000"
+
+  design.api:
+    container_name: design.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8062:80"
+      - "5062:5000"
+
+  cms.api:
+    container_name: cms.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+      - redis
+    ports:
+      - "8066:443"
+      - "5066:5000"
+
+  email.api:
+    container_name: email.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8064:80"
+      - "5064:5000"
+
+  sample.api:
+    container_name: sample.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8098:80"
+      - "5098:5000"
+
+  report.api:
+    container_name: report.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8067:443"
+      - "5067:5000"
+
+  ems.api:
+    container_name: ems.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8068:80"
+      - "5068:5000"
+
+  acw.api:
+    container_name: acw.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8070:80"
+      - "5070:5000"
+
+  wal.api:
+    container_name: wal.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8071:80"
+      - "5071:5000"
+
+  import.api:
+    container_name: import.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8069:80"
+      - "5072:5000"
+
+  party.api:
+    container_name: party.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8073:80"
+      - "5073:5000"
+
+  portainer:
+    container_name: portainer
+    restart: always
+    ports:
+      - "8040:8000"
+      - "9040:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data

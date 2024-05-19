@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3606482Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\r\n\t{\r\n\t\t\"name\": \"extend\",\r\n\t\t\"function\": \"message.setExtendToken\",\r\n\t\t\"type\": \"javascript\",\r\n\t\t\"status\": \"A\",\r\n\t\t\"para\": []\r\n\t}\r\n\t\r\n]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-set-extendToken",
+        "version": 1,
+        "updateTime": 638042796881315483,
+        "txname": "fo-set-extendToken",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 297
+      }
+    ]
+  }
+]

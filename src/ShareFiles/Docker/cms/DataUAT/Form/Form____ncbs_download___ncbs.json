@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.4230625Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"26/09/2022 02:41:55 PM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"Download\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Download\",\"flow_layout\":[],\"form_code\":\"ncbs_download\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"all\",\"component_action\":\"\",\"component_result\":\"creator;modifier\",\"condition\":\"1===1\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"0b432cb582cea5d2\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"FeedingData.json\",\"class\":\"\",\"code\":\"\",\"isTab\":\"true\",\"lang\":{\"vi\":\"\",\"en\":\"\"},\"inputtype\":\"cView\",\"viewUI\":\"\",\"list_input\":[{\"config\":{\"onTable\":\"\",\"icon\":\"download\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n  {\\n    \\\"txcode\\\": \\\"fo-getData-download-one\\\",\\n    \\\"input\\\": {\\n      \\\"table_code\\\": \\\"\\\",\\n      \\\"table_col_key\\\": \\\"\\\",\\n      \\\"key_val\\\": \\\"\\\",\\n\\\"file_name\\\":\\\"FeedingData\\\",\\n      \\\"learn_api\\\": \\\"ncbs_download_feedingData\\\"\\n    }\\n  }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"learn_sql\",\"privateKeyTableMasterData\":\"learn_sql_id\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Download\",\"code\":\"download\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"b3940c0910dabe28\"}}],\"codeHidden\":\"77e364d7287c0de6\",\"isBorder\":\"false\"}]}]",
+        "react_txt": "",
+        "form_id": "ncbs_download",
+        "app": "ncbs",
+        "id": 688
+      }
+    ]
+  }
+]

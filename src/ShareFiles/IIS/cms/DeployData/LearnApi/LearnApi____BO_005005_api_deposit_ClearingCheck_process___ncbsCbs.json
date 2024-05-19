@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.0592202Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_005005_api_deposit_ClearingCheck_process",
+        "learn_api_name": "BO_005005_api_deposit_ClearingCheck_process",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "dataset",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_OCC\",\"lang\":\"en\",\"token\":\"MapS.context(token)\",\"fields\":{\"cheque_no\":\"MapS.dataS(dataset.cheque_no)\",\"cheque_currency\":\"MapS.dataS(dataset.currency_code)\",\"clearing_bank\":\"MapS.dataS(dataset.issue_bank)\",\"cheque_amount\":\"MapS.dataNZero(dataset.amount)\",\"clearing_bank_nostro_acc\":\"MapS.dataS(dataset.clearing_account)\",\"beneficiary_account\":\"MapS.dataS(dataset.account_number)\",\"beneficiary_currency\":\"MapS.dataS(dataset.beneficiary_currency)\",\"drawer_name\":\"MapS.dataS(dataset.drawer_name)\",\"drawer_paper_number\":\"MapS.dataS(dataset.customer_code)\",\"description\":\"Auto Clearing cheque\",\"beneficiary_amount\":\"MapS.dataNZero(dataset.beneficiary_amount)\",\"holding_days\":0}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 60
+      }
+    ]
+  }
+]

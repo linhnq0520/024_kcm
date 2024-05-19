@@ -1,0 +1,66 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-27T04:04:54.7597321Z",
+    "host": "27.3.1.108:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.108"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "advance_download_report_archive",
+        "app": null
+      },
+      {
+        "learn_api_id": "archive_report_search_btn_search",
+        "app": null
+      },
+      {
+        "learn_api_id": "archive_report_export",
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "archive_report_export",
+        "learn_api_name": "archive_report_export",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"RPT_EXPORT_ARCHIVE_REPORT\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"id\":\"MapS.dataI(archive_report_search_btn_search.id)\"}}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1930
+      }
+    ]
+  }
+]

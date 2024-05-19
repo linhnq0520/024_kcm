@@ -1,0 +1,267 @@
+[
+	{
+		"type": "header",
+		"command": "Export data to Json"
+	},
+	{
+		"exported_time": "2023-04-11T03:41:23.7002308Z",
+		"host": "192.168.1.170:8066",
+		"db_properties": [
+			{
+				"name": "server",
+				"value": "neptunedb_mysql"
+			},
+			{
+				"name": "port",
+				"value": "3306"
+			},
+			{
+				"name": "database",
+				"value": "cms"
+			},
+			{
+				"name": "entity",
+				"value": "DesignItem"
+			}
+		],
+		"exported_by_fields": [
+			{
+				"att_id": null
+			}
+		]
+	},
+	{
+		"type": "data",
+		"data": [
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Checkbox\",\"vi\":\"Hộp kiểm tra\"}",
+				"DisplayOrder": "6",
+				"AttId": "defaut_check_box",
+				"Img": "check_box_outline_blank",
+				"Template": "{\"default\":{\"name\":\"Check Box New\",\"code\":\"a439df36155169f7\",\"codeHidden\":\"\",\"class\":\"col-sm-1 col-md-1\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-1 col-md-1\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"true\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCheckbox\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Mask Input\",\"vi\":\"\"}",
+				"DisplayOrder": "7",
+				"AttId": "defaut_mask_input",
+				"Img": "space_bar",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"table.col\",\"structable_read\":\"\",\"data_default\":\"\",\"data_type\":\"edit\",\"component_title\":\"\",\"mask_format\":\"\",\"mask_data_format\":\"\",\"value_type\":\"all\",\"auto_delete\":\"true\",\"mask_mode\":\"default\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"disabled\":\"\",\"visible\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"condistion\":[]},\"lang\":{\"ui\":{\"vi\":{\"Mẫu component\":\"Default component\"},\"en\":{\"Mẫu component\":\"Default component\"}},\"mask_format\":{},\"validate\":{}},\"configAVD\":{},\"inputtype\":\"jMaskInput\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Table Default\",\"vi\":\"Bảng mẫu\"}",
+				"DisplayOrder": "13",
+				"AttId": "default_table",
+				"Img": "table_chart",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"table.col\",\"query_data\":\"\",\"paging_record\":\"5\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"table.name\\\",\\n        \\\"title\\\": \\\"Tên\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }\\n]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTableDefault\"}"
+			},
+			{
+				"GroupId": "layout_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Layout\",\"vi\":\"Mẫu bố trí\"}",
+				"DisplayOrder": "1",
+				"AttId": "defaut_layout",
+				"Img": "view_compact",
+				"Type": "layout",
+				"Template": "{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"\",\"inputtype\":\"cLayout\"}"
+			},
+			{
+				"GroupId": "advanced_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Same Main\",\"vi\":\"Same Main\"}",
+				"DisplayOrder": "17",
+				"AttId": "default_samemain",
+				"Img": "ballot",
+				"Template": "{\"default\":{\"name\":\"Mẫu component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"table.col\",\"structable_read\":\"\",\"data_default\":\"{}\",\"callform\":\"\",\"callData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{},\"lang\":{\"ui\":{\"vi\":{},\"en\":{}}},\"configAVD\":{},\"inputtype\":\"jSameMain\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Button\",\"vi\":\"Nút bấm\"}",
+				"DisplayOrder": "4",
+				"AttId": "defaut_button",
+				"Img": "panorama_wide_angle",
+				"Template": "{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"color\":\"primary\",\"icon\":\"fa-search\",\"txFo\":\"\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Default Component\",\"code\":\"default\",\"codeHidden\":\"\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Select\",\"vi\":\"Hộp chọn\"}",
+				"DisplayOrder": "12",
+				"AttId": "default_select",
+				"Img": "expand_more",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"\",\"structable_read\":\"\",\"cdlist\":{},\"data_default\":\"\",\"data_mode\":\"query\",\"query_data\":\"\",\"is_multi_select\":\"false\",\"is_multi_col\":\"false\",\"get_data_format\":\"c_cdlist.cdid\",\"selected_view_format\":\"@c_cdlist.caption\",\"table_format\":\"[\\n        {\\n            \\\"title\\\": \\\"Name\\\",\\n            \\\"code\\\": \\\"col.col_name\\\"\\n        },\\n        {\\n            \\\"title\\\": \\\"ID\\\",\\n            \\\"code\\\": \\\"col.col_id\\\"\\n        }\\n    ]\",\"col_format\":\"@c_cdlist.caption\",\"json_data\":\"[\\n        {\\n            \\\"c_cdlist\\\": {\\n                \\\"cdid\\\": \\\"id_1\\\",\\n                \\\"caption\\\": \\\"val_1\\\"\\n            }\\n        },\\n        {\\n            \\\"c_cdlist\\\": {\\n                \\\"cdid\\\": \\\"id_2\\\",\\n                \\\"caption\\\": \\\"val_2\\\"\\n            }\\n        }\\n        ,\\n        {\\n            \\\"c_cdlist\\\": {\\n                \\\"cdid\\\": \\\"id_3\\\",\\n                \\\"caption\\\": \\\"val_3\\\"\\n            }\\n        }\\n    ]\",\"key_selected\":\"c_cdlist.cdid\",\"useAction\":\"false\",\"isAutoDefault\":\"true\"},\"role\":{\"disabled\":\"\",\"visible\":\"\",\"other\":\"\",\"other2\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"ui\":{\"vi\":{\"Mẫu component\":\"Mẫu component\"},\"en\":{\"Mẫu component\":\"Mẫu component\"}}},\"configAVD\":{},\"inputtype\":\"jSelect\"}"
+			},
+			{
+				"GroupId": "advanced_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Currency\",\"vi\":\"Đơn vị tiền tệ\"}",
+				"DisplayOrder": "16",
+				"AttId": "default_currency",
+				"Img": "attach_money",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"table.col\",\"structable_read\":\"table.col\",\"data_default\":\"\",\"format\":\"#,###.00\",\"decimal_length\":2},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":0},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCurrency\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Text Input\",\"vi\":\"Nhập văn bản\"}",
+				"DisplayOrder": "3",
+				"AttId": "defaut_text_input",
+				"Img": "font_download",
+				"Template": "{\"default\":{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_disabled\":\"false\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Button Upload\",\"vi\":\"Nút bấm tải file lên\"}",
+				"DisplayOrder": "23",
+				"AttId": "defaut_button_upload",
+				"Img": "upload",
+				"Template": "{\n      \"config\": {\n         \"useAction\": \"false\",\n         \"action\": \"\",\n         \"structable\": \"\",\n         \"structable_read\": \"\",\n         \"data_default\": \"\",\n         \"color\": \"primary\",\n         \"icon\": \"upload\",\n         \"txFo\": \"\",\n         \"onTable\": \"\"\n      },\n      \"role\": {\n         \"visible\": \"\",\n         \"disabled\": \"\"\n      },\n      \"property\": {},\n      \"validate\": {\n         \"request\": false\n      },\n      \"lang\": {},\n      \"configAVD\": {},\n      \"inputtype\": \"jUploadFile\",\n      \"default\": {\n         \"name\": \"Default Component\",\n         \"code\": \"default\",\n         \"codeHidden\": \"\",\n         \"class\": \"\",\n         \"condition\": \"\",\n         \"role\": \"\"\n      }\n   }"
+			},
+			{
+				"GroupId": "advanced_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Multivalue\",\"vi\":\"Đa giá trị\"}",
+				"DisplayOrder": "15",
+				"AttId": "default_multivalue",
+				"Img": "featured_play_list",
+				"Template": "{\"default\":{\"name\":\"Mẫu component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"table.col\",\"structable_read\":\"\",\"data_default\":\"{}\",\"callform\":\"\",\"hidden\":\"\",\"is_open\":\"true\",\"has_default\":\"false\",\"value_default\":\"\",\"address_default\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{},\"lang\":{\"ui\":{\"vi\":{\"Mẫu component\":\"Mẫu component\"},\"en\":{\"Mẫu component\":\"Mẫu component\"}},\"mask_format\":{},\"validate\":{}},\"configAVD\":{},\"inputtype\":\"jMutiValue\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Button Print\",\"vi\":\"Nút bấm in\"}",
+				"DisplayOrder": "19",
+				"AttId": "defaut_button_print",
+				"Img": "print",
+				"Template": "{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"color\":\"primary\",\"icon\":\"print\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"#sys:fo-print-voucher\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jPrintVoucher\",\"default\":{\"name\":\"Default Component\",\"code\":\"default\",\"codeHidden\":\"\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}}"
+			},
+			{
+				"GroupId": "advanced_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Table Form\",\"vi\":\"Bảng mẫu\"}",
+				"DisplayOrder": "8",
+				"AttId": "defaut_table_form",
+				"Img": "list_alt",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"\",\"query_data\":\"\",\"paging_record\":\"5\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"table.name\\\",\\n        \\\"title\\\": \\\"Tên\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }\\n]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jTableForm\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Calendar\",\"vi\":\"Lịch\"}",
+				"DisplayOrder": "21",
+				"AttId": "defaut_calendar",
+				"Img": "print",
+				"Template": "{\"config\":{\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"color\":\"primary\",\"icon\":\"print\",\"eventFoStart\":\"\",\"eventFoStart_config\":\"\",\"eventClick\":\"\",\"eventClick_config\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jFullCalendar\",\"default\":{\"name\":\"Default Component\",\"code\":\"default\",\"codeHidden\":\"\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Chart\",\"vi\":\"Biểu đồ\"}",
+				"DisplayOrder": "14",
+				"AttId": "default_chart",
+				"Img": "insert_chart",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"query_data\":\"\",\"chartType\":\"ColumnChart\",\"chart_width\":\"\",\"chart_height\":\"600\",\"columns\":\"[\\n    {\\n        \\\"columnName\\\": \\\"Không cần tên\\\",\\n        \\\"tableColumnGroup\\\": \\\"table1.recname\\\"\\n    },\\n    {\\n        \\\"columnName\\\": \\\"Tổng của tableColumn 1\\\",\\n        \\\"tableColumn\\\": \\\"table1.recvalue\\\"\\n    },\\n    {\\n        \\\"columnName\\\": \\\"Tổng của tableColumn 2\\\",\\n        \\\"tableColumn\\\": \\\"table1.recvalue\\\"\\n    }\\n]\",\"options\":\"{\\n    \\\"title\\\": \\\"Population of Largest U.S. Cities\\\",\\n    \\\"chartArea\\\": {\\n        \\\"width\\\": \\\"30%\\\"\\n    },\\n    \\\"hAxis\\\": {\\n        \\\"title\\\": \\\"Total Population\\\",\\n        \\\"minValue\\\": 0\\n    },\\n    \\\"vAxis\\\": {\\n        \\\"title\\\": \\\"City\\\"\\n    }\\n}\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jChart\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Image\",\"vi\":\"Hình ảnh\"}",
+				"DisplayOrder": "22",
+				"AttId": "defaut_button_image",
+				"Img": "panorama_wide_angle",
+				"Template": "{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"color\":\"\",\"icon\":\"fa-files-o\",\"txFo\":\"\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jImage\",\"default\":{\"name\":\"\",\"code\":\"default\",\"codeHidden\":\"\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Radio Button\",\"vi\":\"Nút chọn\"}",
+				"DisplayOrder": "10",
+				"AttId": "radio_button_checked",
+				"Img": "article",
+				"Template": "{\"default\":{\"name\":\"Mẫu component\",\"code\":\"\",\"class\":\"\",\"condition\":\"\",\"codeHidden\":\"facfa9b90cd6694f\",\"role\":\"\"},\"inputtype\":\"jRadioBox\",\"config\":{\"structable\":\"table.col\"},\"validate\":{},\"lang\":{\"ui\":{\"vi\":{},\"en\":{}}},\"role\":{},\"property\":{},\"configAVD\":{}}"
+			},
+			{
+				"GroupId": "layout_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"View\",\"vi\":\"Mẫu quan sát\"}",
+				"DisplayOrder": "2",
+				"AttId": "defaut_view",
+				"Img": "preview",
+				"Type": "view",
+				"Template": "{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"\",\"inputtype\":\"cView\",\"isTab\":\"false\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Label\",\"vi\":\"Nhãn hiệu\"}",
+				"DisplayOrder": "11",
+				"AttId": "default_label",
+				"Img": "label",
+				"Template": "{\"default\":{\"name\":\"Label\",\"code\":\"\",\"codeHidden\":\"\",\"class\":\"col-sm-2\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-2\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jLabel\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Text Area\",\"vi\":\"Vùng văn bản to\"}",
+				"DisplayOrder": "9",
+				"AttId": "default_text_area",
+				"Img": "article",
+				"Template": "{\"default\":{\"name\":\"Mẫu component\",\"code\":\"a439df36155169f7\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"true\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextArea\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Table Search\",\"vi\":\"Bảng mẫu\"}",
+				"DisplayOrder": "25",
+				"AttId": "search_table",
+				"Img": "table_chart",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"4a563edde0f0558f\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"structable\":\"table.col\",\"query_data\":\"\",\"paging_record\":\"5\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"table.name\\\",\\n        \\\"title\\\": \\\"Tên\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }\\n]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jTableSearch\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\r\n\t\t\"en\": \"Get Signature\",\r\n\t\t\"vi\": \"Nút bấm tải file lên\"\r\n\t}",
+				"DisplayOrder": "42",
+				"AttId": "defaut_button_signature",
+				"Img": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIG",
+				"KeyNew": "24",
+				"Template": "{\r\n\t\t\"config\": {\r\n\t\t\t\"useAction\": \"false\",\r\n\t\t\t\"action\": \"\",\r\n\t\t\t\"structable\": \"\",\r\n\t\t\t\"structable_read\": \"\",\r\n\t\t\t\"data_default\": \"\",\r\n\t\t\t\"color\": \"primary\",\r\n\t\t\t\"icon\": \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0yMC40ODkgMTAuODM2NUwyNC43MDc0IDEyLjM4NkwyMS4xOTkyIDIxLjkzNzhDMjAuODcwOSAyMi44MzYyIDE5LjA5MDUgMjUuNjQ3MyAxNy44NTA3IDI2LjIyMDdMMTcuNTQ5OCAyNy4wNDE0QzE3LjQ3MzIgMjcuMjQ5MyAxNy4yNzYzIDI3LjM3OTYgMTcuMDY3MyAyNy4zNzk2QzE3LjAwODIgMjcuMzc5NiAxNi45NDkxIDI3LjM2ODYgMTYuODkgMjcuMzQ3OEMxNi42MjQxIDI3LjI0OTMgMTYuNDg2MiAyNi45NTUgMTYuNTg0NyAyNi42ODY5TDE2Ljg2OTIgMjUuOTExMUMxNi4yNCAyNC42ODg4IDE2LjcwOTQgMjEuMTM5IDE2Ljk4NTIgMjAuMzg4M0wyMC40ODkgMTAuODM2NVpNMjYuNTkzOSAwLjcyOTg3NkMyNS40MzQgMC4zMDUzMDIgMjQuMDc2IDEuMTgyOSAyMy42ODc1IDIuMjQzMjRMMjEuMTQ2NyA5LjE2NTU1TDI1LjM2NCAxMC43MTI4TDI3LjkwMTYgMy43OTE2MkMyOC4yMjExIDIuOTI0OTcgMjcuNzU2IDEuMTU1NTQgMjYuNTkzOSAwLjcyOTg3NlpNMTguOTYxNCAxMC40Nzg3QzE5LjA3OTYgMTAuNTIyNCAxOS4yMDExIDEwLjU0MzIgMTkuMzE5MyAxMC41NDMyQzE5LjczNzMgMTAuNTQzMiAyMC4xMzAxIDEwLjI4NzIgMjAuMjg0NCA5Ljg3MTM1TDIyLjk2NTMgMi42NDA0NkMyMy4xNjM0IDIuMTA3NTUgMjIuODkwOSAxLjUxNTU2IDIyLjM1OCAxLjMxODU5QzIxLjgyMDcgMS4xMjM4MSAyMS4yMzMxIDEuMzkzIDIxLjAzNTEgMS45MjU5MUwxOC4zNTQxIDkuMTU2NzlDMTguMTU2IDkuNjg5NyAxOC40Mjg1IDEwLjI4MTcgMTguOTYxNCAxMC40Nzg3Wk0xNC42NDU3IDI0LjAzNzdDMTQuMzY4OCAyMy43NzYxIDE0LjAyNDEgMjMuNDUwMSAxMy40NjYgMjMuMjAxN0MxMy4wMDY0IDIyLjk5NyAxMi41NTg5IDIyLjk4NzIgMTIuMjMxNyAyMi45Nzk1QzEyLjE5NzggMjIuOTc5NSAxMi4xNTg0IDIyLjk3ODQgMTIuMTE5IDIyLjk3NzNDMTEuOTE0NCAyMi40MTcxIDExLjQ5OTYgMjIuMDY0NyAxMC44NzcgMjEuOTI2OEMxMC4wNTMgMjEuNzUyOSA5LjM5NTM4IDIyLjE0MTMgOC45MzkwNyAyMi40NDExQzguOTc5NTYgMjIuMjExNCA5LjA0NjMxIDIxLjkzNzggOS4wOTU1NSAyMS43NDA4QzkuMjUzMTMgMjEuMTA2MSA5LjQxNTA4IDIwLjQ0OTYgOS4yOTQ3MSAxOS44MzQ2QzkuMTk5NTEgMTkuMzQ4OCA4Ljc4OTE2IDE4Ljk4NzcgOC4yOTQ1NSAxOC45NTI2QzcuMDE5NzMgMTguODgxNSA1Ljk3OCAxOS41Njc2IDUuMDU5OTEgMjAuMTg4MUM0LjA5NTg2IDIwLjgzOTEgMy40Nzc2MSAyMS4yMjc2IDIuODYyNjMgMjEuMDA3N0MyLjExMTk2IDIwLjc0MDcgMi4wMzY0NiAxOC43MDg2IDIuMzk3NTcgMTYuODk4N0MyLjcyMDM4IDE1LjI2ODMgMy4zMjExMyAxMi4yMzI4IDQuODYwNzUgMTAuODU0QzUuMzc5NDMgMTAuMzkgNi4xMzAxIDkuODg3NzYgNi43NDcyNiAxMC4xMzE4QzcuNDcyNzYgMTAuNDE2MyA4LjA3MjQyIDExLjYxMTIgOC4yMDU5MiAxMy4wMzQ5QzguMjYxNzIgMTMuNjM1NiA4Ljc4NTg4IDE0LjA3NjYgOS4zOTc1NyAxNC4wMjE5QzkuOTk5NDEgMTMuOTY2MSAxMC40NDE1IDEzLjQzMjEgMTAuMzg0NiAxMi44MzAyQzEwLjE2NzkgMTAuNTEwNCA5LjA4MDIzIDguNjk2MTEgNy41NDcxNyA4LjA5MzE3QzYuNjI5MDggNy43MzY0NCA1LjE2OTM0IDcuNjQwMTUgMy4zOTk5MSA5LjIyMzU1QzEuNDc1MSAxMC45NDcgMC43NjM4MzMgMTMuODY5OCAwLjI0ODQzNSAxNi40NzNDLTAuMDA5ODEwODUgMTcuNzczIC0wLjYzOTAxMiAyMi4wODY2IDIuMTI3MjggMjMuMDcwM0MzLjgxMjQ1IDIzLjY3MTEgNS4xODEzNyAyMi43NDQzIDYuMjgxMTEgMjIuMDAyM0M2LjQ4MjQ1IDIxLjg2NjcgNi42ODA1MSAyMS43MzMyIDYuODczMSAyMS42MTM5QzYuNjkwMzYgMjIuNDA3MiA2LjU3NjU2IDIzLjI1NjQgNy4wNTU4NSAyMy45NzJDNy43NzA0IDI1LjA0NjYgOC43ODA0IDI1LjE2MzcgMTAuMDU2MyAyNC4zMjMzQzEwLjEwNTYgMjQuMjkxNSAxMC4xNjI1IDI0LjI1NDMgMTAuMjE2MSAyNC4yMTcxQzEwLjMzNDMgMjQuNDY0NCAxMC41NDMzIDI0LjczNjkgMTAuOTIzIDI0LjkyMjlDMTEuMzgyNiAyNS4xNDg0IDExLjg0MjIgMjUuMTU5MyAxMi4xNzcgMjUuMTY4MUMxMi4zMjAzIDI1LjE3MTMgMTIuNTE2MiAyNS4xNzU3IDEyLjU3NTMgMjUuMjAyQzEyLjc4MSAyNS4yOTI4IDEyLjkwMjUgMjUuNDA0NCAxMy4xMzg5IDI1LjYyNzZDMTMuMzE2MSAyNS43OTUxIDEzLjUwMzIgMjUuOTY5MSAxMy43NDA3IDI2LjE0ODVDMTMuOTM3NyAyNi4yOTYyIDE0LjE2NzUgMjYuMzY2MyAxNC4zOTUxIDI2LjM2NjNDMTQuNzI3NyAyNi4zNjYzIDE1LjA1NzEgMjYuMjE0MiAxNS4yNzE2IDI1LjkyODZDMTUuNjMzOCAyNS40NDQ5IDE1LjUzNTMgMjQuNzU4OCAxNS4wNTE2IDI0LjM5NjZDMTQuODkzIDI0LjI3NCAxNC43NjcxIDI0LjE1MjYgMTQuNjQ1NyAyNC4wMzc3WiIgZmlsbD0iIzQ5NEY1OSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=\",\r\n\t\t\t\"txFo\": \"\",\r\n\t\t\t\"apiId\": \"\",\r\n\t\t\t\"onTable\": \"\"\r\n\t\t},\r\n\t\t\"role\": {\r\n\t\t\t\"visible\": \"\",\r\n\t\t\t\"disabled\": \"\"\r\n\t\t},\r\n\t\t\"property\": {},\r\n\t\t\"validate\": {\r\n\t\t\t\"request\": false\r\n\t\t},\r\n\t\t\"lang\": {},\r\n\t\t\"configAVD\": {},\r\n\t\t\"inputtype\": \"jButtonSignature\",\r\n\t\t\"default\": {\r\n\t\t\t\"name\": \"Default Component\",\r\n\t\t\t\"code\": \"default\",\r\n\t\t\t\"codeHidden\": \"\",\r\n\t\t\t\"class\": \"\",\r\n\t\t\t\"condition\": \"\",\r\n\t\t\t\"role\": \"\"\r\n\t\t}\r\n\t}"
+			},
+			{
+				"GroupId": "advanced_fields",
+				"isActive": true,
+				"Title": "{\r\n\t\t\"en\": \"List CheckBox\",\r\n\t\t\"vi\": \"Danh sách checkbox\"\r\n}",
+				"DisplayOrder": "12",
+				"AttId": "list_check_box",
+				"Img": "check_box_outline_blank",
+				"KeyNew": "12",
+				"Template": "{\n\t\t\"default\": {\n\t\t\t\"name\": \"Default component\",\n\t\t\t\"code\": \"4a563edde0f0558f\",\n\t\t\t\"codeHidden\": \"\",\n\t\t\t\"class\": \"col-sm-12 col-md-12\",\n\t\t\t\"condition\": \"\",\n\t\t\t\"ofgroup\": \"\",\n\t\t\t\"class_ofgroup\": \"col-sm-12 col-md-12\",\n\t\t\t\"role\": \"\"\n\t\t},\n\t\t\"config\": {\n\t\t\t\"structable\": \"\",\n\t\t\t\"structable_read\": \"\",\n\t\t\t\"query_data\": \"\",\n\t\t\t\"is_multi_col\": \"false\",\n\t\t\t\"get_data_format\": \"c_cdlist.cdid\",\n\t\t\t\"selected_view_format\": \"@c_cdlist.caption\",\n\t\t\t\"col_format\": \"@c_cdlist.caption\",\n\t\t\t\"key_selected\": \"c_cdlist.cdid\",\n\t\t\t\"useAction\": \"false\",\n\t\t\t\"isAutoDefault\": \"true\"\n\t\t},\n\t\t\"role\": {\n\t\t\t\"disabled\": \"\",\n\t\t\t\"visible\": \"\",\n\t\t\t\"other\": \"\",\n\t\t\t\"other2\": \"\"\n\t\t},\n\t\t\"property\": {},\n\t\t\"validate\": {\n\t\t\t\"request\": false\n\t\t},\n\t\t\"lang\": {\n\t\t\t\"ui\": {\n\t\t\t\t\"vi\": {\n\t\t\t\t\t\"Mẫu component\": \"Mẫu component\"\n\t\t\t\t},\n\t\t\t\t\"en\": {\n\t\t\t\t\t\"Mẫu component\": \"Mẫu component\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t\"configAVD\": {},\n\t\t\"inputtype\": \"jListCheckBox\"\n\t}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Report\",\"vi\":\"Report\"}",
+				"DisplayOrder": "30",
+				"AttId": "default_report",
+				"Img": "report",
+				"Template": "{\"default\":{\"name\":\"Default component\",\"code\":\"\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"query_data\":\"\",\"file_report\":\"\",\"file_report_name\":\"\",\"config_data\":\"{\\n    \\\"key_parent\\\":[{\\n        \\\"key_1\\\": \\\"key_parent.key_1\\\",\\n        \\\"key_2\\\": \\\"key_parent.key_2\\\"\\n    }]}\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jReport\"}"
+			},
+			{
+				"GroupId": "basic_fields",
+				"isActive": true,
+				"Title": "{\"en\":\"Iframe Report\",\"vi\":\"Iframe Report\"}",
+				"DisplayOrder": "31",
+				"AttId": "default_iframeReport",
+				"Img": "code",
+				"Template": "{\"default\":{\"name\":\"Report\",\"code\":\"\",\"codeHidden\":\"\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"file_report\":\"\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}"
+			}
+		]
+	}
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.4062404Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"last_update\":\"04/12/2020 09:06:30 AM\",\"list_show_error\":\"false\",\"app\":\"o9\",\"title\":\"Form Audit\",\"bodata\":\"\",\"data\":\"\",\"des\":\"\",\"flow_layout\":[],\"form_code\":\"JWEBUI_form_read_audit_from_o9\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"all\",\"component_action\":\"\",\"component_result\":\"creator;modifier\",\"condition\":\"1===1\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"c8c21315d3ebe9a5\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"498fd77d9f9ece9e\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"User ID\",\"code\":\"userid\",\"class\":\"col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"c161c8bbd661ea11\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"JWEBUI_form_read_audit_from_o9.userid\",\"structable_read\":\"JWEBUI_form_read_audit_from_o9.userid\",\"data_default\":\"\",\"isLookup\":\"false\",\"is_upperCase\":\"false\",\"callform\":\"JWEBUI_form_read_audit_from_o9\",\"callform_detail\":\"JWEBUI_form_read_audit_from_o9\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"action\":\"\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"From date\",\"code\":\"fromdate\",\"class\":\"col-xl-6 col-lg-6 col-md-6 col-sm-6\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"ff32d4b835df03f7\"},\"config\":{\"structable\":\"JWEBUI_form_read_audit_from_o9.fromdate\",\"structable_read\":\"JWEBUI_form_read_audit_from_o9.fromdate\",\"data_default\":\"\",\"data_type\":\"edit\",\"component_title\":\"\",\"mask_format\":\"DD/MM/YYYY\",\"mask_data_format\":\"DD/MM/YYYY\",\"value_type\":\"all\",\"auto_delete\":\"true\",\"mask_mode\":\"date\",\"isLookup\":\"false\",\"callform\":\"ifc_tariff_configuration_add\",\"callform_detail\":\"ifc_tariff_configuration_add\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"status\":\"\",\"reg_remove\":\"\",\"content_style\":\"\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"jMaskInput\"},{\"default\":{\"name\":\"To date\",\"code\":\"todate\",\"class\":\"col-xl-6 col-lg-6 col-md-6 col-sm-6\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"8f86828d46d56c78\"},\"config\":{\"structable\":\"JWEBUI_form_read_audit_from_o9.todate\",\"structable_read\":\"JWEBUI_form_read_audit_from_o9.todate\",\"data_default\":\"\",\"data_type\":\"edit\",\"component_title\":\"\",\"mask_format\":\"DD/MM/YYYY\",\"mask_data_format\":\"DD/MM/YYYY\",\"value_type\":\"all\",\"auto_delete\":\"true\",\"mask_mode\":\"date\",\"isLookup\":\"false\",\"callform\":\"ifc_tariff_configuration_add\",\"callform_detail\":\"ifc_tariff_configuration_add\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"status\":\"\",\"reg_remove\":\"\",\"content_style\":\"\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"jMaskInput\"}]},{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"8974e52d2defaaee\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"onTable\":\"\",\"icon\":\"fa-search\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-search-API\\\",\\\"input\\\":{\\\"list_component\\\":\\\"*\\\",\\\"list_view\\\":\\\"code\\\",\\\"table_code\\\":\\\"JWEBUI_form_read_audit_from_o9\\\",\\\"learn_api\\\":\\\"api_read_audit_09\\\"}}]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Search\",\"code\":\"search\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"f5d2817a570281f9\"}}]},{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"e7782b9ce35a9cf0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Search Result\",\"code\":\"search_result\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"661b0769d7c46d84\"},\"config\":{\"structable\":\"JWEBUI_form_read_audit_from_o9.search_result\",\"query_data\":\"select * from JWEBUI_form_read_audit_from_o9\",\"paging_record\":\"5\",\"columns\":\"[\\n  {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.usrid\\\",\\n        \\\"title\\\": \\\"User ID\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.lgname\\\",\\n        \\\"title\\\": \\\"Login name\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.usrname\\\",\\n        \\\"title\\\": \\\"User name\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.wsip\\\",\\n        \\\"title\\\": \\\"IP\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.caption\\\",\\n        \\\"title\\\": \\\"Action\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"JWEBUI_form_read_audit_from_o9.systime\\\",\\n        \\\"title\\\": \\\"Time\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {\\n            \\\"mask\\\": \\\"HH:MM:SS\\\"\\n        }\\n    }\\n]\",\"onTable\":\"\",\"isLoadDataStart\":\"false\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cTableDefault\"}]}]}]",
+        "react_txt": null,
+        "form_id": "JWEBUI_form_read_audit_from_o9",
+        "app": "ncbs",
+        "id": 677
+      }
+    ]
+  }
+]

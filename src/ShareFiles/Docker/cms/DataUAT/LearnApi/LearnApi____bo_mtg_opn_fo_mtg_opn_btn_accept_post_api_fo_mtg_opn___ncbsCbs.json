@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8340352Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "bo_mtg_opn_fo_mtg_opn_btn_accept_post_api_fo_mtg_opn",
+        "learn_api_name": "BO_MTG_OPN Accept FO_MTG_OPN",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/mtg_opn",
+        "learn_api_data": "FO_MTG_OPN",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"txrefid\": \"MapS.dataS(FO_MTG_OPN.txrefid)\",\n    \"pdacc\": \"MapS.dataS(FO_MTG_OPN.pdacc)\",\n    \"cacnm\": \"MapS.dataS(FO_MTG_OPN.cacnm)\",\n    \"cctmt\": \"MapS.dataS(FO_MTG_OPN.cctmt)\",\n    \"cctmcd\": \"MapS.dataS(FO_MTG_OPN.cctmcd)\",\n    \"ccatnm\": \"MapS.dataS(FO_MTG_OPN.ccatnm)\",\n    \"cncat\": \"MapS.dataS(FO_MTG_OPN.cncat)\",\n    \"crtype\": \"MapS.dataS(FO_MTG_OPN.crtype)\",\n    \"cpur\": \"MapS.dataS(FO_MTG_OPN.cpur)\",\n    \"cpur2\": \"MapS.dataS(FO_MTG_OPN.cpur2)\",\n    \"cacccr\": \"MapS.dataS(FO_MTG_OPN.cacccr)\",\n    \"pcsccr\": \"MapS.dataS(FO_MTG_OPN.pcsccr)\",\n    \"crate\": \"MapS.dataN(FO_MTG_OPN.crate)\",\n    \"cbkexr1\": \"MapS.dataN(FO_MTG_OPN.cbkexr1)\",\n    \"camt\": \"MapS.dataN(FO_MTG_OPN.camt)\",\n    \"camt3\": \"MapS.dataN(FO_MTG_OPN.camt3)\",\n    \"camt2\": \"MapS.dataN(FO_MTG_OPN.camt2)\",\n    \"ccerser\": \"MapS.dataS(FO_MTG_OPN.ccerser)\",\n    \"pcsamt\": \"MapS.dataN(FO_MTG_OPN.pcsamt)\",\n    \"cnseq\": \"MapS.dataN(FO_MTG_OPN.cnseq)\",\n    \"cserno\": \"MapS.dataS(FO_MTG_OPN.cserno)\",\n    \"other_address\": \"MapS.dataJsonObject(FO_MTG_OPN.other_address)\",\n    \"location\": \"MapS.dataS(FO_MTG_OPN.location)\",\n    \"address\": {\n        \"c\": \"MapS.dataS(FO_MTG_OPN.address.c)\",\n        \"d\": \"MapS.dataS(FO_MTG_OPN.address.d)\",\n        \"h\": \"MapS.dataS(FO_MTG_OPN.address.h)\",\n        \"r\": \"MapS.dataS(FO_MTG_OPN.address.r)\",\n        \"t\": \"MapS.dataS(FO_MTG_OPN.address.t)\",\n        \"w\": \"MapS.dataS(FO_MTG_OPN.address.w)\",\n        \"z\": \"MapS.dataS(FO_MTG_OPN.address.z)\"\n    },\n    \"laddr\": {\n        \"c\": \"MapS.dataS(FO_MTG_OPN.laddr.c)\",\n        \"d\": \"MapS.dataS(FO_MTG_OPN.laddr.d)\",\n        \"h\": \"MapS.dataS(FO_MTG_OPN.laddr.h)\",\n        \"r\": \"MapS.dataS(FO_MTG_OPN.laddr.r)\",\n        \"t\": \"MapS.dataS(FO_MTG_OPN.laddr.t)\",\n        \"w\": \"MapS.dataS(FO_MTG_OPN.laddr.w)\",\n        \"z\": \"MapS.dataS(FO_MTG_OPN.laddr.z)\"\n    },\n    \"expdt\": \"MapS.dateDDMMYYYY(FO_MTG_OPN.expdt)\",\n    \"cvldt\": \"MapS.dateDDMMYYYY(FO_MTG_OPN.cvldt)\",\n    \"plcyamt\": \"MapS.dataN(FO_MTG_OPN.plcyamt)\",\n    \"ciplcy\": \"MapS.dataS(FO_MTG_OPN.ciplcy)\",\n    \"plcyno\": \"MapS.dataS(FO_MTG_OPN.plcyno)\",\n    \"evaby\": \"MapS.dataS(FO_MTG_OPN.evaby)\",\n    \"evame\": \"MapS.dataS(FO_MTG_OPN.evame)\",\n    \"evadt\": \"MapS.dateDDMMYYYY(FO_MTG_OPN.evadt)\",\n    \"evandt\": \"MapS.dateDDMMYYYY(FO_MTG_OPN.evandt)\",\n    \"insur\": \"MapS.dataS(FO_MTG_OPN.insur)\",\n    \"descs\": \"MapS.dataS(FO_MTG_OPN.descs)\",\n    \"approverid\": \"MapS.dataN(user_approve.usrid)\"\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 212
+      }
+    ]
+  }
+]

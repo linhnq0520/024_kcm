@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.0706845Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"26/12/2022 09:35:20 AM\",\"list_show_error\":\"false\",\"app\":\"ncbsReport\",\"title\":\"Dashboard Demo\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Dashboard Demo\",\"flow_layout\":[],\"form_code\":\"dashboard_open_account\",\"key_form\":\"\",\"lang_form\":{\"en\":\"Dashboard Demo\"},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"688973e639978cb4\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"Open Accounts Today\",\"class\":\"\",\"code\":\"code\",\"isTab\":\"true\",\"lang\":{\"en\":\"\",\"vi\":\"\"},\"inputtype\":\"cView\",\"viewUI\":\"\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"0b2a30464900ee0c\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"ef2ace12af8b0259\"},\"config\":{\"design_type\":\"dashboard\",\"file_report\":\"OPEN_ACC\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}],\"codeHidden\":\"33222f4c81e98dc2\",\"isBorder\":\"false\",\"condition\":\"\",\"more_information\":\"\"},{\"name\":\"Open Accounts In Year\",\"class\":\"\",\"code\":\"code\",\"isTab\":\"true\",\"lang\":{\"en\":\"\",\"vi\":\"\"},\"inputtype\":\"cView\",\"viewUI\":\"\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"0b2a30464900ee0c\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"962a7bf8c82075ea\"},\"config\":{\"design_type\":\"dashboard\",\"file_report\":\"OPEN_ACC_IN_YEAR\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}],\"codeHidden\":\"b608beeb37c556a3\",\"isBorder\":\"false\",\"condition\":\"\",\"more_information\":\"\"},{\"name\":\"Account Classification\",\"class\":\"\",\"code\":\"code\",\"isTab\":\"true\",\"lang\":{\"en\":\"\",\"vi\":\"\"},\"inputtype\":\"cView\",\"viewUI\":\"\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"0b2a30464900ee0c\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"24fae418b16b7054\"},\"config\":{\"design_type\":\"dashboard\",\"file_report\":\"ACCOUNT_CLASSIFICATION\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}],\"codeHidden\":\"da16e0f1588049e0\",\"isBorder\":\"false\",\"condition\":\"\",\"more_information\":\"\"}]}]",
+        "react_txt": "",
+        "form_id": "dashboard_open_account",
+        "app": "ncbsReport",
+        "id": 1263
+      }
+    ]
+  }
+]

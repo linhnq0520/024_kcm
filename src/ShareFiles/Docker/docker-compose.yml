@@ -1,0 +1,771 @@
+version: "3.4"
+
+services:
+  neptunedb_mysql:
+    image: mysql
+    # platform: linux/x86_64
+    container_name: neptunedb_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin1234
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/mysql_data:/var/lib/mysql:Z
+    command:
+      - "mysqld"
+      - "--binlog_expire_logs_seconds=7200" #Default: 864000
+      - "--max_connections=500" #Default: 151
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5673:5672"
+      - "15672:15672"
+    volumes:
+      - /home/rabbitmq_data:/var/lib/rabbitmq/mnesia
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    links:
+      - neptunedb_mysql
+    environment:
+      - UPLOAD_LIMIT=1G
+      - PMA_HOST=neptunedb_mysql
+      - PMA_PORT=3306
+    restart: always
+    ports:
+      - "8886:80"
+
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+    restart: always
+    ports:
+      - "8040:8000"
+      - "9040:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+  neptuneserver:
+    image: ${DOCKER_REGISTRY-}neptuneserver
+    build:
+      context: .
+      dockerfile: neptuneserver/Dockerfile_deploy
+    container_name: neptuneserver
+    environment:
+      - NEPTUNE_DB_ONLINE_SERVER_NAME=neptunedb_mysql
+      - NEPTUNE_DB_ONLINE_SERVER_PORT=3306
+      - NEPTUNE_DB_ONLINE_NAME=neptune
+      - NEPTUNE_DB_ONLINE_SCHEMA=neptune
+      - NEPTUNE_DB_ONLINE_RDBMS_TYPE=MySQL
+      - NEPTUNE_DB_ONLINE_USERNAME=neptune
+      - NEPTUNE_DB_ONLINE_PASSWORD=bmVwdHVuZQ==
+      - NEPTUNE_DB_ONLINE_PASSWORD_ENCRYPTION_METHOD=BASE64
+    depends_on:
+      - neptunedb_mysql
+      - rabbitmq
+    restart: always
+    ports:
+      - "105:105"
+      - "109:109"
+
+  accounting.api:
+    image: ${DOCKER_REGISTRY-}accountingapi
+    build:
+      context: .
+      dockerfile: accounting/Dockerfile
+    container_name: accounting.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8050:80"
+      - "5050:5000"
+    environment:
+      - &value DistributedCacheConfig:Enabled=false
+
+  accounting1.api:
+    image: ${DOCKER_REGISTRY-}accountingapi1
+    build:
+      context: .
+      dockerfile: accounting/Dockerfile
+    container_name: accounting1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8150:80"
+      - "5150:5000"
+
+  accounting2.api:
+    image: ${DOCKER_REGISTRY-}accountingapi2
+    build:
+      context: .
+      dockerfile: accounting/Dockerfile
+    container_name: accounting2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8250:80"
+      - "5250:5000"
+
+  admin.api:
+    image: ${DOCKER_REGISTRY-}adminapi
+    build:
+      context: .
+      dockerfile: admin/Dockerfile
+    container_name: admin.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8051:80"
+      - "5051:5000"
+    environment:
+      - *value
+
+  admin1.api:
+    image: ${DOCKER_REGISTRY-}adminapi1
+    build:
+      context: .
+      dockerfile: admin/Dockerfile
+    container_name: admin1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8151:80"
+      - "5151:5000"
+
+  admin2.api:
+    image: ${DOCKER_REGISTRY-}adminapi2
+    build:
+      context: .
+      dockerfile: admin/Dockerfile
+    container_name: admin2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8251:80"
+      - "5251:5000"
+
+  cash.api:
+    image: ${DOCKER_REGISTRY-}cashapi
+    build:
+      context: .
+      dockerfile: cash/Dockerfile
+    container_name: cash.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8052:80"
+      - "5052:5000"
+    environment:
+      - *value
+
+  cash1.api:
+    image: ${DOCKER_REGISTRY-}cashapi1
+    build:
+      context: .
+      dockerfile: cash/Dockerfile
+    container_name: cash1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8152:80"
+      - "5152:5000"
+
+  cash2.api:
+    image: ${DOCKER_REGISTRY-}cashapi2
+    build:
+      context: .
+      dockerfile: cash/Dockerfile
+    container_name: cash2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8252:80"
+      - "5252:5000"
+
+  credit.api:
+    image: ${DOCKER_REGISTRY-}creditapi
+    build:
+      context: .
+      dockerfile: credit/Dockerfile
+    container_name: credit.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8053:80"
+      - "5053:5000"
+    environment:
+      - *value
+
+  credit1.api:
+    image: ${DOCKER_REGISTRY-}creditapi1
+    build:
+      context: .
+      dockerfile: credit/Dockerfile
+    container_name: credit1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8153:80"
+      - "5153:5000"
+
+  credi2.api:
+    image: ${DOCKER_REGISTRY-}creditapi2
+    build:
+      context: .
+      dockerfile: credit/Dockerfile
+    container_name: credit2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8253:80"
+      - "5253:5000"
+
+  customer.api:
+    image: ${DOCKER_REGISTRY-}customerapi
+    build:
+      context: .
+      dockerfile: customer/Dockerfile
+    container_name: customer.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8054:80"
+      - "5054:5000"
+    environment:
+      - *value
+
+  customer1.api:
+    image: ${DOCKER_REGISTRY-}customerapi1
+    build:
+      context: .
+      dockerfile: customer/Dockerfile
+    container_name: customer1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8154:80"
+      - "5154:5000"
+
+  customer2.api:
+    image: ${DOCKER_REGISTRY-}customerapi2
+    build:
+      context: .
+      dockerfile: customer/Dockerfile
+    container_name: customer2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8254:80"
+      - "5254:5000"
+
+  deposit.api:
+    image: ${DOCKER_REGISTRY-}depositgapi
+    build:
+      context: .
+      dockerfile: deposit/Dockerfile
+    container_name: deposit.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8055:80"
+      - "5055:5000"
+    environment:
+      - *value
+
+  deposit1.api:
+    image: ${DOCKER_REGISTRY-}depositgapi1
+    build:
+      context: .
+      dockerfile: deposit/Dockerfile
+    container_name: deposit1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8155:80"
+      - "5155:5000"
+
+  deposit2.api:
+    image: ${DOCKER_REGISTRY-}depositgapi2
+    build:
+      context: .
+      dockerfile: deposit/Dockerfile
+    container_name: deposit2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8255:80"
+      - "5255:5000"
+
+  fixedasset.api:
+    image: ${DOCKER_REGISTRY-}fixedassetapi
+    build:
+      context: .
+      dockerfile: fixedasset/Dockerfile
+    container_name: fixedasset.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8056:80"
+      - "5056:5000"
+    environment:
+      - *value
+
+  fixedasset1.api:
+    image: ${DOCKER_REGISTRY-}fixedassetapi1
+    build:
+      context: .
+      dockerfile: fixedasset/Dockerfile
+    container_name: fixedasset1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8156:80"
+      - "5156:5000"
+
+  fixedasset2.api:
+    image: ${DOCKER_REGISTRY-}fixedassetapi2
+    build:
+      context: .
+      dockerfile: fixedasset/Dockerfile
+    container_name: fixedasset2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8256:80"
+      - "5256:5000"
+
+  fx.api:
+    image: ${DOCKER_REGISTRY-}fxapi
+    build:
+      context: .
+      dockerfile: fx/Dockerfile
+    container_name: fx.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8057:80"
+      - "5057:5000"
+    environment:
+      - *value
+
+  fx1.api:
+    image: ${DOCKER_REGISTRY-}fxapi1
+    build:
+      context: .
+      dockerfile: fx/Dockerfile
+    container_name: fx1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8157:80"
+      - "5157:5000"
+
+  fx2.api:
+    image: ${DOCKER_REGISTRY-}fxapi2
+    build:
+      context: .
+      dockerfile: fx/Dockerfile
+    container_name: fx2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8257:80"
+      - "5257:5000"
+
+  ifc.api:
+    image: ${DOCKER_REGISTRY-}ifcapi
+    build:
+      context: .
+      dockerfile: ifc/Dockerfile
+    container_name: ifc.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8058:80"
+      - "5058:5000"
+    environment:
+      - *value
+
+  ifc1.api:
+    image: ${DOCKER_REGISTRY-}ifcapi1
+    build:
+      context: .
+      dockerfile: ifc/Dockerfile
+    container_name: ifc1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8158:80"
+      - "5158:5000"
+
+  ifc2.api:
+    image: ${DOCKER_REGISTRY-}ifcapi2
+    build:
+      context: .
+      dockerfile: ifc/Dockerfile
+    container_name: ifc2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8258:80"
+      - "5258:5000"
+
+  mortgage.api:
+    image: ${DOCKER_REGISTRY-}mortgageapi
+    build:
+      context: .
+      dockerfile: mortgage/Dockerfile
+    container_name: mortgage.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8059:80"
+      - "5059:5000"
+    environment:
+      - *value
+
+  mortgage1.api:
+    image: ${DOCKER_REGISTRY-}mortgageapi1
+    build:
+      context: .
+      dockerfile: mortgage/Dockerfile
+    container_name: mortgage1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8159:80"
+      - "5159:5000"
+
+  mortgage2.api:
+    image: ${DOCKER_REGISTRY-}mortgageapi2
+    build:
+      context: .
+      dockerfile: mortgage/Dockerfile
+    container_name: mortgage2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8259:80"
+      - "5259:5000"
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: payment/Dockerfile
+    container_name: payment.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8060:80"
+      - "5060:5000"
+    environment:
+      - *value
+
+  payment1.api:
+    image: ${DOCKER_REGISTRY-}paymentapi1
+    build:
+      context: .
+      dockerfile: payment/Dockerfile
+    container_name: payment1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8160:80"
+      - "5160:5000"
+
+  payment2.api:
+    image: ${DOCKER_REGISTRY-}paymentapi2
+    build:
+      context: .
+      dockerfile: payment/Dockerfile
+    container_name: payment2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8260:80"
+      - "5260:5000"
+
+  batch.api:
+    image: ${DOCKER_REGISTRY-}batchapi
+    build:
+      context: .
+      dockerfile: batch/Dockerfile
+    container_name: batch.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8061:80"
+      - "5061:5000"
+    environment:
+      - *value
+
+  batch1.api:
+    image: ${DOCKER_REGISTRY-}batchapi1
+    build:
+      context: .
+      dockerfile: batch/Dockerfile
+    container_name: batch1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8161:80"
+      - "5161:5000"
+
+  batch2.api:
+    image: ${DOCKER_REGISTRY-}batchapi2
+    build:
+      context: .
+      dockerfile: batch/Dockerfile
+    container_name: batch2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8261:80"
+      - "5261:5000"
+
+  cms.api:
+    image: ${DOCKER_REGISTRY-}cmsapi
+    build:
+      context: .
+      dockerfile: cms/Dockerfile
+    container_name: cms.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8066:443"
+      - "5066:5000"
+    environment:
+      - *value
+
+  cms1.api:
+    image: ${DOCKER_REGISTRY-}cmsapi1
+    build:
+      context: .
+      dockerfile: cms/Dockerfile
+    container_name: cms1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8166:80"
+      - "5166:5000"
+
+  cms2.api:
+    image: ${DOCKER_REGISTRY-}cmsapi2
+    build:
+      context: .
+      dockerfile: cms/Dockerfile
+    container_name: cms2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8266:80"
+      - "5266:5000"
+
+  nginx:
+    image: ${DOCKER_REGISTRY-}nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+
+  voucher.api:
+    image: ${DOCKER_REGISTRY-}voucherapi
+    build:
+      context: .
+      dockerfile: voucher/Dockerfile
+    container_name: voucher.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8063:80"
+      - "5063:5000"
+    environment:
+      - *value
+
+  voucher1.api:
+    image: ${DOCKER_REGISTRY-}voucherapi1
+    build:
+      context: .
+      dockerfile: voucher/Dockerfile
+    container_name: voucher1.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8163:80"
+      - "5163:5000"
+
+  voucher2.api:
+    image: ${DOCKER_REGISTRY-}voucherapi2
+    build:
+      context: .
+      dockerfile: voucher/Dockerfile
+    container_name: voucher2.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8263:80"
+      - "5263:5000"
+
+  email.api:
+    image: ${DOCKER_REGISTRY-}emailapi
+    build:
+      context: .
+      dockerfile: email/Dockerfile
+    container_name: email.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8064:80"
+      - "5064:5000"
+    environment:
+      - *value
+
+  report.api:
+    image: ${DOCKER_REGISTRY-}reportapi
+    build:
+      context: .
+      dockerfile: report/Dockerfile
+    container_name: report.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8067:443"
+      - "5067:5000"
+    environment:
+      - *value
+
+  reportmanagement:
+    image: ${DOCKER_REGISTRY-}reportmanagement
+    build:
+      context: .
+      dockerfile: reportmanagement/Dockerfile
+    container_name: reportmanagement.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8071:443"
+      - "5071:5000"
+    environment:
+      - *value
+
+  ems.api:
+    image: ${DOCKER_REGISTRY-}emsapi
+    build:
+      context: .
+      dockerfile: ems/Dockerfile
+    container_name: ems.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8068:80"
+      - "5068:5000"
+    environment:
+      - *value
+
+  import.api:
+    image: ${DOCKER_REGISTRY-}importapi
+    build:
+      context: .
+      dockerfile: import/Dockerfile
+    container_name: import.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8069:80"
+      - "5072:5000"
+    environment:
+      - *value
+
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  party.api:
+    image: ${DOCKER_REGISTRY-}partyapi
+    build:
+      context: .
+      dockerfile: party/Dockerfile
+    container_name: party.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8073:80"
+      - "5073:5000"
+    environment:
+      - *value
+
+  card.api:
+    image: ${DOCKER_REGISTRY-}cardapi
+    build:
+      context: .
+      dockerfile: card/Dockerfile
+    container_name: card.api
+    depends_on:
+      - neptunedb_mysql
+      - neptuneserver
+    ports:
+      - "8074:80"
+      - "5074:5000"
+    environment:
+      - *value
+
+volumes:
+  mysql_data:
+  portainer_data:

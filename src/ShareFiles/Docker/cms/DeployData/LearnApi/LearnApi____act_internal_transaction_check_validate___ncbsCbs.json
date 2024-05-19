@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-17T11:33:38.870464Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "act_internal_transaction_check_validate",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "act_internal_transaction_check_validate",
+        "learn_api_name": "act_internal_transaction_check_validate",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "act_internal_transaction_check_validate",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": null,
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"ACT_VERIFY_TRANSACTION_RULE\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"workflow_id\": \"ACT_MAN\",\n        \"list_rule_name\": [\n            \"ValidateInternalTransaction\"\n        ],\n        \"data\": {\n            \"posting_data\": \"MapS.arrayJson(act_internal_transaction.posting_data|{\\\"account_name\\\":\\\"MapS.dataS(table_child.account_name)\\\",\\\"currency\\\":\\\"MapS.dataS(table_child.currency)\\\",\\\"posting_side\\\":\\\"MapS.dataS(table_child.posting_side)\\\",\\\"gl_account_number\\\":\\\"MapS.dataS(table_child.gl_account_number)\\\",\\\"credit_amount\\\":\\\"MapS.dataN(table_child.credit_amount)\\\",\\\"debit_amount\\\":\\\"MapS.dataN(table_child.debit_amount)\\\",\\\"cost_center\\\":\\\"MapS.dataS(table_child.cost_center)\\\",\\\"product_code\\\":\\\"MapS.dataS(table_child.product_code)\\\",\\\"inter_company\\\":\\\"MapS.dataS(table_child.inter_company)\\\"})\"\n        }\n    }\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1806
+      }
+    ]
+  }
+]

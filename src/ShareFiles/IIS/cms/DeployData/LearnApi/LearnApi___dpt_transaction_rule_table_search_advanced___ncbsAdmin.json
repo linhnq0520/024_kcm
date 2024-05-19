@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-27T08:35:09.2285625Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "dpt_transaction_rule_table_search_advanced",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "dpt_transaction_rule_table_search_advanced",
+        "learn_api_name": "dpt_transaction_rule_table_search_advanced",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "rule_list",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"fields\": {\r\n\t\t\"caption\": \"MapS.dataS(system_code.advanced_search.caption)\",\r\n\t\t\"example\": \"MapS.dataS(system_code.advanced_search.example)\",\r\n\t\t\"parameter\": \"MapS.dataS(system_code.advanced_search.parameter)\",\r\n\t\t\"rule_name\": \"MapS.dataS(system_code.advanced_search.rule_name)\",\r\n\t\t\"rule_order\": \"MapS.dataN(system_code.advanced_search.rule_order)\",\r\n\t\t\"spec\": \"MapS.dataS(system_code.advanced_search.spec)\",\r\n\t\t\"workflow_id\": \"MapS.dataS(system_code.advanced_search.workflow_id)\",\r\n\t\t\"page_size\": \"MapS.dataNZero(table_search.paging.recordItem)\",\r\n\t\t\"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\"\r\n\t},\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"workflowid\": \"DPT_ADVANCED_SEARCH_TRANS_RULE\"\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1949
+      }
+    ]
+  }
+]

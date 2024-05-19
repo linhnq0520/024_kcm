@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.0878132Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Mới mở calender, thường là tải theo ngày hiện tại\",\"function\":\"calender.loadData\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[],\"request\":{\"_default_\":{\"bo\":[{\"txcode\":\"#sys:bo-calender-loadData\",\"input\":{}}]}}}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-calender-loadData",
+        "version": 1,
+        "updateTime": 638042796881318682,
+        "txname": "Fo này dành cho tải calender",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 15
+      }
+    ]
+  }
+]

@@ -1,0 +1,1956 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="3">
+      <DPT0002A Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>DPT0002A</Alias>
+        <Columns isList="true" count="9">
+          <value>ORIGINAL,Date,Date,Date,System.DateTime,f718033d1f6841a599b1b6fe7e6884fc</value>
+          <value>ORIGINAL,Description,Description,Description,System.String,_x0037_d02982fe2004d68b1638d23d2c3a3f7</value>
+          <value>ORIGINAL,ChequeNo,ChequeNo,ChequeNo,System.String,_x0031_e06616d0add4f50a0f87e0dcf34abd8</value>
+          <value>ORIGINAL,TT,TT,TT,System.String,e5bb940804754c3cab885ae7e6f14a70</value>
+          <value>ORIGINAL,TC,TC,TC,System.String,_x0035_31138bef22e4cc598997ff915938317</value>
+          <value>ORIGINAL,Debit,Debit,Debit,System.Nullable`1[System.Decimal],cbf9d551aba744a08c643d2108242128</value>
+          <value>ORIGINAL,Credit,Credit,Credit,System.Nullable`1[System.Decimal],ede4f0d640f9456fb8a4cef6b92d39a6</value>
+          <value>ORIGINAL,Balance,Balance,Balance,System.Decimal,ff5b78b020e5455081eaa26fb76f6ba0</value>
+          <value>DorC,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e9cb21e5612d4260a9e0b470314d6ffb</Key>
+        <Name>DPT0002A</Name>
+        <NameInSource>DPT0002A</NameInSource>
+      </DPT0002A>
+      <DPT0002A_Header Ref="3" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>DPT0002A.Header</Alias>
+        <Columns isList="true" count="6">
+          <value>ORIGINAL,AccountNo,AccountNo,AccountNo,System.String,_x0037_02322f1855c4da985bbb6f9d3cafb92</value>
+          <value>ORIGINAL,Name,Name,Name,System.String,_x0034_765f741169644ea89eb09c38c875964</value>
+          <value>ORIGINAL,NRCNo,NRCNo,NRCNo,System.String,ac8ff9f3e25d4836a2f551bad546dcda</value>
+          <value>ORIGINAL,Address,Address,Address,System.String,_x0033_a90abc8e98c4584a4ce7aa1c4a3eae2</value>
+          <value>ORIGINAL,Phone,Phone,Phone,System.String,b145e4ba5cc74b8da1698c765066d9f8</value>
+          <value>ORIGINAL,Date,Date,Date,System.String,b520b7e608cb4e3b9719eda68d32308c</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>5f0a11261ab54f119a69c15c3c87c7dc</Key>
+        <Name>DPT0002A.Header</Name>
+        <NameInSource>DPT0002A</NameInSource>
+      </DPT0002A_Header>
+      <DPT0002A_Balance Ref="4" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>DPT0002A.Balance</Alias>
+        <Columns isList="true" count="1">
+          <value>ORIGINAL,PreBalance,PreBalance,PreBalance,System.Decimal,_x0037_02322f1855c4da985bbb6f9d3cafb92</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>d019413a7b1a4515af899913ef964f2f</Key>
+        <Name>DPT0002A.Balance</Name>
+        <NameInSource>DPT0002A</NameInSource>
+      </DPT0002A_Balance>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>897676d3047c496b918b338fad246caf</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <InternalVoucher Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="6">
+        <PageFooterBand1 Ref="6" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,27.78,24.92,1.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text36 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.06,0.8,6.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text25 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Report time: {DateTime.UtcNow.AddHours(6.5).ToString("dd/MM/yyyy HH:mm:ss")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <title Ref="9" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,24.92,6.5</ClientRectangle>
+          <Components isList="true" count="14">
+            <Image1 Ref="10" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>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
+AduBLk/Ohlm4AAAAAElFTkSuQmCC</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+            <Text4 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.26,0.4,12.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>Shwe (Rural &amp; Urban Development) Bank</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text2 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.26,1.2,12.4,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>BANK STATEMENT
+HEAD OFFICE BRANCH</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text5 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>Account No</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.4,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>Name</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.8,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>N.R.C No
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,5.2,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>Address
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,5.6,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>Ph No
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text20 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,4.4,16.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>: {DPT0002A_Header.Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text22 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,4.8,16.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>: {DPT0002A_Header.NRCNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text23 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,5.2,16.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>: {DPT0002A_Header.Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,5.6,16.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>: {DPT0002A_Header.Phone}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text19 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,4,16.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>: {DPT0002A_Header.AccountNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text21 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.26,2.6,12.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>As at {DPT0002A_Header.Date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>title</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </title>
+        <HeaderDPT0002A2 Ref="24" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.7,24.92,1.6</ClientRectangle>
+          <Components isList="true" count="16">
+            <HeaderDPT0002A_Date2 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_Date2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>Date</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_Date2>
+            <HeaderDPT0002A_Description2 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0,5.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_Description2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>Description</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_Description2>
+            <HeaderDPT0002A_ChequeNo2 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_ChequeNo2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>ChequeNo</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_ChequeNo2>
+            <HeaderDPT0002A_TT2 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_TT2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>T/T</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_TT2>
+            <HeaderDPT0002A_TC2 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_TC2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>T/C</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_TC2>
+            <HeaderDPT0002A_Debit2 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.6,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_Debit2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>Debit</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_Debit2>
+            <HeaderDPT0002A_Credit2 Ref="31" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_Credit2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>Credit</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_Credit2>
+            <HeaderDPT0002A_Balance2 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.4,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderDPT0002A_Balance2</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderDPT0002A_Balance2>
+            <Text30 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0.8,5.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0.8,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text33 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0.8,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text35 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0.8,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>B/F</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text37 Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.6,0.8,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text39 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,0.8,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text40 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.4,0.8,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="5" />
+              <Parent isRef="24" />
+              <Text>{DPT0002A_Balance.PreBalance}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="41" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderDPT0002A2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <PrintIfEmpty>True</PrintIfEmpty>
+          <PrintOnAllPages>False</PrintOnAllPages>
+        </HeaderDPT0002A2>
+        <DataDPT0002A2 Ref="42" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,10.1,24.92,0.8</ClientRectangle>
+          <Components isList="true" count="8">
+            <DataDPT0002A_Date2 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDPT0002A_Date2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.Date}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_Date2>
+            <DataDPT0002A_Description2 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.8,0,5.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>DataDPT0002A_Description2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.Description}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_Description2>
+            <DataDPT0002A_ChequeNo2 Ref="46" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7,0,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>DataDPT0002A_ChequeNo2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.ChequeNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_ChequeNo2>
+            <DataDPT0002A_TT2 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDPT0002A_TT2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.TT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_TT2>
+            <DataDPT0002A_TC2 Ref="48" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>10.6,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDPT0002A_TC2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.TC}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_TC2>
+            <DataDPT0002A_Debit2 Ref="49" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.6,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>DataDPT0002A_Debit2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.Debit}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_Debit2>
+            <DataDPT0002A_Credit2 Ref="51" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>DataDPT0002A_Credit2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.Credit}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="52" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_Credit2>
+            <DataDPT0002A_Balance2 Ref="53" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21.4,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>DataDPT0002A_Balance2</Name>
+              <Page isRef="5" />
+              <Parent isRef="42" />
+              <Text>{DPT0002A.Balance}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="54" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDPT0002A_Balance2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DPT0002A</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataDPT0002A2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <PrintIfDetailEmpty>True</PrintIfDetailEmpty>
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>Date</value>
+          </Sort>
+        </DataDPT0002A2>
+        <FooterBand1 Ref="55" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.7,24.92,6.2</ClientRectangle>
+          <Components isList="true" count="18">
+            <Text10 Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.8,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Previous Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text14 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.2,3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>No. Of Deposit</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="58" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,3.2,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{CountIf(DataDPT0002A2,DPT0002A.DorC == "C")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text17 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.68,19.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Unless the bank is immediately notified of any discrepancy found in the statement of account it will be taken that the account has been found correct.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text17>
+            <Text16 Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,1.8,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text18 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,1.8,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Total Deposit</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text26 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,1.8,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>-</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.8,1.8,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Total Withdraw</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.2,1.8,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>=</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text29 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.2,1.8,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Total Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text11 Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.3,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{DPT0002A_Balance.PreBalance}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="67" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="68" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,2.3,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{Sum(DataDPT0002A2,DPT0002A.Credit)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="69" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.8,2.3,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{Sum(DataDPT0002A2,DPT0002A.Debit)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="71" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text34 Ref="72" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.2,2.3,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{DPT0002A_Balance.PreBalance+Sum(DataDPT0002A2,DPT0002A.Credit)-Sum(DataDPT0002A2,DPT0002A.Debit)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="73" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text1 Ref="74" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,21.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="75" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21.4,0,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{DPT0002A.Balance}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="76" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text41 Ref="77" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.8,3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>No. Of Withdraw</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text42 Ref="78" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,3.8,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="5" />
+              <Parent isRef="55" />
+              <Text>{CountIf(DataDPT0002A2,DPT0002A.DorC == "D")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <PrintIfEmpty>True</PrintIfEmpty>
+        </FooterBand1>
+        <ReportSummaryBand1 Ref="79" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18.7,24.92,1.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text38 Ref="80" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.8,0,4,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <OnlyText>True</OnlyText>
+              <Page isRef="5" />
+              <Parent isRef="79" />
+              <Text>Manager
+
+Account Department</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f4abd080a78743bfa388f252a88c0af2</Guid>
+      <Margins>0.54,0.54,0.26,0.26</Margins>
+      <Name>InternalVoucher</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>26</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </InternalVoucher>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/15/2023 9:46:55 AM</ReportChanged>
+  <ReportCreated>9/8/2011 12:21:29 PM</ReportCreated>
+  <ReportFile>D:\JITS_GITLAB\cbs-shwe\src\ShareFiles\report\MRT_Report\DPT0002AMoMoney.mrt</ReportFile>
+  <ReportGuid>5e895da7f9874eaf840350c19364bf6f</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.4.4.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="36">
+    <Moray_Report_Title1 Ref="81" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item71 Ref="82" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item71>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Moray_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title1>
+    <Moray_Report_Title2 Ref="83" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item73 Ref="84" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item73>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title2>
+    <Moray_Report_Summary Ref="85" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item75 Ref="86" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item75>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Summary>
+    <Moray_Page_Header Ref="87" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item77 Ref="88" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item77>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Header>
+    <Moray_Page_Footer Ref="89" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item79 Ref="90" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item79>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Footer>
+    <Moray_Group_Header1 Ref="91" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item81 Ref="92" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item81>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Header1>
+    <Moray_Group_Footer1 Ref="93" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item83 Ref="94" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item83>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Footer1>
+    <Moray_Header1 Ref="95" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black;True</Border>
+      <Brush>[3:81:103]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item85 Ref="96" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item85>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Moray_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Moray_Header1>
+    <Moray_Data1 Ref="97" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item87 Ref="98" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item87>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1>
+    <Moray_Data1_Odd_x0020_Style Ref="99" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item89 Ref="100" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item89>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Odd_x0020_Style>
+    <Moray_Data1_Even_x0020_Style Ref="101" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[120:219:230]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item91 Ref="102" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item91>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Even_x0020_Style>
+    <Moray_Footer1 Ref="103" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top;[0:31:53];3;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item93 Ref="104" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item93>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Footer1>
+    <Sea_x0020_Foam_Report_Title1 Ref="105" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item95 Ref="106" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item95>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Sea Foam_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Title1>
+    <Sea_x0020_Foam_Report_Title2 Ref="107" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item97 Ref="108" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item97>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Sea Foam_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Title2>
+    <Sea_x0020_Foam_Report_Summary Ref="109" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item99 Ref="110" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item99>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Sea Foam_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Summary>
+    <Sea_x0020_Foam_Page_Header Ref="111" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item101 Ref="112" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item101>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Sea Foam_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Page_Header>
+    <Sea_x0020_Foam_Page_Footer Ref="113" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item103 Ref="114" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item103>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Sea Foam_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Page_Footer>
+    <Sea_x0020_Foam_Group_Header1 Ref="115" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item105 Ref="116" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item105>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Sea Foam_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Group_Header1>
+    <Sea_x0020_Foam_Group_Footer1 Ref="117" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item107 Ref="118" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item107>
+      </Conditions>
+      <Font>Arial,9.75,Bold,Point,False,204</Font>
+      <Name>Sea Foam_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Group_Footer1>
+    <Sea_x0020_Foam_Header1 Ref="119" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;White;3;Solid;False;4;Black;True</Border>
+      <Brush>[52:141:165]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item109 Ref="120" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item109>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Sea Foam_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Sea_x0020_Foam_Header1>
+    <Sea_x0020_Foam_Data1 Ref="121" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item111 Ref="122" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item111>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1>
+    <Sea_x0020_Foam_Data1_Odd_x0020_Style Ref="123" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>[253:233:217]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item113 Ref="124" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item113>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1_Odd_x0020_Style>
+    <Sea_x0020_Foam_Data1_Even_x0020_Style Ref="125" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>[254:244:236]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item115 Ref="126" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item115>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1_Even_x0020_Style>
+    <Sea_x0020_Foam_Footer1 Ref="127" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top;[52:141:165];3;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item117 Ref="128" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item117>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Footer1>
+    <Fern_Report_Title1 Ref="129" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item119 Ref="130" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item119>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Fern_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Title1>
+    <Fern_Report_Title2 Ref="131" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item121 Ref="132" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item121>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Fern_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Title2>
+    <Fern_Report_Summary Ref="133" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item123 Ref="134" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item123>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Fern_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Summary>
+    <Fern_Page_Header Ref="135" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item125 Ref="136" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item125>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Fern_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Page_Header>
+    <Fern_Page_Footer Ref="137" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item127 Ref="138" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item127>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Fern_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Page_Footer>
+    <Fern_Group_Header1 Ref="139" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item129 Ref="140" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item129>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Fern_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Group_Header1>
+    <Fern_Group_Footer1 Ref="141" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item131 Ref="142" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item131>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Fern_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Group_Footer1>
+    <Fern_Header1 Ref="143" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>All;[18:27:0];1;Solid;False;4;Black;True</Border>
+      <Brush>[165:181:146]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item133 Ref="144" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item133>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Fern_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Fern_Header1>
+    <Fern_Data1 Ref="145" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item135 Ref="146" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item135>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1>
+    <Fern_Data1_Odd_x0020_Style Ref="147" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>All;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item137 Ref="148" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item137>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1_Odd_x0020_Style>
+    <Fern_Data1_Even_x0020_Style Ref="149" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>[237:210:182]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item139 Ref="150" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item139>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1_Even_x0020_Style>
+    <Fern_Footer1 Ref="151" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>[78:87:48]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item141 Ref="152" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item141>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Fern_Footer1>
+  </Styles>
+</StiSerializer>

@@ -1,0 +1,52 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-04-11T03:39:54.1659639Z",
+    "host": "192.168.1.170:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "neptunedb_mysql"
+      },
+      {
+        "name": "port",
+        "value": "3306"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "App"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "list_application_id": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+       {
+        "ListApplicationId": "ncbsLicense",
+        "ListApplicationName": "Neptune Licence Issuer",
+        "ListApplicationDes": "Neptune Licence Issuer",
+        "ListApplicationImg": "../rs/global/img/neptune_license.png",
+        "ListApplicationBo": "bo-login-ncbs",
+        "ListApplicationOrder": "3",
+        "ListApplicationBoLogoutAll": "",
+        "ListApplicationBoLogout": "#sys:bo-delete-session",
+        "ConnectOtherSystemStatus": null,
+        "ConfigTemplate": "{\"mobile\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"desktop\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"tablet\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"},\"desktop_small\":{\"template\":\"malibu\",\"screen_working\":\"desktop_ncbsLicense\",\"theme\":\"Majorelle_Blue\"}}",
+        "status": "A",
+        "id": 6
+      }
+    ]
+  }
+]

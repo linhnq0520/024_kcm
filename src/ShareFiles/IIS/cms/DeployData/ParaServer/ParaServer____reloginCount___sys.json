@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:43:19.4468554Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "ParaServer"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "code": "reloginCount",
+        "des": "Số lần đăng nhập lại (0 là không giới hạn)",
+        "value": "2",
+        "data_type": "n",
+        "isAdmin": false,
+        "app": "sys",
+        "id": 18
+      }
+    ]
+  }
+]

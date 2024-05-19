@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-07-20T04:06:20.2181687Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "fo_dpt_oda_fo_dpt_oda_btn_accept_post_api_fo_dpt_oda",
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_oda_fo_dpt_oda_btn_accept_post_api_fo_dpt_oda",
+        "learn_api_name": "fo_dpt_oda_fo_dpt_oda_btn_accept_post_api_fo_dpt_oda",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_ODA",
+        "learn_api_node_data": "",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_ODA\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"contract_number\":\"MapS.dataS(FO_DPT_ODA.contract_number)\",\"customer_type\":\"MapS.dataS(FO_DPT_ODA.customer_type)\",\"account_holding_branch_name\":\"MapS.dataS(FO_DPT_ODA.account_holding_branch_name)\",\"holder_name\":\"MapS.dataS(FO_DPT_ODA.holder_name)\",\"od_catalog_code\":\"MapS.dataS(FO_DPT_ODA.od_catalog_code)\",\"od_catalog_name\":\"MapS.dataS(FO_DPT_ODA.od_catalog_name)\",\"currency_code\":\"MapS.dataS(FO_DPT_ODA.currency_code)\",\"od_limit\":\"MapS.dataNNull(FO_DPT_ODA.od_limit)\",\"deposit_account\":\"MapS.dataS(FO_DPT_ODA.deposit_account)\",\"sub_product_limit_code\":\"MapS.dataS(FO_DPT_ODA.sub_product_limit_code)\",\"fee_data\":[],\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"interest_rate\":\"MapS.dataNNull(FO_DPT_ODA.interest_rate)\",\"credit_classification\":\"MapS.dataNNull(FO_DPT_ODA.credit_classification)\"}}",
+        "number_of_steps": "2;3",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1644
+      }
+    ]
+  }
+]

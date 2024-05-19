@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.7368635Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"X�c nh?n d? li?u b?ng API\",\"function\":\"ncbsCbs.core.txNcbsCbs.createAPIApprove\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-setAndReload-dataForm\",\"input\":{}},{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionSaveOk\"}}],\"error\":[]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionSaveError\"}},{\"txcode\":\"#sys:fo-set-FormErrorAPI\",\"input\":{}},{\"txcode\":\"fo-show-approve-condition\",\"input\":{}}],\"error\":[]},\"approve_faild\":{\"fo\":[{\"txcode\":\"#sys:fo-update-data-inform\",\"input\":{}}],\"error\":[]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-create-API-approveOK",
+        "version": 1,
+        "updateTime": 638145608940044848,
+        "txname": "bo-create-API-approveOK",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 230
+      }
+    ]
+  }
+]

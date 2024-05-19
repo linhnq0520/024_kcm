@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.126698Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "FO_DPT_SRG_api_rulefunc_dpt_srg_get_info_no_leaf",
+        "learn_api_name": "FO_DPT_SRG_api_rulefunc_dpt_srg_get_info_no_leaf",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_SRGapi_rulefunc_dpt_srg_get_info_no_leaf",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_SRG_GET_INFO_NO_LEAF\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"from_serial\":\"MapS.dataS(FO_DPT_SRG.from_serial)\",\"to_serial\":\"MapS.dataS(FO_DPT_SRG.to_serial)\",\"no_of_leaves\":\"MapS.dataI(FO_DPT_SRG.no_of_leaves)\",\"stock_type\":\"MapS.dataS(FO_DPT_SRG.stock_type)\"}}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 610
+      }
+    ]
+  }
+]

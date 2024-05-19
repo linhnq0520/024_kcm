@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-11-28T10:43:16.0074158Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "fo_dpt_opn_fo_dpt_opn_btn_accept_post_api_fo_dpt_opn",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_opn_fo_dpt_opn_btn_accept_post_api_fo_dpt_opn",
+        "learn_api_name": "FO_DPT_OPN Accept FO_DPT_OPN",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_OPN",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_OPN\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"amount\":1,\"account_number\":\"MapS.dataS(FO_DPT_OPN.account_number)\",\"customer_type\":\"MapS.dataS(FO_DPT_OPN.customer_type)\",\"customer_type_caption\":\"MapS.dataS(FO_DPT_OPN.customer_type_caption)\",\"customer_code\":\"MapS.dataS(FO_DPT_OPN.customer_code)\",\"employer_organization_name\":\"MapS.dataS(FO_DPT_OPN.employer_organization_name)\",\"catalog_code\":\"MapS.dataS(FO_DPT_OPN.catalog_code)\",\"catalog_name\":\"MapS.dataS(FO_DPT_OPN.catalog_name)\",\"deposit_type\":\"MapS.dataS(FO_DPT_OPN.deposit_type)\",\"agent_hub_referral\":\"MapS.dataS(FO_DPT_OPN.agent_hub_referral)\",\"relation_customers\":\"MapS.arrayString(FO_DPT_OPN.relation_customers|customer_code)\",\"master_fd_account\":\"MapS.dataSNull(FO_DPT_OPN.master_fd_account)\",\"deposit_purpose\":\"MapS.dataS(FO_DPT_OPN.deposit_purpose)\",\"account_type\":\"MapS.dataS(FO_DPT_OPN.account_type)\",\"account_type_caption\":\"MapS.dataS(FO_DPT_OPN.account_type_caption)\",\"seq_number\":\"MapS.dataNNull(FO_DPT_OPN.seq_number)\",\"account_name\":\"MapS.dataS(FO_DPT_OPN.account_name)\",\"business_purpose_code\":\"MapS.dataS(FO_DPT_OPN.business_purpose_code)\",\"rollover\":\"MapS.dataS(FO_DPT_OPN.rollover)\",\"auto_transfer_option\":\"MapS.dataS(FO_DPT_OPN.auto_transfer_option)\",\"to_account_number\":\"MapS.dataSNull(FO_DPT_OPN.to_account_number)\",\"description\":\"MapS.dataS(FO_DPT_OPN.description)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"deposit_sub_type\":\"MapS.dataS(FO_DPT_OPN.deposit_sub_type)\",\"reason_of_account_opening\":\"MapS.dataSNull(FO_DPT_OPN.reason_of_account_opening)\",\"fee_data\":\"MapS.arrayJson(FO_DPT_OPN.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_name\\\":\\\"MapS.dataS(fee_data.ifc_name)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"}}",
+        "number_of_steps": "2;3",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 393
+      }
+    ]
+  }
+]

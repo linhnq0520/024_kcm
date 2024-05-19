@@ -1,0 +1,1215 @@
+﻿WorkflowId;FullInterfaceName;MethodName;Status;WorkflowFunc;TableName;MappingResponse;MappingRequest;IsCommonProcess;IdFieldName
+ADM_ADVANCED_SEARCH_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_DEPARTMENT_PROFILE;;"{
+    ""id"": ""MapS.dataI(deprtid)"",
+    ""department_code"": ""MapS.dataS(deprtcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""department_name"": ""MapS.dataS(deprname)""
+}
+";"{
+    ""deprtcd"": ""MapS.dataS(fields.department_code)"",
+    ""deprname"": ""MapS.dataS(fields.department_name)"",
+    ""brname"": ""MapS.dataS(fields.branch_name)"",
+    ""branchcd"": ""MapS.dataS(fields.branch_code)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+ADM_ADVANCED_SEARCH_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_SYSTEM_POLICY;;"{
+    ""id"": ""MapS.dataI(policyid)"",
+    ""descr"": ""MapS.dataS(descr)"",
+    ""effective_from"": ""MapS.date_yyyy-MM-dd(effrom)"",
+    ""effective_to"": ""MapS.date_yyyy-MM-dd(efto)""
+}";"{
+	""policyid"": ""MapS.dataI(id)"",
+	""descr"": ""MapS.dataS(descr)"",
+	""effrom"": ""MapS.date_yyyy-MM-dd_Null(effective_from)"",
+	""efto"": ""MapS.date_yyyy-MM-dd_Null(effective_to)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+ADM_DELETE_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015002001005;O9CODE.C_COUNTRY;;"{
+	""id"": ""MapS.dataS(fields.id)""
+}";1;CTRYCD3
+ADM_DELETE_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015003002005;O9SYS.S_DEPARTMENT;;"{""id"":""MapS.dataI(fields.id)""}";1;DEPRTID
+ADM_DELETE_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015003006005;O9SYS.S_USRPOLICY;;"{""id"":""MapS.dataI(fields.id)""}";1;POLICYID
+ADM_ADVANCED_SEARCH_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_COUNTRY;;"{
+    ""id"": ""MapS.dataS(ctrycd3)"",
+    ""iso2_alpha"": ""MapS.dataS(ctrycd)"",
+    ""iso3_alpha"": ""MapS.dataS(ctrycd3)"",
+    ""country_name"": ""MapS.dataS(ctryname)""
+}";"{
+	""ctrycd"": ""MapS.dataS(fields.iso2_alpha)"",
+	""ctrycd3"": ""MapS.dataS(fields.iso3_alpha)"",
+	""ctryname"": ""MapS.dataS(fields.country_name)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+UMG_LOGIN_APPROVE;Jits.Neptune.Web.CMS.LogicOptimal9.Interfaces.IAuthenticateService;CheckLoginApprove;1;;;;"{""username"":""MapS.dataS(fields.username)"",""password"":""MapS.dataS(fields.password)""}";0;
+ADM_ADVANCED_SEARCH_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_BRANCH_PROFILE;;"{
+    ""id"": ""MapS.dataI(branchid)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""branch_address"": ""MapS.dataS(address)"",
+    ""base_currency_code"": ""MapS.dataS(bcycid)"",
+    ""is_online"": ""MapS.dataS(isonline)"",
+    ""branch_type"": ""MapS.dataS(BranchType)""
+}
+";"{
+	""branchcd"": ""MapS.dataS(fields.branch_code)"",
+	""brname"": ""MapS.dataS(fields.branch_name)"",
+	""address"": ""MapS.dataS(fields.branch_address)"",
+	""bcycid"": ""MapS.dataS(fields.base_currency_code)"",
+	""isonline"": ""MapS.dataSelectNull(fields.is_online)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+ADM_ADVANCED_SEARCH_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_CURRENCY;;"{
+    ""id"": ""MapS.dataS(ccrid)"",
+    ""currency_id"": ""MapS.dataS(ccrid)"",
+    ""short_currency_id"": ""MapS.dataS(shrtid)"",
+    ""currency_number"": ""MapS.dataINull(ccrnumber)"",
+    ""status_of_currency"": ""MapS.dataS(status)"",
+    ""display_order"": ""MapS.dataINull(ord)""
+}
+";"{
+    ""ccrid"": ""MapS.dataS(fields.currency_id)"",
+    ""shrtid"": ""MapS.dataS(fields.short_currency_id)"",
+    ""ccrnumber"": ""MapS.dataINull(fields.currency_number)"",
+    ""ccrsts"": ""MapS.dataS(fields.status_of_currency)"",
+    ""ord"": ""MapS.dataINull(fields.display_order)"",
+    ""oprtval_ord"": ""MapS.dataS(fields.oprtval_display_order)"",
+    ""oprtval_ccrnumber"": ""MapS.dataS(fields.oprtval_currency_number)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)""
+}
+";1;
+ADM_GET_HOST_BRANCH_ID;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;GetHostBranchId;1;;;;;0;
+ADM_UPDATE_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;015003002004;O9SYS.S_DEPARTMENT;"{""id"":""MapS.dataI(deprtid)"",""branch_code"":""MapS.dataS(branchid)"",""branchid"":""MapS.dataI(branchid)"",""department_name"":""MapS.dataS(deprname)""}";"{""id"":""MapS.dataI(fields.id)"",""BRANCHID"":""MapS.dataI(fields.branch_code)"",""DEPRNAME"":""MapS.dataS(fields.department_name)""}";1;DEPRTID
+ADM_VIEW_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_COUNTRY;;"{
+	""id"": ""MapS.dataI(Id)"",
+	""iso2_alpha"": ""MapS.dataS(ctrycd)"",
+	""iso3_alpha"": ""MapS.dataS(ctrycd3)"",
+	""country_name"": ""MapS.dataS(ctryname)"",
+	""multi_lingual_country_name"": {
+		""country_name1"": ""MapS.stringObject(mctryname.CN1)"",
+		""country_name2"": ""MapS.stringObject(mctryname.CN2)"",
+		""country_name3"": ""MapS.stringObject(mctryname.CN3)""
+	},
+	""multi_lingual_country_short_name"": {
+		""short_name1"": ""MapS.stringObject(mctrsname.SN1)"",
+		""short_name2"": ""MapS.stringObject(mctrsname.SN2)"",
+		""short_name3"": ""MapS.stringObject(mctrsname.SN3)""
+	},
+	""currency_code"": ""MapS.dataS(ccrid)"",
+	""main_language"": ""MapS.dataS(lang)"",
+	""status_of_country"": ""MapS.dataS(ctrysts)"",
+	""display_order"": ""MapS.dataINull(ord)"",
+	""region_of_country"": ""MapS.dataS(region)""
+}";"{""I"":""MapS.dataS(fields.iso3_alpha)""}";1;
+ADM_SIMPLE_SEARCH_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_DEPARTMENT_PROFILE;;"{
+    ""id"": ""MapS.dataI(deprtid)"",
+    ""department_code"": ""MapS.dataS(deprtcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""department_name"": ""MapS.dataS(deprname)""
+}
+";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_VIEW_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_DEPARTMENT;;"{
+    ""id"": ""MapS.dataI(deprtid)"",
+    ""department_code"": ""MapS.dataS(deprtcd)"",
+    ""branch_code"": ""MapS.dataS(branchid)"",
+    ""branchid"": ""MapS.dataI(branchid)"",
+    ""department_name"": ""MapS.dataS(deprname)""
+}
+";"{""I"":""MapS.dataI(fields.id)""}";1;
+ADM_SIMPLE_SEARCH_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_SYSTEM_POLICY;;"{
+    ""id"": ""MapS.dataI(policyid)"",
+    ""descr"": ""MapS.dataS(descr)"",
+    ""effective_from"": ""MapS.date_yyyy-MM-dd(effrom)"",
+    ""effective_to"": ""MapS.date_yyyy-MM-dd(efto)""
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_ADVANCED_SEARCH_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_USER_PROFILE;;"{
+	""id"": ""MapS.dataS(usrid)"",
+	""user_code"": ""MapS.dataS(usrcd)"",
+	""user_name"": ""MapS.dataS(usrname)"",
+	""login_name"": ""MapS.dataS(lgname)"",
+	""branch_name"": ""MapS.dataS(brname)"",
+	""branch_code"": ""MapS.dataS(BranchCode)"",
+	""department_name"": ""MapS.dataS(deprname)"",
+	""department_code"": ""MapS.dataS(DepartmentCode)"",
+	""user_account_status"": ""MapS.dataS(status)"",
+    ""is_online"": ""MapS.dataS(isonline)""
+}";"{
+	""usrcd"": ""MapS.dataS(fields.user_code)"",
+	""usrname"": ""MapS.dataS(fields.user_name)"",
+	""lgname"": ""MapS.dataS(fields.login_name)"",
+	""brname"": ""MapS.dataS(fields.branch_name)"",
+	""BranchCode"": ""MapS.dataS(fields.branch_code)"",
+	""deprname"": ""MapS.dataS(fields.department_name)"",
+	""DepartmentCode"": ""MapS.dataS(fields.department_code)"",
+	""status"": ""MapS.dataS(fields.user_account_status)"",
+	""isonline"": ""MapS.dataS(fields.is_online)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)"",
+	""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+ADM_DELETE_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015003001005;O9SYS.S_BRANCH;;"{""id"":""MapS.dataI(fields.id)""}";1;BRANCHID
+ADM_VIEW_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_USRPOLICY;;"{
+	""id"": ""MapS.dataI(policyid)"",
+	""descr"": ""MapS.dataS(descr)"",
+	""effective_from"": ""MapS.dateYYYY-MM-DD(effrom)"",
+	""effective_to"": ""MapS.dateYYYY-MM-DD(efto)"",
+	""enforce_password_history"": ""MapS.dataI(pwdhis)"",
+	""maximum_password_age"": ""MapS.dataI(pwdagemax)"",
+	""minimum_password_length"": ""MapS.dataI(minpwdlen)"",
+	""password_complexity_requirements"": ""MapS.dataS(pwdcplx)"",
+	""password_have_special_symbol"": ""MapS.dataS(pwdcplxlc)"",
+	""password_have_upper_case"": ""MapS.dataS(pwdcplxuc)"",
+	""password_have_lower_case"": ""MapS.dataS(pwdcplxsc)"",
+	""password_have_number"": ""MapS.dataS(pwdcplxnc)"",
+	""can_login_from"": ""MapS.dataS(lginfr)"",
+	""can_login_to"": ""MapS.dataS(lginto)"",
+	""lockout_tthrs"": ""MapS.dataI(lkoutthrs)"",
+    ""session_mode"": ""MapS.dataS(SessionMode)"",
+    ""use_default_password"": ""MapS.dataS(upwddflt)"",
+    ""default_password"": ""MapS.dataS(pwddflt)"",
+    ""default_password_expired"": ""MapS.dataI(pwddfltexpire)""
+}";"{""I"":""MapS.dataI(fields.id)""}";1;
+ADM_DELETE_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015002002005;O9CODE.C_CCRLST;;"{
+	""id"": ""MapS.dataS(fields.id)""
+}";1;CCRID
+ADM_DELETE_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;015003004005;O9SYS.S_USRAC;;"{""id"":""MapS.dataI(fields.usrid)""}";1;USRID
+ADM_REFRESH_BRANCH_BY_USER;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;RefreshBranch;1;ADM_BRANCH_PROFILE;;"{""id"":""MapS.dataI(branchid)"",""branch_code"":""MapS.dataS(branchcd)"",""branch_name"":""MapS.dataS(brname)"",""branch_address"":""MapS.dataS(address)"",""base_currency_code"":""MapS.dataS(bcycid)"",""is_online"":""MapS.dataS(isonline)"",""branch_type"":""MapS.dataS(BranchType)""}";"{""show_user_branch_only"":true,""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)""}";1;
+ADM_INSERT_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;015003006002;O9SYS.S_USRPOLICY;"{
+	""id"": ""MapS.dataI(policyid)"",
+	""descr"": ""MapS.dataS(descr)"",
+	""effective_from"": ""MapS.date_dd-MM-yyyy_Null(effrom)"",
+	""effective_to"": ""MapS.date_dd-MM-yyyy_Null(efto)"",
+	""enforce_password_history"": ""MapS.dataI(pwdhis)"",
+	""maximum_password_age"": ""MapS.dataI(pwdagemax)"",
+	""minimum_password_length"": ""MapS.dataI(minpwdlen)"",
+	""password_complexity_requirements"": ""MapS.dataS(pwdcplx)"",
+	""password_have_special_symbol"": ""MapS.dataS(pwdcplxlc)"",
+	""password_have_upper_case"": ""MapS.dataS(pwdcplxuc)"",
+	""password_have_lower_case"": ""MapS.dataS(pwdcplxsc)"",
+	""password_have_number"": ""MapS.dataS(pwdcplxnc)"",
+	""can_login_from"": ""MapS.dataS(lginfr)"",
+    ""can_login_to"": ""MapS.dataS(lginto)"",
+    ""lockout_threshold"": ""MapS.dataI(lkoutthrs)"",
+    ""session_mode"": ""MapS.dataS(SessionMode)"",
+    ""use_default_password"": ""MapS.dataS(upwddflt)"",
+    ""default_password"": ""MapS.dataS(pwddflt)"",
+    ""default_password_expired"": ""MapS.dataI(pwddfltexpire)""
+}";"{
+	""DESCR"": ""MapS.dataS(fields.descr)"",
+	""EFFROM"": ""MapS.date_dd-MM-yyyy_Null(fields.effective_from)"",
+	""EFTO"": ""MapS.date_dd-MM-yyyy_Null(fields.effective_to)"",
+	""PWDHIS"": ""MapS.dataINull(fields.enforce_password_history)"",
+	""PWDAGEMAX"": ""MapS.dataINull(fields.maximum_password_age)"",
+	""MINPWDLEN"": ""MapS.dataINull(fields.minimum_password_length)"",
+	""PWDCPLX"": ""MapS.dataS(fields.password_complexity_requirements)"",
+	""PWDCPLXLC"": ""MapS.dataS(fields.password_have_special_symbol)"",
+	""PWDCPLXUC"": ""MapS.dataS(fields.password_have_upper_case)"",
+	""PWDCPLXSC"": ""MapS.dataS(fields.password_have_lower_case)"",
+	""PWDCPLXNC"": ""MapS.dataS(fields.password_have_number)"",
+	""LGINFR"": ""MapS.dataS(fields.can_login_from)"",
+	""LGINTO"": ""MapS.dataS(fields.can_login_to)"",
+	""LKOUTTHRS"": ""MapS.dataINull(fields.lockout_tthrs)"",
+	""UPWDDFLT"": ""MapS.dataS(fields.use_default_password)"",
+	""PWDDFLT"": ""MapS.dataS(fields.default_password)"",
+	""PWDDFLTEXPIRE"": ""MapS.dataI(fields.default_password_expired)"",
+	""IDLTIME"": ""MapS.dataI(fields.idle_time)"",
+	""BLKAFT"": ""MapS.dataI(fields.block_after)""
+}";1;POLICYID
+ADM_LOOKUP_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.ICurrencyWorkflowService;AdvanceSearch;1;;;;;0;
+ADM_LOOKUP_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserPolicyWorkflowService;AdvanceSearch;1;;;;;1;
+ADM_SIMPLE_SEARCH_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_COUNTRY;;"{
+    ""id"": ""MapS.dataS(ctrycd3)"",
+    ""iso2_alpha"": ""MapS.dataS(ctrycd)"",
+    ""iso3_alpha"": ""MapS.dataS(ctrycd3)"",
+    ""country_name"": ""MapS.dataS(ctryname)""
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_LOOKUP_CODE_LIST;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.ICodeListWorkflowService;AdvanceSearch;1;;;;;0;
+ADM_DELETE_TOKEN_BY_USER_ID;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserAccountWorkflowService;LogOutUser;1;;;;;0;
+ADM_CLOSE_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;BranchProcess;1;;;;;0;
+ADM_ADVANCED_SEARCH_ROLE_OF_USER;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBaseWorkflowService;AdvanceSearch;1;;;;;1;
+ADM_UPDATE_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;015003001004;O9SYS.S_BRANCH;"{
+	""id"": ""MapS.dataI(branchid)"",
+	""old_branch_id"": ""MapS.dataS(refid)"",
+	""branch_name"": ""MapS.dataS(brname)"",
+	""branch_code"": ""MapS.dataS(branchcd)"",
+	""branch_address"": ""MapS.dataS(address)"",
+	""branch_phone"": ""MapS.dataS(phone)"",
+	""tax_code"": ""MapS.dataS(taxcode)"",
+	""base_currency_code"": ""MapS.dataS(bcycid)"",
+	""local_currency_code"": ""MapS.dataS(lcycid)"",
+	""country"": ""MapS.dataS(country)"",
+	""main_language"": ""MapS.dataS(lang)"",
+	""time_zone_of_branch"": ""MapS.dataN(timezn)"",
+	""thousand_separate_character"": ""MapS.dataS(numfmtt)"",
+	""decimal_separate_character"": ""MapS.dataS(numfmtd)"",
+	""date_format_for_short"": ""MapS.dataS(datefmt)"",
+	""long_date_format"": ""MapS.dataS(ldatefmt)"",
+	""time_format"": ""MapS.dataS(timefmt)"",
+	""is_online"": ""MapS.dataS(isonline)"",
+    ""region"": ""MapS.dataS(Region)"",
+    ""branch_type"": ""MapS.dataS(BranchType)""
+}";"{""id"":""MapS.dataI(fields.id)"",""BRANCHID"":""MapS.dataI(fields.id)"",""REFID"":""MapS.dataS(fields.old_branch_id)"",""BRNAME"":""MapS.dataS(fields.branch_name)"",""BRANCHCD"":""MapS.dataS(fields.branch_code)"",""ADDRESS"":""MapS.dataS(fields.branch_address)"",""PHONE"":""MapS.dataS(fields.branch_phone)"",""MPHONE"":{""H"":""MapS.dataS(fields.phone_number.home)"",""O"":""MapS.dataS(fields.phone_number.office)"",""C"":""MapS.dataS(fields.phone_number.cell)"",""F"":""MapS.dataS(fields.phone_number.facsimile)"",""T"":""MapS.dataS(fields.phone_number.telex)""},""TAXCODE"":""MapS.dataS(fields.tax_code)"",""BCYCID"":""MapS.dataS(fields.base_currency_code)"",""LCYCID"":""MapS.dataS(fields.local_currency_code)"",""REFCODE"":{""B"":""MapS.dataS(fields.reference_code.bic)"",""C"":""MapS.dataS(fields.reference_code.domestic_bank_code)"",""I"":""MapS.dataS(fields.reference_code.internal_code)""},""COUNTRY"":""MapS.dataS(fields.country)"",""LANG"":""MapS.dataS(fields.main_language)"",""TIMEZN"":""MapS.dataN(fields.time_zone_of_branch)"",""NUMFMTT"":""MapS.dataS(fields.thousand_separate_character)"",""NUMFMTD"":""MapS.dataS(fields.decimal_separate_character)"",""DATEFMT"":""MapS.dataS(fields.date_format_for_short)"",""LDATEFMT"":""MapS.dataS(fields.long_date_format)"",""TIMEFMT"":""MapS.dataS(fields.time_format)"",""ISONLINE"":""MapS.dataSelectNull(fields.is_online)""}";1;BRANCHID
+ADM_INSERT_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;015003001002;O9SYS.S_BRANCH;"{
+    ""id"": ""MapS.dataI(branchid)"",
+    ""old_branch_id"": ""MapS.dataS(refid)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_address"": ""MapS.dataS(address)"",
+    ""branch_phone"": ""MapS.dataS(phone)"",
+    ""tax_code"": ""MapS.dataS(taxcode)"",
+    ""base_currency_code"": ""MapS.dataS(bcycid)"",
+    ""local_currency_code"": ""MapS.dataS(lcycid)"",
+    ""country"": ""MapS.dataS(country)"",
+    ""main_language"": ""MapS.dataS(lang)"",
+    ""time_zone_of_branch"": ""MapS.dataN(timezn)"",
+    ""thousand_separate_character"": ""MapS.dataS(numfmtt)"",
+    ""decimal_separate_character"": ""MapS.dataS(numfmtd)"",
+    ""date_format_for_short"": ""MapS.dataS(datefmt)"",
+    ""long_date_format"": ""MapS.dataS(ldatefmt)"",
+    ""time_format"": ""MapS.dataS(timefmt)"",
+    ""is_online"": ""MapS.dataS(isonline)"",
+    ""region"": ""MapS.dataS(Region)"",
+    ""branch_type"": ""MapS.dataS(BranchType)""
+}
+";"{""BRANCHID"":""MapS.dataI(fields.id)"",""REFID"":""MapS.dataS(fields.old_branch_id)"",""BRNAME"":""MapS.dataS(fields.branch_name)"",""BRANCHCD"":""MapS.dataS(fields.branch_code)"",""ADDRESS"":""MapS.dataS(fields.branch_address)"",""PHONE"":""MapS.dataS(fields.branch_phone)"",""MPHONE"":{""H"":""MapS.dataS(fields.phone_number.home)"",""O"":""MapS.dataS(fields.phone_number.office)"",""C"":""MapS.dataS(fields.phone_number.cell)"",""F"":""MapS.dataS(fields.phone_number.facsimile)"",""T"":""MapS.dataS(fields.phone_number.telex)""},""TAXCODE"":""MapS.dataS(fields.tax_code)"",""BCYCID"":""MapS.dataS(fields.base_currency_code)"",""LCYCID"":""MapS.dataS(fields.local_currency_code)"",""REFCODE"":{""B"":""MapS.dataS(fields.reference_code.bic)"",""C"":""MapS.dataS(fields.reference_code.domestic_bank_code)"",""I"":""MapS.dataS(fields.reference_code.internal_code)""},""COUNTRY"":""MapS.dataS(fields.country)"",""LANG"":""MapS.dataS(fields.main_language)"",""TIMEZN"":""MapS.dataN(fields.time_zone_of_branch)"",""NUMFMTT"":""MapS.dataS(fields.thousand_separate_character)"",""NUMFMTD"":""MapS.dataS(fields.decimal_separate_character)"",""DATEFMT"":""MapS.dataS(fields.date_format_for_short)"",""LDATEFMT"":""MapS.dataS(fields.long_date_format)"",""TIMEFMT"":""MapS.dataS(fields.time_format)"",""ISONLINE"":""MapS.dataSelectNull(fields.is_online)""}";1;BRANCHID
+ADM_INSERT_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;015002001002;O9CODE.C_COUNTRY;"{
+	""id"": ""MapS.dataI(Id)"",
+	""iso2_alpha"": ""MapS.dataS(ctrycd)"",
+	""iso3_alpha"": ""MapS.dataS(ctrycd3)"",
+	""country_name"": ""MapS.dataS(ctryname)"",
+	""multi_lingual_country_name"": {
+		""country_name1"": ""MapS.stringObject(mctryname.CN1)"",
+		""country_name2"": ""MapS.stringObject(mctryname.CN2)"",
+		""country_name3"": ""MapS.stringObject(mctryname.CN3)""
+	},
+	""multi_lingual_country_short_name"": {
+		""short_name1"": ""MapS.stringObject(mctrsname.SN1)"",
+		""short_name2"": ""MapS.stringObject(mctrsname.SN2)"",
+		""short_name3"": ""MapS.stringObject(mctrsname.SN3)""
+	},
+	""currency_code"": ""MapS.dataS(ccrid)"",
+	""main_language"": ""MapS.dataS(lang)"",
+	""status_of_country"": ""MapS.dataS(ctrysts)"",
+	""display_order"": ""MapS.dataINull(ord)"",
+	""region_of_country"": ""MapS.dataS(region)""
+}";"{
+	""CTRYCD"": ""MapS.dataS(fields.iso2_alpha)"",
+	""CTRYCD3"": ""MapS.dataS(fields.iso3_alpha)"",
+	""CTRYNAME"": ""MapS.dataS(fields.country_name)"",
+	""MCTRYNAME"": {
+		""CN1"": ""MapS.dataS(fields.multi_lingual_country_name.country_name1)"",
+		""CN2"": ""MapS.dataS(fields.multi_lingual_country_name.country_name2)"",
+		""CN3"": ""MapS.dataS(fields.multi_lingual_country_name.country_name3)""
+	},
+	""CTRSNAME"": ""MapS.dataS(fields.country_short_name)"",
+	""MCTRSNAME"": {
+		""SN1"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name1)"",
+		""SN2"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name2)"",
+		""SN3"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name3)""
+	},
+	""CCRID"": ""MapS.dataS(fields.currency_code)"",
+	""LANG"": ""MapS.dataS(fields.main_language)"",
+	""CTRYSTS"": ""MapS.dataS(fields.status_of_country)"",
+	""ORD"": ""MapS.dataINull(fields.display_order)"",
+	""REGION"": ""MapS.dataS(fields.region_of_country)""
+}";1;CTRYCD3
+ADM_INSERT_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;015003002002;O9SYS.S_DEPARTMENT;"{
+    ""id"": ""MapS.dataI(deprtid)"",
+    ""department_code"": ""MapS.dataS(deprtcd)"",
+    ""branch_code"": ""MapS.dataS(branchid)"",
+    ""branchid"": ""MapS.dataI(branchid)"",
+    ""department_name"": ""MapS.dataS(deprname)""
+}
+";"{
+    ""BRANCHID"": ""MapS.dataI(fields.branch_code)"",
+    ""DEPRNAME"": ""MapS.dataS(fields.department_name)""
+}";1;DEPRTID
+DPT_OPN;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBaseWorkflowService;CreateFo;1;DPT_OPN;;;;1;
+ADM_OPEN_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;BranchProcess;1;;;;;0;
+DPT_DELETE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;005001000005;O9DATA.D_DPTCAT;;"{""id"":""MapS.dataI(fields.id)""}";1;CATID
+ADM_LOOKUP_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;AdvanceSearch;1;;;;;1;
+ADM_INSERT_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;015002002002;O9CODE.C_CCRLST;"{""id"":""MapS.dataS(ccrid)"",""currency_id"":""MapS.dataS(ccrid)"",""short_currency_id"":""MapS.dataS(shrtid)"",""currency_name"":{""currency_name1"":""MapS.stringObject(ccrname.CN1)"",""currency_name2"":""MapS.stringObject(ccrname.CN2)"",""currency_name3"":""MapS.stringObject(ccrname.CN3)""},""currency_number"":""MapS.dataINull(ccrnumber)"",""master_name"":{""master_name1"":""MapS.stringObject(ccrmst.MN1)"",""master_name2"":""MapS.stringObject(ccrmst.MN2)"",""master_name3"":""MapS.stringObject(ccrmst.MN3)""},""decimal_name"":{""decimal_name1"":""MapS.stringObject(ccrdec.DN1)"",""decimal_name2"":""MapS.stringObject(ccrdec.DN2)"",""decimal_name3"":""MapS.stringObject(ccrdec.DN3)""},""decimal_digits"":""MapS.dataINull(cdecimal)"",""rounding_digits"":""MapS.dataINull(crnd)"",""status_of_currency"":""MapS.dataS(ccrsts)"",""display_order"":""MapS.dataINull(ord)""}";"{""CCRID"":""MapS.dataS(fields.currency_id)"",""SHRTID"":""MapS.dataS(fields.short_currency_id)"",""CCRNAME"":{""CN1"":""MapS.dataS(fields.currency_name.currency_name1)"",""CN2"":""MapS.dataS(fields.currency_name.currency_name2)"",""CN3"":""MapS.dataS(fields.currency_name.currency_name3)""},""CCRNUMBER"":""MapS.dataINull(fields.currency_number)"",""CCRMST"":{""MN1"":""MapS.dataS(fields.master_name.master_name1)"",""MN2"":""MapS.dataS(fields.master_name.master_name2)"",""MN3"":""MapS.dataS(fields.master_name.master_name3)""},""CCRDEC"":{""DN1"":""MapS.dataS(fields.decimal_name.decimal_name1)"",""DN2"":""MapS.dataS(fields.decimal_name.decimal_name2)"",""DN3"":""MapS.dataS(fields.decimal_name.decimal_name3)""},""CDECIMAL"":""MapS.dataINull(fields.decimal_digits)"",""CRND"":""MapS.dataINull(fields.rounding_digits)"",""CCRSTS"":""MapS.dataS(fields.status_of_currency)"",""ORD"":""MapS.dataINull(fields.display_order)""}";1;CCRID
+ADM_LOOKUP_DEPARTMENT;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IDepartmentProfileWorkflowService;AdvanceSearch;1;;;;;1;
+ADM_SIMPLE_SEARCH_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_BRANCH_PROFILE;;"{
+    ""id"": ""MapS.dataI(branchid)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""branch_address"": ""MapS.dataS(address)"",
+    ""base_currency_code"": ""MapS.dataS(bcycid)"",
+    ""is_online"": ""MapS.dataS(isonline)"",
+    ""branch_type"": ""MapS.dataS(BranchType)""
+}
+";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_SIMPLE_SEARCH_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_CURRENCY;;"{
+    ""id"": ""MapS.dataS(ccrid)"",
+    ""currency_id"": ""MapS.dataS(ccrid)"",
+    ""short_currency_id"": ""MapS.dataS(shrtid)"",
+    ""currency_number"": ""MapS.dataINull(ccrnumber)"",
+    ""status_of_currency"": ""MapS.dataS(status)"",
+    ""display_order"": ""MapS.dataINull(ord)""
+}
+";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_LOOKUP_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.ICountryWorkflowService;AdvanceSearch;1;;;;;1;
+ADM_SIMPLE_SEARCH_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ADM_USER_PROFILE;;"{""id"":""MapS.dataS(usrid)"",""user_code"":""MapS.dataS(usrcd)"",""user_name"":""MapS.dataS(usrname)"",""login_name"":""MapS.dataS(lgname)"",""branch_name"":""MapS.dataS(brname)"",""branch_code"":""MapS.dataS(BranchCode)"",""department_name"":""MapS.dataS(deprname)"",""department_code"":""MapS.dataS(DepartmentCode)"",""user_account_status"":""MapS.dataS(status)"",""is_online"":""MapS.dataS(isonline)""}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ADM_UPDATE_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserAccountWorkflowService;Update;1;;;;;0;USRID
+ADM_VIEW_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_BRANCH;;"{
+	""id"": ""MapS.dataI(branchid)"",
+	""old_branch_id"": ""MapS.dataS(refid)"",
+	""branch_name"": ""MapS.dataS(brname)"",
+	""branch_code"": ""MapS.dataS(branchcd)"",
+	""branch_address"": ""MapS.dataS(address)"",
+	""branch_phone"": ""MapS.dataS(phone)"",
+	""phone_number"": {
+		""home"": ""MapS.stringObject(mphone.H)"",
+		""office"": ""MapS.stringObject(mphone.O)"",
+		""cell"": ""MapS.stringObject(mphone.C)"",
+		""facsimile"": ""MapS.stringObject(mphone.F)"",
+		""telex"": ""MapS.stringObject(mphone.T)""
+	},
+	""reference_code"": {
+		""bic"": ""MapS.stringObject(refcode.B)"",
+		""domestic_bank_code"": ""MapS.stringObject(refcode.C)"",
+		""internal_code"": ""MapS.stringObject(refcode.I)""
+    },
+    ""tax_code"": ""MapS.dataS(taxcode)"",
+    ""base_currency_code"": ""MapS.dataS(bcycid)"",
+    ""local_currency_code"": ""MapS.dataS(lcycid)"",
+    ""country"": ""MapS.dataS(country)"",
+    ""main_language"": ""MapS.dataS(lang)"",
+    ""time_zone_of_branch"": ""MapS.dataN(timezn)"",
+    ""thousand_separate_character"": ""MapS.dataS(numfmtt)"",
+    ""decimal_separate_character"": ""MapS.dataS(numfmtd)"",
+    ""date_format_for_short"": ""MapS.dataS(datefmt)"",
+    ""long_date_format"": ""MapS.dataS(ldatefmt)"",
+    ""time_format"": ""MapS.dataS(timefmt)"",
+    ""is_online"": ""MapS.dataS(isonline)"",
+    ""region"": ""MapS.dataS(Region)"",
+    ""branch_type"": ""MapS.dataS(BranchType)""
+}";"{""I"":""MapS.dataI(fields.id)""}";1;
+ADM_VIEW_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_CCRLST;;"{""id"":""MapS.dataS(ccrid)"",""currency_id"":""MapS.dataS(ccrid)"",""short_currency_id"":""MapS.dataS(shrtid)"",""currency_name"":{""currency_name1"":""MapS.stringObject(ccrname.CN1)"",""currency_name2"":""MapS.stringObject(ccrname.CN2)"",""currency_name3"":""MapS.stringObject(ccrname.CN3)""},""currency_number"":""MapS.dataINull(ccrnumber)"",""master_name"":{""master_name1"":""MapS.stringObject(ccrmst.MN1)"",""master_name2"":""MapS.stringObject(ccrmst.MN2)"",""master_name3"":""MapS.stringObject(ccrmst.MN3)""},""decimal_name"":{""decimal_name1"":""MapS.stringObject(ccrdec.DN1)"",""decimal_name2"":""MapS.stringObject(ccrdec.DN2)"",""decimal_name3"":""MapS.stringObject(ccrdec.DN3)""},""decimal_digits"":""MapS.dataINull(cdecimal)"",""rounding_digits"":""MapS.dataINull(crnd)"",""status_of_currency"":""MapS.dataS(ccrsts)"",""display_order"":""MapS.dataINull(ord)""}";"{""I"":""MapS.dataS(fields.currency_id)""}";1;
+ADM_VIEW_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ADM_GET_USER;;"{
+	""id"": ""MapS.dataS(usrid)"",
+	""user_code"": ""MapS.dataS(usrcd)"",
+	""old_user_id"": ""MapS.dataS(urefid)"",
+	""user_name"": ""MapS.dataS(usrname)"",
+	""login_name"": ""MapS.dataS(lgname)"",
+	""branch_code"": ""MapS.dataS(branchid)"",
+	""branch_id"": ""MapS.dataS(branchid)"",
+	""department_code"": ""MapS.dataS(deprtid)"",
+	""department_id"": ""MapS.dataS(deprtid)"",
+	""position"": {
+		""cashier"": ""MapS.dataI(position.C)"",
+		""officer"": ""MapS.dataI(position.O)"",
+		""chief_cashier"": ""MapS.dataI(position.I)"",
+		""operation_staff"": ""MapS.dataI(position.S)"",
+		""dealer"": ""MapS.dataI(position.D)""
+	},
+	""remark"": ""MapS.dataS(remark)"",
+	""user_account_status"": ""MapS.dataS(status)"",
+	""reset_password"": ""MapS.dataS(pwdstr)"",
+	""main_language"": ""MapS.dataS(lang)"",
+	""user_phone"": ""MapS.dataS(phone)"",
+	""phone_number"": {
+		""home"": ""MapS.dataS(mphone.H)"",
+		""office"": ""MapS.dataS(mphone.O)"",
+		""cell"": ""MapS.dataS(mphone.C)"",
+		""facsimile"": ""MapS.dataS(mphone.F)"",
+		""telex"": ""MapS.dataS(mphone.T)""
+	},
+	""time_zone"": ""MapS.dataS(timezn)"",
+	""thousand_separate_character"": ""MapS.dataS(numfmtt)"",
+	""decimal_separate_character"": ""MapS.dataS(numfmtd)"",
+	""date_format"": ""MapS.dataS(datefmt)"",
+	""long_date_format"": ""MapS.dataS(ldatefmt)"",
+	""time_format"": ""MapS.dataS(timefmt)"",
+	""expire_date"": ""MapS.dataS(expdt)"",
+	""policy_id"": ""MapS.dataS(policyid)"",
+	""user_can_change_password"": ""MapS.dataS(pwdchg)"",
+	""password_never_expire"": ""MapS.dataS(pwdexp)"",
+	""change_password_when_login"": ""MapS.dataS(pwdchgr)"",
+	""password_complexity_requirements"": ""MapS.dataS(pwdcplx)"",
+    ""lockout_dur"": ""MapS.dataS(lkoutdur)"",
+    ""lockout_tthrs"": ""MapS.dataS(lkoutthrs)"",
+    ""reset_lockout"": ""MapS.dataS(resetlkout)""
+}";"{""I"":""MapS.dataI(fields.id)""}";1;
+ADM_REFRESH_BRANCH;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IBranchProfileWorkflowService;RefreshBranch;1;ADM_BRANCH_PROFILE;;"{""id"":""MapS.dataI(branchid)"",""branch_code"":""MapS.dataS(branchcd)"",""branch_name"":""MapS.dataS(brname)"",""branch_address"":""MapS.dataS(address)"",""base_currency_code"":""MapS.dataS(bcycid)"",""is_online"":""MapS.dataS(isonline)"",""branch_type"":""MapS.dataS(BranchType)""}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)""}";1;
+UMG_LOGIN;Jits.Neptune.Web.CMS.LogicOptimal9.Interfaces.IAuthenticateService;Login;1;;;;"{""username"":""MapS.dataS(fields.username)"",""password"":""MapS.dataS(fields.password)""}";0;
+ADM_LOOKUP_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ADM_USER_PROFILE;;"{""id"":""MapS.dataS(usrid)"",""user_code"":""MapS.dataS(usrcd)"",""user_name"":""MapS.dataS(usrname)"",""login_name"":""MapS.dataS(lgname)"",""branch_name"":""MapS.dataS(brname)"",""branch_code"":""MapS.dataS(BranchCode)"",""department_name"":""MapS.dataS(deprname)"",""department_code"":""MapS.dataS(DepartmentCode)"",""user_account_status"":""MapS.dataS(status)"",""is_online"":""MapS.dataS(isonline)""}";"{
+	""usrcd"": ""MapS.dataS(fields.user_code)"",
+	""usrname"": ""MapS.dataS(fields.user_name)"",
+	""lgname"": ""MapS.dataS(fields.login_name)"",
+	""brname"": ""MapS.dataS(fields.branch_name)"",
+	""BranchCode"": ""MapS.dataS(fields.branch_code)"",
+	""deprname"": ""MapS.dataS(fields.department_name)"",
+	""DepartmentCode"": ""MapS.dataS(fields.department_code)"",
+	""status"": ""MapS.dataS(fields.user_account_status)"",
+	""isonline"": ""MapS.dataS(fields.is_online)"",
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)"",
+	""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+ADM_UPDATE_COUNTRY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;015002002004;O9CODE.C_COUNTRY;"{
+	""id"": ""MapS.dataI(Id)"",
+	""iso2_alpha"": ""MapS.dataS(ctrycd)"",
+	""iso3_alpha"": ""MapS.dataS(ctrycd3)"",
+	""country_name"": ""MapS.dataS(ctryname)"",
+	""multi_lingual_country_name"": {
+		""country_name1"": ""MapS.stringObject(mctryname.CN1)"",
+		""country_name2"": ""MapS.stringObject(mctryname.CN2)"",
+		""country_name3"": ""MapS.stringObject(mctryname.CN3)""
+	},
+	""multi_lingual_country_short_name"": {
+		""short_name1"": ""MapS.stringObject(mctrsname.SN1)"",
+		""short_name2"": ""MapS.stringObject(mctrsname.SN2)"",
+		""short_name3"": ""MapS.stringObject(mctrsname.SN3)""
+	},
+	""currency_code"": ""MapS.dataS(ccrid)"",
+	""main_language"": ""MapS.dataS(lang)"",
+	""status_of_country"": ""MapS.dataS(ctrysts)"",
+	""display_order"": ""MapS.dataINull(ord)"",
+	""region_of_country"": ""MapS.dataS(region)""
+}";"{
+	""CTRYCD"": ""MapS.dataS(fields.iso2_alpha)"",
+	""CTRYCD3"": ""MapS.dataS(fields.iso3_alpha)"",
+	""CTRYNAME"": ""MapS.dataS(fields.country_name)"",
+	""MCTRYNAME"": {
+		""CN1"": ""MapS.dataS(fields.multi_lingual_country_name.country_name1)"",
+		""CN2"": ""MapS.dataS(fields.multi_lingual_country_name.country_name2)"",
+		""CN3"": ""MapS.dataS(fields.multi_lingual_country_name.country_name3)""
+	},
+	""CTRSNAME"": ""MapS.dataS(fields.country_short_name)"",
+	""MCTRSNAME"": {
+		""SN1"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name1)"",
+		""SN2"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name2)"",
+		""SN3"": ""MapS.dataS(fields.multi_lingual_country_short_name.short_name3)""
+	},
+	""CCRID"": ""MapS.dataS(fields.currency_code)"",
+	""LANG"": ""MapS.dataS(fields.main_language)"",
+	""CTRYSTS"": ""MapS.dataS(fields.status_of_country)"",
+	""ORD"": ""MapS.dataINull(fields.display_order)"",
+	""REGION"": ""MapS.dataS(fields.region_of_country)""
+}";1;CTRYCD3
+ADM_UPDATE_CURRENCY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;015002002004;O9CODE.C_CCRLST;"{
+	""id"": ""MapS.dataS(ccrid)"",
+	""currency_id"": ""MapS.dataS(ccrid)"",
+	""short_currency_id"": ""MapS.dataS(shrtid)"",
+	""currency_name"": {
+		""currency_name1"": ""MapS.stringObject(ccrname.CN1)"",
+		""currency_name2"": ""MapS.stringObject(ccrname.CN2)"",
+		""currency_name3"": ""MapS.stringObject(ccrname.CN3)""
+	},
+	""currency_number"": ""MapS.dataINull(ccrnumber)"",
+	""master_name"": {
+		""master_name1"": ""MapS.stringObject(ccrmst.MN1)"",
+		""master_name2"": ""MapS.stringObject(ccrmst.MN2)"",
+		""master_name3"": ""MapS.stringObject(ccrmst.MN3)""
+	},
+	""decimal_name"": {
+		""decimal_name1"": ""MapS.stringObject(ccrdec.DN1)"",
+		""decimal_name2"": ""MapS.stringObject(ccrdec.DN2)"",
+		""decimal_name3"": ""MapS.stringObject(ccrdec.DN3)""
+	},
+	""decimal_digits"": ""MapS.dataINull(cdecimal)"",
+	""rounding_digits"": ""MapS.dataINull(crnd)"",
+    ""status_of_currency"": ""MapS.dataS(ccrsts)"",
+    ""display_order"": ""MapS.dataINull(ord)""
+}";"{
+	""id"": ""MapS.dataS(fields.id)"",
+	""CCRID"": ""MapS.dataS(fields.id)"",
+	""SHRTID"": ""MapS.dataS(fields.short_currency_id)"",
+	""CCRNAME"": {
+		""CN1"": ""MapS.dataS(fields.currency_name.currency_name1)"",
+		""CN2"": ""MapS.dataS(fields.currency_name.currency_name2)"",
+		""CN3"": ""MapS.dataS(fields.currency_name.currency_name3)""
+	},
+	""CCRNUMBER"": ""MapS.dataINull(fields.currency_number)"",
+	""CCRMST"": {
+		""MN1"": ""MapS.dataS(fields.master_name.master_name1)"",
+		""MN2"": ""MapS.dataS(fields.master_name.master_name2)"",
+        ""MN3"": ""MapS.dataS(fields.master_name.master_name3)""
+    },
+    ""CCRDEC"": {
+        ""DN1"": ""MapS.dataS(fields.decimal_name.decimal_name1)"",
+        ""DN2"": ""MapS.dataS(fields.decimal_name.decimal_name2)"",
+        ""DN3"": ""MapS.dataS(fields.decimal_name.decimal_name3)""
+    },
+    ""CDECIMAL"": ""MapS.dataINull(fields.decimal_digits)"",
+    ""CRND"": ""MapS.dataINull(fields.rounding_digits)"",
+    ""CCRSTS"": ""MapS.dataS(fields.status_of_currency)"",
+    ""ORD"": ""MapS.dataINull(fields.display_order)""
+}";1;CCRID
+FX_FXRATE_GETFXRATE;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IExchangeRateWorkflowService;GetLocalCurrencyRate;1;ADM_FOREIGN_EXCHANGE_RATE;;"{
+	""branch_code"": ""MapS.dataS(branchcd)"",
+	""last_update_date"": ""MapS.dataS(last_update_date)"",
+	""fx_rate_data"": {
+		""currency_code"": ""MapS.dataS(ccrcd)"",
+		""short_id"": ""MapS.dataS(shrtid)"",
+		""book_rate"": ""MapS.dataN(bk_rate)"",
+		""cash_bid_big_rate"": ""MapS.dataN(cb_rate)"",
+		""cash_bid_small_rate"": ""MapS.dataN(cs_rate)"",
+		""cash_ask_rate"": ""MapS.dataN(ca_rate)"",
+		""transfer_bid_rate"": ""MapS.dataN(tb_rate)"",
+		""transfer_ask_rate"": ""MapS.dataN(ta_rate)"",
+		""medium_bill_rate"": ""MapS.dataN(cm_rate)""
+	}
+}";"{
+	""page_index"": ""MapS.dataI(fields.page_index)"",
+	""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+DPT_UPDATE_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;005001000004;O9DATA.D_DPTCAT;"{
+	""id"": ""MapS.dataI(catid)"",
+	""catalog_name"": ""MapS.dataS(catname)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""secure_currency"": ""MapS.dataS(sccrcd)"",
+	""deposit_type"": ""MapS.dataS(dpttype)"",
+    ""deposit_sub_type"": ""MapS.dataS(dpsubttype)"",
+    ""deposit_purpose"": ""MapS.dataS(dptprp)"",
+    ""deposit_classification"": ""MapS.dataS(dptcls)"",
+    ""passbook_or_statement_or_receipt"": ""MapS.dataS(pbst)"",
+    ""minimum_deposit_amount"": ""MapS.dataN(minamt)"",
+    ""catalog_status"": ""MapS.dataS(catsts)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor"": ""MapS.dataI(crinttnr)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""crediting_interest"": ""MapS.dataI(crintday)"",
+    ""minimum_dormant_amount"": ""MapS.dataN(drmamt)"",
+    ""dormant_period"": ""MapS.dataI(drmp)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor"": ""MapS.dataI(sttnr)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""initial_deposit_amount"": ""MapS.dataN(initamt)"",
+    ""tenor"": ""MapS.dataN(tenor)"",
+    ""tenor2"": ""MapS.dataN(tenor2)"",
+    ""deposit_tenor"": ""MapS.dataN(dpttnr)"",
+    ""interest_tenor"": ""MapS.dataN(inttnr)"",
+    ""minimum_tenor"": ""MapS.dataN(mintnr)"",
+    ""minimum_tenor_allow_early_withdrawal"": ""MapS.dataN(mintenr)"",
+    ""crediting_interest"": ""MapS.dataN(crintday)"",
+    ""crintmonth"": ""MapS.dataN(crintmonth)"",
+    ""dormant_period"": ""MapS.dataN(drmpr)"",
+    ""interest_due_on_holiday"": ""MapS.dataN(hdinttnr)"",
+    ""principal_due_on_holiday"": ""MapS.dataN(hdprntnr)"",
+    ""statement_tenor"": ""MapS.dataN(sttnr)"",
+    ""inital_depost_amount"": ""MapS.dataN(initamt)"",
+    ""periodic_deposit_amount"": ""MapS.dataN(tndptamt)"",
+    ""periodic_deposit_tenor"": ""MapS.dataN(periodic)"",
+    ""tariff_code"": ""MapS.dataN(trfcd)"",
+    ""tenor_unit"": ""MapS.dataS(tenorun)"",
+    ""tenor_unit2"": ""MapS.dataS(tenorun2)"",
+    ""deposit_tenor_unit"": ""MapS.dataS(dpttnrun)"",
+    ""interest_tenor_unit"": ""MapS.dataS(inttnrun)"",
+    ""minimum_tenor_unit"": ""MapS.dataS(mintnrun)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""early_withdraw"": ""MapS.dataS(earlywdr)"",
+    ""minimum_tenor_allow_early_withdrawal_unit"": ""MapS.dataS(mintenrun)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""rollover"": ""MapS.dataS(rllovr)"",
+    ""rollover_to_catalog_id"": ""MapS.dataI(rovcat)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""periodic_deposit_tenor_unit"": ""MapS.dataS(periodicun)"",
+    ""group_id"": ""MapS.dataN(grpid)""
+}";"{
+	""CATID"": ""MapS.dataI(fields.id)"",
+	""CATNAME"": ""MapS.dataS(fields.catalog_name)"",
+	""CCRCD"": ""MapS.dataS(fields.currency_code)"",
+	""SCCRCD"": ""MapS.dataS(fields.secure_currency)"",
+	""DPTTYPE"": ""MapS.dataS(fields.deposit_type)"",
+	""DPTGRP"": ""MapS.dataS(fields.deposit_group)"",
+	""DPTPRP"": ""MapS.dataS(fields.deposit_purpose)"",
+	""DPTCLS"": ""MapS.dataS(fields.deposit_classification)"",
+	""PBST"": ""MapS.dataS(fields.passbook_or_statement_or_receipt)"",
+	""MINAMT"": ""MapS.dataN(fields.minimum_deposit_amount)"",
+	""GRPID"": ""MapS.dataN(fields.group_id)"",
+	""CATSTS"": ""MapS.dataS(fields.catalog_status)"",
+	""TENOR"": ""MapS.dataN(fields.tenor)"",
+	""TENORUN"": ""MapS.dataS(fields.tenor_unit)"",
+	""TENOR2"": ""MapS.dataN(fields.tenor2)"",
+	""TENORUN2"": ""MapS.dataS(fields.tenor_unit2)"",
+	""DPTTNR"": ""MapS.dataN(fields.deposit_tenor)"",
+	""DPTTNRUN"": ""MapS.dataS(fields.deposit_tenor_unit)"",
+    ""INTTNRUN"": ""MapS.dataS(fields.interest_tenor_unit)"",
+    ""INTTNR"": ""MapS.dataN(fields.interest_tenor)"",
+    ""MINTNR"": ""MapS.dataN(fields.minimum_tenor)"",
+    ""MINTNRUN"": ""MapS.dataS(fields.minimum_tenor_unit)"",
+    ""MULTDPT"": ""MapS.dataS(fields.multi_deposit)"",
+    ""MULTWDR"": ""MapS.dataS(fields.multi_withdraw)"",
+    ""EARLYWDR"": ""MapS.dataS(fields.early_withdraw)"",
+    ""MINTENR"": ""MapS.dataN(fields.minimum_tenor_allow_early_withdrawal)"",
+    ""MINTENRUN"": ""MapS.dataS(fields.minimum_tenor_allow_early_withdrawal_unit)"",
+    ""CRINT"": ""MapS.dataS(fields.credit_interest)"",
+    ""CRINTTNR"": ""MapS.dataI(fields.credit_interest_tenor)"",
+    ""CRINTTNRUN"": ""MapS.dataS(fields.credit_interest_tenor_unit)"",
+    ""CRINTDAY"": ""MapS.dataI(fields.crediting_interest)"",
+    ""DRMPR"": ""MapS.dataN(fields.dormant_period)"",
+    ""DRMPRUN"": ""MapS.dataS(fields.dormant_period_unit)"",
+    ""ROVCAT"": ""MapS.dataNNull(fields.rollover_to_catalog_id)"",
+    ""HDINTTNR"": ""MapS.dataN(fields.interest_due_on_holiday)"",
+    ""HDPRNTNR"": ""MapS.dataN(fields.principal_due_on_holiday)"",
+    ""STTNR"": ""MapS.dataN(fields.statement_tenor)"",
+    ""STTNRUN"": ""MapS.dataS(fields.statement_tenor_unit)"",
+    ""STFMT"": ""MapS.dataS(fields.statement_format)"",
+    ""INITAMT"": ""MapS.dataN(fields.initial_deposit_amount)"",
+    ""TNDPTAMT"": ""MapS.dataN(fields.periodic_deposit_amount)"",
+    ""PERIODIC"": ""MapS.dataN(fields.periodic_deposit_tenor)"",
+    ""PERIODICUN"": ""MapS.dataS(fields.periodic_deposit_tenor_unit)"",
+    ""TRFCD"": ""MapS.dataN(fields.tariff_code)"",
+    ""RLLOVR"": ""MapS.dataS(fields.rollover)""
+}";1;CATID
+ADM_INSERT_USER_ACCOUNT;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserAccountWorkflowService;Create;1;015003004002;O9SYS.S_USRAC;"{
+    ""id"": ""MapS.dataS(usrid)"",
+    ""user_code"": ""MapS.dataS(usrcd)"",
+    ""old_user_id"": ""MapS.dataS(urefid)"",
+    ""user_name"": ""MapS.dataS(usrname)"",
+    ""login_name"": ""MapS.dataS(lgname)"",
+    ""branch_code"": ""MapS.dataS(branchid)"",
+    ""branch_id"": ""MapS.dataS(branchid)"",
+    ""department_code"": ""MapS.dataS(deprtid)"",
+    ""department_id"": ""MapS.dataS(deprtid)"",
+    ""position"": {
+        ""cashier"": ""MapS.dataI(position.C)"",
+        ""officer"": ""MapS.dataI(position.O)"",
+        ""chief_cashier"": ""MapS.dataI(position.I)"",
+        ""operation_staff"": ""MapS.dataI(position.S)"",
+        ""dealer"": ""MapS.dataI(position.D)""
+    },
+    ""remark"": ""MapS.dataS(remark)"",
+    ""user_account_status"": ""MapS.dataS(status)"",
+    ""reset_password"": ""MapS.dataS(pwdstr)"",
+    ""main_language"": ""MapS.dataS(lang)"",
+    ""user_phone"": ""MapS.dataS(phone)"",
+    ""phone_number"": {
+        ""home"": ""MapS.dataS(mphone.H)"",
+        ""office"": ""MapS.dataS(mphone.O)"",
+        ""cell"": ""MapS.dataS(mphone.C)"",
+        ""facsimile"": ""MapS.dataS(mphone.F)"",
+        ""telex"": ""MapS.dataS(mphone.T)""
+    },
+    ""time_zone"": ""MapS.dataS(timezn)"",
+    ""thousand_separate_character"": ""MapS.dataS(numfmtt)"",
+    ""decimal_separate_character"": ""MapS.dataS(numfmtd)"",
+    ""date_format"": ""MapS.dataS(datefmt)"",
+    ""long_date_format"": ""MapS.dataS(ldatefmt)"",
+    ""time_format"": ""MapS.dataS(timefmt)"",
+    ""expire_date"": ""MapS.dataS(expdt)"",
+    ""policy_id"": ""MapS.dataS(policyid)"",
+    ""user_can_change_password"": ""MapS.dataS(pwdchg)"",
+    ""password_never_expire"": ""MapS.dataS(pwdexp)"",
+    ""change_password_when_login"": ""MapS.dataS(pwdchgr)"",
+    ""password_complexity_requirements"": ""MapS.dataS(pwdcplx)"",
+    ""lockout_dur"": ""MapS.dataS(lkoutdur)"",
+    ""lockout_tthrs"": ""MapS.dataS(lkoutthrs)"",
+    ""reset_lockout"": ""MapS.dataS(resetlkout)""
+}";;0;USRID
+ADM_UPDATE_USER_POLICY;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;015003006004;O9SYS.S_USRPOLICY;"{
+	""id"": ""MapS.dataI(policyid)"",
+	""descr"": ""MapS.dataS(descr)"",
+	""effective_from"": ""MapS.date_yyyy-MM-dd_Null(effrom)"",
+	""effective_to"": ""MapS.date_yyyy-MM-dd_Null(efto)"",
+	""enforce_password_history"": ""MapS.dataI(pwdhis)"",
+	""maximum_password_age"": ""MapS.dataI(pwdagemax)"",
+	""minimum_password_length"": ""MapS.dataI(minpwdlen)"",
+	""password_complexity_requirements"": ""MapS.dataS(pwdcplx)"",
+	""password_have_special_symbol"": ""MapS.dataS(pwdcplxlc)"",
+	""password_have_upper_case"": ""MapS.dataS(pwdcplxuc)"",
+	""password_have_lower_case"": ""MapS.dataS(pwdcplxsc)"",
+	""password_have_number"": ""MapS.dataS(pwdcplxnc)"",
+	""can_login_from"": ""MapS.dataS(lginfr)"",
+	""can_login_to"": ""MapS.dataS(lginto)"",
+    ""lockout_threshold"": ""MapS.dataI(lkoutthrs)"",
+    ""session_mode"": ""MapS.dataS(SessionMode)"",
+    ""use_default_password"": ""MapS.dataS(upwddflt)"",
+    ""default_password"": ""MapS.dataS(pwddflt)"",
+    ""default_password_expired"": ""MapS.dataI(pwddfltexpire)""
+}";"{
+	""id"": ""MapS.dataS(fields.id)"",
+	""DESCR"": ""MapS.dataS(fields.descr)"",
+	""EFFROM"": ""MapS.date_dd-MM-yyyy_Null(fields.effective_from)"",
+	""EFTO"": ""MapS.date_dd-MM-yyyy_Null(fields.effective_to)"",
+	""PWDHIS"": ""MapS.dataINull(fields.enforce_password_history)"",
+	""PWDAGEMAX"": ""MapS.dataINull(fields.maximum_password_age)"",
+	""MINPWDLEN"": ""MapS.dataINull(fields.minimum_password_length)"",
+	""PWDCPLX"": ""MapS.dataS(fields.password_complexity_requirements)"",
+	""PWDCPLXLC"": ""MapS.dataS(fields.password_have_special_symbol)"",
+	""PWDCPLXUC"": ""MapS.dataS(fields.password_have_upper_case)"",
+	""PWDCPLXSC"": ""MapS.dataS(fields.password_have_lower_case)"",
+	""PWDCPLXNC"": ""MapS.dataS(fields.password_have_number)"",
+	""LGINFR"": ""MapS.dataS(fields.can_login_from)"",
+    ""LGINTO"": ""MapS.dataS(fields.can_login_to)"",
+    ""LKOUTTHRS"": ""MapS.dataINull(fields.lockout_tthrs)"",
+    ""UPWDDFLT"": ""MapS.dataS(fields.use_default_password)"",
+    ""PWDDFLT"": ""MapS.dataS(fields.default_password)"",
+    ""PWDDFLTEXPIRE"": ""MapS.dataI(fields.default_password_expired)"",
+    ""IDLTIME"": ""MapS.dataI(fields.idle_time)"",
+    ""BLKAFT"": ""MapS.dataI(fields.block_after)""
+}";1;POLICYID
+UMG_RESET_PASSWORD;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserAccountWorkflowService;ResetPassword;1;;;;;0;
+DPT_SEARCH_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;DPT_CATALOGUE_DEFINITION;;"{
+    ""id"": ""MapS.dataI(catid)"",
+    ""catalog_code"": ""MapS.dataS(catcd)"",
+    ""catalog_name"": ""MapS.dataS(catname)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""deposit_type"": ""MapS.dataS(dpttypect)"",
+    ""passbook_or_statement_or_receipt"": ""MapS.dataS(pbstct)"",
+    ""tenor"": ""MapS.dataI(tenor)"",
+    ""tenor_unit"": ""MapS.dataS(tenorunct)"",
+    ""catalog_status"": ""MapS.dataS(catstsct)""
+}
+";"{
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+DPT_ADSEARCH_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;DPT_CATALOGUE_DEFINITION;;"{
+    ""id"": ""MapS.dataI(catid)"",
+    ""catalog_code"": ""MapS.dataS(catcd)"",
+    ""catalog_name"": ""MapS.dataS(catname)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""deposit_type"": ""MapS.dataS(dpttypect)"",
+    ""passbook_or_statement_or_receipt"": ""MapS.dataS(pbstct)"",
+    ""tenor"": ""MapS.dataI(tenor)"",
+    ""tenor_unit"": ""MapS.dataS(tenorunct)"",
+    ""catalog_status"": ""MapS.dataS(catstsct)""
+}
+";"{
+    ""catcd"": ""MapS.dataS(fields.catalog_code)"",
+    ""catname"": ""MapS.dataS(fields.catalog_name)"",
+    ""ccrcd"": ""MapS.dataS(fields.currency_code)"",
+    ""dpttypect"": ""MapS.dataS(fields.deposit_type)"",
+    ""pbstct"": ""MapS.dataS(fields.passbook_or_statement_or_receipt)"",
+    ""oprtval_tenor"": ""MapS.dataINull(fields.oprtval_tenor)"",
+    ""tenor"": ""MapS.dataINull(fields.tenor_to)"",
+    ""tenorunct"": ""MapS.dataS(fields.tenor_unit)"",
+    ""catstsct"": ""MapS.dataS(fields.catalog_status)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)""
+}
+";1;
+DPT_VIEW_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;DPT_GET_DPTCAT;;"{
+	""id"": ""MapS.dataI(catid)"",
+	""catalog_name"": ""MapS.dataS(catname)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""secure_currency"": ""MapS.dataS(sccrcd)"",
+	""deposit_type"": ""MapS.dataS(dpttype)"",
+	""deposit_sub_type"": ""MapS.dataS(dpsubttype)"",
+	""deposit_purpose"": ""MapS.dataS(dptprp)"",
+	""deposit_classification"": ""MapS.dataS(dptcls)"",
+	""passbook_or_statement_or_receipt"": ""MapS.dataS(pbst)"",
+	""minimum_deposit_amount"": ""MapS.dataN(minamt)"",
+	""catalog_status"": ""MapS.dataS(catsts)"",
+	""multi_deposit"": ""MapS.dataS(multdpt)"",
+	""multi_withdraw"": ""MapS.dataS(multwdr)"",
+	""credit_interest"": ""MapS.dataS(crint)"",
+	""credit_interest_tenor"": ""MapS.dataI(crinttnr)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""crediting_interest"": ""MapS.dataI(crintday)"",
+    ""minimum_dormant_amount"": ""MapS.dataN(drmamt)"",
+    ""dormant_period"": ""MapS.dataI(drmp)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor"": ""MapS.dataI(sttnr)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""initial_deposit_amount"": ""MapS.dataN(initamt)"",
+    ""user_created_code"": ""MapS.dataN(usrid)"",
+    ""user_created_name"": ""MapS.dataS(usrname)"",
+    ""tenor"": ""MapS.dataN(tenor)"",
+    ""tenor2"": ""MapS.dataN(tenor2)"",
+    ""deposit_tenor"": ""MapS.dataN(dpttnr)"",
+    ""interest_tenor"": ""MapS.dataN(inttnr)"",
+    ""minimum_tenor"": ""MapS.dataN(mintnr)"",
+    ""minimum_tenor_allow_early_withdrawal"": ""MapS.dataN(mintenr)"",
+    ""crediting_interest"": ""MapS.dataN(crintday)"",
+    ""crintmonth"": ""MapS.dataN(crintmonth)"",
+    ""dormant_period"": ""MapS.dataN(drmpr)"",
+    ""interest_due_on_holiday"": ""MapS.dataN(hdinttnr)"",
+    ""principal_due_on_holiday"": ""MapS.dataN(hdprntnr)"",
+    ""statement_tenor"": ""MapS.dataN(sttnr)"",
+    ""inital_depost_amount"": ""MapS.dataN(initamt)"",
+    ""periodic_deposit_amount"": ""MapS.dataN(tndptamt)"",
+    ""periodic_deposit_tenor"": ""MapS.dataN(periodic)"",
+    ""tariff_code"": ""MapS.dataN(trfcd)"",
+    ""tenor_unit"": ""MapS.dataS(tenorun)"",
+    ""tenor_unit2"": ""MapS.dataS(tenorun2)"",
+    ""deposit_tenor_unit"": ""MapS.dataS(dpttnrun)"",
+    ""interest_tenor_unit"": ""MapS.dataS(inttnrun)"",
+    ""minimum_tenor_unit"": ""MapS.dataS(mintnrun)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""early_withdraw"": ""MapS.dataS(earlywdr)"",
+    ""minimum_tenor_allow_early_withdrawal_unit"": ""MapS.dataS(mintenrun)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""rollover"": ""MapS.dataS(rllovr)"",
+    ""rollover_to_catalog_id"": ""MapS.dataI(rovcat)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""periodic_deposit_tenor_unit"": ""MapS.dataS(periodicun)"",
+    ""group_id"": ""MapS.dataN(grpid)""
+}";"{""I"":""MapS.dataI(fields.id)""}";1;
+DPT_VIEW_CAT_GL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IDepositRuleFuncService;GetListGlsByGroupId;1;;;;;0;
+DPT_SEARCH_DEPOSIT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;DPT_ACCOUNT_INFORMATION;;"{
+	""id"": ""MapS.dataS(defacno)"",
+	""account_number"": ""MapS.dataS(acno)"",
+	""account_name"": ""MapS.dataS(acname)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""customer_code"": ""MapS.dataS(customercd)"",
+	""customer_type"": ""MapS.dataS(ctmtypect)"",
+	""customer_type_ct"": ""MapS.dataS(ctmtypect)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""catalog_id"": ""MapS.dataI(catalogid)"",
+	""deposit_status"": ""MapS.dataS(dptsts)"",
+	""deposit_type"": ""MapS.dataS(dpttype)"",
+	""open_date"": ""MapS.dataT(opendate)"",
+	""reference_number"": ""MapS.dataS(refid)"",
+	""od_contract"": ""MapS.dataS(odcontract)"",
+	""deposit_sub_type"": ""MapS.dataS(depositsubtype)""
+}";"{
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+DPT_ADSEARCH_DEPOSIT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;DPT_ACCOUNT_INFORMATION;;"{
+	""id"": ""MapS.dataS(defacno)"",
+	""account_number"": ""MapS.dataS(acno)"",
+	""account_name"": ""MapS.dataS(acname)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""customer_code"": ""MapS.dataS(customercd)"",
+	""customer_type"": ""MapS.dataS(ctmtypect)"",
+	""customer_type_ct"": ""MapS.dataS(ctmtypect)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""catalog_id"": ""MapS.dataI(catalogid)"",
+	""deposit_status"": ""MapS.dataS(dptsts)"",
+	""deposit_type"": ""MapS.dataS(dpttype)"",
+	""open_date"": ""MapS.dataT(opendate)"",
+	""reference_number"": ""MapS.dataS(refid)"",
+	""od_contract"": ""MapS.dataS(odcontract)"",
+	""deposit_sub_type"": ""MapS.dataS(depositsubtype)""
+}";"{
+    ""ACNO"": ""MapS.dataS(fields.account_number)"",
+    ""ACNAME"": ""MapS.dataS(fields.account_name)"",
+    ""CCRCD"": ""MapS.dataS(fields.currency_code)"",
+    ""CUSTOMERCD"": ""MapS.dataS(fields.customer_code)"",
+    ""CTMTYPECT"": ""MapS.dataS(fields.customer_type)"",
+    ""CATCD"": ""MapS.dataS(fields.catalog_code)"",
+    ""DPTSTS"": ""MapS.dataS(fields.deposit_status)"",
+    ""DPTTYPE"": ""MapS.dataS(fields.deposit_type)"",
+    ""REFID"": ""MapS.dataS(fields.reference_number)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)""
+}";1;
+FX_APPFXRATE_MDF;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IExchangeRateWorkflowService;Update;1;015003011004;O9DATA.D_FXRATE;;;0;
+UMG_UPDATE_PASSWORD;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IUserAccountWorkflowService;ChangePassword;1;;;;;0;
+IFC_GET_LIST_IFC_BY_TARIFF;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IDepositRuleFuncService;GetListIfcByTariffCode;1;;;;;0;
+DPT_DELETE_DEPOSIT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;005002000005;O9DATA.D_DEPOSIT;;"{
+	""id"": ""MapS.dataS(fields.id)""
+}
+";1;DEFACNO
+DPT_INSERT_CATALOG;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;005001000002;O9DATA.D_DPTCAT;"{
+	""id"": ""MapS.dataI(catid)"",
+	""catalog_name"": ""MapS.dataS(catname)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""secure_currency"": ""MapS.dataS(sccrcd)"",
+	""deposit_type"": ""MapS.dataS(dpttype)"",
+	""deposit_sub_type"": ""MapS.dataS(dpsubttype)"",
+	""deposit_purpose"": ""MapS.dataS(dptprp)"",
+	""deposit_classification"": ""MapS.dataS(dptcls)"",
+	""passbook_or_statement_or_receipt"": ""MapS.dataS(pbst)"",
+    ""minimum_deposit_amount"": ""MapS.dataN(minamt)"",
+    ""catalog_status"": ""MapS.dataS(catsts)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor"": ""MapS.dataI(crinttnr)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""crediting_interest"": ""MapS.dataI(crintday)"",
+    ""minimum_dormant_amount"": ""MapS.dataN(drmamt)"",
+    ""dormant_period"": ""MapS.dataI(drmp)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor"": ""MapS.dataI(sttnr)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""initial_deposit_amount"": ""MapS.dataN(initamt)"",
+    ""user_created_code"": ""MapS.dataN(usrid)"",
+    ""tenor"": ""MapS.dataN(tenor)"",
+    ""tenor2"": ""MapS.dataN(tenor2)"",
+    ""deposit_tenor"": ""MapS.dataN(dpttnr)"",
+    ""interest_tenor"": ""MapS.dataN(inttnr)"",
+    ""minimum_tenor"": ""MapS.dataN(mintnr)"",
+    ""minimum_tenor_allow_early_withdrawal"": ""MapS.dataN(mintenr)"",
+    ""crediting_interest"": ""MapS.dataN(crintday)"",
+    ""crintmonth"": ""MapS.dataN(crintmonth)"",
+    ""dormant_period"": ""MapS.dataN(drmpr)"",
+    ""interest_due_on_holiday"": ""MapS.dataN(hdinttnr)"",
+    ""principal_due_on_holiday"": ""MapS.dataN(hdprntnr)"",
+    ""statement_tenor"": ""MapS.dataN(sttnr)"",
+    ""inital_depost_amount"": ""MapS.dataN(initamt)"",
+    ""periodic_deposit_amount"": ""MapS.dataN(tndptamt)"",
+    ""periodic_deposit_tenor"": ""MapS.dataN(periodic)"",
+    ""tariff_code"": ""MapS.dataN(trfcd)"",
+    ""tenor_unit"": ""MapS.dataS(tenorun)"",
+    ""tenor_unit2"": ""MapS.dataS(tenorun2)"",
+    ""deposit_tenor_unit"": ""MapS.dataS(dpttnrun)"",
+    ""interest_tenor_unit"": ""MapS.dataS(inttnrun)"",
+    ""minimum_tenor_unit"": ""MapS.dataS(mintnrun)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""early_withdraw"": ""MapS.dataS(earlywdr)"",
+    ""minimum_tenor_allow_early_withdrawal_unit"": ""MapS.dataS(mintenrun)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""rollover"": ""MapS.dataS(rllovr)"",
+    ""rollover_to_catalog_id"": ""MapS.dataI(rovcat)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""periodic_deposit_tenor_unit"": ""MapS.dataS(periodicun)"",
+    ""group_id"": ""MapS.dataN(grpid)""
+}";"{
+	""CATNAME"": ""MapS.dataS(fields.catalog_name)"",
+	""CCRCD"": ""MapS.dataS(fields.currency_code)"",
+	""SCCRCD"": ""MapS.dataS(fields.secure_currency)"",
+	""DPTTYPE"": ""MapS.dataS(fields.deposit_type)"",
+	""DPTGRP"": ""MapS.dataS(fields.deposit_group)"",
+	""DPTPRP"": ""MapS.dataS(fields.deposit_purpose)"",
+	""DPTCLS"": ""MapS.dataS(fields.deposit_classification)"",
+	""PBST"": ""MapS.dataS(fields.passbook_or_statement_or_receipt)"",
+	""INTACRRT"": ""MapS.dataN(fields.interest_accurate_rate)"",
+	""MINAMT"": ""MapS.dataN(fields.minimum_amount)"",
+	""GRPID"": ""MapS.dataN(fields.group_id)"",
+	""CATSTS"": ""MapS.dataS(fields.catalog_status)"",
+	""USRID"": ""MapS.userSession(UserId)"",
+	""APUSER"": ""MapS.dataN(fields.approved_user)"",
+	""TENOR"": ""MapS.dataN(fields.tenor)"",
+	""TENORUN"": ""MapS.dataS(fields.tenor_unit)"",
+	""TENOR2"": ""MapS.dataN(fields.tenor2)"",
+	""TENORUN2"": ""MapS.dataS(fields.tenor_unit2)"",
+    ""DPTTNR"": ""MapS.dataN(fields.deposit_tenor)"",
+    ""DPTTNRUN"": ""MapS.dataS(fields.deposit_tenor_unit)"",
+    ""INTTNRUN"": ""MapS.dataS(fields.interest_tenor_unit)"",
+    ""INTTNR"": ""MapS.dataN(fields.interest_tenor)"",
+    ""MINTNR"": ""MapS.dataN(fields.minimum_tenor)"",
+    ""MINTNRUN"": ""MapS.dataS(fields.minimum_tenor_unit)"",
+    ""MINTENR"": ""MapS.dataN(fields.minimum_tenor_allow_early_withdrawal)"",
+    ""MINTENRUN"": ""MapS.dataS(fields.minimum_tenor_allow_early_withdrawal_unit)"",
+    ""CRINT"": ""MapS.dataS(fields.credit_interest)"",
+    ""CRINTTNR"": ""MapS.dataN(fields.credit_interest_tenor)"",
+    ""CRINTTNRUN"": ""MapS.dataS(fields.credit_interest_tenor_unit)"",
+    ""CRINTDAY"": ""MapS.dataN(fields.crediting_interest)"",
+    ""DRMPR"": ""MapS.dataN(fields.dormant_period)"",
+    ""DRMPRUN"": ""MapS.dataS(fields.dormant_period_unit)"",
+    ""ROVCAT"": ""MapS.dataN(fields.rollover_catalog_id)"",
+    ""HDINTTNR"": ""MapS.dataN(fields.holiday_interest_tenor)"",
+    ""HDPRNTNR"": ""MapS.dataN(fields.holiday_principal_tenor)"",
+    ""STTNR"": ""MapS.dataN(fields.statement_tenor)"",
+    ""STTNRUN"": ""MapS.dataS(fields.statement_tenor_unit)"",
+    ""STFMT"": ""MapS.dataS(fields.statement_format)"",
+    ""INITAMT"": ""MapS.dataN(fields.initial_amount)"",
+    ""TNDPTAMT"": ""MapS.dataN(fields.periodic_deposit_amount)"",
+    ""PERIODIC"": ""MapS.dataN(fields.periodic_deposit_tenor)"",
+    ""PERIODICUN"": ""MapS.dataS(fields.periodic_deposit_tenor_unit)"",
+    ""TRFCD"": ""MapS.dataN(fields.tariff_code)"",
+    ""RLLOVR"": ""MapS.dataS(fields.rollover)"",
+    ""CATCD"": ""MapS.dataS(fields.catalog_code)""
+}";1;
+DPT_VIEW_DEPOSIT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;FrontOffice;1;DPT_INQ;;"{
+	""id"": ""MapS.dataS(acno)"",
+	""defacno"": ""MapS.dataS(defacno)"",
+	""account_number"": ""MapS.dataS(acno)"",
+	""branch_id"": ""MapS.dataI(branchid)"",
+	""branch_code"": ""MapS.dataI(branchid)"",
+	""currency_code"": ""MapS.dataS(ccrcd)"",
+	""account_name"": ""MapS.dataS(acname)"",
+	""customer_id"": ""MapS.dataI(customerid)"",
+	""customer_code"": ""MapS.dataI(customercd)"",
+	""customer_type"": ""MapS.dataS(ctmtype)"",
+	""catalog_id"": ""MapS.dataI(catid)"",
+	""catalog_code"": ""MapS.dataS(catcd)"",
+	""secure_currency"": ""MapS.dataS(sccrcd)"",
+	""deposit_tenor"": ""MapS.dataN(dpttnr)"",
+	""deposit_tenor_unit"": ""MapS.dataS(dpttnrun)"",
+	""tenor"": ""MapS.dataN(tenor)"",
+	""tenor_unit"": ""MapS.dataS(tenorun)"",
+	""tenor2"": ""MapS.dataN(tenor2)"",
+    ""tenor_unit2"": ""MapS.dataS(tenorun2)"",
+    ""interest_tenor_unit"": ""MapS.dataSTrim(inttnrun)"",
+    ""interest_tenor"": ""MapS.dataN(inttnr)"",
+    ""interest_accrual"": ""MapS.dataN(intamt)"",
+    ""periodic_deposit_amount"": ""MapS.dataN(tndptamt)"",
+    ""minimum_deposit_amount"": ""MapS.dataN(minamt)"",
+    ""minimum_tenor"": ""MapS.dataN(mintnr)"",
+    ""minimum_tenor_unit"": ""MapS.dataS(mintnrun)"",
+    ""multiple_deposit_allow"": ""MapS.dataS(multdpt)"",
+    ""multiple_withdrawal_allow"": ""MapS.dataS(multwdr)"",
+    ""early_withdrawal"": ""MapS.dataS(earlywdr)"",
+    ""minimum_tenor_allow_early_withdrawal"": ""MapS.dataN(mintenr)"",
+    ""minimum_tenor_allow_early_withdrawal_unit"": ""MapS.dataS(mintenrun)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor"": ""MapS.dataN(crinttnr)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""crediting_interest"": ""MapS.dataN(crintday)"",
+    ""intacrrt"": ""MapS.dataN(intacrrt)"",
+    ""deposit_type"": ""MapS.dataS(dpttype)"",
+    ""deposit_group"": ""MapS.dataSTrim(dptgrp)"",
+    ""deposit_purpose"": ""MapS.dataS(dptprp)"",
+    ""deposit_classification"": ""MapS.dataS(dptcls)"",
+    ""dormant_period"": ""MapS.dataN(drmpr)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""rollover"": ""MapS.dataS(rllovr)"",
+    ""rollover_to_catalog"": ""MapS.dataS(rovcat)"",
+    ""interest_due_on_holiday"": ""MapS.dataN(hdinttnr)"",
+    ""principal_due_on_holiday"": ""MapS.dataN(hdprntnr)"",
+    ""passbook_or_statement"": ""MapS.dataS(pbst)"",
+    ""statement_tenor"": ""MapS.dataN(sttnr)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""deposit_amount"": ""MapS.dataN(dptamt)"",
+    ""withdraw_amount"": ""MapS.dataN(wdramt)"",
+    ""current_balance"": ""MapS.dataN(balance)"",
+    ""icbal"": ""MapS.dataN(icbal)"",
+    ""month_average_balance"": ""MapS.dataN(mavgamt)"",
+    ""quarter_average_balance"": ""MapS.dataN(qavgamt)"",
+    ""semi_annual_average_balance"": ""MapS.dataN(havgamt)"",
+    ""year_average_balance"": ""MapS.dataN(yavgamt)"",
+    ""interest_paid"": ""MapS.dataN(intpaid)"",
+    ""intpre"": ""MapS.dataN(intpre)"",
+    ""intpbl"": ""MapS.dataN(intpbl)"",
+    ""initial_deposit_amount"": ""MapS.dataN(initamt)"",
+    ""interest_due"": ""MapS.dataN(intdue)"",
+    ""intovd"": ""MapS.dataN(intovd)"",
+    ""intspamt"": ""MapS.dataN(intspamt)"",
+    ""interest_not_paid"": ""MapS.dataN(intnypd)"",
+    ""inamt"": ""MapS.dataN(inamt)"",
+    ""examt"": ""MapS.dataN(examt)"",
+    ""intpdcd"": ""MapS.dataS(intpdcd)"",
+    ""intac"": ""MapS.dataS(intac)"",
+    ""rvbalance"": ""MapS.dataN(rvbalance)"",
+    ""rvmavgamt"": ""MapS.dataN(rvmavgamt)"",
+    ""rvqavgamt"": ""MapS.dataN(rvqavgamt)"",
+    ""rvhavgamt"": ""MapS.dataN(rvhavgamt)"",
+    ""rvyavgamt"": ""MapS.dataN(rvyavgamt)"",
+    ""rvintamt"": ""MapS.dataN(rvintamt)"",
+    ""rintpaid"": ""MapS.dataN(rintpaid)"",
+    ""rintpre"": ""MapS.dataN(rintpre)"",
+    ""rvintpbl"": ""MapS.dataN(rvintpbl)"",
+    ""rvintdue"": ""MapS.dataN(rvintdue)"",
+    ""rvintovd"": ""MapS.dataN(rvintovd)"",
+    ""rvintspamt"": ""MapS.dataN(rvintspamt)"",
+    ""rvintnypd"": ""MapS.dataN(rvintnypd)"",
+    ""open_date"": ""MapS.date_yyyy-MM-dd_Null(opndt)"",
+    ""close_date"": ""MapS.date_yyyy-MM-dd_Null(clsdt)"",
+    ""begin_of_tenor"": ""MapS.date_yyyy-MM-dd_Null(frdt)"",
+    ""end_of_tenor"": ""MapS.date_yyyy-MM-dd_Null(todt)"",
+    ""last_transaction_date"": ""MapS.date_yyyy-MM-dd_Null(lastdt)"",
+    ""deposit_status"": ""MapS.dataS(dptsts)"",
+    ""passbook_or_receipt_number"": ""MapS.dataS(pbno)"",
+    ""passbook_or_receipt_stat";"{
+  ""PDACC"": ""MapS.dataS(fields.account_number)""
+}";1;
+DPT_UPDATE_DEPOSIT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IDepositWorkflowService;UpdateAccount;1;005002000004;O9DATA.D_DEPOSIT;"{
+    ""id"": ""MapS.dataI(catid)"",
+    ""catalog_name"": ""MapS.dataS(catname)"",
+    ""catalog_code"": ""MapS.dataS(catcd)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""secure_currency"": ""MapS.dataS(sccrcd)"",
+    ""deposit_type"": ""MapS.dataS(dpttype)"",
+    ""deposit_sub_type"": ""MapS.dataS(dpsubttype)"",
+    ""deposit_purpose"": ""MapS.dataS(dptprp)"",
+    ""deposit_classification"": ""MapS.dataS(dptcls)"",
+    ""passbook_or_statement_or_receipt"": ""MapS.dataS(pbst)"",
+    ""minimum_deposit_amount"": ""MapS.dataN(minamt)"",
+    ""catalog_status"": ""MapS.dataS(catsts)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor"": ""MapS.dataI(crinttnr)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""crediting_interest"": ""MapS.dataI(crintday)"",
+    ""minimum_dormant_amount"": ""MapS.dataN(drmamt)"",
+    ""dormant_period"": ""MapS.dataI(drmp)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor"": ""MapS.dataI(sttnr)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""initial_deposit_amount"": ""MapS.dataN(initamt)"",
+    ""user_created_code"": ""MapS.dataN(usrid)"",
+    ""tenor"": ""MapS.dataN(tenor)"",
+    ""tenor2"": ""MapS.dataN(tenor2)"",
+    ""deposit_tenor"": ""MapS.dataN(dpttnr)"",
+    ""interest_tenor"": ""MapS.dataN(inttnr)"",
+    ""minimum_tenor"": ""MapS.dataN(mintnr)"",
+    ""minimum_tenor_allow_early_withdrawal"": ""MapS.dataN(mintenr)"",
+    ""crediting_interest"": ""MapS.dataN(crintday)"",
+    ""crintmonth"": ""MapS.dataN(crintmonth)"",
+    ""dormant_period"": ""MapS.dataN(drmpr)"",
+    ""interest_due_on_holiday"": ""MapS.dataN(hdinttnr)"",
+    ""principal_due_on_holiday"": ""MapS.dataN(hdprntnr)"",
+    ""statement_tenor"": ""MapS.dataN(sttnr)"",
+    ""inital_depost_amount"": ""MapS.dataN(initamt)"",
+    ""periodic_deposit_amount"": ""MapS.dataN(tndptamt)"",
+    ""periodic_deposit_tenor"": ""MapS.dataN(periodic)"",
+    ""tariff_code"": ""MapS.dataN(trfcd)"",
+    ""tenor_unit"": ""MapS.dataS(tenorun)"",
+    ""tenor_unit2"": ""MapS.dataS(tenorun2)"",
+    ""deposit_tenor_unit"": ""MapS.dataS(dpttnrun)"",
+    ""interest_tenor_unit"": ""MapS.dataS(inttnrun)"",
+    ""minimum_tenor_unit"": ""MapS.dataS(mintnrun)"",
+    ""multi_deposit"": ""MapS.dataS(multdpt)"",
+    ""multi_withdraw"": ""MapS.dataS(multwdr)"",
+    ""early_withdraw"": ""MapS.dataS(earlywdr)"",
+    ""minimum_tenor_allow_early_withdrawal_unit"": ""MapS.dataS(mintenrun)"",
+    ""credit_interest"": ""MapS.dataS(crint)"",
+    ""credit_interest_tenor_unit"": ""MapS.dataS(crinttnrun)"",
+    ""dormant_period_unit"": ""MapS.dataS(drmprun)"",
+    ""rollover"": ""MapS.dataS(rllovr)"",
+    ""rollover_to_catalog_id"": ""MapS.dataI(rovcat)"",
+    ""statement_format"": ""MapS.dataS(stfmt)"",
+    ""statement_tenor_unit"": ""MapS.dataS(sttnrun)"",
+    ""periodic_deposit_tenor_unit"": ""MapS.dataS(periodicun)"",
+    ""group_id"": ""MapS.dataN(grpid)""
+}";"{
+	""DEFACNO"": ""MapS.dataS(fields.defacno)"",
+	""ACNAME"": ""MapS.dataS(fields.account_name)"",
+	""CRMID"": ""MapS.dataN(fields.account_manager_staff_id)"",
+	""RMKFLD"": ""MapS.dataS(fields.remark)"",
+	""REFID"": ""MapS.dataS(fields.reference_number)"",
+	""MULTDPT"": ""MapS.dataS(fields.multiple_deposit_allow)"",
+	""MULTWDR"": ""MapS.dataS(fields.multiple_withdrawal_allow)"",
+	""EARLYWDR"": ""MapS.dataS(fields.early_withdrawal)"",
+	""MINTENR"": ""MapS.dataN(fields.minimum_tenor_allow_early_withdrawal)"",
+	""CRINT"": ""MapS.dataS(fields.credit_interest)"",
+	""CRINTTNR"": ""MapS.dataN(fields.credit_interest_tenor)"",
+	""CRINTTNRUN"": ""MapS.dataS(fields.credit_interest_tenor_unit)"",
+	""DRMPR"": ""MapS.dataN(fields.dormant_period)"",
+	""DRMPRUN"": ""MapS.dataS(fields.dormant_period_unit)"",
+	""RLLOVR"": ""MapS.dataS(fields.rollover)"",
+	""ROVCAT"": ""MapS.dataN(fields.rollover_to_catalog)"",
+	""HDINTTNR"": ""MapS.dataN(fields.interest_due_on_holiday)"",
+	""HDPRNTNR"": ""MapS.dataN(fields.principal_due_on_holiday)"",
+	""STTNR"": ""MapS.dataN(fields.statement_tenor)"",
+	""STTNRUN"": ""MapS.dataS(fields.statement_tenor_unit)"",
+	""STFMT"": ""MapS.dataS(fields.statement_format)"",
+    ""INTPDCD"": ""MapS.dataS(fields.intpdcd)"",
+    ""INTAC"": ""MapS.dataS(fields.intac)"",
+    ""INTTNRUN"": ""MapS.dataS(fields.interest_tenor_unit)"",
+    ""INTTNR"": ""MapS.dataN(fields.interest_tenor)"",
+    ""MINTNR"": ""MapS.dataN(fields.minimum_tenor)"",
+    ""MINTNRUN"": ""MapS.dataS(fields.minimum_tenor_unit)"",
+    ""MINTENRUN"": ""MapS.dataS(fields.minimum_tenor_allow_early_withdrawal_unit)"",
+    ""CRINTDAY"": ""MapS.dataN(fields.crediting_interest)"",
+    ""TRFCD"": ""MapS.dataN(fields.tariff_code)"",
+    ""ACCCLS"": ""MapS.dataS(fields.acccls)"",
+    ""ifclist"": ""MapS.dataJsonArray(fields.list_ifc_balance)""
+}";1;DEFACNO

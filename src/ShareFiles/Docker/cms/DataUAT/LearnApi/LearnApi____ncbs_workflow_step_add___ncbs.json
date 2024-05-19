@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8473557Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_workflow_step_add",
+        "learn_api_name": "ncbs_workflow_step_add ncbs_workflow_step_add-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow-definition/steps/add",
+        "learn_api_data": "ncbs_workflow_field_save",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[\n  {\n    \"workflow_id\": \"MapS.dataS(ncbs_workflow_management.workflow_id)\",\n    \"step_order\": \"MapS.dataI(ncbs_workflow_steps.step_order)\",\n    \"step_group\": \"MapS.dataI(ncbs_workflow_steps.step_group)\",\n    \"step_code\": \"MapS.dataS(ncbs_workflow_steps.step_code)\",\n    \"status\": \"MapS.dataS(ncbs_workflow_steps.status)\",\n    \"description\": \"MapS.dataS(ncbs_workflow_steps.description)\",\n    \"service_code\": \"MapS.dataS(ncbs_workflow_steps.service_code)\",\n    \"sending_template\": \"MapS.dataS(ncbs_workflow_steps.sending_template)\",\n     \"sending_condition\": \"MapS.dataS(ncbs_workflow_steps.sending_condition)\",\n    \"success_condition\": \"MapS.dataS(ncbs_workflow_steps.success_condition)\",\n    \"send_by_broker\": \"MapS.dataS(ncbs_workflow_steps.send_by_broker)\",\n    \"step_timeout\": \"MapS.dataI(ncbs_workflow_steps.step_timeout)\",\n    \"step_mode\": \"MapS.dataS(ncbs_workflow_steps.step_mode)\",\n     \"compensating_mode\": \"MapS.dataS(ncbs_workflow_steps.compensating_mode)\"\n  }\n]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 235
+      }
+    ]
+  }
+]

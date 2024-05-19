@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4688917Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[    {        \"name\": \"X�c nh?n d? li?u b?ng API\",        \"function\": \"ncbs.core.txNcbs.deleteFile\",        \"type\": \"java\",        \"para\": [],        \"status\": \"A\",        \"response\": {            \"true\": {                \"fo\": [                    {                        \"txcode\": \"#sys:fo-msg-confirm\",                        \"input\": {                            \"toast_type\": \"success\"                        }                    }                ]            },            \"false\": {                \"fo\": [                    {                        \"txcode\": \"#sys:fo-msg-confirm\",                        \"input\": {                            \"toast_type\": \"error\"                        }                    }                ]            }        }    }]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-delete-file",
+        "version": 1,
+        "updateTime": 638042796880639090,
+        "txname": "bo-delete-file",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbs",
+        "id": 211
+      }
+    ]
+  }
+]

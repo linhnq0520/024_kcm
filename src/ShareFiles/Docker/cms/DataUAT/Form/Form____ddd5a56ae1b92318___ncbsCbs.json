@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.131382Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"\",\"des\":\"\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"ddd5a56ae1b92318\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"save;user_code;old_user_id;user_name;login_name;branch_code;department_name;position;cashier;officer;chief_cashier;operation_staff;dealer;remark;status_of_this_record;password;main_language;user_phone;phone_number;home;office;cell;facsimile;telex;time_zone_of_user;thousand_separate_character_in_amount_field;decimal_separate_character_in_amount_field;date_format_for_short;long_date_format;time_format;expire_date_of_this_user;id_of_policy_apply_for_this_user;\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\";errorJWebUI_code\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"modify\",\"component_result\":\"save;old_user_id;user_name;login_name;branch_code;department_name;position;cashier;officer;chief_cashier;operation_staff;dealer;remark;main_language;user_phone;phone_number;home;office;cell;facsimile;telex;time_zone_of_user;thousand_separate_character_in_amount_field;decimal_separate_character_in_amount_field;date_format_for_short;long_date_format;time_format;expire_date_of_this_user;id_of_policy_apply_for_this_user;\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\",\"list_config\":[]},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"copy\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"*;clear;save\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"setDataGB\",\"config\":{\"component_event\":\"enter_tab\",\"component_action\":\"\",\"component_result\":\"status_of_this_record\",\"data_type\":\"query\",\"query\":\"STATUS;ADM\",\"query_db\":\"select * from cdlist\",\"mode_filter\":\"js_condition\",\"filter_condition\":\"{\\n            \\\"col_col1\\\": \\\"condition_1\\\",\\n            \\\"col_col2\\\": \\\"condition_2\\\"\\n            }\",\"js_condition\":\" data_gb = data_gb.filter(data=>{\\n        return data.c_cdlist.cdid !== 'P' || '@{status_of_this_record}' === 'P';\\n    })\"},\"inUse\":true,\"order\":1,\"isStart\":true},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"modify\",\"component_result\":\"status_of_this_record\",\"condition\":\"'@{status_of_this_record}' === 'P'\",\"visible\":\"true\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":15,\"isStart\":true}],\"app\":\"\"}",
+        "list_layout": "[]",
+        "react_txt": "",
+        "form_id": "ddd5a56ae1b92318",
+        "app": "ncbsCbs",
+        "id": 503
+      }
+    ]
+  }
+]

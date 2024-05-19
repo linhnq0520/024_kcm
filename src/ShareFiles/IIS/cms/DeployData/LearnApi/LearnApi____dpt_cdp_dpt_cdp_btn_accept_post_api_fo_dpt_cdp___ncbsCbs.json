@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1262711Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "dpt_cdp_dpt_cdp_btn_accept_post_api_fo_dpt_cdp",
+        "learn_api_name": "DPT_CDP Accept DPT_CDP",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/dpt_cdp",
+        "learn_api_data": "DPT_CDP",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"txrefid\":\"MapS.dataS(DPT_CDP.txrefid)\",\"pdacc\":\"MapS.dataS(DPT_CDP.pdacc)\",\"pcsamt\":\"MapS.dataN(DPT_CDP.pcsamt)\",\"pcsccr\":\"MapS.dataS(DPT_CDP.pcsccr)\",\"ccrrate\":\"MapS.dataN(DPT_CDP.ccrrate)\",\"ctcvt\":\"MapS.dataN(DPT_CDP.ctcvt)\",\"pcsexr\":\"MapS.dataN(DPT_CDP.pcsexr)\",\"pcscvt\":\"MapS.dataN(DPT_CDP.pcscvt)\",\"cacnm\":\"MapS.dataS(DPT_CDP.cacnm)\",\"cctmcd\":\"MapS.dataS(DPT_CDP.cctmcd)\",\"cctma\":\"MapS.dataS(DPT_CDP.cctma)\",\"mdesc\":{\"H\":\"MapS.dataS(DPT_CDP.mdesc.H)\",\"O\":\"MapS.dataS(DPT_CDP.mdesc.O)\"},\"descs\":\"MapS.dataS(DPT_CDP.descs)\",\"cvldt\":\"MapS.dateDDMMYYYY(DPT_CDP.cvldt)\",\"crepid\":\"MapS.dataS(DPT_CDP.crepid)\",\"ciddt\":\"MapS.dateDDMMYYYY(DPT_CDP.ciddt)\",\"cidplace\":\"MapS.dataS(DPT_CDP.cidplace)\",\"dpttype\":\"MapS.dataS(DPT_CDP.dpttype)\",\"cccr\":\"MapS.dataS(DPT_CDP.cccr)\",\"cbkexr\":\"MapS.dataN(DPT_CDP.cbkexr)\",\"ccvt\":\"MapS.dataN(DPT_CDP.ccvt)\",\"ctint\":\"MapS.dataN(DPT_CDP.ctint)\",\"ctrn\":\"MapS.dataS(DPT_CDP.ctrn)\",\"cinc\":\"MapS.dataS(DPT_CDP.cinc)\",\"cfamt\":\"MapS.dataN(DPT_CDP.cfamt)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 210
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1341058Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_environment_update",
+        "learn_api_name": "ncbs_environment_update ncbs_environment_update-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/environment-variables/update",
+        "learn_api_data": "ncbs_environment_update",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "PUT",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[{\"variable_name\":\"MapS.dataS(muti.variable_name)\",\"e1\":\"MapS.dataS(muti.e1)\",\"e2\":\"MapS.dataS(muti.e2)\",\"e3\":\"MapS.dataS(muti.e3)\",\"e4\":\"MapS.dataS(muti.e4)\",\"e5\":\"MapS.dataS(muti.e5)\",\"e6\":\"MapS.dataS(muti.e6)\",\"e7\":\"MapS.dataS(muti.e7)\",\"e8\":\"MapS.dataS(muti.e8)\",\"e9\":\"MapS.dataS(muti.e9)\"}]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 225
+      }
+    ]
+  }
+]

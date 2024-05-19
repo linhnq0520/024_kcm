@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.4735704Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "GET_LIST_ROLES",
+        "learn_api_name": "GET_LIST_ROLES",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "list_roles",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data.items",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"ADM_GET_LIST_ROLES\",\r\n    \"lang\": \"en\",\r\n  \"token\":\"MapS.context(token)\",\r\n    \"fields\": {\r\n       \"page_size\": 0,\r\n        \"page_index\": 0\r\n    }\r\n}",
+        "number_of_steps": null,
+        "LearnApiGetInfo": "ncbsCBS_workflow_get_execution_info_step2",
+        "key_read_data": "execution_steps[0].p2_content.response.data.items",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 1106
+      }
+    ]
+  }
+]

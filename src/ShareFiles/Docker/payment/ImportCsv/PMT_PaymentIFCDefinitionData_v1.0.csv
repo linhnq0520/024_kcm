@@ -1,0 +1,12 @@
+Database,Payment,Table,PaymentIFCDefinition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IfcCode,IfcName,ValueBase,IsLinked,IfcLinkage,IfcOperator,FloorValue,CeilingValue,ValueType,IfcType,IfcSubType,IfcValue,MarginValue,ValueBasic,Isnet,Refname,IfcTenor,IfcTenorUnit,IfcCondition,CurrencyCode,RoundingRule,RoundingBasis,RoundingNum,Isleave,Isbook,Booktday,BookTenor,BookTenorUnit,IfcStatus,UserCreated,UserApproved,Payrate,ShareFee,EffectValueDate,EffectValue,TransactionList,CreatedOnUtc,UpdatedOnUtc,Id
+1,Deposit (MMK) For Different Region (By Cash/Tr),I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+2,Withdrawal (MMK) For Different Region  (By Cash),I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+3,Account To Account Transfer (MMK) For Different Region,I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+7,Communication Fee for Different Region (MMK),I,N,0,+,0,0,F,C,CN,500,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+8,Withdrawal (MMK) For Same Region  (By Cash),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+9,Account To Account Transfer (MMK) For Same Region,I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+40,Deposit (MMK) For Same Region  (By Cash/Tr),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+41,Deposit (MMK) For Same Branch  (By Cash/Tr),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+42,Withdrawal (MMK) For Same Branch  (By Cash),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+43,Account To Account Transfer (MMK) For Same Branch,I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0

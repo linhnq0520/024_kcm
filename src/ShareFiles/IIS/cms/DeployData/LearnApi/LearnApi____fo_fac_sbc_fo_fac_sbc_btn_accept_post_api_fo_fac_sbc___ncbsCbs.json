@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.421231Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_fac_sbc_fo_fac_sbc_btn_accept_post_api_fo_fac_sbc",
+        "learn_api_name": "FO_FAC_SBC Accept FO_FAC_SBC",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_FAC_SBC",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"FAC_SBC\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"account_number\":\"MapS.dataS(FO_FAC_SBC.account_number)\",\"fixed_asset_name\":\"MapS.dataS(FO_FAC_SBC.fixed_asset_name)\",\"net_book_value\":\"MapS.dataN(FO_FAC_SBC.net_book_value)\",\"acummulate_not_posted\":\"MapS.dataN(FO_FAC_SBC.acummulate_not_posted)\",\"acummulate_posted\":\"MapS.dataN(FO_FAC_SBC.acummulate_posted)\",\"book_value\":\"MapS.dataN(FO_FAC_SBC.book_value)\",\"book_currency\":\"MapS.dataS(FO_FAC_SBC.book_currency)\",\"selling_amount\":\"MapS.dataN(FO_FAC_SBC.selling_amount)\",\"cash_currency\":\"MapS.dataS(FO_FAC_SBC.cash_currency)\",\"cross_rate\":\"MapS.dataN(FO_FAC_SBC.cross_rate)\",\"amount_in_cash\":\"MapS.dataN(FO_FAC_SBC.amount_in_cash)\",\"purchaser_id\":\"MapS.dataS(FO_FAC_SBC.purchaser_id)\",\"purchaser_name\":\"MapS.dataS(FO_FAC_SBC.purchaser_name)\",\"purchaser_address\":\"MapS.dataS(FO_FAC_SBC.purchaser_address)\",\"purchaser_description\":\"MapS.dataS(FO_FAC_SBC.purchaser_description)\",\"description\":\"MapS.dataS(FO_FAC_SBC.description)\",\"value_date\":\"MapS.dataS(FO_FAC_SBC.value_date)\",\"exchange_rate\":\"MapS.dataN(FO_FAC_SBC.exchange_rate)\",\"cash_amount_bcy\":\"MapS.dataN(FO_FAC_SBC.cash_amount_bcy)\",\"amount_cbkexr\":\"MapS.dataN(FO_FAC_SBC.amount_cbkexr)\",\"amount_ccvt\":\"MapS.dataN(FO_FAC_SBC.amount_ccvt)\",\"income_or_expend\":\"MapS.dataN(FO_FAC_SBC.income_or_expend)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 845
+      }
+    ]
+  }
+]

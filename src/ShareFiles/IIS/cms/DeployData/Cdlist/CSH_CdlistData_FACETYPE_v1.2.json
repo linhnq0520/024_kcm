@@ -1,0 +1,379 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-08T10:40:57.8963463Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "N",
+        "caption": "Note",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Note\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1964
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "C",
+        "caption": "Denomination and Pieces CBM(Lion) 10/-",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 10/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1965
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "T",
+        "caption": "Denomination and Pieces CBM(NBD) 500/-",
+        "cdval": "21",
+        "cdidx": 21,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 500/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1966
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "V",
+        "caption": "Denomination and Pieces CBM(NBD) 5000/-",
+        "cdval": "23",
+        "cdidx": 23,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 5000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1967
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "P",
+        "caption": "Denomination and Pieces CBM(R.W.E.N) 10000/-",
+        "cdval": "17",
+        "cdidx": 17,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(R.W.E.N) 10000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1968
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "F",
+        "caption": "Denomination and Pieces CBM(Lion) 100/-",
+        "cdval": "7",
+        "cdidx": 7,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 100/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1969
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "X",
+        "caption": "Denomination and Pieces CBM(R.W.E) 10000/-",
+        "cdval": "15",
+        "cdidx": 15,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(R.W.E) 10000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1970
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "G",
+        "caption": "Denomination and Pieces CBM(Lion) 200/-",
+        "cdval": "8",
+        "cdidx": 8,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 200/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 1971
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "A",
+        "caption": "Denomination and Pieces CBM(Lion) 1/-",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 1/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24743
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "B",
+        "caption": "Denomination and Pieces CBM(Lion) 5/-",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 5/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24744
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "D",
+        "caption": "Denomination and Pieces CBM(Lion) 20/-",
+        "cdval": "5",
+        "cdidx": 5,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 20/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24745
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "E",
+        "caption": "Denomination and Pieces CBM(Lion) 50/-",
+        "cdval": "6",
+        "cdidx": 6,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 50/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24746
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "H",
+        "caption": "Denomination and Pieces CBM(Lion) 500/-",
+        "cdval": "9",
+        "cdidx": 9,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 500/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24747
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "I",
+        "caption": "Denomination and Pieces CBM(Lion) 1000/-",
+        "cdval": "10",
+        "cdidx": 10,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(Lion) 1000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24748
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "J",
+        "caption": "Denomination and Pieces CBM(K.L) 200/-",
+        "cdval": "11",
+        "cdidx": 11,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(K.L) 200/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24749
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "K",
+        "caption": "Denomination and Pieces CBM(K.L) 500/-",
+        "cdval": "12",
+        "cdidx": 12,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(K.L) 500/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24750
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "L",
+        "caption": "Denomination and Pieces CBM(K.L) 1000/-",
+        "cdval": "13",
+        "cdidx": 13,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(K.L) 1000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24751
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "M",
+        "caption": "Denomination and Pieces CBM(R.W.E) 5000/-",
+        "cdval": "14",
+        "cdidx": 14,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(R.W.E) 5000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24752
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "O",
+        "caption": "Denomination and Pieces CBM(R.W.E.N) 5000/-",
+        "cdval": "16",
+        "cdidx": 16,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(R.W.E.N) 5000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24753
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "Q",
+        "caption": "Denomination and Pieces CBM(NBD) 50/-",
+        "cdval": "18",
+        "cdidx": 18,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 50/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24754
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "R",
+        "caption": "Denomination and Pieces CBM(NBD) 100/-",
+        "cdval": "19",
+        "cdidx": 19,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 100/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24755
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "S",
+        "caption": "Denomination and Pieces CBM(NBD) 200/-",
+        "cdval": "20",
+        "cdidx": 20,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 200/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24756
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "U",
+        "caption": "Denomination and Pieces CBM(NBD) 1000/-",
+        "cdval": "22",
+        "cdidx": 22,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 1000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24757
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "W",
+        "caption": "Denomination and Pieces CBM(NBD) 10000/-",
+        "cdval": "24",
+        "cdidx": 24,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM(NBD) 10000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 24758
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "Z",
+        "caption": "Coin",
+        "cdval": "26",
+        "cdidx": 26,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Coin\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25054
+      },
+      {
+        "cdgrp": "CSH",
+        "cdname": "FACETYPE",
+        "cdid": "Y",
+        "caption": "Denomination and Pieces CBM 20000/-",
+        "cdval": "25",
+        "cdidx": 25,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Denomination and Pieces CBM 20000/-\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25181
+      }
+    ]
+  }
+]

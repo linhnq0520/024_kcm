@@ -1,0 +1,62 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-29T11:38:19.6192854Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "BO_PMT_ACC_LKG_ADD_api_rulefunc_PMT_ACCOUNT_LINKAGE_GET_INFO_MACNO_CRD",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_PMT_ACC_LKG_ADD_api_rulefunc_PMT_ACCOUNT_LINKAGE_GET_INFO_MACNO",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_PMT_ACC_LKG_ADD_api_rulefunc_PMT_ACCOUNT_LINKAGE_GET_INFO_MACNO_CRD",
+        "learn_api_name": "BO_PMT_ACC_LKG_ADD_api_rulefunc_PMT_ACCOUNT_LINKAGE_GET_INFO_MACNO_CRD",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_PMT_ACC_LKG_ADD_api_rulefunc_PMT_ACCOUNT_LINKAGE_GET_INFO_MACNO",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": null,
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"CRD_GET_INFO_CUSTOMER\",\r\n    \"lang\": \"MapS.infoRequest(lang)\",\r\n    \"token\": \"MapS.context(token)\",\r\n    \"fields\": {\r\n        \"account_number\": \"MapS.dataS(FO_DPT_OPAL.master_account_number)\"\r\n    }\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 3722
+      }
+    ]
+  }
+]

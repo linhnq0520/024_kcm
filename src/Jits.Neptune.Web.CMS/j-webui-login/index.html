@@ -1,0 +1,38 @@
+<!doctype html><html lang="vi" xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"/><link rel="icon" href="/login/favicon.ico"/><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0,maximum-scale=1"><link rel="stylesheet" href="/login/cssFramework/bootstrap/bootstrap-grid.min.css"/><link rel="stylesheet" href="/login/cssFramework/framework.css"/><script type="text/javascript" src="/login/jsencrypt/jsencrypt.min.js"></script><script type="text/javascript" src="/login/jsencrypt/aes.js"></script><script src="/login/jsFramework/amination/anime.min.js"></script><title>Loading...</title><script type="text/javascript">window.process_loading = {
+      loading: {
+        main_script: 2,//tải các trang chính
+        template_script: 2,//tải các trang con của template
+        template_component: 1,//tải component
+        template_css: 0,//tải các css của template đó
+        app_data:2
+      },
+      max: {
+        main_script: 2,//tải các trang chính
+        template_script: 2,//tải các trang con của template
+        template_component: 1,//tải component
+        template_css: 0,//tải các css của template đó
+        app_data:2
+      }
+    };
+    function addSriptTemplate(link_) {
+    
+        var el_link = document.createElement('script');
+        el_link.setAttribute("type", "text/javascript");
+        el_link.src = link_;
+        el_link.onload = () => {
+          window.process_loading.loading.template_script--;
+          window.processLoadingGUI("Template Script", (window.process_loading.max.template_script - window.process_loading.loading.template_script) + "/" + window.process_loading.max.template_script);
+          if (window.process_loading.loading.template_script === 0
+            && window.process_loading.loading.main_script === 0) {
+            window.callStart();
+          }
+        };
+        el_link.onerror = function (error) {
+          console.error('Error loading script:', error);
+          // Handle the error as needed, e.g., call a different callback or log the error
+          window.showLoadingError()
+        };
+        document.head.appendChild(el_link);
+     
+      
+    }</script><link href="/login/static/css/main.3dfadd7f.chunk.css" rel="stylesheet"></head><body><div id="root" style="visibility:hidden"></div><div id="loading" style="position:fixed;z-index:99;top:0;left:0"></div><script>!function(c){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,a=[];i<n.length;i++)t=n[i],f[t]&&a.push(f[t][0]),f[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(c[r]=o[r]);for(d&&d(e);a.length;)a.shift()();return p.push.apply(p,u||[]),l()}function l(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==f[u]&&(n=!1)}n&&(p.splice(r--,1),e=s(s.s=t[0]))}return e}var t={},f={3:0},p=[];function s(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return c[e].call(r.exports,r,r.exports,s),r.l=!0,r.exports}s.e=function(u){var e=[],t=f[u];if(0!==t)if(t)e.push(t[2]);else{var r=new Promise(function(e,r){t=f[u]=[e,r]});e.push(t[2]=r);var n,i=document.createElement("script");i.charset="utf-8",i.timeout=120,s.nc&&i.setAttribute("nonce",s.nc),i.src=s.p+"static/js/"+({}[u]||u)+"."+{0:"02641ec2",1:"ce8528f3"}[u]+".chunk.js",n=function(e){i.onerror=i.onload=null,clearTimeout(a);var r=f[u];if(0!==r){if(r){var t=e&&("load"===e.type?"missing":e.type),n=e&&e.target&&e.target.src,o=new Error("Loading chunk "+u+" failed.\n("+t+": "+n+")");o.type=t,o.request=n,r[1](o)}f[u]=void 0}};var a=setTimeout(function(){n({type:"timeout",target:i})},12e4);i.onerror=i.onload=n,document.head.appendChild(i)}return Promise.all(e)},s.m=c,s.c=t,s.d=function(e,r,t){s.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(r,e){if(1&e&&(r=s(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(s.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)s.d(t,n,function(e){return r[e]}.bind(null,n));return t},s.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(r,"a",r),r},s.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},s.p="/login/",s.oe=function(e){throw console.error(e),e};var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var d=n;l()}([])</script><script src="/login/static/js/4.82d28328.chunk.js"></script><script src="/login/static/js/main.f3a3af5f.chunk.js"></script></body></html>

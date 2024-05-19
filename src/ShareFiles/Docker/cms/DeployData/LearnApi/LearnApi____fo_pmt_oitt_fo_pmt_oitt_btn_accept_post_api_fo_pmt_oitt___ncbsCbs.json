@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.6811657Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_pmt_oitt_fo_pmt_oitt_btn_accept_post_api_fo_pmt_oitt",
+        "learn_api_name": "fo_pmt_oitt_fo_pmt_oitt_btn_accept_post_api_fo_pmt_oitt",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_PMT_OITT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"PMT_OITT\",\r\n    \"lang\": \"MapS.infoRequest(lang)\",\r\n    \"token\": \"MapS.context(token)\",\r\n    \"fields\": {\r\n        \"nostro_bank\": \"MapS.dataS(FO_PMT_OITT.nostro_bank)\",\r\n        \"beneficiary_bank\": \"MapS.dataS(FO_PMT_OITT.beneficiary_bank)\",\r\n        \"bank_address\": \"MapS.dataS(FO_PMT_OITT.bank_address)\",\r\n        \"bank_country\": \"MapS.dataS(FO_PMT_OITT.bank_country)\",\r\n        \"product_code\": \"MapS.dataS(FO_PMT_OITT.product_code)\",\r\n        \"reference_number\": \"MapS.dataS(FO_PMT_OITT.reference_number)\",\r\n        \"sender_information\": \"MapS.dataS(FO_PMT_OITT.sender_information)\",\r\n        \"sender_name\": \"MapS.dataS(FO_PMT_OITT.sender_name)\",\r\n          \"display_rate\": \"MapS.dataS(FO_PMT_OITT.display_rate)\",\r\n        \"sender_id\": \"MapS.dataS(FO_PMT_OITT.sender_id)\",\r\n        \"sender_address\": \"MapS.dataS(FO_PMT_OITT.sender_address)\",\r\n        \"sender_phone\": \"MapS.dataS(FO_PMT_OITT.sender_phone)\",\r\n        \"sender_type\": \"MapS.dataS(FO_PMT_OITT.sender_type)\",\r\n        \"beneficiary_account_number\": \"MapS.dataS(FO_PMT_OITT.beneficiary_account_number)\",\r\n        \"receiver_information\": \"MapS.dataS(FO_PMT_OITT.receiver_information)\",\r\n        \"receiver_name\": \"MapS.dataS(FO_PMT_OITT.receiver_name)\",\r\n        \"receiver_id\": \"MapS.dataS(FO_PMT_OITT.receiver_id)\",\r\n        \"receiver_address\": \"MapS.dataS(FO_PMT_OITT.receiver_address)\",\r\n        \"receiver_phone\": \"MapS.dataS(FO_PMT_OITT.receiver_phone)\",\r\n        \"receiver_type\": \"MapS.dataS(FO_PMT_OITT.receiver_type)\",\r\n        \"country\": \"MapS.dataS(FO_PMT_OITT.country)\",\r\n        \"other_information_ctxg5\": \"MapS.dataS(FO_PMT_OITT.other_information_ctxg5)\",\r\n        \"purpose\": \"MapS.dataS(FO_PMT_OITT.purpose)\",\r\n        \"sender_to_receiver_info\": \"MapS.dataS(FO_PMT_OITT.sender_to_receiver_info)\",\r\n        \"test_key_number\": \"MapS.dataS(FO_PMT_OITT.test_key_number)\",\r\n        \"other_information\": {\r\n            \"goods_type\": \"MapS.dataS(FO_PMT_OITT.other_information.goods_type)\",\r\n            \"goods_list\": \"MapS.dataS(FO_PMT_OITT.other_information.goods_list)\"\r\n        },\r\n        \"payment_by\": \"MapS.dataS(FO_PMT_OITT.payment_by)\",\r\n        \"account_number\": \"MapS.dataS(FO_PMT_OITT.account_number)\",\r\n        \"cheque_no\": \"MapS.dataS(FO_PMT_OITT.cheque_no)\",\r\n        \"currency_code\": \"MapS.dataS(FO_PMT_OITT.currency_code)\",\r\n        \"remitting_currency\": \"MapS.dataS(FO_PMT_OITT.remitting_currency)\",\r\n        \"inclusive\": \"MapS.dataS(FO_PMT_OITT.inclusive)\",\r\n        \"amount_before_fees\": \"MapS.dataN(FO_PMT_OITT.amount_before_fees)\",\r\n        \"vat\": \"MapS.dataN(FO_PMT_OITT.vat)\",\r\n        \"fee\": \"MapS.dataN(FO_PMT_OITT.fee)\",\r\n        \"amount_receive_from_customer\": \"MapS.dataN(FO_PMT_OITT.amount_receive_from_customer)\",\r\n        \"receive_by\": \"MapS.dataS(FO_PMT_OITT.receive_by)\",\r\n        \"cross_rate\": \"MapS.dataN(FO_PMT_OITT.cross_rate)\",\r\n        \"reverse_rate\": \"MapS.dataN(FO_PMT_OITT.reverse_rate)\",\r\n        \"remitting_amount\": \"MapS.dataN(FO_PMT_OITT.remitting_amount)\",\r\n        \"remitting_amount_in_base_currency\": \"MapS.dataN(FO_PMT_OITT.remitting_amount_in_base_currency)\",\r\n        \"branch_cd\": \"MapS.dataN(FO_PMT_OITT.branch_cd)\",\r\n        \"payment_instruction\": \"MapS.dataS(FO_PMT_OITT.payment_instruction)\",\r\n        \"linkage_account\": \"MapS.dataS(FO_PMT_OITT.linkage_account)\",\r\n        \"linkage_amount\": \"MapS.dataN(FO_PMT_OITT.linkage_amount)\",\r\n        \"share_fee_rate\": \"MapS.dataN(FO_PMT_OITT.share_fee_rate)\",\r\n        \"share_fee_amount\": \"MapS.dataN(FO_PMT_OITT.share_fee_amount)\",\r\n        \"total_fee_for_cash\": \"MapS.dataN(FO_PMT_OITT.total_fee_for_cash)\",\r\n        \"total_send_amount\": \"MapS.dataN(FO_PMT_OITT.total_send_amount)\",\r\n        \"total_fee_for_deposit\": \"MapS.dataN(FO_PMT_OITT.total_fee_for_deposit)\",\r\n        \"total_fee_for_accounting\": \"MapS.dataN(FO_PMT_OITT.total_fee_for_accounting)\",\r\n        \"branch_for_deposit_account\": \"MapS.dataS(FO_PMT_OITT.branch_for_deposit_account)\",\r\n        \"current_balance\": \"MapS.dataN(FO_PMT_OITT.current_balance)\",\r\n        \"payment_exchange_rate\": \"MapS.dataN(FO_PMT_OITT.payment_exchange_rate)\",\r\n        \"remitting_exchange_rate\": \"MapS.dataN(FO_PMT_OITT.remitting_exchange_rate)\",\r\n        \"nostro_account\": \"MapS.dataS(FO_PMT_OITT.nostro_account)\",\r\n        \"available_balance_camt3\": \"MapS.dataN(FO_PMT_OITT.available_balance_camt3)\",\r\n        \"available_balance_cipaid\": \"MapS.dataN(FO_PMT_OITT.available_balance_cipaid)\",\r\n        \"fax_number\": \"MapS.dataS(FO_PMT_OITT.fax_number)\",\r\n        \"current_deposit_account\": \"MapS.dataS(FO_PMT_OITT.current_deposit_account)\",\r\n        \"detail_of_charges\": \"MapS.dataS(FO_PMT_OITT.detail_of_charges)\",\r\n        \"description\": \"MapS.dataS(FO_PMT_OITT.description)\",\r\n        \"fee_in_remitting_currency\": \"MapS.dataN(FO_PMT_OITT.fee_in_remitting_currency)\",\r\n        \"fee_in_based_currency\": \"MapS.dataN(FO_PMT_OITT.fee_in_based_currency)\",\r\n        \"rate_rccr\": \"MapS.dataN(FO_PMT_OITT.rate_rccr)\",\r\n        \"message_type\": \"MapS.dataS(FO_PMT_OITT.message_type)\",\r\n        \"check_rate\": \"MapS.dataS(FO_PMT_OITT.check_rate)\",\r\n        \"nostro_bank_name\": \"MapS.dataS(FO_PMT_OITT.nostro_bank_name)\",\r\n        \"beneficiary_bank_name\": \"MapS.dataS(FO_PMT_OITT.beneficiary_bank_name)\",\r\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\",\r\n        \"fee_data\": \"MapS.arrayJson(FO_PMT_OITT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"\r\n    }\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1400
+      }
+    ]
+  }
+]

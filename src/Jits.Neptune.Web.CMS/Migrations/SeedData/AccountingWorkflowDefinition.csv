@@ -1,0 +1,884 @@
+﻿WorkflowId;FullInterfaceName;MethodName;Status;WorkflowFunc;TableName;MappingResponse;MappingRequest;IsCommonProcess;IdFieldName
+ACT_ACCHRT_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ACT_GET_ACCHRT;;"{
+    ""id"": ""MapS.dataS(acno)"",
+    ""bank_account_number"": ""MapS.dataS(bacno)"",
+    ""currency_code"": ""MapS.dataSNull(ccrcd)"",
+    ""branch_id"": ""MapS.dataN(branchid)"",
+    ""branch_code"": ""MapS.dataSNull(branchcode)"",
+    ""parent_account_id"": ""MapS.dataSNull(parentid)"",
+    ""account_level"": ""MapS.dataN(aclvl)"",
+    ""is_account_leave"": ""MapS.dataS(isleave)"",
+    ""balance_side"": ""MapS.dataS(bside)"",
+    ""reverse_balance"": ""MapS.dataS(rbal)"",
+    ""posting_side"": ""MapS.dataS(pside)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""short_account_name"": ""MapS.dataS(sname)"",
+        ""mname"": ""MapS.dataSNull(mname)"",
+    ""multi_value_name"":
+    {
+      ""L"": ""MapS.stringObject(mname.L)"",
+        ""T"": ""MapS.stringObject(mname.T)"",
+        ""K"": ""MapS.stringObject(mname.K)"",
+        ""V"": ""MapS.stringObject(mname.V)""
+    },
+    ""account_classification"": ""MapS.dataS(accls)"",
+  ""sub_classification"": ""BA"",
+    ""account_categories"": ""MapS.dataS(accat)"",
+    ""account_group"": ""MapS.dataS(acgrp)"",
+    ""direct_posting"": ""MapS.dataS(isdirect)"",
+    ""is_visible"": ""MapS.dataS(isvisible)"",
+    ""is_multi_currency"": ""MapS.dataS(ismulticcy)"",
+    ""job_process_option"": ""MapS.dataSTrim(jobopt)"",
+    ""ref_account_number"": ""MapS.dataSNull(refac)"",
+    ""references_number"": ""MapS.dataSNull(refnum)"",
+    ""is_cash_account"": ""MapS.dataI(iscashaccount)"",
+    ""is_master_account"": ""MapS.dataI(ismasteraccount)""
+}";"{""I"":""MapS.dataS(fields.id)""}";1;
+ACT_FXCLR_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005007002;O9SYS.S_ACFX;"{
+ ""account_currency"": ""MapS.dataS(acccr)"",
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""branch_id"": ""MapS.dataN(branchid)"",
+ ""branch_code"": ""MapS.dataSNull(branchcode)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""clearing_currency"": ""MapS.dataS(clrccr)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)"" 
+}";"{
+""ACCCR"": ""MapS.dataS(fields.account_currency)"",
+""ACNO"": ""MapS.dataS(fields.account_number)"",
+""ACNAME"": ""MapS.dataSNull(fields.account_name)"",
+""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+""CLRCCR"": ""MapS.dataS(fields.clearing_currency)"",
+""CLRTYPE"": ""MapS.dataS(fields.clearing_type)""
+}";1;
+ACT_ACCLR_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_IBT_CLEARING;;"{
+ ""id"": {
+  ""BRANCHID"": ""MapS.dataI(branchid)"",
+  ""CCRID"": ""MapS.dataS(ccrid)"",
+  ""CLRID"": ""MapS.dataI(clrid)"",
+  ""CLRTYPE"": ""MapS.dataS(clrtype)"",
+ },
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""bank_account_number"": ""MapS.dataSNull(bacno)"",
+ ""branch_code"": ""MapS.dataN(branchid)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""currency_code"": ""MapS.dataS(ccrid)"",
+ ""clearing_branch_code"": ""MapS.dataN(clrid)"",
+ ""clearing_branch_name"": ""MapS.dataSNull(clridct)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)""
+}";"{
+    ""bacno"": ""MapS.dataS(fields.bank_account_number)"",
+    ""brname"": ""MapS.dataSNull(fields.branch_name)"", 
+    ""ccrid"": ""MapS.dataS(fields.currency_id)"", 
+    ""clridct"": ""MapS.dataSNull(fields.clearing_branch_name)"", 
+    ""clrtypect"": ""MapS.dataS(fields.clearing_type)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+ACT_FXCLR_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_FOREIGN_EXCHANGE_CLEARING;;"{
+ ""id"": {
+  ""BRANCHID"": ""MapS.dataI(branchid)"",
+  ""ACCCR"": ""MapS.dataS(acccr)"",
+  ""CLRCCR"": ""MapS.dataS(clrccr)"",
+  ""CLRTYPE"": ""MapS.dataS(clrtype)"",
+ },
+ ""account_currency"": ""MapS.dataS(acccr)"",
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""bank_account_number"": ""MapS.dataSNull(bacno)"",
+ ""branch_id"": ""MapS.dataN(branchid)"",
+ ""branch_code"": ""MapS.dataSNull(branchcode)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""clearing_currency"": ""MapS.dataS(clrccr)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)"" 
+}";"{
+    ""acccr"": ""MapS.dataS(fields.account_currency)"",
+    ""bacno"": ""MapS.dataSNull(fields.bank_account_number)"", 
+    ""brname"": ""MapS.dataSNull(fields.branch_name)"",
+    ""clrccr"": ""MapS.dataS(fields.clearing_currency)"",
+    ""clrtypect"": ""MapS.dataS(fields.clearing_type)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)"" 
+}";1;
+ACT_ACGRPDEF_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ACT_GET_ACGRPDEF;;;;1;
+ACT_FXCLR_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActForeignExchangeAccountWorkflowService;View;1;;;;;1;
+ACT_ACCOM_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_ACCOUNTING_COMMON;;"{
+    ""id"": ""MapS.dataS(acname)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataSNull(acno)"",
+    ""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+    ""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{
+    ""acname"": ""MapS.dataS(fields.account_name)"",
+    ""acno"": ""MapS.dataSNull(fields.account_number)"",
+    ""refacno"": ""MapS.dataSNull(fields.ref_account_number)"",
+    ""refacno2"": ""MapS.dataSNull(fields.ref_account_number2)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)"" 
+}";1;
+ACT_ACGRPDEFDTL_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005002002;O9SYS.S_ACGRPDEFDTL;"{
+    ""system_account_name"": ""MapS.dataS(acgrpname)"", 
+    ""bank_define_account_name"": ""MapS.dataS(bacgrpname)"",
+    ""o9module"": ""MapS.dataS(o9module)"",
+    ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{
+    ""ACGRPNAME"": ""MapS.dataS(fields.system_account_name)"",
+    ""BACGRPNAME"": ""MapS.dataS(fields.bank_define_account_name)"",
+    ""O9MODULE"": ""MapS.dataSNull(fields.o9module)"" 
+}";1;
+ACT_ACGRPDEF_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005001002;O9SYS.S_ACGRPDEF;"{
+    ""group_id"": ""MapS.dataN(grpid)"", 
+    ""o9module"": ""MapS.dataS(o9module)"",
+    ""account_group_def"": ""MapS.dataS(acgrpdef)"",
+    ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{
+    ""ACGRPDEF"": ""MapS.dataS(fields.account_group_def)"",
+    ""GRPID"": ""MapS.dataN(fields.group_id)"",
+    ""O9MODULE"": ""MapS.dataS(fields.o9module)""
+}";1;
+ACT_ACCHRT_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012002000002;O9DATA.D_ACCHRT;"{
+    ""id"": ""MapS.dataS(acno)"",
+    ""bank_account_number"": ""MapS.dataS(bacno)"",
+    ""currency_code"": ""MapS.dataSNull(ccrcd)"",
+    ""branch_id"": ""MapS.dataN(branchid)"",
+    ""branch_code"": ""MapS.dataSNull(branchcode)"",
+    ""parent_account_id"": ""MapS.dataSNull(parentid)"",
+    ""account_level"": ""MapS.dataN(aclvl)"",
+    ""is_account_leave"": ""MapS.dataS(isleave)"",
+    ""balance_side"": ""MapS.dataS(bside)"",
+    ""reverse_balance"": ""MapS.dataS(rbal)"",
+    ""posting_side"": ""MapS.dataS(pside)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""short_account_name"": ""MapS.dataS(sname)"",
+        ""mname"": ""MapS.dataSNull(mname)"",
+    ""multi_value_name"":
+    {
+      ""L"": ""MapS.stringObject(mname.L)"",
+        ""T"": ""MapS.stringObject(mname.T)"",
+        ""K"": ""MapS.stringObject(mname.K)"",
+        ""V"": ""MapS.stringObject(mname.V)""
+    },
+    ""account_classification"": ""MapS.dataS(accls)"",
+    ""account_categories"": ""MapS.dataS(accat)"",
+    ""account_group"": ""MapS.dataS(acgrp)"",
+    ""direct_posting"": ""MapS.dataS(isdirect)"",
+    ""is_visible"": ""MapS.dataS(isvisible)"",
+    ""is_multi_currency"": ""MapS.dataS(ismulticcy)"",
+    ""job_process_option"": ""MapS.dataS(jobopt)"",
+    ""ref_account_number"": ""MapS.dataSNull(refac)"",
+    ""references_number"": ""MapS.dataSNull(refnum)"",
+    ""is_cash_account"": ""MapS.dataI(iscashaccount)"",
+    ""is_master_account"": ""MapS.dataI(ismasteraccount)""
+}";"{
+    ""BACNO"": ""MapS.dataS(fields.bank_account_number)"",
+    ""CCRCD"": ""MapS.dataSNull(fields.currency_code)"", 
+    ""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+    ""ALLBRANCH"": ""MapS.dataI(fields.allbranch)"",
+    ""ACLVL"": ""MapS.dataNNull(fields.account_level)"",
+    ""BSIDE"": ""MapS.dataS(fields.balance_side)"",
+    ""RBAL"": ""MapS.dataS(fields.reverse_balance)"",
+    ""PSIDE"": ""MapS.dataS(fields.posting_side)"",
+    ""ACNAME"": ""MapS.dataS(fields.account_name)"",
+    ""SNAME"": ""MapS.dataS(fields.short_account_name)"",
+    ""MNAME"": ""MapS.dataSNull(fields.multi_value_name)"", 
+    ""ACCLS"": ""MapS.dataS(fields.account_classification)"",
+  ""SUBCLS"": ""MapS.dataS(fields.sub_classification)"",
+    ""ACCAT"": ""MapS.dataS(fields.account_categories)"",
+    ""ACGRP"": ""MapS.dataS(fields.account_group)"",
+    ""ISDIRECT"": ""MapS.dataS(fields.direct_posting)"",
+    ""ISVISIBLE"": ""MapS.dataS(fields.is_visible)"",
+    ""ISMULTICCY"": ""MapS.dataS(fields.is_multi_currency)"",
+    ""JOBOPT"": ""MapS.dataS(fields.job_process_option)"",
+ ""REFAC"": ""MapS.dataSNull(fields.ref_account_number)""
+}";1;
+ACT_ACMAP_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActAccountMapTableWorkflowService;SimpleSearch;1;;;;;1;
+ACT_ACGRPDEFDTL_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_ACCOUNT_OF_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""ACGRPNAME"": ""MapS.dataS(acgrpname)"",
+   ""O9MODULE"": ""MapS.dataS(o9module)""
+ },
+  ""system_account_name"": ""MapS.dataS(acgrpname)"",
+  ""bank_define_account_name"": ""MapS.dataS(bacgrpname)"",
+  ""o9module"": ""MapS.dataS(o9module)"",
+  ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_ACCOM_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_ACCOUNTING_COMMON;"{
+    ""id"": ""MapS.dataS(acname)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataSNull(acno)"",
+    ""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+    ""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{
+	""account_name"": ""MapS.dataS(acname)"",
+	""account_number"": ""MapS.dataSNull(acno)"",
+	""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+	""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_ACGRPDEF_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_ACCOUNTING_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""GRPID"": ""MapS.dataI(grpid)"",
+   ""ACGRPDEF"": ""MapS.dataS(acgrpdef)""
+ },
+ ""group_id"": ""MapS.dataN(grpid)"",
+ ""o9module"": ""MapS.dataS(o9module)"",
+ ""account_group_def"": ""MapS.dataS(acgrpdef)"",
+ ""module"": ""MapS.dataSNull(mdlname)""
+}";"{
+  ""grpid"": ""MapS.dataNNull(fields.group_id)"", 
+  ""acgrpdef"": ""MapS.dataS(fields.account_group_def)"",
+  ""mdlname"": ""MapS.dataS(fields.module)"",
+  ""page_index"": ""MapS.dataI(fields.page_index)"",
+  ""page_size"": ""MapS.dataI(fields.page_size)"",
+  ""search_text"": ""MapS.dataS(fields.search_text)"" 
+}";1;
+ACT_ACGRP_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_DETAIL_ACCOUNT_OF_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""GRPID"": ""MapS.dataI(grpid)"",
+   ""ACNAME"": ""MapS.dataS(acname)""
+ },
+    ""account_group_def"": ""MapS.dataSNull(acgrpdef)"", 
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataSNull(acno)"",
+    ""desc"": ""MapS.dataSNull(descr)"",
+    ""group_id"": ""MapS.dataN(grpid)"" 
+}";"{
+  ""acgrpdef"": ""MapS.dataS(fields.account_group_def)"",
+  ""acname"": ""MapS.dataS(fields.account_name)"", 
+  ""acno"": ""MapS.dataSNull(fields.account_number)"", 
+  ""descr"": ""MapS.dataSNull(fields.desc)"", 
+  ""grpid"": ""MapS.dataNNull(fields.group_id)"",
+  ""page_index"": ""MapS.dataI(fields.page_index)"",
+  ""page_size"": ""MapS.dataI(fields.page_size)"",
+  ""search_text"": ""MapS.dataS(fields.search_text)"" 
+}";1;
+ACT_ACCLR_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_IBT_CLEARING;;"{
+ ""id"": {
+  ""BRANCHID"": ""MapS.dataI(branchid)"",
+  ""CCRID"": ""MapS.dataS(ccrid)"",
+  ""CLRID"": ""MapS.dataI(clrid)"",
+  ""CLRTYPE"": ""MapS.dataS(clrtype)"",
+ },
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""bank_account_number"": ""MapS.dataSNull(bacno)"",
+ ""branch_code"": ""MapS.dataN(branchid)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""currency_code"": ""MapS.dataS(ccrid)"",
+ ""clearing_branch_code"": ""MapS.dataN(clrid)"",
+ ""clearing_branch_name"": ""MapS.dataSNull(clridct)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)""
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_FXCLR_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_FOREIGN_EXCHANGE_CLEARING;;"{
+ ""id"": {
+  ""BRANCHID"": ""MapS.dataI(branchid)"",
+  ""ACCCR"": ""MapS.dataS(acccr)"",
+  ""CLRCCR"": ""MapS.dataS(clrccr)"",
+  ""CLRTYPE"": ""MapS.dataS(clrtype)"",
+ },
+ ""account_currency"": ""MapS.dataS(acccr)"",
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""bank_account_number"": ""MapS.dataSNull(bacno)"",
+ ""branch_id"": ""MapS.dataN(branchid)"",
+ ""branch_code"": ""MapS.dataSNull(branchcode)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""clearing_currency"": ""MapS.dataS(clrccr)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_ACGRP_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005003002;O9SYS.S_ACGRP;"{
+    ""account_group_def"": ""MapS.dataSNull(acgrpdef)"", 
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataSNull(acno)"",
+    ""desc"": ""MapS.dataSNull(descr)"",
+    ""group_id"": ""MapS.dataN(grpid)"" 
+}";"{
+""ACNAME"": ""MapS.dataS(fields.account_name)"",
+""ACNO"": ""MapS.dataSNull(fields.account_number)"",
+""GRPID"": ""MapS.dataNNull(fields.group_id)"",
+""REFACNO"": ""MapS.dataSNull(fields.ref_account_number)"",
+""REFACNO2"": ""MapS.dataSNull(fields.ref_account_number2)""
+}";1;
+ACT_ACCOM_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005005002;O9SYS.S_ACCOM;"{
+	""account_name"": ""MapS.dataS(acname)"",
+	""account_number"": ""MapS.dataSNull(acno)"",
+	""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+	""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{
+""ACNAME"": ""MapS.dataS(fields.account_name)"",
+""ACNO"": ""MapS.dataSNull(fields.account_number)"",
+""REFACNO"": ""MapS.dataSNull(fields.ref_account_number)"",
+""REFACNO2"": ""MapS.dataSNull(fields.ref_account_number2)""
+}";1;
+ACT_ACCLR_INS;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012005006002;O9SYS.S_ACCLR;"{
+  ""account_number"": ""MapS.dataS(acno)"",
+  ""branch_code"": ""MapS.dataN(branchid)"",
+  ""branch_name"": ""MapS.dataSNull(brname)"",
+  ""currency_code"": ""MapS.dataS(ccrid)"",
+  ""clearing_branch_code"": ""MapS.dataN(clrid)"",
+  ""clearing_branch_name"": ""MapS.dataSNull(clridct)"",
+  ""clearing_type"": ""MapS.dataS(clrtype)"",
+  ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)"" 
+}";"{
+""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+""CCRID"": ""MapS.dataS(fields.currency_id)"",
+""CLRID"": ""MapS.dataNNull(fields.clearing_branch_id)"",
+""CLRTYPE"": ""MapS.dataS(fields.clearing_type)"",
+""ACNO"": ""MapS.dataS(fields.account_number)"",
+""ACNAME"": ""MapS.dataSNull(fields.account_name)""
+}";1;
+ACT_ACCLR_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActClearAccountWorkflowService;View;1;;;;;1;
+ACT_ACMAP_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActAccountMapTableWorkflowService;AdvanceSearch;1;;;;;1;
+ACT_ACGRPDEFDTL_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActModuleAccountListWorkflowService;View;1;;;;;1;
+ACT_ACCOM_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;ACT_GET_ACCOM;;"{
+	""account_name"": ""MapS.dataS(acname)"",
+	""account_number"": ""MapS.dataSNull(acno)"",
+	""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+	""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{""I"":""MapS.dataS(fields.account_name)""}";1;
+ACT_ACCHRT_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_BANK_ACCOUNT_DEFINITION;;"{
+	""id"": ""MapS.dataS(acno)"",
+	""account_classification"": ""MapS.dataS(accls)"",
+	""account_group"": ""MapS.dataS(acgrp)"",
+	""account_level"": ""MapS.dataN(aclvl)"",
+	""account_name"": ""MapS.dataS(acname)"",
+	""bank_account_number"": ""MapS.dataS(bacno)"",
+	""balance_side"": ""MapS.dataS(bside)"",
+	""currency_code"": ""MapS.dataS(ccrcd)""
+}";"{ ""accls"": ""MapS.dataS(fields.account_classification)"", ""acgrp"": ""MapS.dataS(fields.account_group)"", ""oprtval_aclvl"": ""MapS.dataS(fields.oprtval_aclvl)"", ""aclvl"": ""MapS.dataNNull(fields.account_level_to)"", ""acname"": ""MapS.dataS(fields.account_name)"", ""bacno"": ""MapS.dataS(fields.bank_account_number)"", ""bside"": ""MapS.dataS(fields.balance_side)"", ""ccrcd"": ""MapS.dataS(fields.currency_code)"", ""page_index"": ""MapS.dataI(fields.page_index)"", ""page_size"": ""MapS.dataI(fields.page_size)"", ""search_text"": ""MapS.dataS(fields.search_text)"" }";1;
+ACT_ACCHRT_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_BANK_ACCOUNT_DEFINITION;;"{
+	""id"": ""MapS.dataS(acno)"",
+	""account_classification"": ""MapS.dataS(accls)"",
+	""account_group"": ""MapS.dataS(acgrp)"",
+	""account_level"": ""MapS.dataN(aclvl)"",
+	""account_name"": ""MapS.dataS(acname)"",
+	""bank_account_number"": ""MapS.dataS(bacno)"",
+	""balance_side"": ""MapS.dataS(bside)"",
+	""currency_code"": ""MapS.dataS(ccrcd)""
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_ACGRPDEF_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_ACCOUNTING_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""GRPID"": ""MapS.dataI(grpid)"",
+   ""ACGRPDEF"": ""MapS.dataS(acgrpdef)""
+ },
+ ""group_id"": ""MapS.dataN(grpid)"",
+ ""o9module"": ""MapS.dataS(o9module)"",
+ ""account_group_def"": ""MapS.dataS(acgrpdef)"",
+ ""module"": ""MapS.dataSNull(mdlname)""
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+ACT_ACGRPDEFDTL_SER_ADVANCE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;ACT_ACCOUNT_OF_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""ACGRPNAME"": ""MapS.dataS(acgrpname)"",
+   ""O9MODULE"": ""MapS.dataS(o9module)""
+ },
+  ""system_account_name"": ""MapS.dataS(acgrpname)"",
+  ""bank_define_account_name"": ""MapS.dataS(bacgrpname)"",
+  ""o9module"": ""MapS.dataS(o9module)"",
+  ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{
+  ""acgrpname"": ""MapS.dataS(fields.system_account_name)"",
+  ""bacgrpname"": ""MapS.dataS(fields.bank_define_account_name)"",
+  ""mdlname"": ""MapS.dataSNull(fields.module)"", 
+  ""page_index"": ""MapS.dataI(fields.page_index)"",
+  ""page_size"": ""MapS.dataI(fields.page_size)"",
+  ""search_text"": ""MapS.dataS(fields.search_text)""
+}";1;
+ACT_ACGRP_VIEW;Jits.Neptune.Web.CMS.LogicOptimal9.Workflow.IActAccountOfGroupWorkflowService;View;1;;;;;1;
+ACT_ACGRP_SER_SIMPLE;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;ACT_DETAIL_ACCOUNT_OF_GROUP_DEFINITION;;"{
+ ""id"": 
+ {
+   ""GRPID"": ""MapS.dataI(grpid)"",
+   ""ACNAME"": ""MapS.dataS(acname)""
+ },
+    ""account_group_def"": ""MapS.dataSNull(acgrpdef)"", 
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataSNull(acno)"",
+    ""desc"": ""MapS.dataSNull(descr)"",
+    ""group_id"": ""MapS.dataN(grpid)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+SQL_INSERT_FACCAT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;CreateBO;1;012004005002;O9DATA.D_FACCAT;"{
+ ""catalog_code"": ""MapS.dataS(catcd)"", 
+ ""id"": ""MapS.dataN(catid)"",
+ ""catalog_name"": ""MapS.dataS(catname)"",
+ ""catalog_status"": ""MapS.dataSNull(catsts)"", 
+ ""depreciation_method"": ""MapS.dataS(depmode)"",
+ ""fixed_asset_classification"": ""MapS.dataSNull(faclass)"",
+ ""fixed_asset_type"": ""MapS.dataS(fatype)"" 
+}";"{
+ ""CATCD"": ""MapS.dataS(fields.catalog_code)"",
+ ""CATNAME"": ""MapS.dataS(fields.catalog_name)"",
+ ""CATSTS"": ""MapS.dataSNull(fields.catalog_status)"",
+ ""DEPMODE"": ""MapS.dataS(fields.depreciation_method)"",
+ ""FACLASS"": ""MapS.dataSNull(fields.fixed_asset_classification)"",
+ ""FATYPE"": ""MapS.dataS(fields.fixed_asset_type)"",
+ ""GRPID"": ""MapS.dataI(fields.group_id)"",
+ ""APUSER"": ""MapS.userSession(Usrid)"",
+ ""USRID"": ""MapS.userSession(Usrid)""
+}";1;
+SQL_SEARCH_FACACT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;SimpleSearch;1;FAC_FIXED_ASSET_AND_TOOL;;"{
+	""fixed_asset_account_name"": ""MapS.dataSNull(acname)"", 
+	""account_number"": ""MapS.dataS(acno)"",
+	""booking_currency_code"": ""MapS.dataS(bkccrcd)"",
+	""catalog_code"": ""MapS.dataSNull(catcd)"", 
+	""id"": ""MapS.dataS(defacno)"",
+	""fixed_asset_status"": ""MapS.dataSNull(fasts)"", 
+	""fixed_asset_type"": ""MapS.dataS(fatype)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)""}";1;
+SQL_ADSEARCH_FACACT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;FAC_FIXED_ASSET_AND_TOOL;;"{
+    ""fixed_asset_account_name"": ""MapS.dataSNull(acname)"", 
+    ""account_number"": ""MapS.dataS(acno)"",
+    ""booking_currency_code"": ""MapS.dataS(bkccrcd)"",
+    ""catalog_code"": ""MapS.dataSNull(catcd)"", 
+    ""id"": ""MapS.dataS(defacno)"",
+    ""fixed_asset_status"": ""MapS.dataSNull(fasts)"", 
+    ""fixed_asset_type"": ""MapS.dataS(fatype)"" 
+}";"{
+    ""acname"": ""MapS.dataSNull(fields.fixed_asset_account_name)"", 
+    ""acno"": ""MapS.dataS(fields.account_number)"", 
+    ""bkccrcd"": ""MapS.dataS(fields.booking_currency_code)"",
+    ""catcd"": ""MapS.dataSNull(fields.catalog_code)"",
+    ""fasts"": ""MapS.dataSNull(fields.fixed_asset_status)"",
+    ""fatype"": ""MapS.dataS(fields.fixed_asset_type)"",
+    ""page_index"": ""MapS.dataI(fields.page_index)"",
+    ""page_size"": ""MapS.dataI(fields.page_size)"",
+    ""search_text"": ""MapS.dataS(fields.search_text)"" 
+}";1;
+SQL_VIEW_FACACT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;View;1;FAC_GET_FIXEDASSET;"{
+    ""id"": ""MapS.dataS(defacno)"",
+    ""account_number"": ""MapS.dataS(acno)"",
+    ""branch_id"": ""MapS.dataN(branchid)"",
+  ""brname"": ""MapS.dataS(brname)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""fixed_asset_account_name"": ""MapS.dataS(acname)"",
+    ""owner"": ""MapS.dataS(owner)"",
+    ""customer_id"": ""MapS.dataN(customerid)"",
+    ""customer_type"": ""C"",
+    ""catalog_id"": ""MapS.dataN(catid)"",
+    ""reference_number"": ""MapS.dataS(refnum)"",
+    ""fixed_asset_type"": ""MapS.dataS(fatype)"",
+    ""fixed_asset_classification"": ""MapS.dataS(faclass)"",
+    ""depreciation_method"": ""MapS.dataS(depmode)"",
+    ""fixed_asset_group"": ""MapS.dataS(fagrp)"",
+    ""fixed_asset_life_time"": ""MapS.dataN(falife)"",
+    ""fixed_asset_life_time_unit"": ""MapS.dataS(falifeun)"",
+    ""depreciation_rate"": ""MapS.dataN(fadrate)"",
+    ""buydt"": ""MapS.dataS(buydt)"",
+    ""dprdt"": ""MapS.dataS(dprdt)"",
+    ""provider_name"": ""MapS.dataS(prname)"",
+    ""booking_currency_code"": ""MapS.dataS(bkccrcd)"",
+    ""wrfrdt"": ""MapS.dataS(wrfrdt)"",
+    ""wrtodt"": ""MapS.dataS(wrtodt)"",
+    ""wrsrn"": ""MapS.dataS(wrsrn)"",
+    ""original_price"": ""MapS.dataN(orgprice)"",
+    ""booking_amount"": ""MapS.dataN(bkamt)"",
+    ""net_booking_value"": ""MapS.dataN(nbv)"",
+    ""accummulate_amount"": ""MapS.dataN(acmamt)"",
+    ""expense_amount"": ""MapS.dataN(expamt)"",
+    ""insurrance_value"": ""MapS.dataN(insval)"",
+    ""insurrance_fee"": ""MapS.dataN(insfee)"",
+    ""salvage_amount"": ""MapS.dataN(slvgamt)"",
+    ""income_amount"": ""MapS.dataN(inamt)"",
+    ""week_debit"": ""MapS.dataN(wdr)"",
+    ""week_credit"": ""MapS.dataN(wcr)"",
+    ""month_debit"": ""MapS.dataN(mdr)"",
+    ""month_credit"": ""MapS.dataN(mcr)"",
+    ""quater_debit"": ""MapS.dataN(qdr)"",
+    ""quater_credit"": ""MapS.dataN(qcr)"",
+    ""semiannual_debit"": ""MapS.dataN(hdr)"",
+    ""semiannual_credit"": ""MapS.dataN(hcr)"",
+    ""year_debit"": ""MapS.dataN(ydr)"",
+    ""year_credit"": ""MapS.dataN(ycr)"",
+    ""user_id"": ""MapS.dataN(usrid)"",
+    ""approve_user"": ""MapS.dataN(apuser)"",
+    ""remark"": ""MapS.dataS(rmkfld)"",
+    ""old_id_of_customer"": ""MapS.dataS(refid)"",
+    ""udfield1"": ""MapS.dataS(udfield1)"",
+    ""fixed_asset_status"": ""MapS.dataS(fasts)"",
+    ""cross_rate"": ""MapS.dataN(ccrrate)"",
+    ""expire_date"": ""MapS.dataS(exdate)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""user_created_code"": ""MapS.dataS(usrcd)"",
+    ""user_created_name"": ""MapS.dataS(usrname)"",
+    ""user_approved_code"": ""MapS.dataS(aprcd)"",
+    ""user_approved_name"": ""MapS.dataS(aprname)"",
+    ""staff_code"": ""MapS.dataN(crmid)"",
+    ""staff_name"": ""MapS.dataS(crmname)"",
+    ""catalog_code"": ""MapS.dataS(catcd)"",
+    ""catalog_name"": ""MapS.dataS(catname)"",
+  ""asset_user"": ""MapS.dataS(fausr)"",
+  ""location"": ""MapS.dataS(lctn)"",
+  ""description_transfer"": ""MapS.dataS(descrtf)""
+}";"{
+    ""id"": ""MapS.dataS(defacno)"",
+    ""account_number"": ""MapS.dataS(acno)"",
+    ""branch_id"": ""MapS.dataN(branchid)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""fixed_asset_account_name"": ""MapS.dataS(acname)"",
+    ""owner"": ""MapS.dataS(owner)"",
+    ""customer_id"": ""MapS.dataN(customerid)"",
+    ""customer_type"": ""MapS.dataS(ctmtype)"",
+    ""catalog_id"": ""MapS.dataN(catid)"",
+    ""reference_number"": ""MapS.dataS(refnum)"",
+    ""fixed_asset_type"": ""MapS.dataS(fatype)"",
+    ""fixed_asset_classification"": ""MapS.dataS(faclass)"",
+    ""depreciation_method"": ""MapS.dataS(depmode)"",
+    ""fixed_asset_group"": ""MapS.dataS(fagrp)"",
+    ""fixed_asset_life_time"": ""MapS.dataN(falife)"",
+    ""fixed_asset_life_time_unit"": ""MapS.dataS(falifeun)"",
+    ""depreciation_rate"": ""MapS.dataN(fadrate)"",
+    ""buydt"": ""MapS.dataS(buydt)"",
+    ""dprdt"": ""MapS.dataS(dprdt)"",
+    ""provider_name"": ""MapS.dataS(prname)"",
+    ""booking_currency_code"": ""MapS.dataS(bkccrcd)"",
+    ""wrfrdt"": ""MapS.dataS(wrfrdt)"",
+    ""wrtodt"": ""MapS.dataS(wrtodt)"",
+    ""wrsrn"": ""MapS.dataS(wrsrn)"",
+    ""original_price"": ""MapS.dataN(orgprice)"",
+    ""booking_amount"": ""MapS.dataN(bkamt)"",
+    ""net_booking_value"": ""MapS.dataN(nbv)"",
+    ""accummulate_amount"": ""MapS.dataN(acmamt)"",
+    ""expense_amount"": ""MapS.dataN(expamt)"",
+    ""insurrance_value"": ""MapS.dataN(insval)"",
+    ""insurrance_fee"": ""MapS.dataN(insfee)"",
+    ""salvage_amount"": ""MapS.dataN(slvgamt)"",
+    ""income_amount"": ""MapS.dataN(inamt)"",
+    ""week_debit"": ""MapS.dataN(wdr)"",
+    ""week_credit"": ""MapS.dataN(wcr)"",
+    ""month_debit"": ""MapS.dataN(mdr)"",
+    ""month_credit"": ""MapS.dataN(mcr)"",
+    ""quater_debit"": ""MapS.dataN(qdr)"",
+    ""quater_credit"": ""MapS.dataN(qcr)"",
+    ""semiannual_debit"": ""MapS.dataN(hdr)"",
+    ""semiannual_credit"": ""MapS.dataN(hcr)"",
+    ""year_debit"": ""MapS.dataN(ydr)"",
+    ""year_credit"": ""MapS.dataN(ycr)"",
+    ""user_id"": ""MapS.dataN(usrid)"",
+    ""approve_user"": ""MapS.dataN(apuser)"",
+    ""remark"": ""MapS.dataS(rmkfld)"",
+    ""old_id_of_customer"": ""MapS.dataS(refid)"",
+    ""udfield1"": ""MapS.dataS(udfield1)"",
+    ""fixed_asset_status"": ""MapS.dataS(fasts)"",
+    ""cross_rate"": ""MapS.dataN(ccrrate)"",
+    ""expire_date"": ""MapS.dataS(exdate)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""user_created_code"": ""MapS.dataS(usrcd)"",
+    ""user_created_name"": ""MapS.dataS(usrname)"",
+    ""user_approved_code"": ""MapS.dataS(aprcd)"",
+    ""user_approved_name"": ""MapS.dataS(aprname)"",
+    ""staff_code"": ""MapS.dataN(crmid)"",
+    ""staff_name"": ""MapS.dataS(crmname)"",
+    ""catalog_code"": ""MapS.dataS(catcd)"",
+    ""catalog_name"": ""MapS.dataS(catname)""
+}";"{""I"":""MapS.dataS(fields.id)""}";1;
+ACT_ACCHRT_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012002000004;O9DATA.D_ACCHRT;"{
+    ""id"": ""MapS.dataS(acno)"",
+    ""bank_account_number"": ""MapS.dataS(bacno)"",
+    ""currency_code"": ""MapS.dataSNull(ccrcd)"",
+    ""branch_id"": ""MapS.dataN(branchid)"",
+    ""branch_code"": ""MapS.dataSNull(branchcode)"",
+    ""parent_account_id"": ""MapS.dataSNull(parentid)"",
+    ""account_level"": ""MapS.dataN(aclvl)"",
+    ""is_account_leave"": ""MapS.dataS(isleave)"",
+    ""balance_side"": ""MapS.dataS(bside)"",
+    ""reverse_balance"": ""MapS.dataS(rbal)"",
+    ""posting_side"": ""MapS.dataS(pside)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""short_account_name"": ""MapS.dataS(sname)"",
+        ""mname"": ""MapS.dataSNull(mname)"",
+    ""multi_value_name"":
+    {
+      ""L"": ""MapS.stringObject(mname.L)"",
+        ""T"": ""MapS.stringObject(mname.T)"",
+        ""K"": ""MapS.stringObject(mname.K)"",
+        ""V"": ""MapS.stringObject(mname.V)""
+    },
+    ""account_classification"": ""MapS.dataS(accls)"",
+    ""account_categories"": ""MapS.dataS(accat)"",
+    ""account_group"": ""MapS.dataS(acgrp)"",
+    ""direct_posting"": ""MapS.dataS(isdirect)"",
+    ""is_visible"": ""MapS.dataS(isvisible)"",
+    ""is_multi_currency"": ""MapS.dataS(ismulticcy)"",
+    ""job_process_option"": ""MapS.dataSTrim(jobopt)"",
+    ""ref_account_number"": ""MapS.dataSNull(refac)"",
+    ""references_number"": ""MapS.dataSNull(refnum)"",
+    ""is_cash_account"": ""MapS.dataI(iscashaccount)"",
+    ""is_master_account"": ""MapS.dataI(ismasteraccount)""
+}";"{
+  ""ACNO"": ""MapS.dataS(fields.id)"",
+  ""id"": ""MapS.dataS(fields.id)"",
+  ""BACNO"": ""MapS.dataS(fields.bank_account_number)"",
+  ""CCRCD"": ""MapS.dataSNull(fields.currency_code)"",
+  ""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+  ""ACLVL"": ""MapS.dataNNull(fields.account_level)"",
+  ""BSIDE"": ""MapS.dataS(fields.balance_side)"",
+  ""RBAL"": ""MapS.dataS(fields.reverse_balance)"",
+  ""PSIDE"": ""MapS.dataS(fields.posting_side)"",
+  ""ACNAME"": ""MapS.dataS(fields.account_name)"",
+  ""SNAME"": ""MapS.dataS(fields.short_account_name)"",
+  ""MNAME"": ""MapS.stringObject(fields.multi_value_name)"",
+  ""ACCLS"": ""MapS.dataS(fields.account_classification)"",
+  ""SUBCLS"": ""MapS.dataS(fields.sub_classification)"",
+  ""ACCAT"": ""MapS.dataS(fields.account_categories)"",
+  ""ACGRP"": ""MapS.dataS(fields.account_group)"",
+  ""ISDIRECT"": ""MapS.dataS(fields.direct_posting)"",
+  ""ISVISIBLE"": ""MapS.dataS(fields.is_visible)"",
+  ""ISMULTICCY"": ""MapS.dataS(fields.is_multi_currency)"",
+  ""JOBOPT"": ""MapS.dataS(fields.job_process_option)"",
+ ""REFAC"": ""MapS.dataSNull(fields.ref_account_number)""
+}";1;ACNO
+ACT_ACGRPDEF_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005001004;O9SYS.S_ACGRPDEF;"{
+    ""group_id"": ""MapS.dataN(grpid)"", 
+    ""o9module"": ""MapS.dataS(o9module)"",
+    ""account_group_def"": ""MapS.dataS(acgrpdef)"",
+    ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{
+ ""id"": ""MapS.dataI(fields.group_id)"",
+    ""ACGRPDEF"": ""MapS.dataS(fields.account_group_def)"",
+    ""GRPID"": ""MapS.dataN(fields.group_id)"",
+    ""O9MODULE"": ""MapS.dataS(fields.o9module)""
+}";1;GRPID
+ACT_ACCHRT_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012002000005;O9DATA.D_ACCHRT;;"{
+ ""id"": ""MapS.dataS(fields.id)"",
+}";1;ACNO
+ACT_ACGRPDEFDTL_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005002004;O9SYS.S_ACGRPDEFDTL;"{
+    ""system_account_name"": ""MapS.dataS(acgrpname)"", 
+    ""bank_define_account_name"": ""MapS.dataS(bacgrpname)"",
+    ""o9module"": ""MapS.dataS(o9module)"",
+    ""module"": ""MapS.dataSNull(mdlname)"" 
+}";"{
+ ""id"": ""MapS.dataSNull(fields.o9module)"",
+    ""ACGRPNAME"": ""MapS.dataS(fields.system_account_name)"",
+    ""BACGRPNAME"": ""MapS.dataS(fields.bank_define_account_name)"",
+    ""O9MODULE"": ""MapS.dataSNull(fields.o9module)"" 
+}";1;O9MODULE
+ACT_ACGRPDEFDTL_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005002005;O9SYS.S_ACGRPDEFDTL;;"{
+ ""id"": ""MapS.dataJsonObject(fields.id)""
+}";1;object
+ACT_ACGRPDEF_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005001005;O9SYS.S_ACGRPDEF;;"{
+ ""id"": ""MapS.dataJsonObject(fields.id)""
+}";1;object
+ACT_ACGRP_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005003004;O9SYS.S_ACGRP;"{
+    ""group_id"": ""MapS.dataN(grpid)"",
+    ""account_name"": ""MapS.dataS(acname)"",
+    ""account_number"": ""MapS.dataS(acno)"",
+    ""desc"": ""MapS.dataS(descr)"",
+    ""account_group_def"": ""MapS.dataS(acgrpdef)"",
+    ""ref_account_number"": ""MapS.dataS(refacno)"",
+    ""ref_account_number2"": ""MapS.dataS(refacno2)""
+}";"{
+""FPK"":
+{
+ ""ACNAME"": ""MapS.dataS(fields.acname)"",
+ ""GRPID"": ""MapS.dataNNull(fields.group_id)""
+},
+""ACNAME"": ""MapS.dataS(fields.account_name)"",
+""ACNO"": ""MapS.dataSNull(fields.account_number)"",
+""GRPID"": ""MapS.dataNNull(fields.group_id)"",
+""REFACNO"": ""MapS.dataSNull(fields.ref_account_number)"",
+""REFACNO2"": ""MapS.dataSNull(fields.ref_account_number2)""
+}";1;GRPID
+ACT_ACCOM_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005005004;O9SYS.S_ACCOM;"{
+ ""account_name"": ""MapS.dataS(acname)"",
+ ""account_number"": ""MapS.dataSNull(acno)"",
+ ""ref_account_number"": ""MapS.dataSNull(refacno)"", 
+ ""ref_account_number2"": ""MapS.dataSNull(refacno2)"" 
+}";"{
+""ACNAME"": ""MapS.dataS(fields.account_name)"",
+""ACNO"": ""MapS.dataSNull(fields.account_number)"",
+""REFACNO"": ""MapS.dataSNull(fields.ref_account_number)"",
+""REFACNO2"": ""MapS.dataSNull(fields.ref_account_number2)""
+}";1;ACNAME
+ACT_ACCOM_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005005005;O9SYS.S_ACCOM;;"{
+ ""id"": ""MapS.dataS(fields.id)"",
+}";1;ACNAME
+ACT_ACCLR_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005006004;O9SYS.S_ACCLR;"{
+    ""branch_id"": ""MapS.dataN(branchid)"",
+    ""branch_code"": ""MapS.dataS(branchcd)"",
+    ""branch_name"": ""MapS.dataS(brname)"",
+    ""currency_id"": ""MapS.dataS(ccrid)"",
+    ""currency_code"": ""MapS.dataS(ccrcd)"",
+    ""clearing_branch_code"": ""MapS.dataN(clrid)"",
+    ""clearing_branch_name"": ""MapS.dataS(clridct)"",
+    ""clearing_type"": ""MapS.dataS(clrtype)"",
+    ""clearing_type_caption"": ""MapS.dataS(clrtypect)"",
+    ""id"": ""MapS.dataS(acno)""
+}";"{
+""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+""CCRID"": ""MapS.dataS(fields.currency_id)"",
+""CLRID"": ""MapS.dataNNull(fields.clearing_branch_id)"",
+""CLRTYPE"": ""MapS.dataS(fields.clearing_type)"",
+""ACNO"": ""MapS.dataS(fields.account_number)"",
+}";1;BRANCHID
+ACT_ACCLR_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005006005;O9SYS.S_ACCLR;;"{
+ ""id"": ""MapS.dataJsonObject(fields.id)""
+}";1;object
+ACT_FXCLR_UPD;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012005007004;O9SYS.S_ACFX;"{
+ ""account_currency"": ""MapS.dataS(acccr)"",
+ ""account_number"": ""MapS.dataS(acno)"",
+ ""branch_id"": ""MapS.dataI(branchid)"",
+ ""branch_code"": ""MapS.dataSNull(branchcode)"",
+ ""branch_name"": ""MapS.dataSNull(brname)"",
+ ""clearing_currency"": ""MapS.dataS(clrccr)"",
+ ""clearing_type"": ""MapS.dataS(clrtype)"",
+ ""clearing_type_caption"": ""MapS.dataSNull(clrtypect)"" 
+}";"{
+ ""ACCCR"": ""MapS.dataS(fields.account_currency)"",
+ ""ACNO"": ""MapS.dataS(fields.account_number)"",
+ ""BRANCHID"": ""MapS.dataNNull(fields.branch_id)"",
+ ""CLRCCR"": ""MapS.dataS(fields.clearing_currency)"",
+ ""CLRTYPE"": ""MapS.dataS(fields.clearing_type)""
+}";1;BRANCHID
+ACT_FXCLR_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005007005;O9SYS.S_ACFX;;"{
+ ""id"": ""MapS.dataJsonObject(fields.id)""
+}";1;object
+SQL_UPDATE_FACCAT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012004005004;O9DATA.D_FACCAT;"{
+ ""catalog_code"": ""MapS.dataS(catcd)"",
+ ""id"": ""MapS.dataN(catid)"",
+ ""catalog_name"": ""MapS.dataS(catname)"",
+ ""catalog_status"": ""MapS.dataS(catsts)"",
+ ""depreciation_method"": ""MapS.dataS(depmode)"",
+ ""fixed_asset_classification"": ""MapS.dataS(faclass)"",
+ ""fixed_asset_type"": ""MapS.dataS(fatype)"",
+ ""user_id"": ""MapS.dataN(usrid)"",
+ ""group_id"": ""MapS.dataN(grpid)"",
+ ""approve_user"": ""MapS.dataN(apuser)"",
+ ""user_created_code"": ""MapS.dataS(usrcd)"",
+ ""user_approved_code"": ""MapS.dataS(aprcd)"",
+}";"{
+ ""CATCD"": ""MapS.dataS(fields.catalog_code)"",
+ ""CATNAME"": ""MapS.dataS(fields.catalog_name)"",
+ ""CATSTS"": ""MapS.dataSNull(fields.catalog_status)"",
+ ""DEPMODE"": ""MapS.dataS(fields.depreciation_method)"",
+ ""FACLASS"": ""MapS.dataSNull(fields.fixed_asset_classification)"",
+ ""FATYPE"": ""MapS.dataS(fields.fixed_asset_type)"",
+ ""GRPID"": ""MapS.dataI(fields.group_act)"",
+ ""CATID"": ""MapS.dataI(fields.id)"",
+ ""APUSER"": ""MapS.userSession(Usrid)"",
+ ""USRID"": ""MapS.userSession(Usrid)""
+}";1;CATID
+SQL_DELETE_FACCAT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012004005005;O9DATA.D_FACCAT;;"{
+ ""id"": ""MapS.dataI(fields.id)""
+}";1;CATID
+SQL_UPDATE_FACACT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;UpdateBO;1;012004001004;O9DATA.D_FIXEDASSET;"{
+    ""fixed_asset_account_name"": ""MapS.dataS(acname)"",
+    ""owner"": ""MapS.dataS(owner)"",
+    ""reference_number"": ""MapS.dataS(refnum)"",
+    ""fixed_asset_classification"": ""MapS.dataS(faclass)"",
+    ""depreciation_method"": ""MapS.dataS(depmode)"",
+    ""fixed_asset_group"": ""MapS.dataS(fagrp)"",
+    ""fixed_asset_life_time_unit"": ""MapS.dataS(falifeun)"",
+    ""provider_name"": ""MapS.dataS(prname)"",
+  ""asset_user"": ""MapS.dataS(fausr)"",
+  ""location"": ""MapS.dataS(lctn)"",
+  ""description_transfer"": ""MapS.dataS(descrtf)""
+}";"{
+ ""FAUSR"": ""MapS.dataS(fields.asset_user)"",
+ ""LCTN"": ""MapS.dataS(fields.location)"",
+ ""ACNAME"": ""MapS.dataS(fields.fixed_asset_account_name)"",
+ ""OWNER"": ""MapS.dataS(fields.owner)"",
+ ""FAGRP"": ""MapS.dataS(fields.fixed_asset_group)"",
+ ""DEPMODE"": ""MapS.dataS(fields.depreciation_method)"",
+ ""DESCRTF"": ""MapS.dataS(fields.description_transfer)"",
+ ""PRNAME"": ""MapS.dataS(fields.provider_name)"",
+ ""DEFACNO"": ""MapS.dataS(fields.id)"",
+ ""REFNUM"": ""MapS.dataS(fields.reference_number)"",
+ ""FALIFEUN"": ""MapS.dataS(fields.fixed_asset_life_time_unit)"",
+ ""FACLASS"": ""MapS.dataS(fields.fixed_asset_classification)""
+}";1;DEFACNO
+SQL_DELETE_FACACT;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012004001005;O9DATA.D_FIXEDASSET;;"{
+ ""id"": ""MapS.dataS(fields.id)""
+}";1;DEFACNO
+ACT_ACGRP_DEL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;Delete;1;012005003005;O9SYS.S_ACGRP;;"{
+ ""id"": ""MapS.dataJsonObject(fields.id)""
+}";1;object
+SQL_SIMPLE_SEARCH_TRANSACTION_JOURNAL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;FOF_TRANSACTION_JOURNAL;;"{
+  ""tran_status"": ""MapS.dataS(ico)"",
+  ""tran_number"": ""MapS.dataS(txrefid)"",
+ ""tran_reference"": ""MapS.dataS(txrefid)"",
+  ""tran_name"": ""MapS.dataS(txname)"",
+  ""account_number"": ""MapS.dataS(str1)"",
+  ""transaction_date"": ""MapS.dataS(txdt)"",
+  ""transaction_time"": ""MapS.dataS(txtime)"",
+  ""amount"": ""MapS.dataN(amt1)"",
+  ""tran_status_caption"": ""MapS.dataS(txsts)"",
+  ""tran_type_caption"": ""MapS.dataS(txtypect)"",
+  ""user_name"": ""MapS.dataS(usrname)"",
+  ""user_approve"": ""MapS.dataS(apuser)"",
+  ""approve_date"": ""MapS.dataS(apdt)"",
+  ""description"": ""MapS.dataS(descs)"",
+  ""value_date"": ""MapS.dataS(valuedt)"",
+  ""branch_code"": ""MapS.dataS(txbranchid)"" 
+}";"{""page_index"":""MapS.dataI(fields.page_index)"",""page_size"":""MapS.dataI(fields.page_size)"",""search_text"":""MapS.dataS(fields.search_text)"", ""USRID"": ""MapS.userSession(Usrid)""}";1;
+SQL_ADVANCE_SEARCH_TRANSACTION_JOURNAL;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IBaseWorkflowService;AdvanceSearch;1;FOF_TRANSACTION_JOURNAL;;"{
+  ""tran_status"": ""MapS.dataS(ico)"",
+  ""tran_number"": ""MapS.dataS(txrefid)"",
+ ""tran_reference"": ""MapS.dataS(txrefid)"",
+  ""tran_name"": ""MapS.dataS(txname)"",
+  ""account_number"": ""MapS.dataS(str1)"",
+  ""transaction_date"": ""MapS.dataS(txdt)"",
+  ""transaction_time"": ""MapS.dataS(txtime)"",
+  ""amount"": ""MapS.dataN(amt1)"",
+  ""tran_status_caption"": ""MapS.dataS(txsts)"",
+  ""tran_type_caption"": ""MapS.dataS(txtypect)"",
+  ""user_name"": ""MapS.dataS(usrname)"",
+  ""user_approve"": ""MapS.dataS(apuser)"",
+  ""approve_date"": ""MapS.dataS(apdt)"",
+  ""description"": ""MapS.dataS(descs)"",
+  ""value_date"": ""MapS.dataS(valuedt)"",
+  ""branch_code"": ""MapS.dataS(txbranchid)"" 
+}";"{
+  ""txrefid"": ""MapS.dataS(fields.tran_number)"",
+  ""txname"": ""MapS.dataS(fields.tran_name)"",
+  ""str1"": ""MapS.dataS(fields.account_number)"",
+  ""txdt"": ""MapS.date_dd-MM-yyyy(fields.transaction_date)"",
+  ""txtime"": ""MapS.dataS(fields.transaction_time)"",
+  ""oprtval_amt1"": ""MapS.dataS(fields.oprtval_amt1)"",
+  ""amt1"": ""MapS.dataNNull(fields.amount)"",
+  ""txsts"": ""MapS.dataSelectNull(fields.tran_status_caption)"",
+  ""txtypect"": ""MapS.dataS(fields.tran_type_caption)"",
+  ""usrname"": ""MapS.dataS(fields.user_name)"",
+  ""apuser"": ""MapS.dataS(fields.user_approve)"",
+  ""txbranchid"": ""MapS.dataS(fields.branch_code)"",
+  ""page_index"":""MapS.dataI(fields.page_index)"",
+  ""page_size"":""MapS.dataI(fields.page_size)"",
+ ""USRID"": ""MapS.userSession(Usrid)""
+}";1;
+FOF_VIEW_F8;Jits.Neptune.Web.CMS.LogicOptimal9.Services.IActGroupService;ViewF8;1;;;;;0;
+FAC_OPN;;;0;;;"{
+ ""FO_FAC_OPN"": {
+  ""transaction_number"": ""MapS.dataS(transaction_number)"",
+  ""account_number"": ""MapS.dataS(pdacc)"",
+  ""owner_of_this_fixed_asset"": ""MapS.dataS(cspur)"",
+  ""catalog_code"": ""MapS.dataS(cncat)"",
+  ""catalog_name"": ""MapS.dataS(ccatnm)"",
+  ""sequence_number"": ""MapS.dataSNull(cnseq)"",
+  ""fixed_asset_name"": ""MapS.dataS(cacnm2)"",
+  ""fixed_asset_type"": ""MapS.dataS(cactp)"",
+  ""fixed_asset_classification"": ""MapS.dataS(sbtype)"",
+  ""depreciation_method"": ""MapS.dataS(crtype)"",
+  ""fixed_asset_group"": ""MapS.dataS(fagrp)"",
+  ""fixed_asset_life_time"": ""MapS.dataNNull(c_ukn_amt2)"",
+  ""life_time_unit"": ""MapS.dataS(recby)"",
+  ""depreciation_rate"": ""MapS.dataN(crate)"",
+  ""reference_number"": ""MapS.dataS(crepid)"",
+  ""provider_name"": ""MapS.dataS(cacnm)"",
+  ""original_currency"": ""MapS.dataS(cccr)"",
+  ""original_price"": ""MapS.dataN(camt)"",
+  ""booking_currency"": ""MapS.dataS(cccr2)"",
+  ""booking_value"": ""MapS.dataN(camt2)"",
+  ""cross_rate"": ""MapS.dataN(ccrrate)"",
+  ""salvage_value_of_the_asset"": ""MapS.dataN(camt3)"",
+  ""description"": ""MapS.dataS(descs)"",
+  ""value_date"": ""MapS.date_dd-MM-yyyy(cvldt)""
+ }
+}";;0;

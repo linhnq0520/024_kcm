@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8716982Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_workflow_field_update",
+        "learn_api_name": "ncbs_workflow_field_update ncbs_workflow_field_update-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow-definition/fields/update",
+        "learn_api_data": "ncbs_workflow_field_update",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "PUT",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[{\"field_code\":\"MapS.dataS(ncbs_workflow_fields.field_code)\",\"field_key\":\"MapS.dataS(ncbs_workflow_fields.field_key)\",\"workflow_id\":\"MapS.dataS(ncbs_workflow_management.workflow_id)\",\"data_type\":\"MapS.dataS(ncbs_workflow_fields.data_type)\",\"is_null\":\"MapS.dataS(ncbs_workflow_fields.is_null)\",\"is_required\":\"MapS.dataS(ncbs_workflow_fields.is_required)\",\"num_min\":\"MapS.dataN(ncbs_workflow_fields.num_min)\",\"num_max\":\"MapS.dataN(ncbs_workflow_fields.num_max)\",\"num_range\":\"MapS.dataS(ncbs_workflow_fields.num_range)\",\"text_min\":\"MapS.dataS(ncbs_workflow_fields.text_min)\",\"text_max\":\"MapS.dataS(ncbs_workflow_fields.text_max)\",\"text_range\":\"MapS.dataS(ncbs_workflow_fields.text_range)\",\"openapi_description\":\"MapS.dataS(ncbs_workflow_fields.openapi_description)\",\"openapi_example\":\"MapS.dataS(ncbs_workflow_fields.openapi_example)\",\"text_maxlength\":\"MapS.dataI(ncbs_workflow_fields.text_maxlength)\",\"date_min\":\"MapS.dataN(ncbs_workflow_fields.date_min)\",\"date_max\":\"MapS.dataN(ncbs_workflow_fields.date_max)\",\"date_range\":\"MapS.dataS(ncbs_workflow_fields.date_range)\"}]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 267
+      }
+    ]
+  }
+]

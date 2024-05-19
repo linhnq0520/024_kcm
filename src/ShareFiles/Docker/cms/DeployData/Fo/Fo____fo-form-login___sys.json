@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4003242Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"api\",\"function\":\"system.callFormLogin\",\"type\":\"java\",\"status\":\"A\",\"para\":[]}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-form-login",
+        "version": 1,
+        "updateTime": 638042796881318888,
+        "txname": "Form login",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 54
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-18T09:13:24.5091828Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "ncbs_user_search_advanced_search",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_update",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_add",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_search_advanced_search_table",
+        "app": "ncbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_user_search_advanced_search_table",
+        "learn_api_name": "ncbs_user_search ncbs_user_search-Search multi",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/user/advanced-search/@{table_search.paging.pagingIndex}/@{table_search.paging.recordItem}",
+        "learn_api_data": "ncbs_user_search",
+        "learn_api_node_data": "results",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"user_code\":\"MapS.dataS(ncbs_user_search.advanced_search_main.user_code)\",\"user_name\":\"MapS.dataS(ncbs_user_search.advanced_search_main.user_name)\",\"organization_code\":\"MapS.dataS(ncbs_user_search.advanced_search_main.organization_code)\",\"full_name\":\"MapS.dataS(ncbs_user_search.advanced_search_main.full_name)\",\"session_expiration_in_minutes\":\"MapS.dataI(ncbs_user_search.advanced_search_main.session_expiration_in_minutes)\",\"concurrent_maximum_requests\":\"MapS.dataI(ncbs_user_search.advanced_search_main.concurrent_maximum_requests)\",\"status\":\"MapS.dataS(ncbs_user_search.advanced_search_main.status)\",\"channel_id\":\"MapS.dataS(ncbs_user_search.advanced_search_main.channel_id)\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "data",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 271
+      }
+    ]
+  }
+]

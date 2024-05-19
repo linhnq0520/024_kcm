@@ -1,0 +1,62 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-11-23T08:31:10.2223408Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "FO_CTM_CCN_api_rulefunc_ctm_ccn_get_info",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "fo_ctm_ccn_fo_ctm_ccn_btn_accept_post_api_fo_ctm_ccn",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_ctm_ccn_fo_ctm_ccn_btn_accept_post_api_fo_ctm_ccn",
+        "learn_api_name": "FO_CTM_CCN Accept FO_CTM_CCN",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CTM_CCN",
+        "learn_api_node_data": "",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"CTM_CCN\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"customer_code\": \"MapS.dataS(FO_CTM_CCN.customer_code)\",\n        \"old_first_name\": \"MapS.dataS(FO_CTM_CCN.old_first_name)\",\n        \"old_last_name\": \"MapS.dataS(FO_CTM_CCN.old_last_name)\",\n        \"old_father_name\": \"MapS.dataS(FO_CTM_CCN.old_father_name)\",\n        \"old_full_name\": \"MapS.dataS(FO_CTM_CCN.old_full_name)\",\n        \"new_first_name\": \"MapS.dataS(FO_CTM_CCN.new_first_name)\",\n        \"new_last_name\": \"MapS.dataS(FO_CTM_CCN.new_last_name)\",\n        \"new_father_name\": \"MapS.dataS(FO_CTM_CCN.new_father_name)\",\n        \"new_full_name\": \"MapS.dataS(FO_CTM_CCN.new_full_name)\",\n        \"description\": \"MapS.dataS(FO_CTM_CCN.description)\",\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1991
+      }
+    ]
+  }
+]

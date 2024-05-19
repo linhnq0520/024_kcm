@@ -1,0 +1,30 @@
+Database,Deposit,Table,DepositCatalog,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CatalogCode,CatalogName,CurrencyCode,SecureCurrency,DepositTenor,DepositTenorUnit,Tenor,TenorUnit,Tenor2,TenorUnit2,InterestTenorUnit,InterestTenor,InitalDepostAmount,PeriodicDepositAmount,PeriodicDepositTenor,PeriodicDepositTenorUnit,MinimumDepositAmount,MinimumTenor,MinimumTenorUnit,MultiDeposit,MultiWithdraw,EarlyWithdraw,MinimumTenorAllowEarlyWithdrawal,MinimumTenorAllowEarlyWithdrawalUnit,CreditInterest,CreditInterestTenor,CreditInterestTenorUnit,CreditingInterest,Intacrrt,DepositType,DepositSubType,DepositGroup,DepositPurpose,DepositClassification,DormantPeriod,DormantPeriodUnit,Rollover,RolloverToCatalog,InterestDueOnHoliday,PrincipalDueOnHoliday,PassbookOrStatementOrReceipt,StatementTenor,StatementTenorUnit,StatementFormat,UserCreated,UserApproved,CatalogStatus,MinimumDormantAmount,DebitWith,CreditWith,CreatedOnUtc,UpdatedOnUtc,Id
+CAMMK0000,Current account in MMK,MMK,MMK,0,M,0,M,0,D,L,0,1000,0,0,,0,0,D,Y,Y,N,0,D,N,1,D,0,100,C,C1,1,P,N,1095,D,N,,0,0,S,1,M,E,1,0,N,0,,,,,0
+CAUSD0000,Current account in USD,USD,USD,0,M,0,M,0,D,L,0,100,0,0,,0,0,D,Y,Y,N,0,D,N,1,D,0,100,C,C2,1,P,N,1095,D,N,,0,0,S,1,M,E,1,0,N,0,,,,,0
+CAEUR0000,Current account in EUR,EUR,EUR,0,M,0,M,0,D,L,0,100,0,0,,0,0,D,Y,Y,N,0,D,N,1,D,0,100,C,C2,1,P,N,1095,D,N,,0,0,S,1,M,E,1,0,N,0,,,,,0
+CASGD0000,Current account in SGD,SGD,SGD,0,M,0,M,0,D,L,0,100,0,0,,0,0,D,Y,Y,N,0,D,N,1,D,0,100,C,C2,1,P,N,1095,D,N,,0,0,S,1,M,E,1,0,N,0,,,,,0
+SAMMK0000,Savings account in MMK,MMK,MMK,0,M,0,M,0,D,M,1,1000,0,0,,1000,0,D,Y,Y,N,0,D,Y,1,M,0,100,S,S1,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+PSMMK0000,Premier savings deposit account in MMK,MMK,MMK,0,M,0,M,0,D,M,1,100000,0,0,,50000,0,D,Y,Y,N,0,D,Y,1,M,0,100,S,S3,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+BSMMK0000,Bonus savings account  in MMK,MMK,MMK,0,M,0,M,0,D,M,1,100000,0,0,,50000,0,D,Y,Y,N,0,D,Y,1,M,0,100,S,S2,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+CDMMK0000,Call deposit account in MMK,MMK,MMK,0,M,0,M,0,D,M,1,10000,0,0,,1000,0,D,Y,Y,N,0,D,Y,1,D,0,100,S,S4,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD01NRMMK,Fixed deposit 1 months (No rollover) in MMK,MMK,MMK,0,M,1,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T1,1,S,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD01PIMMK,Fixed deposit 1 months (Principal plus interest rollover) in MMK,MMK,MMK,0,M,1,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T1,1,S,N,1095,D,A,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD01POMMK,Fixed deposit 1 months (Principal rollover only) in MMK,MMK,MMK,0,M,1,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T1,1,S,N,1095,D,P,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD12NRMMK,Fixed deposit 12 months (No rollover) in MMK,MMK,MMK,0,M,12,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T5,1,S,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD12PIMMK,Fixed deposit 12 months (Principal plus interest rollover) in MMK,MMK,MMK,0,M,12,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T5,1,S,N,1095,D,A,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD12POMMK,Fixed deposit 12 months (Principal rollover only) in MMK,MMK,MMK,0,M,12,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T5,1,S,N,1095,D,P,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD03NRMMK,Fixed deposit 3 months (No rollover) in MMK,MMK,MMK,0,M,3,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T2,1,S,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD03PIMMK,Fixed deposit 3 months (Principal plus interest rollover) in MMK,MMK,MMK,0,M,3,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T2,1,S,N,1095,D,A,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD03POMMK,Fixed deposit 3 months (Principal rollover only) in MMK,MMK,MMK,0,M,3,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T2,1,S,N,1095,D,P,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD06NRMMK,Fixed deposit 6 months (No rollover) in MMK,MMK,MMK,0,M,6,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T3,1,S,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD06PIMMK,Fixed deposit 6 months (Principal plus interest rollover) in MMK,MMK,MMK,0,M,6,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T3,1,S,N,1095,D,A,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD06POMMK,Fixed deposit 6 months (Principal rollover only) in MMK,MMK,MMK,0,M,6,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T3,1,S,N,1095,D,P,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD09NRMMK,Fixed deposit 9 months (No rollover) in MMK,MMK,MMK,0,M,9,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T4,1,S,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD09PIMMK,Fixed deposit 9 months (Principal plus interest rollover) in MMK,MMK,MMK,0,M,9,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T4,1,S,N,1095,D,A,,0,0,P,1,M,E,1,0,N,0,,,,,0
+FD09POMMK,Fixed deposit 9 months (Principal rollover only) in MMK,MMK,MMK,0,M,9,M,0,D,L,0,50000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T4,1,S,N,1095,D,P,,0,0,P,1,M,E,1,0,N,0,,,,,0
+PCMMK0000,Premium call deposit account in MMK,MMK,MMK,0,M,0,M,0,D,M,1,10000,0,0,,100000,0,D,Y,Y,N,0,D,Y,1,D,0,100,S,S5,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,,,,,0
+SCMMK0000,SHWE cash call deposit account in MMK,MMK,MMK,0,M,0,M,0,D,M,1,10000,0,0,,1000,0,D,Y,Y,N,0,D,Y,1,D,0,100,S,S6,1,P,N,1095,D,N,,0,0,P,1,M,E,1,0,N,0,ACT|CSH|DPT,CSH,,,0
+PR120MMK0,SHWE prepaid fixed deposit account by cash in MMK,MMK,MMK,0,M,120,D,0,D,L,0,1000000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T6,1,S,N,1095,D,N,,0,0,F,1,M,E,1,0,N,0,ACT|CSH|DPT,CSH,,,0
+PR120MMK1,SHWE prepaid fixed deposit account by transfer in MMK,MMK,MMK,0,M,120,D,0,D,L,0,1000000,0,0,,0,0,D,N,N,R,1,M,Y,1,D,0,100,T,T6,1,S,N,1095,D,N,,0,0,F,1,M,E,1,0,N,0,ACT|DPT,ACT|DPT,,,0
+FDKTBAAA,Fixed deposit MFA multi currency,AAA,AAA,0,M,0,M,0,D,L,0,0,0,0,,0,0,D,N,N,Y,3,M,Y,1,Q,0,100,T,,1,S,N,1095,D,A,,0,0,F,1,M,E,1,0,N,0,,,,,0

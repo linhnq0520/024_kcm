@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.4541645Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_jwt_search_advanced_search",
+        "learn_api_name": "ncbs_jwt_search_advanced_search",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/jwt/advanced-search/@{table_search_jwt.paging.pagingIndex}/@{table_search_jwt.paging.recordItem}",
+        "learn_api_data": "ncbs_jwt_search",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n\t\"token\": \"MapS.dataS(ncbs_jwt_search.advanced_search_main.token)\",\n\t\"user_code\": \"MapS.dataS(ncbs_jwt_search.advanced_search_main.user_code)\",\n\t\"user_name\": \"MapS.dataS(ncbs_jwt_search.advanced_search_main.user_name)\",\n\t\"organization_code\": \"MapS.dataS(ncbs_jwt_search.advanced_search_main.organization_code)\",\n\t\"organization_name\": \"MapS.dataS(ncbs_jwt_search.advanced_search_main.organization_name)\",\n\t\"valid_from\": 1,\n\t\"valid_to\": 5256000\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "data.tokens",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 928
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.7800389Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "media_file_import_save",
+        "learn_api_name": "media_file_import_save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"SQL_INSERT_MEDIA\",\n  \"lang\": \"en\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"media_data\": \"MapS.dataFile(media_name)\",\n    \"media_name\": \"MapS.dataS(media_name)\",\n    \"customer_code\": \"MapS.dataS(customer_code)\",\n    \"reference_type\": \"C\",\n    \"expire_date\": \"MapS.dataSNull(expire_date)\",\n    \"other\": \"MapS.dataS(other)\",\n    \"media_status\": \"MapS.dataS(media_status)\",\n    \"media_type\": \"MapS.dataS(media_type)\",\n    \"open_date\": \"MapS.dataSNull(open_date)\",\n    \"last_update_date\": \"MapS.dataSNull(last_update_date)\",\n    \"infor1\": \"MapS.dataS(infor1)\",\n    \"infor2\": \"MapS.dataS(infor2)\"\n  }\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 145
+      }
+    ]
+  }
+]

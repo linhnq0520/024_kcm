@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.5641174Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "filter_data_report_customer",
+        "learn_api_name": "filter_data_report_customer",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "report_customer",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"SQL_ADSEARCH_CTM\",\r\n  \"lang\": \"en\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n    \"customer_code\": \"MapS.dataS(muti.customer_code)\",\r\n    \"fullname\": \"MapS.dataS(muti.fullname)\",\r\n    \"shortname\": \"MapS.dataS(muti.shortname)\",\r\n    \"paper_number\": \"MapS.dataS(muti.paper_number)\",\r\n    \"dob_from\": \"MapS.dataSNull(muti.dob_from)\",\r\n    \"dob_to\": \"MapS.dataSNull(muti.dob_to)\",\r\n    \"gender\": \"MapS.dataSelectNull(muti.gender)\",\r\n    \"customer_status\": \"MapS.dataSelectNull(muti.customer_status)\",\r\n    \"nation\": \"MapS.dataSelectNull(muti.nation)\",\r\n    \"resident\": \"MapS.dataSelectNull(muti.resident)\",\r\n    \"address\": \"MapS.dataS(muti.address)\",\r\n    \"old_id_of_customer\": \"MapS.dataS(muti.old_id_of_customer)\",\r\n    \"group_id\": \"MapS.dataS(muti.group_id)\",\r\n    \"page_index\": 0,\r\n    \"page_size\": 5\r\n  }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsReport",
+        "id": 1263
+      }
+    ]
+  }
+]

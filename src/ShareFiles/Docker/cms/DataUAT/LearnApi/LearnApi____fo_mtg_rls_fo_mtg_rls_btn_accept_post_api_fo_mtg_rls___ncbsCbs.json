@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.0282179Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_mtg_rls_fo_mtg_rls_btn_accept_post_api_fo_mtg_rls",
+        "learn_api_name": "FO_MTG_RLS Accept FO_MTG_RLS",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_MTG_RLS",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"MTG_RLS\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"account_number\": \"MapS.dataS(FO_MTG_RLS.account_number)\",\n        \"asset_booking_value\": \"MapS.dataN(FO_MTG_RLS.asset_booking_value)\",\n        \"collateral_account_currency\": \"MapS.dataS(FO_MTG_RLS.collateral_account_currency)\",\n        \"credit_account\": \"MapS.dataS(FO_MTG_RLS.credit_account)\",\n        \"credit_account_currency\": \"MapS.dataS(FO_MTG_RLS.credit_account_currency)\",\n        \"secured_amount\": \"MapS.dataN(FO_MTG_RLS.secured_amount)\",\n        \"exchange_rate\": \"MapS.dataS(FO_MTG_RLS.exchange_rate)\",\n        \"release_amount_in_collateral_currency\": \"MapS.dataN(FO_MTG_RLS.release_amount_in_collateral_currency)\",\n        \"release_amount_in_credit_currency\": \"MapS.dataN(FO_MTG_RLS.release_amount_in_credit_currency)\",\n        \"customer_code\": \"MapS.dataS(FO_MTG_RLS.customer_code)\",\n        \"customer_name\": \"MapS.dataS(FO_MTG_RLS.customer_name)\",\n        \"customer_address\": \"MapS.dataS(FO_MTG_RLS.customer_address)\",\n        \"customer_description\": \"MapS.dataS(FO_MTG_RLS.customer_description)\",\n        \"description\": \"MapS.dataS(FO_MTG_RLS.description)\",\n        \"base_amount\": \"MapS.dataN(FO_MTG_RLS.base_amount)\",\n        \"credit_rate\": \"MapS.dataN(FO_MTG_RLS.credit_rate)\",\n        \"debit_rate\": \"MapS.dataN(FO_MTG_RLS.debit_rate)\",\n        \"value_date\": \"MapS.dataS(FO_MTG_RLS.value_date)\",\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 486
+      }
+    ]
+  }
+]

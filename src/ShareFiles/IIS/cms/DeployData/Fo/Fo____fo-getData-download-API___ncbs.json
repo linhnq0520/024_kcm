@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4587692Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xóa dữ liệu\",\"function\":\"downloadFile.getDataDownload\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@list_component\",\"@list_view\",\"@table_code\",\"@key_val\",\"@key_api_convert\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-getData-download-API\",\"input\":{\"learn_api\":\"@learn_api\",\"key_api_convert\":\"@key_api_convert\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-getData-download-API",
+        "version": 1,
+        "updateTime": 638042796881319287,
+        "txname": "fo-getData-download-API",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbs",
+        "id": 205
+      }
+    ]
+  }
+]

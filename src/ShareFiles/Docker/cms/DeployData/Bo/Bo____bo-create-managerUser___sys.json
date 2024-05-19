@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4116441Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Tạo mới\",\"function\":\"txManagerUser.createUser\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-confirm\",\"input\":{\"toast_type\":\"success\"}},{\"txcode\":\"#sys:fo-form-clear\",\"input\":{}},{\"txcode\":\"#sys:fo-support-callBoLoadData\",\"input\":{\"table_code\":\"user\"}}]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-confirm\",\"input\":{\"toast_type\":\"error\"}}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-create-managerUser",
+        "version": 1,
+        "updateTime": 638042796880638709,
+        "txname": "Tạo mới người dùng khi chưa có trong sys",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 83
+      }
+    ]
+  }
+]
