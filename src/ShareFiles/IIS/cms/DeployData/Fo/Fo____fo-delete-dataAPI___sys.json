@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.3980668Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xác nhận\",\"function\":\"form.confirm\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"sysConfirmDelTitle\"],\"request\":{\"false\":{\"cmd\":\"stop\"}}},{\"name\":\"Xóa dữ liệu\",\"function\":\"formAPI.delete\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@table_code\",\"@table_col_key\",\"@learn_api\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-delete-dataAPI\",\"input\":{\"learn_api\":\"@learn_api\",\"learn_api_search\":\"@learn_api_search\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-delete-dataAPI",
+        "version": 1,
+        "updateTime": 638042796881318754,
+        "txname": "delete data with API",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 47
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.6271523Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_pmt_iit_fo_pmt_iit_btn_accept_post_api_fo_pmt_iit",
+        "learn_api_name": "fo_pmt_iit_fo_pmt_iit_btn_accept_post_api_fo_pmt_iit",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_PMT_IIT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"PMT_IIT\",\n  \"lang\": \"MapS.infoRequest(lang)\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"region\": \"MapS.dataS(FO_PMT_IIT.region)\",\n    \"product_code\": \"MapS.dataS(FO_PMT_IIT.product_code)\",\n    \"message_code\": \"MapS.dataS(FO_PMT_IIT.message_code)\",\n    \"ordering_institution\": \"MapS.dataS(FO_PMT_IIT.ordering_institution)\",\n    \"remitting_branch\": \"MapS.dataS(FO_PMT_IIT.remitting_branch)\",\n    \"sender_name\": \"MapS.dataS(FO_PMT_IIT.sender_name)\",\n    \"sender_id\": \"MapS.dataS(FO_PMT_IIT.sender_id)\",\n    \"sender_address\": \"MapS.dataS(FO_PMT_IIT.sender_address)\",\n    \"sender_phone\": \"MapS.dataS(FO_PMT_IIT.sender_phone)\",\n    \"sender_type\": \"MapS.dataS(FO_PMT_IIT.sender_type)\",\n    \"receiver_name\": \"MapS.dataS(FO_PMT_IIT.receiver_name)\",\n    \"receiver_id\": \"MapS.dataS(FO_PMT_IIT.receiver_id)\",\n    \"receiver_address\": \"MapS.dataS(FO_PMT_IIT.receiver_address)\",\n    \"receiver_phone\": \"MapS.dataS(FO_PMT_IIT.receiver_phone)\",\n    \"receiver_type\": \"MapS.dataS(FO_PMT_IIT.receiver_type)\",\n    \"account_number\": \"MapS.dataS(FO_PMT_IIT.account_number)\",\n    \"country\": \"MapS.dataS(FO_PMT_IIT.country)\",\n    \"purpose\": \"MapS.dataS(FO_PMT_IIT.purpose)\",\n    \"sender_to_receiver_information\": \"MapS.dataS(FO_PMT_IIT.sender_to_receiver_information)\",\n    \"test_key\": \"MapS.dataS(FO_PMT_IIT.test_key)\",\n    \"other_informations\": {\n      \"goods_type\": \"MapS.dataS(FO_PMT_IIT.goods_type)\",\n      \"goods_list\": \"MapS.dataS(FO_PMT_IIT.goods_list)\"\n    },\n    \"send_currency\": \"MapS.dataS(FO_PMT_IIT.send_currency)\",\n    \"inclusive\": \"MapS.dataS(FO_PMT_IIT.inclusive)\",\n    \"send_amount\": \"MapS.dataN(FO_PMT_IIT.send_amount)\",\n    \"commission\": \"MapS.dataN(FO_PMT_IIT.commission)\",\n    \"fee\": \"MapS.dataN(FO_PMT_IIT.fee)\",\n    \"total_amount\": \"MapS.dataN(FO_PMT_IIT.total_amount)\",\n    \"receive_by\": \"MapS.dataS(FO_PMT_IIT.receive_by)\",\n    \"receive_account_number\": \"MapS.dataS(FO_PMT_IIT.receive_account_number)\",\n    \"paid_amount\": \"MapS.dataN(FO_PMT_IIT.paid_amount)\",\n    \"receive_currency\": \"MapS.dataS(FO_PMT_IIT.receive_currency)\",\n    \"po_type\": \"MapS.dataS(FO_PMT_IIT.po_type)\",\n    \"po_number\": \"MapS.dataS(FO_PMT_IIT.po_number)\",\n    \"cross_rate\": \"MapS.dataN(FO_PMT_IIT.cross_rate)\",\n    \"receive_amount\": \"MapS.dataN(FO_PMT_IIT.receive_amount)\",\n    \"accounting_debit_exchange_rate\": \"MapS.dataN(FO_PMT_IIT.accounting_debit_exchange_rate)\",\n    \"amount_convert_to_bcy\": \"MapS.dataN(FO_PMT_IIT.amount_convert_to_bcy)\",\n    \"receive_accounting_debit_exchange_rate\": \"MapS.dataN(FO_PMT_IIT.receive_accounting_debit_exchange_rate)\",\n    \"description\": \"MapS.dataS(FO_PMT_IIT.description)\",\n    \"payment_by\": \"MapS.dataS(FO_PMT_IIT.payment_by)\",\n    \"ponum\": \"MapS.dataS(FO_PMT_IIT.ponum)\",\n    \"bankname\": \"MapS.dataS(FO_PMT_IIT.bankname)\",\n    \"nostro_account\": \"MapS.dataS(FO_PMT_IIT.nostro_account)\",\n    \"receive_branch_id\": \"MapS.dataN(FO_PMT_IIT.receive_branch_id)\",\n    \"receive_branch_code\": \"MapS.dataN(FO_PMT_IIT.receive_branch_code)\",\n    \"share_fee_rate\": \"MapS.dataN(FO_PMT_IIT.share_fee_rate)\",\n    \"share_fee_amount\": \"MapS.dataN(FO_PMT_IIT.share_fee_amount)\",\n    \"total_fee_for_cash\": \"MapS.dataN(FO_PMT_IIT.total_fee_for_cash)\",\n    \"total_send_amount\": \"MapS.dataN(FO_PMT_IIT.total_send_amount)\",\n    \"rate_rccr\": \"MapS.dataN(FO_PMT_IIT.rate_rccr)\",\n    \"user_approve\": \"MapS.dataSNull(user_approve.username)\",\n    \"fee_data\": \"MapS.arrayJson(FO_PMT_IIT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"\n  }\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1364
+      }
+    ]
+  }
+]

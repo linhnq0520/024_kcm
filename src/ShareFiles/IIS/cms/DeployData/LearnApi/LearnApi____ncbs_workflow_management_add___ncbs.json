@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1535598Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_workflow_management_add",
+        "learn_api_name": "ncbs_workflow_management_add ncbs_workflow_management_add-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow-definition/add",
+        "learn_api_data": "ncbs_user_save",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[{\"workflow_id\":\"MapS.dataS(ncbs_workflow_management_add.workflow_id)\",\"code\":\"MapS.dataS(ncbs_workflow_management_add.code)\",\"name\":\"MapS.dataS(ncbs_workflow_management_add.name)\",\"status\":\"MapS.dataS(ncbs_workflow_management_add.status)\",\"description\":\"MapS.dataS(ncbs_workflow_management_add.description)\",\"openapi_tags\":\"MapS.dataSNull(ncbs_workflow_management_add.openapi_tags)\",\"open_api_response\":\"MapS.dataSNull(ncbs_workflow_management_add.open_api_response)\",\"open_api_response_spec\":\"MapS.dataSNull(ncbs_workflow_management_add.open_api_response_spec)\",\"ms_timeout\":\"MapS.dataI(ncbs_workflow_management_add.ms_timeout)\",\"keep_execution_data\":\"MapS.dataI(ncbs_workflow_management_add.keep_execution_data)\",\"event_workflow_registered\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_registered)\",\"event_workflow_completed\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_completed)\",\"event_workflow_error\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_error)\",\"event_workflow_timeout\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_timeout)\",\"event_workflow_compensated\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_compensated)\",\"event_workflow_reversed\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_reversed)\",\"event_workflow_step_started\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_step_started)\",\"event_workflow_step_completed\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_step_completed)\",\"event_workflow_step_error\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_step_error)\",\"event_workflow_step_timeout\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_step_timeout)\",\"event_workflow_step_compensated\":\"MapS.dataS(ncbs_workflow_management_add.event_workflow_step_compensated)\"}]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 270
+      }
+    ]
+  }
+]

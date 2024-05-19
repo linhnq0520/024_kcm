@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.0324554Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Reset Menu Email\",\"des\":\"Reset Menu Email\",\"data\":\"user\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Reset Menu Email\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"email_reset_pass\",\"ruleStrong\":[{\"code\":\"runFo\",\"config\":{\"component_action\":\"\",\"component_result\":\"\",\"component_event\":\"enter_tab\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"template.setDataTest\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-template-printVoucher\\\",\\n        \\\"input\\\": \\r\\n                {\\r\\n                \\\"is_get_new\\\":true,\\r\\n                 \\\"is_get\\\":true,\\r\\n                \\\"queries\\\":\\\"select * from user;\\\",\\r\\n                \\\"template_code\\\":\\\"@{reset_pass.title}\\\",\\r\\n                \\\"template_condition\\\":\\\"'@{user.0.user.user_id}' === 'admin'\\\"\\r\\n                 \\r\\n                }\\n    }\\n]\",\"useAction\":\"false\",\"condition\":\"\"},\"isStart\":true,\"inUse\":true,\"order\":1}],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Typing\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[],\"codeHidden\":\"j123213u12u3i123\"},{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"Title\",\"code\":\"title\",\"codeHidden\":\"325a5d0cccc034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"reset_pass.title\",\"structable_read\":\"reset_pass.title\",\"data_default\":\"testvoucher\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":2},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"To Emails\",\"code\":\"to_emails\",\"codeHidden\":\"325a5d0ca06e034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"reset_pass.to_emails\",\"structable_read\":\"reset_pass.to_emails\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":0},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"CC Emails\",\"code\":\"cc_emails\",\"codeHidden\":\"325a5d012ccc034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"reset_pass.cc_emails\",\"structable_read\":\"reset_pass.cc_emails\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":0},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"BCC Emails\",\"code\":\"bcc_emails\",\"codeHidden\":\"325a5d0cccbc034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"reset_pass.bcc_emails\",\"structable_read\":\"reset_pass.bcc_emails\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":0},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}],\"codeHidden\":\"1aee1cb6ec37f32b\"}],\"codeHidden\":\"2016bef2e4e3edbe\"},{\"name\":\"List data\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"List User\",\"code\":\"user\",\"codeHidden\":\"p6d5o69he73n34\",\"class\":\"col-12\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"structable\":\"\",\"query_data\":\"select * from user\",\"paging_record\":\"50\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"user.full_name\\\",\\n        \\\"title\\\": \\\"User Name\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },  {\\n        \\\"code\\\": \\\"user.email\\\",\\n        \\\"title\\\": \\\"Email\\\",\\n        \\\"inputtype\\\":\\\"columnCurrency\\\",\\n        \\\"config\\\": {}\\n    },  {\\n        \\\"code\\\": \\\"user.AFGHkeyTime\\\",\\n        \\\"title\\\": \\\"Date of birth\\\",\\n        \\\"inputtype\\\": \\\"columnMask\\\",\\n        \\\"config\\\": {\\\"mask\\\":\\\"DD/MM/YYYY\\\"}\\n    }\\n]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{\"vi\":{\"Description\":\"Description\"},\"en\":{\"Description\":\"Description\"},\"lo\":{\"Description\":\"Description\"},\"km\":{\"Description\":\"Description\"},\"th\":{\"Description\":\"Description\"},\"mg\":{\"Description\":\"Description\"},\"ja\":{\"Description\":\"Description\"},\"ko\":{\"Description\":\"Description\"}},\"configAVD\":{},\"inputtype\":\"cTableDefault\"}],\"codeHidden\":\"1cacae7586c074d8\"}],\"codeHidden\":\"9379b68931989d66\"}]",
+        "react_txt": "",
+        "form_id": "email_reset_pass",
+        "app": "ncbsCbs",
+        "id": 476
+      }
+    ]
+  }
+]

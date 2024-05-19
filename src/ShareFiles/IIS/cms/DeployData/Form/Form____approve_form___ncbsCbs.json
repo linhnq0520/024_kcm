@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-04T03:33:25.7508399Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"14/06/2023 10:11:16 AM\",\"list_show_error\":\"false\",\"app\":\"ncbsCbs\",\"title\":\"Approve Form\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Enter Your Username And Password To Approve\",\"flow_layout\":[],\"form_code\":\"approve_form\",\"key_form\":\"\",\"lang_form\":{\"en\":\"Approve Form\"},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"false\",\"ruleStrong\":[{\"code\":\"runFo\",\"config\":{\"component_action\":\"\",\"component_result\":\"\",\"component_event\":\"enter_tab\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.getErrorMess\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"condition\":\"\"},\"inUse\":true,\"order\":1,\"isStart\":true}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"Approval Require\",\"class\":\"\",\"des\":\"Enter your username and password to approve\",\"lang\":{\"vi\":\"Approve\",\"en\":\"Approve\"},\"lang_des\":{\"vi\":\"Enter your username and password to approve\",\"en\":\"Enter your username and password to approve\"},\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"M?u view\",\"class\":\"\",\"code\":\"code\",\"isTab\":\"false\",\"lang\":{\"vi\":\"\",\"en\":\"\"},\"inputtype\":\"cView\",\"viewUI\":\"\",\"list_input\":[{\"default\":{\"name\":\"User Name\",\"code\":\"username\",\"class\":\"                                                                                                                      col-xl-6 col-lg-6 col-md-8 col-sm-8 offset-xl-6-right offset-lg-6-right offset-md-4-right offset-sm-4-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"df7b1f3f55e211b3\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"user.username\",\"structable_read\":\"user.username\",\"data_default\":\"${user_acc.login_name}\",\"isLookup\":\"false\",\"is_upperCase\":\"-\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"true\",\"isSearch\":\"false\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":true,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Password\",\"code\":\"password\",\"class\":\"                                                                                                                      col-xl-6 col-lg-6 col-md-8 col-sm-8 offset-xl-6-right offset-lg-6-right offset-md-4-right offset-sm-4-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"499b536f966c3a8f\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"user.password\",\"structable_read\":\"user.password\",\"data_default\":\"\",\"isLookup\":\"false\",\"is_upperCase\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"true\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"true\",\"isSearch\":\"false\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":true,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Accept\",\"code\":\"approve\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"465fcec5bc2348a3\"},\"config\":{\"onTable\":\"\",\"icon\":\"fa-check\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-create-dataAPI-approve\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"*\\\",\\n            \\\"list_view\\\": \\\"\\\",\\n            \\\"table_code\\\": \\\"table_code_parent\\\",\\n            \\\"learn_api\\\": \\\"learn_api_parent\\\"\\n        }\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\"},{\"default\":{\"name\":\"Later\",\"code\":\"later\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"cfb827957925db3f\"},\"config\":{\"onTable\":\"\",\"icon\":\"history\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n  {\\n    \\\"txcode\\\": \\\"fo-create-dataAPI-approveLater\\\",\\n    \\\"input\\\": {\\n      \\\"list_component\\\": \\\"*\\\",\\n      \\\"list_view\\\": \\\"\\\",\\n      \\\"table_code\\\": \\\"table_code_parent\\\",\\n      \\\"learn_api\\\": \\\"learn_api_parent\\\"\\n    }\\n  }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\"},{\"default\":{\"name\":\"Cancel\",\"code\":\"cancel\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"a50efcafce823756\"},\"config\":{\"onTable\":\"\",\"icon\":\"cancel\",\"color\":\"default\",\"action\":\"\",\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.closeForm\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\"}],\"codeHidden\":\"a2514e6bc16519d9\",\"isBorder\":\"false\",\"condition\":\"\",\"more_information\":\"\"}],\"codeHidden\":\"ecd181bcf67fb893\"}]",
+        "react_txt": "",
+        "form_id": "approve_form",
+        "app": "ncbsCbs",
+        "id": 441
+      }
+    ]
+  }
+]

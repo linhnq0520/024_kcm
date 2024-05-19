@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5330218Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_act_gfee_fo_act_gfee_btn_accept_post_api_fo_act_gfee",
+        "learn_api_name": "FO_ACT_GFEE Accept FO_ACT_GFEE",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_ACT_GFEE",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"ACT_GFEE\",\r\n    \"lang\": \"MapS.infoRequest(lang)\",\r\n    \"token\": \"MapS.context(token)\",\r\n    \"fields\": {\r\n        \"gl_account_number\": \"MapS.dataS(FO_ACT_GFEE.gl_account_number)\",\r\n        \"currency\": \"MapS.dataS(FO_ACT_GFEE.currency)\",\r\n        \"customer_name\": \"MapS.dataS(FO_ACT_GFEE.customer_name)\",\r\n        \"total_fee_amount\": \"MapS.dataN(FO_ACT_GFEE.total_fee_amount)\",\r\n        \"amount_for_fee_calculation\": \"MapS.dataN(FO_ACT_GFEE.amount_for_fee_calculation)\",\r\n        \"description\": \"MapS.dataS(FO_ACT_GFEE.description)\",\r\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\",\r\n        \"fee_data\": \"MapS.arrayJson(FO_ACT_GFEE.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"\r\n    }\r\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1101
+      }
+    ]
+  }
+]

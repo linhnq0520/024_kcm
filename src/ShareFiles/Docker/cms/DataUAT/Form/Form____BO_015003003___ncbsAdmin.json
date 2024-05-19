@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.4334215Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\r\n      \"app\": \"ncbsCbs\",\r\n      \"title\": \"ADM-Roles Profile\",\r\n      \"bodata\": \"\",\r\n      \"data\": \"\",\r\n      \"des\": \"Roles Profile\",\r\n      \"flow_layout\": [],\r\n      \"form_code\": \"BO_015003003\",\r\n      \"key_form\": \"BO_015003003\",\r\n      \"lang_form\": {},\r\n      \"ruleStrong\": []\r\n    }",
+        "list_layout": "[\n      {\n        \"name\": \"Program Layout\",\n        \"des\": \"\",\n        \"class\": \"\",\n        \"codeHidden\": \"program_layout\",\n        \"inputtype\": \"cLayout\",\n        \"list_view\": [\n          {\n            \"name\": \"Program View\",\n            \"code\": \"code\",\n            \"codeHidden\": \"program_view\",\n            \"inputtype\": \"cView\",\n            \"isTab\": \"false\",\n            \"list_input\": [\n              {\n                \"lang\": {},\n                \"default\": {\n                  \"name\": \"Add\",\n                  \"code\": \"Add\",\n                  \"codeHidden\": \"0150030030001\"\n                }\n              },\n              {\n                \"lang\": {},\n                \"default\": {\n                  \"name\": \"Delete\",\n                  \"code\": \"Delete\",\n                  \"codeHidden\": \"0150030030004\"\n                }\n              },\n              {\n                \"lang\": {},\n                \"default\": {\n                  \"name\": \"Save\",\n                  \"code\": \"Save\",\n                  \"codeHidden\": \"0150030030005\"\n                }\n              }\n            ]\n          }\n        ]\n      }\n    ]",
+        "react_txt": null,
+        "form_id": "BO_015003003",
+        "app": "ncbsAdmin",
+        "id": 700
+      }
+    ]
+  }
+]

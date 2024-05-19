@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.7040577Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "FO_PMT_KITT_api_rulefunc_pmt_kitt_get_info_crbank",
+        "learn_api_name": "FO_PMT_KITT_api_rulefunc_pmt_kitt_get_info_crbank",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_PMT_KITTapi_rulefunc_pmt_kitt_get_info_crbank",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"PMT_KIIT_GET_INFO_AGENT_BANK\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"product_code\": \"MapS.dataSNull(FO_PMT_KITT.product_code)\",\n        \"nostro_bank\": \"MapS.dataSNull(FO_PMT_KITT.nostro_bank)\"\n    }\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1450
+      }
+    ]
+  }
+]

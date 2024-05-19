@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-26T05:01:51.4838964Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "adm_trans_definition_update",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "adm_trans_definition_update",
+        "learn_api_name": "adm_trans_definition_update",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "trans_definition",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"ADM_TRANS_DEFINITION_UPDATE\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"id\": \"MapS.dataN(trans_definition.id)\",\r\n\t\t\"transaction_code\": \"MapS.dataS(trans_definition.transaction_code)\",\r\n\t\t\"workflow_id\": \"MapS.dataSNull(trans_definition.workflow_id)\",\r\n\t\t\"transaction_name\": \"MapS.dataS(trans_definition.transaction_name)\",\r\n\t\t\"multi_description\": {\r\n\t\t\t\"en\": \"MapS.dataS(trans_definition.description.en)\",\r\n\t\t\t\"vi\": \"MapS.dataS(trans_definition.description.vi)\"\r\n\t\t},\r\n\t\t\"transaction_type\": \"MapS.dataS(trans_definition.transaction_type)\",\r\n\t\t\"service_id\": \"MapS.dataS(trans_definition.service_id)\",\r\n\t\t\"inter_branch\": \"MapS.DataBoolean(trans_definition.inter_branch)\",\r\n\t\t\"reverseable\": \"MapS.DataBoolean(trans_definition.reverseable)\",\r\n\t\t\"enabled\": \"MapS.DataBoolean(trans_definition.enabled)\",\r\n\t\t\"message_account\": \"MapS.dataS(trans_definition.message_account)\",\r\n\t\t\"message_amount\": \"MapS.dataS(trans_definition.message_amount)\",\r\n\t\t\"message_currency\": \"MapS.dataS(trans_definition.message_currency)\",\r\n\t\t\"voucher\": \"MapS.dataS(trans_definition.voucher)\",\r\n\t\t\"show_f8\": \"MapS.DataBoolean(trans_definition.show_f8)\",\r\n\t\t\"application_code\": \"MapS.dataS(trans_definition.application_code)\",\r\n\t\t\"transaction_model\": \"MapS.dataS(trans_definition.transaction_model)\",\r\n\t\t\"channel\": \"MapS.dataS(trans_definition.channel)\"\r\n\t}\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1916
+      }
+    ]
+  }
+]

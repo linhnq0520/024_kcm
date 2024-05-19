@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8346543Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "bf315c15da9bc819",
+        "learn_api_name": "",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/",
+        "learn_api_data": "",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "api_default",
+        "save_to": "",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"ctmtype\":\"MapS.dataS(BO_013003.ctmtype)\",\"customercd\":\"MapS.dataS(BO_013003.customercd)\",\"ctmtel\":\"MapS.dataS(BO_013003.ctmtel)\",\"nation\":\"MapS.dataS(BO_013003.nation)\",\"repidtype\":\"MapS.dataS(BO_013003.repidtype)\",\"dacttype\":\"MapS.dataS(BO_013003.dacttype)\",\"cacttype\":\"MapS.dataS(BO_013003.cacttype)\",\"pcsccr\":\"MapS.dataS(BO_013003.pcsccr)\",\"cdtype\":\"MapS.dataN(BO_013003.cdtype)\",\"pgccr\":\"MapS.dataS(BO_013003.pgccr)\",\"cctype\":\"MapS.dataN(BO_013003.cctype)\",\"pgexr\":\"MapS.dataN(BO_013003.pgexr)\",\"swrate\":\"MapS.dataN(BO_013003.swrate)\",\"ccrrate\":\"MapS.dataN(BO_013003.ccrrate)\",\"orgrate\":\"MapS.dataN(BO_013003.orgrate)\",\"ctxexr\":\"MapS.dataN(BO_013003.ctxexr)\",\"pgamt\":\"MapS.dataN(BO_013003.pgamt)\",\"pcscvt\":\"MapS.dataN(BO_013003.pcscvt)\",\"cbamt\":\"MapS.dataN(BO_013003.cbamt)\",\"cacnm\":\"MapS.dataS(BO_013003.cacnm)\",\"cctmcdp\":\"MapS.dataS(BO_013003.cctmcdp)\",\"cctma\":\"MapS.dataS(BO_013003.cctma)\",\"descs\":\"MapS.dataS(BO_013003.descs)\",\"approverid\":\"MapS.dataN(user_approve.usrid)\",\"feeamt\":\"MapS.dataN(BO_013003.feeamt)\",\"prcamt\":\"MapS.dataN(BO_013003.prcamt)\",\"ifcfees\":\"MapS.arrayJson(BO_013003.ifcfees|{\\\"sfappl\\\":\\\"MapS.dataN(ifcfees.sfappl)\\\",\\\"ifccd\\\":\\\"MapS.dataN(ifcfees.ifccd)\\\",\\\"payrate\\\":\\\"MapS.dataN(ifcfees.payrate)\\\",\\\"ifcval\\\":\\\"MapS.dataN(ifcfees.ifcval)\\\",\\\"ifcamt\\\":\\\"MapS.dataN(ifcfees.ifcamt)\\\",\\\"ccrid\\\":\\\"MapS.dataS(ifcfees.ccrid)\\\",\\\"flrval\\\":\\\"MapS.dataN(ifcfees.flrval)\\\",\\\"ceival\\\":\\\"MapS.dataN(ifcfees.ceival)\\\",\\\"srate\\\":\\\"MapS.dataN(ifcfees.srate)\\\",\\\"samt\\\":\\\"MapS.dataN(ifcfees.samt)\\\",\\\"rrate\\\":\\\"MapS.dataN(ifcfees.rrate)\\\",\\\"ramt\\\":\\\"MapS.dataN(ifcfees.ramt)\\\",\\\"ccrcd\\\":\\\"MapS.dataS(ifcfees.ccrcd)\\\",\\\"paysrc\\\":\\\"MapS.dataS(ifcfees.paysrc)\\\"})\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 213
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1956745Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_pla_fo_crd_pla_btn_accept_post_api_fo_crd_pla",
+        "learn_api_name": "FO_CRD_PLA Accept FO_CRD_PLA",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_PLA",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"CRD_PLA\",\n  \"lang\": \"MapS.infoRequest(lang)\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"product_limit_code\": \"MapS.dataS(FO_CRD_PLA.product_limit_code)\",\n    \"product_limit_name\": \"MapS.dataS(FO_CRD_PLA.product_limit_name)\",\n    \"customer_type\": \"MapS.dataS(FO_CRD_PLA.customer_type)\",\n    \"customer_code\": \"MapS.dataS(FO_CRD_PLA.customer_code)\",\n    \"reference_number\": \"MapS.dataS(FO_CRD_PLA.reference_number)\",\n    \"customer_name\": \"MapS.dataS(FO_CRD_PLA.customer_name)\",\n    \"currency_code\": \"MapS.dataS(FO_CRD_PLA.currency_code)\",\n    \"credit_limit\": \"MapS.dataN(FO_CRD_PLA.credit_limit)\",\n    \"limit_type\": \"MapS.dataS(FO_CRD_PLA.limit_type)\",\n    \"product_status\": \"MapS.dataS(FO_CRD_PLA.product_status)\",\n    \"amount\": \"MapS.dataN(FO_CRD_PLA.amount)\",\n    \"exchange_rate\": \"MapS.dataN(FO_CRD_PLA.exchange_rate)\",\n    \"description\": \"MapS.dataS(FO_CRD_PLA.description)\",\n    \"user_approve\":\"MapS.dataSNull(user_approve.username)\"\n  }\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 359
+      }
+    ]
+  }
+]

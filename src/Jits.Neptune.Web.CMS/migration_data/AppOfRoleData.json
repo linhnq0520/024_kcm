@@ -1,0 +1,114 @@
+[
+	{
+		"type": "header",
+		"command": "Export data to Json"
+	},
+	{
+		"exported_time": "2023-02-10T04:01:25.7790267Z",
+		"host": "localhost:8066",
+		"db_properties": [
+			{
+				"name": "server",
+				"value": "neptunedb_mysql"
+			},
+			{
+				"name": "port",
+				"value": "3306"
+			},
+			{
+				"name": "database",
+				"value": "cms"
+			},
+			{
+				"name": "entity",
+				"value": "AppOfRole"
+			}
+		],
+		"exported_by_fields": [
+			{
+				"role_id": null
+			}
+		]
+	},
+	{
+		"type": "data",
+		"data": [
+			{
+				"RoleId": 2,
+				"App": "ncbs;designform;ncbsCbs;ncbsAdmin;ncbsReport;ncbsEvent;"
+			},
+			{
+				"RoleId": 3,
+				"App": "ncbs;ncbsCbs;ncbsAdmin;ncbsReport;"
+			},
+			{
+				"RoleId": 5,
+				"App": "ncbsCbs;"
+			},
+			{
+				"RoleId": 4,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 119,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 120,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 121,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 122,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 123,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 124,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 125,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 126,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 127,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 128,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 129,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 130,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 131,
+				"App": "ncbsCbs;ncbsReport;"
+			},
+			{
+				"RoleId": 132,
+				"App": "ncbsCbs;"
+			},
+			{
+				"RoleId": 133,
+				"App": "ncbsCbs;ncbsReport;"
+			}
+		]
+	}
+]

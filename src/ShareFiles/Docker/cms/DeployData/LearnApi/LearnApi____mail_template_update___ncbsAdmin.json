@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.672852Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "mail_template_update",
+        "learn_api_name": "mail_template_update",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "mail_template",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"EML_UPDATE_MAIL_TEMPLATE\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n    \"id\": \"MapS.dataI(mail_template.id)\",\r\n    \"template_id\": \"MapS.dataS(mail_template.template_id)\",\r\n    \"status\": \"MapS.dataS(mail_template.status)\",\r\n    \"subject\": \"MapS.dataS(mail_template.subject)\",\r\n    \"body\": \"MapS.dataS(mail_template.body)\",\r\n    \"description\": \"MapS.dataS(mail_template.description)\"\r\n  }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1383
+      }
+    ]
+  }
+]

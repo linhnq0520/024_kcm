@@ -1,0 +1,64 @@
+Database,Credit,Table,CreditIFCDefinition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IfcCode,IfcName,ValueBase,IsLinked,IfcLinkage,IfcOperator,FloorValue,CeilingValue,ValueType,IfcType,IfcSubType,IfcValue,MarginValue,ValueBasic,Isnet,Refname,IfcTenor,IfcTenorUnit,IfcCondition,CurrencyCode,RoundingRule,RoundingBasis,RoundingNum,Isleave,Isbook,Booktday,BookTenor,BookTenorUnit,IfcStatus,UserCreated,UserApproved,Payrate,ShareFee,EffectValueDate,EffectValue,TransactionList,CreatedOnUtc,UpdatedOnUtc,Id
+231,NR01 - Normal Loan - Interest Overdue,I,N,0,+,0,0,P,I,IN,9,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+232,NR01 - Normal Loan - Penalty Principle,I,N,0,+,0,0,P,F,PP,9,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+233,NR01 - Normal Loan - Penalty Interest,I,N,0,+,0,0,P,F,PI,9,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+241,NRIM - Normal Loan - Interest Overdue,I,N,0,+,0,0,P,I,IN,9,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+242,NRIM - Normal Loan - Penalty Principle,I,N,0,+,0,0,P,F,PP,9,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+243,NRIM - Normal Loan - Penalty Interest,I,N,0,+,0,0,P,F,PI,9,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+251,NR02 - Personal Guarantee - Interest Overdue,I,N,0,+,0,0,P,I,IN,13.5,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+252,NR02 - Personal Guarantee - Penalty Principle,I,N,0,+,0,0,P,F,PP,13.5,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+253,NR02 - Personal Guarantee - Penalty Interest,I,N,0,+,0,0,P,F,PI,13.5,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+261,TLY2 - TERM LOAN - 2 YEARS (360 EURO) - Interest Overdue,A,N,0,+,0,0,P,I,IN,12,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+262,TLY2 - TERM LOAN - 2 YEARS (360 EURO) - Penalty Principle,I,N,0,+,0,0,P,F,PP,12,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+263,TLY2 - TERM LOAN - 2 YEARS (360 EURO) - Penalty Interest,I,N,0,+,0,0,P,F,PI,12,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+271,TLY3 - TERM LOAN - 3 YEARS (360 EURO) - Interest Overdue,A,N,0,+,0,0,P,I,IN,13,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+272,TLY3 - TERM LOAN - 3 YEARS (360 EURO) - Penalty Principle,I,N,0,+,0,0,P,F,PP,13,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+273,TLY3 - TERM LOAN - 3 YEARS (360 EURO) - Penalty Interest,I,N,0,+,0,0,P,F,PI,13,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+281,ST01 - EMPLOYEE LOAN - Interest Overdue,I,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+282,ST01 - EMPLOYEE LOAN - Penalty Principle,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+283,ST01 - EMPLOYEE LOAN - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+291,HP05 - HIRE PURCHASE - 1 YEAR - HP Interest,I,N,0,+,0,0,P,I,IN,9,0,Balance,,,1,Y,WorkingDate <= FromDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+292,HP05 - HIRE PURCHASE - 1 YEAR - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+301,HP02 - HIRE PURCHASE - 2 YEARS - HP Interest,I,N,0,+,0,0,P,I,IN,9,0,Balance,,,1,Y,WorkingDate <= FromDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+302,HP02 - HIRE PURCHASE - 2 YEARS - Interest Overdue (Rental Fee),I,N,0,+,0,0,P,I,IN,6,0,Balance,,,1,Y,WorkingDate <  FromDate.AddDays(1) && WorkingDate> FromDate.AddYear(2).AddDays(-1),MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+303,HP02 - HIRE PURCHASE - 2 YEARS - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+304,HP02 - HIRE PURCHASE - 2 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+311,HP03 - HIRE PURCHASE - 3 YEARS - HP Interest,I,N,0,+,0,0,P,I,IN,9,0,Balance,,,1,Y,WorkingDate <= FromDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+312,HP03 - HIRE PURCHASE - 3 YEARS - Interest Overdue (Rental Fee),I,N,0,+,0,0,P,I,IN,6,0,Balance,,,1,Y,WorkingDate <  FromDate.AddDays(1) && WorkingDate> FromDate.AddYear(2).AddDays(-1),MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+313,HP03 - HIRE PURCHASE - 3 YEARS - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+314,HP03 - HIRE PURCHASE - 3 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+315,HP03 - HIRE PURCHASE - 3 YEARS - Interest Overdue (Rental Fee) - Third year,I,N,0,+,0,0,P,I,IN,6,0,Balance,,,1,Y,WorkingDate <  FromDate.AddYear(2).AddDays(1)) && WorkingDate> FromDate.AddYear(3).AddDays(-1),MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+321,HP3Y - HIRE PURCHASE - 3 YEARS - HP Interest,I,N,0,+,0,0,P,I,IN,14.5,0,Balance,,,1,Y,WorkingDate <= FromDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+322,HP3Y - HIRE PURCHASE - 3 YEARS - Interest Overdue (Rental Fee) - Second year,I,N,0,+,0,0,P,I,IN,14.5,0,Balance,,,1,Y,WorkingDate <  FromDate.AddDays(1) && WorkingDate> FromDate.AddYear(2).AddDays(-1),MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+323,HP3Y - HIRE PURCHASE - 3 YEARS - Interest Overdue (Rental Fee) - Third year,I,N,0,+,0,0,P,I,IN,14.5,0,Balance,,,1,Y,WorkingDate <  FromDate.AddYear(2).AddDays(1)) && WorkingDate> FromDate.AddYear(3).AddDays(-1),MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+324,HP3Y - HIRE PURCHASE - 3 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+331,NR10 - Discount Loan - 1 Year - Oneshot Interest,I,N,0,+,0,0,P,I,IN,13.5,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+332,NR10 - Discount Loan - 1 Year - Penalty Principle,I,N,0,+,0,0,P,F,PP,13.5,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+341,HPA2 - HIRE PURCHASE - 2 YEARS - Interest Overdue (Rental Fee),A,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+342,HPA2 - HIRE PURCHASE - 2 YEARS - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+343,HPA2 - HIRE PURCHASE - 2 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+351,HPA5 - HIRE PURCHASE - 5 YEARS - Interest Overdue (Rental Fee),A,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+352,HPA5 - HIRE PURCHASE - 5 YEARS - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+353,HPA5 - HIRE PURCHASE - 5 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+361,SHLN - STAFF HOUSING LOAN - Interest Overdue,A,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+362,SHLN - STAFF HOUSING LOAN - Penalty Principle,I,N,0,+,0,0,P,F,PP,14.5,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+363,SHLN - STAFF HOUSING LOAN - Penalty Interest,I,N,0,+,0,0,P,F,PI,14.5,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+371,CHL1 - Consumer Home Loan - Interest Overdue,A,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+372,CHL1 - Consumer Home Loan - Penalty Principle,I,N,0,+,0,0,P,F,PP,14.5,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+373,CHL1 - Consumer Home Loan - Penalty Interest,I,N,0,+,0,0,P,F,PI,14.5,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+381,STPL - STAFF PERSONAL LOAN - Interest Overdue,A,N,0,+,0,0,P,I,IN,8.5,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+382,STPL - STAFF PERSONAL LOAN - Penalty Principle,I,N,0,+,0,0,P,F,PP,10,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+383,STPL - STAFF PERSONAL LOAN - Penalty Interest,I,N,0,+,0,0,P,F,PI,10,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,Y,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+391,HPA3 - HIRE PURCHASE - 3 YEARS - Interest Overdue (Rental Fee),A,N,0,+,0,0,P,I,IN,10,0,Balance,,,1,Y,Balance > 0 && WorkingDate < ToDate,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+392,HPA3 - HIRE PURCHASE - 3 YEARS - Penalty Interest,I,N,0,+,0,0,P,F,PI,0.04,0,GetCreditOvdDueIntAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDueIntAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+393,HPA3 - HIRE PURCHASE - 3 YEARS - Default Fee,I,N,0,+,0,0,P,F,PP,0.04,0,GetCreditOvdDuePrinAmount(AccountNumber),,,1,D,Balance > 0 && GetCreditOvdDuePrinAmount(AccountNumber) > 0,MMK,R,P,5,N,N,,0,M,N,911,,0,0,,0,,,,0
+40,SERVICE CHARGES,I,N,0,%,0,0,P,C,CN,1,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+41,APPLICATION FEE,I,N,0,+,0,0,F,C,CN,10000,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+42,MCC FEES,I,N,0,%,0,0,P,C,CN,1,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+43,LEGAL FEE,I,N,0,+,0,0,F,C,CN,50000,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+44,ACCESSOR FEE,I,N,0,+,0,0,F,C,CN,50000,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+45,STAMP FEE FOR PROMISSORY NOTE,I,N,0,+,0,0,F,C,CN,200,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+46,STAMP FEE FOR GUARANTEE (L-25),I,N,0,%,0,0,P,C,CN,0.5,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+47,SALES COMMISSION,I,N,0,%,0,0,P,C,CN,1,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0
+48,EARLY REPAYMENT WITHIN FIRST 2 YEARS-MORTGAGE,I,N,0,%,0,0,P,C,CN,2,0,,,,1,D,,MMK,R,P,2,N,N,,0,M,N,911,,0,0,,0,,,,0

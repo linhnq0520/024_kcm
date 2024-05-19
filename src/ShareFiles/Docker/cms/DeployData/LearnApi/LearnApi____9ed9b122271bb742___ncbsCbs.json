@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1132717Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "9ed9b122271bb742",
+        "learn_api_name": "csh_limit_save_all",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/fo/lmt_sav",
+        "learn_api_data": "adm_csh_limit",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.result",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"role_list_unlimit\": \"MapS.arrayJson(adm_csh_limit.role_list_unlimit|{\\\"rolename\\\":\\\"MapS.dataS(role_list_unlimit.rolename)\\\",\\\"roleid\\\":\\\"MapS.dataN(role_list_unlimit.roleid)\\\",\\\"amt\\\":\\\"MapS.dataN(role_list_unlimit.amt)\\\"})\"\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.result",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 177
+      }
+    ]
+  }
+]

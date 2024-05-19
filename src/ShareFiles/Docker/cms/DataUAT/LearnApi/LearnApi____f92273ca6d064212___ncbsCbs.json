@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.798528Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "f92273ca6d064212",
+        "learn_api_name": "api_upload_file",
+        "learn_api_link": "https://192.168.1.252:8081/api/payment/outward/savedocuments",
+        "learn_api_data": "BO_007011",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_aml",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"setIChronicleId\": \"\",\n  \"setVersion\": \"2.0\",\n  \"setMode\": \"INSERT\",\n  \"setRObjectType\": \"ktb_lc_app_dep_acc\",\n  \"setObjectName\": \"MapS.dataS(BO_007011.uploadfile.name)\",\n  \"setSeqID\": \"1\",\n  \"setDocumentContent\": \"MapS.dataFile(BO_007011.uploadfile.name)\",\n  \"isRequired\": \"false\",\n  \"setCallbackRefId\": \"MapS.dataS(BO_007011.msgcode)\",\n  \"page_count\": \"1\",\n  \"effective_date_from\": \"\",\n  \"passport\": \"\",\n  \"ktb_cost_center\": \"\",\n  \"doc_ref_id\": \"\",\n  \"cus_sur_name\": \"\",\n  \"cus_title\": \"\",\n  \"cus_name\": \"\",\n  \"cif_no\": \"\",\n  \"application_id\": \"\",\n  \"citizenid_taxid\": \"\",\n  \"country\": \"KHM\"\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 170
+      }
+    ]
+  }
+]

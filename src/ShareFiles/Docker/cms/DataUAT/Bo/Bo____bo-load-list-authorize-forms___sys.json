@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.5362998Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Tải form\",\"function\":\"tx.load_multiform\",\"type\":\"java\",\"para\":[\"@list_authorize_forms\"],\"status\":\"A\"}]",
+        "response": "{\"fo\":[{\"txcode\":\"#sys:fo-container\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-load-list-authorize-forms",
+        "version": 1,
+        "updateTime": 638042796880638348,
+        "txname": "Tải 1 form theo id",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 7
+      }
+    ]
+  }
+]

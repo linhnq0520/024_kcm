@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <TransactionBody Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>TransactionBody</Alias>
+        <Columns isList="true" count="4">
+          <value>ORIGINAL,address,address,address,System.String,_x0035_c4e6251412f45449cb727631d630724</value>
+          <value>ORIGINAL,account_name,account_name,account_name,System.String,_x0035_dd85ab5496b4da88f432edf6f147f6b</value>
+          <value>ORIGINAL,account_number,account_number,account_number,System.String,e700d99b02ab4ecf8b1f27f5ce5df04e</value>
+          <value>ORIGINAL,total_amount_in_word,total_amount_in_word,total_amount_in_word,System.String,_x0035_50e2c3482344ee28d0b0df6bca05527</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>ebe109165a1c483296549df42e41be8a</Key>
+        <Name>TransactionBody</Name>
+        <NameInSource>TransactionBody</NameInSource>
+      </TransactionBody>
+      <dataset Ref="3" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>dataset</Alias>
+        <Columns isList="true" count="2">
+          <value>ORIGINAL,name,name,name,System.String,_x0034_3d581c8bdf64d1e84671b7929018afc</value>
+          <value>ORIGINAL,amount,amount,amount,System.Single,_x0037_b279b17a5484a6da65f7f09f015dc64</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>12074bf57afa4637a80d10b45f86edce</Key>
+        <Name>dataset</Name>
+        <NameInSource>dataset</NameInSource>
+      </dataset>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="4">
+      <value>,branch_name,branch_name,,System.String,,False,False,False,False,,_x0038_734f0182b06405da6c42da9d9a7c086</value>
+      <value>,transaction_date,transaction_date,,System.String,,False,False,False,False</value>
+      <value>,transaction_refid,transaction_refid,,System.String,,False,False,False,False</value>
+      <value>,transaction_code,transaction_code,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>513e71b1b9e34545b5bc4f87862968d1</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <OffBalanceSheet Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <HeaderBand1 Ref="5" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.86,1.9</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.1,0.25,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{branch_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.45,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{transaction_date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.1,0.7,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TransactionBody.account_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.1,1,4.5,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TransactionBody.address}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text4>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.1,1.6,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TransactionBody.account_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBand1>
+        <TableCREDIT Ref="11" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.5,7.86,0.5</ClientRectangle>
+          <ColumnCount>2</ColumnCount>
+          <Components isList="true" count="4">
+            <TableCREDIT_Cell1 Ref="12" type="TableCell" isKey="true">
+              <Border>All;DimGray;1;None;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,5.98,0.23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>cd3673dd56b84603bd82c5b42b4a2126</Guid>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell1</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{dataset.name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell1>
+            <TableCREDIT_Cell2 Ref="13" type="TableCell" isKey="true">
+              <Border>None;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.98,0,1.88,0.23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>026cfba2cbfc423f95a0ab7f69566e8e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>6</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell2</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{dataset.amount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="14" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell2>
+            <TableCREDIT_Cell3 Ref="15" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.23,5.98,0.29</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>f4ae7d6ac58d44a2b7a3547b3c05c2f6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>7</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell3</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{TransactionBody.total_amount_in_word}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell3>
+            <TableCREDIT_Cell4 Ref="16" type="TableCell" isKey="true">
+              <Border>Top;DimGray;1;Double;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.98,0.23,1.88,0.29</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8.5,Bold</Font>
+              <Guid>fd207d257ffc4026a7033ff6e2b65c8b</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>13</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell4</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{Sum(dataset.amount)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="17" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dataset</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <FooterRowsCount>1</FooterRowsCount>
+          <Guid>ee9866868a624324a7b94b188c53d866</Guid>
+          <MinHeight>0.2</MinHeight>
+          <Name>TableCREDIT</Name>
+          <NumberID>14</NumberID>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <RowCount>2</RowCount>
+          <Sort isList="true" count="0" />
+        </TableCREDIT>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f4abd080a78743bfa388f252a88c0af2</Guid>
+      <Margins>0.31,0.1,0.18,0.1</Margins>
+      <Name>OffBalanceSheet</Name>
+      <PageHeight>4.33</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </OffBalanceSheet>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/9/2022 3:08:55 PM</ReportChanged>
+  <ReportCreated>9/8/2011 12:21:29 PM</ReportCreated>
+  <ReportFile>C:\Users\JITS\Desktop\JITS\Test-voucher\voucher mrt\A17.mrt</ReportFile>
+  <ReportGuid>57f441f5675b4880a8a1d53e1270bf6f</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+        public string branch_name;
+        public string transaction_date;
+        public string transaction_refid;
+        public string transaction_code;
+        public Stimulsoft.Report.Components.StiPage OffBalanceSheet;
+        public Stimulsoft.Report.Components.StiHeaderBand HeaderBand1;
+        public Stimulsoft.Report.Components.StiText Text1;
+        public Stimulsoft.Report.Components.StiText Text2;
+        public Stimulsoft.Report.Components.StiText Text3;
+        public Stimulsoft.Report.Components.StiText Text4;
+        public Stimulsoft.Report.Components.StiText Text5;
+        public Stimulsoft.Report.Components.Table.StiTable TableCREDIT;
+        public Stimulsoft.Report.Components.Table.StiTableCell TableCREDIT_Cell1;
+        public Stimulsoft.Report.Components.Table.StiTableCell TableCREDIT_Cell2;
+        public Stimulsoft.Report.Components.Table.StiTableCell TableCREDIT_Cell3;
+        public Stimulsoft.Report.Components.Table.StiTableCell TableCREDIT_Cell4;
+        public Stimulsoft.Report.Dictionary.StiSumDecimalFunctionService TableCREDIT_Cell4_Sum;
+        public TransactionBodyDataSource TransactionBody;
+        public datasetDataSource dataset;
+        
+        public void Text1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text Text1
+            e.Value = ToString(sender, branch_name, true);
+        }
+        
+        public void Text2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text Text2
+            e.Value = ToString(sender, transaction_date, true);
+        }
+        
+        public void Text3__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text Text3
+            e.Value = ToString(sender, TransactionBody.account_name, true);
+        }
+        
+        public void Text4__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text Text4
+            e.Value = ToString(sender, TransactionBody.address, true);
+        }
+        
+        public void Text5__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text Text5
+            e.Value = ToString(sender, TransactionBody.account_number, true);
+        }
+        
+        public void TableCREDIT_Cell1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell1
+            e.Value = ToString(sender, dataset.name, true);
+        }
+        
+        public void TableCREDIT_Cell2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell2
+            e.Value = this.TableCREDIT_Cell2.TextFormat.Format(CheckExcelValue(sender, dataset.amount));
+        }
+        
+        public void TableCREDIT_Cell3__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell3
+            e.Value = ToString(sender, TransactionBody.total_amount_in_word, true);
+        }
+        
+        public void TableCREDIT_Cell4__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell4
+            e.StoreToPrinted = true;
+            e.Value = "#%#{Sum(dataset.amount)}";
+        }
+        
+        public string TableCREDIT_Cell4_GetValue_End(Stimulsoft.Report.Components.StiComponent sender)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell4
+            return this.TableCREDIT_Cell4.TextFormat.Format(CheckExcelValue(sender, ((decimal)(StiReport.ChangeType(this.TableCREDIT_Cell4_Sum.GetValue(), typeof(decimal), true)))));
+        }
+        
+        public void TableCREDIT__BeginRender(object sender, System.EventArgs e)
+        {
+            this.TableCREDIT_Cell4_Sum.Init();
+            this.TableCREDIT_Cell4.TextValue = "";
+        }
+        
+        public void TableCREDIT__EndRender(object sender, System.EventArgs e)
+        {
+            this.TableCREDIT_Cell4.SetText(new Stimulsoft.Report.Components.StiGetValue(this.TableCREDIT_Cell4_GetValue_End));
+        }
+        
+        public void TableCREDIT__Rendering(object sender, System.EventArgs e)
+        {
+            // CheckerInfo: Text TableCREDIT_Cell4
+            try
+            {
+                this.TableCREDIT_Cell4_Sum.CalcItem(dataset.amount);
+            }
+            catch (System.Exception ex)
+            {
+                StiLogService.Write(this.GetType(), "TableCREDIT RenderingEvent TableCREDIT_Cell4_Sum ...ERROR");
+                StiLogService.Write(this.GetType(), ex);
+                this.WriteToReportRenderingMessages("TableCREDIT_Cell4_Sum " + ex.Message);
+            }
+        }
+        
+        public void CheckEndRenderRuntimes__EndRender(object sender, System.EventArgs e)
+        {
+            Stimulsoft.Report.Components.StiSimpleText.CheckEndRenderRuntimes(this);
+        }
+        
+        private void InitializeComponent()
+        {
+            this.dataset = new datasetDataSource();
+            this.TransactionBody = new TransactionBodyDataSource();
+            this.Dictionary.Variables.Add(new Stimulsoft.Report.Dictionary.StiVariable("", "branch_name", "branch_name", "", typeof(string), "", false, Stimulsoft.Report.Dictionary.StiVariableInitBy.Value, false, new Stimulsoft.Report.Dictionary.StiDialogInfo(Stimulsoft.Report.Dictionary.StiDateTimeType.Date, "", true, Stimulsoft.Report.Dictionary.StiVariableSortDirection.Asc, new string[0], new string[0], null), "8734f0182b06405da6c42da9d9a7c086", false, Stimulsoft.Report.Dictionary.StiSelectionMode.FromVariable));
+            this.Dictionary.Variables.Add(new Stimulsoft.Report.Dictionary.StiVariable("", "transaction_date", "transaction_date", "", typeof(string), "", false, Stimulsoft.Report.Dictionary.StiVariableInitBy.Value, false, new Stimulsoft.Report.Dictionary.StiDialogInfo(Stimulsoft.Report.Dictionary.StiDateTimeType.Date, "", true, Stimulsoft.Report.Dictionary.StiVariableSortDirection.Asc, new string[0], new string[0], null), null, false, Stimulsoft.Report.Dictionary.StiSelectionMode.FromVariable));
+            this.Dictionary.Variables.Add(new Stimulsoft.Report.Dictionary.StiVariable("", "transaction_refid", "transaction_refid", "", typeof(string), "", false, Stimulsoft.Report.Dictionary.StiVariableInitBy.Value, false, new Stimulsoft.Report.Dictionary.StiDialogInfo(Stimulsoft.Report.Dictionary.StiDateTimeType.Date, "", true, Stimulsoft.Report.Dictionary.StiVariableSortDirection.Asc, new string[0], new string[0], null), null, false, Stimulsoft.Report.Dictionary.StiSelectionMode.FromVariable));
+            this.Dictionary.Variables.Add(new Stimulsoft.Report.Dictionary.StiVariable("", "transaction_code", "transaction_code", "", typeof(string), "", false, Stimulsoft.Report.Dictionary.StiVariableInitBy.Value, false, new Stimulsoft.Report.Dictionary.StiDialogInfo(Stimulsoft.Report.Dictionary.StiDateTimeType.Date, "", true, Stimulsoft.Report.Dictionary.StiVariableSortDirection.Asc, new string[0], new string[0], null), null, false, Stimulsoft.Report.Dictionary.StiSelectionMode.FromVariable));
+            this.NeedsCompiling = false;
+            this.TableCREDIT_Cell4_Sum = new Stimulsoft.Report.Dictionary.StiSumDecimalFunctionService();
+            // 
+            // Variables init
+            // 
+            // CheckerInfo: Value branch_name
+            this.branch_name = "";
+            // CheckerInfo: Value transaction_date
+            this.transaction_date = "";
+            // CheckerInfo: Value transaction_refid
+            this.transaction_refid = "";
+            // CheckerInfo: Value transaction_code
+            this.transaction_code = "";
+            this.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            this.Key = "513e71b1b9e34545b5bc4f87862968d1";
+            this.ReferencedAssemblies = new string[] {
+                    "System.Dll",
+                    "System.Drawing.Dll",
+                    "System.Windows.Forms.Dll",
+                    "System.Data.Dll",
+                    "System.Xml.Dll",
+                    "Stimulsoft.Controls.Dll",
+                    "Stimulsoft.Base.Dll",
+                    "Stimulsoft.Report.Dll"};
+            this.ReportAlias = "Report";
+            // 
+            // ReportChanged
+            // 
+            this.ReportChanged = new DateTime(2022, 12, 9, 14, 59, 1, 302);
+            // 
+            // ReportCreated
+            // 
+            this.ReportCreated = new DateTime(2011, 9, 8, 12, 21, 29, 0);
+            this.ReportFile = "C:\\Users\\JITS\\Desktop\\JITS\\Test-voucher\\voucher mrt\\A17.mrt";
+            this.ReportGuid = "431b04c0de9141b0a8815256c051717b";
+            this.ReportName = "Report";
+            this.ReportUnit = Stimulsoft.Report.StiReportUnitType.Inches;
+            this.ReportVersion = "2022.1.1.0";
+            this.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            // 
+            // OffBalanceSheet
+            // 
+            this.OffBalanceSheet = new Stimulsoft.Report.Components.StiPage();
+            this.OffBalanceSheet.Guid = "f4abd080a78743bfa388f252a88c0af2";
+            this.OffBalanceSheet.Name = "OffBalanceSheet";
+            this.OffBalanceSheet.PageHeight = 4.33;
+            this.OffBalanceSheet.PageWidth = 8.27;
+            this.OffBalanceSheet.PaperSize = System.Drawing.Printing.PaperKind.A4;
+            this.OffBalanceSheet.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 2, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.OffBalanceSheet.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // HeaderBand1
+            // 
+            this.HeaderBand1 = new Stimulsoft.Report.Components.StiHeaderBand();
+            this.HeaderBand1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.2, 7.86, 1.9);
+            this.HeaderBand1.Name = "HeaderBand1";
+            this.HeaderBand1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.HeaderBand1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // Text1
+            // 
+            this.Text1 = new Stimulsoft.Report.Components.StiText();
+            this.Text1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.1, 0.25, 2.2, 0.2);
+            this.Text1.Name = "Text1";
+            this.Text1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text1__GetValue);
+            this.Text1.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text1.Font = new System.Drawing.Font("Arial", 9F);
+            this.Text1.Indicator = null;
+            this.Text1.Interaction = null;
+            this.Text1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text2
+            // 
+            this.Text2 = new Stimulsoft.Report.Components.StiText();
+            this.Text2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0.45, 2.2, 0.2);
+            this.Text2.Name = "Text2";
+            this.Text2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text2__GetValue);
+            this.Text2.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text2.Font = new System.Drawing.Font("Arial", 9F);
+            this.Text2.Indicator = null;
+            this.Text2.Interaction = null;
+            this.Text2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text3
+            // 
+            this.Text3 = new Stimulsoft.Report.Components.StiText();
+            this.Text3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.1, 0.7, 2.2, 0.2);
+            this.Text3.Name = "Text3";
+            this.Text3.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text3__GetValue);
+            this.Text3.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text3.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text3.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text3.Font = new System.Drawing.Font("Arial", 9F);
+            this.Text3.Indicator = null;
+            this.Text3.Interaction = null;
+            this.Text3.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text3.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text3.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text4
+            // 
+            this.Text4 = new Stimulsoft.Report.Components.StiText();
+            this.Text4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.1, 1, 4.5, 0.5);
+            this.Text4.Name = "Text4";
+            this.Text4.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text4__GetValue);
+            this.Text4.Type = Stimulsoft.Report.Components.StiSystemTextType.DataColumn;
+            this.Text4.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text4.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text4.Font = new System.Drawing.Font("Arial", 9F);
+            this.Text4.Indicator = null;
+            this.Text4.Interaction = null;
+            this.Text4.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text4.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text4.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text5
+            // 
+            this.Text5 = new Stimulsoft.Report.Components.StiText();
+            this.Text5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.1, 1.6, 2.2, 0.2);
+            this.Text5.Name = "Text5";
+            this.Text5.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text5__GetValue);
+            this.Text5.Type = Stimulsoft.Report.Components.StiSystemTextType.DataColumn;
+            this.Text5.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text5.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text5.Font = new System.Drawing.Font("Arial", 9F);
+            this.Text5.Indicator = null;
+            this.Text5.Interaction = null;
+            this.Text5.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text5.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text5.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            this.HeaderBand1.Interaction = null;
+            // 
+            // TableCREDIT
+            // 
+            this.TableCREDIT = new Stimulsoft.Report.Components.Table.StiTable();
+            this.TableCREDIT.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 2.5, 7.86, 0.5);
+            this.TableCREDIT.ColumnCount = 2;
+            this.TableCREDIT.DataSourceName = "dataset";
+            this.TableCREDIT.FooterRowsCount = 1;
+            this.TableCREDIT.Guid = "ee9866868a624324a7b94b188c53d866";
+            this.TableCREDIT.MinHeight = 0.2;
+            this.TableCREDIT.Name = "TableCREDIT";
+            this.TableCREDIT.NumberID = 14;
+            this.TableCREDIT.RowCount = 2;
+            this.TableCREDIT.Sort = new string[0];
+            this.TableCREDIT.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.TableCREDIT.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.TableCREDIT.BusinessObjectGuid = null;
+            // 
+            // TableCREDIT_Cell1
+            // 
+            this.TableCREDIT_Cell1 = new Stimulsoft.Report.Components.Table.StiTableCell();
+            this.TableCREDIT_Cell1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 5.98, 0.23);
+            this.TableCREDIT_Cell1.Guid = "cd3673dd56b84603bd82c5b42b4a2126";
+            this.TableCREDIT_Cell1.ID = 0;
+            this.TableCREDIT_Cell1.JoinCells = new int[0];
+            this.TableCREDIT_Cell1.Name = "TableCREDIT_Cell1";
+            this.TableCREDIT_Cell1.Restrictions = ((Stimulsoft.Report.Components.StiRestrictions.AllowMove | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.TableCREDIT_Cell1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.TableCREDIT_Cell1__GetValue);
+            this.TableCREDIT_Cell1.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.TableCREDIT_Cell1.VertAlignment = Stimulsoft.Base.Drawing.StiVertAlignment.Center;
+            this.TableCREDIT_Cell1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.All, System.Drawing.Color.DimGray, 1, Stimulsoft.Base.Drawing.StiPenStyle.None, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.DimGray), false);
+            this.TableCREDIT_Cell1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.TableCREDIT_Cell1.Font = new System.Drawing.Font("Arial", 8F);
+            this.TableCREDIT_Cell1.Indicator = null;
+            this.TableCREDIT_Cell1.Interaction = null;
+            this.TableCREDIT_Cell1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.TableCREDIT_Cell1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.TableCREDIT_Cell1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // TableCREDIT_Cell2
+            // 
+            this.TableCREDIT_Cell2 = new Stimulsoft.Report.Components.Table.StiTableCell();
+            this.TableCREDIT_Cell2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(5.98, 0, 1.88, 0.23);
+            this.TableCREDIT_Cell2.Guid = "026cfba2cbfc423f95a0ab7f69566e8e";
+            this.TableCREDIT_Cell2.HorAlignment = Stimulsoft.Base.Drawing.StiTextHorAlignment.Right;
+            this.TableCREDIT_Cell2.ID = 6;
+            this.TableCREDIT_Cell2.JoinCells = new int[0];
+            this.TableCREDIT_Cell2.Name = "TableCREDIT_Cell2";
+            this.TableCREDIT_Cell2.Restrictions = ((Stimulsoft.Report.Components.StiRestrictions.AllowMove | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.TableCREDIT_Cell2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.TableCREDIT_Cell2__GetValue);
+            this.TableCREDIT_Cell2.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.TableCREDIT_Cell2.VertAlignment = Stimulsoft.Base.Drawing.StiVertAlignment.Center;
+            this.TableCREDIT_Cell2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.DimGray, 1, Stimulsoft.Base.Drawing.StiPenStyle.Dot, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.DimGray), false);
+            this.TableCREDIT_Cell2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.TableCREDIT_Cell2.Font = new System.Drawing.Font("Arial", 8F);
+            this.TableCREDIT_Cell2.Indicator = null;
+            this.TableCREDIT_Cell2.Interaction = null;
+            this.TableCREDIT_Cell2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.TableCREDIT_Cell2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.TableCREDIT_Cell2.TextFormat = new Stimulsoft.Report.Components.TextFormats.StiNumberFormatService(1, ".", 2, ",", 3, true, true, " ");
+            this.TableCREDIT_Cell2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // TableCREDIT_Cell3
+            // 
+            this.TableCREDIT_Cell3 = new Stimulsoft.Report.Components.Table.StiTableCell();
+            this.TableCREDIT_Cell3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.23, 5.98, 0.29);
+            this.TableCREDIT_Cell3.Guid = "f4ae7d6ac58d44a2b7a3547b3c05c2f6";
+            this.TableCREDIT_Cell3.HorAlignment = Stimulsoft.Base.Drawing.StiTextHorAlignment.Right;
+            this.TableCREDIT_Cell3.ID = 7;
+            this.TableCREDIT_Cell3.JoinCells = new int[0];
+            this.TableCREDIT_Cell3.Name = "TableCREDIT_Cell3";
+            this.TableCREDIT_Cell3.Restrictions = ((Stimulsoft.Report.Components.StiRestrictions.AllowMove | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            this.TableCREDIT_Cell3.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.TableCREDIT_Cell3__GetValue);
+            this.TableCREDIT_Cell3.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.TableCREDIT_Cell3.VertAlignment = Stimulsoft.Base.Drawing.StiVertAlignment.Center;
+            this.TableCREDIT_Cell3.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.FromArgb(255, 105, 105, 105), 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(255, 105, 105, 105)), false);
+            this.TableCREDIT_Cell3.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.TableCREDIT_Cell3.Font = new System.Drawing.Font("Arial", 9F);
+            this.TableCREDIT_Cell3.Indicator = null;
+            this.TableCREDIT_Cell3.Interaction = null;
+            this.TableCREDIT_Cell3.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.TableCREDIT_Cell3.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.TableCREDIT_Cell3.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // TableCREDIT_Cell4
+            // 
+            this.TableCREDIT_Cell4 = new Stimulsoft.Report.Components.Table.StiTableCell();
+            this.TableCREDIT_Cell4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(5.98, 0.23, 1.88, 0.29);
+            this.TableCREDIT_Cell4.Guid = "fd207d257ffc4026a7033ff6e2b65c8b";
+            this.TableCREDIT_Cell4.HorAlignment = Stimulsoft.Base.Drawing.StiTextHorAlignment.Right;
+            this.TableCREDIT_Cell4.ID = 13;
+            this.TableCREDIT_Cell4.JoinCells = new int[0];
+            this.TableCREDIT_Cell4.Name = "TableCREDIT_Cell4";
+            this.TableCREDIT_Cell4.Restrictions = ((Stimulsoft.Report.Components.StiRestrictions.AllowMove | Stimulsoft.Report.Components.StiRestrictions.AllowSelect) 
+                        | Stimulsoft.Report.Components.StiRestrictions.AllowChange);
+            // 
+            // TableCREDIT_Cell4_Sum
+            // 
+            this.TableCREDIT_Cell4.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.TableCREDIT_Cell4__GetValue);
+            this.TableCREDIT_Cell4.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.TableCREDIT_Cell4.VertAlignment = Stimulsoft.Base.Drawing.StiVertAlignment.Center;
+            this.TableCREDIT_Cell4.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.Top, System.Drawing.Color.DimGray, 1, Stimulsoft.Base.Drawing.StiPenStyle.Double, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.DimGray), false);
+            this.TableCREDIT_Cell4.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.TableCREDIT_Cell4.Font = new System.Drawing.Font("Arial", 8.5F, System.Drawing.FontStyle.Bold);
+            this.TableCREDIT_Cell4.Indicator = null;
+            this.TableCREDIT_Cell4.Interaction = null;
+            this.TableCREDIT_Cell4.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.TableCREDIT_Cell4.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.TableCREDIT_Cell4.TextFormat = new Stimulsoft.Report.Components.TextFormats.StiNumberFormatService(1, ".", 2, ",", 3, true, true, " ");
+            this.TableCREDIT_Cell4.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            this.TableCREDIT.DataRelationName = null;
+            this.TableCREDIT.Interaction = null;
+            this.TableCREDIT.TableStyleFX = null;
+            this.OffBalanceSheet.Interaction = null;
+            this.OffBalanceSheet.Margins = new Stimulsoft.Report.Components.StiMargins(0.31, 0.1, 0.18, 0.1);
+            this.OffBalanceSheet.Report = this;
+            this.HeaderBand1.Page = this.OffBalanceSheet;
+            this.HeaderBand1.Parent = this.OffBalanceSheet;
+            this.Text1.Page = this.OffBalanceSheet;
+            this.Text1.Parent = this.HeaderBand1;
+            this.Text2.Page = this.OffBalanceSheet;
+            this.Text2.Parent = this.HeaderBand1;
+            this.Text3.Page = this.OffBalanceSheet;
+            this.Text3.Parent = this.HeaderBand1;
+            this.Text4.Page = this.OffBalanceSheet;
+            this.Text4.Parent = this.HeaderBand1;
+            this.Text5.Page = this.OffBalanceSheet;
+            this.Text5.Parent = this.HeaderBand1;
+            this.TableCREDIT.Page = this.OffBalanceSheet;
+            this.TableCREDIT.Parent = this.OffBalanceSheet;
+            this.TableCREDIT_Cell1.Page = this.OffBalanceSheet;
+            this.TableCREDIT_Cell1.Parent = this.TableCREDIT;
+            this.TableCREDIT_Cell2.Page = this.OffBalanceSheet;
+            this.TableCREDIT_Cell2.Parent = this.TableCREDIT;
+            this.TableCREDIT_Cell3.Page = this.OffBalanceSheet;
+            this.TableCREDIT_Cell3.Parent = this.TableCREDIT;
+            this.TableCREDIT_Cell4.Page = this.OffBalanceSheet;
+            this.TableCREDIT_Cell4.Parent = this.TableCREDIT;
+            this.TableCREDIT.BeginRender += new System.EventHandler(this.TableCREDIT__BeginRender);
+            this.TableCREDIT.EndRender += new System.EventHandler(this.TableCREDIT__EndRender);
+            this.TableCREDIT.Rendering += new System.EventHandler(this.TableCREDIT__Rendering);
+            this.AggregateFunctions = new object[] {
+                    this.TableCREDIT_Cell4_Sum};
+            this.EndRender += new System.EventHandler(this.CheckEndRenderRuntimes__EndRender);
+            // 
+            // Add to HeaderBand1.Components
+            // 
+            this.HeaderBand1.Components.Clear();
+            this.HeaderBand1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Text1,
+                        this.Text2,
+                        this.Text3,
+                        this.Text4,
+                        this.Text5});
+            // 
+            // Add to TableCREDIT.Components
+            // 
+            this.TableCREDIT.Components.Clear();
+            this.TableCREDIT.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.TableCREDIT_Cell1,
+                        this.TableCREDIT_Cell2,
+                        this.TableCREDIT_Cell3,
+                        this.TableCREDIT_Cell4});
+            // 
+            // Add to OffBalanceSheet.Components
+            // 
+            this.OffBalanceSheet.Components.Clear();
+            this.OffBalanceSheet.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.HeaderBand1,
+                        this.TableCREDIT});
+            // 
+            // Add to Pages
+            // 
+            this.Pages.Clear();
+            this.Pages.AddRange(new Stimulsoft.Report.Components.StiPage[] {
+                        this.OffBalanceSheet});
+            this.TransactionBody.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("address", "address", "address", typeof(string), "5c4e6251412f45449cb727631d630724"),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("account_name", "account_name", "account_name", typeof(string), "5dd85ab5496b4da88f432edf6f147f6b"),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("account_number", "account_number", "account_number", typeof(string), "e700d99b02ab4ecf8b1f27f5ce5df04e"),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("total_amount_in_word", "total_amount_in_word", "total_amount_in_word", typeof(string), "550e2c3482344ee28d0b0df6bca05527")});
+            this.DataSources.Add(this.TransactionBody);
+            this.dataset.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("name", "name", "name", typeof(string), "43d581c8bdf64d1e84671b7929018afc"),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("amount", "amount", "amount", typeof(decimal), "7b279b17a5484a6da65f7f09f015dc64")});
+            this.DataSources.Add(this.dataset);
+        }
+        
+        #region DataSource TransactionBody
+        public class TransactionBodyDataSource : Stimulsoft.Report.Dictionary.StiUserSource
+        {
+            
+            public TransactionBodyDataSource() : 
+                    base("TransactionBody", "TransactionBody", "TransactionBody", "ebe109165a1c483296549df42e41be8a")
+            {
+            }
+            
+            public virtual string address
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["address"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string account_name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["account_name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string account_number
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["account_number"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string total_amount_in_word
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["total_amount_in_word"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource TransactionBody
+        
+        #region DataSource dataset
+        public class datasetDataSource : Stimulsoft.Report.Dictionary.StiUserSource
+        {
+            
+            public datasetDataSource() : 
+                    base("dataset", "dataset", "dataset", "12074bf57afa4637a80d10b45f86edce")
+            {
+            }
+            
+            public virtual string name
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["name"], typeof(string), true)));
+                }
+            }
+            
+            public virtual decimal amount
+            {
+                get
+                {
+                    return ((decimal)(StiReport.ChangeType(this["amount"], typeof(decimal), true)));
+                }
+            }
+        }
+        #endregion DataSource dataset
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

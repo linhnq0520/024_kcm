@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:19.7682948Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"\",\"des\":\"\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"c18850380b563110\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"*;save;account_number;loan_cycle;account_name;application_code;currency_code;secured_by_currency;account_holder_type;customer_code;branch_code;status_1;classification_status;realize_status;catalogue_code;catalogue_name;credit_type;tenor_type;credit_facility;product_type;principal_collection_tenor;principal_collection_tenor_unit;interest_collection_tenor;interest_collection_tenor_unit;fine_collection_tenor;fine_collection_tenor_unit;begin_of_tenor;end_of_tenor;open_date;close_date;last_marked_date;last_transaction_date;created_by;created_name;approve_by;approve_name;loan_officer_staff_id;owner_security_type;guarrantor_security_type;marketing_officer;application_date;approved_date;approving_authority;industry_and_sector;credit_limit;earmark_limit;limit_effective_from;limit_effective_to;limit_from_third_party;operative_limit_from_third_party;disbursement_amount;outstanding_balance;installment_amount;normal_principal_amount;due_amount;late_payment_amount;rounded_amount_of_principal;write_off_amount_of_principal;principal_prepaid;principal_paid_amount;write_off_amount_of_principal_paid;provision_of_principal;interest_accrual_amount;interest_receivable;interest_prepaid;interest_due;late_payment_amount_of_interest;interest_suspense;rounded_amount_of_interest;interest_paid;write_off_amount_of_interest_paid;provision_of_interest;fine_amount;month_average_balance;quarter_average_balance;semi_annual_average_balance;year_average_balance;week_debit;week_credit;month_debit;month_credit;quarter_debit;quarter_credit;semi_annual_debit;semi_annual_credit;year_debit;year_credit;total_ov_penalty;total_paid_of_ov_penalty;first_prin_repayment_date;first_int_repayment_date;is_syndicated;interest_computation_mode;secure_type;minimum_secure_rate;credit_purpose;purpose_description;credit_classification;disbursement_mode;is_provision;general_provision;provision_tenor;provision_tenor_unit;rollover_option;classification_option;principal_grace_period;principal_due_on_holiday;principal_repayment_in_advance;interest_grace_period;interest_due_on_holiday;interest_repayment_in_advance;fine_grace_period;fine_due_on_holiday;discount_rate;re_discount_rate;minimum_principal_repay;from_date;to_date;amount_1;unutilized;disbursement_amount;add_2;modify_2;apply_1;remove_1;no_1;due_date_1;amount_2;paid_amount_1;add_3;modify_3;apply_2;remove_2;re_calculate;no_2;due_date_2;amount_3;paid_amount_2;add_4;modify_4;apply_3;remove_3;no_3;due_date_3;remark;reference_id;provision_of_other;payment_location;source_of_fund;cad_type;report_status;ifc_code;ifc_name;val_base;is_linked;ifc_value;margin_value;status_2;outstanding;paid;add_5;modify_5;apply_4;remove_4;ifc_code;ifc_name;base_value;is_linked;ifc_value;margin_value;status;outstanding;paid;media_file_name;media_file_check_box;expire_date;other;account_no;branch_id;currency;account_type;asset_value;review_date;add_6;modify_6;apply_5;remove_5;review_date;\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"defacno;;errorJWebUI_code\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"modify_1\",\"component_result\":\"save;product_type;principal_collection_tenor;principal_collection_tenor_unit;interest_collection_tenor;interest_collection_tenor_unit;fine_collection_tenor;fine_collection_tenor_unit;begin_of_tenor;end_of_tenor;loan_officer_staff_id;owner_security_type;guarrantor_security_type;marketing_officer;application_date;approved_date;approving_authority;industry_and_sector;first_prin_repayment_date;first_int_repayment_date;secure_type;minimum_secure_rate;credit_purpose;purpose_description;credit_classification;disbursement_mode;general_provision;provision_tenor;provision_tenor_unit;rollover_option;principal_grace_period;principal_due_on_holiday;principal_repayment_in_advance;interest_grace_period;interest_due_on_holiday;interest_repayment_in_advance;fine_grace_period;fine_due_on_holiday;discount_rate;re_discount_rate;minimum_principal_repay;from_date;to_date;amount_1;unutilized;add_2;modify_2;apply_1;remove_1;no_1;due_date_1;amount_2;paid_amount_1;add_3;modify_3;apply_2;remove_2;re_calculate;no_2;due_date_2;amount_3;paid_amount_2;add_4;modify_4;apply_3;remove_3;remark;reference_id;provision_of_other;payment_location;source_of_fund;cad_type;report_status;ifc_code;ifc_name;val_base;ifc_value;margin_value;status_2;outstanding;paid;add_5;modify_5;apply_4;remove_4;review_date;add_6;modify_6;apply_5;remove_5;review_date;loan_cycle;account_name;ranking_status\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\",\"list_config\":[]},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"copy\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"*;clear;save\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"application_code\",\"component_result\":\"copy\",\"condition\":\"'@{application_code}'!==\\\"\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"application_code\",\"component_result\":\"*;clear;save\",\"condition\":\"'@{application_code}'!==\\\"\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"setDataGB\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"account_holder_type\",\"component_result\":\"customer_code\",\"data_type\":\"query\",\"query\":\"\",\"filter_condition\":\"{ \\\"c_cdlist.cdid\\\": \\\"^@{account_holder_type}\\\" }\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"managerComponent\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"secure_type;\",\"is_use_block\":\"false\",\"component_manager\":\"{\\\"minimum_secure_rate\\\":\\\"'@{secure_type}'!== 'N'\\\"}\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"managerComponent\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"is_provision;\",\"is_use_block\":\"false\",\"component_manager\":\"{\\\"provision_tenor\\\":\\\"'@{is_provision}'=== 'Y'\\\"}\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"managerComponent\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"is_provision;\",\"is_use_block\":\"false\",\"component_manager\":\"{\\\"provision_tenor_unit\\\":\\\"'@{is_provision}'=== 'Y'\\\"}\"},\"isStart\":true,\"inUse\":true,\"order\":1}],\"app\":\"\"}",
+        "list_layout": "[]",
+        "react_txt": "",
+        "form_id": "c18850380b563110",
+        "app": "ncbsCbs",
+        "id": 191
+      }
+    ]
+  }
+]

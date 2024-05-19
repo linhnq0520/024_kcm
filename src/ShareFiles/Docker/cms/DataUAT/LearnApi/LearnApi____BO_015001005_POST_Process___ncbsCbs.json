@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.640321Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_015001005_POST_Process",
+        "learn_api_name": "BO_015001005_POST_Process",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "servertime",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"IMP_SAVE_TRANSACTION_TEMPLATE\",\n  \"lang\": \"MapS.infoRequest(lang)\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"valid_date\": \"MapS.dataS(BO_015001005_Add.valid_date)\",\n    \"data_header\": {\n      \"file_name\": \"MapS.dataS(data_header.file_name)\",\n      \"transaction_code\": \"MapS.dataS(data_header.transaction_code)\",\n      \"description\": \"MapS.dataS(data_header.description)\",\n      \"node\": \"MapS.dataS(data_header.node)\"\n    },\n    \"data_body\":\"MapS.arrayDynamic(data_file.data_body)\"\n  }\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1387
+      }
+    ]
+  }
+]

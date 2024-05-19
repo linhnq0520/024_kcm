@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.2315414Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Adm_user_role_and_linkage_addchild_user_code_lookup\",\"des\":\"Adm_user_role_and_linkage_addchild_user_code_lookup\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Adm_user_role_and_linkage_addchild_user_code_lookup\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"adm_user_role_and_linkage_addchild_user_code\",\"ruleStrong\":[{\"code\":\"runFo\",\"config\":{\"component_action\":\"search_input\",\"component_result\":\"\",\"component_event\":\"enter\",\"txFoActions\":\"\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-search-API\\\",\\\"input\\\":{\\\"list_component\\\":\\\"*\\\",\\\"list_view\\\":\\\"code\\\",\\\"table_code\\\":\\\"adm_user_role_and_linkage_addchild_user_code\\\",\\\"learn_api\\\":\\\"\\\"}}]\",\"useAction\":\"false\",\"condition\":\"\"},\"inUse\":true,\"order\":1,\"isStart\":true}],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Lookup Data\",\"des\":\"Lookup Data\",\"class\":\"\",\"codeHidden\":\"ef398848e0c54aef\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"98c8dc2b67029a79\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[]},{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"a767e76da89c5a54\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"\",\"code\":\"view\",\"codeHidden\":\"364c26860c5c410c\",\"class\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[{\\\"function\\\":\\\"\\\",\\\"status\\\":\\\"A\\\",\\\"para\\\":[]}]\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-lookup-selectData\\\",\\\"input\\\":{}}]\",\"useAction\":\"false\",\"icon\":\"fa-hand-o-right\",\"color\":\"info\",\"onTable\":\"table_name\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\"}]},{\"name\":\"Search\",\"code\":\"code\",\"codeHidden\":\"e4fdff1558bdb0bd\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"structable\":\"\",\"structable_read\":\"\",\"query_data\":\"select * from \",\"columns\":\"[{\\\"code\\\":\\\".0\\\",\\\"title\\\":\\\"Code\\\",\\\"inputtype\\\":\\\"ColumnString\\\",\\\"config\\\":{}},{\\\"code\\\":\\\".1\\\",\\\"title\\\":\\\"Name\\\",\\\"inputtype\\\":\\\"ColumnString\\\",\\\"config\\\":{}}]\",\"paging_mode\":\"MIN\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTableDefault\",\"default\":{\"name\":\"\",\"code\":\"table_name\",\"codeHidden\":\"2d87de72f0c47a72\",\"class\":\"col-12\",\"condition\":\"\",\"role\":\"\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "adm_user_role_and_linkage_addchild_user_code",
+        "app": "ncbsCbs",
+        "id": 605
+      }
+    ]
+  }
+]

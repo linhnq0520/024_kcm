@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.447857Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_workflow_execution_search_finishedWithError",
+        "learn_api_name": "ncbs_workflow_execution_search_finishedWithError ncbs_workflow_execution_search_finishedWithError-Search multi",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/advanced-search/@{table_finishedWithError.paging.pagingIndex}/@{table_finishedWithError.paging.recordItem}",
+        "learn_api_data": "ncbs_workflow_execution_search_finishedWithError",
+        "learn_api_node_data": "results",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\n    \"Authorization\": \"MapS.getToken(Bearer )\"\n}",
+        "learn_api_mapping": "{\"execution_id\":\"MapS.dataS(ncbs_workflow_execution_search.id)\",\"workflow_id\":\"MapS.dataS(ncbs_workflow_execution_search.workflow_id)\",\"user_code\":\"MapS.dataS(ncbs_workflow_execution_search.user_code)\",\"to_created_date\":\"MapS.dataL(ncbs_workflow_execution_search.to_date)\",\"from_created_date\":\"MapS.dataL(ncbs_workflow_execution_search.from_date)\",\"status\":\"FinishedWithError\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "data",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 912
+      }
+    ]
+  }
+]

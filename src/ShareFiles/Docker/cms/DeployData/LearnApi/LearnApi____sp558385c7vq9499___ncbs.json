@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1531284Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "sp558385c7vq9499",
+        "learn_api_name": "Đăng nhập BO",
+        "learn_api_link": "https://192.168.1.170:105/api/auth/get-token",
+        "learn_api_data": null,
+        "learn_api_node_data": null,
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": null,
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n\"user_code\": \"neptune\",\n\"password\": \"123456\"\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": null,
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 269
+      }
+    ]
+  }
+]

@@ -1,0 +1,251 @@
+version: '3.4'
+
+services:
+  neptunedb_oracle:
+    image: container-registry.oracle.com/database/enterprise:latest
+    container_name: neptunedb_oracle
+    environment:
+      - ORACLE_PWD=Admin1234
+    restart: always
+    ports:
+      - "1521:1521"
+    volumes:
+      - /home/oracle_data:/opt/oracle/oradata:Z
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5673:5672"
+      - "15672:15672"
+    volumes:
+      - /home/rabbitmq_data:/var/lib/rabbitmq/mnesia
+
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+    restart: always
+    ports:
+      - "8040:8000"
+      - "9040:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+  neptuneserver:
+    image: ${DOCKER_REGISTRY-}neptuneserver
+    build:
+      context: .
+      dockerfile: neptuneserver/Dockerfile_deploy
+    container_name: neptuneserver
+    environment:
+      - NEPTUNE_DB_ONLINE_SERVER_NAME=neptunedb_oracle
+      - NEPTUNE_DB_ONLINE_SERVER_PORT=1521
+      - NEPTUNE_DB_ONLINE_NAME=ORCLCDB
+      - NEPTUNE_DB_ONLINE_SCHEMA=NEPTUNE
+      - NEPTUNE_DB_ONLINE_RDBMS_TYPE=Oracle
+      - NEPTUNE_DB_ONLINE_USERNAME=neptune
+      - NEPTUNE_DB_ONLINE_PASSWORD=bmVwdHVuZQ==
+    depends_on:
+      - rabbitmq
+    restart: always
+    ports:
+      - "105:105"
+      - "109:109"
+
+  accounting.api:
+    image: ${DOCKER_REGISTRY-}accountingapi
+    build:
+      context: .
+      dockerfile: accounting/Dockerfile_Oracle
+    container_name: accounting.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8050:80"
+      - "5050:5000"
+
+  admin.api:
+    image: ${DOCKER_REGISTRY-}adminapi
+    build:
+      context: .
+      dockerfile: admin/Dockerfile_Oracle
+    container_name: admin.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8051:80"
+      - "5051:5000"
+
+  cash.api:
+    image: ${DOCKER_REGISTRY-}cashapi
+    build:
+      context: .
+      dockerfile: cash/Dockerfile_Oracle
+    container_name: cash.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8052:80"
+      - "5052:5000"
+
+  credit.api:
+    image: ${DOCKER_REGISTRY-}creditapi
+    build:
+      context: .
+      dockerfile: credit/Dockerfile_Oracle
+    container_name: credit.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8053:80"
+      - "5053:5000"
+
+  customer.api:
+    image: ${DOCKER_REGISTRY-}customerapi
+    build:
+      context: .
+      dockerfile: customer/Dockerfile_Oracle
+    container_name: customer.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8054:80"
+      - "5054:5000"
+
+  deposit.api:
+    image: ${DOCKER_REGISTRY-}depositgapi
+    build:
+      context: .
+      dockerfile: deposit/Dockerfile_Oracle
+    container_name: deposit.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8055:80"
+      - "5055:5000"
+
+  fixedasset.api:
+    image: ${DOCKER_REGISTRY-}fixedassetapi
+    build:
+      context: .
+      dockerfile: fixedasset/Dockerfile_Oracle
+    container_name: fixedasset.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8056:80"
+      - "5056:5000"
+
+  fx.api:
+    image: ${DOCKER_REGISTRY-}fxapi
+    build:
+      context: .
+      dockerfile: fx/Dockerfile_Oracle
+    container_name: fx.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8057:80"
+      - "5057:5000"
+
+  ifc.api:
+    image: ${DOCKER_REGISTRY-}ifcapi
+    build:
+      context: .
+      dockerfile: ifc/Dockerfile_Oracle
+    container_name: ifc.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8058:80"
+      - "5058:5000"
+
+  mortgage.api:
+    image: ${DOCKER_REGISTRY-}mortgageapi
+    build:
+      context: .
+      dockerfile: mortgage/Dockerfile_Oracle
+    container_name: mortgage.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8059:80"
+      - "5059:5000"
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: payment/Dockerfile_Oracle
+    container_name: payment.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8060:80"
+      - "5060:5000"
+
+  batch.api:
+    image: ${DOCKER_REGISTRY-}batchapi
+    build:
+      context: .
+      dockerfile: batch/Dockerfile_Oracle
+    container_name: batch.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8061:80"
+      - "5061:5000"
+
+  cms.api:
+    image: ${DOCKER_REGISTRY-}cmsapi
+    build:
+      context: .
+      dockerfile: cms/Dockerfile_Oracle
+    container_name: cms.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8066:80"
+      - "5066:5000"
+
+  nginx:
+    image: ${DOCKER_REGISTRY-}nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+
+  voucher.api:
+    image: ${DOCKER_REGISTRY-}voucherapi
+    build:
+      context: .
+      dockerfile: voucher/Dockerfile_Oracle
+    container_name: voucher.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8063:80"
+      - "5063:5000"
+
+  report.api:
+    image: ${DOCKER_REGISTRY-}reportapi
+    build:
+      context: .
+      dockerfile: report/Dockerfile_Oracle
+    container_name: report.api
+    depends_on:
+      - neptuneserver
+    ports:
+      - "8067:443"
+      - "5067:5000"
+
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  portainer_data:

@@ -1,0 +1,662 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-11-28T09:19:31.0707926Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": "CTM",
+        "cdname": "REPIDTYPE",
+        "cdid": "B",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "IXC",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "HXH",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "PROFESSION",
+        "cdid": "64",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "BUCD",
+        "cdid": "48",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SECTOR",
+        "cdid": "OT",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "OTO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "JXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "KXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "LXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "AXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "BXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "CXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "DXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "EXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "FXO",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "CTMSIZE",
+        "cdid": "G",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "01",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "02",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "03",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "04",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "05",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "06",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "07",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "08",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "09",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "10",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "11",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "12",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "13",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "14",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "15",
+        "app": "ncbsCbs"
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "16",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "CTM",
+        "cdname": "REPIDTYPE",
+        "cdid": "B",
+        "caption": "Company Registration",
+        "cdval": "1000012",
+        "cdidx": 6,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Company Registration\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23009
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "HXH",
+        "caption": "Other Construction",
+        "cdval": "838",
+        "cdidx": 38,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other Construction\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23511
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "IXC",
+        "caption": "Other",
+        "cdval": "941",
+        "cdidx": 41,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 23514
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "PROFESSION",
+        "cdid": "64",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 64,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25313
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "BUCD",
+        "cdid": "48",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 48,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25314
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "01",
+        "caption": "More than MMK50 Million",
+        "cdval": "",
+        "cdidx": 1,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"More than MMK50 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25315
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "02",
+        "caption": "MMK25 to MMK50 Million",
+        "cdval": "",
+        "cdidx": 2,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"MMK25 to MMK50 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25316
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "03",
+        "caption": "MMK10 to MMK25 Million",
+        "cdval": "",
+        "cdidx": 3,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"MMK10 to MMK25 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25317
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "04",
+        "caption": "Bellow 10 Million",
+        "cdval": "",
+        "cdidx": 4,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Bellow 10 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25318
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "05",
+        "caption": "More than MMK36 Million",
+        "cdval": "",
+        "cdidx": 5,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"More than MMK36 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25319
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "06",
+        "caption": "MMK15 to MMK36 Million",
+        "cdval": "",
+        "cdidx": 6,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"MMK15 to MMK36 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25320
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "07",
+        "caption": "MMK6 to MMK15 Million",
+        "cdval": "",
+        "cdidx": 7,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"MMK6 to MMK15 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25321
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "08",
+        "caption": "Bellow 6 Million",
+        "cdval": "",
+        "cdidx": 8,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Bellow 6 Million\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25322
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "09",
+        "caption": "More than 5,000,000 MMK",
+        "cdval": "",
+        "cdidx": 9,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"More than 5,000,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25323
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "10",
+        "caption": "2,500,000 MMK to 5,000,000 MMK",
+        "cdval": "",
+        "cdidx": 10,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"2,500,000 MMK to 5,000,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25324
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "11",
+        "caption": "1,000,000 MMK to 2,500,000 MMK",
+        "cdval": "",
+        "cdidx": 11,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"1,000,000 MMK to 2,500,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25326
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "12",
+        "caption": "Bellow 1,000,000 MMK",
+        "cdval": "",
+        "cdidx": 12,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Bellow 1,000,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25327
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "13",
+        "caption": "More than 3,000,000 MMK",
+        "cdval": "",
+        "cdidx": 13,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"More than 3,000,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25328
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "14",
+        "caption": "1,500,000 MMK to 3,000,000 MMK",
+        "cdval": "",
+        "cdidx": 14,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"1,500,000 MMK to 3,000,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25329
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "15",
+        "caption": "500,000 MMK to 1,500,000 MMK",
+        "cdval": "",
+        "cdidx": 15,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"500,000 MMK to 1,500,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25330
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "INCOME",
+        "cdid": "16",
+        "caption": "Bellow 500,000 MMK",
+        "cdval": "",
+        "cdidx": 16,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Bellow 500,000 MMK\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25331
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SECTOR",
+        "cdid": "OT",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 16,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25332
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "OTO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 61,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25333
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "JXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 43,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25334
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "KXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 44,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25335
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "LXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 45,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25336
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "AXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 2,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25337
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "BXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 5,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25338
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "CXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 9,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25339
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "DXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 15,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25340
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "EXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 16,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25341
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "SUBSECTOR",
+        "cdid": "FXO",
+        "caption": "Other",
+        "cdval": "",
+        "cdidx": 27,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"Other\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25342
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "CTMSIZE",
+        "cdid": "G",
+        "caption": "4-Signature Banking",
+        "cdval": "",
+        "cdidx": 4,
+        "ftag": "",
+        "visible": 1,
+        "mcaption": "{\"English\":\"4-Signature Banking\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25343
+      }
+    ]
+  }
+]

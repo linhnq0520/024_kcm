@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8110129Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "712e0330b7f6d4a9",
+        "learn_api_name": "BO_005002_Print_BO005_002_Print_Receipt Date String",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/deposit/Account/refreshprint",
+        "learn_api_data": "dataset",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.dataset",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "o9_print_bo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n\"pdacc\":\"MapS.dataS(BO_005002_print.pdacc)\",\n\"frdt\": \"MapS.dateDDMMYYYY(BO_005002_print.frdt)\",\n\"frline\": MapS.dataN(BO_005002_print.frline)\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.dataset",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 188
+      }
+    ]
+  }
+]

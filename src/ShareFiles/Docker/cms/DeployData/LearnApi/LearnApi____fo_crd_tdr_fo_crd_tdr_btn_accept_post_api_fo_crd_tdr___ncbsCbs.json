@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-18T09:44:47.3418713Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "fo_crd_tdr_fo_crd_tdr_btn_accept_post_api_fo_crd_tdr",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_tdr_fo_crd_tdr_btn_accept_post_api_fo_crd_tdr",
+        "learn_api_name": "FO_CRD_TDR Accept FO_CRD_TDR",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_TDR",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"CRD_TDR\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"credit_account\":\"MapS.dataS(FO_CRD_TDR.credit_account)\",\"disbursement_amount\":\"MapS.dataN(FO_CRD_TDR.disbursement_amount)\",\"deposit_account\":\"MapS.dataS(FO_CRD_TDR.deposit_account)\",\"deposit_account_name\":\"MapS.dataS(FO_CRD_TDR.deposit_account_name)\",\"currency_code\":\"MapS.dataS(FO_CRD_TDR.currency_code)\",\"cross_rate\":\"MapS.dataN(FO_CRD_TDR.cross_rate)\",\"deposit_amount\":\"MapS.dataN(FO_CRD_TDR.deposit_amount)\",\"exchange_rate\":\"MapS.dataN(FO_CRD_TDR.exchange_rate)\",\"disbursement_amount_equivalent_in_bcy\":\"MapS.dataN(FO_CRD_TDR.disbursement_amount_equivalent_in_bcy)\",\"receiver_name\":\"MapS.dataS(FO_CRD_TDR.receiver_name)\",\"receiver_code\":\"MapS.dataS(FO_CRD_TDR.receiver_code)\",\"receiver_address\":\"MapS.dataS(FO_CRD_TDR.receiver_address)\",\"receiver_description\":{\"home\":\"MapS.dataS(FO_CRD_TDR.receiver_description.home)\",\"office\":\"MapS.dataS(FO_CRD_TDR.receiver_description.office)\"},\"description\":\"MapS.dataS(FO_CRD_TDR.description)\",\"values_date\":\"MapS.dataS(FO_CRD_TDR.values_date)\",\"currency_of_credit_account\":\"MapS.dataS(FO_CRD_TDR.currency_of_credit_account)\",\"amount\":\"MapS.dataN(FO_CRD_TDR.amount)\",\"exchange_rate_debit\":\"MapS.dataN(FO_CRD_TDR.exchange_rate_debit)\",\"repidtype\":\"MapS.dataS(FO_CRD_TDR.repidtype)\",\"remaining_provision_amount\":\"MapS.dataN(FO_CRD_TDR.remaining_provision_amount)\",\"total_principal_amount\":\"MapS.dataN(FO_CRD_TDR.total_principal_amount)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"fee_data\":\"MapS.arrayJson(FO_CRD_TDR.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_name\\\":\\\"MapS.dataS(fee_data.ifc_name)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\"account_number_for_fee\":\"MapS.dataS(FO_CRD_TDR.account_number_for_fee)\",\"method\":\"MapS.dataS(FO_CRD_TDR.method)\",\"schedule_template\":\"MapS.dataS(FO_CRD_TDR.schedule_template)\"}}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 313
+      }
+    ]
+  }
+]

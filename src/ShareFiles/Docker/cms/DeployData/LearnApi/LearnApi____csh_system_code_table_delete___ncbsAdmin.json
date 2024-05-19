@@ -1,0 +1,78 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-29T07:10:31.6993041Z",
+    "host": "192.168.1.220:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.220"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "csh_system_code_table_search",
+        "app": "ncbsAdmin"
+      },
+      {
+        "learn_api_id": "csh_system_code_table_search_advanced",
+        "app": "ncbsAdmin"
+      },
+      {
+        "learn_api_id": "csh_system_code_table_add",
+        "app": "ncbsAdmin"
+      },
+      {
+        "learn_api_id": "csh_system_code_table_view",
+        "app": "ncbsAdmin"
+      },
+      {
+        "learn_api_id": "csh_system_code_table_update",
+        "app": "ncbsAdmin"
+      },
+      {
+        "learn_api_id": "csh_system_code_table_delete",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "csh_system_code_table_delete",
+        "learn_api_name": "csh_system_code_table_delete",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "system_code",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"CSH_DELETE_CODE_LIST_BY_PRIMARY_KEY\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"code_id\":\"MapS.dataS(code_list.code_id)\",\"code_name\":\"MapS.dataS(code_list.code_name)\",\"code_group\":\"MapS.dataS(code_list.code_group)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1774
+      }
+    ]
+  }
+]

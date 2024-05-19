@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:44.7602428Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"System Form Lang\",\"des\":\"ĐA NgôN Ngữ\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"System Form Lang\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"c5f58b7090c5494d\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"84aa8b3d3ce9c2ec\",\"inputtype\":\"cLayout\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"codeHidden\":\"52bdba37481dece2\",\"list_input\":[{\"default\":{\"name\":\"Vietnamese\",\"code\":\"code\",\"codeHidden\":\"196732f2539ac4d1\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.vi\",\"structable_read\":\"muti.vi\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"English\",\"code\":\"code\",\"codeHidden\":\"6abb542de95bd42b\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.en\",\"structable_read\":\"muti.en\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"Thai\",\"code\":\"code\",\"codeHidden\":\"3314b317ef8cfef7\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.thai\",\"structable_read\":\"muti.thai\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"Laos\",\"code\":\"code\",\"codeHidden\":\"69e71f6c14377a5a\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.lao\",\"structable_read\":\"muti.lao\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"Cambodian\",\"code\":\"code\",\"codeHidden\":\"7d6eb2328ba40fc3\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.cam\",\"structable_read\":\"muti.cam\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"Myanmar\",\"code\":\"code\",\"codeHidden\":\"88abcb941037b8a0\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.mya\",\"structable_read\":\"muti.mya\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true},{\"default\":{\"name\":\"Korean\",\"code\":\"code\",\"codeHidden\":\"5b5aedd7286abbe3\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"muti.han\",\"structable_read\":\"muti.han\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"visibility\":true}]}]}]",
+        "react_txt": "",
+        "form_id": "c5f58b7090c5494d",
+        "app": "ncbsCbs",
+        "id": 154
+      }
+    ]
+  }
+]

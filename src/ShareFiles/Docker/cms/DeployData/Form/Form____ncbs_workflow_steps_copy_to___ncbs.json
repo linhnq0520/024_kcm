@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.3676188Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"05/05/2023 04:34:44 PM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"ncbs_workflow_steps_copy_to\",\"bodata\":\"\",\"data\":\"\",\"des\":\"ncbs_workflow_steps_copy_to\",\"flow_layout\":[],\"form_code\":\"ncbs_workflow_steps_copy_to\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"calculator\",\"inUse\":true,\"isStart\":true,\"isStatus\":-1,\"order\":1,\"config\":{\"component_action\":\"*\",\"component_result\":\"copy_name\",\"component_event\":\"enter_tab\",\"function_cal\":\"`@{workflow_id}`+`_COPY`\",\"condition\":\"\"},\"isDidStart\":false,\"isOpenFromOther\":false},{\"code\":\"visibility\",\"inUse\":true,\"isStart\":true,\"isStatus\":-1,\"order\":1,\"config\":{\"component_action\":\"\",\"component_result\":\"workflow_id\",\"view_result\":\"\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"component_event\":\"all\",\"list_config\":[]},\"isDidStart\":false,\"isOpenFromOther\":false}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"9eaf03e844d64b09\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"78c1cfee930e98d0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"\",\"code\":\"workflow_id\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"1799b153d8e4199f\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"copy.workflow_id\",\"structable_read\":\"ncbs_workflow_management_search.workflow_id\",\"data_default\":\"\",\"isLookup\":\"false\",\"is_upperCase\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"false\",\"isSearch\":\"false\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"vi\":\"\",\"en\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Label\",\"code\":\"\",\"codeHidden\":\"2cb0f3693a431ed3\",\"class\":\"col-sm-2\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-2\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"\",\"structable_read\":\"\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jLabel\"},{\"default\":{\"name\":\"Enter workflow id to copy to\",\"code\":\"copy_name\",\"class\":\"col-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"01df544303b8bc4a\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"copy.copy_name\",\"structable_read\":\"copy.copy_name\",\"data_default\":\"\",\"form_evaluation\":\"\",\"isLookup\":\"false\",\"isEvaluation\":\"false\",\"is_upperCase\":\"true\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"false\",\"isSearch\":\"false\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"vi\":\"\",\"en\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"}]},{\"name\":\"Search\",\"code\":\"code\",\"codeHidden\":\"124e3a38fb88c5d0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"onTable\":\"\",\"icon\":\"\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-create-dataAPI-copy-table\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"*\\\",\\n            \\\"list_view\\\": \\\"\\\",\\n            \\\"table_code\\\": \\\"table_code_parent\\\",\\n             \\\"learn_api\\\": \\\"ncbs_workflow_steps_copy_to\\\",\\n            \\\"learn_api_search\\\": \\\"ncbs_workflow_management_search\\\",\\n           \\\"lang_param_replace\\\":\\\"{copy.copy_name}\\\",\\n           \\\"lang_confirm\\\":\\\"workflow_copy_to\\\"\\n        }\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Yes\",\"code\":\"btn_yes\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"ace1f0240d81f98b\"}},{\"config\":{\"onTable\":\"\",\"icon\":\"\",\"color\":\"\",\"action\":\"\",\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.closeForm\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"No\",\"code\":\"btn_no\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"5ef60cd5ae4e69a7\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "ncbs_workflow_steps_copy_to",
+        "app": "ncbs",
+        "id": 669
+      }
+    ]
+  }
+]

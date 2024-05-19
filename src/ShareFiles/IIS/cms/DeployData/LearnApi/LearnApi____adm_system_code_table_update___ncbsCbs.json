@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1223441Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "adm_system_code_table_update",
+        "learn_api_name": "adm - system code table update",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "adm_system_code_table",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"ADM_UPDATE_CODE_LIST_BY_PRIMARY_KEY\",\"lang\":\"en\",\"token\":\"MapS.context(token)\",\"fields\":{\"code_id\":\"MapS.dataS(c_cdlist.cdid)\",\"code_name\":\"MapS.dataS(c_cdlist.cdname)\",\"caption\":\"MapS.dataS(c_cdlist.caption)\",\"mcaption\":{\"english\":\"MapS.dataS(c_cdlist.mcaption.en)\",\"vietnamese\":\"MapS.dataS(c_cdlist.mcaption.vi)\",\"laothian\":\"MapS.dataS(c_cdlist.mcaption.lo)\",\"khmer\":\"MapS.dataS(c_cdlist.mcaption.km)\",\"myanmar\":\"MapS.dataS(c_cdlist.mcaption.mn)\"},\"code_group\":\"MapS.dataS(c_cdlist.cdgrp)\",\"code_index\":\"MapS.dataN(c_cdlist.cdidx)\",\"code_value\":\"MapS.dataS(c_cdlist.cdval)\",\"ftag\":\"MapS.dataS(c_cdlist.ftag)\",\"visible\":\"MapS.dataN(c_cdlist.visible)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 201
+      }
+    ]
+  }
+]

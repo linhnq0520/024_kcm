@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4095533Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\": \"Yêu cầu ngôn ngữ\",\"function\": \"tx.lang_data\",\"type\": \"java\",\"status\": \"A\",\"para\": [],\"response\": {\"_default_\": {\"fo\": [{\"txcode\": \"#sys:fo-load-language\",\"input\": {}}],\"error\": []}}},{\"name\": \"Tham số\",\"function\": \"tx.loadAllParaServer\",\"type\": \"java\",\"status\": \"A\",\"para\": [],\"response\": {\"_default_\": {\"fo\": [{\"txcode\": \"#sys:fo-sys-parameterSystem\",\"input\": {}}],\"error\": []}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"#sys:fo-form-login\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-login-start",
+        "version": 1,
+        "updateTime": 638042796880638697,
+        "txname": "Tải đầu tiên",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 77
+      }
+    ]
+  }
+]

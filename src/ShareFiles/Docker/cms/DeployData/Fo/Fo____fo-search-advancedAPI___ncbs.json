@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4602244Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Clear error\",\"function\":\"form.clearErrorFormParent\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"on loading\",\"function\":\"form.onLoad\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Yêu cầu component của Form cập nhật dữ liệu\",\"function\":\"formAPI.reloadDataParent\",\"type\":\"java\",\"status\":\"A\"},{\"name\":\"Get data from form\",\"function\":\"formAPI.addnewSearchAdvanced\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"*\",\"code\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-search-advancedAPI\",\"input\":{\"learn_api\":\"@learn_api\",\"search_advanced\":\"true\",\"key_table_paging\":\"@key_table_paging\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "",
+        "txtype": "fo",
+        "txcode": "fo-search-advancedAPI",
+        "version": 1,
+        "updateTime": 638197225008808660,
+        "txname": "fo-search-advancedAPI",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbs",
+        "id": 209
+      }
+    ]
+  }
+]

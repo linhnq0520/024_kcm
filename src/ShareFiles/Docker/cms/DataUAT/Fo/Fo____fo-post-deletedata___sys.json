@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.0743018Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xác nhận\",\"function\":\"form.confirm\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"sysConfirmDelTitle\"],\"request\":{\"false\":{\"cmd\":\"stop\"}}},{\"name\":\"Xóa dữ liệu\",\"function\":\"form.delete\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@table_code\",\"@table_col_key\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-load-deletedata\",\"input\":{\"table_code\":\"@table_code\",\"table_col_key\":\"@table_col_key\"}},{\"txcode\":\"#sys:bo-load-data\",\"input\":{\"table_code\":\"@table_code\"}}]}}}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-post-deletedata",
+        "version": 1,
+        "updateTime": 638042796881318661,
+        "txname": "Xóa 1 data webui (không xóa)",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 6
+      }
+    ]
+  }
+]

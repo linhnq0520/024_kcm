@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.7651148Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\r\n  {\r\n    \"name\": \"g?i learn API\",\r\n    \"function\": \"ncbsCbs.core.txNcbsCbs.getDataArray\",\r\n    \"type\": \"java\",\r\n    \"para\": [\r\n\r\n    ],\r\n    \"status\": \"A\",\r\n    \"response\": {\r\n      \"true\": {\r\n        \"fo\": [\r\n          {\r\n            \"txcode\": \"#ncbsCbs:fo-update-data-component\",\r\n            \"input\": {\r\n                \"component_result\":\"@component_result\"\r\n            }\r\n          }\r\n        ],\r\n        \"error\": [\r\n\r\n        ]\r\n      },\r\n      \r\n      \"false\": {\r\n        \"fo\": [\r\n          {\r\n            \"txcode\": \"#sys:fo-msg-toast\",\r\n            \"input\": {\r\n              \"lang\": \"sysActionError\"\r\n            }\r\n          },\r\n          {\r\n            \"txcode\": \"#sys:fo-error-setToFormMain\",\r\n            \"input\": {\r\n\r\n            }\r\n          }\r\n        ],\r\n        \"error\": [\r\n\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-get-dataArray",
+        "version": 1,
+        "updateTime": 638060900543304197,
+        "txname": "T?o API",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 274
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+﻿Database,Mortgage,Table,MortgageCatalog,,,,,,,,,,,
+CatalogCode,CatalogName,CurrencyCode,CollateralAssetType,CollateralRate,Classification,RiskRate,CreatedBy,BookScope,DepreciationOption,ApprovedBy,CatalogStatus,CreatedOnUtc,UpdatedOnUtc,Id
+00000001,Fixed_Deposit _Account,MMK,M,100.000,M4,0.000,00911,0,N,00911,N,,,0
+00000002,Personal_Guarantee,MMK,G,100.000,G2,0.000,00911,0,N,00911,N,,,0
+00000003,Land_and_Building,MMK,B,100.000,B2,0.000,00911,0,Y,00911,N,,,0
+00000004,Stacks_Shares_Securities,MMK,P,100.000,P2,0.000,00911,0,N,00911,N,,,0
+00000005,Goods,MMK,A,100.000,A3,0.000,00911,0,Y,00911,N,,,0
+00000006,Gold_and_Jewellery,MMK,P,100.000,P2,0.000,00911,0,Y,00911,N,,,0
+00000007,Saving_Deposit_Account,MMK,M,100.000,M4,0.000,00911,0,N,00911,N,,,0
+00000008,Current_Account,MMK,M,100.000,M4,0.000,00911,0,N,00911,N,,,0
+00000009,Pledge,MMK,A,100.000,A5,0.000,00911,0,Y,00911,N,,,0
+00000010,Condominium,MMK,B,100.000,B1,0.000,00911,0,Y,00911,N,,,0
+00000011,Apartment,MMK,B,100.000,B1,0.000,00911,0,Y,00911,N,,,0
+00000012,Seasonal_Fixed_Deposit_Account,MMK,M,100.000,M4,0.000,00911,0,N,00911,N,,,0
+00000013,Asigment_OF_Debit,MMK,P,100.000,P2,0.000,00911,0,N,00911,N,,,0
+00000014,Corporate_Guarantee,MMK,G,100.000,G1,0.000,00911,0,N,00911,N,,,0

@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <TransactionBody Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>TransactionBody</Alias>
+        <Columns isList="true" count="15">
+          <value>ORIGINAL,branch_code,branch_code,branch_code,System.String,eaab8bbd5f5a49638be083a2e4051fe6</value>
+          <value>ORIGINAL,branch_name,branch_name,branch_name,System.String,_x0037_4d176f1691643fcacae1817ae344e2d</value>
+          <value>ORIGINAL,teller_code,teller_code,teller_code,System.String,_x0034_af02f27fde44b7dbd3b6e621c974f81</value>
+          <value>ORIGINAL,approve_code,approve_code,approve_code,System.String,b1a2fe179dba4579ac507c4ed3e27d33</value>
+          <value>ORIGINAL,branch_received,branch_received,branch_received,System.String,e824ef5bc98645b193c216e7b47a210c</value>
+          <value>ORIGINAL,sender_name,sender_name,sender_name,System.String,_x0034_b5d71ac58cf4a51966c908f15250077</value>
+          <value>ORIGINAL,recipient_name,recipient_name,recipient_name,System.String,_x0033_04b651278c646a0a13c309257ba624a</value>
+          <value>ORIGINAL,paper_number_of_sender,paper_number_of_sender,paper_number_of_sender,System.String,_x0031_2d36cfcc5c04501bcd35813b986f588</value>
+          <value>ORIGINAL,paper_number_of_recipient,paper_number_of_recipient,paper_number_of_recipient,System.String,a45685c0bcce415395f86280c6ae780f</value>
+          <value>ORIGINAL,sender_number_phone,sender_number_phone,sender_number_phone,System.String,_x0031_7c972c3723f42498dd0fcdbd8997ec7</value>
+          <value>ORIGINAL,recipient_number_phone,recipient_number_phone,recipient_number_phone,System.String,f8c1a9d08a414ed890b7e2602f7bea0c</value>
+          <value>ORIGINAL,total_amount_in_word,total_amount_in_word,total_amount_in_word,System.String,_x0035_f88c8c2f0464c5ea143580d4312f727</value>
+          <value>ORIGINAL,total_amount,total_amount,total_amount,System.Nullable`1[System.Decimal],cedb783bafaa45c181adc84bfb0b19f7</value>
+          <value>ORIGINAL,amount_in_words,amount_in_words,amount_in_words,System.String,_x0032_3e52694cadf432d9c7017dab4ccf214</value>
+          <value>reference_number,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e9cb21e5612d4260a9e0b470314d6ffb</Key>
+        <Name>TransactionBody</Name>
+        <NameInSource>TransactionBody</NameInSource>
+      </TransactionBody>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="6">
+      <value>,transaction_date,transaction_date,,System.String,,False,False,False,False,,_x0032_7b300ed3c80400da0ee586a4a0d0be8</value>
+      <value>,transaction_refid,transaction_refid,,System.String,,False,False,False,False,,c134936cef3d4569bd07d9d1d560bf4d</value>
+      <value>,transaction_code,transaction_code,,System.String,,False,False,False,False,,_x0032_73f63669fff4a9f8da7c3486e764a25</value>
+      <value>,transaction_time,transaction_time,,System.String,,False,False,False,False</value>
+      <value>,transaction_ref,transaction_ref,,System.String,,False,False,False,False</value>
+      <value>,description,description,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>897676d3047c496b918b338fad246caf</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <InternalVoucher Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="49">
+        <Text23 Ref="4" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,0.65,0.9,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>db93dde692c24d3882a2e9dd84216140</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Branch Code:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text23>
+        <CUSTOMERCD Ref="5" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.57,0.65,1.23,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>5ef09860086f4acdbb77d20a744668b8</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>CUSTOMERCD</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.branch_code}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </CUSTOMERCD>
+        <Text27 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,0.8,1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>eed69dbda40c42659c88c927973eda1f</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Branch Name :  </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text27>
+        <Text1 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.24,8.27,0.16</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,12,Bold</Font>
+          <Guid>e9581e7aa06c46299e6acb92c922b689</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Inward Internal Bank</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text1>
+        <Text2 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.59,0.8,1.2,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>ec21adc7b8e94b2491f9e3e5a8b1a2b8</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.branch_name}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text2>
+        <Text3 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.05,0.5,1.1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>a7ebf0703e734091bf86481fee970cbd</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction Date:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text3>
+        <Text4 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,0.95,1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>dfb0c9cbc67340dfaf3f3278edfd1b37</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Teller: </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text4>
+        <Text5 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.59,0.95,1.2,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>a89c9b666f444888ac702c4cef8f6e94</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.teller_code}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text5>
+        <Text7 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.59,1.1,1.2,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>2bb7d585ce29406c91356b7cfa92a427</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.approve_code}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text7>
+        <Text18 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.17,0.5,1.8,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>f57446822fe14f838cc07c9523bd44b5</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_date}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text18>
+        <Text8 Ref="14" type="Text" isKey="true">
+          <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.57,1.5,1.31,4.14</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>26bacdbc565b4e2ba3e6370cc2ef8f75</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+        <Text19 Ref="15" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.05,0.65,1.1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>dc805f9d590e4f60a31a65313f9ef60f</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction Time:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text19>
+        <Text20 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.17,0.65,1.8,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>f3a981b1fc5e4e84b7182afba828449c</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_time}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text20>
+        <Text21 Ref="17" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.05,0.8,1.1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>f7c1d766cea34b17952fa91132bc2659</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction ref: </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text21>
+        <Text22 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.17,0.8,1.8,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>347fbc93e19d45b4897c2c73d8a58f60</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_refid}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text22>
+        <Text24 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.05,0.95,1.1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>d774f82b05ee4b0182932a495e8054f7</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction code:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text24>
+        <Text25 Ref="20" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.17,0.95,1.8,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>d5bab636364c4631bfa13cc8ecf60b20</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_code}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text25>
+        <Text26 Ref="21" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.05,1.1,1.1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>8c709b80bf9546759f37e318e59493f3</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction Ref:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text26>
+        <Text28 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.17,1.1,1.8,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>3c7d40c4a1b04a729b4baff8375515d0</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_ref}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text28>
+        <Text9 Ref="23" type="Text" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.86,1.5,6.1,4.14</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>dc369eb9f5bf4c8eb5ae0acd67188577</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text9>
+        <Text57 Ref="24" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,1.1,1,0.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9,Bold</Font>
+          <Guid>81b61a593d244a6ab58f33bad4aad047</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text57</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Approver:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text57>
+        <Text6 Ref="25" type="Text" isKey="true">
+          <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,1.69,1.52,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>321feb62ac814684b8a34fe04aebe6ae</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> Reference Number </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text6>
+        <Text10 Ref="26" type="Text" isKey="true">
+          <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,1.69,4.19,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>d3f38bddd2eb45488569518dab969ef9</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.reference_number}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text10>
+        <Text11 Ref="27" type="Text" isKey="true">
+          <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,2.08,1.52,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>62e2fd4cbf62443f88ec637934358682</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> Received From 
+ Ayeyarwady Bank </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text11>
+        <Text12 Ref="28" type="Text" isKey="true">
+          <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,2.08,4.19,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>248d02a7ce974e73a51845c79bf3b401</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.branch_received}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text12>
+        <Text13 Ref="29" type="Text" isKey="true">
+          <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,2.48,1.52,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>1e0c9c6d34594b9484291f6de3e77f05</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> The Sum of MMK</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text13>
+        <Text14 Ref="30" type="Text" isKey="true">
+          <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,2.48,4.19,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>ce9c19ccc9f34a42a556c9eae012508f</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.total_amount_in_word}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text14>
+        <Text15 Ref="31" type="Text" isKey="true">
+          <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,2.87,1.52,0.79</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>b48abee310d84d86b7efa163d47f201e</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> On Account Of</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text15>
+        <Text16 Ref="32" type="Text" isKey="true">
+          <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,2.87,4.19,0.79</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>6bc70f31d08342af9fd4f2e874972f18</Guid>
+          <LineSpacing>1.3</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text16>
+        <Text17 Ref="33" type="Text" isKey="true">
+          <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,3.66,1.52,0.79</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>fdae83b94b4d4975bade5530bdff0153</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> In terms Of </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text17>
+        <Text29 Ref="34" type="Text" isKey="true">
+          <Border>Top, Left, Right;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,3.66,4.19,0.79</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>7166117ed79c4e82b37900399486d762</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text29>
+        <Text30 Ref="35" type="Text" isKey="true">
+          <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.06,4.45,1.52,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>29361568ca52437b814cfa9d0b447f9a</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> MMK
+ In words</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text30>
+        <Text31 Ref="36" type="Text" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.58,4.45,4.19,0.39</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>53661a51bdcb46d7b398243b8ffdcdfd</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text31>
+        <Text32 Ref="37" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,2.9,4.09,0.59</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>99c8b621dbe84a20b4cccf8099e89c7c</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.sender_name}
+ {TransactionBody.paper_number_of_sender}
+ {TransactionBody.sender_number_phone}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text32>
+        <Text33 Ref="38" type="Text" isKey="true">
+          <Border>Top;Black;1;Dash;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.62,3.45,1.99,0.19</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>08896ecd787c4e7f8d01acfee4bccedf</Guid>
+          <LineSpacing>1.3</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text33</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Signature </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text33>
+        <Text34 Ref="39" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,3.85,4.09,0.59</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>f92a0fe7bee44a359732df3993cb204b</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text34</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.recipient_name}
+ {TransactionBody.paper_number_of_recipient}
+ {TransactionBody.recipient_number_phone}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text34>
+        <Text35 Ref="40" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,4.5,4.09,0.29</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>555a0dba87654911a04c8dc6676f4fbb</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>
+ {TransactionBody.amount_in_words}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text35>
+        <Text36 Ref="41" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,4.5,4.09,0.19</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>8fbe64c715414c729db0b10efcf90244</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text> {TransactionBody.total_amount}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="42" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </TextFormat>
+          <Type>Expression</Type>
+        </Text36>
+        <Text37 Ref="43" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.8,5.2,1.59,0.19</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>b9566f5925ef4c15b76e8b0679bebbf6</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text37</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Signature</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="44" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </TextFormat>
+          <Type>Expression</Type>
+          <VertAlignment>Bottom</VertAlignment>
+        </Text37>
+        <Text38 Ref="45" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.5,5.4,2.19,0.19</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>6f16a1a9365a470aa656f308e1bec025</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text38</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>To affix stamp it amount exceeds MMK
+</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="46" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </TextFormat>
+          <Type>Expression</Type>
+        </Text38>
+        <Text39 Ref="47" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.65,5.38,0.19,0.23</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>1104d50a0c66469da239fd4fa7f68476</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text39</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>To: </Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text39>
+        <Text40 Ref="48" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.65,1.6,0.19,3.53</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>eadc66f259784cf1a5a52d30cc3e7e75</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text40</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.sender_name}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text40>
+        <Text41 Ref="49" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.81,1.6,0.19,3.53</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>5a51a49b427b4f5eae95ee58f19a9833</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text41</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.paper_number_of_sender}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>DataColumn</Type>
+        </Text41>
+        <Text42 Ref="50" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.96,2.58,0.39,3.03</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>917e85aef2ea4b0580ea2f985fe766d4</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text42</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Please present the attached warrant duly signed and stamped and received the sum of </Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,WordWrap=True,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text42>
+        <Text43 Ref="51" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.26,5.28,0.19,0.33</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>2f3dc04810e04cf6b18530a4c2ee357a</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text43</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>MMK</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text43>
+        <Text44 Ref="52" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.26,1.6,0.19,3.63</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>479e285480cc4f08acc9ef7e47b9be23</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text44</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{TransactionBody.total_amount}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="53" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </TextFormat>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text44>
+        <Text45 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.68,5.28,0.19,0.33</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>399b134fa4eb463194f733477a93b432</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text45</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Date:</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text45>
+        <Text46 Ref="55" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.68,3.9,0.19,1.33</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>c6e78f93c88844cea9fdcb28c788972e</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text46</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{transaction_date}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text46>
+        <Text47 Ref="56" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.68,1.72,0.19,2.13</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>b06f45cddaa4486ba2b9109deded16e2</Guid>
+          <LineSpacing>1.1</LineSpacing>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text47</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>for AYEYARWADY BANK BANK LTD</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>,,,,,Angle=90</TextOptions>
+          <Type>Expression</Type>
+        </Text47>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f4abd080a78743bfa388f252a88c0af2</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>InternalVoucher</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>5.83</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+    </InternalVoucher>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/20/2023 4:28:05 PM</ReportChanged>
+  <ReportCreated>9/8/2011 12:21:29 PM</ReportCreated>
+  <ReportFile>C:\Users\JITS\Desktop\JITS\Test-voucher\voucher mrt\A901.mrt</ReportFile>
+  <ReportGuid>5c993767c2a14accaf4fd9f35fe58ae3</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

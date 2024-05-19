@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.8618369Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"22/12/2022 10:25:49 PM\",\"list_show_error\":\"false\",\"app\":\"ncbsReport\",\"title\":\"Account Classification\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Account Classification\",\"flow_layout\":[],\"form_code\":\"dashboard_account_classification\",\"key_form\":\"\",\"lang_form\":{\"en\":\"Account Classification\"},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"688973e639978cb4\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"da16e0f1588049e0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"0b2a30464900ee0c\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"24fae418b16b7054\"},\"config\":{\"design_type\":\"dashboard\",\"file_report\":\"ACCOUNT_CLASSIFICATION\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}]}]}]",
+        "react_txt": "",
+        "form_id": "dashboard_account_classification",
+        "app": "ncbsReport",
+        "id": 1265
+      }
+    ]
+  }
+]

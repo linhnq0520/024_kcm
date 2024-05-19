@@ -1,0 +1,39 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2022-12-14T07:57:05.6174106Z",
+    "host": "192.168.1.170:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "neptunedb_mysql"
+      },
+      {
+        "name": "port",
+        "value": "3306"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "DesignTemplateForm"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "att_id": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+     
+    ]
+  }
+]

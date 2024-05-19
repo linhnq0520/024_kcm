@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:45.3818065Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"15/03/2022 11:00:57 AM\",\"list_show_error\":\"false\",\"app\":\"ncbs\",\"title\":\"Blank Form\",\"bodata\":\"\",\"data\":\"\",\"des\":\"\",\"flow_layout\":[],\"form_code\":\"test_static\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"all\",\"component_action\":\"\",\"component_result\":\"creator;modifier\",\"condition\":\"1===1\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"fbbca9a5322d419b\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"\",\"codeHidden\":\"ad045147d3e22310\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"M?u component\",\"code\":\"4a563edde0f0558f\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"74f58db1dbe75193\"},\"config\":{\"action\":\"\",\"structable\":\"table.col\",\"structable_read\":\"\",\"data_default\":\"{}\",\"callform\":\"ncbs_role_management\",\"callData\":\"\",\"notCheckValidate\":false,\"is_open_static_form\":true},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\"},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"jSameMain\"}]}]}]",
+        "react_txt": null,
+        "form_id": "test_static",
+        "app": "ncbs",
+        "id": 666
+      }
+    ]
+  }
+]

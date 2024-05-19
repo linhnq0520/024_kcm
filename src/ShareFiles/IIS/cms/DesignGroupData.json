@@ -1,0 +1,62 @@
+[
+	{
+		"type": "header",
+		"command": "Export data to Json"
+	},
+	{
+		"exported_time": "2023-04-11T03:41:12.2552398Z",
+		"host": "192.168.1.170:8066",
+		"db_properties": [
+			{
+				"name": "server",
+				"value": "neptunedb_mysql"
+			},
+			{
+				"name": "port",
+				"value": "3306"
+			},
+			{
+				"name": "database",
+				"value": "cms"
+			},
+			{
+				"name": "entity",
+				"value": "DesignGroup"
+			}
+		],
+		"exported_by_fields": [
+			{
+				"group_id": null
+			}
+		]
+	},
+	{
+		"type": "data",
+		"data": [
+			{
+				"group_id": "layout_fields",
+				"isActive": true,
+				"title": "{\"en\":\"Layout Fields\",\"vi\":\"Mẫu bố trí\"}",
+				"order": "1"
+			},
+			{
+				"group_id": "ultra_advanced_fields",
+				"isActive": true,
+				"title": "{\"en\":\"Ultra Advanced Fields\",\"vi\":\"Mẫu cực kì nâng cao\"}",
+				"order": "2"
+			},
+			{
+				"group_id": "advanced_fields",
+				"isActive": true,
+				"title": "{\"en\":\"Advanced Fields\",\"vi\":\"Mẫu nâng cao\"}",
+				"order": "3"
+			},
+			{
+				"group_id": "basic_fields",
+				"isActive": true,
+				"title": "{\"en\":\"Basic Fields\",\"vi\":\"Đối tượng cơ bản\"}",
+				"order": "4"
+			}
+		]
+	}
+]

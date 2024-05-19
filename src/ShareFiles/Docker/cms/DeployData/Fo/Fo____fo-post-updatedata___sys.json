@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4277262Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xóa thông báo lỗi\",\"function\":\"form.clearError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Thu thập và sửa\",\"function\":\"form.update\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@list_component\",\"@list_view\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-update-data\",\"input\":{\"table_code\":\"@table_code\"}},{\"txcode\":\"#sys:bo-load-data\",\"input\":{\"table_code\":\"@table_code\"}}]}}}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-post-updatedata",
+        "version": 1,
+        "updateTime": 638042796881319059,
+        "txname": "Cập nhập webui (không xóa)",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 119
+      }
+    ]
+  }
+]

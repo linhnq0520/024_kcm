@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4526839Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Clear error\",\"function\":\"form.clearErrorFormParent\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"on loading\",\"function\":\"form.onLoad\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Get data from form\",\"function\":\"formAPI.addnewSearchAdvanced\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"*\",\"code\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#ncbsCbs:bo-search-advancedAPI\",\"input\":{\"learn_api\":\"@learn_api\",\"workflow_id\":\"@workflow_id\",\"table_code\":\"@table_code\",\"api_map_code\":\"@api_map_code\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-search-advancedAPI",
+        "version": 1,
+        "updateTime": 638042796881319255,
+        "txname": "fo-search-advancedAPI",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 188
+      }
+    ]
+  }
+]

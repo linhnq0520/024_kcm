@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.7887742Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_007022_Addapi_rulefunc_PMT_IFC_AUTO_FEE_LKP_DATA_IFCCD",
+        "learn_api_name": "BO_007022_Addapi_rulefunc_IFC_AUTO_FEE_LKP_DATA_IFCCD",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "PMT_IFC_LOOKUP_IFC",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"PMT_IFC_LOOKUP_IFC\",\r\n  \"lang\": \"en\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n    \"ifc_name\": \"MapS.dataSNull(lookup.search_name)\",\r\n    \"page_index\": \"0\",\r\n    \"page_size\": \"0\",\r\n    \"ifc_code_from\": \"MapS.dataNNull(lookup.search_code)\",\r\n    \"ifc_code_to\": \"MapS.dataNNull(lookup.search_code)\",\r\n    \"value_type\": \"\",\r\n    \"ifc_type\": \"C\",\r\n    \"ifc_value_from\": null,\r\n    \"ifc_value_to\": null,\r\n    \"ifc_tenor_from\": null,\r\n    \"ifc_tenor_to\": null,\r\n    \"ifc_tenor_unit\": \"\",\r\n    \"ifc_condition\": \"\",\r\n    \"ifc_status\": \"N\"\r\n  }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1626
+      }
+    ]
+  }
+]

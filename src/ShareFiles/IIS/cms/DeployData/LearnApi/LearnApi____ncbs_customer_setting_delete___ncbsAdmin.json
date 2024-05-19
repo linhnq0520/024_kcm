@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5940534Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_customer_setting_delete",
+        "learn_api_name": "ncbs_customer_setting_delete",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "ncbs_customer_setting_delete",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"CTM_SETTING_DELETE\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n     \"id\": \"MapS.dataI(ncbs_customer_setting.id)\"\r\n  }\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1222
+      }
+    ]
+  }
+]

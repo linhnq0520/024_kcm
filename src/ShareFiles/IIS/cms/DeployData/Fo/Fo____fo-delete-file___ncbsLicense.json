@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4692341Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Thu thập và thêm mới\",\"function\":\"form.returnTrue\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-delete-file\",\"input\":{\"file_name\":\"@file_name\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-delete-file",
+        "version": 1,
+        "updateTime": 638042796881319342,
+        "txname": "delete file",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsLicense",
+        "id": 234
+      }
+    ]
+  }
+]

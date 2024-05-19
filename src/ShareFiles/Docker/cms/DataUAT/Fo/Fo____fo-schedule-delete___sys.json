@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.2170339Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"X�c nh?n\",\"function\":\"schedule.confirm\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"sysConfirmDelTitle\"],\"request\":{\"false\":{\"cmd\":\"stop\"}}},{\"name\":\"X�a d? li?u\",\"function\":\"schedule.delete\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@table_code\",\"@table_col_key\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-schedule-delete\",\"input\":{\"table_code\":\"@table_code\",\"table_col_key\":\"@table_col_key\"}},{\"txcode\":\"#sys:bo-schedule-loaddata\",\"input\":{\"table_code\":\"@table_code\"}}]}}}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-schedule-delete",
+        "version": 1,
+        "updateTime": 638042796881319092,
+        "txname": "Schedule job fo delete",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 135
+      }
+    ]
+  }
+]

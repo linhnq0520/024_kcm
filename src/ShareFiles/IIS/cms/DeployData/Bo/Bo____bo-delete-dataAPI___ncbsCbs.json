@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4600332Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xóa dữ liệu bằng API\",\"function\":\"ncbsCbs.core.txNcbsCbs.delete\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysDeleteOk\"}},{\"txcode\":\"#sys:fo-search-API\",\"input\":{\"learn_api\":\"@learn_api_search\"}}]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysDeleteError\"}}]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-delete-dataAPI",
+        "version": 1,
+        "updateTime": 638042796880638970,
+        "txname": "Delete data with API",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 186
+      }
+    ]
+  }
+]

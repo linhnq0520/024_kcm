@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.003312Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"ACT-Group Definition Add\",\"des\":\"ACT-Group Definition Add\",\"data\":\"\",\"learnapi\":\"act_group_definition_add_module_name_get_api_code_act_cdgrpact\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"false\",\"url_input\":\"\",\"lang_form\":{\"en\":\"ACT-Group Definition Add\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"act_group_definition_add\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_action\":\"\",\"component_result\":\"modify;\",\"view_result\":\"\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"true\",\"component_event\":\"on_change\",\"list_config\":[]},\"isStart\":true,\"inUse\":true,\"order\":1,\"isStatus\":\"Không dùng\",\"isDidStart\":false},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\";errorJWebUI_code\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\"},\"isStart\":true,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"copy\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"errorJWebUI_code\",\"component_result\":\"*;clear;save\",\"condition\":\"'@{errorJWebUI_code}'==\\\"0\\\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\"},\"isStart\":false,\"inUse\":true,\"order\":1}],\"app\":\"o9\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"1dfdeed456ca883d\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"Button\",\"code\":\"\",\"codeHidden\":\"76a4f0e5f32e3337\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"act_group_definition.search\",\"structable_read\":\"act_group_definition.search\",\"data_default\":\"\",\"color\":\"primary\",\"icon\":\"fa-search\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-open-form\\\",\\\"input\\\":{\\\"form_key\\\":\\\"BO_012005001_Search\\\"}}]\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Search\",\"code\":\"search\",\"codeHidden\":\"09925a85aae580a2\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"act_group_definition.modify\",\"structable_read\":\"act_group_definition.modify\",\"data_default\":\"\",\"color\":\"warning\",\"icon\":\"fa-pencil-square-o\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Modify\",\"code\":\"modify\",\"codeHidden\":\"65744126b3bcf626\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"act_group_definition.save\",\"structable_read\":\"act_group_definition.save\",\"data_default\":\"\",\"color\":\"success\",\"icon\":\"fa-save\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-create-dataAPI\\\",\\\"input\\\":{\\\"list_component\\\":\\\"*\\\",\\\"list_view\\\":\\\"\\\",\\\"table_code\\\":\\\"act_group_definition\\\",\\\"learn_api\\\":\\\"act_group_definition_add_save_post_api_accounting_group\\\"}}]\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Save\",\"code\":\"save\",\"codeHidden\":\"a0852aa4d324992b\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"useAction\":\"false\",\"action\":\"\",\"structable\":\"act_group_definition.clear\",\"structable_read\":\"act_group_definition.clear\",\"data_default\":\"\",\"color\":\"default\",\"icon\":\"fa-trash-o\",\"txFo\":\"[{\\\"txcode\\\":\\\"#sys:fo-form-clear\\\",\\\"input\\\":{}}]\",\"onTable\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\",\"default\":{\"name\":\"Clear\",\"code\":\"clear\",\"codeHidden\":\"6232456b2df51255\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"}},{\"default\":{\"name\":\"errorJWebUI\",\"code\":\"errorJWebUI_code\",\"codeHidden\":\"c2a97a17e41cb223\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"errorJWebUI.count\",\"structable_read\":\"errorJWebUI.count\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_disabled\":\"false\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}]}]},{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"41dc653117af2fd0\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"Group Name\",\"code\":\"code\",\"codeHidden\":\"ed8d132086c83391\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"structable\":\"act_group_definition.grpid\",\"structable_read\":\"act_group_definition.grpid\",\"data_default\":\"\",\"format\":\"#\",\"decimal_length\":\"0\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":0,\"max\":null,\"max_length\":8},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jCurrency\",\"default\":{\"name\":\"Accounting Group\",\"code\":\"accounting_group\",\"codeHidden\":\"0b6d941c9462d0a4\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"structable\":\"act_group_definition.o9module\",\"structable_read\":\"act_group_definition.o9module\",\"data_default\":\"\",\"data_mode\":\"query\",\"query_data\":\"select * from module_name\",\"is_multi_select\":\"false\",\"is_multi_col\":\"false\",\"get_data_format\":\"module_name.cdid\",\"selected_view_format\":\"@module_name.caption\",\"col_format\":\"@module_name.caption\",\"table_format\":\"[]\",\"key_selected\":\"module_name.cdid\",\"json_data\":\"[]\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":\"\",\"max\":\"\"},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jSelect\",\"default\":{\"name\":\"Module Name\",\"code\":\"module_name\",\"codeHidden\":\"a1a4e7fb17e6a2b7\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"action\":\"\",\"structable\":\"act_group_definition.acgrpdef\",\"structable_read\":\"act_group_definition.acgrpdef\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"max\":100},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\",\"default\":{\"name\":\"Group Name\",\"code\":\"group_name\",\"codeHidden\":\"4fbab529ec12c788\",\"class\":\"                                   col-xl-4 col-lg-4 col-md-5 col-sm-6 offset-xl-2-right offset-lg-2-right offset-md-1-right\",\"condition\":\"\",\"role\":\"\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "act_group_definition_add",
+        "app": "ncbsCbs",
+        "id": 442
+      }
+    ]
+  }
+]

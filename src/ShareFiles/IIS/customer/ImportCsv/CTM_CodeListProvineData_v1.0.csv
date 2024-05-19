@@ -1,0 +1,17 @@
+Database,Customer,Table,CodeListProvine
+CodeId,CodeName,Caption,Mcaption,CodeIndex,CodeValue,Ftag,Visible,UpdatedOnUtc,CreatedOnUtc,Id
+"1","LCPROVINE","1. Kachin State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","1","1","","1","","","1"
+"2","LCPROVINE","2. Kaya State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","2","2","","1","","","2"
+"3","LCPROVINE","3. Kayin State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","3","3","","1","","","3"
+"4","LCPROVINE","4. Chin State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","4","4","","1","","","4"
+"5","LCPROVINE","5. Sagaing Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","5","5","","1","","","5"
+"6","LCPROVINE","6. Tanintharyi State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","6","6","","1","","","6"
+"7","LCPROVINE","7. Bago Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","7","7","","1","","","7"
+"8","LCPROVINE","8. Magwe Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","8","8","","1","","","8"
+"9","LCPROVINE","9. Naypyitaw Division ","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","9","9","","1","","","9"
+"10","LCPROVINE","10. Mandalay Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","10","10","","1","","","10"
+"11","LCPROVINE","11. Mon State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","11","11","","1","","","11"
+"12","LCPROVINE","12. Rakhine State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","12","12","","1","","","12"
+"13","LCPROVINE","13. Yangon Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","13","13","","1","","","13"
+"14","LCPROVINE","14. Shan State","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","14","14","","1","","","14"
+"15","LCPROVINE","15. Ayeyarwady Division","{""English"":"""",""Vietnamese"":"""",""Laothian"":"""",""Khmer"":""""}","15","15","","1","","","15"

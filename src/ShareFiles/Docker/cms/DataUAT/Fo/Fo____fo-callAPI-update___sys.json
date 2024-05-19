@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3578108Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"on loading\",\n        \"function\": \"form.onLoad\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": []\n    },\n    {\n        \"name\": \"Get data from form\",\n        \"function\": \"formAPI.addnew\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [\n            \"*\",\n            \"code\"\n        ],\n        \"request\": {\n            \"true\": {\n                \"bo\": [\n                    {\n                        \"txcode\": \"#ncbs:bo-callAPI-andReload\",\n                        \"input\": {\n                            \"learn_api\": \"@learn_api\",\n                            \"node_clear\": \"@node_clear\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "fo",
+        "txcode": "fo-callAPI-update",
+        "version": 1,
+        "updateTime": 638063522407295245,
+        "txname": "fo-callAPI-update",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 291
+      }
+    ]
+  }
+]

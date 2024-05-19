@@ -1,0 +1,67 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-08T07:42:14.3706116Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": "bo-tableItem-callAPI-andSearch",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "bo-search-condition-API",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "bo-check-loginApprove-SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "bo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "app": "sys"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"X?a d? li?u b?ng API\",\n        \"function\": \"ncbsCbs.core.txNcbsCbs.callListApi\",\n        \"type\": \"java\",\n        \"status\": \"A\",\n        \"para\": [],\n        \"response\": {\n            \"true\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-cloesModal-and-setDataComponentParent\",\n                        \"input\": {\n                            \"component_code_parent\": \"@component_code_parent\",\n                            \"node_get\": \"@node_get\"\n                        }\n                    }\n                ],\n                \"error\": []\n            },\n            \"false\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-msg-confirm\",\n                        \"input\": {\n                            \"toast_type\": \"error\"\n                        }\n                    }\n                ],\n                \"error\": []\n            }\n        }\n    }\n]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "version": 1,
+        "updateTime": 638376169030479956,
+        "txname": "bo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 296
+      }
+    ]
+  }
+]

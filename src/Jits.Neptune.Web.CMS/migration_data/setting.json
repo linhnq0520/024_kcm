@@ -1,0 +1,219 @@
+[
+	{
+		"type": "header",
+		"command": "Export data to Json"
+	},
+	{
+		"exported_time": "2023-05-10T09:35:31.268436Z",
+		"host": "192.168.1.171:8066",
+		"db_properties": [
+			{
+				"name": "server",
+				"value": "server=192.168.1.186"
+			},
+			{
+				"name": "port",
+				"value": "1433"
+			},
+			{
+				"name": "database",
+				"value": "cms"
+			},
+			{
+				"name": "entity",
+				"value": "Setting"
+			}
+		],
+		"exported_by_fields": [
+			{
+				"txcode": null,
+				"app": null
+			}
+		]
+	},
+	{
+		"type": "data",
+		"data": [
+			{
+				"Name": "WebApiSettings.DeveloperMode",
+				"Value": "true",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "WebApiSettings.TokenLifetimeDays",
+				"Value": "7",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "WebApiSettings.SecretKey",
+				"Value": "igTLDRYrrjV88ZAXvF+nSw",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.License",
+				"Value": "VnDobNPNyfuYvhZwYU5rTctWZK7iaMOXQwfp5Ic+N27pfTokbHMrwlZSxIA95QM3qpXO2BOH8DKldgRVtn0eCelQ7ZGod2J61geTbZqgJuh+LjA23fpB2G1HMTGaHcYWC2LlCUuh1KoI4zsB+DqcznHeDY/woZM/95YM60SF2WzKyjKN3Id5Ys5gdvOFqiJWntI/zK1tIYa6dFCpu+zZqLOf8smf1EBR9P4/rILRKWWfZpUOfjwbeCvf49TIh1x5rO2mWj9Y/w1x+r3XySU282GEl+4qkV7bgM4ttxNCCySFnP59YhMqpeLvGpbGrN2ofQk4C8g+fepUumoEXiGLd0QdwOd9VDeZD+YJD8ffNxUL+R0QN67HvHRsqtNvZh99ECrrogwS2lY/rVL3SPBq0Sj56sNwQVx7/T/gR8A92xZ4mtVWHGfecIvCYsy8rIHk4B8AFFyIFuQPcVQqqwX2LMFxAriMzefwaOQRQWjHc/rWHoJqcZLG8rrys/0jycrsv6P83Cfy2lqHGYeE5+tTVAPs270fVfIC1AMa9yEfubq4b7dITffGz3Wk2TJhhpKp+0SlTF9nNCctNIa65ePQqFVx4mNI9zv1gP6Q68ELdS38/gm47wZFVSUF4Hxk1JlMS4nCr+a+ViXuh2vRarVbDIt6kxIvxwCmZAW/nvN5FN4=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.Geo",
+				"Value": "true",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.Isdev",
+				"Value": "true",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.Isprod",
+				"Value": "true",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.Slowspeednetwork",
+				"Value": "1",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.Hostport",
+				"Value": ":8066",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.TemplateHostDev",
+				"Value": "https://192.168.1.230:8066/fwcss",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.SeverRsaPrivateKey",
+				"Value": "KqmQTLK35R4lzfES8IukPmcNxk9vfM1SAgiPOhP9qU6Q3CvDB52uVsGHqn3bpWJy4nlhb5i8FEBUczJwNyQ7zNzYAmAoE1G99LTq1mqn4X7Gm8xcecLAQhty83q/B5pxEBxnurjG4Xv240scoXnLpvuSCQrNgHYfnJud0l/RDtk=QSGVBY3A/CcTfeLHZeM5TU41ojKPPM+74f2nMDHFbZLbUzvc+zlikB0TK91AtzXE/A4fpC540DOBsa+2G4h9fRbH95VjlDakKKgpd3snyDx+XH4E/fm9jMEFU6aqIzja8AT132JMBjRzLvsUn725m6xp57cBWCIhmwBSD8Si5MM=G4A6Deol3128g4bcETfRGhpHnuYuI2Drb/QJJqcVC7eCOb8MyiB7lgM+OlBOAVXXMhz6dZwCO6zym/UbYct71NoGJVk3wGJJc767wbi4XpxSBcaxCKquLAF1oUFpUIf7bRn9P6Yz4ID3tRi4AvXATgGWr0+bGfsohkfCNTLnfIA=MEsb43uAY2zJHVmh+vQbsWtNhJ9Cssgs4X4aVzv9KcEEmB01MdI9iChLsfvDGp7K82QaUqKSAzT0Ehs6LUFC/QH4j7T41IE87gVeyiZRpheL+68A0+Jv7nZHbnWM8yWKzm9Yt/NKk4phs7tQorAM+lJzMAqS/LBI9n3H71Su4BU=CoDaDPLrv4IVms7tBZB8mbXcCd/9SJ+Y3lVJX2lDBXQnP0RKWBxkefFAnafcxQk91DfblQVM5jLs75Iqx5NZnR92H5lCnSekVI2RGHcaDt9+jhBO1E5mIOm7TweGZMJDnaHK3j4UiDkiw/fdrq1/YeL3+T5hRSemSVnXwOkmJAk=RGC3yZMrFZg3v8abPTZ4//J2TIM3L+0Xuh7Pd0jNFuT/4v5PImTSbtfpPhFRvNor62iMgfsfZTo13Ka3QegOST+O+8kE+Scirw9972+y7UlLLXyrGh71D/b8ZHwz3TkRGEV1vzYZtZGx0lp7X4tlcn75NhkM4QmYjaJuMsZf2Ns=QNcTdF09Hy7Cl5YdccpcuTZHsknzIqRmfyafRKEMMWg1lvZPfZ/0aVjWx5KUT03PaB/nyxLJxTJK1vt5Rru8abVIMLUV4Xmm69r4eThcfWtU+tcyZgc8NYITsrNplrRp9ywjUoc6XVVaIsBrfV7hff802QnW7PNV+EZ2L3jK0k0=ATZcKMSglTTQGY31lGjG3XH6wleUm25h7D3IZwgQMIBg2lDDVoCTodtq3PhPNFUtcIeP6mCAFKT8hVcDl/h4NAww/4Ycrh21uJOQcLeIEVSJhaTrJwa9Zg9Xf5yGvzXmUCoqzPv7TF+lGTT+Dp19QKNSB1js70VTgt0kW+PMvJg=WAFCpyEYBNE6G5ApMPUgtbBuZ/U9BxxObsQaD15zJAisyCj955xc2Wl6tbxyO8wZmRv27GihOQIyVKwhUpsac7IDTzHXVwIM3hVEotQNmkHd7DzcZgn1FQ1kwChQG6b+MSZF8/+Hwt6NndmtDFlz83akRrvAOrjMKdHjbACcfI0=PZE4ozQTuNh4NOaIWHd9uh6aLUcwrHix2aT3ux1x9bvsGo5/MxJZxosmqv4MmKuINHt21e93lbU64cndOuI1dRw3pWenBfqNgq5Lx24xeX8vubCtM2W/NDAT2/hh5qPGyVfBq6tctzrmngLpv+VhEcLMJ5U1kQ/8Lh5baQx5A60=CLvWcmhJSvmcATUWHW3VzLgWPqb8Hf2Ck3g8J2kKJDIWkg6BMhPGfopgK5vR5k205wt6kjzrIbGnY1vwibRxquodCkTne6HvqauNt6XKJXXGwo4kJ6h68G3KK1AHm4/UeeVLFwkAT4eurcuFYgnYco9CT0dxSgREujayFqqS0Co=XQuzEZVEBFrHsx4EbmhfOaIa8YcPShntu2cYHnPz5934qJfv8EJ+VGmFzkFIEiO9xsFPnLMI97lX3pcP7ev+V9vWwq9t3vvu7OOqKz5pX1YxFY5wfzi1dBBHlBuahA4fR+TtTJKqzp2prjzXB6T3WPm77FUQrggQcgustcjcwt8=DVikjaWt+5z7EsHnfh158ZMSa1xRkZcDAM7ekiaaC7zoa9khQoLjjPFRY90oTT2ubCJMen45G8eg6ODEfzEe0aTeVI7ikd5AeBjsAMZ1bF4MWWyBFvo/JKHDefAcriRDpTBuLChJReFvRRCFDX8Z7bN7nD4s7jLlMZMT/Vm0S8c=B0NO6+I6cMaHBdPljUxRzGq/RUtZjLEzWs9z+Kk7aC/fPycocBX4ETbQMg4wiM/evrnZgC5eMRzqsdVW7PwYVcQbh8u4VGhxVLxZtCK0GpipQ3ZBynm24V4eJO3uNQgNdAJ2odT17ep3Dz3pag1WqCh/yVTjVpGXy6qSJblmdk0=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.ClientRsaPublicKey",
+				"Value": "BCNnSUwfJO85aZ/JiNquA08BnAMMwR6e3TdgVeE75ccwBYjg3oAQtOm/bS0KAm6uROkzkmveF23pulSPZrDDeOwnJyX2BPznufOSZVVvqJMhZyBEHUuK+V2FG/Iyv0cWI9OmSqojuCW6XYnzZoit1XtoaCC2m8D00gNJbklh9lY=NP6YSBOZV6a7fWwR7zFVhao9xMxgIpz0fa1T2H90Xwrig6giT5Z/w6njLI7IKKtAWM3Abyz55tsaiC28h9G8fdfTschRTK4Nu3vPWbsx7ETfkLLn1dz9AF8m+4JA8p2h9u5fCkRbJaXth4ee+CeBAPXs3C7qY+Oc8dMbO5K+cHI=RMWA6XpqHE4x0R0hBR39SbA2oClsAqdk6vaHv7bMmLp4tHatbQ2OGeF+sznjNjG5jAzWffYdLJ5B9mqeYK83U5ZVeK25tGIJB0d2ejX8zJbZt4zxKQrTufJoS51fVhr6pAEKoi+eouMpXwlnsuFdRxg5TBuH1I490tek4SrzsqE=FmSpElbCfz9GsGIYReMEjmB0JyY9pOQcSdB8YL8SlRMRGkvlRSr1wBTVCmmJuAuOXaN68PfiLl+qxpcL1a0ZmLNIV0pngYI7qOB8O41gqfmkTb/2/1zNDayOsTKZT8stzqLRYSEaes2voDFycNzp3J6rjrjvDHx74eYVhczboh0=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.DataRsaPrivateKey",
+				"Value": "N4ZAY1HwdJjt9QL/vyijhplFsQt06hgnPLyl7APlh+1SU210hr+LxBJxY/UbD5fJtmezr7NKeZnuaX4UOaRn/17uwlKNngSdqSohdkBOAwA8oPzl/oTQVuGwzjqgQnj7HjK8F40KL2KH3Zg+EtkP+8vVBAzB+VKpY5msVlof7Gc=NY0TDDCmoWZN1SGwQDzv19jw6Scg/FH5idAis2MJuO1E9RVMvQ6ccxMJ7b0ptekJbowmK/AK0gg+z3eLKjYNGGhkUUJ5iosNIMn02gqhJjmRxaHvlZU8H59Z2mBU7/SRC0be889eXDsMXhBORkptKHRg0A+PNOX6QSdq3vb3aB8=CZ+IB1OKpcqYSV2HGc+2QFRqahT7/ZmnsGWs7HO49DBGrGWwigQ+4khqlfCEERtzazLqdq6EcMSFxgqG76jBb4dbLbrb3ipWShCQaDLRbYsgpgd3kgICiXLw5pFpcaeDgJwxQJyk6mvL/n1u7b0DTk0FEujMfMbEoxQhI985EJM=XXDMaHVLZptz6VHzMKBA8oc1oR52IzAyqkxrmaQ3UfdVX5FAw/mjaJGifEULVZtL0TIruyHXAnkwqV9DMZbpbzUrskLn4lAdbzk0LOUWkob8OGBVlH5BR4YmtQLSUiW8XSyW1JFl9KT3gzdKQ8TNE/XmOdxxx4r1C+2Wx+lohq4=FfjFRmcdhbmUQygwuZhip8CHKOr1gW7gMPXDcdsp35zQ5HZGNJZ8vGm8wrtLlWGd9WT6XI4Rk/3KDMbooQVmkRF6I4wBErpuO62sHX8Xzf58BX6rMgY2+LuGbUI07YyDWW/1Ts/5LzABHAFmRPoEXiiU+ZYDPRM+m1yw7NYFPos=CgEgXX5lx9Mms2Ch/1QojssTYqazLz21hTglOuvs+HVeP0KsriQyTkViReQ/E1ORhCMs+I74QhEyZYxJT7mBGsU8R2sUZoIXy/1kKPacpvy84j0vvGER8lgFKtEa9b78RMOz/CjMefkEgMYTupuAaTy4Pi//5TPQqXEq5E+eTag=JoKEOZgIGK1bFVl0YnIz+bKE/FrK9qyyATJBZtonrDgXOPExFM2KNWJyh0X1AmsfjOs4+U8k3zfn1D5+TBGERjKtz4A8WkyQzTNeLl9QHWmG9wTTOXOgPns7kwm6xrTmw44MNNgcXrJbZhxU/q84e3vvn/Z8EUWLHuTMTqZcLls=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.DataRsaPublicKey",
+				"Value": "HmBhuhT5tvCGONK8BL6nruUZpfY9uMFMe7YJo/BAM4hRurB/tFcrS8GVuphIuQV8jd6wcjW1T4iAj5TuPRLNDY3GtUG386/124/ua6psQc+Qk97Z02LhfMXRO3z25gnG8akQ1sBw6DSiD+Zb/ymfX+T0hkx31zwTUSHlFRC2+0Y=Rh0BooIV6ZFM6y/MC18PnhkJGyaDOCo0tdmlScT6k9ks537zkaUyFS7q/XWuKrXeGsFgIdD9ZXoWPyOLluR7uULxTdlRbQsxAu4YXfBpVXLUx4inRJRBYRYMI2DPX5TLq9QuVxsWLkeI9DEnjFobdB8PmsdHPUkhm3n8/8huSrs=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.ResponseEncryption",
+				"Value": "bitw",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.PasswordEncryption",
+				"Value": "uOmGXtXNkLHf9Q6ftmkFxaPPE5mBuAooP34HqWlXLY4=",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.PostRsaType",
+				"Value": "2048",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.App",
+				"Value": "{\n  \"ncbs\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  },\n  \"ncbsCbs\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  },\n  \"ncbsReport\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  },\n  \"ncbsLicense\": {\n    \"IP\": \"https://192.168.1.173\",\n    \"PortLogin\": \"6005\",\n    \"PortData\": \"6005\"\n  },\n  \"ncbsAdmin\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  },\n  \"shwebank\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  },\n  \"ncbsEvent\": {\n    \"IP\": \"https://localhost\",\n    \"PortLogin\": \"105\",\n    \"PortData\": \"105\"\n  }\n}",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.PasswordEncryptonType",
+				"Value": "MD5",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.UserPortal",
+				"Value": "neptune",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.PasswordPoral",
+				"Value": "HwfKP+W3ra0mxTKkzOxC4Q==",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.EncryptionKey",
+				"Value": "273ece6f97dd844d",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.DeveloperMode",
+				"Value": "true",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.TokenLifetimeDays",
+				"Value": "7",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.SecretKey",
+				"Value": "igTLDRYrrjV88ZAXvF+nSw",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.TimeoutApi",
+				"Value": "60000",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.ListLangConfig",
+				"Value": "[{\"key\":\"vi\",\"view\":\"VietNam\",\"img\":\"../rs/global/img/vietnam.png\"},{\"key\":\"en\",\"view\":\"English\",\"img\":\"../rs/global/img/uk.png\",\"selected\":true}]",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.AdminStaticToken",
+				"Value": "",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.PortalToken",
+				"Value": "",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.BackupDirectory",
+				"Value": "/var/opt/mssql/backupdata/",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "CMSSetting.ImportApiUrl",
+				"Value": "https://localhost:5065/",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "jits.neptune.web.cms",
+				"Value": "5.0.1.2",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "jits.neptune.web.framework",
+				"Value": "1.0.5.7",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "jits.neptune.web.cms.login",
+				"Value": "1.0.1",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "jits.neptune.web.cms.stable",
+				"Value": "1.0.1",
+				"OrganizationId": 0
+			},
+			{
+				"Name": "jits.neptune.web.cms.template",
+				"Value": "1.0.1",
+				"OrganizationId": 0
+			}
+		]
+	}
+]

@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="3">
+      <AUD0012 Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>AUD0012</Alias>
+        <Columns isList="true" count="13">
+          <value>ORIGINAL,AccountName,AccountName,AccountName,System.String,_x0038_71272c342664a878146ade3719ecba0</value>
+          <value>ORIGINAL,AccountNo,AccountNo,AccountNo,System.String,_x0033_c7017b453cc489fa5e11bf14a897ff9</value>
+          <value>ORIGINAL,ODLimit,ODLimit,ODLimit,System.Decimal,_x0039_9d16ed2556d40848a50cbdd7b774cf4</value>
+          <value>ORIGINAL,BusinessDesc,BusinessDesc,BusinessDesc,System.String,c6a22e7a08ec4c34a5c8a45f29227fb4</value>
+          <value>ORIGINAL,StartDate,StartDate,StartDate,System.DateTime,_x0038_25382898faa40fdb1167f4712ef941d</value>
+          <value>ORIGINAL,ExpiredDate,ExpiredDate,ExpiredDate,System.DateTime,d96924f684eb49969bfeed579a08d355</value>
+          <value>ORIGINAL,OutstandingBal,OutstandingBal,OutstandingBal,System.Decimal,_x0036_d8e2df232264e1483733fc115ee277a</value>
+          <value>ORIGINAL,Collateral,Collateral,Collateral,System.String,f2eb97b6baaf41bfb6acfd1594931428</value>
+          <value>ORIGINAL,AccountClass,AccountClass,AccountClass,System.String,_x0037_bef6d3b9b4e4cc69ccc182f5586e3af</value>
+          <value>ORIGINAL,IntFreq,IntFreq,IntFreq,System.String,_x0036_62d550970904050943cfa1d39a6ad09</value>
+          <value>ORIGINAL,OverLimitAmt,OverLimitAmt,OverLimitAmt,System.Decimal,_x0038_da41f121871436bb4331fa0c79fd915</value>
+          <value>ORIGINAL,OverDueDate,OverDueDate,OverDueDate,System.Int32,c42550482d454f84a0987ae84025401c</value>
+          <value>ORIGINAL,LoanClass,LoanClass,LoanClass,System.String,b73239473b8e43d1b750115802e0de8e</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>7479ec2459824bc182cfb055e6befb92</Key>
+        <Name>AUD0012</Name>
+        <NameInSource>AUD0012</NameInSource>
+      </AUD0012>
+      <AUD0012_ParaHeader Ref="3" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>AUD0012.ParaHeader</Alias>
+        <Columns isList="true" count="2">
+          <value>ORIGINAL,Date,Date,Date,System.String,_x0037_14ca255a4ea4104bc52215aea3306b2</value>
+          <value>ORIGINAL,BranchName,BranchName,BranchName,System.String,b6d51c55290943a5a368c97e70817881</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>ec4e938f5ee242009a69ee07612b4da5</Key>
+        <Name>AUD0012.ParaHeader</Name>
+        <NameInSource>AUD0012</NameInSource>
+      </AUD0012_ParaHeader>
+      <AUD0012_ParaBranch Ref="4" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>AUD0012.ParaBranch</Alias>
+        <Columns isList="true" count="2">
+          <value>BranchCode,System.String</value>
+          <value>BranchName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>c46c1b48f59741968d9ce13d15055df5</Key>
+        <Name>AUD0012.ParaBranch</Name>
+        <NameInSource>AUD0012</NameInSource>
+      </AUD0012_ParaBranch>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="2">
+      <value>,Date,Date,,System.DateTime,_x0035__x002F_8_x002F_2023_x0020_5:03:28_x0020_PM,False,False,True,False,_x003C__x003F_xml_x0020_version_x003D__x0022_1.0_x0022__x0020_encoding_x003D__x0022_utf-16_x0022__x0020_standalone_x003D__x0022_yes_x0022__x003F__x003E__x003C_StiSerializer_x0020_version_x003D__x0022_1.02_x0022__x0020_type_x003D__x0022_Net_x0022__x0020_application_x003D__x0022_State_x0022__x003E__x003C_SortDirection_x003E_None_x003C__x002F_SortDirection_x003E__x003C_BindingVariable_x0020_isNull_x003D__x0022_true_x0022__x0020__x002F__x003E__x003C_Keys_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_Values_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_CheckedStates_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C__x002F_StiSerializer_x003E_,_x0030_74adf64a4534076b4fa07e42af60e06</value>
+      <value>,BranchCode,Branch_x0020_Code,,System.String,,False,False,True,False,_x003C__x003F_xml_x0020_version_x003D__x0022_1.0_x0022__x0020_encoding_x003D__x0022_utf-16_x0022__x0020_standalone_x003D__x0022_yes_x0022__x003F__x003E__x003C_StiSerializer_x0020_version_x003D__x0022_1.02_x0022__x0020_type_x003D__x0022_Net_x0022__x0020_application_x003D__x0022_State_x0022__x003E__x003C_ItemsInitializationType_x003E_Columns_x003C__x002F_ItemsInitializationType_x003E__x003C_KeysColumn_x003E_AUD0012_ParaBranch.BranchCode_x003C__x002F_KeysColumn_x003E__x003C_ValuesColumn_x003E_AUD0012_ParaBranch.BranchCode_x003C__x002F_ValuesColumn_x003E__x003C_BindingVariable_x0020_isNull_x003D__x0022_true_x0022__x0020__x002F__x003E__x003C_AllowUserValues_x003E_False_x003C__x002F_AllowUserValues_x003E__x003C_Keys_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_Values_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_CheckedStates_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C__x002F_StiSerializer_x003E_,fecd649b95ec4319bb6e9cc376ed3b93</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>7c124e173a384d5b88ff7065173efc1a</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;White</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="6">
+        <PageFooterBand1 Ref="6" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,17.6,38,1.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text30 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30.8,0,7.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Italic</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Report time: {Time}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text28 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.5,0.8,21,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <ReportTitleBand1 Ref="9" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,38,5.2</ClientRectangle>
+          <Components isList="true" count="3">
+            <Image1 Ref="10" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>31.4,-0.4,6.6,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <HorAlignment>Center</HorAlignment>
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>iVBORw0KGgoAAAANSUhEUgAAAPwAAABQCAYAAAA9dRjyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+AXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABwqSURBVHgB7Z0JmBxVtYDPudU9VT0JZMISdpkQ
+kU2YZHoCARIgrCqy+AQFFCGiRlB44EPEBQg+kPUJ8h6I+iEBRAVklbAGEiIhW3dPJhEJKjBCZF8m
+JJle6553bvVkku6urWe6Z8v9v6+ne6ruraqurnPvueecey7CIEHtVjNIOkYSTkQBrUCwG2/eht9X
+ibbMXq51UtZVRHAxf0pzub8h4gpAWAhgd2BrPgEajcaXCAwgLOSHgcQTCOiLJGEXYGlFVDugSjDG
+VeNcLc51ZwAYIJPGW9wYPCkI58Cc9AM4CyRoNJoS6i7wtHTU9tKwZyLQ+SzkTX2Q7rDswI3HmYR0
+JhxnvWt/Hh4TRFfj5OzLoNFoHATUCVa/D5VJ63Ey7Le4E5/FvXITDBzjHOEXuEomzScoYR4NGo2m
+9gJPHeYejpARzOd/PwODDh5DiE/KhLmA2s3dQaPZjKmZwFN7U5OtjGoFXKWEDIYaiNNI4t/tpPVb
+WhzbGTSazZCaCDyr74eQzLSjY0Ef2vDwYgZF6S+0PPYl0Gg2M/ol8PQYmHYydh2r78/xv80wfGgm
+m+6xE+bNaxfCONBoNhP6LPDcq+9K46wn2Pp+YRXV3lYGPHbGPQQ1h9awP/9MPv7fwtZgP/45o0xr
+sfouoNFsBvRJ4CnVsLfTqyMcFqY8C+ELiHSUiGd2wHjmcj5CF9QcTOOkzB18/H24QTmQG6I/h6sG
+4/m7LKSlkYNAoxnhVC3w1B6dSCSe5o/BvSLBX1nQP8dCeDC2ZufCAIHx9GKMZ49Hg/bgf58NUWUn
+MiILaVnDCaDRjGCqEngW9skkxXz+uGNAyTVswPshRsdMYUF/HAYJnJj9O2sVRyhVn//9V1B5EuLB
+QsI6AzSaEUpogadUtIWFnXt2HONfEttZhW/DtszV2PLOehgCOKq+gMNYzZ8TVJRvyG2UMo8HjWYE
+Ekrg1UQXIuOhIGHnsfMNuNV2B7E6/U8YYrDQd/J1fZ4Ndf6uQwSDCO+jZMN+oNGMMAIFnlKNO5KE
+eeDvdiMeq5/DY+fv4fjODAxhsDV9DUbgSBbsbp9iDWyneLQ7YX0CNJoRRLDA2/ZtECTsBp7EY/Vf
+wjABWzLP5IXcnz++6V0IdrGQHqF7wQCNZoTgK/CUMC8EgT7x8NSNETwIJ6YfgJCoEFwCZ+57jaHR
+1fjTzYm5F7FA0/ljp3cpbJETzOtAoxkheAq8M25HuBp8QIHnY0t6MYTgjRcgRgnrUpLp1/jfQ6Dm
+4Gj2p3eqWPl0SMHHA7J/R7RP9IsLYLvEBWrmH2g0IwBvgZegLPKe6qwTMTcp8xsIASWj8Z1MK8kN
+yOX1niarYuVNggUspKeHKt+a70AhvuVXhhuS2UozAY1mmOMq8JS0ZvDbJ70qsUp+dzFiLhhKmhcQ
+GCr91F4wcHyChfRO7u1n8TsGFcZJ6fvYeu+nzTSDzPwnaDTDnAqBVxlqWKAv86nTKRB+DAGwsavB
+TsRuYnn7OQwSLOmXceO1OIyKz9b7H/LfRV77CegC6hitJ9pohjUVAi8N+1zwCZtFg2Zia8Y3ao0S
+0CgnWHexq+5cCAvBOzxevoXrfN+7jLyTy1zPgrwSwoKwP6v4j9HCYGFFW37VezyPY2ShcB5oNMOY
+EnXX8bmT/bIygLkV5p7/diOe+ToEIJPmn/gYX4QwEDyFBFfh5Mx8qAJaYn4KDLyIkE7lczUGV4DX
+0LBacVKX78QdHvtfzMOAqzx25zAS2QVb1r0LGs0wpKSHl7JwlpewM+8Lx+jmjxo3hxF2bmmeRZAt
+oi1zTLXC7tRXFva2zDfYU7APH2t2cAUYzx6C3weWW5O5nv++5LG3AfKF8FqLRjPE6O3hVYAJTbBU
+SGyze0H5A4znrvU7GKXM84jwF+ALreGTXoTx7K+hhijXmbKmQ0AiDgL5EyOeu9K3zLLGz5KQj3ns
+7UIRGx+kKWg0Q5GNPfwnYyeDl7AQrF7fEL0DfCjG26vstL505omm1VrYFWxXeA4NnMof/+pbjsTl
+QX51nNytZvh5JNJgt6Kd/hpoNMOQXoFnYf2yVyEEemL0vuvfAR/Yb38LlxzrU6QTEQ4z23LhDW5V
+ghPT/0bKHACIS70Lqckx9Jsgdx3vvN5rH1f9Amg0wxBH4It53ehE71J4hd9BaHlMNRaf9SniCHuQ
+db8WYBt0Y3f6SP64yqfU7pBo+JHfcUBYD3pa7Pm7kJ5YoxmGOCvPjI7FDuFez70EsXEtHuCGs1Ve
+O5/w1Ig8FVvydRf23vNNhbXUgUdRQa70iuwjgRdmX2i4Px+Jul73+nweRhl4L98Vjyg8Ur18gL0i
+GOqITJP5yFHcIKoUW/vwa3t1R/m63+B7zw0lqqHF3DXd6flN0+Ajp87i6BQZMWaWH0sY1gV+tgVq
+bzxB2rK0YUfqStuRa2LCrvBMCG7KsS1b8R0p2bCXJHFRRXmCN9kAWxGjoXIpSGmcX1E+UrhNysix
+INV3rh6jLTPDOX57U5O0Mzf4FkZcJwStYN9rAifm22GIYifN64Bwm9fXZs4ePx1qPvPUUWspGeMH
+m052LUDyK9iWC7ZuD0FY8/gCN0ahJ/ZUefS5Ip49CvqIY/Ow4faweQGZ90Q8M65Yt/EEkrIiESg3
+Gs1+WhQlrcsIKuwsnWhm9qCctZYbmIbyfXzO8S7HmcHH+a3bOd6NZEZv3wIliU+o3TyHJN5cXpYf
+Pu5o8CZ+yCZCH+BrKz6/6l5KeC10ReWiRXkhG6Hr9Gz0HZm0lIdoTxTW2HoYhh2VnoV9sncJsRCG
+KTymfxCKK+DUgzboI7Ss4dOsUaWqEHYlHP+AOoGfhhzfp2TFDoLt6XnYwqWGZ3KQrbLRytV9bNzX
+5dgZ1hz/An3GTaNkD0oOxru+VGJTJ6sxPeq4aEHcz73pd2AzI0KLR21HYDe776YktmYHTBWvB/xD
+X8wNWqgZfVUeuUllxeFeYkU1tZzQZWH/mR/4sVAdq6COIGGCkA4s3QgWmOaOAKULcvL9PMDrOFE0
+4gD55aXlYc/KE0I/l/dG194PD8x0elRQ29VzcAelGs8mkrfws3Fdeqn5eGz/7KuwmSDApCleOxFE
+P1rgoQG2pZdw7zgP6gGJSVAtEXkauLo/aQ3f8LnF0GF+ITzB4/eNgoP0ItQTpCWu2w2q7J2BvNN/
+CdYXKrZVTsRC8jhf8fhd/P07/V5cqM9Ciq3dv+R7/Ef+GLMMDIwcHUmw0U7u7bkX7edhBGBLcaMQ
+cjrUGImo1Po7qqnDqrybS+89JDiQVdxXKsovscZDlI6BrKivocmmRWC4eCqlaOG/f+q9nsSofVkj
+HOV1mPLeX82rYHvwzpWn804fzsL4BNsiToX6ci+/TuEfpPpGexgTkRL29nRICxoRqo4RaVhAMt0F
+NZ6LL0DuANVToQ6zsM9la/grboXxgIwyRt0KdQZZrWWD0Qf8cetNt0soE1aDdlMbfSjtzbFxL3Cp
+YJj1HaIEgvShGmuQR8r11+aB1TzWPBIK4mhuxHq1HLYBLAGU92E8X2HzoHncgW6h7ALYhW0ZpyNw
+8ijY6TP4DhzMDdm2zjaCl0UU7sGJmfponj5EULW+XhJfyL8MIwBl7WTL8gqqcaYd/uH2gGrh7pHv
+d7R0E20NQwM1xj120w2sPh9cUkJSUPafbVWqsV5vgZB7Vso7rcL9hsa4GUWlLYCWR6aSHfkde1F2
+Va2xMjDye8HJqgR4GDdXP7CTxl1CWOeVWdIjhHgjFO0FbCswjyQ78zu+idttKmIqJoWPPZONhtca
+8ewPoEqcoLGUeSEfaCs+2iPYml4Utm6Eq3r4QOljAvNu2QfTCht/lhnx3M9gKEH2BVJEPgU1harO
+u88/9kp+hCaXbTxaTToy4plZMIjwtbXzw3Rs6VYq6QGpbPzOD/Kyyu8jlZutKPDSZfwOWJWhsy6Q
+sziJaotKJkpRwjqNhfFu/phmWb+CG7jbsceo5yQ0ndD4WQJ5I3/v00lmmsGjEyksi53Cw7c/8D19
+lk9yCuDYpdj2Vje9sOVWYBZOIpRXsKH0IvbYfIyT/ed2lFwfX4NMWbP5/F9FCXfCq+mlUAVK4EeD
+a8wNbsn7ToQ+IKT4NwwxsC2fYutxCgYftRhGhRtUJetglfoMfshmbVAHq0bSieyT9g68sdnfjT4R
+xUQLoULdw1ElPXYxOGiTU9JsNi6Wfh8plMA/7BwSeQhDFed5AXzgRqUpKCFpf6I2KWFO4HN8TRmp
+2C99Te/2oj/fCeDhhuCbkbbM3SXn/BJrZ9D9KAvtC2TmlEo/jdobTsRJubKYCGoSBt3CAj1rY2ao
+t4rHOOjjD/nt15Qc9S9W9p5QAWA0C67CWQEDJSgmlaHdzLv5FzqJn5Pb4NXMzOI1hSfCN78JgrNA
+VQfKuvmMhz3C+gXIzJngPlFJJQ6dzYI/CyVdvSZj3ds0bc1HEBJHnfR7bDDgd85H2iHq8vz09NiU
+2GIbgnyJRiiM2O+5p1NqaW+osaRNvhvBthXHIxmgguJnVEJSvxKUiE1RHhioAlrQuIMcJb+lshc5
+yryBX8aJ6d6Gwy7ANCFgHN+luyPxUmEvuToWWmo3r3OCiaRQYeVlAs+2IgkLueH2nE6O8fVPyoT1
+Kv8mu8GJ0RaY5R/95xg/0fwD1zweBdyOkzLfgD4Q8Zn/3g9QTx31QI35sssbPh+1xVPgvUZfM7f8
+t27ZmL2YVcy+9/jVXtuU9e8UH8KyNOISt3Pe7dwBbPXZdE+n+j4yGWP3IfUKPJYEFNGeFR3KnHw/
+ffCgDMpvV27EJm4svSLuGlkVH1e8ErGM389jYS+JzzCisJr7y1l8ufMhCAnq91MazAS33ZiTgQLJ
+1/C8k7K9YPAwyVvgVfATC7ta+elwFeHIxr4+CbtCRdoVQDOgODnxhWMMCzKKOj0+j+/vGagFMUhA
+ZWQl9ajsUVHiY2eLtTMVGdlmU1ZjZ2VYUsuKl3co3BjMD6O+BmKJnNtmpcR4vNRKQz3PutyLhyIz
+y3MdKqu5UsHVVGsIQmDxWJKiFftUuraDcmG8EK/3vEe9Cnyk1nEwrSeVsLPt4//YznMWfxeCPsI9
+PGVq38uTTukcgFrrjt/25HHjGTxuvIQ/T/AsC/AlOcFcA5D9FtQZISnJQ4PSFN9ITg/P19lW0lkT
+FAVD4suONXsjEehQwi62qTgB4XLoL8rT8U73ey47urA1O9636jLrMNZSzuIm50yT2Fqesmo/izOs
+QGJPA4Tk2ph/mBg7Zoydmcvdcpxv+68xnu53tqUIG1ze59a4pgIvEfcGTSjUyrb8dkeBrcMG4n/x
++LLVtRzgN/nhvNuv90Gi87krW+O1n63GJ/B+f0OsEEuhbOYkd9Yb/NCljZKBRdW8AIsq+ihbTOIL
+GldpH5LPQDDPc63bPPcSZnB63zTTnnRq89lN+081kYgbMRVxd2B5udySUS1Ro3A6f/e4EykoaXu+
+d5HeS+i/juJLhjJjmpCt8ABxfi1izWMm1IAIS+f9rJJV7QemYkDGkW77BNAuMMSgFdE42ManoZZI
+KKCPcaca2CKsZiT+noX6ayxvynJc6S61QY3dvNVNgQ8FzJbblX83f4GX6Q5AszxIqZnaoYlkWZit
+nXHGnTglvVqmzI9YEDfOD0DYmw1ao8t6fqVbByZAYWFfzfd1NtQRpbrzvVZj4kNomXkUTs4+rbar
+VOSyULgJwf6ycnejWn/QiQrEdXztm9im2JNA8G2oEw1E1/E5lcsvz68DKRmZhvFCv0PdI2zpvBD6
+AK0YM5by2Q9d96kLnMfHnj507AOUM66vZnZayKOqB74mAr8BFtg7s4mGpVEUSvU1S84mYCrUGZVA
+RCZR5TYsnQ0oY8fwFUQ2uZpVXLZXm0ASz9EmSVTYUr+bKO9ICN4Iyq0wsNDDSqgkChV78LSKrqN8
+YS6Pkblhw0XsKfmRV4JV5cKDOgo8NzUn8+tGbmTmEcmHCCIPUioS7+/wI9T68K4XtJ/jLnrbY28T
+jLEOhiGCcicBwgFQawhDu8yqwWxjgw/hSzBI8NBgQfk2tnCfVvo/dpRWKg2V5Z4xzg1/qZEPqaog
+kbpD6HRYfF1OxGTzFrHv8IXvy9//YXwlPa0v2ZRrhbOUWzx9AbZ2P8IGXpVUZGsekt3f3yXP+izw
+zkUhPO25U9JxMFQw8qoFj0GNYftH/eLBkayKbUQD4+50V7tLIsq49y615hOUG+NUhF3psAQhzPh9
+4BDUs54BpZ2/2JMExpRXVBvQUnNUvEYPbOe5ir01d6mBiLTToaPy3IhAP7AL9Lww0HXRRr7As7g1
+umIopHNmA0udssxS1f5kHkf/iu09MQH4KBQiz+ABaz/YdL9aZXdH0/oJuMwh5wZmGQwENj4DRrmh
+uWzikV3WKNjwQqDjEEUHhCBMpF3xeNaafj1fsuhuROpNehp3/qYbVheHzj7kjSYwBq5NEDJ2Lon0
+VFbzz6GUuYq9Ef8LfaBfPbwRjd3rzON2RUUbDf4CjLQ0qqLEDod6UE1apR7Y0PMpJw4b6B6K5N+X
+SetdmbDm9bwW7WSab/F+9wSbku6DAQD3T78B4KtNyA/tTKq6OtTd2ZUOGdpcjLQLevXn+XLCaAHO
+cP6x4Z6eze+rP3nK7RxY3yhcAwMItn20hjXqw9U9Jok3UCrap4xL/VPpndYVPbPJ8I/y3cFeZplE
+5LdQD1SKpr6M8bCi597WMSYWX1O4wBhwPR37YXssyQOD8Ju6mdp6CnxcvhFBzPeqwD1Toh5JGfsC
+dUSnsNanvh+ixJt7piCrIeqj6j1iiFmedVUgTDLGvSseDcVKdYhUdUfFbiAapzmp1qXxSJhFUsvp
+l0rvXATCVSzYx7jvhG14zKHiiQelp6ek+V3uSeuS4ACBnq22jvOwyEzVGVrVugCY3oK9KQMnL2zI
+SvHv6pp/n7e7L/ahDHceISeSqP/htJXnW122pYGF0X19BcE2EZuHCoAnUoGUPUKwJvUUREwePqV7
+jkfXspr/Bf7yxyqNC43CTzq7Cs689+YmcxfWBI7n309l6x2nLOj8bJ0PLsk96gkb8R7nYeGPech8
+pSnxQd7UWk19R+ApVZzK51qCYL5oy0wHzwvIPMc3Z76Xy4vHneex+pHA1vxdMID0zHy61KeIk63V
+SeDodYykdTs/v2e67jScm10V6XR2VMyChSwwYT0YH/CDdS27sq4FyMKAYtMKRyRcEEV3ZCWVhruN
+dYxKy39/KRCVzcrERhbCP7oWVoEyvZOH8HVuRG/EePaGTRtRnJT9ByUbphGIx5y1B2Tk+V23LPaJ
+TqCNqk7wCkbhNMinFwCaZ/Ixm2iFudtAzu/n5+Fn/Gw2s5Hxm3bSvMGIZy8IW7f4bbrTcyBmruVD
+VWYo5S+eWWzubk3Jes6AY7fBLPLJDkskbqKOhnZsyfkuA1UraMkWW5PMK5VtW68y/Ntf4Svs/wCT
+PoYjwPsswfHWZTQelFYP6FSVyJJ7nClsiVHax/782sQiT+9zL7OSH6wFMCezwDXuPIpLMAszKraz
+EctXC0D7ISSj1I8rhLtrMRJbgDIzw3WfQHd1X5hPetdpWAQutxtR/JBblz7lpY/gBtel1YWUPtu3
+sEBlhctxu/kXn0SXLEy5l+ixT+4JO6w+he/85/j5V6nB82yFfhHy8nF4PfvMBgs+LRffhoIcC+t6
+h8YFdumdrXLgQxgK9hw0xDuQ2/gs8RDjEv6zTWdXl786J6yL0E6nnDbopS22xr1Kjb+e32/DB0pY
+j7KacKxrIWLhaMtc4ncgNcFDxXz7FOlEQUerVhTqCC2N7UKC5vI380t24ZpvveQ4xRj32e47YQlr
+PVNAoxlmbDTaGT5rqSEFGt+EsGYGWHZZxcZFlIrUNM3UpjiJDQx6IkDYAfN0NAQdS3ovjMnaQd1z
+zGk09WCjwHdlVIbaD92LqRVTM98DH5x50WR8FfzZmijyHGsDl0GN4R75K4SOx8B34g6bZS/BKf5a
+hurdwT1BherdV0Nj9M+g0QxDegVexb2zSv5zr4Lcy5+7To09fYi0dc9BCFwy2gkbVIkK2Ire72g8
+tYqLTJhPcY/8O/53G9/zEtyKrbkrAo/p07uzUejJsOMljWaoUeqHF9bN3mo5NsWEfTUE4CQQALwB
+gmlmF8kjMmW2U8o6XaXwgSpQa7xzo/EMCbGSu+3ANd5Y2JeAFRyoYadiKl1Ts9d+IfC/QaMZplT4
+XTwWHNxYgeBwNuAF5tNmI+BP2Qh4CYSGcmwVfZIvaA5Ozv7KtUTKOoK72NO4l/0PqCrHPCYwYhyL
+Leve9StVdOXRSq+EIHxtt3ODtlmtVKIZWVRG2hWD9t/2qqCC+MNEz3GjcCkbt34KocEGdp0cx+Pw
+830KHcmN0derEXYW0tmYHnV4kLArWNgfA+/sP+v4YJeDRjOMqRB4ZXxDIfzU1p3ITt8DIcDWzGWs
+3qvIp/dgECCUl3KPPAOnvr82qGzRkIh7+RzrypqnQtJoBhj3WPqJ3b8Ev8wqauGEhBWqt8N4+l4U
+sD+o5ZEHCmf9bzjUaM2FGm8rC3+AsbFTPJK7FjSaYY6rwKusmEh0lp9fnctcaifNUCF9KuhftGXj
+an1uAP984/2DutjGcBkaViv3xqFCOSkVbWFV/ha/MijlcTXJtKrRDDKes+XU4oZI3rOGnDKA/6Ms
+7BASlbARP87szvUegppD61DExrPt4Kdh50gXjXTGM6BW2fHAyTwyeWBCgjWaeuM7PRbb0r9gI90d
+fkWI4I5CygptuS7muatH5hZcV00yBGqPTiQbEizRPgk8ccXGpYI0muFP4Hx40Z1RubD/6VMEBcFt
+9YieqxeUiJ1MUszzF3boRKTjQaMZQQQKPE6FtTz2VoEtb/iWY9WXx/Q3O0vZDmHY2HgpGyju9Xft
+sS1A0me0VV4z0giV8cbJtFGAQ1mB983SWsy3Zb1Ky80aL8vcf9QsOiepQQhfOiKehJOzQctAaTTD
+jtAprlQaIASpEmG8EVC0mWx82V5mXvvBYtgSBhmlcdgp82wS1B6Ylx4hhyCO5559aGVX1WhqRFU5
+7bA135EneaxLaqHKsgK/PzZqdVDCOgMGCRVvz6/5SHhLwHhdlV7D13wqxrv1TDjNiKXqJJZmW24l
+q8XTIJw/fcN6568NpOA7E2tYfe/JwhNm/v2biPJQnJh+ADSaEUyfstY6Y/oIKqEPm8hxg+D/215m
+3cqC2Ax1gJINP5JJ80VH0EMvK4Ud3IAdpLQX0GhGOH1faqolvVrEM0ewSb4aP/WObPGfCTVf481h
+ewJxJV9Z6JVrVeZRTI+apq3xms2FfuWlV2A8MwvJ2A/qGjJbYwhWs4/9KGftrhATazSakUK/BV6B
+betXqqSQKo4depN8D0HU4hFA12Pa3A9bs3NBo9nMqInAb8CJYxewt5qDDkOPuSjsKRjPfh+nranL
+qq8azVCnpgKvcAx6ag56AXYbCoKvVhdBCdNZAzlKG+Y0mzs1F/gNOIE6SvAFjGc1Wk2j7YQBg7qU
+MZFdbfvwNRwzmOt8azRDiX6vLReE6vH57Ub1omQ0DihOBRLTCaiqNbECzwPwOv99AAQ9DHZ2IbYF
+rfer0Wx+1F3gNwXjebUwn7M4n7PckkGT+dM0QNqXN+1ZhX/+bfadvwKEy0GqkFmar+bvg0aj8eX/
+AduBLk/Ohlm4AAAAAElFTkSuQmCC</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+            <Text2 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.7,2.6,26.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>SHWE RURAL AND URBAN DEVELOPMENT BANK
+{ToUpperCase(AUD0012_ParaHeader.BranchName)} BRANCH</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text1 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.7,3.8,26.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>OD Daily Report ({AUD0012_ParaHeader.Date})</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </ReportTitleBand1>
+        <HeaderAUD0012 Ref="13" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.4,38,1</ClientRectangle>
+          <Components isList="true" count="14">
+            <HeaderAUD0012_AccountName Ref="14" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,4.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderAUD0012_AccountName</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Accout Name</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderAUD0012_AccountName>
+            <HeaderAUD0012_CusAddress Ref="15" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderAUD0012_CusAddress</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Account No</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderAUD0012_CusAddress>
+            <Text3 Ref="16" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0,3.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Description Of Business</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text10 Ref="17" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.8,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>OD Limit</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text5 Ref="18" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>NO</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="19" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Start 
+Date</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="20" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Expired Date</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="21" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Outstanding Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="22" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Collateral</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text12 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>26.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Account Class</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text19 Ref="24" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Interest Frequency</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Over Limit Amount</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>33.2,0,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Over Due Date</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>35,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="5" />
+              <Parent isRef="13" />
+              <Text>Loan Classification</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderAUD0012</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <PrintIfEmpty>True</PrintIfEmpty>
+        </HeaderAUD0012>
+        <DataAUD0012 Ref="28" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,8.2,38,1</ClientRectangle>
+          <Components isList="true" count="14">
+            <DataAUD0012_AccountNo Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataAUD0012_AccountNo</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataAUD0012_AccountNo>
+            <DataAUD0012_CusAddress Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataAUD0012_CusAddress</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.StartDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="31" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataAUD0012_CusAddress>
+            <Text14 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>30.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.OverLimitAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="33" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text17 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.2,0,4.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.AccountName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text4 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.8,0,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.AccountName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text11 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.8,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.ODLimit}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="37" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text13 Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>20.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.OutstandingBal}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="39" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text15 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.ExpiredDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="41" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="42" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12.8,0,3.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.BusinessDesc}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text18 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>23.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.Collateral}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text23 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>26.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.AccountClass}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>28.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.IntFreq}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="46" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>33.2,0,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.OverDueDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>35,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="5" />
+              <Parent isRef="28" />
+              <Text>{AUD0012.LoanClass}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>AUD0012</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataAUD0012</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataAUD0012>
+        <FooterBand1 Ref="48" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,38,1</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text27 Ref="49" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,9.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <Text>Total OD Limit</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text29 Ref="50" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0,7.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <Text>Total Outstanding Balance</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text33 Ref="51" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23.2,0,7,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text34 Ref="52" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>33.2,0,4.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text35 Ref="53" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.8,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <Text>{Sum(DataAUD0012,AUD0012.ODLimit)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="54" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="55" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>20.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <Text>{Sum(DataAUD0012,AUD0012.OutstandingBal)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="57" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>30.2,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="5" />
+              <Parent isRef="48" />
+              <Text>{Sum(DataAUD0012,AUD0012.OverLimitAmt)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="58" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </FooterBand1>
+        <ReportSummaryBand1 Ref="59" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.8,38,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text31 Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,9.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <OnlyText>True</OnlyText>
+              <Page isRef="5" />
+              <Parent isRef="59" />
+              <Text>Prepared By</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28.6,0.4,9.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <OnlyText>True</OnlyText>
+              <Page isRef="5" />
+              <Parent isRef="59" />
+              <Text>Date: ___/___/_____
+Approved By</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>17ae5b76b4db4c7ebdb3d204e4e09412</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>40</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>5/18/2023 10:45:07 AM</ReportChanged>
+  <ReportCreated>2/23/2023 9:16:17 AM</ReportCreated>
+  <ReportFile>D:\Working-Support\Report-MRT-New\AUD0012.mrt</ReportFile>
+  <ReportGuid>68c04c4be3794061a04fb80a64d44409</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.7008434Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\": \"call api check Sanction\",\"function\": \"ncbsCbs.core.txNcbsCbs.checkSanction\",\"type\": \"java\",\"para\": [],\"status\": \"A\",\"response\": {\"false\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionSaveError\"}}],\"cmd\": \"stop\"}}},{\"name\": \"gửi learn API\",\"function\": \"ncbsCbs.core.txNcbsCbs.createFO\",\"type\": \"java\",\"para\": [],\"status\": \"A\",\"response\": {\"true\": {\"fo\": [{\"txcode\": \"#sys:fo-setAndReload-dataForm\"},{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionSaveOk\"}}]},\"false\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionSaveError\"}},{\"txcode\": \"#sys:fo-set-FormErrorAPI\"},{\"txcode\": \"fo-show-approve-condition\",\"input\": {}}]},\"approve_faild\": {\"fo\": [{\"txcode\": \"#sys:fo-setAndReload-dataForm\"}]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-create-API-sanction",
+        "version": 1,
+        "updateTime": 638042796880638976,
+        "txname": "check sanction and create api",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 189
+      }
+    ]
+  }
+]

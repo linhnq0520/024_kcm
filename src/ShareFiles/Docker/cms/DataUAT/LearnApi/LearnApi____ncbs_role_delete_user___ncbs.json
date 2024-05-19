@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8835627Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_role_delete_user",
+        "learn_api_name": "ncbs_role_delete_user ncbs_role_delete_user-Search",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/role-user/delete",
+        "learn_api_data": "ncbs_role_delete_user",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs_data_array",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"data_array\":\"MapS.arrayJson(data_array|{\\\"user_code\\\":\\\"MapS.dataS(user_code)\\\",\\\"role_code\\\":\\\"MapS.dataS(role_code)\\\"})\"}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 282
+      }
+    ]
+  }
+]

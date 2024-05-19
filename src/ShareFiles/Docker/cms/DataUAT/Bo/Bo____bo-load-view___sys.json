@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.5411366Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xem 1 dữ liệu\",\"function\":\"txdata.view\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-post-viewHasData\",\"input\":{}},{\"txcode\":\"#sys:fo-masterdata-saveDataOld\",\"input\":{}},{\"txcode\":\"#sys:fo-error-setToFormMain\",\"input\":{}}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-load-view",
+        "version": 1,
+        "updateTime": 638042796880638379,
+        "txname": "Xem 1 data webui (không xóa)",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 14
+      }
+    ]
+  }
+]

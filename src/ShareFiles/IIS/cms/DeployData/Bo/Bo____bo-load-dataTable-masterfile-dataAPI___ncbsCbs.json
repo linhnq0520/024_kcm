@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.4493418Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "Input": "{}",
+        "Actions": "[\n    {\n        \"name\": \"g?i learn API\",\n        \"function\": \"ncbsCbs.core.txNcbsCbs.loadDataMasterFile\",\n        \"type\": \"java\",\n        \"para\": [],\n        \"status\": \"A\",\n        \"response\": {\n            \"true\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-container\",\n                        \"input\": {\n                         \n                        }\n                    }\n                  \n                ]\n            },\n            \"false\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-container\",\n                        \"input\": {\n                         \n                        }\n                    }\n                ]\n            },\n            \"_default_\": {\n                \"fo\": [\n                    {\n                        \"txcode\": \"#sys:fo-container\",\n                        \"input\": {\n                         \n                        }\n                    }\n                ]\n            }\n        }\n    }\n]",
+        "Response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "Status": "A",
+        "Txtype": "bo",
+        "Txcode": "bo-load-dataTable-masterfile",
+        "Version": 1,
+        "Updatetime": 638215521573018462,
+        "Txname": "bo-load-dataTable-masterfile",
+        "Hasrole": "false",
+        "Isold": false,
+        "DisplayOrder": 1,
+        "App": "ncbsCbs",
+        "id": 284
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-20T05:03:19.4497003Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "ParaServer"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code": "system_countdown_logout",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "code": "system_countdown_logout",
+        "des": "Số giây tự động logout khi có thông báo",
+        "value": "20",
+        "data_type": "n",
+        "isAdmin": false,
+        "app": "ncbsCbs",
+        "id": 91
+      }
+    ]
+  }
+]

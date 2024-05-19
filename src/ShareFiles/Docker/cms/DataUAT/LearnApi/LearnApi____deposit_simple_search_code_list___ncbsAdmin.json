@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-30T07:17:27.8595369Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "deposit_simple_search_code_list",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "deposit_simple_search_code_list",
+        "learn_api_name": "deposit_simple_search_code_list",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "c_cdlist",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.items",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"DEPOSIT_SIMPLE_SEARCH_CODE_LIST\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"search_text\": \"\",\r\n\t\t\"page_index\": 0,\r\n\t\t\"page_size\": 0\r\n\t}\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.items",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1799
+      }
+    ]
+  }
+]

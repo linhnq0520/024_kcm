@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.3710638Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\": \"Xo? th?ng b?o l?i\",\"function\": \"form.clearError\",\"type\": \"javascript\",\"status\": \"A\",\"para\": []}, {\"name\": \"Thu th?p v? th?m m?i\",\"function\": \"formAPI.addnew\",\"type\": \"javascript\",\"status\": \"A\",\"para\": [\"@list_component\", \"@list_view\", \"@check_error\", \"@node_delete\"],\"request\": {\"true\": {\"bo\": [{\"txcode\": \"bo-create-API-fo\",\"input\": {\"list_component\": \"*\",\"list_view\": \"code\",\"table_code\": \"@table_code\",\"workflow_id\": \"@workflow_id\",\"learn_api\": \"@learn_api\"}}]}}}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-create-dataAPI-fo",
+        "version": 1,
+        "updateTime": 638042796881315483,
+        "txname": "fo-create-dataAPI-fo",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 1
+      }
+    ]
+  }
+]

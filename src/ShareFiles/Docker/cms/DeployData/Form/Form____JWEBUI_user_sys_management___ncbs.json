@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.3866323Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Create User\",\"des\":\"Create User\",\"data\":\"user\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"JWEBUI_user_sys_management\",\"ruleStrong\":[]}",
+        "list_layout": "[{\"name\":\"Typing\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"Full name\",\"code\":\"fullname\",\"codeHidden\":\"325a5d0cccc034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"user_add.full_name\",\"structable_read\":\"user_add.full_name\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":2},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Email\",\"code\":\"email\",\"codeHidden\":\"325a5dqj123034f\",\"class\":\"col-xl-4 col-lg-4 col-md-5 col-sm-5 offset-1-right\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"\",\"structable\":\"user_add.email\",\"structable_read\":\"user_add.email\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":true,\"min\":2},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"}],\"codeHidden\":\"j123213u12u3i123\"},{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[{\"inputtype\":\"cButton\",\"default\":{\"name\":\"Create user\",\"code\":\"sp5549k7r365C485\",\"codeHidden\":\"p6d988np4t55480\",\"class\":\"\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"action\":\"default_view\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n                               \\\"txcode\\\": \\\"#sys:fo-create-managerUser\\\",\\n                               \\\"input\\\": {\\n                                      \\\"list_component\\\":\\\"*\\\",                                  \\\"list_view\\\":\\\"code\\\"                                   }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"add_circle_outline\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"true\",\"tableMasterData\":\"word_typing\",\"privateKeyTableMasterData\":\"id\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{},\"configAVD\":{}}],\"codeHidden\":\"1aee1cb6ec37f32b\"}],\"codeHidden\":\"2016bef2e4e3edbe\"},{\"name\":\"List data\",\"des\":\"\",\"inputtype\":\"cLayout\",\"class\":\"\",\"list_view\":[{\"code\":\"code\",\"name\":\"View model\",\"inputtype\":\"cView\",\"list_input\":[{\"default\":{\"name\":\"List User\",\"code\":\"users\",\"codeHidden\":\"p6d5o69he73n34\",\"class\":\"col-12\",\"condition\":\"\",\"role\":\"\"},\"config\":{\"structable\":\"\",\"query_data\":\"select * from user\",\"paging_record\":\"50\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"user.full_name\\\",\\n        \\\"title\\\": \\\"Full Name\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },  {\\n        \\\"code\\\": \\\"user.email\\\",\\n        \\\"title\\\": \\\"Email\\\",\\n        \\\"inputtype\\\":\\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }]\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{\"vi\":{\"Description\":\"Description\"},\"en\":{\"Description\":\"Description\"},\"lo\":{\"Description\":\"Description\"},\"km\":{\"Description\":\"Description\"},\"th\":{\"Description\":\"Description\"},\"mg\":{\"Description\":\"Description\"},\"ja\":{\"Description\":\"Description\"},\"ko\":{\"Description\":\"Description\"}},\"configAVD\":{},\"inputtype\":\"cTableDefault\"}],\"codeHidden\":\"1cacae7586c074d8\"}],\"codeHidden\":\"9379b68931989d66\"}]",
+        "react_txt": null,
+        "form_id": "JWEBUI_user_sys_management",
+        "app": "ncbs",
+        "id": 689
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.4873181Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_013001_Search_BO_013001_Search_advanced_search_button_POST_api_journal_search_page_0",
+        "learn_api_name": "BO_013001_Search_BO_013001_Search_advanced_search_button_POST_api_journal_search_page_0",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "fof_transaction_journal",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"SQL_ADVANCED_SEARCH_TRANSACTION_JOURNAL\",\n    \"lang\": \"en\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"tran_number\": \"MapS.dataS(muti.tran_number)\",\n        \"tran_name\": \"MapS.dataS(muti.tran_name)\",\n        \"account_number\": \"MapS.dataS(muti.account_number)\",\n        \"tran_date\": \"MapS.dataS(muti.tran_date)\",\n        \"tran_time\": \"MapS.dataS(muti.tran_time)\",\n        \"amount_from\": \"MapS.dataNNull(muti.amount_from)\",\n        \"amount_to\": \"MapS.dataNNull(muti.amount_to)\",\n        \"tran_status\": \"MapS.dataSelectNull(muti.tran_status)\",\n        \"tran_type\": \"MapS.dataS(muti.tran_type)\",\n        \"user_name\": \"MapS.dataS(muti.user_name)\",\n        \"tran_user_approve\": \"MapS.dataS(muti.tran_user_approve)\",\n        \"branch_code\": \"MapS.dataS(muti.branch_code)\",\n        \"approval_reason\": \"MapS.dataS(muti.approval_reason)\",\n        \"channel\": \"MapS.dataSelectNull(muti.channel)\",\n        \"user_reject\": \"MapS.dataS(muti.user_reject)\",\n        \"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\",\n        \"page_size\": \"MapS.dataI(table_search.paging.recordItem)\"\n    }\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1128
+      }
+    ]
+  }
+]

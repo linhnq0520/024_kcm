@@ -1,0 +1,86 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-08T07:49:06.9335374Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": "fo-tableItem-callAPI-andSearch",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-search-condition-API",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-open-form-modal-dynamic",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-cloesModal-and-setDataComponentParent",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-saveData-callAPI",
+        "app": "ncbs"
+      },
+      {
+        "txcode": "fo-openModal-byCondition",
+        "app": "sys"
+      },
+      {
+        "txcode": "fo-callApi-loginApprove-SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-create-dataAPI-approveOk-SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "txcode": "fo-callAPI-after-cloesModal-and-setDataComponentParent",
+        "app": "sys"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"Xác nhận\",\n        \"function\": \"form.clearErrorFormParent\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [\n           \n        ],\n        \"request\": {\n        }\n    },\n    {\n        \"name\": \"Xác nhận\",\n        \"function\": \"formModal.getDataAndSetComponentParent\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [\n            \"@node_get\",\n            \"@component_code_parent\"\n        ],\n        \"request\": {\n            \"false\": {\n                \"cmd\": \"stop\"\n            }\n        }\n    },\n    {\n        \"name\": \"Close modal\",\n        \"function\": \"formModal.closeForm\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [],\n        \"request\": {}\n    }\n]",
+        "request": "{}",
+        "status": "A",
+        "txtype": "fo",
+        "txcode": "fo-cloesModal-and-setDataComponentParent",
+        "version": 1,
+        "updateTime": 638376173214435270,
+        "txname": "fo-cloesModal-and-setDataComponentParent",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 325
+      }
+    ]
+  }
+]

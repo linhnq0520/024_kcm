@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-30T07:10:43.7887542Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "Jwebui_O9_ctm_code_list",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "Jwebui_O9_ctm_code_list",
+        "learn_api_name": "Jwebui_O9_ctm_code_list",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "Jwebui_O9_ctm_code_list",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data.items",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"CUSTOMER_ADVANCED_SEARCH_CODE_LIST\",\r\n  \"lang\": \"en\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n  \"code_id\": \"\",\r\n        \"code_name\": \"CDGRP\",\r\n        \"caption\": \"\",\r\n        \"code_group\": \"ADM\",\r\n        \"code_index\": null,\r\n        \"code_index_from\": null,\r\n        \"code_index_to\": null,\r\n        \"ftag\": \"\",\r\n        \"page_index\": 0,\r\n        \"page_size\": 0\r\n  }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data.items",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1791
+      }
+    ]
+  }
+]

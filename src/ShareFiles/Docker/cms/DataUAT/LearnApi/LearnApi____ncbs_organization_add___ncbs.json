@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.8750569Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_organization_add",
+        "learn_api_name": "ncbs_organization_add ncbs_organization_add-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/organization/add",
+        "learn_api_data": "ncbs_organization_save",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[{\"organization_code\":\"MapS.dataS(ncbs_organization_add.organization_code)\",\"organization_name\":\"MapS.dataS(ncbs_organization_add.organization_name)\",\"phone\":\"MapS.dataS(ncbs_organization_add.phone)\",\"email\":\"MapS.dataS(ncbs_organization_add.email)\",\"website\":\"MapS.dataS(ncbs_organization_add.website)\",\"status\":\"MapS.dataS(ncbs_organization_add.status)\",\"welcome_logo\":\"MapS.dataFile(ncbs_organization_add.welcome_logo.name)\",\"login_background\":\"MapS.dataFile(ncbs_organization_add.login_background.name)\"}]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 274
+      }
+    ]
+  }
+]

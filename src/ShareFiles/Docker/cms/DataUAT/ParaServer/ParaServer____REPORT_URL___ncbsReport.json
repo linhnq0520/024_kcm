@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:14:22.3574914Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "ParaServer"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "code": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "code": "REPORT_URL",
+        "des": "REPORT_URL",
+        "value": "http://192.168.8.107:5041/View/Reports/",
+        "data_type": "s",
+        "isAdmin": true,
+        "app": "ncbsReport",
+        "id": 76
+      }
+    ]
+  }
+]

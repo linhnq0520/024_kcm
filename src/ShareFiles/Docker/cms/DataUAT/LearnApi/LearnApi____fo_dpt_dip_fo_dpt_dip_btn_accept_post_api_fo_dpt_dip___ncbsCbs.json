@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.404254Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_dip_fo_dpt_dip_btn_accept_post_api_fo_dpt_dip",
+        "learn_api_name": "FO_DPT_DIP Accept FO_DPT_DIP",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_DIP",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"DPT_DIP\",\n  \"lang\": \"MapS.infoRequest(lang)\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"deposit_account\": \"MapS.dataS(FO_DPT_DIP.deposit_account)\",\n     \"branch_name\": \"MapS.dataS(FO_DPT_DIP.branch_name)\",\n     \"passbook_number\": \"MapS.dataS(FO_DPT_DIP.passbook_number)\",\n    \"interest_accrual\": \"MapS.dataN(FO_DPT_DIP.interest_accrual)\",\n    \"interest_prepaid\": \"MapS.dataN(FO_DPT_DIP.interest_prepaid)\",\n    \"interest_payable_receivable\": \"MapS.dataN(FO_DPT_DIP.interest_payable_receivable)\",\n    \"interest_due\": \"MapS.dataN(FO_DPT_DIP.interest_due)\",\n    \"interest_overdue\": \"MapS.dataN(FO_DPT_DIP.interest_overdue)\",\n    \"interest_suspense\": \"MapS.dataN(FO_DPT_DIP.interest_suspense)\",\n    \"interest_not_paid\": \"MapS.dataN(FO_DPT_DIP.interest_not_paid)\",\n    \"interest_amount\": \"MapS.dataN(FO_DPT_DIP.interest_amount)\",\n    \"cross_interest_amount\": \"MapS.dataN(FO_DPT_DIP.cross_interest_amount)\",\n    \"withholding_tax_accrual_actural\": \"MapS.dataN(FO_DPT_DIP.withholding_tax_accrual_actural)\",\n    \"withholding_tax_amount_calc\": \"MapS.dataN(FO_DPT_DIP.withholding_tax_amount_calc)\",\n    \"withholding_tax_accrued\": \"MapS.dataN(FO_DPT_DIP.withholding_tax_accrued)\",\n    \"paid_to_this_deposit_account\": \"MapS.dataS(FO_DPT_DIP.paid_to_this_deposit_account)\",\n    \"deposit_other_currency\": \"MapS.dataS(FO_DPT_DIP.deposit_other_currency)\",\n    \"exchange_rate\": \"MapS.dataN(FO_DPT_DIP.exchange_rate)\",\n    \"amount_equivalent_in_bcy\": \"MapS.dataN(FO_DPT_DIP.amount_equivalent_in_bcy)\",\n    \"depositor_name\": \"MapS.dataS(FO_DPT_DIP.depositor_name)\",\n    \"depositor_id\": \"MapS.dataS(FO_DPT_DIP.depositor_id)\",\n    \"depositor_address\": \"MapS.dataS(FO_DPT_DIP.depositor_address)\",\n    \"depositor_description\":  {\n      \"home\": \"MapS.dataS(FO_DPT_DIP.depositor_description.home)\",\n      \"office\": \"MapS.dataS(FO_DPT_DIP.depositor_description.office)\"\n    },\n    \"description\": \"MapS.dataS(FO_DPT_DIP.description)\",\n    \"values_date\": \"MapS.dataS(FO_DPT_DIP.values_date)\",\n    \"deposit_currency\": \"MapS.dataS(FO_DPT_DIP.deposit_currency)\",\n    \"fee_vat\": \"MapS.dataN(FO_DPT_DIP.fee_vat)\",\n    \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n  }\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 988
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4183087Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xem dữ liệu\",\"function\":\"form.view\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@table_code\",\"@table_col_key\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"#sys:bo-load-view\",\"input\":{\"table_code\":\"@table_code\",\"table_col_key\":\"@table_col_key\"}}]}}},{\"name\":\"Bắt đầu master data nếu có\",\"function\":\"masterdata.masterDataStart\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]}]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-post-viewdata",
+        "version": 1,
+        "updateTime": 638042796881318971,
+        "txname": "Xem data",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 95
+      }
+    ]
+  }
+]

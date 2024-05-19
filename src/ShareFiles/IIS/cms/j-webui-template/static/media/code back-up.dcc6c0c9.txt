@@ -1,0 +1,153 @@
+  {/* <thead className="malibu-desktop-uTable-thead">
+              <tr >
+                {(this.props.dataFull.config?.mode?.hasCheck !== undefined && this.props.dataFull.config?.mode?.hasCheck === true) && (
+                  <th style={{ width: "52px", textAlign: "center" }}>
+                    <div className="checkbox" onClick={() => { this.smoothCheck() }}>
+                      <ReuseImg
+                        val={this.state.checkAll.val}
+                        class=""
+                        style={{ fontSize: '20px' }}
+                        title="check"
+                        color={this.state.checkAll.color}
+                      ></ReuseImg>
+                    </div>
+                  </th>
+                )}
+
+                {this.props.dataFull.config?.columns?.map((col, index) => {
+                  let width_ = col.config.width;
+                  if (width_ === undefined) width_ = "";
+                  if (col.foccus === undefined) col.foccus = false;
+
+                  return (
+                    <th key={index} className={col.type} style={{ width: width_ }}>
+                      <div>
+                        <span style={{ lineHeight: "20px", width: width_title_ }}> {col.title}</span>
+                        {(this.props.dataFull.config?.mode?.hasSearch !== undefined && this.props.dataFull.config?.mode?.hasSearch === true) && (
+
+                          <span
+
+                            className="material-icons"
+                            style={{ float: "right", fontSize: "20px", cursor: "pointer", userSelect: "none" }}
+                            onClick={() => {
+
+                              let new_status_ = this.state.search.status;
+                              if (new_status_ === "") {
+
+                                new_status_ = "show";
+
+                                this.setState({
+                                  search: {
+                                    status: new_status_
+                                  }
+                                }, () => {
+                                  this.refs["table_search_" + index].focus()
+                                })
+
+                              }
+                              else {
+                                new_status_ = "";
+
+                                this.setState({
+                                  search: {
+                                    status: "fade-in"
+                                  }
+                                }, () => {
+                                  setTimeout(() => {
+                                    this.setState({
+                                      search: {
+                                        status: new_status_
+                                      }
+                                    })
+                                  }, 300)
+
+                                })
+                              }
+                            }}
+                          >search</span>
+
+                        )}
+
+                      </div>
+                      {(this.props.dataFull.config?.mode?.hasSearch !== undefined && this.props.dataFull.config?.mode?.hasSearch === true) && (
+
+                        <input ref={"table_search_" + index} className={"malibu-desktop-uTable-search-column " + this.state.search.status + " " + (col.foccus ? "foccus" : "")} placeholder="Seach"
+                          onBlur={() => {
+                            console.log("blur");
+
+                          }}
+                          onFocus={() => {
+                            console.log("focus");
+
+                          }}
+                          onClick={() => {
+                            console.log("click");
+
+                          }}
+                          onChange={(e) => {
+                            this.setState({
+                              search: {
+                                val_search: e.target.value,
+                                index_search: index,
+                                status: "show"
+                              }
+                            });
+
+                          }}
+                        />
+
+                      )}
+                    </th>
+                  );
+                })}
+              </tr>
+            </thead>
+            <tbody className="malibu-desktop-uTable-tbody">
+              {this.props.dataFull?.data?.map((item, index) => {
+                if (item.isCheck === undefined)
+                  item.isCheck = false;
+                return (
+
+                  <tr key={index} className={" " + this.getCSS(item.isCheck)}>
+                    {this.props.dataFull.config?.mode?.hasCheck === true && (
+                      <UColumnCheckbox
+                        abs_uTable_isCheck={this.abs_uTable_isCheck}
+                        abs_uTable_Select={this.abs_uTable_Select}
+                        key={index}
+                        col_index={index}
+                        value={item}
+                        isCheck={item.isCheck}
+
+                      >
+                      </UColumnCheckbox>
+                    )}
+                    {this.props.dataFull.config?.columns?.map((col, idex) => {
+
+                      let ColDynamic = allColumnStyle[col.type];
+                      if (ColDynamic === undefined)
+                        ColDynamic = allColumnStyle["uColumnDefault"];
+                      let data_ = item[col.code];
+                      if (data_ === undefined || data_ === "") data_ = "--"
+                      let config_ = col.config;
+                      if (config_ === undefined) config_ = {};
+                      return (
+
+                        <ColDynamic
+                          abs_uTable_isCheck={this.abs_uTable_isCheck}
+                          abs_uTable_Select={this.abs_uTable_Select}
+                          key={idex}
+                          col_index={index}
+                          value={item}
+                          data={data_}
+                          title={col.title}
+                          config={config_}
+                          isCheck={item.isCheck}
+
+                        >
+                        </ColDynamic>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody> */}

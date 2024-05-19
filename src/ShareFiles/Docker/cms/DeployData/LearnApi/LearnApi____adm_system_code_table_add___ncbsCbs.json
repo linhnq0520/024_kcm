@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.1219313Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "adm_system_code_table_add",
+        "learn_api_name": "adm - system code table search",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "adm_system_code_table",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"ADM_INSERT_CODE_LIST\",\r\n\t\"lang\": \"en\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"code_id\": \"MapS.dataS(c_cdlist.cdid)\",\r\n\t\t\"code_name\": \"MapS.dataS(c_cdlist.cdname)\",\r\n\t\t\"caption\": \"MapS.dataS(c_cdlist.caption)\",\r\n\t\t\"mcaption\": {\r\n\t\t\t\"english\": \"MapS.dataS(c_cdlist.mcaption.en)\",\r\n\t\t\t\"vietnamese\": \"MapS.dataS(c_cdlist.mcaption.vi)\",\r\n\t\t\t\"laothian\": \"MapS.dataS(c_cdlist.mcaption.lo)\",\r\n\t\t\t\"khmer\": \"MapS.dataS(c_cdlist.mcaption.km)\",\r\n\t\t\t\"myanmar\": \"MapS.dataS(c_cdlist.mcaption.mn)\"\r\n\t\t},\r\n\t\t\"code_group\": \"MapS.dataS(c_cdlist.cdgrp)\",\r\n\t\t\"code_index\": \"MapS.dataN(c_cdlist.cdidx)\",\r\n\t\t\"code_value\": \"MapS.dataS(c_cdlist.cdval)\",\r\n\t\t\"ftag\": \"MapS.dataS(c_cdlist.ftag)\",\r\n\t\t\"visible\": \"MapS.dataN(c_cdlist.visible)\"\r\n\t}\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 200
+      }
+    ]
+  }
+]

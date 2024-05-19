@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.56674Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_transactions_status_last_10_min",
+        "learn_api_name": "ncbs_transactions_status_last_10_min",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/statistics/txn-by-status/last-10-minute",
+        "learn_api_data": "ncbs_transactions_status_last_10_min",
+        "learn_api_node_data": "data.results",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbs",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "data.results",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 1169
+      }
+    ]
+  }
+]

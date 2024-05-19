@@ -1,0 +1,42 @@
+-- Quản lý các phiên bản server ở đây
+USE [o9accounting]  UPDATE o9accounting.dbo.Setting SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9admin]  UPDATE o9admin.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9cms]  UPDATE o9cms.dbo.Setting				SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9report]  UPDATE o9report.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9batch]  UPDATE o9batch.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9cash]  UPDATE o9cash.dbo.Setting				SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9credit]  UPDATE o9credit.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9customer]  UPDATE o9customer.dbo.Setting		SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9deposit]  UPDATE o9deposit.dbo.Setting		SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9fixedasset]  UPDATE o9fixedasset.dbo.Setting SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9fx]  UPDATE o9fx.dbo.Setting					SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9import]  UPDATE o9import.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9mortgage]  UPDATE o9mortgage.dbo.Setting		SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9party]  UPDATE o9party.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9payment]  UPDATE o9payment.dbo.Setting		SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9voucher]  UPDATE o9voucher.dbo.Setting		SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9ems]  UPDATE o9ems.dbo.Setting				SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9email]  UPDATE o9email.dbo.Setting			SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+USE [o9card]  UPDATE o9card.dbo.Setting				SET Value = '1.0.5.9' WHERE Name = 'jits.neptune.web.framework'; 
+
+USE [o9accounting]  UPDATE o9accounting.dbo.Setting	SET Value = '5.0.0.4' WHERE Name = 'jits.neptune.web.accounting'; 
+USE [o9admin]  UPDATE o9admin.dbo.Setting			SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.admin'; 
+USE [o9cms]  UPDATE o9cms.dbo.Setting				SET Value = '5.0.0.3' WHERE Name = 'jits.neptune.web.cms'; 
+USE [o9report]  UPDATE o9report.dbo.Setting			SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.report'; 
+USE [o9batch]  UPDATE o9batch.dbo.Setting			SET Value = '5.0.0.2' WHERE Name = 'jits.neptune.web.batch'; 
+USE [o9cash]  UPDATE o9cash.dbo.Setting				SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.cash'; 
+USE [o9credit]  UPDATE o9credit.dbo.Setting			SET Value = '5.0.0.2' WHERE Name = 'jits.neptune.web.credit'; 
+USE [o9customer]  UPDATE o9customer.dbo.Setting		SET Value = '5.0.0.3' WHERE Name = 'jits.neptune.web.customer'; 
+USE [o9deposit]  UPDATE o9deposit.dbo.Setting		SET Value = '5.0.0.3' WHERE Name = 'jits.neptune.web.deposit'; 
+USE [o9fixedasset]  UPDATE o9fixedasset.dbo.Setting	SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.fixedasset'; 
+USE [o9fx]  UPDATE o9fx.dbo.Setting					SET Value = '5.0.0.1' WHERE Name = 'jits.neptune.web.fx'; 
+USE [o9import]  UPDATE o9import.dbo.Setting			SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.import'; 
+USE [o9mortgage]  UPDATE o9mortgage.dbo.Setting		SET Value = '5.0.0.1' WHERE Name = 'jits.neptune.web.mortgage'; 
+USE [o9party]  UPDATE o9party.dbo.Setting			SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.party'; 
+USE [o9payment]  UPDATE o9payment.dbo.Setting		SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.payment'; 
+USE [o9voucher]  UPDATE o9voucher.dbo.Setting		SET Value = '5.0.0.1' WHERE Name = 'jits.neptune.web.voucher'; 
+USE [o9ems]  UPDATE o9ems.dbo.Setting				SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.ems'; 
+USE [o9email]  UPDATE o9email.dbo.Setting			SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.email'; 
+USE [o9card]  UPDATE o9card.dbo.Setting				SET Value = '5.0.0.0' WHERE Name = 'jits.neptune.web.card'; 
+
+USE [neptune] UPDATE neptune.dbo.CONFIGURATION		SET PARA_VALUE = '1.7.8.1'	WHERE PARA_CODE = 'SYSTEM_VERSION';

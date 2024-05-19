@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5544511Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fof_transaction_journal_search_search_get_api_journal_search_term_search_text_amp_page_0",
+        "learn_api_name": "fof_transaction_journal_search_search_get_api_journal_search_term_search_text_amp_page_0",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "fof_transaction_journal",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"SQL_SIMPLE_SEARCH_TRANSACTION_JOURNAL\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(Token)\",\r\n\t\"fields\": {\r\n\t\t\"search_text\": \"MapS.dataS(fof_transaction_journal.search_text)\",\r\n\t\t\"page_size\": \"MapS.dataNZero(table_search.paging.recordItem)\",\r\n\t\t\"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\"\r\n\t}\r\n}",
+        "number_of_steps": null,
+        "LearnApiGetInfo": "ncbsCBS_workflow_get_execution_info_step2",
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1144
+      }
+    ]
+  }
+]

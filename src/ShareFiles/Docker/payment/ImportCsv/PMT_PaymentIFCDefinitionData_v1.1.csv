@@ -1,0 +1,68 @@
+﻿Database,Payment,Table,PaymentIFCDefinition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IfcCode,IfcName,ValueBase,IsLinked,IfcLinkage,IfcOperator,FloorValue,CeilingValue,ValueType,IfcType,IfcSubType,IfcValue,MarginValue,ValueBasic,Isnet,Refname,IfcTenor,IfcTenorUnit,IfcCondition,CurrencyCode,RoundingRule,RoundingBasis,RoundingNum,Isleave,Isbook,Booktday,BookTenor,BookTenorUnit,IfcStatus,UserCreated,UserApproved,Payrate,ShareFee,EffectValueDate,EffectValue,TransactionList,CreatedOnUtc,UpdatedOnUtc,Id
+1,Deposit (MMK) For Different Region (By Cash/Tr),I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+2,Withdrawal (MMK) For Different Region  (By Cash),I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+3,Account To Account Transfer (MMK) For Different Region,I,N,0,%,200,0,P,C,CN,0.05,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+4,Communication Fee for Different Region (MMK),I,N,0,+,0,0,F,C,CN,500,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+5,Withdrawal (MMK) For Same Region  (By Cash),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+6,Account To Account Transfer (MMK) For Same Region,I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+7,Deposit (MMK) For Same Region  (By Cash/Tr),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+8,Deposit (MMK) For Same Branch  (By Cash/Tr),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+9,Withdrawal (MMK) For Same Branch  (By Cash),I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+10,Account To Account Transfer (MMK) For Same Branch,I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+11,Communication Fee Swift Charges,I,N,0,+,0,0,F,C,CN,5,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+12,Income A/C Other Commission and Service Charges(FCY),I,N,0,+,0,0,P,C,CN,1,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+13,Commission On Letter Of Credit,I,N,0,+,0,0,P,C,CN,0.05,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+14,"Amendment Commission (Date Extension,Amt Increase)",I,N,0,+,0,0,P,C,CN,0.25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+15,L/C Cancellation,I,N,0,+,0,0,F,C,CN,30,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+16,Commission On Bill Handling charges,I,N,0,+,0,0,F,C,CN,50,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+17,Communication Fee Swift Charges,I,N,0,+,0,0,F,C,CN,5,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+18,Communication on Discrepancies Acceptance Charges,I,N,0,+,0,0,F,C,CN,60,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+19,L/C Advising Commission,I,N,0,+,0,0,F,C,CN,30,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+20,Amendment Advising Commission ,I,N,0,+,0,0,F,C,CN,25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+21,Cancellation Commission,I,N,0,+,0,0,F,C,CN,25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+22,Bill Handling Commission,I,N,0,+,0,0,P,C,CN,0.25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+23,Commission On Telegraphic Transfer,I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+24,Commission On Telegraphic Transfer,I,N,0,+,0,0,P,C,CN,0.125,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+25,Communication Fee Swift Charges,I,N,0,+,0,0,F,C,CN,3,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+26,Other Commission and Service Charges ,I,N,0,+,0,0,F,C,CN,0,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+27,Commission on Credit & Guarantee,I,N,0,+,0,0,P,C,CN, 0.25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+28,Advising Commission,I,N,0,+,0,0,F,C,CN,20,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+29,Amendment Advising Commission ,I,N,0,+,0,0,F,C,CN,15,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+30,"Amendment  Commission  (Date Extension,Amt Increase)",I,N,0,+,0,0,P,C,CN, 0.25,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+31,Other Commission and Service Charges (USD),I,N,0,+,0,0,F,C,CN,50,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+32,Other Commission and Service Charges (EUR),I,N,0,+,0,0,F,C,CN,50,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+33,Other Commission and Service Charges (SGD),I,N,0,+,0,0,F,C,CN,50,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+34,Commission on Credit & Guarantee,I,N,0,+,0,0,P,C,CN,0,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+35,Performance Guarantee ,I,N,0,+,0,0,P,C,CN,2,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+36,Outward Remittance Commission,I,N,0,+,0,0,P,C,CN,0.125,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+37,Telegraph Transfer Draft (USD),I,N,0,+,0,0,F,C,CN,3,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+38,Telegraph Transfer Draft (EUR),I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+39,Telegraph Transfer Draft (SGD),I,N,0,+,0,0,F,C,CN,4,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+40,Inward Remittance Commision (USD),I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+41,Inward Remittance Commision (EUR),I,N,0,+,0,0,F,C,CN,8,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+42,Inward Remittance Commision (SGD),I,N,0,+,0,0,F,C,CN,12,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+43,Stop payment/Amendment/Return payment/Query (USD),I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+44,Stop payment/Amendment/Return payment/Query (EUR),I,N,0,+,0,0,F,C,CN,8,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+45,Stop payment/Amendment/Return payment/Query (SGD),I,N,0,+,0,0,F,C,CN,13,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+46,Travelers’ Cheque sale,I,N,0,+,0,0,P,C,CN,1,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+47,Travelers’ Purchase,I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+48,Travelers’ Cheque Collection,I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+49,Credit Card,I,N,0,+,0,0,P,C,CN,4,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+50,Cheque Collection,I,N,0,+,0,0,F,C,CN,15000,0,,,,0,D,,MMK,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+51,Cash Deposit,I,N,0,+,0,0,P,C,CN,0,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+52,A/C to A/c Transfer Charges (USD),I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+53,A/C to A/c Transfer Charges (EUR),I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+54,A/C to A/c Transfer Charges (SGD),I,N,0,+,0,0,F,C,CN,2,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+55,Pay Order (USD),I,N,0,+,0,0,F,C,CN,1,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+56,Pay Order (EUR),I,N,0,+,0,0,F,C,CN,1,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+57,Pay Order (SGD),I,N,0,+,0,0,F,C,CN,1,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+58,A/C Closing Charges (Individual) (USD),I,N,0,+,0,0,F,C,CN,5,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+59,A/C Closing Charges (Individual) (EUR),I,N,0,+,0,0,F,C,CN,5,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+60,A/C Closing Charges (Individual) (SGD),I,N,0,+,0,0,F,C,CN,5,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+61,A/C Closing Charges (Company) (USD),I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+62,A/C Closing Charges (Company) (EUR),I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+63,A/C Closing Charges (Company) (SGD),I,N,0,+,0,0,F,C,CN,10,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+64,A/C Opening Initial Deposit (USD),I,N,0,+,0,0,F,C,CN,100,0,,,,0,D,,USD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+65,A/C Opening Initial Deposit (EUR),I,N,0,+,0,0,F,C,CN,100,0,,,,0,D,,EUR,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0
+66,A/C Opening Initial Deposit (SGD),I,N,0,+,0,0,F,C,CN,100,0,,,,0,D,,SGD,R,P,2,N,N,,0,M,N,00911,0,100,0,,0,PMT_OIT|PMT_OITT|PMT_IIT|PMT_IITT,,,0

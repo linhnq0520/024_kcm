@@ -1,0 +1,62 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-16T03:34:08.6022742Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "FO_MTG_SCR_api_rulefunc_mtg_scr_get_info_camt5",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "FO_MTG_SCR_api_rulefunc_mtg_scr_get_info_scramt",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "FO_MTG_SCR_api_rulefunc_mtg_scr_get_info_camt5",
+        "learn_api_name": "FO_MTG_SCR_api_rulefunc_mtg_scr_get_info_camt5",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_MTG_SCRapi_rulefunc_mtg_scr_get_info_camt5",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"MTG_SCR_GET_INFO_CAMT5\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"account_number\":\"MapS.dataS(FO_MTG_SCR.credit_account)\"}}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 751
+      }
+    ]
+  }
+]

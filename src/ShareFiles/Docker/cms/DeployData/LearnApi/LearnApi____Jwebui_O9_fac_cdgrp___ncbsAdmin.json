@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-10-03T04:17:44.7479086Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "Jwebui_O9_fac_cdgrp",
+        "app": "ncbsAdmin"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "Jwebui_O9_fac_cdgrp",
+        "learn_api_name": "Jwebui_O9_fac_cdgrp",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "c_cdlist",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"FAC_ADVANCED_SEARCH_CODE_LIST\",\r\n\t\"lang\": \"en\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"code_id\": \"MapS.dataS(system_code.advanced_search.code_id)\",\r\n\t\t\"code_name\": \"MapS.dataS(system_code.advanced_search.code_name)\",\r\n\t\t\"caption\": \"MapS.dataS(system_code.advanced_search.caption)\",\r\n\t\t\"code_group\": \"MapS.dataSelectNull(system_code.advanced_search.code_group)\",\r\n\t\t\"code_index\": \"MapS.dataNNull(system_code.advanced_search.code_index)\",\r\n\t\t\"code_index_from\": \"MapS.dataNNull(system_code.advanced_search.code_index_from)\",\r\n\t\t\"code_index_to\": \"MapS.dataNNull(system_code.advanced_search.code_index_to)\",\r\n\t\t\"ftag\": \"MapS.dataS(system_code.advanced_search.ftag)\",\r\n\t\t\"page_size\": \"MapS.dataNZero(table_search.paging.recordItem)\",\r\n\t\t\"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\"\r\n\t}\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1834
+      }
+    ]
+  }
+]

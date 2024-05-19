@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.3601128Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_cwc_fo_dpt_cwc_btn_accept_post_api_fo_dpt_cwc",
+        "learn_api_name": "FO_DPT_CWC Accept FO_DPT_CWC",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_CWC",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_CWC\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"stock_prefix\":\"MapS.dataS(FO_DPT_CWC.stock_prefix)\",\"cheque_no\":\"MapS.dataS(FO_DPT_CWC.cheque_no)\",\"account_number\":\"MapS.dataS(FO_DPT_CWC.account_number)\",\"current_balance\":\"MapS.dataN(FO_DPT_CWC.current_balance)\",\"available_balance\":\"MapS.dataN(FO_DPT_CWC.available_balance)\",\"cheque_amount\":\"MapS.dataN(FO_DPT_CWC.cheque_amount)\",\"cash_currency\":\"MapS.dataS(FO_DPT_CWC.cash_currency)\",\"cross_rate\":\"MapS.dataN(FO_DPT_CWC.cross_rate)\",\"cash_amount\":\"MapS.dataN(FO_DPT_CWC.cash_amount)\",\"exchange_rate\":\"MapS.dataN(FO_DPT_CWC.exchange_rate)\",\"cash_amount_bcy\":\"MapS.dataN(FO_DPT_CWC.cash_amount_bcy)\",\"withdrawer_name\":\"MapS.dataS(FO_DPT_CWC.withdrawer_name)\",\"withdrawer_id\":\"MapS.dataS(FO_DPT_CWC.withdrawer_id)\",\"withdrawer_address\":\"MapS.dataS(FO_DPT_CWC.withdrawer_address)\",\"withdrawer_description\":{\"home\":\"MapS.dataS(FO_DPT_CWC.withdrawer_description.home)\",\"office\":\"MapS.dataS(FO_DPT_CWC.withdrawer_description.office)\"},\"description\":\"MapS.dataS(FO_DPT_CWC.description)\",\"id_issue_date\":\"MapS.dataS(FO_DPT_CWC.id_issue_date)\",\"id_place\":\"MapS.dataS(FO_DPT_CWC.id_place)\",\"identification_number\":\"MapS.dataS(FO_DPT_CWC.identification_number)\",\"value_date\":\"MapS.dataS(FO_DPT_CWC.value_date)\",\"currency_of_deposit_account\":\"MapS.dataS(FO_DPT_CWC.currency_of_deposit_account)\",\"exchange_rate_debit_account_bcy\":\"MapS.dataN(FO_DPT_CWC.exchange_rate_debit_account_bcy)\",\"amount_debit_account_bcy\":\"MapS.dataN(FO_DPT_CWC.amount_debit_account_bcy)\",\"commission\":\"MapS.dataN(FO_DPT_CWC.commission)\",\"interest_from_earlywdr\":\"MapS.dataN(FO_DPT_CWC.interest_from_earlywdr)\",\"due_date\":\"MapS.dataS(FO_DPT_CWC.due_date)\",\"interest_prepaid\":\"MapS.dataN(FO_DPT_CWC.interest_prepaid)\",\"total_vat_for_cash\":\"MapS.dataS(FO_DPT_CWC.total_vat_for_cash)\",\"account_linkage\":\"MapS.dataS(FO_DPT_CWC.account_linkage)\",\"amount_linkage\":\"MapS.dataN(FO_DPT_CWC.amount_linkage)\",\"fee_data\":\"MapS.arrayJson(FO_DPT_CWC.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"branch_name\":\"MapS.dataS(FO_DPT_CWC.branch_name)\"}}\r\n",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 698
+      }
+    ]
+  }
+]

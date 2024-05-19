@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.8630701Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_013004api_rulefunc_ACT_TRAN_GET_INFO_CTM",
+        "learn_api_name": "BO_013004api_rulefunc_ACT_TRAN_GET_INFO_CTM",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_013004api_rulefunc_ACT_TRAN_GET_INFO_CTM",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"CTM_GET_INFO_FULLNAME\",\r\n    \"lang\": \"MapS.infoRequest(lang)\",\r\n    \"token\": \"MapS.context(token)\",\r\n    \"fields\": {\r\n        \"customer_code\": \"MapS.dataS(BO_013004.customer_code)\",\r\n         \"customer_type\": \"MapS.dataS(BO_013004.customer_type)\"\r\n    }\r\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1718
+      }
+    ]
+  }
+]

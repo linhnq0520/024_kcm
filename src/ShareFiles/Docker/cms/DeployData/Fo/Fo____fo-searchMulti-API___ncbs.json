@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4665993Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n        \"name\": \"Clear error\",\n        \"function\": \"form.clearError\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": []\n    },\n    {\n        \"name\": \"on loading\",\n        \"function\": \"form.onLoad\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": []\n    },\n    {\n        \"name\": \"Get data from form\",\n        \"function\": \"formAPI.addnewSearch\",\n        \"type\": \"javascript\",\n        \"status\": \"A\",\n        \"para\": [\n            \"*\",\n            \"code\"\n        ],\n        \"request\": {\n            \"true\": {\n                \"bo\": [\n                    {\n                        \"txcode\": \"#ncbs:bo-searchMulti-API\",\n                        \"input\": {\n                            \"learn_api\": \"@learn_api\",\n                            \"key_table_paging\": \"@key_table_paging\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "",
+        "txtype": "fo",
+        "txcode": "fo-searchMulti-API",
+        "version": 1,
+        "updateTime": 638071296939786380,
+        "txname": "",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbs",
+        "id": 226
+      }
+    ]
+  }
+]

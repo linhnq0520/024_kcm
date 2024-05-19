@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.8667939Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_npl_od_fo_dpt_npl_od_btn_accept_post_api_fo_dpt_npl_od",
+        "learn_api_name": "FO_DPT_NPL_OD Accept FO_DPT_NPL_OD",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_NPL_OD",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"DPT_NPL_OD\",\n  \"lang\": \"MapS.infoRequest(lang)\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"od_contract\": \"MapS.dataS(FO_DPT_NPL_OD.od_contract)\",\n    \"current_group\": \"MapS.dataS(FO_DPT_NPL_OD.current_group)\",\n    \"new_group\": \"MapS.dataS(FO_DPT_NPL_OD.new_group)\",\n    \"overdraft_balance\": \"MapS.dataN(FO_DPT_NPL_OD.overdraft_balance)\",\n    \"main_interest\": \"MapS.dataN(FO_DPT_NPL_OD.main_interest)\",\n    \"commitment_fee\": \"MapS.dataN(FO_DPT_NPL_OD.commitment_fee)\",\n    \"current_provision_amount\": \"MapS.dataN(FO_DPT_NPL_OD.current_provision_amount)\",\n    \"new_provision_amount\": \"MapS.dataN(FO_DPT_NPL_OD.new_provision_amount)\",\n    \"secure_amount\": \"MapS.dataN(FO_DPT_NPL_OD.secure_amount)\",\n    \"shortfall_amount\": \"MapS.dataN(FO_DPT_NPL_OD.shortfall_amount)\",\n    \"overdraft_contract_currency\": \"MapS.dataS(FO_DPT_NPL_OD.overdraft_contract_currency)\",\n    \"description\": \"MapS.dataS(FO_DPT_NPL_OD.description)\",\n    \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\n  }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1727
+      }
+    ]
+  }
+]

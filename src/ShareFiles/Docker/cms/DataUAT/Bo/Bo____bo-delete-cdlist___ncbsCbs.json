@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.6687352Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\": \"call api delete cdlist\",\"function\": \"ncbsCbs.core.txNcbsCbs.callApiSaveCdlist\",\"type\": \"java\",\"status\": \"A\",\"para\": [],\"response\": {\"false\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionDeleteError\"}}],\"cmd\": \"stop\",\"error\": []}}},{\"name\": \"delete cdlist jwebui\",\"function\": \"ncbsCbs.core.txNcbsCbs.deleteCdlist\",\"type\": \"java\",\"status\": \"A\",\"para\": [],\"response\": {\"true\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionDeleteOk\"}},{\"txcode\": \"#sys:fo-form-clear\",\"input\": {}},{\"txcode\": \"#sys:fo-support-callBoLoadData\",\"input\": {\"table_code\": \"c_cdlist\"}}],\"error\": []},\"false\": {\"fo\": [{\"txcode\": \"#sys:fo-msg-toast\",\"input\": {\"lang\": \"sysActionDeleteError\"}}],\"error\": []}}}]",
+        "response": "{\"fo\":[],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-delete-cdlist",
+        "version": 1,
+        "updateTime": 638042796880638905,
+        "txname": "Delete cdlist",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 154
+      }
+    ]
+  }
+]

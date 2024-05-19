@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.5344424Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"call api get crossrate, baserate\",\"function\":\"ncbsCbs.core.txNcbsCbs.feeCCL\",\"type\":\"java\",\"para\":[],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"fo-autoFee-refreshAllFee\",\"input\":{}}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-autoFee-CallFee",
+        "version": 1,
+        "updateTime": 638042796880635212,
+        "txname": "bo-autoFee-CallFee",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 2
+      }
+    ]
+  }
+]

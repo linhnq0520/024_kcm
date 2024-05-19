@@ -1,0 +1,146 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-12-08T07:54:01.6113683Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "BO_005013_search_global",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_Add_SO",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_table_setActive",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_search_advanced",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_table_setInactive",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_table_excute",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_table_retry",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_view",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_SO_update",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_get_list_transaction_definition",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_get_list_transaction",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_transaction_add",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_transaction_update",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_transaction_delete",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_transaction_move_up",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_transaction_move_down",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_reload_list_transaction",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_SO_delete",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_GET_INFO_ACCOUNT_DEBIT",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_GET_INFO_ACCOUNT_CREDIT",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_reload_list_transaction_table",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "BO_005013_get_list_history",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "FO_DPT_DPT_validate",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_005013_search_advanced",
+        "learn_api_name": "BO_005013_search_advanced",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_005013_Search",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"EMS_ADSEARCH_STANDING_ORDER\",\n    \"lang\": \"en\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n  \"standing_order_code\": \"MapS.dataS(BO_005013_Search.advanced_search_main.standing_order_code)\",\n  \"standing_order_name\": \"MapS.dataS(BO_005013_Search.advanced_search_main.standing_order_name)\",\n  \"customer_code\": \"MapS.dataS(BO_005013_Search.advanced_search_main.customer_code)\",\n  \"run_mode\": \"MapS.dataSelectNull(BO_005013_Search.advanced_search_main.run_mode)\",\n  \"retries\": \"MapS.dataNNull(BO_005013_Search.advanced_search_main.retries)\",\n  \"failure_limit\": \"MapS.dataNNull(BO_005013_Search.advanced_search_main.failure_limit)\",\n  \"retries_count\": null,\n  \"failure_count\": null,\n  \"frequency_condition\": \"MapS.dataS(BO_005013_Search.advanced_search_main.frequency_condition)\",\n  \"occurrences_executed\": null,\n  \"start_date\": \"MapS.dataSNull(BO_005013_Search.advanced_search_main.start_date)\",\n  \"end_date\": \"MapS.dataSNull(BO_005013_Search.advanced_search_main.end_date)\",\n  \"last_execute_date\": null,\n  \"execute_condition\": \"MapS.dataS(BO_005013_Search.advanced_search_main.execute_condition)\",\n  \"standing_order_description\": \"MapS.dataSNull(BO_005013_Search.advanced_search_main.standing_order_description)\",\n  \"standing_order_status\": \"MapS.dataSelectNull(BO_005013_Search.advanced_search_main.standing_order_status)\",\n  \"frequency_type\": \"MapS.dataSelectNull(BO_005013_Search.advanced_search_main.frequency_type)\",\n  \"days_of_week\": null,\n  \"start_date2\": \"MapS.dataSNull(BO_005013_Search.advanced_search_main.start_date2)\",\n  \"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\",\n  \"page_size\": \"MapS.dataI(table_search.paging.recordItem)\"\n}\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1996
+      }
+    ]
+  }
+]

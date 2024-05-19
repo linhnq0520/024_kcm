@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.5737589Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "report_config_update",
+        "learn_api_name": "report_config_update report_config_update-Save",
+        "learn_api_link": "$API_SERVER$:$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "report_config_update",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"RPT_UPDATE_REPORT_CONFIG\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\": \"MapS.context(token)\",\r\n  \"fields\": {\r\n    \"id\": \"MapS.dataI(ncbs_report_config.id)\",\r\n    \"code\": \"MapS.dataS(ncbs_report_config.code)\",\r\n    \"code_template\": \"MapS.dataS(ncbs_report_config.code_template)\",\r\n    \"data_source\": \"MapS.dataS(ncbs_report_config.data_source)\",\r\n    \"description\": \"MapS.dataS(ncbs_report_config.description)\",\r\n    \"version\": \"MapS.dataS(ncbs_report_config.version)\",\r\n    \"full_class_name\": \"MapS.dataS(ncbs_report_config.full_class_name)\",\r\n    \"method_name\": \"MapS.dataS(ncbs_report_config.method_name)\",\r\n    \"is_async\": \"MapS.DataBoolean(ncbs_report_config.is_async)\",\r\n    \"mail_config_code\": \"MapS.dataS(ncbs_report_config.mail_config_code)\",\r\n    \"status\": \"MapS.dataS(ncbs_report_config.status)\"\r\n  }\r\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsAdmin",
+        "id": 1272
+      }
+    ]
+  }
+]

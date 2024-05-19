@@ -1,0 +1,62 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-07-06T08:32:06.9792108Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "FO_DPT_ODA_api_rulefunc_dpt_oda_get_info_od_contract",
+        "app": "ncbsCbs"
+      },
+      {
+        "learn_api_id": "fo_dpt_oda_fo_dpt_oda_btn_accept_post_api_fo_dpt_oda",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "FO_DPT_ODA_api_rulefunc_dpt_oda_get_info_od_contract",
+        "learn_api_name": "FO_DPT_ODA_api_rulefunc_dpt_oda_get_info_od_contract",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_ODA_api_rulefunc_dpt_oda_get_info_od_contract",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"DPT_ODA_GET_INFO_CT\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"contract_number\": \"MapS.dataS(FO_DPT_ODA.contract_number)\"\n    }\n}",
+        "number_of_steps": "1",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1641
+      }
+    ]
+  }
+]

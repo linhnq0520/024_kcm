@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-18T09:34:10.4663088Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": "bo-update-cdlist",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"update cdlist jwebui\",\"function\":\"ncbsCbs.core.txNcbsCbs.updateInternalCdlist\",\"type\":\"java\",\"status\":\"A\",\"para\":[],\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionUpdateOk\"}},{\"txcode\":\"#sys:fo-form-clear\",\"input\":{}},{\"txcode\":\"#sys:fo-support-callBoLoadData\",\"input\":{\"table_code\":\"c_cdlist\"}}],\"error\":[]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysActionUpdateError\"}}],\"error\":[]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}],\"error\":[]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-update-cdlist",
+        "version": 1,
+        "updateTime": 638306258933605397,
+        "txname": "Update cdlist",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 166
+      }
+    ]
+  }
+]

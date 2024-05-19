@@ -1,0 +1,1 @@
+(this.webpackJsonpframeworkcss=this.webpackJsonpframeworkcss||[]).push([[1120],{890:function(e,s,t){e.exports=t.p+"static/media/readme_textarea.d2defd32.txt"}}]);

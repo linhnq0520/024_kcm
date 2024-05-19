@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.0948645Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_crt_fo_dpt_crt_btn_accept_post_api_fo_dpt_crt",
+        "learn_api_name": "FO_DPT_CRT Accept FO_DPT_CRT",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_CRT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"DPT_CRT\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"stock_type\": \"MapS.dataS(FO_DPT_CRT.stock_type)\",\r\n\t\t\"from_serial\": \"MapS.dataS(FO_DPT_CRT.from_serial)\",\r\n\t\t\"to_serial\": \"MapS.dataS(FO_DPT_CRT.to_serial)\",\r\n\t\t\"stock_prefix\": \"MapS.dataS(FO_DPT_CRT.stock_prefix)\",\r\n\t\t\"description\": \"MapS.dataS(FO_DPT_CRT.description)\",\r\n\t\t\"return_back\": \"MapS.dataS(FO_DPT_CRT.return_back)\",\r\n\t\t\"user_approve\": \"MapS.dataSNull(user_approve.username)\",\r\n\t\t\"amount\": 1\r\n\t}\r\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 575
+      }
+    ]
+  }
+]

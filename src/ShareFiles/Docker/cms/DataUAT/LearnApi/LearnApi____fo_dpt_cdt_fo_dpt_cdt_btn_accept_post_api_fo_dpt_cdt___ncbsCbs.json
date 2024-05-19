@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.3902752Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_cdt_fo_dpt_cdt_btn_accept_post_api_fo_dpt_cdt",
+        "learn_api_name": "FO_DPT_CDT Accept FO_DPT_CDT",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_CDT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n\t\"workflowid\": \"DPT_CDT\",\r\n\t\"lang\": \"MapS.infoRequest(lang)\",\r\n\t\"token\": \"MapS.context(token)\",\r\n\t\"fields\": {\r\n\t\t\"stock_prefix\": \"MapS.dataS(FO_DPT_CDT.stock_prefix)\",\r\n\t\t\"cheque_no\": \"MapS.dataS(FO_DPT_CDT.cheque_no)\",\r\n\t\t\"debit_account\": \"MapS.dataS(FO_DPT_CDT.debit_account)\",\r\n\t\t\"branch_name\": \"MapS.dataS(FO_DPT_CDT.branch_name)\",\r\n\t\t\"balance\": \"MapS.dataN(FO_DPT_CDT.balance)\",\r\n\t\t\"available_balance\": \"MapS.dataN(FO_DPT_CDT.available_balance)\",\r\n\t\t\"total_fee_for_credit_account\": \"MapS.dataS(FO_DPT_CDT.total_fee_for_credit_account)\",\r\n\t\t\"total_vat_for_credit_account\": \"MapS.dataS(FO_DPT_CDT.total_vat_for_credit_account)\",\r\n\t\t\"debit_amount\": \"MapS.dataN(FO_DPT_CDT.debit_amount)\",\r\n\t\t\"exchange_rate_ctxexr\": \"MapS.dataN(FO_DPT_CDT.exchange_rate_ctxexr)\",\r\n\t\t\"amount_equivalent_in_bcy\": \"MapS.dataN(FO_DPT_CDT.amount_equivalent_in_bcy)\",\r\n\t\t\"credit_account\": \"MapS.dataS(FO_DPT_CDT.credit_account)\",\r\n\t\t\"currency_of_debit_account\": \"MapS.dataS(FO_DPT_CDT.currency_of_debit_account)\",\r\n\t\t\"currency_of_credit_account\": \"MapS.dataS(FO_DPT_CDT.currency_of_credit_account)\",\r\n\t\t\"cross_rate\": \"MapS.dataN(FO_DPT_CDT.cross_rate)\",\r\n\t\t\"credit_amount\": \"MapS.dataN(FO_DPT_CDT.credit_amount)\",\r\n\t\t\"exchange_rate_credit_ac_bcy\": \"MapS.dataN(FO_DPT_CDT.exchange_rate_credit_ac_bcy)\",\r\n\t\t\"amount_to_credit_bcy\": \"MapS.dataN(FO_DPT_CDT.amount_to_credit_bcy)\",\r\n\t\t\"debit_account_name\": \"MapS.dataS(FO_DPT_CDT.debit_account_name)\",\r\n\t\t\"customer_code\": \"MapS.dataS(FO_DPT_CDT.customer_code)\",\r\n\t\t\"customer_address\": \"MapS.dataS(FO_DPT_CDT.customer_address)\",\r\n\t\t\"customer_description\": {\r\n\t\t\t\"home\": \"MapS.dataS(FO_DPT_CDT.customer_description.home)\",\r\n\t\t\t\"office\": \"MapS.dataS(FO_DPT_CDT.customer_description.office)\"\r\n\t\t},\r\n\t\t\"commission\": \"MapS.dataN(FO_DPT_CDT.commission)\",\r\n\t\t\"description\": \"MapS.dataS(FO_DPT_CDT.description)\",\r\n\t\t\"value_date\": \"MapS.dataS(FO_DPT_CDT.value_date)\",\r\n\t\t\"total_fee_credit_account\": \"MapS.dataN(FO_DPT_CDT.total_fee_credit_account)\",\r\n\t\t\"paper_number_of_debit\": \"MapS.dataS(FO_DPT_CDT.paper_number_of_debit)\",\r\n\t\t\"issue_date_of_debit\": \"MapS.dataS(FO_DPT_CDT.issue_date_of_debit)\",\r\n\t\t\"issue_place_of_debit\": \"MapS.dataS(FO_DPT_CDT.issue_place_of_debit)\",\r\n\t\t\"paper_number_of_credit\": \"MapS.dataS(FO_DPT_CDT.paper_number_of_credit)\",\r\n\t\t\"issue_date_of_credit\": \"MapS.dataS(FO_DPT_CDT.issue_date_of_credit)\",\r\n\t\t\"issue_place_of_credit\": \"MapS.dataS(FO_DPT_CDT.issue_place_of_credit)\",\r\n\t\t\"credit_account_name\": \"MapS.dataS(FO_DPT_CDT.credit_account_name)\",\r\n\t\t\"exchange_rate_cbkexr\": \"MapS.dataN(FO_DPT_CDT.exchange_rate_cbkexr)\",\r\n\t\t\"amount_debit_account_bcy\": \"MapS.dataN(FO_DPT_CDT.amount_debit_account_bcy)\",\r\n\t\t\"account_linkage\": \"MapS.dataS(FO_DPT_CDT.account_linkage)\",\r\n\t\t\"amount_linkage\": \"MapS.dataN(FO_DPT_CDT.amount_linkage)\",\r\n\t\t\"fee_data\": \"MapS.arrayJson(FO_DPT_CDT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\r\n\t\t\"user_approve\": \"MapS.dataSNull(user_approve.username)\"\r\n\t}\r\n}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 962
+      }
+    ]
+  }
+]

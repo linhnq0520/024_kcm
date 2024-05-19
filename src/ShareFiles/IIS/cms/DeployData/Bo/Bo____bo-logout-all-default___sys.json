@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:15.441559Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"\",\"function\":\"tx.deleteSessionUserId\",\"type\":\"java\",\"para\":[\"@user_id\",false],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysDeleteSessionOk\"}}]},\"false\":{\"fo\":[{\"txcode\":\"#sys:fo-msg-toast\",\"input\":{\"lang\":\"sysDeleteSessionNotExist\"}}]}}}]",
+        "response": "{\"fo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-logout-all-default",
+        "version": 1,
+        "updateTime": 638042796880638894,
+        "txname": "bo-logout-all-default",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 149
+      }
+    ]
+  }
+]

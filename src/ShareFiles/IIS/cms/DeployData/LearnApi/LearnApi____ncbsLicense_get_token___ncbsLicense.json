@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5115253Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbsLicense_get_token",
+        "learn_api_name": "ncbsLicense_get_token",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/auth/get-token",
+        "learn_api_data": "",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsLicense",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getLicenseToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"user_code\": \"MapS.dataS(user.user_code)\",\n    \"password\": \"MapS.dataS(user.password)\"\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsLicense",
+        "id": 1062
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.7019477Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_006006api_rulefunc_CRD_PRODUCT_LIMIT_LKP_DATA_CUSTOMER",
+        "learn_api_name": "BO_006006api_rulefunc_CRD_PRODUCT_LIMIT_LKP_DATA_CUSTOMER",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n  \"workflowid\": \"SQL_LOOKUP_CTM\",\n  \"lang\": \"en\",\n  \"token\": \"MapS.context(token)\",\n  \"fields\": {\n    \"customer_code\": \"MapS.dataSNull(lookup.search_code)\",\n        \"fullname\": \"MapS.dataSNull(lookup.search_name)\",\n        \"shortname\": \"\",\n        \"paper_number\": \"\",\n        \"dob_from\": null,\n        \"dob_to\": null,\n        \"gender\": \"\",\n        \"customer_status\": \"\",\n        \"nation\": \"\",\n        \"resident\": \"\",\n        \"address\": \"\",\n        \"old_id_of_customer\": \"\",\n        \"group_id\": \"\",\n        \"page_index\": \"MapS.dataNZeroSub1(table_search.paging.pagingIndex)\",\n        \"page_size\":  \"MapS.dataNZero(table_search.paging.recordItem)\"\n  }\n}",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 62
+      }
+    ]
+  }
+]

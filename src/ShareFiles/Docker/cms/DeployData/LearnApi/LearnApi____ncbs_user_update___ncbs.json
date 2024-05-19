@@ -1,0 +1,70 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-18T09:13:24.5079732Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "ncbs_user_search_advanced_search",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_update",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_add",
+        "app": "ncbs"
+      },
+      {
+        "learn_api_id": "ncbs_user_search_advanced_search_table",
+        "app": "ncbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "ncbs_user_update",
+        "learn_api_name": "ncbs_user_update ncbs_user_update-Save",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/user/update",
+        "learn_api_data": "ncbs_user_save",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "PUT",
+        "flow_api": "ncbs",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "[{\"user_code\":\"MapS.dataS(ncbs_user.user_code)\",\"user_name\":\"MapS.dataS(ncbs_user.user_name)\",\"organization_code\":\"MapS.dataS(ncbs_user.organization_code)\",\"full_name\":\"MapS.dataS(ncbs_user.full_name)\",\"session_expiration_in_minutes\":\"MapS.dataI(ncbs_user.session_expiration_in_minutes)\",\"concurrent_maximum_requests\":\"MapS.dataI(ncbs_user.concurrent_maximum_requests)\",\"status\":\"MapS.dataS(ncbs_user.status)\",\"channel_id\":\"MapS.dataS(ncbs_user.channel_id)\"}]",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbs",
+        "id": 239
+      }
+    ]
+  }
+]

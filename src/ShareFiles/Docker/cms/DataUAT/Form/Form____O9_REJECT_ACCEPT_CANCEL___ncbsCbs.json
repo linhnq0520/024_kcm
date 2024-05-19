@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:44.5646301Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"05/01/2023 03:24:13 PM\",\"list_show_error\":\"false\",\"app\":\"ncbsCbs\",\"title\":\"O9_REJECT_ACCEPT_CANCEL\",\"bodata\":\"\",\"data\":\"\",\"des\":\"Enter Your Username And Password To Reject\",\"flow_layout\":[],\"form_code\":\"O9_REJECT_ACCEPT_CANCEL\",\"key_form\":\"\",\"lang_form\":{\"en\":\"O9_REJECT_ACCEPT_CANCEL\"},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"false\",\"ruleStrong\":[{\"code\":\"runFo\",\"config\":{\"component_action\":\"\",\"component_result\":\"\",\"component_event\":\"enter_tab\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.getErrorMess\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"condition\":\"\"},\"inUse\":true,\"order\":1,\"isStart\":true}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"Approve\",\"des\":\"Enter your username and password to reject\",\"class\":\"\",\"lang\":{\"vi\":\"Approve\",\"en\":\"Approve\"},\"lang_des\":{\"vi\":\"Enter your username and password to reject\",\"en\":\"Enter your username and password to reject\"},\"codeHidden\":\"ecd181bcf67fb893\",\"inputtype\":\"cLayout\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"codeHidden\":\"a2514e6bc16519d9\",\"list_input\":[{\"default\":{\"name\":\"User Name\",\"code\":\"username\",\"class\":\"                                                                                                                      col-xl-6 col-lg-6 col-md-8 col-sm-8 offset-xl-6-right offset-lg-6-right offset-md-4-right offset-sm-4-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"df7b1f3f55e211b3\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"user.username\",\"structable_read\":\"user.username\",\"data_default\":\"${user_acc.login_name}\",\"form_evaluation\":\"\",\"isLookup\":\"false\",\"isEvaluation\":\"false\",\"is_upperCase\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"true\",\"isSearch\":\"false\"},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":true,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Password\",\"code\":\"password\",\"class\":\"                                                                                                                      col-xl-6 col-lg-6 col-md-8 col-sm-8 offset-xl-6-right offset-lg-6-right offset-md-4-right offset-sm-4-right\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"499b536f966c3a8f\"},\"config\":{\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"structable\":\"user.password\",\"structable_read\":\"user.password\",\"data_default\":\"\",\"form_evaluation\":\"\",\"isLookup\":\"false\",\"isEvaluation\":\"false\",\"is_upperCase\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"true\",\"is_upper\":\"false\",\"action\":\"\",\"autoWrap\":\"true\",\"isSearch\":\"false\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"is_compare\":false,\"request\":true,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"title\":{\"en\":\"\",\"vi\":\"\"},\"lang_compare\":{}},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Accept\",\"code\":\"reject\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"cfb827957925db3f\"},\"config\":{\"onTable\":\"\",\"icon\":\"fa-check\",\"color\":\"primary\",\"action\":\"\",\"useAction\":\"false\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-create-dataAPI-approve\\\",\\n        \\\"input\\\": {\\n            \\\"list_component\\\": \\\"*\\\",\\n            \\\"list_view\\\": \\\"\\\",\\n            \\\"table_code\\\": \\\"table_code_parent\\\",\\n            \\\"learn_api\\\": \\\"learn_api_parent\\\"\\n        }\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\"},{\"default\":{\"name\":\"Cancel\",\"code\":\"cancel\",\"class\":\"\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"a50efcafce823756\"},\"config\":{\"onTable\":\"\",\"icon\":\"cancel\",\"color\":\"default\",\"action\":\"\",\"useAction\":\"true\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.closeForm\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\",\"isLookup\":\"\",\"cmd\":\"\",\"callform\":\"\",\"uploadfile\":{\"active\":\"false\",\"filetype\":\"\"}},\"role\":{\"disabled\":\"false\",\"visible\":\"false\"},\"property\":{\"danger\":\"false\",\"warning\":\"false\"},\"validate\":{\"request\":false},\"lang\":{\"vi\":\"\",\"en\":\"\"},\"configAVD\":{},\"inputtype\":\"cButton\"}]}]}]",
+        "react_txt": "",
+        "form_id": "O9_REJECT_ACCEPT_CANCEL",
+        "app": "ncbsCbs",
+        "id": 19
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "user id=o9report;password=o9report;data source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=neptunedb_oracle)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCLCDB)))",
+    "DataProvider": "oracle",
+    "SQLCommandTimeout": null
+  },
+  "CacheConfig": {
+    "DefaultCacheTime": 60,
+    "ShortTermCacheTime": 3,
+    "BundledFilesCacheTime": 120
+  },
+  "Kestrel": {
+    "Endpoints": {
+      "Grpc": {
+        "Protocols": "Http2",
+        "Url": "https://*:5000",
+        "Certificate": {
+          "Path": "NT.pfx",
+          "Password": "123456"
+        }
+      },
+      "webApi": {
+        "Url": "https://*:443",
+        "Certificate": {
+          "Path": "NT.pfx",
+          "Password": "123456"
+        }
+      }
+    }
+  },
+  "NeptuneConfiguration": {
+    "NeptuneGrpcToken": "123456",
+    "PaymentSchema": "o9payment",
+    "FixedAssetSchema": "o9fixedasset",
+    "MortgageSchema": "o9mortgage",
+    "DepositSchema": "o9deposit",
+    "CreditSchema": "o9credit",
+    "FXSchema": "o9fx",
+    "CashSchema": "o9cash",
+    "CustomerSchema": "o9customer",
+    "BatchSchema": "o9batch",
+    "AdminSchema": "o9admin",
+    "AccountingSchema": "o9accounting",
+    "NeptuneGrpcURL": "https://neptuneserver:109/",
+    "YourServiceID": "RPT",
+    "YourGrpcURL": "https://report.api:5000"
+  }
+}

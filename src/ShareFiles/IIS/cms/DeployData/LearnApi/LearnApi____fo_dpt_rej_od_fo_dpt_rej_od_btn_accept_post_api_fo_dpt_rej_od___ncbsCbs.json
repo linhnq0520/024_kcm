@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.8292451Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_rej_od_fo_dpt_rej_od_btn_accept_post_api_fo_dpt_rej_od",
+        "learn_api_name": "fo_dpt_rej_od_fo_dpt_rej_od_btn_accept_post_api_fo_dpt_rej_od",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_REJ_OD",
+        "learn_api_node_data": "",
+        "learn_api_app": "",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n    \"workflowid\": \"DPT_REJ_OD\",\r\n    \"lang\": \"MapS.infoRequest(lang)\",\r\n    \"token\": \"MapS.context(token)\",\r\n    \"fields\": {\r\n        \"contract_number\": \"MapS.dataS(FO_DPT_REJ_OD.contract_number)\",\r\n        \"customer_type\": \"MapS.dataS(FO_DPT_REJ_OD.customer_type)\",\r\n        \"account_holding_branch_name\": \"MapS.dataS(FO_DPT_REJ_OD.account_holding_branch_name)\",\r\n        \"holder_name\": \"MapS.dataS(FO_DPT_REJ_OD.holder_name)\",\r\n        \"od_catalog_code\": \"MapS.dataS(FO_DPT_REJ_OD.od_catalog_code)\",\r\n        \"od_catalog_name\": \"MapS.dataS(FO_DPT_REJ_OD.od_catalog_name)\",\r\n        \"currency_code\": \"MapS.dataS(FO_DPT_REJ_OD.currency_code)\",\r\n        \"od_limit\": \"MapS.dataNNull(FO_DPT_REJ_OD.od_limit)\",\r\n        \"deposit_account\": \"MapS.dataS(FO_DPT_REJ_OD.deposit_account)\",\r\n        \"sub_product_limit_code\": \"MapS.dataS(FO_DPT_REJ_OD.sub_product_limit_code)\",\r\n        \"fee_data\": [],\r\n        \"user_approve\": \"MapS.dataSNull(user_approve.username)\"\r\n    }\r\n}",
+        "number_of_steps": "2;3",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1707
+      }
+    ]
+  }
+]

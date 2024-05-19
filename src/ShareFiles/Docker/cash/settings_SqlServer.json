@@ -1,0 +1,38 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "",
+    "DataProvider": "",
+    "SQLCommandTimeout": null
+  },
+  "CacheConfig": {
+    "DefaultCacheTime": 60,
+    "ShortTermCacheTime": 3,
+    "BundledFilesCacheTime": 120
+  },
+  "DistributedCacheConfig": {
+    "Enabled": true,
+    "ConnectionString": "redis:6379"
+  },
+  "Kestrel": {
+    "Endpoints": {
+      "Grpc": {
+        "Protocols": "Http2",
+        "Url": "https://*:5000",
+        "Certificate": {
+          "Path": "NT.pfx",
+          "Password": "123456"
+        }
+      },
+      "webApi": {
+        "Protocols": "Http1",
+        "Url": "http://*:80"
+      }
+    }
+  },
+  "NeptuneConfiguration": {
+    "NeptuneGrpcToken": "123456",
+    "NeptuneGrpcURL": "https://neptuneserver:109/",
+    "YourServiceID": "CSH",
+    "YourGrpcURL": "https://cash.api:5000"
+  }
+}

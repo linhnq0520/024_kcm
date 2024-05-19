@@ -1,0 +1,48 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-02-10T04:01:25.7790267Z",
+    "host": "localhost:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "neptunedb_mysql"
+      },
+      {
+        "name": "port",
+        "value": "3306"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "AppOfRole"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "role_id": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "RoleId": 1,
+        "App": "ncbs;designform;ncbsCbs;ncbsAdmin;ncbsLicense;ncbsReport;",
+        "id": 1
+      },
+      {
+        "RoleId": 2,
+        "App": "ncbsCbs",
+        "id": 2
+      }
+    ]
+  }
+]

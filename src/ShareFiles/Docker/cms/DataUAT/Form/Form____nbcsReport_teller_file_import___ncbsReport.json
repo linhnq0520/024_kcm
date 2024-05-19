@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.1126776Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"04/01/2023 09:42:14 AM\",\"list_show_error\":\"false\",\"app\":\"ncbsReport\",\"title\":\"List of Import File Exchange Rate\",\"bodata\":\"\",\"data\":\"\",\"des\":\"List of Import File Exchange Rate\",\"flow_layout\":[],\"form_code\":\"nbcsReport_teller_file_import\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"688973e639978cb4\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"da16e0f1588049e0\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"Report\",\"code\":\"\",\"codeHidden\":\"b4ac18bc4dc60621\",\"class\":\"col-sm-12 col-md-12\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"file_report\":\"RPT_SYS_0011\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}]}]}]",
+        "react_txt": "",
+        "form_id": "nbcsReport_teller_file_import",
+        "app": "ncbsReport",
+        "id": 1303
+      }
+    ]
+  }
+]

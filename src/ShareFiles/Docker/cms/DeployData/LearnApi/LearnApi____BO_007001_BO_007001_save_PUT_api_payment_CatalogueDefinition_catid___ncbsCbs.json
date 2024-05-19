@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5530679Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_007001_BO_007001_save_PUT_api_payment_CatalogueDefinition_catid",
+        "learn_api_name": "BO_007001_BO_007001_save_PUT_api_payment_CatalogueDefinition_catid",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "BO_007001",
+        "learn_api_node_data": "execution_steps[1].p2_content.response.data",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs",
+        "save_to": "client",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\r\n  \"workflowid\": \"PMT_UPDATE_PMTCAT\",\r\n  \"lang\": \"MapS.infoRequest(lang)\",\r\n  \"token\":\"MapS.context(Token)\",\r\n  \"fields\":{\r\n  \"id\": \"MapS.dataI(BO_007001.id)\",\r\n  \"catalog_code\": \"MapS.dataS(BO_007001.catalog_code)\",\r\n  \"catalog_name\": \"MapS.dataS(BO_007001.catalog_name)\",\r\n  \"output_format\": \"MapS.dataS(BO_007001.output_format)\",\r\n  \"direction\": \"MapS.dataS(BO_007001.direction)\",\r\n  \"instrument\": \"MapS.dataS(BO_007001.instrument)\",\r\n\r\n  \"purpose\": \"MapS.dataS(BO_007001.purpose)\",\r\n  \"holding_days\": \"MapS.dataNNull(BO_007001.holding_days)\",\r\n  \"catalog_status\": \"MapS.dataS(BO_007001.catalog_status)\",\r\n  \"message_type\": \"MapS.dataS(BO_007001.message_type)\",\r\n   \"message_status\": \"\",\r\n   \"payment_classification\": \"\",\r\n  \"export_file\": \"MapS.dataS(BO_007001.export_file)\",\r\n  \"send_mail\": \"MapS.dataS(BO_007001.send_mail)\",\r\n  \"group_pmt_ins_code\": \"MapS.dataS(BO_007001.group_pmt_ins_code)\",\r\n  \"tariff_code\": \"MapS.dataN(BO_007001.tariff_code)\",\r\n  \"accounting_group_id\": \"MapS.dataN(BO_007001.accounting_group_id)\"\r\n}\r\n}\r\n",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[1].p2_content.response.data",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1141
+      }
+    ]
+  }
+]

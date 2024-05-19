@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.0727469Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Ctm_customer_profile_anniversary_date\",\"des\":\"Ctm_customer_profile_anniversary_date\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"false\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Ctm_customer_profile_anniversary_date\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"ctm_customer_profile_anniversary_date\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"923ca949843bfdfd\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"2eecb067ead13e5c\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"config\":{\"structable\":\"muti.M\",\"structable_read\":\"muti.M\",\"data_default\":\"\",\"data_type\":\"edit\",\"mask_format\":\"DD/MM/YYYY\",\"mask_data_format\":\"\",\"value_type\":\"number\",\"mask_mode\":\"date\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jMaskInput\",\"default\":{\"name\":\"Married Date\",\"code\":\"married_date\",\"codeHidden\":\"895f76ae5fe67a74\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"structable\":\"muti.G\",\"structable_read\":\"muti.G\",\"data_default\":\"\",\"data_type\":\"edit\",\"mask_format\":\"DD/MM/YYYY\",\"mask_data_format\":\"\",\"value_type\":\"number\",\"mask_mode\":\"date\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jMaskInput\",\"default\":{\"name\":\"Graduation Date\",\"code\":\"graduation_date\",\"codeHidden\":\"41d8f289edc10abe\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"role\":\"\"}},{\"config\":{\"structable\":\"muti.B\",\"structable_read\":\"muti.B\",\"data_default\":\"\",\"data_type\":\"edit\",\"mask_format\":\"DD/MM/YYYY\",\"mask_data_format\":\"\",\"value_type\":\"number\",\"mask_mode\":\"date\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"jMaskInput\",\"default\":{\"name\":\"Starting Date of Company\",\"code\":\"starting_date_of_company\",\"codeHidden\":\"b80482480a5bc979\",\"class\":\"                              col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"role\":\"\"}}]}]}]",
+        "react_txt": "",
+        "form_id": "ctm_customer_profile_anniversary_date",
+        "app": "ncbsCbs",
+        "id": 523
+      }
+    ]
+  }
+]

@@ -1,0 +1,1059 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="3">
+      <CREDIT Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>CREDIT</Alias>
+        <Columns isList="true" count="5">
+          <value>ORIGINAL,action,action,action,System.String,_x0034_3d581c8bdf64d1e84671b7929018afc</value>
+          <value>ORIGINAL,bank_account_number,bank_account_number,bank_account_number,System.String,eedfb885900641739c56a28c8f92c84f</value>
+          <value>ORIGINAL,account_name,account_name,account_name,System.String,af2ccd95d3da4d0983a2c1feac2df038</value>
+          <value>ORIGINAL,currency_code,currency_code,currency_code,System.String,_x0039_13ee542b62648d2a552fcccecd8c31c</value>
+          <value>ORIGINAL,amount,amount,amount,System.Decimal,_x0037_b279b17a5484a6da65f7f09f015dc64</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>7c44dbf401aa4da3b80c57c9e2b246bb</Key>
+        <Name>CREDIT</Name>
+        <NameInSource>CREDIT</NameInSource>
+      </CREDIT>
+      <TransactionBody Ref="3" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>TransactionBody</Alias>
+        <Columns isList="true" count="6">
+          <value>ORIGINAL,system_teller_name,system_teller_name,system_teller_name,System.String,_x0031_55d666e82ab4fc78df4d119747a7469</value>
+          <value>ORIGINAL,system_approve_name,system_approve_name,system_approve_name,System.String,_x0035_c4e6251412f45449cb727631d630724</value>
+          <value>ORIGINAL,customer_code,customer_code,customer_code,System.String,ac27dd66e1d149699e48961a1f33e631</value>
+          <value>ORIGINAL,account_name,account_name,account_name,System.String,_x0035_dd85ab5496b4da88f432edf6f147f6b</value>
+          <value>ORIGINAL,account_number,account_number,account_number,System.String,e700d99b02ab4ecf8b1f27f5ce5df04e</value>
+          <value>ORIGINAL,description,description,description,System.String,_x0035_50e2c3482344ee28d0b0df6bca05527</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>ebe109165a1c483296549df42e41be8a</Key>
+        <Name>TransactionBody</Name>
+        <NameInSource>TransactionBody</NameInSource>
+      </TransactionBody>
+      <DEBIT Ref="4" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>DEBIT</Alias>
+        <Columns isList="true" count="5">
+          <value>ORIGINAL,action,action,action,System.String,_x0034_3d581c8bdf64d1e84671b7929018afc</value>
+          <value>ORIGINAL,bank_account_number,bank_account_number,bank_account_number,System.String,eedfb885900641739c56a28c8f92c84f</value>
+          <value>ORIGINAL,account_name,account_name,account_name,System.String,af2ccd95d3da4d0983a2c1feac2df038</value>
+          <value>ORIGINAL,currency_code,currency_code,currency_code,System.String,_x0039_13ee542b62648d2a552fcccecd8c31c</value>
+          <value>ORIGINAL,amount,amount,amount,System.Decimal,_x0037_b279b17a5484a6da65f7f09f015dc64</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>12074bf57afa4637a80d10b45f86edce</Key>
+        <Name>DEBIT</Name>
+        <NameInSource>DEBIT</NameInSource>
+      </DEBIT>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="4">
+      <value>,branch_name,branch_name,,System.String,,False,False,False,False,,_x0038_734f0182b06405da6c42da9d9a7c086</value>
+      <value>,transaction_date,transaction_date,,System.String,,False,False,False,False</value>
+      <value>,transaction_refid,transaction_refid,,System.String,,False,False,False,False</value>
+      <value>,transaction_code,transaction_code,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>513e71b1b9e34545b5bc4f87862968d1</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <OffBalanceSheet Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <title Ref="6" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,4.1</ClientRectangle>
+          <Components isList="true" count="19">
+            <Text2 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.59,0,2.29,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>2b84064cf1b740be97abb72643a4bafd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Tran date/time:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <TXDATE Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.88,0,6.12,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>64bccba10bc9411c87bbbe514df22035</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>TXDATE</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{transaction_date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </TXDATE>
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.59,0.51,2.29,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>64d667602b8c44558c8f62aaf314f123</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Tran reference:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+            <TXREFID Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.88,0.51,6.12,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>cc603c3c6f00418a89038c8344c4faeb</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>TXREFID</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{transaction_refid}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </TXREFID>
+            <Text5 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,1.72,7.62,0.77</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,13,Bold</Font>
+              <Guid>4a4b2f69c192424b94db5392351402e4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>OFF BALANCE SHEET</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text1 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.52,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>6f95a6f7cead470da72c2c30d3098b8f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Branch:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <BRNAME Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.52,0,6.1,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>17c093ebab40422c83962bef034dfbd8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>BRNAME</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{branch_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </BRNAME>
+            <Text14 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.59,1.02,2.29,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>fe29c66e2a2645b480c925b85560a235</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Tran code:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text14>
+            <TXCODE Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.88,1.02,6.12,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>c8b7d98ad6b444be8b6b7a9092c71c58</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>TXCODE</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{transaction_code}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </TXCODE>
+            <Text17 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.51,1.52,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>65a0ef3db5f2406f868aeb54374c6f5d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Teller:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text17>
+            <Text19 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.02,1.52,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>ecc7f464dd8742af9f88b00818c7d3c6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Approver:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text19>
+            <Text23 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.89,2.54,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>db93dde692c24d3882a2e9dd84216140</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Customer code:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text23>
+            <CUSTOMERCD Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.54,2.89,3.56,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>5ef09860086f4acdbb77d20a744668b8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CUSTOMERCD</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{System.Convert.ToInt64(TransactionBody.customer_code).ToString("#-#-######")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </CUSTOMERCD>
+            <Text25 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.1,2.89,2.54,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>22d6392341984ca498447a8cc212b043</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Customer name:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text25>
+            <CUSTNAME Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.64,2.89,10.16,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>45a449ad1b684ab8bb0801a5276a8d93</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CUSTNAME</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{TransactionBody.account_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </CUSTNAME>
+            <Text27 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.39,2.54,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>eed69dbda40c42659c88c927973eda1f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Customer A/C no:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text27>
+            <ACNM Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.54,3.39,5.08,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>8a17044f25294a90bd418ad6b54aec62</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>ACNM</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{TransactionBody.account_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </ACNM>
+            <Text18 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.52,0.51,6.1,0.63</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>8bfe64668b83421b9f1e91c4555ca7bd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{TransactionBody.system_teller_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text10 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.52,1.02,6.1,0.63</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>aa0b3eb8b80b4c20884b9854a168b3eb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{TransactionBody.system_approve_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>title</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </title>
+        <HeaderBand1 Ref="26" type="HeaderBand" isKey="true">
+          <Border>All;Black;1;Dot;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.3,19,0.76</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text6 Ref="27" type="Text" isKey="true">
+              <Border>Right;Black;1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.02,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>b65ff4f944b44d6caa98dd56fede179d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,5,5,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="26" />
+              <Text>Dr/Cr</Text>
+              <TextBrush>Black</TextBrush>
+            </Text6>
+            <Text7 Ref="28" type="Text" isKey="true">
+              <Border>Right;Black;1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0,4.06,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>3c85f503719342a6a3e6b07c2103e07a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,5,5,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="26" />
+              <Text>Acc</Text>
+              <TextBrush>Black</TextBrush>
+            </Text7>
+            <Text8 Ref="29" type="Text" isKey="true">
+              <Border>Right;Black;1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,0,7.51,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>fe33967ef5344d9989f87ede4cd0cac0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,5,5,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="26" />
+              <Text>Name</Text>
+              <TextBrush>Black</TextBrush>
+            </Text8>
+            <Text9 Ref="30" type="Text" isKey="true">
+              <Border>None;Black;1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.4,0,3.6,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>80f27ab8bc574725a0c1385cd835f9e2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,5,5,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="26" />
+              <Text>Amount</Text>
+              <TextBrush>Black</TextBrush>
+            </Text9>
+            <Text3 Ref="31" type="Text" isKey="true">
+              <Border>Right;Black;1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.59,0,2.82,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>8cb43d3123a44fd6be633e7da70781ac</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,5,5,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="26" />
+              <Text>CRC</Text>
+              <TextBrush>Black</TextBrush>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </HeaderBand1>
+        <TableDEBIT Ref="32" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,6.86,19,1.78</ClientRectangle>
+          <Components isList="true" count="10">
+            <TableDEBIT_Cell1 Ref="33" type="TableCell" isKey="true">
+              <Border>Left, Right, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.02,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>24eae942398d40d3a3a90c73b972fc93</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell1</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DEBIT.action}r</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell1>
+            <TableDEBIT_Cell2 Ref="34" type="TableCell" isKey="true">
+              <Border>Left, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0,4.06,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>72cadf1d86ad42c2ae0fc7de7bf05bf2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>1</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell2</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DEBIT.bank_account_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell2>
+            <TableDEBIT_Cell3 Ref="35" type="TableCell" isKey="true">
+              <Border>Left, Right;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,0,7.51,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9bc92099bb724d70aae69d2f0769295b</Guid>
+              <ID>2</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell3</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DEBIT.account_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell3>
+            <TableDEBIT_Cell5 Ref="36" type="TableCell" isKey="true">
+              <Border>All;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.4,0,3.6,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>fb2a8fbec3884d948f7fd08140756e09</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>6</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell5</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DEBIT.amount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="37" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell5>
+            <TableDEBIT_Cell4 Ref="38" type="TableCell" isKey="true">
+              <Border>None;[0:0:0:0];1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.59,0,2.82,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>a5b89f75fb4b45c6b7a9dbe6d19287c8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>5</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell4</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Printable>False</Printable>
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DEBIT.currency_code}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell4>
+            <TableDEBIT_Cell6 Ref="39" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.89,1.02,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>bf812780e0b54f03b59673126e868024</Guid>
+              <ID>7</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell6</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TableDEBIT_Cell6>
+            <TableDEBIT_Cell7 Ref="40" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0.89,4.06,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>5fe17327f2564b9885b106f0123d49dc</Guid>
+              <ID>8</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell7</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TableDEBIT_Cell7>
+            <TableDEBIT_Cell8 Ref="41" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.61,0.89,3.8,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Enabled>False</Enabled>
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>1c86d96d22674fa68426b0d6768faae3</Guid>
+              <ID>9</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell8</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <ParentJoin>12</ParentJoin>
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>Total debit:</Text>
+              <TextBrush>Black</TextBrush>
+            </TableDEBIT_Cell8>
+            <TableDEBIT_Cell9 Ref="42" type="TableCell" isKey="true">
+              <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,0.89,10.32,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>8ba5bdcdd24046d7a09b15da67eb4b39</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>12</ID>
+              <Join>True</Join>
+              <JoinCells isList="true" count="2">
+                <value>9</value>
+                <value>12</value>
+              </JoinCells>
+              <JoinHeight>1</JoinHeight>
+              <JoinWidth>2</JoinWidth>
+              <Margins>0,5,0,0</Margins>
+              <Name>TableDEBIT_Cell9</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <ParentJoin>12</ParentJoin>
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>Total Debit:</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell9>
+            <TableDEBIT_Cell10 Ref="43" type="TableCell" isKey="true">
+              <Border>Top, Right, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.4,0.89,3.6,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8.5,Bold</Font>
+              <Guid>f90dd97cad084535a213d5c9089ff17f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>13</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDEBIT_Cell10</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{Sum(DEBIT.amount)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableDEBIT_Cell10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>DEBIT</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <FooterRowsCount>1</FooterRowsCount>
+          <Guid>2c16d337eb474918bcf6de25a4614a85</Guid>
+          <MinHeight>0.2</MinHeight>
+          <Name>TableDEBIT</Name>
+          <NumberID>14</NumberID>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <RowCount>2</RowCount>
+          <Sort isList="true" count="0" />
+        </TableDEBIT>
+        <TableCREDIT Ref="45" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,9.44,19,1.78</ClientRectangle>
+          <Components isList="true" count="10">
+            <TableCREDIT_Cell1 Ref="46" type="TableCell" isKey="true">
+              <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.02,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d632b0e3ef8d48b89da181c5dfb02be0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell1</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{CREDIT.action}r</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell1>
+            <TableCREDIT_Cell2 Ref="47" type="TableCell" isKey="true">
+              <Border>Top, Left, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0,4.06,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>4d5def69d33e4a17a37e7519e5713298</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>1</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell2</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{CREDIT.bank_account_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell2>
+            <TableCREDIT_Cell3 Ref="48" type="TableCell" isKey="true">
+              <Border>Left, Right;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,0,7.51,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>8abccfa7b3b1427ca24c5a6921523687</Guid>
+              <ID>2</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell3</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{CREDIT.account_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell3>
+            <TableCREDIT_Cell4 Ref="49" type="TableCell" isKey="true">
+              <Border>Left, Right;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.59,0,2.82,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>e1bd0d9a86824d938edfd857e9cbd695</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <ID>5</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell4</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{CREDIT.currency_code}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell4>
+            <TableCREDIT_Cell5 Ref="50" type="TableCell" isKey="true">
+              <Border>Top, Right, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.4,0,3.6,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ee96e5dd6205489a850cf4bed98ccd40</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>6</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell5</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{CREDIT.amount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="51" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell5>
+            <TableCREDIT_Cell6 Ref="52" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.89,1.02,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>0512c6bbe1ad481c869a6d1436a1be5d</Guid>
+              <ID>7</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell6</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TableCREDIT_Cell6>
+            <TableCREDIT_Cell7 Ref="53" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0.89,4.06,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>b8840e8e77774bbc956e7d5663b496b8</Guid>
+              <ID>8</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell7</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TableCREDIT_Cell7>
+            <TableCREDIT_Cell8 Ref="54" type="TableCell" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.61,0.89,3.8,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Enabled>False</Enabled>
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>c449b9e5e3904d71aa04b88aceb5fa98</Guid>
+              <ID>9</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell8</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <ParentJoin>12</ParentJoin>
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TableCREDIT_Cell8>
+            <TableCREDIT_Cell9 Ref="55" type="TableCell" isKey="true">
+              <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.08,0.89,10.32,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>75121991528b43829f50cbd299a6ae6b</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>12</ID>
+              <Join>True</Join>
+              <JoinCells isList="true" count="2">
+                <value>9</value>
+                <value>12</value>
+              </JoinCells>
+              <JoinHeight>1</JoinHeight>
+              <JoinWidth>2</JoinWidth>
+              <Margins>0,5,0,0</Margins>
+              <Name>TableCREDIT_Cell9</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <ParentJoin>12</ParentJoin>
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>Total Credit:</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell9>
+            <TableCREDIT_Cell10 Ref="56" type="TableCell" isKey="true">
+              <Border>Top, Right, Bottom;DimGray;1;Dot;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.4,0.89,3.6,0.89</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8.5,Bold</Font>
+              <Guid>9faf885c8c064fd486808e54b17dff81</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <ID>13</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableCREDIT_Cell10</Name>
+              <Page isRef="5" />
+              <Parent isRef="45" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{Sum(CREDIT.amount)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="57" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </TableCREDIT_Cell10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>CREDIT</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <FooterRowsCount>1</FooterRowsCount>
+          <Guid>3035fa2125304e479651506b5f523c92</Guid>
+          <MinHeight>0.2</MinHeight>
+          <Name>TableCREDIT</Name>
+          <NumberID>14</NumberID>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <RowCount>2</RowCount>
+          <Sort isList="true" count="0" />
+        </TableCREDIT>
+        <summary Ref="58" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,12.02,19,4.07</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text12 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.3,2.11,3.05,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>e3e9d221a57343928d0b3bc2532fcd16</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="58" />
+              <Text>Teller</Text>
+              <TextBrush>Black</TextBrush>
+            </Text12>
+            <Text13 Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.43,2.11,3.05,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>b496c98b6b18471685b09eaf7ed76ae7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="58" />
+              <Text>Approver</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <DESCS Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.54,0.18,16.26,1.52</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>d2dff6d25eaa4c3aace0853d6eaa0bb2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DESCS</Name>
+              <Page isRef="5" />
+              <Parent isRef="58" />
+              <Text>{TransactionBody.description}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </DESCS>
+            <Text11 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.18,2.54,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>b3086071efda4e2aa6af1c84b2423d3e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="58" />
+              <Text>Description:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text11>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>summary</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </summary>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f4abd080a78743bfa388f252a88c0af2</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>OffBalanceSheet</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </OffBalanceSheet>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/16/2022 4:09:33 PM</ReportChanged>
+  <ReportCreated>9/8/2011 12:21:29 PM</ReportCreated>
+  <ReportFile>C:\Users\JITS\Desktop\JITS\Test-voucher\voucher mrt\A3.mrt</ReportFile>
+  <ReportGuid>dc84afe02825429ba74cca48879c8bc0</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

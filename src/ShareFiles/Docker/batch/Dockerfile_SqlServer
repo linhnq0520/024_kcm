@@ -1,0 +1,22 @@
+FROM aspnet7 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 5000
+
+FROM base AS final
+
+# add globalization support
+RUN apk add --no-cache icu-libs
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+
+COPY ["batch/publish", "."]
+COPY NT.pfx /app/NT.pfx
+COPY Jits.Neptune.Web.Framework.xml /app/Jits.Neptune.Web.Framework.xml
+COPY batch/entrypoint.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+
+WORKDIR /app
+RUN mkdir bin
+WORKDIR /app
+
+ENTRYPOINT "/entrypoint.sh"

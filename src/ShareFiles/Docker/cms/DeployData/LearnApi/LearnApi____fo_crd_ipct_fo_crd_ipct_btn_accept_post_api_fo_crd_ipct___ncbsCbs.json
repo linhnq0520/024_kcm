@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-08-22T03:50:20.6107722Z",
+    "host": "27.3.1.108:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.108"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": "fo_crd_ipct_fo_crd_ipct_btn_accept_post_api_fo_crd_ipct",
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_ipct_fo_crd_ipct_btn_accept_post_api_fo_crd_ipct",
+        "learn_api_name": "FO_CRD_IPCT Accept FO_CRD_IPCT",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_IPCT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"CRD_IPCT\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"total_penalty_principal\":\"MapS.dataN(FO_CRD_IPCT.total_penalty_principal)\",\"penalty_principal_collect\":\"MapS.dataN(FO_CRD_IPCT.penalty_principal_collect)\",\"total_penalty_interest\":\"MapS.dataN(FO_CRD_IPCT.total_penalty_interest)\",\"penalty_interest_collect\":\"MapS.dataN(FO_CRD_IPCT.penalty_interest_collect)\",\"credit_account\":\"MapS.dataS(FO_CRD_IPCT.credit_account)\",\"interest_due_amount\":\"MapS.dataN(FO_CRD_IPCT.interest_due_amount)\",\"late_payment_amount\":\"MapS.dataN(FO_CRD_IPCT.late_payment_amount)\",\"c_accrued_interest_amount\":\"MapS.dataN(FO_CRD_IPCT.c_accrued_interest_amount)\",\"c_interest_receivable_amount\":\"MapS.dataN(FO_CRD_IPCT.c_interest_receivable_amount)\",\"accrued_interest_amount\":\"MapS.dataN(FO_CRD_IPCT.accrued_interest_amount)\",\"pay_for_interest_due\":\"MapS.dataN(FO_CRD_IPCT.pay_for_interest_due)\",\"interest_receivable_amount\":\"MapS.dataN(FO_CRD_IPCT.interest_receivable_amount)\",\"pay_for_overdue_interest\":\"MapS.dataN(FO_CRD_IPCT.pay_for_overdue_interest)\",\"keep_in_interest_prepaid\":\"MapS.dataN(FO_CRD_IPCT.keep_in_interest_prepaid)\",\"total_interest_amount\":\"MapS.dataN(FO_CRD_IPCT.total_interest_amount)\",\"interest_collect\":\"MapS.dataN(FO_CRD_IPCT.interest_collect)\",\"total_principal_amount\":\"MapS.dataN(FO_CRD_IPCT.total_principal_amount)\",\"principal_due_amount\":\"MapS.dataN(FO_CRD_IPCT.principal_due_amount)\",\"principal_collect\":\"MapS.dataN(FO_CRD_IPCT.principal_collect)\",\"advance_repayment_principal_mode\":\"MapS.dataS(FO_CRD_IPCT.advance_repayment_principal_mode)\",\"deposit_account\":\"MapS.dataS(FO_CRD_IPCT.deposit_account)\",\"payee_name\":\"MapS.dataS(FO_CRD_IPCT.payee_name)\",\"payee_code\":\"MapS.dataS(FO_CRD_IPCT.payee_code)\",\"payee_address\":\"MapS.dataS(FO_CRD_IPCT.payee_address)\",\"payee_description\":{\"home\":\"MapS.dataS(FO_CRD_IPCT.payee_description.home)\",\"office\":\"MapS.dataS(FO_CRD_IPCT.payee_description.office)\"},\"value_date\":\"MapS.dataS(FO_CRD_IPCT.value_date)\",\"currency_of_credit_account\":\"MapS.dataS(FO_CRD_IPCT.currency_of_credit_account)\",\"repidtype\":\"MapS.dataS(FO_CRD_IPCT.repidtype)\",\"sum_amount\":\"MapS.dataN(FO_CRD_IPCT.total_collect_amount)\",\"on_balance_sheet_interest\":\"MapS.dataN(FO_CRD_IPCT.on_balance_sheet_interest)\",\"off_balance_sheet_interest\":\"MapS.dataN(FO_CRD_IPCT.off_balance_sheet_interest)\",\"pay_for_on_balance_sheet_interest\":\"MapS.dataN(FO_CRD_IPCT.pay_for_on_balance_sheet_interest)\",\"pay_for_off_balance_sheet_interest\":\"MapS.dataN(FO_CRD_IPCT.pay_for_off_balance_sheet_interest)\",\"remaining_provision_amount\":\"MapS.dataN(FO_CRD_IPCT.remaining_provision_amount)\",\"description\":\"MapS.dataS(FO_CRD_IPCT.description)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"fee_data\":\"MapS.arrayJson(FO_CRD_IPCT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\",\"account_number_for_fee\":\"MapS.dataS(FO_CRD_IPCT.account_number_for_fee)\",\"method\":\"MapS.dataS(FO_CRD_IPCT.method)\"}}",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1024
+      }
+    ]
+  }
+]

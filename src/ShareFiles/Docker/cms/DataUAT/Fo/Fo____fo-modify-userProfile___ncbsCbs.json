@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.2724387Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Xo� th�ng b�o l?i\",\"function\":\"form.clearError\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[]},{\"name\":\"Thu th?p v� th�m m?i\",\"function\":\"form.addnew\",\"type\":\"javascript\",\"status\":\"A\",\"para\":[\"@list_component\",\"@list_view\"],\"request\":{\"true\":{\"bo\":[{\"txcode\":\"bo-modify-userProfile\",\"input\":{\"list_component\":\"*\",\"list_view\":\"code\",\"table_code\":\"user\",\"learn_api\":\"@learn_api\"}}]}}}]",
+        "request": "{\"bo\":[{\"txcode\":\"\",\"input\":{}}]}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-modify-userProfile",
+        "version": 1,
+        "updateTime": 638042796881319242,
+        "txname": "fo-modify-userProfile",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 181
+      }
+    ]
+  }
+]

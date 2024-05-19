@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.0232023Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Email Template\",\"des\":\"Email Template\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Email Template\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"619642a4cf894943\",\"ruleStrong\":[],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Layout mới\",\"des\":\"Ghi chú\",\"class\":\"\",\"inputtype\":\"cLayout\",\"codeHidden\":\"40ae60f505a12156\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"codeHidden\":\"fd4d87d3d0c8519f\",\"list_input\":[{\"default\":{\"name\":\"Input Name\",\"code\":\"34c0af99b52dbf98\",\"codeHidden\":\"f15b241694775322\",\"class\":\"                          col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"is_upperCase\":\"false\",\"action\":\"\",\"structable\":\"user.name\",\"structable_read\":\"\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"Input Age\",\"code\":\"f132fe37324e0f98\",\"codeHidden\":\"a6ca13fc7cdb562a\",\"class\":\"                          col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1 offset-lg-1\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"is_upperCase\":\"false\",\"action\":\"\",\"structable\":\"user.age\",\"structable_read\":\"\",\"data_default\":\"\",\"isLookup\":\"false\",\"callform\":\"\",\"callform_detail\":\"\",\"callform_detail_mode\":\"modal\",\"data_view\":\"\",\"data_value\":\"\",\"is_password\":\"false\",\"is_upper\":\"false\",\"autoWrap\":true,\"isSearch\":false},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{\"request\":false},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cTextInput\"},{\"default\":{\"name\":\"ButtonPrint\",\"code\":\"543c0de9b06df6ca\",\"codeHidden\":\"284d4b0552cb5ce9\",\"class\":\"                         col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-1-right offset-lg-1-right\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"fo-button-print\\\",\\n        \\\"input\\\": {\\n            \\\"template_code\\\": \\\"hoang\\\"\\n        }\\n    }\\n]\",\"useAction\":\"false\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButtonPrint\"}]}]}]",
+        "react_txt": "",
+        "form_id": "619642a4cf894943",
+        "app": "ncbsCbs",
+        "id": 464
+      }
+    ]
+  }
+]

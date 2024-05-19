@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <BOLFS05CB72 Ref="2" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>BOLFS05CB72</Alias>
+        <Columns isList="true" count="7">
+          <value>ORIGINAL,ITEMNAME,ITEMNAME,ລາຍການ,System.String,_x0037_4d176f1691643fcacae1817ae344e2d</value>
+          <value>ORIGINAL,NUM1,NUM1,ເງິນກີບ,System.Decimal,_x0034_af02f27fde44b7dbd3b6e621c974f81</value>
+          <value>ORIGINAL,NUM2,NUM2,ເງິນຕາ,System.Decimal,e824ef5bc98645b193c216e7b47a210c</value>
+          <value>ORIGINAL,NUM3,NUM3,ລວມ,System.Decimal,_x0033_04b651278c646a0a13c309257ba624a</value>
+          <value>ORIGINAL,NUM4,NUM4,ເງິນກີບ,System.Decimal,bef5866f1eb649229c93b4ba2ff57535</value>
+          <value>ORIGINAL,NUM5,NUM5,ເງິນຕາ,System.Decimal,_x0030_59c58d0a80d4abeab5d536c4a74d3a8</value>
+          <value>ORIGINAL,NUM6,NUM6,ລວມ,System.Decimal,e1f1a421b42e41a2b45e7b50fc83522d</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e9cb21e5612d4260a9e0b470314d6ffb</Key>
+        <Name>BOLFS05CB72</Name>
+        <NameInSource>BOLFS05CB72</NameInSource>
+      </BOLFS05CB72>
+      <BOLFS05CB72_ParaHeader Ref="3" type="Stimulsoft.Report.Dictionary.StiUserSource" isKey="true">
+        <Alias>BOLFS05CB72.ParaHeader</Alias>
+        <Columns isList="true" count="1">
+          <value>ORIGINAL,TODATE,TODATE,TODATE,System.String,f9461caf74ab495685214288fb341f04</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>4a408de2bb704b32a45500a556484cb6</Key>
+        <Name>BOLFS05CB72.ParaHeader</Name>
+        <NameInSource>BOLFS05CB72</NameInSource>
+      </BOLFS05CB72_ParaHeader>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="1">
+      <value>,ReportDate,Report_x0020_Date,,System.Nullable`1[System.DateTime],,False,False,True,False,_x003C__x003F_xml_x0020_version_x003D__x0022_1.0_x0022__x0020_encoding_x003D__x0022_utf-16_x0022__x0020_standalone_x003D__x0022_yes_x0022__x003F__x003E__x003C_StiSerializer_x0020_version_x003D__x0022_1.02_x0022__x0020_type_x003D__x0022_Net_x0022__x0020_application_x003D__x0022_State_x0022__x003E__x003C_SortDirection_x003E_None_x003C__x002F_SortDirection_x003E__x003C_BindingVariable_x0020_isNull_x003D__x0022_true_x0022__x0020__x002F__x003E__x003C_Keys_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_Values_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C_CheckedStates_x0020_isList_x003D__x0022_true_x0022__x0020_count_x003D__x0022_0_x0022__x0020__x002F__x003E__x003C__x002F_StiSerializer_x003E_,f8508663ef174fab8f6bed187ef4e31b</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>897676d3047c496b918b338fad246caf</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <InternalVoucher Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <title Ref="5" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,33.8,8.8</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ທະນາຄານກະສິກອນໄທ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Image1 Ref="7" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image1>
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,5.2,29.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <Guid>fca9885074ba48c8bc01312af4badc7f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ເອກະສານຊ້ອນທ້າຍ ສຳລັບລາຍງານທາງການເງິນ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text6 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,8,4.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>7.1 ຊັບສົມບັດຄົງທີມີຕົວຕົນ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Image2 Ref="10" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image2>
+            <Image3 Ref="11" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.4,0,12.35,3.81</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCACWAe4DASIA
+AhEBAxEB/8QAHQABAAICAwEBAAAAAAAAAAAAAAcIAQYCBQkEA//EAF0QAAEDAwEEBAcLBQsHCgcA
+AAEAAgMEBREGBwgSIRMxQVEYN2FxkZSzFBUiMlRWdHWBstI2cnOhsRYXJiczNUJSgpPRJUZkZYSj
+wiMkNENFYpKixPBTVVdjdoOF/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAUGBwQDAgH/xABEEQABAgQC
+BAoIBAQHAAMAAAABAAIDBAURITEGEkGRExY1UVNhcXKx0RQiNFKBocHwFTJUggcjNpIXJCVCYnPx
+M8Lh/9oADAMBAAIRAxEAPwD0z1lrG26GsE94u0j4qKEta90cZeQXHA5DyqPG71uz5ox7urT5RQSf
+4L996QfxNXf9NT+1Co8qFXa5M02ZEKCBa18R1ladovozJ1mTdHmHOBDrYEcw6irt+Fds9+W1vqEi
+eFds9+W1vqEipH/761nHn9KrvG2f91u4+auPEGme+/ePJXb8K7Z78trfUJE8K7Z78trfUJFSP0+l
+PtPpTjbP8zdx804g0z337x5K7nhXbPfltb6hInhXbPfltb6hIqR48p9KY8p9KcbZ/mbuPmnEGme+
+/ePJXc8K7Z78trfUJE8K7Z78trfUJFSPHlPpTHlPpTjbP8zdx804g0z337x5K7nhXbPfltb6hInh
+XbPfltb6hIqR48p9KY8p9KcbZ/mbuPmnEGme+/ePJXc8K7Z78trfUJE8K7Z78trfUJFSPHlPpTHl
+PpTjbP8AM3cfNOINM99+8eSu54V2z35bW+oSJ4V2z35bW+oSKkePKfSmPKfSnG2f5m7j5pxBpnvv
+3jyV3PCu2e/La31CRPCu2ffLa71CT/BUkxjv9Kx/76042z/M3cfNOINM99+8eSvxovbxpHXt9baL
+PVVMta6N0obLSvjbwt6+Z86kVpyFSLdTH8cFMP8AQqj9jVdxgw1X6hT8WoyvDRrXuRh8FlWktLg0
+ie9GgEltgcc8b9QXJERWFVVERERERERERERERERERERERERERERERERERERERERERERERERERERE
+RERERERERERERERERYRFlFxByFyCIiIiIoj3pPE1d/0tP7UKjyvDvSeJq7/paf2oVHu1ZDpb7c3u
+jxK3zQDk2J3z4BSDsW2VM2sX6vtr7k+2ClphUCRkQk4svDcYJHepgG5TB87JvUm/iWubm35d336u
+b7YK3re1TNBo8jNyLY0eHdxJxueftVc0or9SkKm+BLRdVoAwsObrCrL4E8Hztm9Sb+JZ8CeD52ze
+pN/ErNorDxdpnRfM+aqfGus9OdzfJVk8CeD52zepN/EngTwfO2b1Jv4lZtE4u0zohvPmnGus9Odz
+fJVk8CeD52zepN/EngTwfO2b1Jv4lZtE4u0zohvPmnGus9OdzfJVk8CeD52zepN/EngTwfO2b1Jv
+4lZtE4u0zohvPmnGus9OdzfJVk8CeD52zepN/EngTwfO2b1Jv4lZtE4u0zohvPmnGus9OdzfJVk8
+CeD52zepN/EngTwfO2b1Jv4lZtE4u0zohvPmnGus9OdzfJVH1zunxaN0hd723UstU6hp3TiE0jWh
++OzPFyVej2r0E24eKXVf0CT9i8++9Z9pLIy8jHhsl26oIv8ANaxoZU5upS8V82/WIIAyysOZS/up
++OCl+hVH7Gq7rfihUi3U/HBS/Qqj9jVd1vxQrjon7Ae8fALPNOuVv2DxKyiIros9REWMhEWUWMjv
+TI70RZRYyO9ERZRYyEyO9EWUWOId6ZHeiLKLGQmQiLKLGQnEO9EWURYyiLKLGR3pkd6IsosBwOef
+UmURZRYyO9MoiyiLHEO8IiyixkJkd6IsosZTIHaiLKLGR3pkd6IsosZHemR3oiyiwCD2pkIiE4XF
+0ga0k9QGVknktU2n1E0Gg746BzmO9z4L2nBa0kB58mGlxXlEfwbC7mXpDZwjwznIC+Z+0SW4SP8A
+eSzyXOla4s92y1MdNA8g4PAXc38+WQMeVdlYdZsuVe62VtDPabq1nSClqCCJGZ5vje08LwO3HMdo
+Wh61t1PHrC0U9PpqDUVLS2WYx0LnsYGtbIzhLOIYJxyA8q/OghEOgtM18b4xUOvEU1DHE8vFMyWU
+tdACeeGsLgfMR1BRDZmKHm5y3bMsOvnKmDLQnQwQLXy59ueJ5uYdSmJruLPkXJfnD1HnlfopwKDC
+iPek8TV3/S0/tQqPdqvFvSD+Ju8Y7Jac/wC9aqO9qyHS325vdHiVvmgHJsTvnwCn3c2/Lq/fVrfa
+hW/b1KoG5t+XV++rW+1Ct+3qVy0Y5MZ2nxWd6Z8sxOxvgFlERWxUdERERERERERERERERERERaNt
+w8Uuq/oEn7F59969BNuHil1X9Ak/YvPvvWUaYe0wu79VuP8AD32WP3h4BS/up+OCl+hVH7Gq7rfi
+hUi3U/HBS/Qqj9jVd1vxQrHon7Ae8fAKoadcrfsHiVlERXRZ6i/JxAJ71+q4EDPUvwooPg3qrLPq
+5un22W4Cd1d7gExdHw8XSFnFjOcZWz7WNtlv2T1FsirrdV1zq4SOYaZzRw8JAOeIjvVRbfz21U//
+AOQ/+pKlvfQOLtpYdnRVH3mLOodanHyUzHJGsxwAw2XWsRtHJBlTk5VrTqxGkuxOdlYfQmr4deaS
+t9+pYJKaCsYXtimILmgOLeeOXYvi2m7RKXZjpn36rKWash6ZkHRwEB2XZweZ8i6Xdx57GNMfoX+1
+etd3uPFN/wD0IP2uVoizcVtMM0D6+pf42VKgSMGJWRJO/Jwmr8Na2a2/ZTtXotq1ora6hoqmhZSz
+iBzKktJJLQ7I4T1c1y19tm0ts4LIrxXH3Y9vG2kpm9JKR3lo6h5ThRfubu4NFajdjixXg47/APkm
+qucdSNbbRmS6grHU8dyuOKqpJ/k2F+ORPUAOQ7lAxq7HgyECIADEi7Tln/4rTL6NSszVJuCSRBg4
+2GJOGz5qyp3yNMmQt95Lt0eeT8R9Xm4lKOznabaNptonuFnE7YoJehkZUx8Dmuxn7eRWv0u7rs6F
+A2FunYJWlvKZ0rzI7y8WVsGzzZnZ9mlJcKSyiobS1c4nMU0nH0ZxjDSeeOXbkqZkmVVsUGac0sts
+GPUq3UH0N8EiRY9sQEW1iLEbdqjzVO9fZdK6judmlsdwqJaCd1O6WN8fC8tOMjJzhdUN8+wj/N25
+/wDjj/xUiXfYJoW+3OruNdYo562qlMs0plkHE4nmcB2FUPbrpy26R2lXi12imFHQwMiMcIJcATGC
+eZ59agqrNVenNMYxG6pNhhjje2xWmgyNAq8QSwhPDw25JOGFrqeTvnWHH5O3P+8j/wAVN2kNRxau
+01bb1BFJBDXwNnZFJjiaCOo4UdWTd30BWWW31Eunonyy08T3u6eQZcWgk/G71Jtls1Jp+1U1tt8I
+p6KljEUMQJIY0dQ5qw01tRDi+de1zSMLf+BVKqvpJaGU6G5rgcdYgi29dmtR2m7QqXZppmS9VdLN
+WQsljiMUBAdlxwDz5LbgoY3tB/FJN9Np/vFd1QjPl5SJGh5tBIUdS5dk1PQYEX8rnAHsJXb7Jtut
+u2sV9wpKK21dC+jibK51Q5hDgXY5cJWrak3s7Jpy/wBztUtiuM0tFO+nc+N8fC8tOMjJWh7mPPU2
+pvokPtCop1/bJrxtgv8AQU3AJ6m8SQxl/IcTpMDJ85VGi1udFNgzDCNdziMuZaXL6N011ZmZSIDw
+cNoIxPVfFXv0jqmg1np+jvNtl6Skq4xI3vb3tI7CDkEL9dTX2PTWn7jdpY3yxUNO+ofGzAc4NBJA
+z5lU7du2kzbP9XVGkr0XU9FWzmLhl5e5qoHhx5A7GD5cHtVl9rPix1V3+9s/3CrTI1P02RdGbg9o
+NxzEBUipUY02otlnYw3Eap52krVdle8HbNqV/mtVHa62hljpzUl9Q5hBAc0YHCTz+EpYYcqm254B
+++VXHH/ZcntI1cpoACUKciz0mI0Y3dc9S+9JqfAplRdLSws0AHHHMLkoU15vOWnQeq66w1Nmr6qe
+kLeKWJzA12Wh3LJz2qa1oGo9h+jNV3eoul1srKqunx0sxleC7AwOQdjqAXfPNm3wwJNwDr7eZRdN
+fIw4xNQY5zLf7TY3Ua+GdYR/m9c/7yP/ABTwzbF83rp/eR/4qHd43Rtn0Nr6O3WSkFDRmhjmMbXF
+3wy5+TzJ7gp12a7BdDX3QOnrjW2GOerqaGKWaQzSAucWjJ5OwqXLTdamZqJKNiN1mZ4eGC0Sbp+j
+slJQZ58J5bFy9bH44rdrZtcorpsvm1uygqGUcUMsxpXFvSEMcWkZzjsXS7Ld4W2bUdQzWmjtVbRS
+R05qOkqHMLSAQMcj1819G0rS9s0hsN1La7RTCjoYaCXgha4uAycnrJPWT6VAe6CANqFb9WSffYpW
+Yn5uXnpaVc4esBrYbepQMnS5Gbpc7PNabsPq45Dr51MWut6Gz6E1ZcLDU2auqZ6RzWulhfGGuy0O
+5ZOe1bBsn25WraxU3CnoqKpoKijYyQx1JaS9riRkYPYR+tVi22wRVO8DdIZ28cMtdSskb/WaWxgj
+0L9dltxfsq28mhnJip21strnB7WOcQwn0MP2qIZXJtk+WRXDgg/Vy7bKfiaMyESliJBB4Yww8Y4H
+K+H3mrvgHGVFO1DeEs+zG/Q2iqt9XcKh0IneaZzAIwSQAeI9fLKlSRzIo3PeQ1jQSXdw71RO7Tna
+ptB1pfpmGWipaKrq28zhrY2cEI9OCrFW5+NJwmMl/wA7jhfHAZlVPRulwKhGiRJsHgoYxtznABWY
+2Xbwlr2oX6a00VrrKOSKndUGWocwtIBAx8E+VdZrXektGiNU3GxVNkuFTNRSBjpYnsDXZaDkZOe1
+RDufjO0ytzz/AMmSffYtM3geW17VZ7RUA/7tqrT65OtpbJoOGuXWyGSuELRmnPrkSRLTwbWBwxN7
+351Op3zbCAf4PXP+8i/xU1acvVLrfSdFcvcxbR3OmEhp6gAngcD8F3YeSjfSm75oG4aXtNVUWGN9
+TPSQyyP6aQZc5gJPxsdZUr2Sz0ditVJbqCEU9FSxiGKEEkMYOQHNWumtqDgXTr2uaRhbD6Ki1Z9J
+wZTobmuaTcuN8ubFaZT6UvmnK9klsbQ3eCCF1NSm4SyRTwQkg9HxgOD2ggYJAOAOZX76a0PNTXf3
+0uzqYSsmknp6Cga4U8Mr/jy/C5ueefPAAycDJJW98A7gs8I7gpQSrAb7BsUKZqIQRhc4E7VxjGAe
+xc1gADqWV2LkUT70HiZvf58HtQqNdv2q8u9B4mb1+fB7UKjXash0u9tb3fqVvegHJ0Tvnwap93Nv
+y6v31a32oVv29SqBubfl1fvq5vtQrft6lctGOTGdp8VnmmfLMTsb4BZREVsVHRYQkBceMOz18kRZ
+L8daB2VDu1jeQsmz2rltlFEb1eI+UkEb+GOE9z39/kGSoQq97nXE9QXwRWulizyiFO5/6y7Krk3p
+BISjzDe+5HMLq2U/RWqVGHw0KHZpyLja/ZtV0A9cgcqr+iN8QyVTKfVVrjghcce7bfkhnlcwnOPM
+T5lZO0XWjvFugrqGojqqSdgfHNE7ia4HtBXfI1KVqDS6Xde2zaouo0idpT9WbZa+RzB+K+5FxDwV
+nIUoodZRYyEyERaPtw8Uuq/oEn7F59969BNuHik1Z9Ak/YvPtZRph7TC7v1W5fw99kj94eAUv7qY
+/jhpfoVR+xqu634qpHupeOClP+hVH7Gq7jebVY9E/YD3j4BU/Trlb9o8SsoiK6LPUXBxwuM9THTQ
+ySyOwyNpc446gBkqM73vE6FoLBPcqe/01bKI8w0sOTLI7nhvDjlz7+pcseZgy4vFeB2ldcvKTE27
+VgMLsbYAnNVKt4P79cHk1D/6gqW99DndtK/oaj7zFFuxu1VOtNsFofwFz/dpuNQR1Ma1xeSftwPt
+U3b42npavTlkvUbCWUVQ+GZw/otkHwSe4cQA+1ZXKw3RKRNxG5FwI+BW2z0aHB0gkITziG2PxBAU
+h7uPLYxpj9A/2r1ru9uc7Jj9YU/7XLUt2/bhYbLo2PTt/uEdsqKJ7hTy1GWxyxuJdji6gQSeRXTb
+zm2OyautdFp6w1jLhE2cVNTUxZ6MFoIawE9fXk+ZWSNUJY0TV1xfVAtfG9rZKoS1JnG6S3MM6oiF
+17G1r3vdbXuZj+BuoOX/AGg32TVrG2bdkuhvFbe9JxNrqepc6aa2hwbJG4kl3R55OBJJ4eRUjbqm
+mpbDswZVVDHRyXSofVBruXwMBrD9obn7Vt1m2w6RutbW0IvdNR19LO+nlpqx4ieHNcWnGeRHLrC9
+oEjLTFLgS84dU2w2LnmKpOSdbmpqnjWF7HC4tlj8ciqkaR2ya42VVbbdJNO+CA4da7qxxDQD1Nz8
+Jv2ZCtvsn2qW3alYHV1Gw09XA4R1dE85dC8jI59rSOYKirem1Foy76P6KOsoa7ULZYzSOpXtkkYM
+/D4nN6m4zyPbha/uY0tSb9qWpAeKQUsUTjjkZOMkDzgZ9KjafGj0+pNkGxeEhkdts/BS9Ul5WrUV
+9WdA4GK047A7Eb8+3BWtIwOfPKonvNeOK/D/AO3B7IK9h6vMqKbzfLbHfv0cHsgpDSuwkm94fVRm
+gY/1N/cPiFdjS4/gzavokP3AuGqdVW7R1jqbvdZjBQ0wBkkDC4jJAHIc+srnpccWmbUP9Eh+4Fx1
+PpS36vslTabrB7poagASR8ZbxYORzHPrAVqHCejjgvzWFr5XsqKeD9J/m31b42ztfGyj870mztrS
+ffiXkMn/AJnL+FdPvQXKC8bE2V1M/pKaoqaWWJ+McTXHIOPMu6O7Ds8Id/kN/Pl/0uX8S6Teet0F
+n2JMoaZnRU9NU0sUTM54WtOAM+YKvTXp/oMx6Zq21TbVv9VbJL8L/EpX8P1764vr259llHm5h+U2
+pvocPtCo8vRLd4Opx1/ujHtwpD3MPym1N9Eh9oVHd7+FvA1OO3UbfbhUk2FLlO+fFaOwf67UP+se
+AUqb1uygsf8Au0tURwSGXJkYxg9TJh5uQJ8xXb6L2rjaBsJ1VQ10vFe7Za5o5+I/CmZwEMlHn6j5
+R5VYGvt1PdqKpo6qFs9NOwxyRvGQ5pyCCqJ7RtIXTYpravoaWV4oqunljppnDLZqaQEOY7vLc4+w
+FWKqQ30qM6dhD+XEFnDr5/vr51UKHFZXZVtNjn+bCIcwnaAcR97Lcy23c8GNpVf9VSe0jVhdRbwW
+idKXqrtFyukkNdSuDJo200juEkZ6wMHkVXvc85bS7gP9VyD/AHkasJqDYForVV6q7tcrS6orqpwf
+LIKmRoccY6g7HUF90L0s0tvomrfWP5r5fBNJ/Qfxx/p+tqarfy2vf4r6tG7bdJ69u5tlkuD6msEb
+pujdA9nwQQCckeULfMLRdH7FtJ6Eu5udkthpKwxGEydO9/wSRkYcT3Leh1K4SfpPBf5u2t1ZfNZ/
+PeicN/kdbU/5Wvf4Kl+95y2pQ/VsX3pFZ3Y6MbLdKfVsH3Qqxb3vjTh+rYvvSKz2x7xXaUH+rYD/
+AOUKpUnCszn3tV8rv9PU/wC9i+bbkMbJdWfQJFW3dB8Z9b9WSffYrI7cSP3pdWD/AEB6rdug+M+t
++rJPvsXzVOW5T72lftD/AKcn+0eAXTbauW8LcPrCk/ZGtg3ttKPseuqS/UzejjucILnt/ozx4GfO
+W8J/srX9tXPeEuP0+l/ZGrGby+jxqnZdXyxxl9XbHCui4Rk4byeB52k+hQ7ZT0qFPhubXXHwJ/8A
+1T7530CPSnO/K6HqnsIb9bLp9ZbW2y7uLL/DLwV1ypGUTADzE7vgSejDio22T6PFt3edfX6SPEty
+pZIYcj/qowRy87i70BQ83Ulxu+lbXpKEF8MdwfUQAHPFJKA1rceQ5P8AaVyNaach0ju+XWywDDKK
+zOh85DfhH7Tk/auqUjGrRHTLsoUO37iDf6rjnpZtChMkmZxo1/2Ndh9PmoI3PvGZXfVsntGLTdv+
+P34NVZ6vdAz/AHbVuW5+4DaZXZ/+WSffYtM3gRna9qsdeagezaoCLjQoffKtUvhpRG/6x4hbDbJd
+tvvXS+9/7oRRdE33P0TW8HBj4OPJjCudZROLVRe6M+6DDH0vH8bi4RnPlzlRvo7bToWh0pZaWo1P
+QRVENHDHJG+Tm1wYAQeXYVIthvtBqS2QXG11UddQzZ6OoiOWuwSDj7QVolHl4UBp1I5iEgYE3ssj
+r81GmnjhJYQg0nENIv237F2aIisyqSIiIiifeg8TN6/Pg9qFRrtV5d6DxM3r8+D2oVGu1ZDpd7az
+u/Ure9AOTonfPg1T7ubfl1fvq5vtQrft6lUDc2/Lq/fVzfahW/b1K56Mcms7T4rPNM+WYnY3wCyi
+IrWqOuDxy5dajPb5tFl2d6AqamkcG3KseKSkcR8RzgSX/wBkAnz4UmuVZt9Ey+4dLAZ6Dpp893Fw
+tx+rKhazHfLSEWKw2IHjgrBo/KQ52qQYEX8pOPXa5sqvPlfJJJJI90kjyXOe92XOJ5kk95581JWn
+t3PXWpLRHcqe2RU0EjeOJlZUCKSQdh4SMjPlWoaDFEdbWD3y4fe/3fB05d8Xg4xnPkXo01zeDkOW
+Fm1Ao8GqCJEjuyNrDxWw6VaQzNFdCgyrR6wvcjDDYMl5tX/Tty0rdZrbdqSShroT8KKQY8xB7Qew
+hTDuzbX4dF3GpsV7rm09jqGmaGWd2GU8o6+fYHDs7x513m+b7h9+NNGMtFwMMvSY+N0WW8Oft4sf
+aq4hR8UvoVRcJd19X532FS0uIelFGaZturrjcQcx95L0AG3HQI/zstf9+EG3HQPzstf9+F5/DqWV
+OccJro2/NVr/AA+lNkd3yXoB+/loH52Wv+/Cfv5aB+dlr/vwvP8AyiccJro2/PzT/D6U6d3yV6tW
+bTdnWr9N3Ky1WsaCGnroXQPkhnHG0HtGQQoX/em2M8/4xpB/tEX4FX3mmCo+Zr4m3B0xLtcR2+al
+pPRM09pZKzb2g4m2r5K2myTRmzLSWtqStsGtvfW6vjfBFSSVEZD+Ic8ANBzgd6sNF8ReZNO6VlRE
+6AvE7XtMZjzxh2fg8OOec9WO1egOyF+qZ9D292rWRx3bh54/lCz+iZB1B+OvH7VbtHKkyZDoDIOo
+BjheyoGl9GiSTmTMSYMQuw9a2thzW2eC3hYPUVlFeVmy+SsphV0s8BdwiRjmFw7MgjKrI3cueKk/
+wrApuoEUPw8d3xsK0yxhRc5TZaft6Q29u0eCmKdV52la3ob9XWzwB8QVoOy7Y7Ytl1BMy2h9RWzg
+CetqMGSTHUBjqHkC2272ejvlsqKC4U8dXR1DTHLDIMtc09i7JF1wpaDBhcDDaA3m2LgjTMeYjGYi
+vJecbqtOoNzSiqaqSSy6glooHHLaesg6bh8nECCR5192j9z+y2qujqb7dZr01hBFKyLoYneR3Mkj
+yZCsQiiG0GnNfwghC/xtuurA7SeruhcCY5tlsvvtdfLBBHTwthhY2OOMBrGAYa0DqAHcoA1pujUe
+pL7XXOh1BNROrJnzvhqKcSta5ziTggjlk9SsRhZUhNyEvOsDJhtwMvsKJkKnN0yIYso/VJzyN991
+WK07ltPFMDcNTyyRA82UdI2Mn7XE49CnnReiLToGyRWqzUraalYeInOXyO7XOPWT5StkReUpS5SR
+drQGWPPmfmvefrM/U2hs1FLgNmAG4L8ifgqEdo+7FSbQ9XV99lv09E+qaxphZA1wbwt4esnyKc0X
+RMycGcYGR23AxXHJT0zT4hiyz9VxFvgvjtVELbbqSkDzIIImRcZGM8IAz+pfYiLsaA0WC4iSSScy
+i0zars9i2m6Wksc1Y+gY6aObpo2B5y05xgrc0XnFhMjwzCiC4OBXrBjRJeI2NCNnNNwetRRsf2F0
+2yW43Krgu81ydWxMi4JYWsDQ05zyPNa/V7rtHVa8k1Ob/UNkdcBcPcwp28OePj4c56uWMqd0Ud+F
+SfBNg6nqtNxnmpUVqoCM+Y4U67xYmwxHNkuDB1rRtq+yu3bU7IygrZX0s8MnS09ZG0OdEepwwesE
+ciFviLvjQIceGYUUXadii5eYiysVsaC6zhkVDmyXd7pNlupJ7tDeZri6WmNP0UkLWAZc12cgn+qp
+gZ+tcsLK85WUgycPgoDbBes3OR56KY8y7WdzoiIutcahva1u70u1HU7bxNe57e9tM2n6KOBrxgFx
+zknyqSdH6fbpTTVss7JnVLKGnZTtleMF4aMZI7Opd2i4YUlAgxnx4bbOdmedSEaoTMxAZLRX3YzI
+YYLoNa6bZrHS90sckzqZldA6AzNbksB7QO1R3sn3eaXZXqWa7w3qe4PkpnU/RSQNYACQc5B/7qmN
+EiSUCLGbHe27m5FINQmYEu+VhPsx+YwxUH6y3aaTV2vajU8l9np5Jp4p/c7YGlo4OEYznt4VMlRT
+x1VNLBM0PilYWOae0EYI9BX2Iv2DJwJcvdDbYvxPWvyYnpmabDZGfcMFm9Q+woE0huoWrSurqG9C
+81FbFRz9PFRyQNDcjPAC4Hs5ehS5rLTrdW6WutlfMaZldTugMzRkszyzhd+i+IEhLS0N0KEywdmv
+Saqc5ORWRo8Quc3I81sVDeyXd7pdluoZrvDep7jJJTup+ikgaxoBIOcg+RdVrndYo9b6sud9k1BU
+Ub62QSGBlO1wYeEDkSfIp4wsrnNIknQBLmH6gN7Y5711NrtRbMmbEU8IRYnDLmyVaPAuoQD/AApq
+sHs9ys/xU37OdFx6A0hb7DHVvrW0gcBPI0NLuJ5d1DzraEX3KUuTknl8uzVOW1fE9WZ+owxCmoms
+Ab5DP4BERFKqFREREUT70HiZvX58HtQqNdqvLvQeJm9fnwe1Co12rIdLvbWd36lb3oBydE758Gqf
+dzb8ur99XN9qFb9vUqgbm35dX76ub7UK37epXPRjk1nafFZ5pnyzE7G+AWURFa1R1ggHrUZbwGzu
+XaHs/qaekZx3OjeKulb/AF3NB4mf2mkgeXCk3Cw5uRhc0zAZMwXQYmThZdUpMxJOOyYhH1mkELzF
+ex0b3xva5j2ktcx4wWkciCO8KTdObyOutNWhlthuEFXDE3gifWU4kkY3sHFnmB5cqxW1Xdqs20Gp
+mudDMLLen83zRx8UU575Gd//AHhz86g6t3SddU9QY6d1sq4s8pm1JbnykFuVksSjVWmRXei3IO1v
+1W8QtIaFWYDfT9UEbHDI9Rysop1BqK56qu09yutZJW1sxHHLJ3dgA6gB3BS/u07Hodb3GrvN7oW1
+NipmuhjjmHwZ5T147w0Z5958i2rQu51KKmOp1VdopIGHiNFb8/D8jpCOX9kZ8qspZrLSWG3U9BQU
+8dJRwMEcUMTcNYB2BStH0ejuj+kz4+BxJPWoLSHSyWbKmRpRzwuBYAcwyWm/vEbPy0/wUtwOP/hn
+/FU12z2mi0/tO1Fb7fTx0VDTzhkUMfJrBwNOB6V6EFmWkZUORbAHy7ZazWVdWUdbbqhz3G3TU5ee
+bA0ZJ5ciM9Snq3SPS4TIcswA62JAGAVY0ar5p0eLGnIhcA02BJNzcYbbKk3G3+s30qbd1jRdk1pq
+W9098tkFzghpI5I2TtyGu6TGQrXzbPdOSRSNbYbW1zmkBwo4xg9/xVHmw/YPXbKb5dq6qu1PcI62
+ERNZDE5hbh5dkklQcro1Fk52E91nsxvhgN6sk9plBqNOjwmAwolhq4m5xxsRlguw1dsp2daS01c7
+zNo6hqIqGB07oo4/hOA7BkqDP32dkn/0vB/tR/iVkdtR4NlOq3Hq975R+pefK/dIpk0+MxkBjRcX
+/KPJfOiMiKvLxYk1FeS02FnuGztVqdj+stnGq9eUdDZdBMtFxZHJPFWPDHcBaOzBPPmrJRY4OSpB
+ureOGg+i1H3Qrwt6lYNG5h01KGK8AG5yAHNzKq6XSbJKo8DDJI1QcSSczzkrKIitapKIiIi4Odh2
+OxRvtE2+aY2cVJo62olrrmBk0VEwPe0HqLjyDfMefkUg3B7o6WZ7Bl7Y3FuO8ArzusL6XU+vqR+p
+ap8dLXV2a6dzsOw5xzk9nYM9gVXrlUiyAhw4AGs82ucgrpo1RYNUdGizJOpDF7DM5+SsSN9O2GbH
+7mq3o+/3RHxehTBsy2m2/ahYpbpboKimiimMD46poDg4AHsJBHMc119LsU0A62sgZpm2SU7m/BeI
++IuHfxdZ9K7nQ+gLNs8oqujskD6ekqJzUOidIXBriAPg56hy6l7SUKpw4oMzFa5h5hY+C46hHosW
+ARJQXMiAi1zcW23xzXfVtxgt1LLU1UzKeniaXySyODWsA6ySepQpqfe70pZqiSC20tZfHMODLA0R
+xE+Rzjz84Cjnev2mVNy1EdJUc5ittE1r6wNOBLKRkNd5GjHLvK73YZu02q8adpb9quN9ZJWNEtPQ
+8ZYyOM9RdjmSRzx1DKi5iqTk3OOkqcB6ubj9/DapyTokhI09tSrBJD/ytGZ+xjmLLuLTvl2GpqAy
+4WO4UMR/62JzJsecAg+hTXpXWNp1namXKzV8NdSO/pxnm09zh1g+QqKtfbq2lbvZZzYKUWW5xsLo
+Xxvc6N5HU17STyPeOYVdNjuvbhsv1/BxufFRzzijuNM7qxxcOfO09vdleX4nUKZHZCqNnMd/uC9h
+RqXWpSJHpGs2JDxLXY3Hz8fgrh7Wdp8WyzTkV3mopLgx9Syn6KN4YcuDjnJ/NXybG9sEO1yguVTD
+bZbcKKVkRbLIH8Rc3ORjqWm73vPZZTOBBBuUPP8AsSLpNyz+YNU/TIvZlSDp+OKy2TB9Qtv8ioqH
+TJY6OvqBb/MD7XucrjZkrIE4BWj7W9pjdlumG3l9C64tdUMp+hZIIz8LPPJ8y3g9RUHb3gxsti+s
+YP8AiUvUo75eTixYZs4C4UDSJeHNz8GBGF2ucAVuWx7awzazZKy5RW99ubTVHucxvkDyTwh2cgDv
+Wx6x1KNJaWut6dCaltDTvnMTSAX4GcZKhnc2bnQl554/yifZsUl7ZhjZRqw/6vl+6uSTmosamCYe
+fX1SV3VCSgwKy6Thj1A8C3VcLWtj+8BFtYvVdb47NLbTS04qDI+Zsgd8INxgDyrXta718GjtWXWy
+O05PVmgmMJmbUtaHkAc8Y5daj7c0GdbX36tb7UKxV22N6LvtwqrhcNOUNVW1DuOWaRhLnu7yoqRj
+1Go09kWDEAfc3JGxTdSlqTSKvEgR4RdCAFgCb3Nje91Dfhq0w/zUqPW2/wCCO31KcAn9ylRy/wBM
+b+FQzt4sNv01tSvVttdJHRUMIiLIIhhozGCf1q2tr2EaCntlLJJpe3ve+Fhc4sPMloz2qMkpiszk
+aLBbGAMM2OGefV1KaqEpo9TpaBMvl3ERRcAOOGWePWv21dtcZpTZnR6wdbpKmOpZA9tIJA1zel6h
+xY7Mr5NjO22Pa5769Ha5LaaDo88cofx8We4cupdFvP0EFq2KS0lNG2GmhqKaOONnUxodgALSdy3r
+1b/s/wDxqZfPTMOrQpMu9Utue2x8lXYVNlItBj1AN9dr7DE5XHw2qylzu9LZqGesrqmOlpYWl8k0
+zg1rB3klQlqHfA0vbKh8Ntoa68cJx0zAIoz5i7mfQoq3odptTqPV0+nKadzLRanBskbDymmxlxd3
+8OcAd+St+2N7sNkk0/SXbVlO6vrquMStonPLI4Gnm0HHNzsdeepc0aqTs9NvlKaANXNxXbLUWnU6
+QZUKwSTE/Kxuf38Qvus2+Tp6rqGx3KzXC3MJx0zC2Zo84BB9AKmzTeqbbq22R3G010NdRSj4EsLs
+jzHuPkKhrabut6cuFhqqjTNL703anYZIo2SOMU+Mngc05wT1AhQfu+7RKrQmvaSlkkc213KVtLVU
+7zgNe48LX+RwdgHyEr4ZVJ6nTTJeo2c1+Th9/Rej6NTKvJRJujlzXw8Sx3N8/hirU7YdrrNk1roK
+2W2vuYq5zAGRyiPhw0uzzBz1Lpdkm8TbtqN4qbX73yWmtZH0sLJZRJ0zQfhYwBzHI4Wpb5nPSOnc
+/L3+zcq4W6lvOjqWw6xoX9Ex9TIKadmfgSxHDmO847O0ZXPUa1NyVTMMYwm2JFthzXXR9HJGo0YR
+X+rGcXBpucxewtlkF6KmQ8HLrx1qEtd7z0GidcVenH2GasNPJHGahtQ1oJeAc4I7MqRdnGuqPaJp
+CivNGeHpWcE0WecMg5OYfMf1YVQNvnPbpePpNN92NS1aqUSXlIceVd+YjHqN1A6OUmDOT0aVnmn1
+GuwysRZXfrbpT263y1tXPHTU0TOkklldhrGgcySoQ1Dvg6XttRJDa6CuvIZyE7A2KJ3lBcckeXC/
+He9uNXR7PbVSQOc2mq60MqCP6Qawua0+cjP2KP8Adc0PpDVz7s++QQXG6wPb0FFUOy0R45vDf6XP
+l245LmnqnNunm0+VIaSL3P0XXS6PItpb6tPhz2g2DW9tsf8A3ALfLNvkWSuq4oayw19I2R4Z0kcj
+JQ3JxzGQe1WDidxsBzlRzeNgOhLyxo94KejmY5rmVFFmF7SDnIxy7O0KRom8LMdynqfDnoesJ14d
+zWw7VWqnFpkXUdTobmZ3BN+a1sT1rmiIpdQaIiIiIiIiifeg8TN6/Pg9qFRrtV5d6DxM3r8+D2oV
+Gu1ZDpd7azu/Ure9AOTonfPg1T7ubfl1fvq5vtQrft6lUDc2/Lq/fVzfahW/b1K56Mcms7T4rPNM
++WYnY3wCyiIrWqOiIiIi4BmOxc0RFxYMArkiIiIiIiIiIi0bbiQ3ZJqsk4HuCTrXn0vQDb14n9Wf
+QnftC8/+9ZRph7TC7v1W5fw99kj94eAUubq3jhoPotR90K8Leoqj26t44aD6LUfdCvC3qKsWiXsB
+7x8Aqjp3yt+0eJWURFdVnaIiIi/OQAjmqu7Yd1yvq7rV3nSIjnZUvdLNbHuDC1xySYyeRBP9E96t
+E/rUc2fb9oq6VFVSTXiG1VlPM+GSCvPRHLXFpIceRHLsKg6pLyU2wQZwgXyN7G/UVYaLOVGRiujy
+DS61tYWuLbLgKqGmtpuu9j1x97zLVUzISOO1XNhdFjP9EHm3ztOFbjZJtVodq2nXVtPGaStp3CKr
+pHHJjceog9rT1g+nmoh3ndf6K1JpOChoK6ku99ZOx8EtIeMwtB+Hlw7COWM818+5fbav3Tqiu4XN
+oXMhgyfiukBcTjzAj0qp02LFkKkJCFF4SGR22+7Y2V6q8CBU6M6qxoHAxmns1sQMtt74dmagXabq
+Skvm1vXUMUpklpLpNFNlhHU4jkT+bj7F6G6aMXvHbuix0XuaLgx1Y4BhVJ3qdmM2n9XS6ppaYOtt
+1LfdMjGco6gDHwvzgBgntyO0Lb9h28raLfpulsOq530U1EwQwVxaXMljHJofjOCByz1HC6ZOYlad
+VpiEQYbXWtrG9ztxsMDiRzZXXlVZWZrFDlJiX/mGHcENGIy2c4tY8+asySMFed21nohtL1WKfHB7
+4zYDf62ef61aPXu9JpSx2mf3iqxfLo9hbC2BrhEx3YXuIAwOvA5qvGxfQFftR2gRSzsfLQwVArLj
+VEcieLi4c/1nO7O7K8NIJiHUokGTlTrOvjbG33mvbRKVi0mFMVGdaWM1bC+BPwP3ip33qOIbF7UH
+54/dlNnPf0T1125X/MGqfpkXsyu73vh/FbSAcv8AKUOB/YkUdbr+0/TOgbNf4b9c2UEtTUxyRNdG
+53E0MwT8EHtXrFiQ4FfY6I4ABmZ7CuWWhRZrRSKyC0uJiZAXOYVuj1FQdvec9lsX1jB/xLYn7yOz
+rgJ/dJEO3+Rk/Cvn3g7E/Wmx64Pt4NRJC2OvhDASXtaeI4H5pKsVQiwpyRjMl3Bx1TkbqpUuBGkK
+lLRJphYNYYkEbetaruakDQl6+sT7NqkvbP4p9V/V0v3Sqy7tu2S2bO6i5Wy9vfBbK1zZo6ljS8RS
+AYPEBzwRjmO0Lfdu+8Lpu66IuFh09We+dXcGCGSWJhEcUefhcyBkkcgB3qBkKlKso2q541mtItfG
++OzrVpqVGnoukWuyES1zwQ4DC2FzfLBaruZD+G198ltb7UK3n9EqtO5npaenpb9qCWMsgqSykp3E
+fG4CS8jyZIHnBVlz1FSujcN0Oms1ttz8yoPS6KyNWYpYb2sNwCohvK+ObUP5sPsmq8lm/mii/QR/
+dCo3vK+ObUP5sPsmq8lm/mii/QR/dCjqD7fO976lS+k3JVO7n0aon3sfFBV/S6f760Hcr+Nqz/Zv
++Nb9vY+KCr+l0/31oO5Z16s/2b/jXzM/1FC7v0cv2T/pKY74/wDqoH1W9z9ol2NT1uu8nSh3d0xz
+n7F6IQdGIWiMDg4Rw8PVjHJUu3mtm1RpTWtVeYYSbNeH9KJGfFjmIw9hPZnHEO/J7QpQ2P7ztkdp
+6ktmq6p1uuVKxsIq3tc6KoaBgOyPiuxjIPcuCix2UydmJaaOqXG4JwBz29eak9IpWJWabKTsi3Xa
+0WIGJGA2dViCrC4GM5XnVfmtG0S4tpMcPvvJ0XD+nOMfqVn9pm9Fpu12Srp9M1fvvdpWFkb4mOEU
+JPLic4gZx2AKE93bZzWa713S3Goje+022YVNTUOHKSQc2sz2ku5nuxzX1XZiHUpiBKSp1nA3JGz7
+zX5ovLRaPJzVQnWljS0AA4E/A7hzqW98lv8AA7TmesVzgR/+orhsQ0NR7Q93epstYMdNW1DopsZM
+Mgd8F48x/Vlfrvmn+Cenvpz/AGZWxbpPiji+n1P3l1iE2LXYkN4uCyx3BR5jPg6LQYsM2cItweu5
+UJ7Etb1uxjaPW6cv2aegqZxS1bXfFhmHJko8hBHnBHcum29OD9uV4IIwammxj81imPes2T+/Vp/d
+bbYeKtomcFaxg5ywdj/Oz9h8irA+61d6vVHU1s7qifigj6R3WWsLWtz3nAHNVipCLIt/DYmLQ4Fp
+6scPvrV1ovAVR5rMKweWFsQf8hbH4j6K/uvdBW/aLpKay3HjZHI1ro5o/jxSD4rx5v1jKp/rPYTr
+bZnVOuFPDLW0kDuKO52su4mD+s5o+E3y9Y8quFrbXtt2eWGC63YS+4jNHA98TOMsLsgOx145di+C
+n206Fq6T3QzVNrEZGfhzhrgPK08/1K81OQkZ5wEV4ZEAzvY27NqzOiVWqUyG70eEYkFxxFiRfbiM
+j92Vddlu9RebFVQUOqpDd7W4hvuwtAngGccRx8cD0+dW9oqmOspY54niSKVoex7epzSMgj7F5/bZ
+7xYdQ7Q7rW6bib73SluDEzhbNLjD3tHc4485V49mlvqrVoDT1HW8XuuCghjlDusODRkHyrh0cm5i
+JEjSsR+u1mTvjz7VJ6WU+VhQpedgQ+DdEGLfhfLZbIrZURFeVm6IiIiIiIiifeg8TN6/Pg9qFRrt
+V5d6DxM3r8+D2oVGu1ZDpd7azu/Ure9AOTonfPg1T7ubfl1fvq5vtQrft6lUDc1/Lu/fVrfahW/H
+JXLRjk1nafFZ5ppyzE7G+AWUWEVsVHWUWERFlFhERZRYREWUWERFlFhERaDt88T2rPoTv2hUB7Vf
+reAcRsc1V5aTH/mCoMetZPpf7VD7v1K3P+H3scbvDwClrdW8cNB9FqPuhXhb1FUe3VvHDQfRaj7o
+V4W9RVj0S9gPePgFUNO+Vv2jxKyiIrqs7REREX5vHNQHqjdFsd/u9XXUl4rrc6pldK+ItbKwOcST
+jOCBk9WVP5GVjg6+a4JqRl51obMM1gFIyNRm6c8xJSIWk59arvadzSx007XXC+19bED/ACUUbIQ7
+yEjJ9CnLS2lrbpG0Q2y1UbKKiiGGxRjt7ST1knvK7fHlWV8StOlZI3l4YafvavWdq09URaailwGz
+ZuGC+K6WqkvNFNRVtNFVUszeGSKVoc1w7iFBuodz/TVzqXzWu4VtmDiT0LcTRjzB3MelT9w5WODy
+r6mpCWnQBMMDvHeviRqc5TiXSkUtvzZbslXe0bm1jppxJcb7X3CMH+RYxsIP2jJ9Cm7S+k7Xo+0x
+220UMVFRxnIZGOs/1iesnyld0GYGMlOHrXxK02UkiTLwwCV9ztWnqhhNRS4DZs3CwWl7UNm1JtQ0
+/HaK2rqKOBlQ2oElOGl2WggD4QIxzUWN3NNPEfz/AHX/AMEX4VYbox9veshmF+TFLk5t/CR4Ycec
+r6lKzUJGHwMtGLW52CrwdzLTzgQb/dcHl8WL8Knq3W9tut1NRtLpI4ImxBz+twaMc/Qvt4ULcjGV
+9ytPlpMky7A2+a8pypzlQAE3EL7ZXUG603UNMaluM1fb6qosE0ri58VM1r4ST2hh+L9hwuqsW5zY
+KSrZLc71XXOJhyadjGwNd5yMnHmIVh+Dl1pwDC5HUSnuicKYQv8AezL5KQZpHVocLgWzDtXLZffn
+818NktFJYqCC30FOylo6eMRxQxjDWNHUAvvPxSgbg5THJTTWho1QLBV0uLiXONyoW2gbstp2gasr
+b9U3iupJ6oMD4oWMLBwtDeWRnsUyUVOKWjhgDi4RsaziPWcDC/TgWQMBcsCTgS73xITbF2fWu2PP
+TM1DZBjPJawWaOYLVNpmgKXaVpiSx1lTNSQSSMkMtOAXAtOR15C6TZNsXt2yd1z9w19VXCu6Pj90
+ho4eHOMcIHepGIWA3C/HScB0cTJb642o2emWS7pRrzwZNyNl1196sdDqC3z2+40kVZRTN4ZIZmhz
+XDzKD79ud6crqp8trutdamOOegLWzMb5uLmPSVYHHlWOELzmqfKzv/zsB++de0jVJ2mkmVilt924
+4Kvdi3OdPUVU2W53iuukbefQtDYGu85GT+tTfYNO27TFrht1ro4qKjgGGQxNwB5fKfKu14RghY6P
+4WcpK06Vkr8AwN8d+a/Z2qztRt6XFLrbNm7JaJtW2T0G1a20VFXVtVRspJjO11KG5JLS3B4geXNf
+fsy2e0uzPTTbLRVU9XAJnzdJUcPFlxyRyAC23h8qx0flXqJSCI5mQ31yLXXOZ2ZMsJQvPBg3tsvz
+r8poGVEMkcjA9j2lrmuGQQeRBUETboOmjc31cN3uVNGZumZTsEZbH8LiDQS3OB1KfQzAwChZlfMx
+JS83Yx2AkZL7k6jNyGsJWIW62dtq1TX2z+3bRNMyWS5umjpnPZIJIHcL2ubnBULy7ltudITHqisZ
+FnqfSxud6chWT4Ahby61zTVKk5x2tHhgldcjWqhTmGHKxS1pxtgcfiod0HuxaV0ZXxXCY1F6r4nB
+8UlZgMjcOohg5Z8pyphiBDTlZDcLIGF2SspAk2cHAaGjqXFNz0zPxOFmohc7rWURF1rhRERERERE
+UT70HiZvX58HtQqNFXl3oPEzevz4PahUa71kOl3trO79St70A5Oid8+DVIexLarDsnv1xuM9ukuL
+aqmFOGRyBhaQ8Ozz8ymUb6VB82Kv1piqsihJStTslCEGC6zR1BWSf0ZptSjmZmWEuPWRkrU+GlQ/
+Nir9ZYnhpUPzYq/WWKqyLs4zVP3xuHkuDiXRujP9x81anw0qH5sVfrLE8NKh+bFX6yxVWROM1T98
+bh5JxLo3Rn+4+atT4aVD82Kv1lieGlQ/Nir9ZYqrInGap++Nw8k4l0boz/cfNWp8NKh+bFX6yxPD
+SofmxV+ssVVkTjNU/fG4eScS6N0Z/uPmrU+GlQ/Nir9ZYnhpUPzYq/WWKqyJxmqfvjcPJOJdG6M/
+3HzVqfDSofmxV+ssTw0qH5sVfrLFVZE4zVP3xuHknEujdGf7j5qwm0belpNcaKu1hisNTSProuiE
+z52ODeYOcDzKvnaexYRQ87PzE+8RJg3Iw5lYKbSZSkw3Q5RtgTc4k+KlzdV8cNB9FqPuhXhb1Kj2
+6r44aD6LU/dCvC3qWoaJewHvHwCxLTrlb9jfErKIiuqzxERERERERERERERERERERERERERERERE
+RERERERERERERERERERERERERERERERERERERERERERERERERa1rnR1Dr/TdVZLi6ZlHUFhe6B3C
+8cLg4YOD2hRc3dC0SR/0q7+st/AiKLmKfKzT9eNDDjbapOTqk9JMMOWilrSb2B2rPgg6J+VXf1lv
+4E8EHRPyq7+st/AiLl/B6f0Ldy7xpBVf1Lt6eCDon5Vd/WW/gTwQdE/Krv6y38CIgo9P6Fu5fvGC
+q/qXb08EHRPyq7+st/Angg6J+VXf1lv4ERPwen9C3cvzjBVf1Lt6eCDon5Vd/WW/gTwQdE/Krv6y
+38CIn4PT+hbuX7xgqv6l29PBB0T8qu/rLfwJ4IOiflV39Zb+BET8Hp/Qt3L84wVX9S7engg6J+VX
+f1lv4E8EHRPyq7+st/AiJ+D0/oW7l+8YKr+pdvTwQdE/Krv6y38CeCDon5Vd/WW/gRE/B6f0Ldy/
+OMFV/Uu3p4IOiflV39Zb+BBugaJ+U3f1lv4ERPwen9C3cg0gq36l29bDoHd50zs81FHerXPcJKqO
+N8TW1MzXMw4YPINHcpSYMBEUnLS0GWZqQWho6lDzM3MTsThZl5c61rlckRF1rlRERERERERERERE
+REREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREX/2Q==</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image3>
+            <Text2 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>29,3.8,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ແບບ:FS.05/CB72</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text5 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>29,4.4,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ຫົວໜ່ວຍ:1.000.000 ກີ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text39 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,6.4,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>7. ຊັບສົມບັດຄົງທີ່</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text40 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,7,8.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>'ສຳລັບງວດ:  I  ສິ້ນສຸດວັນທີ:{BOLFS05CB72_ParaHeader.TODATE}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>title</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </title>
+        <HeaderBOLFS05CB72 Ref="16" type="HeaderBand" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10,33.8,1.6</ClientRectangle>
+          <Components isList="true" count="9">
+            <HeaderBOLFS05CB72_NUM6__ລວມ_ Ref="17" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM6__ລວມ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ລວມ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM6__ລວມ_>
+            <HeaderBOLFS05CB72_NUM5__ເງ_ນຕາ_ Ref="18" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>27.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM5__ເງ_ນຕາ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເງິນຕາ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM5__ເງ_ນຕາ_>
+            <HeaderBOLFS05CB72_NUM4__ເງ_ນກ_ບ_ Ref="19" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM4__ເງ_ນກ_ບ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເງິນກີບ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM4__ເງ_ນກ_ບ_>
+            <HeaderBOLFS05CB72_NUM3__ລວມ_ Ref="20" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM3__ລວມ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ລວມ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM3__ລວມ_>
+            <HeaderBOLFS05CB72_NUM2__ເງ_ນຕາ_ Ref="21" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM2__ເງ_ນຕາ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເງິນຕາ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM2__ເງ_ນຕາ_>
+            <HeaderBOLFS05CB72_NUM1__ເງ_ນກ_ບ_ Ref="22" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.8,0.8,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_NUM1__ເງ_ນກ_ບ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເງິນກີບ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_NUM1__ເງ_ນກ_ບ_>
+            <Text4 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.8,0,9,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເດືອນນີ້</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text7 Ref="24" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.8,0,9,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ເດືອນກ່ອນ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <HeaderBOLFS05CB72_ITEMNAME__ລາຍການ_ Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,15.8,1.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderBOLFS05CB72_ITEMNAME__ລາຍການ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="16" />
+              <Text>ລາຍການ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderBOLFS05CB72_ITEMNAME__ລາຍການ_>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBOLFS05CB72</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <PrintIfEmpty>True</PrintIfEmpty>
+          <PrintOnAllPages>False</PrintOnAllPages>
+        </HeaderBOLFS05CB72>
+        <DataBOLFS05CB72 Ref="26" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,12.4,33.8,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <DataBOLFS05CB72_ITEMNAME__ລາຍການ_ Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,15.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_ITEMNAME__ລາຍການ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.ITEMNAME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_ITEMNAME__ລາຍການ_>
+            <DataBOLFS05CB72_NUM1__ເງ_ນກ_ບ_ Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM1__ເງ_ນກ_ບ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="29" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM1__ເງ_ນກ_ບ_>
+            <DataBOLFS05CB72_NUM2__ເງ_ນຕາ_ Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM2__ເງ_ນຕາ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="31" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM2__ເງ_ນຕາ_>
+            <DataBOLFS05CB72_NUM3__ລວມ_ Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM3__ລວມ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="33" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM3__ລວມ_>
+            <DataBOLFS05CB72_NUM4__ເງ_ນກ_ບ_ Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>24.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM4__ເງ_ນກ_ບ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM4}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="35" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM4__ເງ_ນກ_ບ_>
+            <DataBOLFS05CB72_NUM5__ເງ_ນຕາ_ Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>27.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM5__ເງ_ນຕາ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM5}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="37" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM5__ເງ_ນຕາ_>
+            <DataBOLFS05CB72_NUM6__ລວມ_ Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>30.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataBOLFS05CB72_NUM6__ລວມ_</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>{BOLFS05CB72.NUM6}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="39" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataBOLFS05CB72_NUM6__ລວມ_>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>BOLFS05CB72</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBOLFS05CB72</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBOLFS05CB72>
+        <FooterBOLFS05CB72 Ref="40" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,14,33.8,4.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text8 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.19,15.8,2.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="40" />
+              <Text> (1) - ມູນຄ່າຕົ້ນທຶນເດີມຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ຮັບໂອນມາຈາກສໍານັກງານໃຫ່ຍ ຫລື ໂອນມາຈາກສາຂາອື່ນຕາມຄໍາສັ່ງ ສໍານັກງານໃຫ່ຍ
+ (2) - ມູນຄ່າຕົ້ນທຶນເດີມຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ໂອນໄປໃຫ້ສໍານັກງານໃຫ່ຍ ຫລື ໂອນໄປໃຫ້ສາຂາອື່ນຕາມຄໍາສັ່ງຂອງ ສໍານັກງານໃຫ່ຍ
+ (3) - ຄ່າຫຼູ້ຍຫ້ຽນສະສົມຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ໂອນມາ
+ (4) - ຄ່າຫຼຸ້ຍຫ້ຽນສະສົມຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ໂອນໄປຕາມຄໍາສüງຂອງສໍານັກງານໃຫ່ຍ
+ (5) - ເງິນແຮຄ່າເຊື່ອມມູນຄ່າຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ຮັບໂອນມາ
+ (6) - ເງິນແຮຄ່າເຊື່ອມມູນຄ່າຂອງ ຊ.ຄ.ທ ທີ່ໄດ້ໂອນໄປຕາມຄໍາສüງຂອງສໍານັກງານໃຫ່ຍ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>32,2.8,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="40" />
+              <Text>ວັນທີ:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.6,15.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="40" />
+              <Text>°øÉ¦ñ¤ì¸´</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.8,3.6,18,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="40" />
+              <Text>¹ö¸Îû¾®ñ­§ó                	 ¹ö¸Îû¾¡¸©¡¾                	  ¹ö¸Îû¾¦ò­-À§ˆº             	 ¹ö¸Îû¾¦¾¢¾</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBOLFS05CB72</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <PrintIfEmpty>True</PrintIfEmpty>
+        </FooterBOLFS05CB72>
+        <ReportSummaryBand1 Ref="45" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,19.4,33.8,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text31 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <OnlyText>True</OnlyText>
+              <Page isRef="4" />
+              <Parent isRef="45" />
+              <Text>Prepared By</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28.4,0.4,5.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold| Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <OnlyText>True</OnlyText>
+              <Page isRef="4" />
+              <Parent isRef="45" />
+              <Text>Date: ___/___/_____
+Approved By</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f4abd080a78743bfa388f252a88c0af2</Guid>
+      <Margins>0.6,0.6,0.4,0.4</Margins>
+      <Name>InternalVoucher</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>20.8</PageHeight>
+      <PageWidth>35</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </InternalVoucher>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>ACT0002_Account Statement</ReportAlias>
+  <ReportChanged>2/19/2024 3:51:13 PM</ReportChanged>
+  <ReportCreated>9/8/2011 12:21:29 PM</ReportCreated>
+  <ReportFile>D:\BOL\templatesmrt\BOLFS05CB72.mrt</ReportFile>
+  <ReportGuid>41f00e002ba14c66915fa689330452b8</ReportGuid>
+  <ReportName>ACT0002_Account Statement</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class ACT0002_Account_Statement__ : Stimulsoft.Report.StiReport
+    {
+        
+        public ACT0002_Account_Statement__()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="36">
+    <Moray_Report_Title1 Ref="48" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item42 Ref="49" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item42>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Moray_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title1>
+    <Moray_Report_Title2 Ref="50" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item44 Ref="51" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item44>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title2>
+    <Moray_Report_Summary Ref="52" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item46 Ref="53" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item46>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Summary>
+    <Moray_Page_Header Ref="54" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item48 Ref="55" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item48>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Header>
+    <Moray_Page_Footer Ref="56" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item50 Ref="57" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item50>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Footer>
+    <Moray_Group_Header1 Ref="58" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item52 Ref="59" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item52>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Header1>
+    <Moray_Group_Footer1 Ref="60" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item54 Ref="61" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item54>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Footer1>
+    <Moray_Header1 Ref="62" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black;True</Border>
+      <Brush>[3:81:103]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item56 Ref="63" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item56>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Moray_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Moray_Header1>
+    <Moray_Data1 Ref="64" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item58 Ref="65" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item58>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1>
+    <Moray_Data1_Odd_x0020_Style Ref="66" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item60 Ref="67" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item60>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Odd_x0020_Style>
+    <Moray_Data1_Even_x0020_Style Ref="68" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[120:219:230]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item62 Ref="69" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item62>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Even_x0020_Style>
+    <Moray_Footer1 Ref="70" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top;[0:31:53];3;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item64 Ref="71" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item64>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Footer1>
+    <Sea_x0020_Foam_Report_Title1 Ref="72" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item66 Ref="73" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item66>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Sea Foam_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Title1>
+    <Sea_x0020_Foam_Report_Title2 Ref="74" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item68 Ref="75" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item68>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Sea Foam_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Title2>
+    <Sea_x0020_Foam_Report_Summary Ref="76" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item70 Ref="77" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item70>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Sea Foam_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Report_Summary>
+    <Sea_x0020_Foam_Page_Header Ref="78" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item72 Ref="79" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item72>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Sea Foam_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Page_Header>
+    <Sea_x0020_Foam_Page_Footer Ref="80" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item74 Ref="81" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item74>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Sea Foam_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Page_Footer>
+    <Sea_x0020_Foam_Group_Header1 Ref="82" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item76 Ref="83" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item76>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Sea Foam_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Group_Header1>
+    <Sea_x0020_Foam_Group_Footer1 Ref="84" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item78 Ref="85" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item78>
+      </Conditions>
+      <Font>Arial,9.75,Bold,Point,False,204</Font>
+      <Name>Sea Foam_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Group_Footer1>
+    <Sea_x0020_Foam_Header1 Ref="86" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;White;3;Solid;False;4;Black;True</Border>
+      <Brush>[52:141:165]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item80 Ref="87" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item80>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Sea Foam_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Sea_x0020_Foam_Header1>
+    <Sea_x0020_Foam_Data1 Ref="88" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item82 Ref="89" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item82>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1>
+    <Sea_x0020_Foam_Data1_Odd_x0020_Style Ref="90" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>[253:233:217]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item84 Ref="91" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item84>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1_Odd_x0020_Style>
+    <Sea_x0020_Foam_Data1_Even_x0020_Style Ref="92" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[2:91:115];1;Solid;False;4;Black</Border>
+      <Brush>[254:244:236]</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item86 Ref="93" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item86>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Sea_x0020_Foam_Data1_Even_x0020_Style>
+    <Sea_x0020_Foam_Footer1 Ref="94" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top;[52:141:165];3;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Sea Foam</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item88 Ref="95" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item88>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Sea Foam_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[52:141:165]</TextBrush>
+    </Sea_x0020_Foam_Footer1>
+    <Fern_Report_Title1 Ref="96" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item90 Ref="97" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item90>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Fern_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Title1>
+    <Fern_Report_Title2 Ref="98" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item92 Ref="99" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item92>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Fern_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Title2>
+    <Fern_Report_Summary Ref="100" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item94 Ref="101" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item94>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Fern_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Report_Summary>
+    <Fern_Page_Header Ref="102" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item96 Ref="103" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item96>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Fern_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Page_Header>
+    <Fern_Page_Footer Ref="104" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item98 Ref="105" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item98>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Fern_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Page_Footer>
+    <Fern_Group_Header1 Ref="106" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item100 Ref="107" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item100>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Fern_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Group_Header1>
+    <Fern_Group_Footer1 Ref="108" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item102 Ref="109" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item102>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Fern_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[68:77:38]</TextBrush>
+    </Fern_Group_Footer1>
+    <Fern_Header1 Ref="110" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>All;[18:27:0];1;Solid;False;4;Black;True</Border>
+      <Brush>[165:181:146]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item104 Ref="111" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item104>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Fern_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Fern_Header1>
+    <Fern_Data1 Ref="112" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item106 Ref="113" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item106>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1>
+    <Fern_Data1_Odd_x0020_Style Ref="114" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>All;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item108 Ref="115" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item108>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1_Odd_x0020_Style>
+    <Fern_Data1_Even_x0020_Style Ref="116" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>[237:210:182]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item110 Ref="117" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item110>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Fern_Data1_Even_x0020_Style>
+    <Fern_Footer1 Ref="118" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[18:27:0];1;Solid;False;4;Black</Border>
+      <Brush>[78:87:48]</Brush>
+      <CollectionName>Fern</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item112 Ref="119" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item112>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Fern_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Fern_Footer1>
+  </Styles>
+</StiSerializer>

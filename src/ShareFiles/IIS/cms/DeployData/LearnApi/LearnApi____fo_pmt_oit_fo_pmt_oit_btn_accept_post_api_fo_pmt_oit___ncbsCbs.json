@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.6579637Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_pmt_oit_fo_pmt_oit_btn_accept_post_api_fo_pmt_oit",
+        "learn_api_name": "FO_PMT_OIT Accept FO_PMT_OIT",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_PMT_OIT",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"PMT_OIT\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"region\":\"MapS.dataS(FO_PMT_OIT.region)\",\"beneficiary_branch\":\"MapS.dataS(FO_PMT_OIT.beneficiary_branch)\",\"product_code\":\"MapS.dataS(FO_PMT_OIT.product_code)\",\"reference_number\":\"MapS.dataS(FO_PMT_OIT.reference_number)\",\"sender_information\":\"MapS.dataS(FO_PMT_OIT.sender_information)\",\"sender_name\":\"MapS.dataS(FO_PMT_OIT.sender_name)\",\"sender_id\":\"MapS.dataS(FO_PMT_OIT.sender_id)\",\"sender_address\":\"MapS.dataS(FO_PMT_OIT.sender_address)\",\"sender_phone\":\"MapS.dataS(FO_PMT_OIT.sender_phone)\",\"sender_type\":\"MapS.dataS(FO_PMT_OIT.sender_type)\",\"receiver_information\":\"MapS.dataS(FO_PMT_OIT.receiver_information)\",\"receiver_name\":\"MapS.dataS(FO_PMT_OIT.receiver_name)\",\"receiver_id\":\"MapS.dataS(FO_PMT_OIT.receiver_id)\",\"receiver_address\":\"MapS.dataS(FO_PMT_OIT.receiver_address)\",\"receiver_phone\":\"MapS.dataS(FO_PMT_OIT.receiver_phone)\",\"receiver_type\":\"MapS.dataS(FO_PMT_OIT.receiver_type)\",\"account_number\":\"MapS.dataS(FO_PMT_OIT.account_number)\",\"country\":\"MapS.dataS(FO_PMT_OIT.country)\",\"other_information\":\"MapS.dataS(FO_PMT_OIT.other_information)\",\"purpose\":\"MapS.dataS(FO_PMT_OIT.purpose)\",\"sender_to_receiver_information\":\"MapS.dataS(FO_PMT_OIT.sender_to_receiver_information)\",\"test_key\":\"MapS.dataS(FO_PMT_OIT.test_key)\",\"other_informations\":{\"goods_type\":\"MapS.dataS(FO_PMT_OIT.goods_type)\",\"goods_list\":\"MapS.dataS(FO_PMT_OIT.goods_list)\"},\"payment_by\":\"MapS.dataS(FO_PMT_OIT.payment_by)\",\"send_account_number\":\"MapS.dataS(FO_PMT_OIT.send_account_number)\",\"cheque_no\":\"MapS.dataS(FO_PMT_OIT.cheque_no)\",\"send_currency\":\"MapS.dataS(FO_PMT_OIT.send_currency)\",\"inclusive\":\"MapS.dataS(FO_PMT_OIT.inclusive)\",\"send_amount\":\"MapS.dataN(FO_PMT_OIT.send_amount)\",\"commission\":\"MapS.dataN(FO_PMT_OIT.commission)\",\"fee\":\"MapS.dataN(FO_PMT_OIT.fee)\",\"total_amount_payable\":\"MapS.dataN(FO_PMT_OIT.total_amount_payable)\",\"receive_by\":\"MapS.dataS(FO_PMT_OIT.receive_by)\",\"receive_currency\":\"MapS.dataS(FO_PMT_OIT.receive_currency)\",\"cross_rate\":\"MapS.dataN(FO_PMT_OIT.cross_rate)\",\"receive_amount\":\"MapS.dataN(FO_PMT_OIT.receive_amount)\",\"amount_convert_to_bcy\":\"MapS.dataN(FO_PMT_OIT.amount_convert_to_bcy)\",\"branch_code\":\"MapS.dataS(FO_PMT_OIT.branch_code)\",\"payment_instruction\":\"MapS.dataS(FO_PMT_OIT.payment_instruction)\",\"linkage_account\":\"MapS.dataS(FO_PMT_OIT.linkage_account)\",\"linkage_amount\":\"MapS.dataN(FO_PMT_OIT.linkage_amount)\",\"share_fee_rate\":\"MapS.dataN(FO_PMT_OIT.share_fee_rate)\",\"share_fee_amount\":\"MapS.dataN(FO_PMT_OIT.share_fee_amount)\",\"total_fee_for_cash\":\"MapS.dataN(FO_PMT_OIT.total_fee_for_cash)\",\"description\":\"MapS.dataS(FO_PMT_OIT.description)\",\"total_send_amount\":\"MapS.dataN(FO_PMT_OIT.total_send_amount)\",\"total_fee_for_deposit\":\"MapS.dataN(FO_PMT_OIT.total_fee_for_deposit)\",\"total_fee_for_accounting\":\"MapS.dataN(FO_PMT_OIT.total_fee_for_accounting)\",\"branch_for_deposit_account\":\"MapS.dataS(FO_PMT_OIT.branch_for_deposit_account)\",\"available_balance\":\"MapS.dataN(FO_PMT_OIT.available_balance)\",\"accounting_debit_exchange_rate\":\"MapS.dataN(FO_PMT_OIT.accounting_debit_exchange_rate)\",\"receive_accounting_credit_exchange_rate\":\"MapS.dataN(FO_PMT_OIT.receive_accounting_credit_exchange_rate)\",\"fax_number\":\"MapS.dataS(FO_PMT_OIT.fax_number)\",\"rate_rccr\":\"MapS.dataN(FO_PMT_OIT.rate_rccr)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"fee_data\":\"MapS.arrayJson(FO_PMT_OIT.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"}}\r\n",
+        "number_of_steps": "",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1352
+      }
+    ]
+  }
+]

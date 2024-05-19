@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.2339929Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_mtg_spl_fo_mtg_spl_btn_accept_post_api_fo_mtg_spl",
+        "learn_api_name": "FO_MTG_SPL Accept FO_MTG_SPL",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_MTG_SPL",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"MTG_SPL\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"collateral_account\":\"MapS.dataS(FO_MTG_SPL.collateral_account)\",\"collateral_account_currency\":\"MapS.dataS(FO_MTG_SPL.collateral_account_currency)\",\"collateral_booking_value\":\"MapS.dataN(FO_MTG_SPL.collateral_booking_value)\",\"collateral_secure_amount_in_use\":\"MapS.dataN(FO_MTG_SPL.collateral_secure_amount_in_use)\",\"product_limit_code\":\"MapS.dataS(FO_MTG_SPL.product_limit_code)\",\"product_limit_currency\":\"MapS.dataS(FO_MTG_SPL.product_limit_currency)\",\"product_limit_amount\":\"MapS.dataN(FO_MTG_SPL.product_limit_amount)\",\"required_secure_amount\":\"MapS.dataN(FO_MTG_SPL.required_secure_amount)\",\"total_secured_amount\":\"MapS.dataN(FO_MTG_SPL.total_secured_amount)\",\"amount_secured_from_collateral\":\"MapS.dataN(FO_MTG_SPL.amount_secured_from_collateral)\",\"amount_secured_for_product_limit\":\"MapS.dataN(FO_MTG_SPL.amount_secured_for_product_limit)\",\"cross_rate\":\"MapS.dataN(FO_MTG_SPL.cross_rate)\",\"customer_code\":\"MapS.dataS(FO_MTG_SPL.customer_code)\",\"customer_name\":\"MapS.dataS(FO_MTG_SPL.customer_name)\",\"customer_address\":\"MapS.dataS(FO_MTG_SPL.customer_address)\",\"customer_description\":\"MapS.dataS(FO_MTG_SPL.customer_description)\",\"description\":\"MapS.dataS(FO_MTG_SPL.description)\",\"exchange_rate_of_collateral_currency\":\"MapS.dataN(FO_MTG_SPL.exchange_rate_of_collateral_currency)\",\"exchange_rate_of_product_limit_currency\":\"MapS.dataN(FO_MTG_SPL.exchange_rate_of_product_limit_currency)\",\"value_date\":\"MapS.dataS(FO_MTG_SPL.value_date)\",\"base_amount\":\"MapS.dataN(FO_MTG_SPL.base_amount)\",\"check_crossrate\":\"MapS.dataS(FO_MTG_SPL.check_crossrate)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 434
+      }
+    ]
+  }
+]

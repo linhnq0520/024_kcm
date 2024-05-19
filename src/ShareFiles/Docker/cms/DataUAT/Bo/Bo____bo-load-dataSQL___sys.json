@@ -1,0 +1,55 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:32.5359371Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Bo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[{\"name\":\"Tải dữ liệu SQL và lưu vào kho\",\"function\":\"txsql.data\",\"type\":\"java\",\"para\":[\"@learn_sql\"],\"status\":\"A\",\"response\":{\"true\":{\"fo\":[{\"txcode\":\"#sys:fo-load-bigData\"}]}}}]",
+        "response": "{}",
+        "status": "A",
+        "txtype": "bo",
+        "txcode": "bo-load-dataSQL",
+        "version": 1,
+        "updateTime": 638042796880638341,
+        "txname": "Chạy learn data SQL tải data theo yêu cầu, dùng sau khi xóa",
+        "hasRole": "false",
+        "isOld": false,
+        "order": 1,
+        "app": "sys",
+        "id": 6
+      }
+    ]
+  }
+]

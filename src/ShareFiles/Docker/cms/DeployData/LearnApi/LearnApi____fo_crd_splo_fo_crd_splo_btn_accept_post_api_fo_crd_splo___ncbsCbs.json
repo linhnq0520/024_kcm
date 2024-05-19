@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.3230251Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_crd_splo_fo_crd_splo_btn_accept_post_api_fo_crd_splo",
+        "learn_api_name": "FO_CRD_SPLO Accept FO_CRD_SPLO",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_CRD_SPLO",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"CRD_SPLO\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"sub_product_limit_code\":\"MapS.dataS(FO_CRD_SPLO.sub_product_limit_code)\",\"sub_product_limit_name\":\"MapS.dataS(FO_CRD_SPLO.sub_product_limit_name)\",\"customer_type\":\"MapS.dataS(FO_CRD_SPLO.customer_type)\",\"customer_code\":\"MapS.dataS(FO_CRD_SPLO.customer_code)\",\"product_limit_code\":\"MapS.dataS(FO_CRD_SPLO.product_limit_code)\",\"reference_number\":\"MapS.dataS(FO_CRD_SPLO.reference_number)\",\"currency_code\":\"MapS.dataS(FO_CRD_SPLO.currency_code)\",\"credit_facility\":\"MapS.dataS(FO_CRD_SPLO.credit_facility)\",\"limit_amount\":\"MapS.dataN(FO_CRD_SPLO.limit_amount)\",\"description\":\"MapS.dataS(FO_CRD_SPLO.description)\",\"exchange_rate\":\"MapS.dataN(FO_CRD_SPLO.exchange_rate)\",\"amount\":\"MapS.dataN(FO_CRD_SPLO.amount)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\"}}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 613
+      }
+    ]
+  }
+]

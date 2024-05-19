@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:39:26.5378912Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "fo_dpt_cwm_fo_dpt_cwm_btn_accept_post_api_fo_dpt_cwm",
+        "learn_api_name": "FO_DPT_CWM Accept FO_DPT_CWM",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "FO_DPT_CWM",
+        "learn_api_node_data": "",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_fo",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\"workflowid\":\"DPT_CWM\",\"lang\":\"MapS.infoRequest(lang)\",\"token\":\"MapS.context(token)\",\"fields\":{\"stock_prefix\":\"MapS.dataS(FO_DPT_CWM.stock_prefix)\",\"branch_name\":\"MapS.dataS(FO_DPT_CWM.branch_name)\",\"cheque_no\":\"MapS.dataS(FO_DPT_CWM.cheque_no)\",\"account_number\":\"MapS.dataS(FO_DPT_CWM.account_number)\",\"current_balance\":\"MapS.dataN(FO_DPT_CWM.current_balance)\",\"available_balance\":\"MapS.dataN(FO_DPT_CWM.available_balance)\",\"interest_prepaid\":\"MapS.dataN(FO_DPT_CWM.interest_prepaid)\",\"interest_earlywdr\":\"MapS.dataN(FO_DPT_CWM.interest_earlywdr)\",\"cheque_amount\":\"MapS.dataN(FO_DPT_CWM.cheque_amount)\",\"credit_accounting\":\"MapS.dataS(FO_DPT_CWM.credit_accounting)\",\"accounting_currency\":\"MapS.dataS(FO_DPT_CWM.accounting_currency)\",\"cross_rate\":\"MapS.dataN(FO_DPT_CWM.cross_rate)\",\"accounting_amount\":\"MapS.dataN(FO_DPT_CWM.accounting_amount)\",\"exchange_rate_of_accounting\":\"MapS.dataN(FO_DPT_CWM.exchange_rate_of_accounting)\",\"amount_equivalent_in_bcy\":\"MapS.dataN(FO_DPT_CWM.amount_equivalent_in_bcy)\",\"withdrawer_name\":\"MapS.dataS(FO_DPT_CWM.withdrawer_name)\",\"withdrawer_code\":\"MapS.dataS(FO_DPT_CWM.withdrawer_code)\",\"withdrawer_address\":\"MapS.dataS(FO_DPT_CWM.withdrawer_address)\",\"withdrawer_description\":{\"home\":\"MapS.dataS(FO_DPT_EMK.withdrawer_description.home)\",\"office\":\"MapS.dataS(FO_DPT_EMK.withdrawer_description.office)\"},\"description\":\"MapS.dataS(FO_DPT_CWM.description)\",\"values_date\":\"MapS.dataS(FO_DPT_CWM.values_date)\",\"currency_of_deposit_account\":\"MapS.dataS(FO_DPT_CWM.currency_of_deposit_account)\",\"exchange_rate_of_debit_account\":\"MapS.dataN(FO_DPT_CWM.exchange_rate_of_debit_account)\",\"amount_of_debit_account\":\"MapS.dataN(FO_DPT_CWM.amount_of_debit_account)\",\"account_linkage\":\"MapS.dataS(FO_DPT_CWM.account_linkage)\",\"amount_linkage\":\"MapS.dataN(FO_DPT_CWM.amount_linkage)\",\"user_approve\":\"MapS.dataSNull(user_approve.username)\",\"fee_data\":\"MapS.arrayJson(FO_DPT_CWM.fee_data|{\\\"share_fee\\\":\\\"MapS.dataN(fee_data.share_fee)\\\",\\\"ifc_code\\\":\\\"MapS.dataI(fee_data.ifc_code)\\\",\\\"payrate\\\":\\\"MapS.dataI(fee_data.payrate)\\\",\\\"ifc_value\\\":\\\"MapS.dataN(fee_data.ifc_value)\\\",\\\"ifc_amount\\\":\\\"MapS.dataN(fee_data.ifc_amount)\\\",\\\"value_type\\\":\\\"MapS.dataS(fee_data.value_type)\\\",\\\"currency_account_code\\\":\\\"MapS.dataS(fee_data.currency_account_code)\\\",\\\"floor_value\\\":\\\"MapS.dataN(fee_data.floor_value)\\\",\\\"ceiling_value\\\":\\\"MapS.dataN(fee_data.ceiling_value)\\\",\\\"share_rate\\\":\\\"MapS.dataN(fee_data.share_rate)\\\",\\\"share_amount\\\":\\\"MapS.dataN(fee_data.share_amount)\\\",\\\"round_rate\\\":\\\"MapS.dataN(fee_data.round_rate)\\\",\\\"round_amount\\\":\\\"MapS.dataN(fee_data.round_amount)\\\",\\\"currency_fee_code\\\":\\\"MapS.dataS(fee_data.currency_fee_code)\\\",\\\"pay_source\\\":\\\"MapS.dataS(fee_data.pay_source)\\\"})\"}}\r\n",
+        "number_of_steps": "2;3;4;5;6",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1111
+      }
+    ]
+  }
+]

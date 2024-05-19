@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:12.8540165Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "bo_005002_bo_005002_btn_save_od_post_api_modify_od",
+        "learn_api_name": "bo_005002_bo_005002_btn_save_od_post_api_modify_od",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "bo_005002_bo_005002_btn_save_od_post_api_modify_od",
+        "learn_api_node_data": "",
+        "learn_api_app": null,
+        "learn_api_method": "POST",
+        "flow_api": "",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"DPT_INSERT_MODIFY_ODCONTRACT\",\n    \"lang\": \"MapS.infoRequest(lang)\",\n    \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"contract_number\": \"MapS.dataS(BO_005002.contract_number)\",\n        \"secure_type\": \"MapS.dataS(BO_005002.secure_type)\",\n        \"secure_rate\": \"MapS.dataN(BO_005002.secure_rate)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 1703
+      }
+    ]
+  }
+]

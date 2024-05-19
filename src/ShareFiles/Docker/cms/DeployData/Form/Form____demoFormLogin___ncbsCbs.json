@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:19.6738062Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"Form Login\",\"des\":\"Developer\",\"data\":\"\",\"learnapi\":\"Jwebui_O9_get_branch\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"Form Login\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"demoFormLogin\",\"ruleStrong\":[{\"code\":\"getInfo\",\"config\":{\"component_event\":\"enter_tab\",\"component_action\":\"1\",\"component_result\":\"{}\",\"isSetCode\":\"true\",\"data_type\":\"api\",\"api_id\":\"api_test\",\"sql_id\":\"\",\"data_table\":\"\",\"exception\":\"\",\"api_bo\":\"\",\"sql_bo\":\"\",\"data_bo\":\"\"},\"inUse\":true,\"order\":1,\"isStart\":true}],\"app\":\"\"}",
+        "list_layout": "[{\"name\":\"Layout mới\",\"des\":\"Ghi chú\",\"class\":\"\",\"inputtype\":\"cLayout\",\"codeHidden\":\"6d325ddf94502bb8\",\"list_view\":[{\"code\":\"code\",\"name\":\"Mẫu view\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"codeHidden\":\"f27e38f622491984\",\"list_input\":[{\"default\":{\"name\":\"Approve\",\"code\":\"ok\",\"codeHidden\":\"1d0c8f90c2a6ff3d\",\"class\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.actionForm\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": [\\n            \\\"formtest\\\"\\n        ]\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\"},{\"default\":{\"name\":\"Hủy\",\"code\":\"cancel\",\"codeHidden\":\"217e5ec9c951de70\",\"class\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"role\":\"\"},\"config\":{\"action\":\"\",\"txFoActions\":\"[\\n    {\\n        \\\"function\\\": \\\"formModal.closeForm\\\",\\n        \\\"status\\\": \\\"A\\\",\\n        \\\"para\\\": []\\n    }\\n]\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\",\"useAction\":\"true\",\"icon\":\"fa-floppy-o\",\"color\":\"info\",\"onTable\":\"\",\"isMasterData\":\"false\",\"tableMasterData\":\"\",\"privateKeyTableMasterData\":\"\"},\"role\":{\"visible\":\"\",\"disabled\":\"\"},\"property\":{\"danger\":\"\",\"warning\":\"\"},\"validate\":{},\"lang\":{},\"configAVD\":{},\"inputtype\":\"cButton\"}]}]}]",
+        "react_txt": "",
+        "form_id": "demoFormLogin",
+        "app": "ncbsCbs",
+        "id": 88
+      }
+    ]
+  }
+]

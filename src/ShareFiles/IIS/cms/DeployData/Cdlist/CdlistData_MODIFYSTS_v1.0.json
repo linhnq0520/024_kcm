@@ -1,0 +1,197 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T14:28:03.7565207Z",
+    "host": "192.168.1.171:8066",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.1.186"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Cdlist"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "cdgrp": null,
+        "cdname": "MODIFYSTS",
+        "cdid": null,
+        "app": "ncbsCbs"
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "cdgrp": "DPT",
+        "cdname": "MODIFYSTS",
+        "cdid": "W",
+        "caption": "NEW",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"New\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25178
+      },
+      {
+        "cdgrp": "DPT",
+        "cdname": "MODIFYSTS",
+        "cdid": "O",
+        "caption": "Outdated",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Outdated\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25179
+      },
+      {
+        "cdgrp": "DPT",
+        "cdname": "MODIFYSTS",
+        "cdid": "Y",
+        "caption": "Approved",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Approved\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25180
+      },
+      {
+        "cdgrp": "DPT",
+        "cdname": "MODIFYSTS",
+        "cdid": "R",
+        "caption": "Outdated",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Rejected\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25181
+      },
+      {
+        "cdgrp": "CRD",
+        "cdname": "MODIFYSTS",
+        "cdid": "W",
+        "caption": "NEW",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"New\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25182
+      },
+      {
+        "cdgrp": "CRD",
+        "cdname": "MODIFYSTS",
+        "cdid": "O",
+        "caption": "Outdated",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Outdated\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25183
+      },
+      {
+        "cdgrp": "CRD",
+        "cdname": "MODIFYSTS",
+        "cdid": "Y",
+        "caption": "Approved",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Approved\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25184
+      },
+      {
+        "cdgrp": "CRD",
+        "cdname": "MODIFYSTS",
+        "cdid": "R",
+        "caption": "Outdated",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Rejected\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25185
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "MODIFYSTS",
+        "cdid": "W",
+        "caption": "NEW",
+        "cdval": "1",
+        "cdidx": 1,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"New\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25186
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "MODIFYSTS",
+        "cdid": "O",
+        "caption": "Outdated",
+        "cdval": "2",
+        "cdidx": 2,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Outdated\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25187
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "MODIFYSTS",
+        "cdid": "Y",
+        "caption": "Approved",
+        "cdval": "3",
+        "cdidx": 3,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Approved\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25188
+      },
+      {
+        "cdgrp": "CTM",
+        "cdname": "MODIFYSTS",
+        "cdid": "R",
+        "caption": "Outdated",
+        "cdval": "4",
+        "cdidx": 4,
+        "ftag": null,
+        "visible": 1,
+        "mcaption": "{\"English\":\"Rejected\",\"Vietnamese\":\"\",\"Laothian\":\"\",\"Khmer\":\"\",\"Myanmar\":\"\"}",
+        "app": "ncbsCbs",
+        "id": 25189
+      }
+    ]
+  }
+]

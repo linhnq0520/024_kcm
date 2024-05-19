@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-05T06:42:20.0557468Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"title\":\"\",\"des\":\"\",\"data\":\"\",\"learnapi\":\"\",\"learnsql\":\"\",\"bodata\":\"\",\"openOne\":\"true\",\"url_input\":\"\",\"lang_form\":{\"en\":\"\"},\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"form_code\":\"572043e1bc2e93da\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_add\",\"condition\":\"\",\"visible\":\"true\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":3},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_add\",\"condition\":\"\",\"visible\":\"true\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":6},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_add\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":5},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_update\",\"condition\":\"\",\"visible\":\"true\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":5},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_update\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":6,\"isStart\":true},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_change\",\"component_action\":\"\",\"component_result\":\"btn_update\",\"condition\":\"\",\"visible\":\"false\",\"ena_dis\":\"not_use\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStatus\":3}],\"app\":\"\"}",
+        "list_layout": "[]",
+        "react_txt": "",
+        "form_id": "572043e1bc2e93da",
+        "app": "ncbsCbs",
+        "id": 506
+      }
+    ]
+  }
+]

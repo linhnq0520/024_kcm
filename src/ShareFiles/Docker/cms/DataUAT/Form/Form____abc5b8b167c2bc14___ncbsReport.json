@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.1043569Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"03/01/2023 04:49:39 PM\",\"list_show_error\":\"false\",\"app\":\"ncbsReport\",\"title\":\"CUSTOMER REPORT 101\",\"bodata\":\"\",\"data\":\"\",\"des\":\"CUSTOMER REPORT 101\",\"flow_layout\":[],\"form_code\":\"abc5b8b167c2bc14\",\"key_form\":\"\",\"lang_form\":{},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"false\",\"ruleStrong\":[{\"code\":\"visibility\",\"inUse\":true,\"isStart\":true,\"isStatus\":-1,\"order\":2,\"config\":{\"component_action\":\"\",\"component_result\":\"request_body\",\"view_result\":\"\",\"condition\":\"\",\"visible\":\"true\",\"ena_dis\":\"false\",\"component_event\":\"all\",\"list_config\":[]},\"isDidStart\":true,\"isOpenFromOther\":false},{\"code\":\"visibility\",\"inUse\":true,\"isStart\":true,\"isStatus\":-1,\"order\":1,\"config\":{\"component_action\":\"\",\"component_result\":\"instance_id;grpc_url;created_time;utc_exp_time\",\"view_result\":\"\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"component_event\":\"all\",\"list_config\":[]},\"isDidStart\":false,\"isOpenFromOther\":false}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"f708c3b62a5aeda3\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"\",\"code\":\"code\",\"codeHidden\":\"4dea0383bb9d096f\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"CUS_REPORT_101\",\"code\":\"9b67035a2c71e201\",\"class\":\"col-sm-12 col-md-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"aee621520cd20a90\"},\"config\":{\"design_type\":\"report\",\"file_report\":\"CUS_TEST_010\",\"more_config\":\"{}\"},\"role\":{},\"property\":{},\"validate\":{\"request\":false,\"min\":\"\",\"max\":\"\",\"regex_format\":\"\",\"validate_html\":\"true\"},\"lang\":{\"en\":\"\",\"vi\":\"\"},\"configAVD\":{},\"inputtype\":\"jIframeReport\"}]}]}]",
+        "react_txt": "",
+        "form_id": "abc5b8b167c2bc14",
+        "app": "ncbsReport",
+        "id": 1291
+      }
+    ]
+  }
+]

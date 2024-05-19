@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:11:50.3629242Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\n    {\n      \"name\": \"\",\n      \"function\": \"own_O9_fee.autoFeeGetDataForm\",\n      \"type\": \"javascript\",\n      \"status\": \"A\",\n      \"para\": [],\n      \"request\": {\n        \"true\": {\n          \"bo\": [\n            {\n              \"txcode\": \"bo-ruleFunc-AutoFee\",\n              \"input\": { \"learn_api\": \"@learn_api\" }\n            }\n          ]\n        }\n      }\n    }\n  ]",
+        "request": "{}",
+        "status": null,
+        "txtype": null,
+        "txcode": "fo-ruleFunc-AutoFee",
+        "version": 1,
+        "updateTime": 638042796881315483,
+        "txname": "fo-ruleFunc-AutoFee",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 302
+      }
+    ]
+  }
+]

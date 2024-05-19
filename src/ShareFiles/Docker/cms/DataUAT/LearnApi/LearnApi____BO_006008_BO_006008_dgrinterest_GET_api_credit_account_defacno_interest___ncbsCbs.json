@@ -1,0 +1,58 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:12:11.702998Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "LearnApi"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "learn_api_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "learn_api_id": "BO_006008_BO_006008_dgrinterest_GET_api_credit_account_defacno_interest",
+        "learn_api_name": "BO_006008 BO_006008-Interest payment",
+        "learn_api_link": "$API_SERVER$.$API_PORT_DATA$/api/workflow/execute",
+        "learn_api_data": "dgrinterest",
+        "learn_api_node_data": "execution_steps[0].p2_content.response.data.interest_list",
+        "learn_api_app": "BO",
+        "learn_api_method": "POST",
+        "flow_api": "ncbsCbs_execute_new",
+        "save_to": "form",
+        "learn_api_header": "{\"Authorization\":\"MapS.getToken(Bearer )\"}",
+        "learn_api_mapping": "{\n    \"workflowid\": \"CRD_VIEW_INTEREST_PAYMENT\",\n    \"lang\": \"en\",\n  \"token\": \"MapS.context(token)\",\n    \"fields\": {\n        \"account_number\": \"MapS.dataS(BO_006008.account_number)\"\n    }\n}",
+        "number_of_steps": "2",
+        "LearnApiGetInfo": null,
+        "key_read_data": "execution_steps[0].p2_content.response.data.interest_list",
+        "JwebuiUsercreate": null,
+        "app": "ncbsCbs",
+        "id": 64
+      }
+    ]
+  }
+]

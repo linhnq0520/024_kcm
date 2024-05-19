@@ -1,0 +1,54 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-06-06T03:32:03.4435998Z",
+    "host": "test-cbs.shwesit.jits.digital",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=27.3.1.104"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Fo"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "txcode": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "input": "{}",
+        "actions": "[\r\n\t{\r\n\t\t\"name\": \"X�a th�ng b�o l?i\",\r\n\t\t\"function\": \"form.clearError\",\r\n\t\t\"type\": \"javascript\",\r\n\t\t\"status\": \"A\",\r\n\t\t\"para\": []\r\n\t},\r\n\t{\r\n\t\t\"name\": \"Thu th?p v� s?a\",\r\n\t\t\"function\": \"form.update\",\r\n\t\t\"type\": \"javascript\",\r\n\t\t\"status\": \"A\",\r\n\t\t\"para\": [\r\n\t\t\t\"@list_component\",\r\n\t\t\t\"@list_view\"\r\n\t\t],\r\n\t\t\"request\": {\r\n\t\t\t\"true\": {\r\n\t\t\t\t\"bo\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"txcode\": \"bo-update-cdlist\",\r\n\t\t\t\t\t\t\"input\": {\r\n\t\t\t\t\t\t\t\"table_code\": \"@table_code\",\r\n\t\t\t\t\t\t\t\"learn_api\": \"@learn_api\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n]",
+        "request": "{}",
+        "status": "",
+        "txtype": "fo",
+        "txcode": "fo-update-cdlist",
+        "version": 1,
+        "updateTime": 638134275651729893,
+        "txname": "Update cdlist",
+        "isOld": false,
+        "order": 1,
+        "app": "ncbsCbs",
+        "id": 166
+      }
+    ]
+  }
+]

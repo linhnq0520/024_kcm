@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.0233781Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\r\n      \"app\": \"ncbs\",\r\n      \"title\": \"Role Management\",\r\n      \"bodata\": \"\",\r\n      \"data\": \"\",\r\n      \"des\": \"Role Management\",\r\n      \"flow_layout\": [],\r\n      \"form_code\": \"ncbs_role_management\",\r\n      \"key_form\": \"ncbs_role_management\",\r\n      \"lang_form\": {},\r\n      \"ruleStrong\": []\r\n    }",
+        "list_layout": "[\r\n      {\r\n        \"name\": \"Program Layout\",\r\n        \"des\": \"\",\r\n        \"class\": \"\",\r\n        \"codeHidden\": \"program_layout\",\r\n        \"inputtype\": \"cLayout\",\r\n        \"list_view\": [\r\n          {\r\n            \"name\": \"Program View\",\r\n            \"code\": \"code\",\r\n            \"codeHidden\": \"program_view\",\r\n            \"inputtype\": \"cView\",\r\n            \"isTab\": \"false\",\r\n            \"list_input\": [\r\n            ]\r\n          }\r\n        ]\r\n      }\r\n    ]",
+        "react_txt": "",
+        "form_id": "ncbs_role_management",
+        "app": "ncbs",
+        "id": 1215
+      }
+    ]
+  }
+]

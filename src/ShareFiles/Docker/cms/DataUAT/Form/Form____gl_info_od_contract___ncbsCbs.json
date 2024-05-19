@@ -1,0 +1,47 @@
+[
+  {
+    "type": "header",
+    "command": "Export data to Json"
+  },
+  {
+    "exported_time": "2023-09-01T18:09:46.5942601Z",
+    "host": "192.168.101.61:5017",
+    "db_properties": [
+      {
+        "name": "server",
+        "value": "server=192.168.102.61"
+      },
+      {
+        "name": "port",
+        "value": "1433"
+      },
+      {
+        "name": "database",
+        "value": "cms"
+      },
+      {
+        "name": "entity",
+        "value": "Form"
+      }
+    ],
+    "exported_by_fields": [
+      {
+        "form_id": null,
+        "app": null
+      }
+    ]
+  },
+  {
+    "type": "data",
+    "data": [
+      {
+        "info": "{\"form_code_alias\":\"\",\"last_update\":\"24/05/2023 09:36:21 AM\",\"list_show_error\":\"false\",\"app\":\"ncbsCbs\",\"title\":\"gl_info_od_contract\",\"bodata\":\"\",\"data\":\"\",\"des\":\"gl_info_od_contract\",\"flow_layout\":[],\"form_code\":\"gl_info_od_contract\",\"key_form\":\"\",\"lang_form\":{\"en\":\"gl_info_od_contract\"},\"learnapi\":\"\",\"learnsql\":\"\",\"mode_form\":{\"mode\":\"\",\"col_text\":\"\",\"col_input\":\"\"},\"node_position\":[],\"ofModal\":false,\"openOne\":\"true\",\"ruleStrong\":[{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"btn_add;btn_modify\",\"component_result\":\"*;btn_apply\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"code\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":false},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"btn_add;btn_modify\",\"component_result\":\"btn_add\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":false},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"btn_apply\",\"component_result\":\"btn_add\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true},{\"code\":\"visibility\",\"config\":{\"component_event\":\"on_click\",\"component_action\":\"btn_apply\",\"component_result\":\"*;btn_apply\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"true\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1,\"isStart\":true},{\"code\":\"visibility\",\"config\":{\"component_event\":\"all\",\"component_action\":\"btn_modify\",\"component_result\":\"*;btn_apply\",\"condition\":\"\",\"visible\":\"not_use\",\"ena_dis\":\"false\",\"view_result\":\"\",\"list_config\":[]},\"inUse\":true,\"order\":1}],\"responseType\":\"1\"}",
+        "list_layout": "[{\"name\":\"\",\"des\":\"\",\"class\":\"\",\"codeHidden\":\"9379b68931989d66\",\"inputtype\":\"cLayout\",\"list_view\":[{\"name\":\"M?u view\",\"code\":\"formchild\",\"codeHidden\":\"1cacae7586c074d8\",\"inputtype\":\"cView\",\"isTab\":\"false\",\"list_input\":[{\"default\":{\"name\":\"\",\"code\":\"table\",\"class\":\"col-12\",\"role\":\"\",\"condition\":\"\",\"ofgroup\":\"\",\"class_ofgroup\":\"col-sm-12 col-md-12\",\"codeHidden\":\"p6d5o69he73n34\"},\"config\":{\"structable\":\"form_child.gl_info_od_contract\",\"query_data\":\"gl_info_od_contract\",\"paging_record\":\"5\",\"columns\":\"[\\n    {\\n        \\\"code\\\": \\\"gl_info_od_contract.sys_account_name\\\",\\n        \\\"title\\\": \\\"Sys Account Name\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    },\\n    {\\n        \\\"code\\\": \\\"gl_info_od_contract.gl_account\\\",\\n        \\\"title\\\": \\\"GL Account\\\",\\n        \\\"inputtype\\\": \\\"ColumnString\\\",\\n        \\\"config\\\": {}\\n    }\\n]\",\"hasPaging\":\"false\",\"onTable\":\"\",\"hasSystemColumnCheck\":\"false\",\"isMoveColumn\":\"false\",\"isResize\":\"false\",\"columnSystemCheckBox\":{\"methodGet\":\"checked\",\"hasSystemColumnCheckTotal\":\"false\",\"check_type\":\"DEFAULT\",\"headerCheckTitle\":\"\",\"actionFo_SystemCheck\":{\"useAction\":\"txFo\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\"},\"checked_to_selected\":{\"mode\":\"DEFAULT\"}},\"actionFo_RowSelect\":{\"useAction\":\"txFo\",\"txFo\":\"[\\n    {\\n        \\\"txcode\\\": \\\"\\\",\\n        \\\"input\\\": {}\\n    }\\n]\"}},\"role\":{},\"property\":{},\"validate\":{},\"lang\":{\"vi\":{\"IFC code\":\"IFC code\",\"IFC name\":\"IFC name\",\"IFC value\":\"IFC value\",\"IFC type\":\"IFC type\",\"Tenor\":\"Tenor\",\"Tenor unit\":\"Tenor unit\",\"Active condition\":\"Active condition\",\"Status\":\"Status\"},\"en\":{\"IFC code\":\"IFC code\",\"IFC name\":\"IFC name\",\"IFC value\":\"IFC value\",\"IFC type\":\"IFC type\",\"Tenor\":\"Tenor\",\"Tenor unit\":\"Tenor unit\",\"Active condition\":\"Active condition\",\"Status\":\"Status\"}},\"configAVD\":{},\"inputtype\":\"jTableForm\"}]}]}]",
+        "react_txt": "",
+        "form_id": "gl_info_od_contract",
+        "app": "ncbsCbs",
+        "id": 1889
+      }
+    ]
+  }
+]
